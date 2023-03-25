@@ -6971,7 +6971,7 @@ ideas = {
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
 			modifier = {
-				industrial_capacity_dockyard = 0.05
+				industrial_capacity_dockyard = 0.15
 			}
 		}
 

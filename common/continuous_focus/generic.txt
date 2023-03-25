@@ -137,7 +137,7 @@ continuous_focus_palette = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1
 		}
 		supports_ai_strategy = ai_focus_military_advancements
 		daily_cost = 1
@@ -155,7 +155,7 @@ continuous_focus_palette = {
 			autonomy_gain = 5
 		}
 		ai_will_do = {
-			factor = 0
+			factor = -100
 			modifier = {
 				add = 5
 				is_subject = yes
