@@ -1680,7 +1680,7 @@
 			}
 			increase_exports = yes
 			set_temp_variable = { treasury_change = gdp_total_display }
-            multiply_temp_variable = { treasury_change = 0.22	 }
+            set_temp_variable = { treasury_change = 1250	 }
             modify_treasury_effect = yes
 		}
 
@@ -1842,9 +1842,9 @@
 			set_temp_variable = { influence_target = USA }
 			change_influence_percentage = yes
 
-
+            
 			set_temp_variable = { treasury_change = gdp_total_display }
-            multiply_temp_variable = { treasury_change = 0.13 }
+            set_temp_variable = { treasury_change = 650 }
             modify_treasury_effect = yes
 		}
 
@@ -1891,7 +1891,7 @@
 			change_influence_percentage = yes
 
 			set_temp_variable = { treasury_change = gdp_total_display }
-            multiply_temp_variable = { treasury_change = 0.13 }
+            set_temp_variable = { treasury_change = 600 }
             modify_treasury_effect = yes
 		}
 
@@ -1945,7 +1945,7 @@
 			change_influence_percentage = yes
 
 			set_temp_variable = { treasury_change = gdp_total_display }
-            multiply_temp_variable = { treasury_change = 0.03 }
+            set_temp_variable = { treasury_change = 120 }
             modify_treasury_effect = yes
 		}
 
@@ -1994,7 +1994,7 @@
 			set_temp_variable = { influence_target = NKO }
 			change_influence_percentage = yes
 			set_temp_variable = { treasury_change = gdp_total_display }
-            multiply_temp_variable = { treasury_change = 0.017 }
+            set_temp_variable = { treasury_change = 80 }
             modify_treasury_effect = yes
 		}
 
