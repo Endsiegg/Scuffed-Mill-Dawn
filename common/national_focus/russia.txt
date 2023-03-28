@@ -454,7 +454,7 @@ focus_tree = {
 						add_extra_state_shared_building_slots = 3
 						add_building_construction = {
 							type = industrial_complex
-							level = 3
+							level = 1
 							instant_build = yes
 						}
 					}
@@ -471,7 +471,7 @@ focus_tree = {
 						add_extra_state_shared_building_slots = 3
 						add_building_construction = {
 							type = industrial_complex
-							level = 3
+							level = 1
 							instant_build = yes
 						}
 					}
@@ -488,7 +488,7 @@ focus_tree = {
 						add_extra_state_shared_building_slots = 3
 						add_building_construction = {
 							type = industrial_complex
-							level = 3
+							level = 1
 							instant_build = yes
 						}
 					}
@@ -505,7 +505,7 @@ focus_tree = {
 						add_extra_state_shared_building_slots = 3
 						add_building_construction = {
 							type = industrial_complex
-							level = 3
+							level = 1
 							instant_build = yes
 						}
 					}
@@ -576,20 +576,20 @@ focus_tree = {
 			random_owned_state = {
 				prioritize = { 644 647 }
 				add_building_construction = {
-					level = 3
+					level = 2
 					type = industrial_complex
 					instant_build = yes
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 			}
 			random_owned_state = {
 				prioritize = { 653 643 }
 				add_building_construction = {
-					level = 3
+					level = 2
 					type = industrial_complex
 					instant_build = yes
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 			}
 			random_owned_state = {
 				prioritize = { 662 663 }
@@ -598,7 +598,7 @@ focus_tree = {
 					type = industrial_complex
 					instant_build = yes
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 			}
 		}
 		ai_will_do = {
@@ -4777,7 +4777,7 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = SOV_attack_chechnya
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = SOV_attack_chechnya }
 		available = {
@@ -4795,7 +4795,7 @@ focus_tree = {
 				category = industry
 			}
 			set_temp_variable = { treasury_change = gdp_total_display }
-			multiply_temp_variable = { treasury_change = 0.3 }
+			multiply_temp_variable = { treasury_change = 0.1 }
 			modify_treasury_effect = yes
 		}
 
@@ -4811,7 +4811,7 @@ focus_tree = {
 		y = 0
 
 		relative_position_id = SOV_economic_programs
-		cost = 5.0
+		cost = 10
 
 		prerequisite = { focus = SOV_attack_chechnya }
 		available = {
@@ -4830,7 +4830,7 @@ focus_tree = {
 				add_building_construction = {
 					type = infrastructure
 					instant_build = yes
-					level = 3
+					level = 4
 				}
 				add_building_construction = {
 					type = industrial_complex
@@ -4842,6 +4842,7 @@ focus_tree = {
 					instant_build = yes
 					level = 3
 				}
+				add_extra_state_shared_building_slots = 6
 			}
 			add_stability = 0.1
 		}
@@ -4865,7 +4866,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_please_the_moscow_oligarchs"
 			set_temp_variable = { treasury_change = gdp_total_display }
-			multiply_temp_variable = { treasury_change = 0.1 }
+			multiply_temp_variable = { treasury_change = 0.05 }
 			modify_treasury_effect = yes
 			set_temp_variable = { temp_opinion = 20 }
 			change_oligarchs_opinion = yes
@@ -4892,7 +4893,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_diversify_the_economy"
-			set_temp_variable = { treasury_change = -27 }
+			set_temp_variable = { treasury_change = -60 }
 			modify_treasury_effect = yes
 			random_owned_controlled_state = {
 				if = {
@@ -4967,7 +4968,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_expansionary_monetary_policy"
 			increase_economic_growth = yes
 			set_temp_variable = { treasury_change = gdp_total_display }
-			multiply_temp_variable = { treasury_change = 0.2 }
+			multiply_temp_variable = { treasury_change = 0.1 }
 			modify_treasury_effect = yes
 		}
 
@@ -4982,14 +4983,14 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = SOV_economic_programs
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = SOV_economic_programs }
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_decree_no_585"
-			set_temp_variable = { treasury_change = -20 }
+			set_temp_variable = { treasury_change = -30 }
 			modify_treasury_effect = yes
 			random_owned_controlled_state = {
 				if = {
@@ -5096,7 +5097,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_regauge_the_sakhalin_railway"
-			set_temp_variable = { treasury_change = -3.5 }
+			set_temp_variable = { treasury_change = -20 }
 			modify_treasury_effect = yes
 			691 = { #Sakhalin
 				if = {
@@ -5142,7 +5143,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_economic_stimulus"
-			three_random_industrial_complex = yes
+			one_random_industrial_complex = yes
 			three_office_construction = yes
 			increase_economic_growth = yes
 		}
@@ -5186,7 +5187,7 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = SOV_please_the_moscow_oligarchs
-		cost = 5
+		cost = 10
 
 		prerequisite = {
 			focus = SOV_please_the_moscow_oligarchs
@@ -5225,8 +5226,8 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_heavy_industry_investments"
-			four_random_industrial_complex = yes
-			four_random_arms_factory  = yes
+			three_random_industrial_complex = yes
+			three_random_arms_factory  = yes
 		}
 		ai_will_do = {
 			factor = 1
@@ -5260,7 +5261,7 @@ focus_tree = {
 			}
 			increase_exports = yes
 			set_temp_variable = { treasury_change = gdp_total_display }
-			multiply_temp_variable = { treasury_change = 0.9 }
+			multiply_temp_variable = { treasury_change = 0.1 }
 			modify_treasury_effect = yes
 		}
 		ai_will_do = {
@@ -5316,7 +5317,7 @@ focus_tree = {
 					amount = 30
 				}
 			}
-			set_temp_variable = { treasury_change = -30.50 }
+			set_temp_variable = { treasury_change = -180.50 }
 			modify_treasury_effect = yes
 		}
 
@@ -5702,7 +5703,7 @@ focus_tree = {
 				change_influence_percentage = yes
 			}
 			set_temp_variable = { treasury_change = gdp_total_display }
-			multiply_temp_variable = { treasury_change = 0.3 }
+			multiply_temp_variable = { treasury_change = 0.1 }
 			modify_treasury_effect = yes
 		}
 		ai_will_do = {
@@ -5826,7 +5827,7 @@ focus_tree = {
 				change_influence_percentage = yes
 			}
 			set_temp_variable = { treasury_change = gdp_total_display }
-			multiply_temp_variable = { treasury_change = 0.3 }
+			multiply_temp_variable = { treasury_change = 0.1 }
 			modify_treasury_effect = yes
 		}
 		ai_will_do = {
@@ -5866,7 +5867,7 @@ focus_tree = {
 				change_influence_percentage = yes
 			}
 			set_temp_variable = { treasury_change = gdp_total_display }
-			multiply_temp_variable = { treasury_change = 0.4 }
+			multiply_temp_variable = { treasury_change = 0.1 }
 			modify_treasury_effect = yes
 		}
 		ai_will_do = {
@@ -5902,7 +5903,7 @@ focus_tree = {
 				add_opinion_modifier = { target = ROOT modifier = global_trade }
 			}
 			set_temp_variable = { treasury_change = gdp_total_display }
-			multiply_temp_variable = { treasury_change = 0.9 }
+			multiply_temp_variable = { treasury_change = 0.25 }
 			modify_treasury_effect = yes
 		}
 		ai_will_do = {
@@ -5937,11 +5938,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INTERNAL_FACTION }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_rise_of_the_oligarchs"
-			set_temp_variable = { temp_opinion = 20 }
+			set_temp_variable = { temp_opinion = 10 }
 			change_oligarchs_opinion = yes
 			change_fossil_fuel_industry_opinion = yes
 			change_intelligence_community_opinion = yes
-			four_random_industrial_complex = yes
+			two_random_industrial_complex = yes
 		}
 
 		ai_will_do = {
