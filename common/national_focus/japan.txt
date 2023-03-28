@@ -579,18 +579,18 @@
 					}
 					add_building_construction = {
 						type = synthetic_refinery
-						level = 1
+						level = 2
 						instant_build = yes
 					}
-					add_to_temp_variable = { treasury_change = -4.25 }
+					add_to_temp_variable = { treasury_change = -8.50 }
 				}
 			}
 			add_resource = {
 				type = oil
-				amount = 16
+				amount = 28
 				state = 618
 			}
-			add_to_temp_variable = { treasury_change = -15.00 }
+			add_to_temp_variable = { treasury_change = -20.00 }
 			modify_treasury_effect = yes
 		}
 
@@ -650,11 +650,11 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus JAP_rare_metal_production"
-			random_owned_state = { add_resource = { type = steel amount = 6 } }
-			random_owned_state = { add_resource = { type = tungsten amount = 2 } }
-			random_owned_state = { add_resource = { type = aluminium amount = 2 } }
-			random_owned_state = { add_resource = { type = chromium amount = 2 } }
-			set_temp_variable = { treasury_change = -14 }
+			random_owned_state = { add_resource = { type = aluminium amount = 6 } }
+			random_owned_state = { add_resource = { type = tungsten amount = 6 } }
+			random_owned_state = { add_resource = { type = aluminium amount = 6 } }
+			random_owned_state = { add_resource = { type = chromium amount = 6 } }
+			set_temp_variable = { treasury_change = -18 }
 			modify_treasury_effect = yes
 		}
 
@@ -916,7 +916,7 @@
 				name = JAP_bushido
 				category = air_doctrine
 				uses = 1
-				cost_reduction = 0.25
+				cost_reduction = 0.75
 			}
 		}
 
@@ -1149,7 +1149,7 @@
 			add_ideas = fighter_production_bonus
 			add_tech_bonus = {
 				name = fighter_bonus
-				bonus = 0.45
+				bonus = 0.50
 				uses = 2
 				category = CAT_FIXED_WING
 			}
@@ -1230,7 +1230,7 @@
 			log = "[GetDateText]: [Root.GetName]: Focus JAP_carrier_program"
 			add_tech_bonus = {
 				name = JAP_carrier_program
-				bonus = 0.4
+				bonus = 0.5
 				uses = 2
 				category = Cat_CARRIER
 			}
@@ -1335,6 +1335,7 @@
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus JAP_naval_production"
 			two_random_dockyards = yes
+			one_random_dockyard = yes
 			set_temp_variable = { temp_opinion = 10 }
 			change_maritime_industry_opinion = yes
 			add_timed_idea = {
@@ -1678,6 +1679,9 @@
 				change_influence_percentage = yes
 			}
 			increase_exports = yes
+			set_temp_variable = { treasury_change = gdp_total_display }
+            set_temp_variable = { treasury_change = 1250	 }
+            modify_treasury_effect = yes
 		}
 
 		ai_will_do = {
@@ -1815,7 +1819,6 @@
 		}
 
 		prerequisite = { focus = JAP_new_trade_policy }
-		mutually_exclusive = { focus = JAP_trade_with_china }
 
 		search_filters = { FOCUS_FILTER_INFLUENCE FOCUS_FILTER_DIPLOMACY }
 
@@ -1838,6 +1841,11 @@
 			set_temp_variable = { tag_index = JAP }
 			set_temp_variable = { influence_target = USA }
 			change_influence_percentage = yes
+
+            
+			set_temp_variable = { treasury_change = gdp_total_display }
+            set_temp_variable = { treasury_change = 650 }
+            modify_treasury_effect = yes
 		}
 
 		ai_will_do = {
@@ -1859,7 +1867,6 @@
 		}
 
 		prerequisite = { focus = JAP_new_trade_policy }
-		mutually_exclusive = { focus = JAP_trade_with_america }
 
 		search_filters = { FOCUS_FILTER_INFLUENCE FOCUS_FILTER_DIPLOMACY }
 
@@ -1882,6 +1889,10 @@
 			set_temp_variable = { tag_index = JAP }
 			set_temp_variable = { influence_target = CHI }
 			change_influence_percentage = yes
+
+			set_temp_variable = { treasury_change = gdp_total_display }
+            set_temp_variable = { treasury_change = 600 }
+            modify_treasury_effect = yes
 		}
 
 		ai_will_do = {
@@ -1904,7 +1915,6 @@
 			focus = JAP_trade_with_america
 			focus = JAP_trade_with_china
 		}
-		mutually_exclusive = { focus = JAP_trade_with_north_korea }
 
 		search_filters = { FOCUS_FILTER_INFLUENCE FOCUS_FILTER_DIPLOMACY }
 
@@ -1933,6 +1943,10 @@
 			set_temp_variable = { tag_index = JAP }
 			set_temp_variable = { influence_target = KOR }
 			change_influence_percentage = yes
+
+			set_temp_variable = { treasury_change = gdp_total_display }
+            set_temp_variable = { treasury_change = 120 }
+            modify_treasury_effect = yes
 		}
 
 		ai_will_do = {
@@ -1951,7 +1965,6 @@
 			focus = JAP_trade_with_america
 			focus = JAP_trade_with_china
 		}
-		mutually_exclusive = { focus = JAP_trade_with_south_korea }
 
 		search_filters = { FOCUS_FILTER_INFLUENCE FOCUS_FILTER_DIPLOMACY }
 
@@ -1980,6 +1993,9 @@
 			set_temp_variable = { tag_index = JAP }
 			set_temp_variable = { influence_target = NKO }
 			change_influence_percentage = yes
+			set_temp_variable = { treasury_change = gdp_total_display }
+            set_temp_variable = { treasury_change = 80 }
+            modify_treasury_effect = yes
 		}
 
 		ai_will_do = {
@@ -2602,8 +2618,8 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus JAP_protect_our_nation"
-			add_timed_idea = { idea = JAP_protect_our_ideology days = 365 }
-			set_temp_variable = { arg_popularity = 0.01 }
+			add_timed_idea = { idea = JAP_protect_our_ideology days = 3650 }
+			set_temp_variable = { arg_popularity = 0.10 }
 			add_ruling_outlook_popularity = yes
 		}
 
@@ -3135,6 +3151,7 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus JAP_approach_NATO"
+			unlock_decision_category_tooltip = 
 			every_country = {
 				limit = {
 					OR = {
