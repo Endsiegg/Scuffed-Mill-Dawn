@@ -6209,6 +6209,10 @@ spriteTypes = {
 		name = "dangerous_laws"
 		texturefile = "gfx/interface/goals/diplomacy/dangerous_laws.dds"
 	}
+	SpriteType = {
+		name = "GFX_goal_generic_demand_territory"
+		texturefile = "gfx/interface/goals/goal_generic_demand_territory.dds"	
+	}	
 	spriteType = {
 		name = "demand_territory"
 		texturefile = "gfx/interface/goals/diplomacy/demand_territory.dds"
