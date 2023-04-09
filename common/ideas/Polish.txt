@@ -4,7 +4,7 @@ ideas = {
 			allowed = { always = no }
 			picture = construction
 			modifier = {
-				monthly_population = 0.05
+				monthly_population = 0.25
 				political_power_gain = -0.15
 			}
 		}
@@ -16,7 +16,7 @@ ideas = {
 			picture = consumer_goods
 
 			modifier = {
-				stability_factor = 0.1
+				stability_factor = 0.2
 			}
 		}
 
@@ -39,7 +39,7 @@ ideas = {
 			picture = national_unity
 
 			modifier = {
-				political_power_gain = 0.2
+				political_power_gain = 0.5
 			}
 		}
 
@@ -61,8 +61,8 @@ ideas = {
 			picture = christian_idea
 
 			modifier = {
-				stability_factor = 0.05
-				monthly_population = 0.05
+				stability_factor = 0.1
+				monthly_population = 0.1
 				research_speed_factor = -0.03
 			}
 		}
@@ -85,8 +85,8 @@ ideas = {
 			picture = flexible_foreign_policy2
 
 			modifier = {
-				monthly_population = -0.05
-				research_speed_factor = 0.05
+				monthly_population = -0.1
+				research_speed_factor = 0.1
 			}
 		}
 
@@ -138,8 +138,8 @@ ideas = {
 			picture = idea_european_union_member
 
 			modifier = {
-				production_speed_buildings_factor = 0.05
-				consumer_goods_factor = -0.03
+				production_speed_buildings_factor = 0.2
+				consumer_goods_factor = -0.05
 			}
 		}
 
@@ -149,7 +149,7 @@ ideas = {
 			picture = foreign_capital
 
 			modifier = {
-				research_speed_factor = 0.05
+				research_speed_factor = 0.1
 			}
 		}
 
@@ -172,7 +172,7 @@ ideas = {
 
 			modifier = {
 				min_export = 0.05
-				local_resources_factor = 0.1
+				local_resources_factor = 0.15
 			}
 		}
 
@@ -195,7 +195,7 @@ ideas = {
 			picture = tank_industry
 
 			modifier = {
-				production_speed_arms_factory_factor = 0.2
+				production_speed_arms_factory_factor = 0.4
 			}
 		}
 
@@ -205,8 +205,8 @@ ideas = {
 			picture = tank_industry
 
 			modifier = {
-				production_speed_arms_factory_factor = 0.15
-				production_factory_efficiency_gain_factor = 0.1
+				production_speed_arms_factory_factor = 0.25
+				production_factory_efficiency_gain_factor = 0.2
 			}
 		}
 
@@ -248,9 +248,9 @@ ideas = {
 			picture = pol_first_idea
 
 			modifier = {
-				stability_factor = 0.05
-				political_power_factor = 0.05
-				consumer_goods_factor = -0.03
+				stability_factor = 0.1
+				political_power_factor = 0.2
+				consumer_goods_factor = -0.1
 			}
 		}
 
@@ -260,7 +260,7 @@ ideas = {
 			picture = polish_falanga_idea
 
 			modifier = {
-				nationalist_drift = 0.02
+				nationalist_drift = 0.3
 			}
 		}
 
@@ -283,8 +283,8 @@ ideas = {
 			picture = generic_purge
 
 			modifier = {
-				stability_weekly = -0.01
-				democratic_drift = -0.01
+				stability_weekly = -0.005
+				democratic_drift = -0.3
 			}
 		}
 
@@ -304,8 +304,8 @@ ideas = {
 			picture = agricultural_reforms
 
 			modifier = {
-				production_speed_buildings_factor = 0.05
-				consumer_goods_factor = 0.02
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.05
 			}
 		}
 
@@ -326,7 +326,7 @@ ideas = {
 			picture = army_corruption3
 
 			modifier = {
-				experience_gain_army = 0.05
+				experience_gain_army = 0.3
 			}
 		}
 
@@ -336,7 +336,7 @@ ideas = {
 			picture = army_war_college
 
 			modifier = {
-				conscription_factor = 0.02
+				conscription_factor = 0.15
 			}
 		}
 
@@ -357,7 +357,7 @@ ideas = {
 			picture = shared_research
 
 			modifier = {
-				research_speed_factor = 0.03
+				research_speed_factor = 0.1
 			}
 		}
 
@@ -367,7 +367,7 @@ ideas = {
 			picture = shared_research
 
 			modifier = {
-				research_speed_factor = 0.05
+				research_speed_factor = 0.1
 			}
 		}
 
@@ -377,7 +377,7 @@ ideas = {
 			picture = shared_research
 
 			modifier = {
-				research_speed_factor = 0.07
+				research_speed_factor = 0.1
 			}
 		}
 
@@ -474,8 +474,8 @@ ideas = {
 
 			picture = agriculture
 			modifier = {
-				consumer_goods_factor = -0.02
-				local_resources_factor = 0.05
+				consumer_goods_factor = -0.05
+				local_resources_factor = 0.1
 			}
 		}
 
@@ -485,8 +485,8 @@ ideas = {
 
 			picture = seize_church_assets
 			modifier = {
-				research_speed_factor = 0.03
-				consumer_goods_factor = -0.01
+				research_speed_factor = 0.1
+				consumer_goods_factor = -0.02
 			}
 		}
 
@@ -517,8 +517,8 @@ ideas = {
 
 			picture = destroy_capitalism
 			modifier = {
-				political_power_factor = -0.05
-				democratic_drift = -0.015
+				political_power_factor = 0.20
+				democratic_drift = -0.3
 			}
 		}
 
@@ -528,9 +528,9 @@ ideas = {
 
 			picture = scw_intervention_rep
 			modifier = {
-				monthly_population = -0.03
-				consumer_goods_factor = -0.01
-				production_speed_buildings_factor = 0.03
+				monthly_population = -0.05
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.2
 			}
 		}
 
@@ -539,7 +539,7 @@ ideas = {
 			allowed = { always = no }
 			picture = construction
 			modifier = {
-				production_speed_buildings_factor = 0.1
+				production_speed_buildings_factor = 0.15
 			}
 		}
 
@@ -571,7 +571,7 @@ ideas = {
 
 			picture = research_bonus
 			modifier = {
-				research_speed_factor = 0.05
+				research_speed_factor = 0.2
 			}
 		}
 
@@ -581,7 +581,7 @@ ideas = {
 
 			picture = communism10
 			modifier = {
-				communism_drift = 0.015
+				communism_drift = 0.5
 			}
 		}
 
@@ -691,8 +691,8 @@ ideas = {
 			allowed = { always = no }
 			picture = infantry_bonus2
 			modifier = {
-				army_core_attack_factor = 0.03
-				army_core_defence_factor = 0.03
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
 			}
 		}
 
@@ -701,8 +701,8 @@ ideas = {
 			allowed = { always = no }
 			picture = fortification2
 			modifier = {
-				army_org_factor = 0.03
-				command_power_gain = 0.2
+				army_org_factor = 0.1
+				command_power_gain = 0.5
 			}
 		}
 
@@ -711,8 +711,8 @@ ideas = {
 			allowed = { always = no }
 			picture = planning_bonus
 			modifier = {
-				army_morale_factor = 0.05
-				command_power_gain = 0.1
+				army_morale_factor = 0.1
+				command_power_gain = 0.5
 			}
 		}
 
@@ -723,7 +723,7 @@ ideas = {
 			equipment_bonus = {
 				Inf_equipment = {
 					instant = yes
-					build_cost_ic = -0.05
+					build_cost_ic = -0.1
 				}
 			}
 		}
@@ -733,7 +733,7 @@ ideas = {
 			allowed = { always = no }
 			picture = air_support
 			modifier = {
-				army_bonus_air_superiority_factor = 0.05
+				army_bonus_air_superiority_factor = 0.1
 			}
 		}
 
@@ -742,7 +742,7 @@ ideas = {
 			allowed = { always = no }
 			picture = coastal_navy
 			modifier = {
-				navy_intel_factor = 0.05
+				navy_intel_factor = 0.1
 			}
 		}
 
@@ -751,8 +751,8 @@ ideas = {
 			allowed = { always = no }
 			picture = coastal_defense_ships2
 			modifier = {
-				navy_intel_decryption_bonus = 1
-				naval_detection = 0.05
+				navy_intel_decryption_bonus = 10
+				naval_detection = 0.15
 			}
 		}
 	}
