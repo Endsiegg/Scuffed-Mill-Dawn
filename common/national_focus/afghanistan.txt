@@ -21,7 +21,7 @@ focus_tree = {
 		x = 5
 		y = 0
 
-		cost = 5
+		cost = 3
 
 		available = {
 			OR = {
@@ -39,13 +39,13 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_civil_war"
-			army_experience = 40
-			add_war_support = 0.02
+			army_experience = 100
+			add_war_support = 0.05
 			add_doctrine_cost_reduction = {
 				name = AFG_civil_war
 				category = land_doctrine
 				uses = 3
-				cost_reduction = 0.4
+				cost_reduction = 0.5
 			}
 		}
 
@@ -63,7 +63,7 @@ focus_tree = {
 		x = -5
 		y = 1
 		relative_position_id = AFG_civil_war
-		cost = 5
+		cost = 3
 
 		prerequisite = { focus = AFG_civil_war }
 
@@ -83,8 +83,8 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_enlisting_personal"
-			army_experience = 30
-			add_manpower = 20000
+			army_experience = 100
+			add_manpower = 50000
 		}
 
 		ai_will_do = {
@@ -110,7 +110,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = AFG_enlisting_personal
-		cost = 5
+		cost = 3
 
 		prerequisite = { focus = AFG_enlisting_personal }
 
@@ -130,7 +130,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_enhanced_recruitment_efforts"
-			army_experience = 10
+			army_experience = 100
 			add_ideas = AFG_idea_enhanced_recruitment_efforts
 		}
 
@@ -158,7 +158,7 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = AFG_civil_war
-		cost = 7
+		cost = 3
 
 		prerequisite = { focus = AFG_civil_war }
 
@@ -178,7 +178,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_foreign_loyalist"
-			army_experience = 30
+			army_experience = 100
 			hidden_effect = {
 				division_template = {
 					name = "Northern Alliance Tribal Militia"
@@ -244,7 +244,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = AFG_foreign_loyalist
-		cost = 8
+		cost = 3
 
 		prerequisite = {
 			focus = AFG_foreign_loyalist
@@ -266,7 +266,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_elite_help"
-			army_experience = 30
+			army_experience = 100
 			hidden_effect = {
 				division_template = {
 					name = "Northern Alliance Veterans"
@@ -349,7 +349,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = AFG_foreign_loyalist
-		cost = 8
+		cost = 3
 
 		prerequisite = {
 			focus = AFG_elite_help
@@ -385,7 +385,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_going_offensive"
-			army_experience = 10
+			army_experience = 100
 			swap_ideas = {
 				remove_idea = AFG_idea_Afghan_defence
 				add_idea = AFG_idea_starting_offensive
@@ -419,7 +419,7 @@ focus_tree = {
 		x = -1
 		y = 3
 		relative_position_id = AFG_foreign_loyalist
-		cost = 10
+		cost = 3
 
 		prerequisite = {
 			focus = AFG_elite_help
@@ -429,7 +429,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_war_experience"
-			army_experience = 10
+			army_experience = 100
 			if = {
 				limit = {
 					has_idea = AFG_idea_Afghan_defence
@@ -463,39 +463,39 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = AFG_civil_war
-		cost = 5
+		cost = 3
 
 		prerequisite = {
 			focus = AFG_civil_war
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_enlisting_personal"
-			army_experience = 10
+			army_experience = 100
 			add_tech_bonus = {
 				name = AFG_enlisting_personal
-				bonus = 0.3
+				bonus = 2
 				category = CAT_inf_wep
 			}
 			add_tech_bonus = {
 				name = AFG_enlisting_personal
-				bonus = 0.3
+				bonus = 2
 				category = CAT_CnC
 			}
 			add_tech_bonus = {
 				name = AFG_enlisting_personal
-				bonus = 0.3
+				bonus = 2
 				category = CAT_Support_weapons
 				uses = 2
 			}
-			set_temp_variable = { treasury_change = -1.0 }
-			modify_treasury_effect = yes
+			# set_temp_variable = { treasury_change = -1.0 }
+			# modify_treasury_effect = yes
 		}
 
 		ai_will_do = {
 			factor = 1
 			modifier = {
 				factor = 0
-				check_variable = { treasury < 1.0 }
+				# check_variable = { treasury < 1.0 }
 			}
 		}
 	}
@@ -508,29 +508,29 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = AFG_updating_equipment
-		cost = 5
+		cost = 3
 
 		prerequisite = {
 			focus = AFG_updating_equipment
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_getting_new_tech"
-			army_experience = 10
+			army_experience = 100
 			add_tech_bonus = {
 				name = AFG_getting_new_tech
-				bonus = 0.3
+				bonus = 2
 				category = CAT_armor
 				uses = 3
 			}
-			set_temp_variable = { treasury_change = -1.5 }
-			modify_treasury_effect = yes
+			# set_temp_variable = { treasury_change = -1.5 }
+			# modify_treasury_effect = yes
 		}
 
 		ai_will_do = {
 			factor = 1
 			modifier = {
 				factor = 0
-				check_variable = { treasury < 1.5 }
+				# check_variable = { treasury < 1.5 }
 			}
 		}
 	}
@@ -543,29 +543,29 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = AFG_updating_equipment
-		cost = 5
+		cost = 3
 
 		prerequisite = {
 			focus = AFG_getting_new_tech
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_planes"
-			air_experience = 20
+			air_experience = 100
 			add_tech_bonus = {
 				name = AFG_planes
-				bonus = 0.2
+				bonus = 2
 				category = CAT_as_fighter
 				uses = 2
 			}
 			411 = {
 				add_building_construction = {
 					type = air_base
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
-			set_temp_variable = { treasury_change = -2 }
-			modify_treasury_effect = yes
+			# set_temp_variable = { treasury_change = -2 }
+			# modify_treasury_effect = yes
 		}
 
 		ai_will_do = {
@@ -585,7 +585,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = AFG_updating_equipment
-		cost = 5
+		cost = 3
 
 		prerequisite = {
 			focus = AFG_planes
@@ -593,27 +593,27 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_specialize_equipment"
-			air_experience = 20
+			air_experience = 100
 			add_tech_bonus = {
 				name = AFG_specialize_equipment
-				bonus = 0.3
+				bonus = 2
 				category = CAT_NVG
 				uses = 1
 			}
 			add_tech_bonus = {
 				name = AFG_specialize_equipment
-				bonus = 0.3
+				bonus = 2
 				category = CAT_Special_Forces
 				uses = 1
 			}
 			add_tech_bonus = {
 				name = AFG_specialize_equipment
-				bonus = 0.4
+				bonus = 2
 				category = CAT_artillery
 				uses = 1
 			}
-			set_temp_variable = { treasury_change = -1 }
-			modify_treasury_effect = yes
+			# set_temp_variable = { treasury_change = -1 }
+			# modify_treasury_effect = yes
 		}
 
 		ai_will_do = {
@@ -633,7 +633,7 @@ focus_tree = {
 		x = 0
 		y = 4
 		relative_position_id = AFG_foreign_loyalist
-		cost = 5
+		cost = 3
 
 		prerequisite = {
 			focus = AFG_war_experience
@@ -643,7 +643,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_army_budget"
-			army_experience = 50
+			army_experience = 100
 			increase_military_spending = yes
 			increase_officer_training_level = yes
 		}
@@ -661,7 +661,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = AFG_civil_war
-		cost = 5
+		cost = 3
 
 		prerequisite = {
 			focus = AFG_civil_war
@@ -671,19 +671,19 @@ focus_tree = {
 			411 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
-			set_temp_variable = { treasury_change = -7 }
+			set_temp_variable = { treasury_change = -1 }
 			modify_treasury_effect = yes
-			add_political_power = 50
+			add_political_power = 100
 		}
 		ai_will_do = {
 			factor = 1
 			modifier = {
 				factor = 0
-				check_variable = { treasury < 6.99 }
+				# check_variable = { treasury < 6.99 }
 			}
 		}
 	}
@@ -696,7 +696,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = AFG_civil_war
-		cost = 2
+		cost = 1
 
 		prerequisite = {
 			focus = AFG_civil_war
@@ -720,7 +720,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_foreign_equipment"
 			add_equipment_to_stockpile = {
 				type = infantry_weapons1
-				amount = 4000
+				amount = 5000
 				producer = SOV
 			}
 			set_temp_variable = { treasury_change = -1 }
@@ -777,12 +777,12 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_USA_equipment"
 			add_equipment_to_stockpile = {
 				type = command_control_equipment3
-				amount = 1000
+				amount = 1500
 				producer = USA
 			}
 			add_equipment_to_stockpile = {
 				type = infantry_weapons3
-				amount = 1000
+				amount = 5000
 				producer = USA
 			}
 			set_temp_variable = { treasury_change = -2 }
@@ -798,11 +798,11 @@ focus_tree = {
 
 			modifier = {
 				factor = 5
-				date > 2001.5.1
+				# date > 2001.5.1
 			}
 			modifier = {
 				factor = 0
-				check_variable = { interest_rate < 5.99 }
+				# check_variable = { interest_rate < 5.99 }
 			}
 		}
 	}
@@ -824,7 +824,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_cars_over_donkeys"
 			add_equipment_to_stockpile = {
 				type = util_vehicle_3
-				amount = 500
+				amount = 1000
 				producer = USA
 			}
 			set_temp_variable = { treasury_change = -3 }
@@ -839,7 +839,7 @@ focus_tree = {
 			factor = 1
 			modifier = {
 				factor = 0
-				check_variable = { treasury < 2.99 }
+				# check_variable = { treasury < 2.99 }
 			}
 		}
 	}
@@ -852,7 +852,7 @@ focus_tree = {
 		x = 5
 		y = 1
 		relative_position_id = AFG_civil_war
-		cost = 5
+		cost = 3
 
 		prerequisite = {
 			focus = AFG_civil_war
@@ -875,7 +875,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = AFG_minor_military_construction
-		cost = 6
+		cost = 3
 
 		prerequisite = {
 			focus = AFG_minor_military_construction
@@ -904,7 +904,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = AFG_minor_military_construction
-		cost = 7
+		cost = 3
 
 		prerequisite = {
 			focus = AFG_equipment_production
@@ -916,7 +916,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_large_equipment_production"
-			add_war_support = 0.08
+			add_war_support = 0.1
 			swap_ideas ={
 				remove_idea = AFG_idea_equipment_production
 				add_idea = AFG_idea_large_equipment_production
@@ -936,7 +936,7 @@ focus_tree = {
 		x = -1
 		y = 4
 		relative_position_id = AFG_minor_military_construction
-		cost = 10
+		cost = 5
 
 		prerequisite = {
 			focus = AFG_large_equipment_production
@@ -948,10 +948,10 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_huge_equipment_production"
 			add_war_support = 0.1
 			411 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -976,7 +976,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = AFG_infrastructure_equal_war
-		cost = 5
+		cost = 3
 
 		prerequisite = {
 			focus = AFG_infrastructure_equal_war
@@ -990,7 +990,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_adjusting_our_economy"
 			decrease_policing_budget = yes
 			increase_healthcare_budget = yes
-			add_political_power = 50
+			add_political_power = 100
 		}
 
 		ai_will_do = {
@@ -1006,7 +1006,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = AFG_infrastructure_equal_war
-		cost = 5
+		cost = 3
 
 		prerequisite = {
 			focus = AFG_adjusting_our_economy
@@ -1016,7 +1016,7 @@ focus_tree = {
 			decrease_policing_budget = yes
 			increase_education_budget = yes
 			increase_officer_training_level = yes
-			add_political_power = 50
+			add_political_power = 100
 		}
 
 		ai_will_do = {
@@ -1032,7 +1032,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = AFG_infrastructure_equal_war
-		cost = 5
+		cost = 3
 
 		prerequisite = {
 			focus = AFG_better_officers
@@ -1040,24 +1040,24 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_fuel_for_economy"
 			411 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = synthetic_refinery
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
 			decrease_corruption = yes
-			set_temp_variable = { treasury_change = -9 }
+			set_temp_variable = { treasury_change = -5 }
 			modify_treasury_effect = yes
-			add_political_power = 50
+			add_political_power = 100
 		}
 
 		ai_will_do = {
 			factor = 1
 			modifier = {
 				factor = 0
-				check_variable = { treasury < 8.99 }
+				# check_variable = { treasury < 8.99 }
 			}
 		}
 	}
@@ -1078,11 +1078,11 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_improving_our_economy"
 			increase_economic_growth = yes
-			set_temp_variable = { temp_opinion = 5 }
+			set_temp_variable = { temp_opinion = 10 }
 			change_international_bankers_opinion = yes
 			set_temp_variable = { percent_change = -1 }
 			change_domestic_influence_percentage = yes
-			add_political_power = 50
+			add_political_power = 100
 		}
 
 		ai_will_do = {
@@ -1098,7 +1098,7 @@ focus_tree = {
 		x = 7
 		y = 1
 		relative_position_id = AFG_civil_war
-		cost = 2
+		cost = 1
 
 		prerequisite = {
 			focus = AFG_civil_war
@@ -1113,8 +1113,8 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_loyal_guards"
-			add_manpower = 500
-			add_political_power = 50
+			add_manpower = 1000
+			add_political_power = 100
 			set_temp_variable = { treasury_change = -1 }
 			modify_treasury_effect = yes
 			custom_effect_tooltip = AFG_enhance_leader_protection_tt
@@ -1134,7 +1134,7 @@ focus_tree = {
 			}
 			modifier = {
 				factor = 0
-				check_variable = { treasury < 0.99 }
+				# check_variable = { treasury < 0.99 }
 			}
 		}
 	}
@@ -1147,7 +1147,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = AFG_loyal_guards
-		cost = 2
+		cost = 1
 
 		prerequisite = {
 			focus = AFG_loyal_guards
@@ -1161,8 +1161,8 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_elite_guards"
-			add_manpower = 1500
-			add_political_power = 50
+			add_manpower = 2000
+			add_political_power = 1000
 			set_temp_variable = { treasury_change = -2 }
 			modify_treasury_effect = yes
 			custom_effect_tooltip = AFG_further_enhance_leader_protection_tt
@@ -1182,7 +1182,7 @@ focus_tree = {
 			}
 			modifier = {
 				factor = 0
-				check_variable = { interest_rate < 5.99 }
+				# check_variable = { interest_rate < 5.99 }
 			}
 		}
 	}
@@ -1195,7 +1195,7 @@ focus_tree = {
 		x = 0
 		y = 7
 		relative_position_id = AFG_civil_war
-		cost = 5
+		cost = 3
 
 		prerequisite = {
 			focus = AFG_improving_our_economy
@@ -1230,7 +1230,7 @@ focus_tree = {
 				AFG_idea_enhanced_recruitment_efforts
 				AFG_idea_war_experience
 			}
-			add_political_power = 200
+			add_political_power = 300
 		}
 
 		ai_will_do = {
@@ -1247,7 +1247,7 @@ focus_tree = {
 		x = 20
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		prerequisite = {
 		}
@@ -1264,7 +1264,7 @@ focus_tree = {
 				limit = {
 					has_country_flag = afg_active_taliban_insurgency
 				}
-				set_temp_variable = { taliban_strength_decrease = 5 }
+				set_temp_variable = { taliban_strength_decrease = 10 }
 				decrease_taliban_strength = yes
 			}
 		}
@@ -1282,7 +1282,7 @@ focus_tree = {
 		x = -5
 		y = 1
 		relative_position_id = AFG_civil_war_recovery
-		cost = 10
+		cost = 5
 
 		prerequisite = {
 			focus = AFG_civil_war_recovery
@@ -1290,8 +1290,8 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_pleasing_the_ulema"
-			add_stability = 0.05
-			set_temp_variable = { temp_opinion = 5 }
+			add_stability = 0.1
+			set_temp_variable = { temp_opinion = 10 }
 			change_the_ulema_opinion = yes
 			if = {
 				limit = {
@@ -1315,17 +1315,17 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = AFG_pleasing_the_ulema
-		cost = 10
+		cost = 5
 
 		prerequisite = {
 			focus = AFG_pleasing_the_ulema
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_rebuild_mosques"
-			add_stability = 0.05
+			add_stability = 0.1
 			set_temp_variable = { treasury_change = -5 }
 			modify_treasury_effect = yes
-			set_temp_variable = { temp_opinion = 5 }
+			set_temp_variable = { temp_opinion = 10 }
 			change_the_ulema_opinion = yes
 			if = {
 				limit = {
@@ -1349,7 +1349,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = AFG_rebuild_mosques
-		cost = 10
+		cost = 5
 
 		prerequisite = {
 			focus = AFG_rebuild_mosques
@@ -1457,7 +1457,7 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = AFG_civil_war_recovery
-		cost = 10
+		cost = 5
 
 		prerequisite = {
 			focus = AFG_civil_war_recovery
@@ -1489,16 +1489,16 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = AFG_un_troops
-		cost = 7
+		cost = 5
 
 		prerequisite = {
 			focus = AFG_un_troops
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_relief_effort"
-			set_temp_variable = { treasury_change = 15 }
+			set_temp_variable = { treasury_change = 100 }
 			modify_treasury_effect = yes
-			add_stability = 0.05
+			add_stability = 0.1
 		}
 
 		ai_will_do = {
@@ -1514,7 +1514,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = AFG_un_troops
-		cost = 6
+		cost = 5
 
 		prerequisite = {
 			focus = AFG_relief_effort
@@ -1523,7 +1523,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_building_society"
 			increase_social_spending = yes
 			decrease_military_spending = yes
-			add_stability = 0.05
+			add_stability = 0.1
 			if = {
 				limit = {
 					has_country_flag = afg_active_taliban_insurgency
@@ -1546,7 +1546,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = AFG_un_troops
-		cost = 9
+		cost = 5
 
 		prerequisite = {
 			focus = AFG_building_society
@@ -1555,8 +1555,8 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_building_society"
 			increase_healthcare_budget = yes
-			add_stability = 0.05
-			add_manpower = 2500
+			add_stability = 0.1
+			add_manpower = 5000
 		}
 
 		ai_will_do = {
@@ -1572,7 +1572,7 @@ focus_tree = {
 		x = 0
 		y = 4
 		relative_position_id = AFG_un_troops
-		cost = 6
+		cost = 5
 
 		prerequisite = {
 			focus = AFG_wounded_veterans
@@ -1603,7 +1603,7 @@ focus_tree = {
 		x = 0
 		y = 5
 		relative_position_id = AFG_un_troops
-		cost = 12
+		cost = 5
 
 		prerequisite = {
 			focus = AFG_economic_recovery
@@ -1620,9 +1620,9 @@ focus_tree = {
 			force_update_dynamic_modifier = yes
 			remove_ideas = AFG_idea_UN_troops
 
-			set_temp_variable = { threat_change = -5 }
+			set_temp_variable = { threat_change = -10 }
 			modify_terror_threat_effect = yes
-			set_temp_variable = { rad_change = -5 }
+			set_temp_variable = { rad_change = -15 }
 			modify_radicalization_effect = yes
 		}
 
@@ -1649,7 +1649,7 @@ focus_tree = {
 			increase_economic_growth = yes
 			add_timed_idea = {
 				idea = mass_exports5
-				days = 365
+				days = 720
 			}
 		}
 		ai_will_do = {
@@ -1665,7 +1665,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = AFG_changing_our_economy
-		cost = 8
+		cost = 5
 
 		prerequisite = {
 			focus = AFG_changing_our_economy
@@ -1695,7 +1695,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = AFG_sticking_with_opium
-		cost = 10
+		cost = 5
 
 		prerequisite = {
 			focus = AFG_sticking_with_opium
@@ -1703,7 +1703,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_opium_barons"
-			set_temp_variable = { temp_opinion = 5 }
+			set_temp_variable = { temp_opinion = 10 }
 			change_farmers_opinion = yes
 			add_stability = -0.05
 			swap_ideas = {
@@ -1725,7 +1725,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = AFG_sticking_with_opium
-		cost = 10
+		cost = 5
 
 		prerequisite = {
 			focus = AFG_opium_barons
@@ -1738,7 +1738,7 @@ focus_tree = {
 			force_update_dynamic_modifier = yes
 			add_stability = -0.05
 			increase_economic_growth = yes
-			set_temp_variable = { treasury_change = 50 }
+			set_temp_variable = { treasury_change = 300 }
 			modify_treasury_effect = yes
 		}
 		ai_will_do = {
@@ -1754,7 +1754,7 @@ focus_tree = {
 		x = 1
 		y = 1
 	relative_position_id = AFG_changing_our_economy
-		cost = 12
+		cost = 5
 
 		prerequisite = {
 			focus = AFG_changing_our_economy
@@ -1773,10 +1773,10 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_industrial_economy"
 			411 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -1798,7 +1798,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = AFG_industrial_economy
-		cost = 12
+		cost = 5
 
 		prerequisite = {
 			focus = AFG_industrial_economy
@@ -1809,7 +1809,7 @@ focus_tree = {
 			every_owned_state = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -1838,7 +1838,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = AFG_industrial_economy
-		cost = 15
+		cost = 5
 
 		prerequisite = {
 			focus = AFG_focusing_on_infrastructure
@@ -1849,10 +1849,10 @@ focus_tree = {
 			set_variable = { AFG_export_var = 0 }
 			force_update_dynamic_modifier = yes
 			410 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -1882,8 +1882,8 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_tribes_or_cities"
-			add_political_power = 50
-			add_stability = 0.02
+			add_political_power = 100
+			add_stability = 0.05
 			add_war_support = -0.05
 		}
 
@@ -1900,7 +1900,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = AFG_tribes_or_cities
-		cost = 10
+		cost = 5
 
 		prerequisite = {
 			focus = AFG_tribes_or_cities
@@ -1918,7 +1918,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_the_mountains"
-			set_temp_variable = { temp_opinion = 5 }
+			set_temp_variable = { temp_opinion = 10 }
 			change_landowners_opinion = yes
 			add_ideas = AFG_idea_tribal_support_1
 			if = {
@@ -1940,7 +1940,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = AFG_the_mountains
-		cost = 10
+		cost = 5
 
 		prerequisite = {
 			focus = AFG_the_mountains
@@ -1948,16 +1948,16 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_the_rural_areas"
-			add_stability = 0.01
+			add_stability = 0.05
 			set_temp_variable = {treasury_change = -21 }
 			modify_treasury_effect = yes
 			every_owned_state = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 5
 			}
 			swap_ideas = {
 				remove_idea = AFG_idea_tribal_support_1
@@ -1979,7 +1979,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = AFG_the_rural_areas
-		cost = 10
+		cost = 5
 
 		prerequisite = {
 			focus = AFG_the_rural_areas
@@ -2019,7 +2019,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = AFG_tribes_or_cities
-		cost = 10
+		cost = 5
 
 		prerequisite = {
 			focus = AFG_tribes_or_cities
@@ -2046,10 +2046,10 @@ focus_tree = {
 				set_temp_variable = { temp_outlook_increase = 0.10 }
 				add_relative_party_popularity = yes
 				random_owned_controlled_state = {
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = industrial_complex
-						level = 1
+						level = 3
 						instant_build = yes
 					}
 				}
@@ -2060,7 +2060,7 @@ focus_tree = {
 				limit = {
 					has_country_flag = afg_active_taliban_insurgency
 				}
-				set_temp_variable = { taliban_strength_increase = 2 }
+				set_temp_variable = { taliban_strength_increase = 1 }
 				increase_taliban_strength = yes
 			}
 		}
@@ -2078,7 +2078,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = AFG_the_towns
-		cost = 15
+		cost = 5
 
 		prerequisite = {
 			focus = AFG_the_towns
@@ -2089,10 +2089,10 @@ focus_tree = {
 			410 = {
 				add_building_construction = {
 					type = offices
-					level = 1
+					level = 3
 					instant_build = yes
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 3
 			}
 			set_temp_variable = {treasury_change = -12 }
 			modify_treasury_effect = yes
@@ -2115,7 +2115,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = AFG_the_cities
-		cost = 20
+		cost = 5
 
 		prerequisite = {
 			focus = AFG_the_cities
@@ -2136,13 +2136,13 @@ focus_tree = {
 			414 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 3
 					instant_build = yes
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = offices
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -2162,7 +2162,7 @@ focus_tree = {
 		x = 7
 		y = 1
 		relative_position_id = AFG_civil_war_recovery
-		cost = 10
+		cost = 5
 
 		prerequisite = {
 			focus = AFG_civil_war_recovery
@@ -2197,7 +2197,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = AFG_getting_running_water
-		cost = 15
+		cost = 5
 
 		prerequisite = {
 			focus = AFG_getting_running_water
@@ -2213,25 +2213,11 @@ focus_tree = {
 			add_stability = 0.05
 			set_temp_variable = { treasury_change = -2 }
 			modify_treasury_effect = yes
-			hidden_effect = {
-				random_owned_controlled_state = {
-					remove_building = {
-						type = industrial_complex
-						level = 1
-					}
-				}
-				random_owned_controlled_state = {
-					remove_building = {
-						type = industrial_complex
-						level = 1
-					}
-				}
-			}
 			swap_ideas = {
 				remove_idea = agricultural_investments2
 				add_idea = agricultural_investments3
 			}
-			custom_effect_tooltip = AFG_feed_nation_tt
+			#custom_effect_tooltip = AFG_feed_nation_tt
 			if = {
 				limit = {
 					has_country_flag = afg_active_taliban_insurgency
@@ -2254,7 +2240,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = AFG_feed_the_nation
-		cost = 12
+		cost = 5
 
 		prerequisite = {
 			focus = AFG_feed_the_nation
@@ -2262,8 +2248,8 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_spread_electricity"
-			add_stability = 0.03
-			set_temp_variable = { treasury_change = -18 }
+			add_stability = 0.05
+			set_temp_variable = { treasury_change = -15 }
 			modify_treasury_effect = yes
 			every_owned_state = {
 				add_building_construction = {
@@ -2287,7 +2273,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = AFG_spread_electricity
-		cost = 12
+		cost = 5
 
 		prerequisite = {
 			focus = AFG_spread_electricity
@@ -2299,7 +2285,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_means_of_communication"
-			set_temp_variable = { treasury_change = -18 }
+			set_temp_variable = { treasury_change = -15 }
 			modify_treasury_effect = yes
 			every_owned_state = {
 				add_building_construction = {
@@ -2323,7 +2309,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = AFG_means_of_communication
-		cost = 12
+		cost = 5
 
 		prerequisite = {
 			focus = AFG_means_of_communication
@@ -2331,12 +2317,12 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_rebuild_the_roads"
-			set_temp_variable = { treasury_change = -21 }
+			set_temp_variable = { treasury_change = -20 }
 			modify_treasury_effect = yes
 			every_owned_state = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -2355,7 +2341,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = AFG_rebuild_the_roads
-		cost = 12
+		cost = 5
 
 		prerequisite = {
 			focus = AFG_rebuild_the_roads
@@ -2367,7 +2353,7 @@ focus_tree = {
 			force_update_dynamic_modifier = yes
 			add_timed_idea = {
 				idea = AFG_idea_recent_public_transportation
-				days = 700
+				days = 1826
 			}
 		}
 
@@ -2384,7 +2370,7 @@ focus_tree = {
 		x = 0
 		y = 7
 		relative_position_id = AFG_civil_war_recovery
-		cost = 10
+		cost = 5
 
 		prerequisite = {
 			focus = AFG_public_transportation
@@ -2417,7 +2403,7 @@ focus_tree = {
 			add_stability = 0.05
 			add_timed_idea = {
 				idea = AFG_idea_recovered_from_war
-				days = 730
+				days = 1826
 			}
 		}
 
@@ -2446,7 +2432,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_future_national_policy"
 			add_stability = -0.02
-			add_political_power = 50
+			add_political_power = 100
 		}
 
 		ai_will_do = {
@@ -2490,7 +2476,7 @@ focus_tree = {
 
 		x = -2
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = AFG_future_diplomacy
 		prerequisite = {
 			focus = AFG_future_diplomacy
@@ -2577,7 +2563,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = AFG_approaching_nato
-		cost = 10
+		cost = 5
 
 		prerequisite = {
 			focus = AFG_approaching_nato
@@ -2651,7 +2637,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = AFG_approaching_nato
-		cost = 10
+		cost = 5
 
 		prerequisite = {
 			focus = AFG_approaching_nato
@@ -2668,7 +2654,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_invite_western_investors"
-			set_temp_variable = { temp_opinion = 5 }
+			set_temp_variable = { temp_opinion = 10 }
 			change_international_bankers_opinion = yes
 			set_temp_variable = { temp_opinion = -5 }
 			change_industrial_conglomerates_opinion = yes
@@ -2700,7 +2686,7 @@ focus_tree = {
 
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = AFG_aspiring_nato
 
 		prerequisite = {
@@ -2748,7 +2734,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = AFG_future_diplomacy
 
 		prerequisite = {
@@ -2831,7 +2817,7 @@ focus_tree = {
 
 		x = 0
 		y = 3
-		cost = 10
+		cost = 5
 		relative_position_id = AFG_future_diplomacy
 
 		prerequisite = {
@@ -2868,7 +2854,7 @@ focus_tree = {
 
 		x = 0
 		y = 4
-		cost = 10
+		cost = 5
 		relative_position_id = AFG_future_diplomacy
 
 		prerequisite = {
@@ -2963,7 +2949,7 @@ focus_tree = {
 
 		x = 2
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = AFG_future_diplomacy
 		prerequisite = {
 			focus = AFG_future_diplomacy
@@ -3071,7 +3057,7 @@ focus_tree = {
 
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = AFG_emerging
 
 		prerequisite = {
@@ -3147,7 +3133,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = AFG_emerging
-		cost = 10
+		cost = 5
 
 		prerequisite = {
 			focus = AFG_emerging
@@ -3161,7 +3147,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus AFG_invite_eastern_investors"
-			set_temp_variable = { temp_opinion = 5 }
+			set_temp_variable = { temp_opinion = 10 }
 			change_international_bankers_opinion = yes
 			set_temp_variable = { temp_opinion = -5 }
 			change_industrial_conglomerates_opinion = yes
@@ -3199,7 +3185,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = AFG_join_SCO
-		cost = 10
+		cost = 5
 
 		prerequisite = {
 			focus = AFG_join_SCO
@@ -3248,7 +3234,7 @@ focus_tree = {
 
 		x = 7
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = AFG_future_national_policy
 
 		prerequisite = {
@@ -3275,7 +3261,7 @@ focus_tree = {
 
 		x = -5
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = AFG_internal_policy
 
 		prerequisite = {
@@ -3290,9 +3276,9 @@ focus_tree = {
 			focus = AFG_hezb_i_wahdat
 		}
 
-		available = {
-			nationalist > 0.05
-		}
+		# available = {
+		# 	nationalist > 0.05
+		# }
 
 		bypass = {
 			custom_trigger_tooltip = {
@@ -3308,7 +3294,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: AFG_monarchy"
 			add_popularity = {
 				ideology = nationalist
-				popularity = 0.1
+				popularity = 0.2
 			}
 			hidden_effect = {
 				set_temp_variable = { party_index = 23 }
@@ -3339,7 +3325,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = AFG_monarchy
 		prerequisite = {
 			focus = AFG_monarchy
@@ -3372,7 +3358,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = AFG_prepare_the_king
 		prerequisite = {
 			focus = AFG_prepare_the_king
@@ -3380,7 +3366,7 @@ focus_tree = {
 
 		available = {
 			custom_trigger_tooltip = {
-				check_variable = { party_pop_array^23 > 0.30 }
+				check_variable = { party_pop_array^23 > 0.20 }
 				tooltip = AFG_more_than_thirty_percent_monarchist_tt
 			}
 		}
@@ -3501,24 +3487,24 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = AFG_the_king_returns
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = AFG_the_king_returns
 		}
 
 		available = {
-			has_war = no
-			custom_trigger_tooltip = {
-				check_variable = { party_pop_array^23 > 0.50 }
-				tooltip = AFG_more_than_fifty_percent_monarchist_tt
-			}
+			# has_war = no
+			# custom_trigger_tooltip = {
+			# 	check_variable = { party_pop_array^23 > 0.50 }
+			# 	tooltip = AFG_more_than_fifty_percent_monarchist_tt
+			# }
 			has_country_flag = afg_taliban_insurgency_eliminated
 		}
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: AFG_restore_the_constitution"
 			add_political_power = 100
-			add_stability = 0.1
+			add_stability = 0.15
 			set_cosmetic_tag = AFG_NAT_monarchist
 			clr_country_flag = dynamic_flag
 			increase_economic_growth = yes
@@ -3555,7 +3541,7 @@ focus_tree = {
 
 		x = -3
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = AFG_internal_policy
 		prerequisite = {
 			focus = AFG_internal_policy
@@ -3569,12 +3555,12 @@ focus_tree = {
 			focus = AFG_hezb_i_wahdat
 		}
 
-		available = {
-			fascism > 0.20
-			NOT = {
-				has_completed_focus = AFG_the_mountains
-			}
-		}
+		# available = {
+		# 	fascism > 0.20
+		# 	NOT = {
+		# 		has_completed_focus = AFG_the_mountains
+		# 	}
+		# }
 
 		bypass = {
 			custom_trigger_tooltip = {
@@ -3706,7 +3692,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = AFG_pro_establishment
-		cost = 10
+		cost = 5
 
 		prerequisite = {
 			focus = AFG_pro_establishment
@@ -3721,9 +3707,9 @@ focus_tree = {
 				}
 			}
 			NOT = {
-				has_idea = paralyzing_corruption
-				has_idea = crippling_corruption
-				has_idea = rampant_corruption
+				# has_idea = paralyzing_corruption
+				# has_idea = crippling_corruption
+				# has_idea = rampant_corruption
 				has_idea = defence_01
 				has_idea = defence_02
 			}
@@ -3736,7 +3722,7 @@ focus_tree = {
 				remove_idea = landowners
 				add_idea = the_military
 			}
-			set_temp_variable = { temp_opinion = 5 }
+			set_temp_variable = { temp_opinion = 15 }
 			change_the_military_opinion = yes
 		}
 
@@ -3758,7 +3744,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = AFG_bring_military_to_our_side
-		cost = 10
+		cost = 5
 
 		prerequisite = {
 			focus = AFG_bring_military_to_our_side
@@ -3774,12 +3760,12 @@ focus_tree = {
 			}
 			has_idea = the_military
 			has_army_manpower = {
-				size > 300000
+				size > 200000
 			}
-			custom_trigger_tooltip = {
-				tooltip = AFG_hezb_i_islami_fifty_support_tt
-				check_variable = { party_pop_array^10 > 0.50 }
-			}
+			# custom_trigger_tooltip = {
+			# 	tooltip = AFG_hezb_i_islami_fifty_support_tt
+			# 	check_variable = { party_pop_array^10 > 0.50 }
+			# }
 		}
 
 		completion_reward = {
@@ -3836,7 +3822,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = AFG_secure_the_power
 
 		prerequisite = {
@@ -3852,16 +3838,16 @@ focus_tree = {
 					value = 10
 				}
 			}
-			custom_trigger_tooltip = {
-				tooltip = AFG_hezb_i_islami_seventy_five_support_tt
-				check_variable = { party_pop_array^10 > 0.75 }
-			}
+			# custom_trigger_tooltip = {
+			# 	tooltip = AFG_hezb_i_islami_seventy_five_support_tt
+			# 	check_variable = { party_pop_array^10 > 0.75 }
+			# }
 			has_country_flag = afg_taliban_insurgency_eliminated
 		}
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: AFG_declare_the_emirate"
-			add_political_power = 200
+			add_political_power = 400
 			set_cosmetic_tag = AFG_AUTH_S_fascism
 			clr_country_flag = dynamic_flag
 			remove_ideas = AFG_idea_tribal_culture
@@ -3879,7 +3865,7 @@ focus_tree = {
 
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = AFG_internal_policy
 		prerequisite = {
 			focus = AFG_internal_policy
@@ -3894,9 +3880,9 @@ focus_tree = {
 		}
 
 		available = {
-			NOT = {
-				has_completed_focus = AFG_the_towns
-			}
+			# NOT = {
+			# 	has_completed_focus = AFG_the_towns
+			# }
 			custom_trigger_tooltip = {
 				tooltip = AFG_jamiat_e_islami_in_power
 				is_in_array = {
@@ -3931,7 +3917,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = AFG_moderate_islamists
 		prerequisite = {
 			focus = AFG_moderate_islamists
@@ -3950,7 +3936,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: AFG_fight_corruption"
 			add_political_power = -150
-			add_stability = 0.03
+			add_stability = 0.05
 			decrease_corruption = yes
 			set_temp_variable = { temp_opinion = -5 }
 			change_oligarchs_opinion = yes
@@ -3968,7 +3954,7 @@ focus_tree = {
 
 		x = 0
 		y = 2
-		cost = 10
+		cost = 5
 		relative_position_id = AFG_moderate_islamists
 		prerequisite = {
 			focus = AFG_fight_corruption
@@ -4009,7 +3995,7 @@ focus_tree = {
 
 		x = 0
 		y = 3
-		cost = 10
+		cost = 5
 		relative_position_id = AFG_moderate_islamists
 		prerequisite = {
 			focus = AFG_decentralization
@@ -4024,10 +4010,10 @@ focus_tree = {
 					value = 12
 				}
 			}
-			custom_trigger_tooltip = {
-				tooltip = AFG_jamiat_i_islami_fifty_support_tt
-				check_variable = { party_pop_array^12 > 0.5 }
-			}
+			# custom_trigger_tooltip = {
+			# 	tooltip = AFG_jamiat_i_islami_fifty_support_tt
+			# 	check_variable = { party_pop_array^12 > 0.5 }
+			# }
 			has_country_flag = afg_taliban_insurgency_eliminated
 		}
 
@@ -4055,7 +4041,7 @@ focus_tree = {
 
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = AFG_internal_policy
 		prerequisite = {
 			focus = AFG_internal_policy
@@ -4070,13 +4056,13 @@ focus_tree = {
 		}
 
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = AFG_junbish_i_milli_in_power_tt
-				is_in_array = {
-					array = ruling_party
-					value = 6
-				}
-			}
+			# custom_trigger_tooltip = {
+			# 	tooltip = AFG_junbish_i_milli_in_power_tt
+			# 	is_in_array = {
+			# 		array = ruling_party
+			# 		value = 6
+			# 	}
+			# }
 			NOT = {
 				has_completed_focus = AFG_approaching_nato
 			}
@@ -4085,8 +4071,8 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: AFG_authortarian"
 			set_temp_variable = { party_index = 6 }
-			set_temp_variable = { party_popularity_increase = 0.1 }
-			set_temp_variable = { temp_outlook_increase = 0.1 }
+			set_temp_variable = { party_popularity_increase = 0.2 }
+			set_temp_variable = { temp_outlook_increase = 0.2 }
 			add_relative_party_popularity = yes
 			if = {
 				limit = {
@@ -4131,7 +4117,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = AFG_authortarian
 		prerequisite = { focus = AFG_authortarian }
 
@@ -4143,8 +4129,8 @@ focus_tree = {
 					value = 6
 				}
 			}
-			command_power > 60
-			has_political_power > 200
+			# command_power > 60
+			# has_political_power > 200
 		}
 
 		completion_reward = {
@@ -4190,7 +4176,7 @@ focus_tree = {
 
 		x = 0
 		y = 2
-		cost = 10
+		cost = 5
 		relative_position_id = AFG_authortarian
 		prerequisite = {
 			focus = AFG_helping_our_friends
@@ -4204,10 +4190,10 @@ focus_tree = {
 					value = 6
 				}
 			}
-			custom_trigger_tooltip = {
-				tooltip = AFG_junbish_i_milli_forty_support_tt
-				check_variable = { party_pop_array^6 > 0.4 }
-			}
+			# custom_trigger_tooltip = {
+			# 	# tooltip = AFG_junbish_i_milli_forty_support_tt
+			# 	# check_variable = { party_pop_array^6 > 0.4 }
+			# }
 		}
 
 		completion_reward = {
@@ -4242,7 +4228,7 @@ focus_tree = {
 
 		x = 0
 		y = 3
-		cost = 10
+		cost = 5
 		relative_position_id = AFG_authortarian
 		prerequisite = {
 			focus = AFG_secularism_campaign
@@ -4257,11 +4243,11 @@ focus_tree = {
 					value = 6
 				}
 			}
-			has_stability > 0.5
-			custom_trigger_tooltip = {
-				tooltip = AFG_junbish_i_milli_fifty_support_tt
-				check_variable = { party_pop_array^6 > 0.5 }
-			}
+			# has_stability > 0.5
+			# custom_trigger_tooltip = {
+			# 	tooltip = AFG_junbish_i_milli_fifty_support_tt
+			# 	check_variable = { party_pop_array^6 > 0.5 }
+			# }
 			has_country_flag = afg_taliban_insurgency_eliminated
 		}
 
@@ -4300,7 +4286,7 @@ focus_tree = {
 
 		x = 3
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = AFG_internal_policy
 		prerequisite = {
 			focus = AFG_internal_policy
@@ -4315,26 +4301,26 @@ focus_tree = {
 		}
 
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = AFG_afghan_independents_in_power_tt
-				is_in_array = {
-					array = ruling_party
-					value = 0
-				}
-			}
+			# custom_trigger_tooltip = {
+			# 	tooltip = AFG_afghan_independents_in_power_tt
+			# 	is_in_array = {
+			# 		array = ruling_party
+			# 		value = 0
+			# 	}
+			# }
 			NOT = {
 				has_completed_focus = AFG_emerging
 			}
-			NOT = {
-				has_completed_focus = AFG_industrial_economy
-			}
+			# NOT = {
+			# 	has_completed_focus = AFG_industrial_economy
+			# }
 		}
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: AFG_pro_western"
 			set_temp_variable = { party_index = 0 }
-			set_temp_variable = { party_popularity_increase = 0.1 }
-			set_temp_variable = { temp_outlook_increase = 0.1 }
+			set_temp_variable = { party_popularity_increase = 0.2 }
+			set_temp_variable = { temp_outlook_increase = 0.2 }
 			add_relative_party_popularity = yes
 		}
 
@@ -4355,7 +4341,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = AFG_pro_western
 		prerequisite = {
 			focus = AFG_pro_western
@@ -4419,7 +4405,7 @@ focus_tree = {
 
 		x = 0
 		y = 2
-		cost = 10
+		cost = 5
 		relative_position_id = AFG_pro_western
 		prerequisite = {
 			focus = AFG_supported_by_west
@@ -4460,7 +4446,7 @@ focus_tree = {
 
 		x = 0
 		y = 3
-		cost = 10
+		cost = 5
 		relative_position_id = AFG_pro_western
 		prerequisite = {
 			focus = AFG_increase_opium_trade
@@ -4480,7 +4466,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: AFG_afghan_independents"
 			increase_corruption = yes
-			add_political_power = 200
+			add_political_power = 300
 			swap_ideas = {
 				remove_idea = AFG_idea_tribal_culture
 				add_idea = AFG_idea_tribal_culture_s4
@@ -4532,7 +4518,7 @@ focus_tree = {
 
 		x = 5
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = AFG_internal_policy
 		prerequisite = {
 			focus = AFG_internal_policy
@@ -4546,10 +4532,10 @@ focus_tree = {
 			focus = AFG_pro_western
 		}
 
-		available = {
-			has_government = communism
-			communism > 0.5
-		}
+		# available = {
+		# 	has_government = communism
+		# 	communism > 0.5
+		# }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: AFG_afghan_independents"
@@ -4594,7 +4580,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = AFG_hezb_i_wahdat
 		prerequisite = {
 			focus = AFG_hezb_i_wahdat
@@ -4622,7 +4608,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = AFG_invite_fatemiyoun
 		prerequisite = {
 			focus = AFG_invite_fatemiyoun
@@ -4654,7 +4640,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = AFG_join_axis_of_resistance
 		prerequisite = {
 			focus = AFG_join_axis_of_resistance
@@ -4685,7 +4671,7 @@ focus_tree = {
 
 		x = 11
 		y = 7
-		cost = 10
+		cost = 5
 		prerequisite = {
 
 		}
@@ -4695,7 +4681,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_idea = intervention_neo_imperialism
+			# has_idea = intervention_neo_imperialism
 			has_country_flag = afg_taliban_insurgency_eliminated
 		}
 
@@ -4703,7 +4689,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: AFG_aggresive_foreign_policy"
 			add_ideas = AFG_idea_offensive_army
 			add_stability = -0.05
-			add_war_support = 0.05
+			add_war_support = 0.1
 		}
 
 		ai_will_do = {
@@ -4724,7 +4710,7 @@ focus_tree = {
 
 		x = -2
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = AFG_aggresive_foreign_policy
 		prerequisite = {
 			focus = AFG_aggresive_foreign_policy
@@ -4740,7 +4726,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = AFG_increased_mobilization
 				bonus = 0.5
-				uses = 2
+				uses = 3
 				technology = Network_Centric_Warfare
 			}
 			set_temp_variable = { treasury_change = -3.5 }
@@ -4760,7 +4746,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = AFG_increased_mobilization
-		cost = 10
+		cost = 5
 
 		prerequisite = {
 			focus = AFG_increased_mobilization
@@ -4782,7 +4768,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = AFG_afghan_sof
-				bonus = 0.5
+				bonus = 1
 				uses = 2
 				technology = special_forces
 			}
@@ -4802,7 +4788,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = AFG_increased_mobilization
 		prerequisite = {
 			focus = AFG_increased_mobilization
@@ -4824,7 +4810,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = AFG_mobile_units
-				bonus = 0.5
+				bonus = 1
 				uses = 2
 				category = Cat_UTIL
 			}
@@ -4845,7 +4831,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = AFG_mobile_units
-		cost = 10
+		cost = 5
 
 		prerequisite = { focus = AFG_mobile_units }
 		prerequisite = { focus = AFG_afghan_sof }
@@ -4862,13 +4848,13 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = AFG_armoured_units
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = Cat_IFV
 			}
 			add_tech_bonus = {
 				name = AFG_armoured_units
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = Cat_MBT
 			}
@@ -4879,14 +4865,14 @@ focus_tree = {
 				add_equipment_to_stockpile = {
 					type = mbt_hull_0
 					variant_name  = "T-62"
-					amount = 50
+					amount = 200
 					producer = SOV
 				}
 			}
 			else = {
 				add_equipment_to_stockpile = {
 					type = MBT_1
-					amount = 50
+					amount = 100
 					producer = SOV
 				}
 			}
@@ -4904,14 +4890,14 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = AFG_aggresive_foreign_policy
 		prerequisite = {
 			focus = AFG_aggresive_foreign_policy
 		}
 
 		available = {
-			has_idea = intervention_neo_imperialism
+			# has_idea = intervention_neo_imperialism
 			country_exists = PAK
 			PAK = {
 				OR = {
@@ -4991,7 +4977,7 @@ focus_tree = {
 
 		available = {
 			has_war = no
-			has_idea = intervention_neo_imperialism
+			# has_idea = intervention_neo_imperialism
 			arms_factory > 4
 			has_war_support > 0.5
 			country_exists = PAK
@@ -5033,7 +5019,7 @@ focus_tree = {
 			414 = {
 				add_building_construction = {
 					type = air_base
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -5063,7 +5049,7 @@ focus_tree = {
 			NOT = {
 				country_exists = TAL
 			}
-			has_idea = intervention_neo_imperialism
+			# has_idea = intervention_neo_imperialism
 			num_divisions > 30
 			country_exists = PAK
 			PAK = {
@@ -5123,7 +5109,7 @@ focus_tree = {
 		x = 2
 		y = 0
 		relative_position_id = AFG_aggresive_foreign_policy
-		cost = 10
+		cost = 5
 
 		mutually_exclusive = { focus = AFG_aggresive_foreign_policy }
 
@@ -5158,7 +5144,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = AFG_isolism
-		cost = 13
+		cost = 5
 
 		prerequisite = {
 			focus = AFG_isolism
@@ -5175,7 +5161,7 @@ focus_tree = {
 			411 = {
 				add_building_construction = {
 					type = bunker
-					level = 1
+					level = 3
 					province = 10826
 					instant_build = yes
 				}
@@ -5183,19 +5169,19 @@ focus_tree = {
 			414 = {
 				add_building_construction = {
 					type = bunker
-					level = 1
+					level = 3
 					province = 12831
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = bunker
-					level = 1
+					level = 3
 					province = 6114
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = bunker
-					level = 1
+					level = 3
 					province = 5082
 					instant_build = yes
 				}
@@ -5203,13 +5189,13 @@ focus_tree = {
 			415 = {
 				add_building_construction = {
 					type = bunker
-					level = 1
+					level = 3
 					province = 5064
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = bunker
-					level = 1
+					level = 3
 					province = 5020
 					instant_build = yes
 				}
@@ -5218,7 +5204,7 @@ focus_tree = {
 				limit = {
 					has_country_flag = afg_active_taliban_insurgency
 				}
-				set_temp_variable = { taliban_strength_decrease = 2 }
+				set_temp_variable = { taliban_strength_decrease = 5 }
 				decrease_taliban_strength = yes
 			}
 		}
@@ -5236,7 +5222,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = AFG_defending_our_borders
-		cost = 10
+		cost = 5
 
 		prerequisite = { focus = AFG_defending_our_borders }
 
@@ -5262,7 +5248,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = AFG_defensive_army
-		cost = 15
+		cost = 5
 
 		prerequisite = {
 			focus = AFG_defensive_army
@@ -5273,19 +5259,19 @@ focus_tree = {
 			409 = {
 				add_building_construction = {
 					type = bunker
-					level = 1
+					level = 3
 					province = 10476
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = bunker
-					level = 1
+					level = 3
 					province = 4893
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = bunker
-					level = 1
+					level = 3
 					province = 12871
 					instant_build = yes
 				}
@@ -5293,25 +5279,25 @@ focus_tree = {
 			410 = {
 				add_building_construction = {
 					type = bunker
-					level = 1
+					level = 3
 					province = 12314
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = bunker
-					level = 1
+					level = 3
 					province = 12248
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = bunker
-					level = 1
+					level = 3
 					province = 6186
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = bunker
-					level = 1
+					level = 3
 					province = 7584
 					instant_build = yes
 				}
@@ -5319,19 +5305,19 @@ focus_tree = {
 			411 = {
 				add_building_construction = {
 					type = bunker
-					level = 1
+					level = 3
 					province = 10826
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = bunker
-					level = 1
+					level = 3
 					province = 6209
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = bunker
-					level = 1
+					level = 3
 					province = 12653
 					instant_build = yes
 				}
@@ -5339,19 +5325,19 @@ focus_tree = {
 			414 = {
 				add_building_construction = {
 					type = bunker
-					level = 1
+					level = 3
 					province = 12831
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = bunker
-					level = 1
+					level = 3
 					province = 6114
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = bunker
-					level = 1
+					level = 3
 					province = 5082
 					instant_build = yes
 				}
@@ -5359,19 +5345,19 @@ focus_tree = {
 			415 = {
 				add_building_construction = {
 					type = bunker
-					level = 1
+					level = 3
 					province = 5064
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = bunker
-					level = 1
+					level = 3
 					province = 5020
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = bunker
-					level = 1
+					level = 3
 					province = 1948
 					instant_build = yes
 				}
@@ -5380,7 +5366,7 @@ focus_tree = {
 				limit = {
 					has_country_flag = afg_active_taliban_insurgency
 				}
-				set_temp_variable = { taliban_strength_decrease = 5 }
+				set_temp_variable = { taliban_strength_decrease = 10 }
 				decrease_taliban_strength = yes
 			}
 		}
@@ -5397,7 +5383,7 @@ focus_tree = {
 
 		x = 2
 		y = 1
-		cost = 8
+		cost = 5
 		relative_position_id = AFG_isolism
 		prerequisite = {
 			focus = AFG_isolism
@@ -5412,7 +5398,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = AFG_leg_infantry
 				uses = 1
-				bonus = 0.50
+				bonus = 1
 				category = Cat_INF_WEP
 			}
 		}
@@ -5430,7 +5416,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = AFG_leg_infantry
-		cost = 10
+		cost = 5
 
 		prerequisite = {
 			focus = AFG_leg_infantry
@@ -5453,8 +5439,8 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = AFG_army_engineer_school
-				bonus = 1.0
-				uses = 1
+				bonus = 0.5
+				uses = 3
 				technology = decentralized_warfare
 			}
 		}
@@ -5472,7 +5458,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = AFG_leg_infantry
-		cost = 12
+		cost = 5
 
 		prerequisite = {
 			focus = AFG_leg_infantry
@@ -5501,35 +5487,35 @@ focus_tree = {
 			409 = {
 				add_building_construction = {
 					type = anti_air_building
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			410 = {
 				add_building_construction = {
 					type = anti_air_building
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			411 = {
 				add_building_construction = {
 					type = anti_air_building
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			414 = {
 				add_building_construction = {
 					type = anti_air_building
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			415 = {
 				add_building_construction = {
 					type = anti_air_building
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -5557,7 +5543,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = AFG_army_engineer_school
-		cost = 10
+		cost = 5
 
 		prerequisite = { focus = AFG_army_engineer_school }
 		prerequisite = { focus = AFG_homeguard }
@@ -5571,7 +5557,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = AFG_superior_firepower
 				uses = 1
-				bonus = 0.50
+				bonus = 1
 				category = Cat_arty
 			}
 		}
@@ -5590,7 +5576,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = AFG_invade_pakistan
-		cost = 10
+		cost = 5
 
 		prerequisite = {
 			focus = AFG_the_swiss_way

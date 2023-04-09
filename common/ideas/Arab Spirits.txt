@@ -88,18 +88,18 @@ ideas = {
 				always = yes
 			}
 			cancel = {
-				check_variable = { population_tax_rate > 19 }
+				check_variable = { population_tax_rate > 40 }
 			}
 
 			modifier = {
 				production_speed_buildings_factor = -0.1
 				corruption_cost_factor = 0.5
 				economic_cycles_cost_factor = 0.25
-				political_power_gain = 0.25
+				political_power_gain = 0.5
 				drift_defence_factor = 0.25
-				local_resources = 0.25
-				resource_export_multiplier_modifier = 0.25
-				tax_rate_change_multiplier_modifier = 0.25
+				local_resources_factor = 0.5
+				resource_export_multiplier_modifier = 0.5
+				tax_rate_change_multiplier_modifier = 0.5
 			}
 		}
 
