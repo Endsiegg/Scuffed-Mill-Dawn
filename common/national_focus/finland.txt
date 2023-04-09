@@ -28,7 +28,7 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FIN_government_expansion"
-			add_political_power = 150
+			add_political_power = 250
 			#add_ideas = government_expansion3 Redo advisors
 		}
 
@@ -388,20 +388,20 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FIN_industrialize_turku"
-			set_temp_variable = { treasury_change = -7.5 }
+			set_temp_variable = { treasury_change = -22.5 }
 			modify_treasury_effect = yes
 			102 = {	#Uusimaa
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 3
 		}
 	}
 
@@ -427,20 +427,20 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FIN_industrialize_helsinki"
-			set_temp_variable = { treasury_change = -7.5 }
+			set_temp_variable = { treasury_change = -15 }
 			modify_treasury_effect = yes
 			102 = {	#Uusimaa
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 	}
 
@@ -1510,20 +1510,20 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FIN_military_production_in_helsinki"
-			set_temp_variable = { treasury_change = -7.5 }
+			set_temp_variable = { treasury_change = -15 }
 			modify_treasury_effect = yes
 			102 = {	#Uusimaa
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 	}
 
@@ -1651,20 +1651,20 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FIN_additional_military_factories"
-			set_temp_variable = { treasury_change = -7.5 }
+			set_temp_variable = { treasury_change = -22.5 }
 			modify_treasury_effect = yes
 			102 = {	#Uusimaa
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 3
 		}
 	}
 
@@ -1842,19 +1842,19 @@
 				add_equipment_to_stockpile = {
 					type = mbt_hull_1
 					variant_name = "Leopard 2A4"
-					amount = 200
+					amount = 270
 					producer = GER
 				}
 			}
 			else = {
 				add_equipment_to_stockpile = {
 					type = MBT_3
-					amount = 200
+					amount = 270
 					producer = GER
 				}
 			}
 
-			set_temp_variable = { treasury_change = -12 }
+			set_temp_variable = { treasury_change = -20 }
 			modify_treasury_effect = yes
 		}
 
@@ -2029,7 +2029,7 @@
 			NOT = { has_war_with = GER }
 			is_puppet = no
 			GER = { is_puppet = no }
-			GER = { has_government = nationalist }
+			
 		}
 
 		completion_reward = {
@@ -2041,8 +2041,8 @@
 				}
 			}
 			set_temp_variable = { party_index = 23 }
-			set_temp_variable = { party_popularity_increase = 0.1 }
-			set_temp_variable = { temp_outlook_increase = 0.1 }
+			set_temp_variable = { party_popularity_increase = 0.5 }
+			set_temp_variable = { temp_outlook_increase = 0.5 }
 			add_relative_party_popularity = yes
 		}
 
@@ -2440,7 +2440,7 @@
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FIN_secret_preparations_of_war_against_russia"
-			army_experience = 30
+			army_experience = 100
 			add_war_support = 0.05
 		}
 
