@@ -1,0 +1,78 @@
+###### airframes ######
+nat_ideas_airframes_1_available_click = {
+    set_country_flag = natideas_airframes_1_completed
+    add_ideas = natairframes_1
+    add_political_power = -100
+}
+nat_ideas_airframes_2_available_click = {
+    set_country_flag = natideas_airframes_2_completed
+    swap_ideas = {
+        remove_idea = natairframes_1
+        add_idea = natairframes_2
+    }
+    add_political_power = -100
+}
+nat_ideas_airframes_3_available_click = {
+    set_country_flag = natideas_airframes_3_completed
+    swap_ideas = {
+        remove_idea = natairframes_2
+        add_idea = natairframes_3
+    }
+    add_political_power = -100
+}
+nat_ideas_airframes_4_available_click = {
+    set_country_flag = natideas_airframes_4_completed
+    swap_ideas = {
+        remove_idea = natairframes_3
+        add_idea = natairframes_4
+    }
+    add_political_power = -100
+}
+nat_ideas_airframes_5_available_click = {
+    set_country_flag = natideas_airframes_5_completed
+    swap_ideas = {
+        remove_idea = natairframes_4
+        add_idea = natairframes_5
+    }
+    add_political_power = -100
+}
+nat_ideas_airframes_6_available_click = {
+    set_country_flag = natideas_airframes_6_completed
+    swap_ideas = {
+        remove_idea = natairframes_5
+        add_idea = natairframes_6
+    }
+    add_political_power = -100
+}
+nat_ideas_airframes_7_available_click = {
+    set_country_flag = natideas_airframes_7_completed
+    swap_ideas = {
+        remove_idea = natairframes_6
+        add_idea = natairframes_7
+    }
+    add_political_power = -100
+}
+nat_ideas_airframes_8_available_click = {
+    set_country_flag = natideas_airframes_8_completed
+    swap_ideas = {
+        remove_idea = natairframes_7
+        add_idea = natairframes_8
+    }
+    add_political_power = -100
+}
+nat_ideas_airframes_9_available_click = {
+    set_country_flag = natideas_airframes_9_completed
+    swap_ideas = {
+        remove_idea = natairframes_8
+        add_idea = natairframes_9
+    }
+    add_political_power = -100
+}
+nat_ideas_airframes_10_available_click = {
+    set_country_flag = natideas_airframes_10_completed
+    swap_ideas = {
+        remove_idea = natairframes_9
+        add_idea = natairframes_10
+    }
+    add_political_power = -100
+}
