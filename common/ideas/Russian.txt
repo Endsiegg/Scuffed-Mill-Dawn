@@ -23,6 +23,38 @@ ideas = {
 				drift_defence_factor = 0.75
 				democratic_drift = -0.2
 				nationalist_drift = -0.2
+				#communism_drift = 0.2
+				neutrality_drift = -0.2
+				
+			}
+		}
+		russian_legacy_f = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea russian_legacy" }
+			allowed = { original_tag = SOV }
+			allowed_civil_war = { always = yes }
+			picture = SOV_russian_legacy
+
+			modifier = {
+				drift_defence_factor = 0.75
+				democratic_drift = -0.2
+				communism_drift = -0.2
+				neutrality_drift = -0.2
+				nationalist_drift = 0.2
+				
+			}
+		}
+		russian_legacy_d = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea russian_legacy" }
+			allowed = { original_tag = SOV }
+			allowed_civil_war = { always = yes }
+			picture = SOV_russian_legacy
+
+			modifier = {
+				drift_defence_factor = 0.75
+				democratic_drift = 0.2
+				communism_drift = -0.2
+				nationalist_drift = -0.2
+				neutrality_drift = -0.2
 				
 			}
 		}
