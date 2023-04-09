@@ -1,0 +1,132 @@
+	
+	natidea_airframes_0 = {
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_airframes_1 = {
+		random = no
+		air_range_factor = 0.025
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_airframes_2 = {
+		random = no
+		air_range_factor = 0.025
+		ground_attack_factor = 0.05
+
+			ai_will_do = {
+			factor = 1
+		}
+	}
+
+	
+	natidea_airframes_3 = {
+		random = no
+		air_range_factor = 0.025
+		ground_attack_factor = 0.05
+		air_weather_penalty = -0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_airframes_4 = {
+		random = no
+		air_range_factor = 0.025
+		ground_attack_factor = 0.05
+		air_weather_penalty = -0.1
+		air_fuel_consumption_factor = -0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_airframes_5 = {
+		random = no
+		air_range_factor = 0.05
+		ground_attack_factor = 0.05
+		air_weather_penalty = -0.1
+		air_fuel_consumption_factor = -0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_airframes_6 = {
+		random = no
+		air_range_factor = 0.05
+		ground_attack_factor = 0.05
+		air_weather_penalty = -0.2
+		air_fuel_consumption_factor = -0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_airframes_7 = {
+		random = no
+		air_range_factor = 0.05
+		ground_attack_factor = 0.1
+		air_weather_penalty = -0.2
+		air_fuel_consumption_factor = -0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_airframes_8 = {
+		random = no
+		air_range_factor = 0.05
+		ground_attack_factor = 0.1
+		air_weather_penalty = -0.2
+		air_fuel_consumption_factor = -0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	natidea_airframes_9 = {
+		random = no
+		air_range_factor = 0.1
+		ground_attack_factor = 0.1
+		air_weather_penalty = -0.2
+		air_fuel_consumption_factor = -0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_airframes_10 = {
+		random = no
+		air_range_factor = 0.1
+		ground_attack_factor = 0.1
+		air_weather_penalty = -0.2
+		air_fuel_consumption_factor = -0.1
+					small_plane_airframe = {
+				instant = yes
+				build_cost_ic = -0.5
+			}
+		equipment_bonus = {
+
+			submarine = {
+				instant = yes
+				max_strength =0.5
+			}													
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}

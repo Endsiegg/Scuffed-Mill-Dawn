@@ -1,0 +1,433 @@
+				### Airframes ### airframes
+				containerWindowType = {
+					name = "nat_ideas_airframes_container"
+					position = { x=1613 y=5 }
+					size = { width = 176 height = 553 }
+					
+					instantTextboxType = {
+						name = "airframes_title"
+						position = { x=0 y=13 }
+						orientation = "UPPER_LEFT"
+						font = "hoi_24header"
+						text = "airframes"
+						maxWidth = 176
+						maxHeight = 23
+						format = center
+					}
+					
+					iconType = {
+						name ="airframes_bg_1"
+						spriteType = "GFX_nat_ideas_economic_bg_1"
+						position = { x=13 y=37 }
+					}
+					
+					iconType = {
+						name ="airframes_bg_2"
+						spriteType = "GFX_nat_ideas_economic_bg_2"
+						position = { x=13 y=35 }
+					}
+					
+					iconType = {
+						name ="airframes_bg_3"
+						spriteType = "GFX_nat_ideas_economic_bg_3"
+						position = { x=13 y=34 }
+					}
+					
+					iconType = {
+						name ="airframes_bg_4"
+						spriteType = "GFX_nat_ideas_economic_bg_4"
+						position = { x=13 y=33 }
+					}
+					
+					iconType = {
+						name ="airframes_bg_5"
+						spriteType = "GFX_nat_ideas_economic_bg_5"
+						position = { x=13 y=32 }
+					}
+					
+					iconType = {
+						name ="airframes_bg_6"
+						spriteType = "GFX_nat_ideas_economic_bg_6"
+						position = { x=13 y=29 }
+					}
+					
+					iconType = {
+						name ="airframes_bg_7"
+						spriteType = "GFX_nat_ideas_economic_bg_7"
+						position = { x=13 y=28 }
+					}
+					
+					iconType = {
+						name ="airframes_bg_8"
+						spriteType = "GFX_nat_ideas_economic_bg_8"
+						position = { x=13 y=26 }
+					}
+					
+					iconType = {
+						name ="airframes_bg_9"
+						spriteType = "GFX_nat_ideas_economic_bg_9"
+						position = { x=13 y=25 }
+					}
+					
+					iconType = {
+						name ="airframes_bg_10"
+						spriteType = "GFX_nat_ideas_economic_bg_10"
+						position = { x=13 y=25 }
+					}
+					
+					background = {
+						name = "airframes_border_Background"
+						quadTextureSprite ="GFX_fullborder_tiled"
+						position = { x=0 y=0 }					
+					}
+					#airframes | airframes | nat_ideas_airframes_1_tt
+					iconType = {
+						name = "nat_ideas_airframes_1_unavailable" 
+						position = {x=23 y=40}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_airframes_1_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_airframes_1_available" 
+						position = {x=23 y=40}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_airframes_1_tt"
+					}
+					iconType = {
+						name = "nat_ideas_airframes_1_completed" 
+						position = {x=23 y=40}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_airframes_1_tt"
+					}
+					iconType = {
+						name ="airframes_icon_1"
+						spriteType = "GFX_nat_ideas_airframes_icon"
+						position = { x=74 y=47 }
+						
+					}
+					instantTextboxType = {
+						name = "airframes_1"
+						position = {x=0 y=53}
+						font = "hoi_18mbs"
+						text = "Airframes I"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_airframes_2_unavailable" 
+						position = {x=23 y=90}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_airframes_2_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_airframes_2_available" 
+						position = {x=23 y=90}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_airframes_2_tt"
+					}
+					iconType = {
+						name = "nat_ideas_airframes_2_completed" 
+						position = {x=23 y=90}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_airframes_2_tt"
+					}
+					iconType = {
+						name ="airframes_icon_2"
+						spriteType = "GFX_nat_ideas_airframes_icon"
+						position = { x=74 y=97 }
+						
+					}
+					instantTextboxType = {
+						name = "airframes_2"
+						position = {x=0 y=103}
+						font = "hoi_18mbs"
+						text = "Airframes II"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_airframes_3_unavailable" 
+						position = {x=23 y=140}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_airframes_3_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_airframes_3_available" 
+						position = {x=23 y=140}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_airframes_3_tt"
+					}
+					iconType = {
+						name = "nat_ideas_airframes_3_completed" 
+						position = {x=23 y=140}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_airframes_3_tt"
+					}
+					iconType = {
+						name ="airframes_icon_3"
+						spriteType = "GFX_nat_ideas_airframes_icon"
+						position = { x=74 y=147 }
+						
+					}
+					instantTextboxType = {
+						name = "airframes_3"
+						position = {x=0 y=153}
+						font = "hoi_18mbs"
+						text = "Airframes III"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_airframes_4_unavailable" 
+						position = {x=23 y=190}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_airframes_4_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_airframes_4_available" 
+						position = {x=23 y=190}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_airframes_4_tt"
+					}
+					iconType = {
+						name = "nat_ideas_airframes_4_completed" 
+						position = {x=23 y=190}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_airframes_4_tt"
+					}
+					iconType = {
+						name ="airframes_icon_4"
+						spriteType = "GFX_nat_ideas_airframes_icon"
+						position = { x=74 y=197 }
+						
+					}
+					instantTextboxType = {
+						name = "airframes_4"
+						position = {x=0 y=203}
+						font = "hoi_18mbs"
+						text = "Airframes IV"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_airframes_5_unavailable" 
+						position = {x=23 y=240}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_airframes_5_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_airframes_5_available" 
+						position = {x=23 y=240}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_airframes_5_tt"
+					}
+					iconType = {
+						name = "nat_ideas_airframes_5_completed" 
+						position = {x=23 y=240}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_airframes_5_tt"
+					}
+					iconType = {
+						name ="airframes_icon_5"
+						spriteType = "GFX_nat_ideas_airframes_icon"
+						position = { x=74 y=247 }
+						
+					}
+					instantTextboxType = {
+						name = "airframes_5"
+						position = {x=0 y=253}
+						font = "hoi_18mbs"
+						text = "Airframes V"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_airframes_6_unavailable" 
+						position = {x=23 y=290}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_airframes_6_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_airframes_6_available" 
+						position = {x=23 y=290}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_airframes_6_tt"
+					}
+					iconType = {
+						name = "nat_ideas_airframes_6_completed" 
+						position = {x=23 y=290}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_airframes_6_tt"
+					}
+					iconType = {
+						name ="airframes_icon_6"
+						spriteType = "GFX_nat_ideas_airframes_icon"
+						position = { x=74 y=297 }
+						
+					}
+					instantTextboxType = {
+						name = "airframes_6"
+						position = {x=0 y=303}
+						font = "hoi_18mbs"
+						text = "Airframes VI"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_airframes_7_unavailable" 
+						position = {x=23 y=340}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_airframes_7_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_airframes_7_available" 
+						position = {x=23 y=340}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_airframes_7_tt"
+					}
+					iconType = {
+						name = "nat_ideas_airframes_7_completed" 
+						position = {x=23 y=340}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_airframes_7_tt"
+					}
+					iconType = {
+						name ="airframes_icon_7"
+						spriteType = "GFX_nat_ideas_airframes_icon"
+						position = { x=74 y=347 }
+						
+					}
+					instantTextboxType = {
+						name = "airframes_7"
+						position = {x=0 y=353}
+						font = "hoi_18mbs"
+						text = "Airframes VII"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_airframes_8_unavailable" 
+						position = {x=23 y=390}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_airframes_8_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_airframes_8_available" 
+						position = {x=23 y=390}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_airframes_8_tt"
+					}
+					iconType = {
+						name = "nat_ideas_airframes_8_completed" 
+						position = {x=23 y=390}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_airframes_8_tt"
+					}
+					iconType = {
+						name ="airframes_icon_8"
+						spriteType = "GFX_nat_ideas_airframes_icon"
+						position = { x=74 y=397 }
+						
+					}
+					instantTextboxType = {
+						name = "airframes_8"
+						position = {x=0 y=403}
+						font = "hoi_18mbs"
+						text = "Airframes VIII"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_airframes_9_unavailable" 
+						position = {x=23 y=440}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_airframes_9_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_airframes_9_available" 
+						position = {x=23 y=440}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_airframes_9_tt"
+					}
+					iconType = {
+						name = "nat_ideas_airframes_9_completed" 
+						position = {x=23 y=440}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_airframes_9_tt"
+					}
+					iconType = {
+						name ="airframes_icon_9"
+						spriteType = "GFX_nat_ideas_airframes_icon"
+						position = { x=74 y=447 }
+						
+					}
+					instantTextboxType = {
+						name = "airframes_9"
+						position = {x=0 y=453}
+						font = "hoi_18mbs"
+						text = "Airframes IX"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_airframes_10_unavailable" 
+						position = {x=23 y=490}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_airframes_10_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_airframes_10_available" 
+						position = {x=23 y=490}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_airframes_10_tt"
+					}
+					iconType = {
+						name = "nat_ideas_airframes_10_completed" 
+						position = {x=23 y=490}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_airframes_10_tt"
+					}
+					iconType = {
+						name ="airframes_icon_10"
+						spriteType = "GFX_nat_ideas_airframes_icon"
+						position = { x=74 y=497 }
+						
+					}
+					instantTextboxType = {
+						name = "airframes_10"
+						position = {x=0 y=503}
+						font = "hoi_18mbs"
+						text = "Airframes X"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+				}

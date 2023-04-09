@@ -1,0 +1,188 @@
+				################
+				###airframes 1###
+				nat_ideas_airframes_1_unavailable_visible = {
+					NOT = {
+						has_country_flag = natideas_airframes_1_completed
+					}
+					has_political_power < 100
+				}
+				nat_ideas_airframes_1_available_visible = {
+					NOT = {
+						has_country_flag = natideas_airframes_1_completed
+					}
+					has_political_power > 99
+				}
+				nat_ideas_airframes_1_completed_visible = {
+					has_country_flag = natideas_airframes_1_completed
+				}
+			###airframes 2###
+				nat_ideas_airframes_2_unavailable_visible = {
+					OR = {
+						NOT = {
+							has_country_flag = natideas_airframes_2_completed
+						}
+						has_political_power < 100
+					}
+				}
+				nat_ideas_airframes_2_available_visible = {
+					NOT = {
+						has_country_flag = natideas_airframes_2_completed
+					}
+					has_country_flag = natideas_airframes_1_completed
+					has_political_power > 99
+				}
+				nat_ideas_airframes_2_completed_visible = {
+					has_country_flag = natideas_airframes_2_completed
+				}
+			###airframes 3###
+				nat_ideas_airframes_3_unavailable_visible = {
+					OR = {
+						NOT = {
+							has_country_flag = natideas_airframes_3_completed
+						}
+						has_political_power < 100
+					}
+				}
+				nat_ideas_airframes_3_available_visible = {
+					NOT = {
+						has_country_flag = natideas_airframes_3_completed
+					}
+					has_country_flag = natideas_airframes_2_completed
+					has_political_power > 99
+				}
+				nat_ideas_airframes_3_completed_visible = {
+					has_country_flag = natideas_airframes_3_completed
+				}
+			###airframes 4###
+				nat_ideas_airframes_4_unavailable_visible = {
+					OR = {
+						NOT = {
+							has_country_flag = natideas_airframes_4_completed
+						}
+						has_political_power < 100
+					}
+				}
+				nat_ideas_airframes_4_available_visible = {
+					NOT = {
+						has_country_flag = natideas_airframes_4_completed
+					}
+					has_country_flag = natideas_airframes_3_completed
+					has_political_power > 99
+				}
+				nat_ideas_airframes_4_completed_visible = {
+					has_country_flag = natideas_airframes_4_completed
+				}
+			###airframes 5###
+				nat_ideas_airframes_5_unavailable_visible = {
+					OR = {
+						NOT = {
+							has_country_flag = natideas_airframes_5_completed
+						}
+						has_political_power < 100
+					}
+				}
+				nat_ideas_airframes_5_available_visible = {
+					NOT = {
+						has_country_flag = natideas_airframes_5_completed
+					}
+					has_country_flag = natideas_airframes_4_completed
+					has_political_power > 99
+				}
+				nat_ideas_airframes_5_completed_visible = {
+					has_country_flag = natideas_airframes_5_completed
+				}
+			###airframes 6###
+				nat_ideas_airframes_6_unavailable_visible = {
+					OR = {
+						NOT = {
+							has_country_flag = natideas_airframes_6_completed
+						}
+						has_political_power < 100
+					}
+				}
+				nat_ideas_airframes_6_available_visible = {
+					NOT = {
+						has_country_flag = natideas_airframes_6_completed
+					}
+					has_country_flag = natideas_airframes_5_completed
+					has_political_power > 99
+				}
+				nat_ideas_airframes_6_completed_visible = {
+					has_country_flag = natideas_airframes_6_completed
+				}
+			###airframes 7###
+				nat_ideas_airframes_7_unavailable_visible = {
+					OR = {
+						NOT = {
+							has_country_flag = natideas_airframes_7_completed
+						}
+						has_political_power < 100
+					}
+				}
+				nat_ideas_airframes_7_available_visible = {
+					NOT = {
+						has_country_flag = natideas_airframes_7_completed
+					}
+					has_country_flag = natideas_airframes_6_completed
+					has_political_power > 99
+				}
+				nat_ideas_airframes_7_completed_visible = {
+					has_country_flag = natideas_airframes_7_completed
+				}
+			###airframes 8###
+				nat_ideas_airframes_8_unavailable_visible = {
+					OR = {
+						NOT = {
+							has_country_flag = natideas_airframes_8_completed
+						}
+						has_political_power < 100
+					}
+				}
+				nat_ideas_airframes_8_available_visible = {
+					NOT = {
+						has_country_flag = natideas_airframes_8_completed
+					}
+					has_country_flag = natideas_airframes_7_completed
+					has_political_power > 99
+				}
+				nat_ideas_airframes_8_completed_visible = {
+					has_country_flag = natideas_airframes_8_completed
+				}
+			###airframes 9###
+				nat_ideas_airframes_9_unavailable_visible = {
+					OR = {
+						NOT = {
+							has_country_flag = natideas_airframes_9_completed
+						}
+						has_political_power < 100
+					}
+				}
+				nat_ideas_airframes_9_available_visible = {
+					NOT = {
+						has_country_flag = natideas_airframes_9_completed
+					}
+					has_country_flag = natideas_airframes_8_completed
+					has_political_power > 99
+				}
+				nat_ideas_airframes_9_completed_visible = {
+					has_country_flag = natideas_airframes_9_completed
+				}
+			###airframes 10###
+				nat_ideas_airframes_10_unavailable_visible = {
+					OR = {
+						NOT = {
+							has_country_flag = natideas_airframes_10_completed
+						}
+						has_political_power < 100
+					}
+				}
+				nat_ideas_airframes_10_available_visible = {
+					NOT = {
+						has_country_flag = natideas_airframes_10_completed
+					}
+					has_country_flag = natideas_airframes_9_completed
+					has_political_power > 99
+				}
+				nat_ideas_airframes_10_completed_visible = {
+					has_country_flag = natideas_airframes_10_completed
+				}

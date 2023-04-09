@@ -1574,9 +1574,9 @@ ideas = {
 				conscription = 0.025
 				army_morale_factor = 0.10
 				army_org_factor = 0.10
-				experience_gain_army = 0.06
-				experience_gain_navy = 0.03
-				experience_gain_air = 0.03
+				experience_gain_army = 0.3
+				experience_gain_navy = 0.3
+				experience_gain_air = 0.3
 				personnel_cost_multiplier_modifier = 0.80
 			}
 
@@ -1712,15 +1712,15 @@ ideas = {
 			}
 
 			modifier = {
-				conscription = 0.0325
+				conscription = 0.05
 				army_attack_factor = -0.05
-				army_core_attack_factor = 0.05
+				army_core_attack_factor = 0.1
 				army_defence_factor = -0.05
-				army_core_defence_factor = 0.05
+				army_core_defence_factor = 0.1
 				training_time_factor = -0.10
-				experience_gain_army = 0.04
-				experience_gain_navy = 0.02
-				experience_gain_air = 0.02
+				experience_gain_army = 0.1
+				experience_gain_navy = 0.1
+				experience_gain_air = 0.1
 				personnel_cost_multiplier_modifier = 0.40
 			}
 
@@ -1814,17 +1814,17 @@ ideas = {
 			}
 
 			modifier = {
-				conscription = 0.04
+				conscription = 0.08
 				army_morale_factor = -0.10
 				army_org_factor = -0.10
-				army_attack_factor = -0.20
+				army_attack_factor = -0.10
 				army_core_attack_factor = 0.20
-				army_defence_factor = -0.20
+				army_defence_factor = -0.10
 				army_core_defence_factor = 0.20
 				training_time_factor = -0.20
-				experience_gain_army = 0.02
-				experience_gain_navy = 0.01
-				experience_gain_air = 0.01
+				experience_gain_army = 0.05
+				experience_gain_navy = 0.05
+				experience_gain_air = 0.05
 			}
 
 			ai_will_do = {
@@ -1933,8 +1933,8 @@ ideas = {
 			level = 1
 
 			modifier = {
-				conscription_factor = 0.00
-				production_speed_buildings_factor = 0.15
+				conscription_factor = -0.01
+				production_speed_buildings_factor = 0.2
 			}
 
 			ai_will_do = {
@@ -1990,8 +1990,8 @@ ideas = {
 			level = 1
 
 			modifier = {
-				conscription = 0.004
-				monthly_population = -0.05
+				conscription = 0.02
+				monthly_population = -0.1
 				production_speed_buildings_factor = 0.10
 				special_forces_cap = -0.05
 			}
@@ -2051,9 +2051,9 @@ ideas = {
 			level = 1
 
 			modifier = {
-				conscription = 0.02
-				monthly_population = -0.15
-				special_forces_cap = -0.15
+				conscription = 0.04
+				monthly_population = -0.2
+				special_forces_cap = -0.1
 			}
 
 			ai_will_do = {
@@ -2123,6 +2123,7 @@ ideas = {
 				send_volunteers_tension = 0.50
 				guarantee_tension = 0.60
 				join_faction_tension = 0.80
+				justify_war_goal_time = 1.00
 				generate_wargoal_tension = 0.95
 			}
 
@@ -2178,6 +2179,7 @@ ideas = {
 				send_volunteers_tension = 0.30
 				guarantee_tension = 0.40
 				join_faction_tension = 0.60
+				justify_war_goal_time = -0.20
 				generate_wargoal_tension = 0.75
 			}
 
@@ -2235,6 +2237,7 @@ ideas = {
 				send_volunteers_tension = 0.20
 				guarantee_tension = 0.30
 				join_faction_tension = 0.45
+				justify_war_goal_time = -0.40
 				generate_wargoal_tension = 0.55
 			}
 
@@ -2287,6 +2290,7 @@ ideas = {
 				send_volunteers_tension = 0.10
 				guarantee_tension = 0.20
 				join_faction_tension = 0.25
+				justify_war_goal_time = -0.60
 				generate_wargoal_tension = 0.35
 			}
 
@@ -2339,6 +2343,7 @@ ideas = {
 				send_volunteers_tension = 0.05
 				guarantee_tension = 0.10
 				join_faction_tension = 0.15
+				justify_war_goal_time = -0.80
 				generate_wargoal_tension = 0.15
 			}
 
@@ -2388,6 +2393,7 @@ ideas = {
 				send_volunteers_tension = 0.0
 				guarantee_tension = 0.0
 				join_faction_tension = 0.0
+				justify_war_goal_time = -1.50
 				generate_wargoal_tension = 0.0
 			}
 
@@ -2509,10 +2515,10 @@ ideas = {
 				army_leader_start_level = 0
 				navy_leader_start_level = 0
 				command_power_gain_mult = 0.05
-				max_command_power = -10
-				experience_gain_army = 0.00
-				experience_gain_navy = 0.00
-				experience_gain_air = 0.00
+				max_command_power = 10
+				experience_gain_army = 0.05
+				experience_gain_navy = 0.05
+				experience_gain_air = 0.05
 				special_forces_cap = 0.1
 				personnel_cost_multiplier_modifier = 0.05
 			}
@@ -2565,11 +2571,11 @@ ideas = {
 				military_leader_cost_factor = 0
 				army_leader_start_level = 1
 				navy_leader_start_level = 1
-				command_power_gain_mult = 0.1
-				max_command_power = -20
-				experience_gain_army = 0.01
-				experience_gain_navy = 0.01
-				experience_gain_air = 0.01
+				command_power_gain_mult = 0.2
+				max_command_power = 20
+				experience_gain_army = 0.10
+				experience_gain_navy = 0.10
+				experience_gain_air = 0.10
 				special_forces_cap = 0.2
 				personnel_cost_multiplier_modifier = 0.10
 			}
@@ -2622,11 +2628,11 @@ ideas = {
 				military_leader_cost_factor = 0.3
 				army_leader_start_level = 2
 				navy_leader_start_level = 2
-				command_power_gain_mult = 0.15
-				max_command_power = -30
-				experience_gain_army = 0.02
-				experience_gain_navy = 0.02
-				experience_gain_air = 0.02
+				command_power_gain_mult = 0.4
+				max_command_power = 30
+				experience_gain_army = 0.2
+				experience_gain_navy = 0.2
+				experience_gain_air = 0.2
 				special_forces_cap = 0.3
 				personnel_cost_multiplier_modifier = 0.15
 			}
@@ -2679,10 +2685,10 @@ ideas = {
 				army_leader_start_level = 3
 				navy_leader_start_level = 3
 				command_power_gain_mult = 0.20
-				max_command_power = -40
-				experience_gain_army = 0.03
-				experience_gain_navy = 0.03
-				experience_gain_air = 0.03
+				max_command_power = 40
+				experience_gain_army = 0.4
+				experience_gain_navy = 0.4
+				experience_gain_air = 0.4
 				special_forces_cap = 0.4
 				personnel_cost_multiplier_modifier = 0.20
 			}
@@ -2737,11 +2743,11 @@ ideas = {
 				military_leader_cost_factor = 1.00
 				army_leader_start_level = 4
 				navy_leader_start_level = 4
-				command_power_gain_mult = 0.25
-				max_command_power = -50
-				experience_gain_army = 0.04
-				experience_gain_navy = 0.04
-				experience_gain_air = 0.04
+				command_power_gain_mult = 0.5
+				max_command_power = 50
+				experience_gain_army = 0.7
+				experience_gain_navy = 0.7
+				experience_gain_air = 0.7
 				special_forces_cap = 0.5
 				personnel_cost_multiplier_modifier = 0.25
 			}

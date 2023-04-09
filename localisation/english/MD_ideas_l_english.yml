@@ -422,6 +422,12 @@
  russian_legacy: "Russian Legacy"
  russian_legacy_desc: "For centuries, Russia has been walking its own path from the rest of the world, and rarely taken steps to align to anyone but themselves. Often under autocratic rule, and with a conservative population, changing Russia is a slow process."
 
+russian_legacy_f: "Russian Empire"
+ russian_legacy_desc: "For centuries, Russia has been walking its own path from the rest of the world, and rarely taken steps to align to anyone but themselves. But now the rise of nationislm has taken hold as the dominate way of thought in Russia."
+
+russian_legacy_d: "Russian Liberty"
+ russian_legacy_desc: "For centuries, Russia has been walking its own path from the rest of the world, and rarely taken steps to align to anyone but themselves. Often under autocratic rule, Russians have found themselves with a new found sense of liberty and freedom from traditional autocratic rule, change in Russia is a coming."
+
  #Africa
  kamajors: "Kamajors"
  kamajors_desc: "The Kamajors were a Mende militia operating in Sierra Leone during its civil war. The group originally formed to serve as a militia in order to protect villages from the RUF rebels. However, they were known for fighting the government's troops as well, in order to protect villages from looting army soldiers."

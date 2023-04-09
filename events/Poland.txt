@@ -17,9 +17,9 @@ country_event = {
 	option = {
 		name = poland.5.a
 		log = "[GetDateText]: [This.GetName]: poland.5.a executed"
-		army_experience = 50
-		air_experience = 50
-		add_political_power = 75
+		army_experience = 200
+		air_experience = 200
+		add_political_power = 200
 	}
 }
 

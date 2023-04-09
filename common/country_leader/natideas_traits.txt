@@ -1,0 +1,1598 @@
+leader_traits = {
+
+### NATIDEA TRAITS ###
+	
+	### ECONOMIC ###
+	natidea_economic_0 = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_economic_1 = {
+		random = no
+		industrial_capacity_factory = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_economic_2 = {
+		random = no
+		industrial_capacity_factory = 0.1
+		production_speed_buildings_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_economic_3 = {
+		random = no
+		industrial_capacity_factory = 0.1
+		production_speed_buildings_factor = 0.1
+		local_resources_factor = 0.2
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_economic_4 = {
+		random = no
+		industrial_capacity_factory = 0.2
+		production_speed_buildings_factor = 0.1
+		local_resources_factor = 0.2
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_economic_5 = {
+		random = no
+		industrial_capacity_factory = 0.2
+		production_speed_buildings_factor = 0.2
+		local_resources_factor = 0.2
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_economic_6 = {
+		random = no
+		industrial_capacity_factory = 0.2
+		production_speed_buildings_factor = 0.2
+		local_resources_factor = 0.4
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_economic_7 = {
+		random = no
+		industrial_capacity_factory = 0.3
+		production_speed_buildings_factor = 0.2
+		local_resources_factor = 0.4
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_economic_8 = {
+		random = no
+		industrial_capacity_factory = 0.3
+		production_speed_buildings_factor = 0.2
+		local_resources_factor = 0.6
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_economic_9 = {
+		random = no
+		industrial_capacity_factory = 0.3
+		production_speed_buildings_factor = 0.2
+		local_resources_factor = 0.6
+		industry_repair_factor = 0.3
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_economic_10 = {
+		random = no
+		industrial_capacity_factory = 0.3
+		production_speed_buildings_factor = 0.2
+		local_resources_factor = 0.6
+		industry_repair_factor = 0.3
+		consumer_goods_factor = -0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	### EXPANSION ###
+	natidea_expansion_0 = {
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_expansion_1 = {
+		random = no
+		line_change_production_efficiency_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_expansion_2 = {
+		random = no
+		line_change_production_efficiency_factor = 0.1
+		global_building_slots_factor = 0.2
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_expansion_3 = {
+		random = no
+		line_change_production_efficiency_factor = 0.1
+		production_factory_efficiency_gain_factor = 0.1
+		global_building_slots_factor = 0.2
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_expansion_4 = {
+		random = no
+		line_change_production_efficiency_factor = 0.1
+		production_factory_efficiency_gain_factor = 0.1
+		global_building_slots_factor = 0.2
+		industry_air_damage_factor = -0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_expansion_5 = {
+		random = no
+		line_change_production_efficiency_factor = 0.1
+		production_factory_efficiency_gain_factor = 0.1
+		global_building_slots_factor = 0.4
+		industry_air_damage_factor = -0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_expansion_6 = {
+		random = no
+		line_change_production_efficiency_factor = 0.1
+		production_factory_efficiency_gain_factor = 0.2
+		global_building_slots_factor = 0.4
+		industry_air_damage_factor = -0.1
+
+		
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_expansion_7 = {
+		random = no
+		line_change_production_efficiency_factor = 0.1
+		production_factory_efficiency_gain_factor = 0.2
+		production_factory_max_efficiency_factor = 0.1
+		global_building_slots_factor = 0.4
+		industry_air_damage_factor = -0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_expansion_8 = {
+		random = no
+		line_change_production_efficiency_factor = 0.1
+		production_factory_efficiency_gain_factor = 0.2
+		production_factory_max_efficiency_factor = 0.1
+		global_building_slots_factor = 0.6
+		industry_air_damage_factor = -0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_expansion_9 = {
+		random = no
+		line_change_production_efficiency_factor = 0.1
+		production_factory_efficiency_gain_factor = 0.2
+		production_factory_max_efficiency_factor = 0.2
+		global_building_slots_factor = 0.6
+		industry_air_damage_factor = -0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_expansion_10 = {
+		random = no
+		line_change_production_efficiency_factor = 0.1
+		production_factory_efficiency_gain_factor = 0.2
+		production_factory_max_efficiency_factor = 0.2
+		global_building_slots_factor = 0.8
+		industry_air_damage_factor = -0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	### INNOVATION ###
+	natidea_innovation_0 = {
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_innovation_1 = {
+		random = no
+		research_speed_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_innovation_2 = {
+		random = no
+		research_speed_factor = 0.05
+		production_speed_rocket_site_factor = 0.2
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_innovation_3 = {
+		random = no
+		research_speed_factor = 0.05
+		production_speed_rocket_site_factor = 0.2
+		production_lack_of_resource_penalty_factor = -0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_innovation_4 = {
+		random = no
+		research_speed_factor = 0.05
+		production_speed_rocket_site_factor = 0.2
+		production_lack_of_resource_penalty_factor = -0.1
+		fuel_gain_factor = 0.2
+		fuel_gain_factor_from_states = 0.2
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_innovation_5 = {
+		random = no
+		research_speed_factor = 0.1
+		production_speed_rocket_site_factor = 0.2
+		production_speed_nuclear_reactor_factor = 0.1
+		production_lack_of_resource_penalty_factor = -0.1
+		fuel_gain_factor = 0.2
+		fuel_gain_factor_from_states = 0.2
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_innovation_6 = {
+		random = no
+		research_speed_factor = 0.1
+		production_speed_rocket_site_factor = 0.2
+		production_speed_nuclear_reactor_factor = 0.2
+		production_lack_of_resource_penalty_factor = -0.1
+		fuel_gain_factor = 0.2
+		fuel_gain_factor_from_states = 0.2
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_innovation_7 = {
+		random = no
+		research_speed_factor = 0.1
+		production_speed_rocket_site_factor = 0.2
+		production_speed_nuclear_reactor_factor = 0.2
+		production_lack_of_resource_penalty_factor = -0.2
+		fuel_gain_factor = 0.2
+		fuel_gain_factor_from_states = 0.2
+		equipment_bonus = {
+			guided_missile_equipment = {
+				instant = yes
+				build_cost_ic = -0.2
+			}			
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_innovation_8 = {
+		random = no
+		research_speed_factor = 0.1
+		production_speed_rocket_site_factor = 0.2
+		production_speed_nuclear_reactor_factor = 0.2
+		production_lack_of_resource_penalty_factor = -0.2
+		fuel_gain_factor = 0.2
+		fuel_gain_factor_from_states = 0.2
+		equipment_bonus = {
+			guided_missile_equipment = {
+				instant = yes
+				build_cost_ic = -0.2
+			}			
+		}
+
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_innovation_9 = {
+		random = no
+		research_speed_factor = 0.1
+		production_speed_rocket_site_factor = 0.2
+		production_speed_nuclear_reactor_factor = 0.2
+		production_lack_of_resource_penalty_factor = -0.2
+		fuel_gain_factor = 0.2
+		fuel_gain_factor_from_states = 0.2
+		nuclear_production_factor = 0.2
+		equipment_bonus = {
+			guided_missile_equipment = {
+				instant = yes
+				build_cost_ic = -0.2
+			}			
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_innovation_10 = {
+		random = no
+		research_speed_factor = 0.2
+		production_speed_rocket_site_factor = 0.2
+		production_speed_nuclear_reactor_factor = 0.2
+		production_lack_of_resource_penalty_factor = -0.2
+		fuel_gain_factor = 0.2
+		fuel_gain_factor_from_states = 0.2
+		nuclear_production_factor = 0.2
+		equipment_bonus = {
+			guided_missile_equipment = {
+				instant = yes
+				build_cost_ic = -0.2
+			}			
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	### DIPLOMATIC ###
+	natidea_diplomatic_0 = {
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_diplomatic_1 = {
+		random = no
+		political_power_gain = 0.25
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	natidea_diplomatic_2 = {
+		random = no
+		political_power_gain = 0.25
+		agency_upgrade_time  = -0.15
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_diplomatic_3 = {
+		random = no
+		political_power_gain = 0.25
+		agency_upgrade_time  = -0.15
+		stability_weekly = 0.001
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_diplomatic_4 = {
+		random = no
+		political_power_gain = 0.25
+		stability_weekly = 0.001
+		agency_upgrade_time  = -0.30
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_diplomatic_5 = {
+		random = no
+		political_power_gain = 0.5
+		stability_weekly = 0.001
+		agency_upgrade_time  = -0.30
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_diplomatic_6 = {
+		random = no
+		political_power_gain = 0.5
+		stability_weekly = 0.001
+		operative_slot  = 2
+		agency_upgrade_time  = -0.30
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_diplomatic_7 = {
+		random = no
+		political_power_gain = 0.5
+		war_support_weekly = 0.001
+		stability_weekly = 0.001
+		agency_upgrade_time  = -0.30
+		operative_slot  = 2
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_diplomatic_8 = {
+		random = no
+		political_power_gain = 0.5
+		high_command_cost_factor = -0.1
+		army_chief_cost_factor = -0.1
+		navy_chief_cost_factor = -0.1
+		air_chief_cost_factor = -0.1
+		theorist_cost_factor = -0.1
+		war_support_weekly = 0.001
+		stability_weekly = 0.001
+		agency_upgrade_time  = -0.30
+		operative_slot  = 2
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_diplomatic_9 = {
+		random = no
+		political_power_gain = 0.5
+		high_command_cost_factor = -0.1
+		army_chief_cost_factor = -0.1
+		navy_chief_cost_factor = -0.1
+		air_chief_cost_factor = -0.1
+		theorist_cost_factor = -0.1
+		war_support_weekly = 0.001
+		stability_weekly = 0.001
+		agency_upgrade_time  = -0.30
+		operative_slot  = 2
+		subjects_autonomy_gain = -5
+		autonomy_gain = 5
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_diplomatic_9_subject = {
+		random = no
+		political_power_gain = 0.5
+		high_command_cost_factor = -0.1
+		army_chief_cost_factor = -0.1
+		navy_chief_cost_factor = -0.1
+		air_chief_cost_factor = -0.1
+		theorist_cost_factor = -0.1
+		war_support_weekly = 0.001
+		stability_weekly = 0.001
+		agency_upgrade_time  = -0.30
+		operative_slot  = 2
+		subjects_autonomy_gain = -5
+		autonomy_gain = 5
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natdiplomatic_9_dominion = {
+		random = no
+		political_power_gain = 0.5
+		high_command_cost_factor = -0.1
+		army_chief_cost_factor = -0.1
+		navy_chief_cost_factor = -0.1
+		air_chief_cost_factor = -0.1
+		theorist_cost_factor = -0.1
+		war_support_weekly = 0.001
+		stability_weekly = 0.001
+		agency_upgrade_time  = -0.30
+		operative_slot  = 2
+		subjects_autonomy_gain = -5
+		autonomy_gain = 5
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_diplomatic_10 = {
+		random = no
+		political_power_gain = 1
+		high_command_cost_factor = -0.1
+		army_chief_cost_factor = -0.1
+		navy_chief_cost_factor = -0.1
+		air_chief_cost_factor = -0.1
+		theorist_cost_factor = -0.1
+		war_support_weekly = 0.001
+		stability_weekly = 0.001
+		agency_upgrade_time  = -0.30
+		operative_slot  = 2
+		subjects_autonomy_gain = -5.0
+		autonomy_gain = 5
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	natidea_diplomatic_10_subject = {
+		random = no
+		political_power_gain = 1
+		high_command_cost_factor = -0.1
+		army_chief_cost_factor = -0.1
+		navy_chief_cost_factor = -0.1
+		air_chief_cost_factor = -0.1
+		theorist_cost_factor = -0.1
+		war_support_weekly = 0.001
+		stability_weekly = 0.001
+		agency_upgrade_time  = -0.30
+		operative_slot  = 2
+		autonomy_gain = 5
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natdiplomatic_10_dominion = {
+		random = no
+		political_power_gain = 1
+		high_command_cost_factor = -0.1
+		army_chief_cost_factor = -0.1
+		navy_chief_cost_factor = -0.1
+		air_chief_cost_factor = -0.1
+		theorist_cost_factor = -0.1
+		war_support_weekly = 0.001
+		stability_weekly = 0.001
+		agency_upgrade_time  = -0.30
+		operative_slot  = 2
+		autonomy_gain = 5
+		subjects_autonomy_gain = -5
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	### QUALITY ###
+	natidea_quality_0 = {
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_quality_1 = {
+		random = no
+		army_org_Factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_quality_2 = {
+		random = no
+		army_org_Factor = 0.05
+		army_defence_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_quality_3 = {
+		random = no
+		army_org_Factor = 0.05
+		army_defence_factor = 0.1
+		experience_gain_army_factor = 0.15
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_quality_4 = {
+		random = no
+		army_org_Factor = 0.05
+		army_defence_factor = 0.1
+		experience_gain_army_factor = 0.15
+		army_core_defence_factor = 0.01
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_quality_5 = {
+		random = no
+		army_org_Factor = 0.05
+		army_defence_factor = 0.1
+		experience_gain_army_factor = 0.15
+		army_core_defence_factor = 0.10
+		army_attack_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_quality_6 = {
+		random = no
+		army_org_Factor = 0.05
+		army_defence_factor = 0.1
+		experience_gain_army_factor = 0.3
+		army_core_defence_factor = 0.10
+		army_attack_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_quality_7 = {
+		random = no
+		army_org_Factor = 0.05
+		army_defence_factor = 0.2
+		experience_gain_army_factor = 0.3
+		army_core_defence_factor = 0.10
+		army_attack_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_quality_8 = {
+		random = no
+		army_org_Factor = 0.05
+		army_defence_factor = 0.2
+		experience_gain_army_factor = 0.3
+		army_core_defence_factor = 0.10
+		conscription = 0.01
+		army_attack_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_quality_9 = {
+		random = no
+		army_org_Factor = 0.1
+		army_defence_factor = 0.2
+		experience_gain_army_factor = 0.3
+		army_core_defence_factor = 0.10
+		conscription = 0.01
+		army_attack_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		} 
+	}
+	
+	natidea_quality_10 = {
+		random = no
+		army_org_Factor = 0.15
+		army_defence_factor = 0.2
+		experience_gain_army_factor = 0.3
+		army_core_defence_factor = 0.2
+		army_core_attack_factor = 0.2
+		conscription = 0.01
+		army_attack_factor = 0.1
+		cas_damage_reduction = -0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	### QUANTITY ###
+	natidea_quantity_0 = {
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_quantity_1 = {
+		random = no
+		training_time_factor = -0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_quantity_2 = {
+		random = no
+		training_time_factor = -0.1
+		supply_consumption_factor = -0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_quantity_3 = {
+		random = no
+		training_time_factor = -0.1
+		supply_consumption_factor = -0.1
+		industrial_capacity_factory = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_quantity_4 = {
+		random = no
+		training_time_factor = -0.1
+		supply_consumption_factor = -0.1
+		industrial_capacity_factory = 0.1
+		conscription = 0.01
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_quantity_5 = {
+		random = no
+		training_time_factor = -0.2
+		supply_consumption_factor = -0.1
+		industrial_capacity_factory = 0.1
+		conscription = 0.01
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_quantity_6 = {
+		random = no
+		training_time_factor = -0.2
+		supply_consumption_factor = -0.2
+		industrial_capacity_factory = 0.1
+		conscription = 0.01
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_quantity_7 = {
+		random = no
+		training_time_factor = -0.2
+		supply_consumption_factor = -0.2
+		industrial_capacity_factory = 0.2
+		conscription = 0.01
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_quantity_8 = {
+		random = no
+		training_time_factor = -0.2
+		supply_consumption_factor = -0.2
+		industrial_capacity_factory = 0.2
+		conscription = 0.02
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_quantity_9 = {
+		random = no
+		training_time_factor = -0.2
+		supply_consumption_factor = -0.3
+		industrial_capacity_factory = 0.2
+		conscription = 0.02 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_quantity_10 = {
+		random = no
+		training_time_factor = -0.3
+		supply_consumption_factor = -0.3
+		industrial_capacity_factory = 0.2
+		conscription = 0.02
+		recruitable_population_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	### ADMIRALITY ###
+	
+	natidea_admirality_0 = {
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_admirality_1 = {
+		random = no
+		navy_org = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_admirality_2 = {
+		random = no
+		navy_org = 10
+		naval_speed_factor = 0.05
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	natidea_admirality_3 = {
+		random = no
+		navy_org = 10
+		naval_speed_factor = 0.05
+		spotting_chance = 0.1
+		industrial_capacity_dockyard = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_admirality_4 = {
+		random = no
+		navy_org = 10
+		naval_speed_factor = 0.05
+		spotting_chance = 0.1
+		experience_gain_attack_submarine_training_factor = 0.25
+		experience_gain_missile_submarine_training_factor = 0.25
+		experience_gain_corvette_training_factor = 0.25
+		experience_gain_destroyer_training_factor = 0.25
+		experience_gain_stealth_destroyer_training_factor = 0.25
+		experience_gain_frigate_training_factor = 0.25
+		experience_gain_cruiser_training_factor = 0.25
+		experience_gain_battle_cruiser_training_factor = 0.25
+		experience_gain_battleship_training_factor = 0.25
+		experience_gain_carrier_training_factor = 0.25
+		industrial_capacity_dockyard = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_admirality_5 = {
+		random = no
+		navy_org = 10
+		naval_speed_factor = 0.05
+		spotting_chance = 0.1
+		experience_gain_attack_submarine_training_factor = 0.25
+		experience_gain_missile_submarine_training_factor = 0.25
+		experience_gain_corvette_training_factor = 0.25
+		experience_gain_destroyer_training_factor = 0.25
+		experience_gain_stealth_destroyer_training_factor = 0.25
+		experience_gain_frigate_training_factor = 0.25
+		experience_gain_cruiser_training_factor = 0.25
+		experience_gain_battle_cruiser_training_factor = 0.25
+		experience_gain_battleship_training_factor = 0.25
+		experience_gain_carrier_training_factor = 0.25
+		naval_damage_factor = 0.1
+		industrial_capacity_dockyard = 0.2
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_admirality_6 = {
+		random = no
+		navy_org = 10
+		naval_speed_factor = 0.05
+		spotting_chance = 0.2
+		experience_gain_attack_submarine_training_factor = 0.25
+		experience_gain_missile_submarine_training_factor = 0.25
+		experience_gain_corvette_training_factor = 0.25
+		experience_gain_destroyer_training_factor = 0.25
+		experience_gain_stealth_destroyer_training_factor = 0.25
+		experience_gain_frigate_training_factor = 0.25
+		experience_gain_cruiser_training_factor = 0.25
+		experience_gain_battle_cruiser_training_factor = 0.25
+		experience_gain_battleship_training_factor = 0.25
+		experience_gain_carrier_training_factor = 0.25
+		naval_damage_factor = 0.1
+		industrial_capacity_dockyard = 0.2
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_admirality_7 = {
+		random = no
+		navy_org = 10
+		naval_speed_factor = 0.1
+		spotting_chance = 0.2
+		experience_gain_attack_submarine_training_factor = 0.25
+		experience_gain_missile_submarine_training_factor = 0.25
+		experience_gain_corvette_training_factor = 0.25
+		experience_gain_destroyer_training_factor = 0.25
+		experience_gain_stealth_destroyer_training_factor = 0.25
+		experience_gain_frigate_training_factor = 0.25
+		experience_gain_cruiser_training_factor = 0.25
+		experience_gain_battle_cruiser_training_factor = 0.25
+		experience_gain_battleship_training_factor = 0.25
+		experience_gain_carrier_training_factor = 0.25
+		naval_damage_factor = 0.1
+		navy_anti_air_attack_factor = 0.15
+		industrial_capacity_dockyard = 0.2
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_admirality_8 = {
+		random = no
+		navy_org = 10
+		naval_speed_factor = 0.1
+		spotting_chance = 0.2
+		experience_gain_attack_submarine_training_factor = 0.25
+		experience_gain_missile_submarine_training_factor = 0.25
+		experience_gain_corvette_training_factor = 0.25
+		experience_gain_destroyer_training_factor = 0.25
+		experience_gain_stealth_destroyer_training_factor = 0.25
+		experience_gain_frigate_training_factor = 0.25
+		experience_gain_cruiser_training_factor = 0.25
+		experience_gain_battle_cruiser_training_factor = 0.25
+		experience_gain_battleship_training_factor = 0.25
+		experience_gain_carrier_training_factor = 0.25
+		naval_damage_factor = 0.1
+		navy_anti_air_attack_factor = 0.15
+		industrial_capacity_dockyard = 0.2
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	natidea_admirality_9 = {
+		random = no
+		navy_org = 20
+		naval_speed_factor = 0.1
+		spotting_chance = 0.2
+		experience_gain_attack_submarine_training_factor = 0.25
+		experience_gain_missile_submarine_training_factor = 0.25
+		experience_gain_corvette_training_factor = 0.25
+		experience_gain_destroyer_training_factor = 0.25
+		experience_gain_stealth_destroyer_training_factor = 0.25
+		experience_gain_frigate_training_factor = 0.25
+		experience_gain_cruiser_training_factor = 0.25
+		experience_gain_battle_cruiser_training_factor = 0.25
+		experience_gain_battleship_training_factor = 0.25
+		experience_gain_carrier_training_factor = 0.25
+		naval_damage_factor = 0.1
+		navy_anti_air_attack_factor = 0.15
+		positioning = 0.1
+		industrial_capacity_dockyard = 0.2
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_admirality_10 = {
+		random = no
+		navy_org = 20
+		naval_speed_factor = 0.1
+		spotting_chance = 0.2
+		experience_gain_attack_submarine_training_factor = 0.25
+		experience_gain_missile_submarine_training_factor = 0.25
+		experience_gain_corvette_training_factor = 0.25
+		experience_gain_destroyer_training_factor = 0.25
+		experience_gain_stealth_destroyer_training_factor = 0.25
+		experience_gain_frigate_training_factor = 0.25
+		experience_gain_cruiser_training_factor = 0.25
+		experience_gain_battle_cruiser_training_factor = 0.25
+		experience_gain_battleship_training_factor = 0.25
+		experience_gain_carrier_training_factor = 0.25
+		naval_damage_factor = 0.1
+		navy_anti_air_attack_factor = 0.15
+		positioning = 0.1
+		industrial_capacity_dockyard = 0.4
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	natidea_maritime_0 = {
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_maritime_1 = {
+		random = no
+		production_speed_dockyard_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_maritime_2 = {
+		random = no
+		production_speed_dockyard_factor = 0.1
+		navy_fuel_consumption_factor = -0.1
+	
+			ai_will_do = {
+			factor = 1
+		}
+	}
+
+	
+	natidea_maritime_3 = {
+		random = no
+		production_speed_dockyard_factor = 0.1
+		navy_fuel_consumption_factor = -0.1
+		navy_max_range_factor = 0.1
+		industrial_capacity_dockyard = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_maritime_4 = {
+		random = no
+		production_speed_dockyard_factor = 0.1
+		navy_fuel_consumption_factor = -0.1
+		navy_max_range_factor = 0.1
+		repair_speed_factor = 0.15
+		industrial_capacity_dockyard = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_maritime_5 = {
+		random = no
+		production_speed_dockyard_factor = 0.2
+		navy_fuel_consumption_factor = -0.1
+		navy_max_range_factor = 0.1
+		repair_speed_factor = 0.15
+		naval_speed_factor = 0.05
+		industrial_capacity_dockyard = 0.2
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_maritime_6 = {
+		random = no
+		production_speed_dockyard_factor = 0.2
+		navy_fuel_consumption_factor = -0.1
+		navy_max_range_factor = 0.1
+		repair_speed_factor = 0.15
+		naval_speed_factor = 0.05
+		industrial_capacity_dockyard = 0.2
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_maritime_7 = {
+		random = no
+		production_speed_dockyard_factor = 0.2
+		navy_fuel_consumption_factor = -0.1
+		navy_max_range_factor = 0.1
+		repair_speed_factor = 0.30
+		naval_speed_factor = 0.05
+		industrial_capacity_dockyard = 0.2
+
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_maritime_8 = {
+		random = no
+		production_speed_dockyard_factor = 0.2
+		navy_fuel_consumption_factor = -0.1
+		navy_max_range_factor = 0.2
+		repair_speed_factor = 0.3
+		naval_speed_factor = 0.05
+		industrial_capacity_dockyard = 0.3
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	natidea_maritime_9 = {
+		random = no
+		production_speed_dockyard_factor = 0.2
+		navy_fuel_consumption_factor = -0.2
+		navy_max_range_factor = 0.2
+		repair_speed_factor = 0.3
+		naval_speed_factor = 0.05
+		industrial_capacity_dockyard = 0.3
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_maritime_10 = {
+		random = no
+		production_speed_dockyard_factor = 0.1
+		navy_fuel_consumption_factor = -0.2
+		navy_max_range_factor = 0.2
+		repair_speed_factor = 0.15
+		naval_speed_factor = 0.05
+		industrial_capacity_dockyard = 0.15
+		equipment_bonus = {
+			attack_submarine = {
+				instant = yes
+				build_cost_ic = -0.2
+			}		
+			missile_submarine = {
+				instant = yes
+				build_cost_ic = -0.2
+			}	
+			corvette = {
+				instant = yes
+				build_cost_ic = -0.2
+			}		
+			frigate = {
+				instant = yes
+				build_cost_ic = -0.2
+			}	
+			destroyer = {
+				instant = yes
+				build_cost_ic = -0.2
+			}	
+			stealth_destroyer = {
+				instant = yes
+				build_cost_ic = -0.2
+			}	
+			cruiser = {
+				instant = yes
+				build_cost_ic = -0.2
+			}
+			battle_cruiser = {
+				instant = yes
+				build_cost_ic = -0.2
+			}
+			screen_ship = {
+				instant = yes
+				build_cost_ic = -0.2
+			}	
+			capital_ship = {
+				instant = yes
+				build_cost_ic = -0.2
+			}	
+			helicopter_operator = {
+				instant = yes
+				build_cost_ic = -0.2
+			}	
+			carrier = {
+				instant = yes
+				build_cost_ic = -0.2
+			}												
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+		
+	natidea_pilots_0 = {
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_pilots_1 = {
+		random = no
+		air_accidents_factor = -0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_pilots_2 = {
+		random = no
+		air_accidents_factor = -0.1
+		air_detection = 0.05
+
+			ai_will_do = {
+			factor = 1
+		}
+	}
+
+	natidea_pilots_3 = {
+		random = no
+		air_accidents_factor = -0.1
+		air_detection = 0.05
+		experience_gain_air_factor = 0.075
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_pilots_4 = {
+		random = no
+		air_accidents_factor = -0.1
+		air_detection = 0.05
+		experience_gain_air_factor = 0.075
+		air_night_penalty = -0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_pilots_5 = {
+		random = no
+		air_accidents_factor = -0.1
+		air_detection = 0.05
+		experience_gain_air_factor = 0.075
+		air_night_penalty = -0.1
+		naval_strike_targetting_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_pilots_6 = {
+		random = no
+		air_accidents_factor = -0.2
+		air_detection = 0.05
+		experience_gain_air_factor = 0.075
+		air_night_penalty = -0.1
+		naval_strike_targetting_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_pilots_7 = {
+		random = no
+		air_accidents_factor = -0.2
+		air_detection = 0.05
+		experience_gain_air_factor = 0.075
+		air_night_penalty = -0.1
+		naval_strike_targetting_factor = 0.1
+		air_mission_efficiency = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_pilots_8 = {
+		random = no
+		air_accidents_factor = -0.2
+		air_detection = 0.05
+		experience_gain_air_factor = 0.15
+		air_night_penalty = -0.1
+		naval_strike_targetting_factor = 0.1
+		air_mission_efficiency = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	natidea_pilots_9 = {
+		random = no
+		air_accidents_factor = -0.2
+		air_detection = 0.05
+		experience_gain_air_factor = 0.15
+		air_night_penalty = -0.2
+		naval_strike_targetting_factor = 0.1
+		air_mission_efficiency = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_pilots_10 = {
+		random = no
+		air_accidents_factor = -0.2
+		air_detection = 0.1
+		experience_gain_air_factor = 0.15
+		air_night_penalty = -0.2
+		naval_strike_targetting_factor = 0.1
+		air_mission_efficiency = 0.05
+		air_ace_generation_chance_factor = 0.15
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+		
+	natidea_airframes_0 = {
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_airframes_1 = {
+		random = no
+		air_range_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_airframes_2 = {
+		random = no
+		air_range_factor = 0.05
+		ground_attack_factor = 0.05
+
+			ai_will_do = {
+			factor = 1
+		}
+	}
+
+	
+	natidea_airframes_3 = {
+		random = no
+		air_range_factor = 0.05
+		ground_attack_factor = 0.05
+		air_weather_penalty = -0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_airframes_4 = {
+		random = no
+		air_range_factor = 0.05
+		ground_attack_factor = 0.05
+		air_weather_penalty = -0.1
+		air_fuel_consumption_factor = -0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_airframes_5 = {
+		random = no
+		air_range_factor = 0.1
+		ground_attack_factor = 0.05
+		air_weather_penalty = -0.1
+		air_fuel_consumption_factor = -0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_airframes_6 = {
+		random = no
+		air_range_factor = 0.1
+		ground_attack_factor = 0.05
+		air_weather_penalty = -0.2
+		air_fuel_consumption_factor = -0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_airframes_7 = {
+		random = no
+		air_range_factor = 0.1
+		ground_attack_factor = 0.1
+		air_weather_penalty = -0.2
+		air_fuel_consumption_factor = -0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_airframes_8 = {
+		random = no
+		air_range_factor = 0.1
+		ground_attack_factor = 0.1
+		air_weather_penalty = -0.2
+		air_fuel_consumption_factor = -0.2
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	natidea_airframes_9 = {
+		random = no
+		air_range_factor = 0.3
+		ground_attack_factor = 0.1
+		air_weather_penalty = -0.2
+		air_fuel_consumption_factor = -0.2
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	natidea_airframes_10 = {
+		random = no
+		air_range_factor = 0.3
+		ground_attack_factor = 0.1
+		air_weather_penalty = -0.2
+		air_fuel_consumption_factor = -0.2
+		equipment_bonus = {
+			AS_Fighter_equipment = {
+				instant = yes
+				build_cost_ic = -0.2
+			}
+			Strike_fighter_equipment = {
+				instant = yes
+				build_cost_ic = -0.2
+			}
+			L_Strike_fighter_equipment = {
+				instant = yes
+				build_cost_ic = -0.2
+			}
+			CV_L_Strike_fighter_equipment = {
+				instant = yes
+				build_cost_ic = -0.2
+			}
+			MR_Fighter_equipment = {
+				instant = yes
+				build_cost_ic = -0.2
+			}
+			CV_MR_Fighter_equipment = {
+				instant = yes
+				build_cost_ic = -0.2
+			}
+			CAS_equipment = {
+				instant = yes
+				build_cost_ic = -0.2
+			}
+			cv_awacs_equipment = {
+				instant = yes
+				build_cost_ic = -0.2
+			}
+			awacs_equipment = {
+				instant = yes
+				build_cost_ic = -0.2
+			}
+			cv_awacs_equipment = {
+				instant = yes
+				build_cost_ic = -0.2
+			}
+			strategic_bomber_equipment = {
+				instant = yes
+				build_cost_ic = -0.2
+			}	
+			transport_plane_equipment = {
+				instant = yes
+				build_cost_ic = -0.2
+			}	
+			attack_helicopter_equipment = {
+				instant = yes
+				build_cost_ic = -0.2
+			}	
+			Air_UAV_equipment = {
+				instant = yes
+				build_cost_ic = -0.2
+			}
+			guided_missile_equipment = {
+				instant = yes
+				build_cost_ic = -0.2
+			}			
+			Missile = {
+				instant = yes
+				build_cost_ic = -0.2
+			}							
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

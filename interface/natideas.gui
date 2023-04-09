@@ -1,0 +1,4454 @@
+
+guiTypes = {
+	containerWindowType = {
+		name = "nat_ideas_container"
+		position = { x = 720 y = 35 }
+		
+		
+		buttonType ={
+			name ="nat_ideas_open_button"
+			spriteType = "GFX_nat_ideas_open_button"
+			position = { x=0 y=0 }
+			clicksound = click_close
+			oversound = ui_menu_over
+			pdx_tooltip = "NATIDEAS_TOOLTIP"
+		}
+		
+		buttonType ={
+			name ="nat_ideas_open_button_max"
+			spriteType = "GFX_nat_ideas_open_button_max"
+			position = { x=0 y=0 }
+			clicksound = click_close
+			oversound = ui_menu_over
+			pdx_tooltip = "NATIDEAS_TOOLTIP"
+		}
+		
+		iconType = {
+			name ="nat_ideas_open_button_bg"
+			spriteType = "GFX_nat_ideas_open_button_bg"
+			position = { x= 0 y = 0 }
+			Orientation = "CENTER"
+		}
+	}
+	
+	### Main Window ###
+	containerWindowType = {
+		name = "nat_ideas_main_window_container"
+		position = {x=0 y=80}
+		size = { width=1125 height=663 }
+
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_window_w_close"
+		}
+		
+		instantTextboxType = {
+			name = "nat_ideas_main_window_title"
+			position = { x = 45 y = 12 }
+			textureFile = ""
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			text = "National Ideas"
+			maxWidth = 240
+			maxHeight = 20
+			format = left	
+		}
+		
+		buttonType = {
+			name = "nat_ideas_main_close"
+			quadTextureSprite = "GFX_closebutton"
+			position = { x= 1080 y = 13 }
+			clicksound = click_close
+			pdx_tooltip = "NATIDEASCLOSE_TOOLTIP"
+			shortcut = "ESCAPE"
+		}
+		
+		containerWindowType = {
+			name = "nat_ideas_primary_container"
+			position = { x=13 y=47 }
+			size = { width = 1099 height = 603 }
+			margin = { top = 10 left = 13 bottom = 10 right = 13}
+			drag_scroll = { left middle }
+			verticalScrollbar = "right_vertical_slider"
+			horizontalScrollbar = "bottom_horizontal_slider"
+
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window"
+			}
+			
+				containerWindowType = {
+					name = "nat_ideas_economic_container"
+					position = { x=3 y=5 }
+					size = { width = 176 height = 553 }
+				
+					instantTextboxType = {
+						name = "economic_title"
+						position = { x=0 y=13 }
+						orientation = "UPPER_LEFT"
+						font = "hoi_24header"
+						text = "Domination"
+						maxWidth = 176
+						maxHeight = 23
+						format = center
+					}
+					
+					iconType = {
+						name ="economic_bg_1"
+						spriteType = "GFX_nat_ideas_economic_bg_1"
+						position = { x=13 y=37 }
+						
+					}
+					
+					iconType = {
+						name ="economic_bg_2"
+						spriteType = "GFX_nat_ideas_economic_bg_2"
+						position = { x=13 y=35 }
+					}
+					
+					iconType = {
+						name ="economic_bg_3"
+						spriteType = "GFX_nat_ideas_economic_bg_3"
+						position = { x=13 y=34 }
+						
+					}
+					
+					iconType = {
+						name ="economic_bg_4"
+						spriteType = "GFX_nat_ideas_economic_bg_4"
+						position = { x=13 y=33 }
+						
+					}
+					
+					iconType = {
+						name ="economic_bg_5"
+						spriteType = "GFX_nat_ideas_economic_bg_5"
+						position = { x=13 y=32 }
+						
+					}
+					
+					iconType = {
+						name ="economic_bg_6"
+						spriteType = "GFX_nat_ideas_economic_bg_6"
+						position = { x=13 y=29 }
+						
+					}
+					
+					iconType = {
+						name ="economic_bg_7"
+						spriteType = "GFX_nat_ideas_economic_bg_7"
+						position = { x=13 y=28 }
+						
+					}
+					
+					iconType = {
+						name ="economic_bg_8"
+						spriteType = "GFX_nat_ideas_economic_bg_8"
+						position = { x=13 y=26 }
+						
+					}
+					
+					iconType = {
+						name ="economic_bg_9"
+						spriteType = "GFX_nat_ideas_economic_bg_9"
+						position = { x=13 y=25 }
+						
+					}
+					
+					iconType = {
+						name ="economic_bg_10"
+						spriteType = "GFX_nat_ideas_economic_bg_10"
+						position = { x=13 y=25 }
+						
+					}
+					
+					background = {
+						name = "economic_border_Background"
+						quadTextureSprite ="GFX_fullborder_tiled"
+						position = { x=0 y=0 }					
+					}	
+
+					#economic ideas
+					
+					
+					
+					iconType = {
+						name = "nat_ideas_economic_1_unavailable" 
+						position = {x=23 y=40}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_economic_1_tt"
+						pdx_tooltip_delayed = "nat_ideas_economic_1_tt_del"
+					}
+					buttonType = {
+						name = "nat_ideas_economic_1_available" 
+						position = {x=23 y=40}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_economic_1_tt"
+						pdx_tooltip_delayed = "nat_ideas_economic_1_tt_del"
+					}
+					iconType = {
+						name = "nat_ideas_economic_1_completed" 
+						position = {x=23 y=40}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_economic_1_tt"
+						pdx_tooltip_delayed = "nat_ideas_economic_1_tt_del"
+					}
+					iconType = {
+						name ="economic_icon_1"
+						spriteType = "GFX_nat_ideas_economic_icon"
+						position = { x=74 y=47 }
+					}
+					instantTextboxType = {
+						name = "economic_1"
+						position = {x=0 y=53}
+						font = "hoi_18mbs"
+						text = "Domination I"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_economic_2_unavailable" 
+						position = {x=23 y=90}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_economic_2_tt"
+						pdx_tooltip_delayed = "nat_ideas_economic_2_tt_del"
+					}
+					buttonType = {
+						name = "nat_ideas_economic_2_available" 
+						position = {x=23 y=90}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_economic_2_tt"
+						pdx_tooltip_delayed = "nat_ideas_economic_2_tt_del"
+					}
+					iconType = {
+						name = "nat_ideas_economic_2_completed" 
+						position = {x=23 y=90}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_economic_2_tt"
+						pdx_tooltip_delayed = "nat_ideas_economic_2_tt_del"
+					}
+					iconType = {
+						name ="economic_icon_2"
+						spriteType = "GFX_nat_ideas_economic_icon"
+						position = { x=74 y=97 }
+						
+					}
+					instantTextboxType = {
+						name = "economic_2"
+						position = {x=0 y=102}
+						font = "hoi_18mbs"
+						text = "Domination II"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_economic_3_unavailable" 
+						position = {x=23 y=140}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_economic_3_tt"
+						pdx_tooltip_delayed = "nat_ideas_economic_3_tt_del"
+					}
+					buttonType = {
+						name = "nat_ideas_economic_3_available" 
+						position = {x=23 y=140}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_economic_3_tt"
+						pdx_tooltip_delayed = "nat_ideas_economic_3_tt_del"
+					}
+					iconType = {
+						name = "nat_ideas_economic_3_completed" 
+						position = {x=23 y=140}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_economic_3_tt"
+						pdx_tooltip_delayed = "nat_ideas_economic_3_tt_del"
+					}
+					iconType = {
+						name ="economic_icon_3"
+						spriteType = "GFX_nat_ideas_economic_icon"
+						position = { x=74 y=147 }
+						
+					}
+					instantTextboxType = {
+						name = "economic_3"
+						position = {x=0 y=153}
+						font = "hoi_18mbs"
+						text = "Domination III"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_economic_4_unavailable" 
+						position = {x=23 y=190}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_economic_4_tt"
+						pdx_tooltip_delayed = "nat_ideas_economic_4_tt_del"
+					}
+					buttonType = {
+						name = "nat_ideas_economic_4_available" 
+						position = {x=23 y=190}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_economic_4_tt"
+						pdx_tooltip_delayed = "nat_ideas_economic_4_tt_del"
+					}
+					iconType = {
+						name = "nat_ideas_economic_4_completed" 
+						position = {x=23 y=190}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_economic_4_tt"
+						pdx_tooltip_delayed = "nat_ideas_economic_4_tt_del"
+					}
+					iconType = {
+						name ="economic_icon_4"
+						spriteType = "GFX_nat_ideas_economic_icon"
+						position = { x=74 y=197 }
+						
+					}
+					instantTextboxType = {
+						name = "economic_4"
+						position = {x=0 y=203}
+						font = "hoi_18mbs"
+						text = "Domination IV"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_economic_5_unavailable" 
+						position = {x=23 y=240}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_economic_5_tt"
+						pdx_tooltip_delayed = "nat_ideas_economic_5_tt_del"
+					}
+					buttonType = {
+						name = "nat_ideas_economic_5_available" 
+						position = {x=23 y=240}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_economic_5_tt"
+						pdx_tooltip_delayed = "nat_ideas_economic_5_tt_del"
+					}
+					iconType = {
+						name = "nat_ideas_economic_5_completed" 
+						position = {x=23 y=240}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_economic_5_tt"
+						pdx_tooltip_delayed = "nat_ideas_economic_5_tt_del"
+					}
+					iconType = {
+						name ="economic_icon_5"
+						spriteType = "GFX_nat_ideas_economic_icon"
+						position = { x=74 y=247 }
+						
+					}
+					instantTextboxType = {
+						name = "economic_5"
+						position = {x=0 y=253}
+						font = "hoi_18mbs"
+						text = "Domination V"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_economic_6_unavailable" 
+						position = {x=23 y=290}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_economic_6_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_economic_6_available" 
+						position = {x=23 y=290}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_economic_6_tt"
+					}
+					iconType = {
+						name = "nat_ideas_economic_6_completed" 
+						position = {x=23 y=290}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_economic_6_tt"
+					}
+					iconType = {
+						name ="economic_icon_6"
+						spriteType = "GFX_nat_ideas_economic_icon"
+						position = { x=74 y=290 }
+						
+					}
+					instantTextboxType = {
+						name = "economic_6"
+						position = {x=0 y=303}
+						font = "hoi_18mbs"
+						text = "Domination VI"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_economic_7_unavailable" 
+						position = {x=23 y=340}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_economic_7_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_economic_7_available" 
+						position = {x=23 y=340}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_economic_7_tt"
+					}
+					iconType = {
+						name = "nat_ideas_economic_7_completed" 
+						position = {x=23 y=340}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_economic_7_tt"
+					}
+					iconType = {
+						name ="economic_icon_7"
+						spriteType = "GFX_nat_ideas_economic_icon"
+						position = { x=74 y=347 }
+						
+					}
+					instantTextboxType = {
+						name = "economic_7"
+						position = {x=0 y=353}
+						font = "hoi_18mbs"
+						text = "Domination VII"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_economic_8_unavailable" 
+						position = {x=23 y=390}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_economic_8_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_economic_8_available" 
+						position = {x=23 y=390}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_economic_8_tt"
+					}
+					iconType = {
+						name = "nat_ideas_economic_8_completed" 
+						position = {x=23 y=390}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_economic_8_tt"
+					}
+					iconType = {
+						name ="economic_icon_8"
+						spriteType = "GFX_nat_ideas_economic_icon"
+						position = { x=74 y=397 }
+						
+					}
+					instantTextboxType = {
+						name = "economic_8"
+						position = {x=0 y=403}
+						font = "hoi_18mbs"
+						text = "Domination VIII"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_economic_9_unavailable" 
+						position = {x=23 y=440}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_economic_9_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_economic_9_available" 
+						position = {x=23 y=440}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_economic_9_tt"
+					}
+					iconType = {
+						name = "nat_ideas_economic_9_completed" 
+						position = {x=23 y=440}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_economic_9_tt"
+					}
+					iconType = {
+						name ="economic_icon_9"
+						spriteType = "GFX_nat_ideas_economic_icon"
+						position = { x=74 y=447 }
+						
+					}
+					instantTextboxType = {
+						name = "economic_9"
+						position = {x=0 y=453}
+						font = "hoi_18mbs"
+						text = "Domination IX"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_economic_10_unavailable" 
+						position = {x=23 y=490}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_economic_10_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_economic_10_available" 
+						position = {x=23 y=490}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_economic_10_tt"
+					}
+					iconType = {
+						name = "nat_ideas_economic_10_completed" 
+						position = {x=23 y=490}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_economic_10_tt"
+					}
+					iconType = {
+						name ="economic_icon_10"
+						spriteType = "GFX_nat_ideas_economic_icon"
+						position = { x=74 y=497 }
+						
+					}
+					instantTextboxType = {
+						name = "economic_10"
+						position = {x=0 y=503}
+						font = "hoi_18mbs"
+						text = "Domination X"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+				}
+				
+				containerWindowType = {
+					name = "nat_ideas_expansion_container"
+					position = { x=181 y=5 }
+					size = { width = 176 height = 553 }
+			
+					instantTextboxType = {
+						name = "expansion_title"
+						position = { x=0 y=13 }
+						orientation = "UPPER_LEFT"
+						font = "hoi_24header"
+						text = "Isolation"
+						maxWidth = 176
+						maxHeight = 23
+						format = center
+					}					
+					
+					iconType = {
+						name ="expansion_bg_1"
+						spriteType = "GFX_nat_ideas_economic_bg_1"
+						position = { x=13 y=37 }
+						
+					}
+					
+					iconType = {
+						name ="expansion_bg_2"
+						spriteType = "GFX_nat_ideas_economic_bg_2"
+						position = { x=13 y=35 }
+						
+					}
+					
+					iconType = {
+						name ="expansion_bg_3"
+						spriteType = "GFX_nat_ideas_economic_bg_3"
+						position = { x=13 y=34 }
+						
+					}
+					
+					iconType = {
+						name ="expansion_bg_4"
+						spriteType = "GFX_nat_ideas_economic_bg_4"
+						position = { x=13 y=33 }
+						
+					}
+					
+					iconType = {
+						name ="expansion_bg_5"
+						spriteType = "GFX_nat_ideas_economic_bg_5"
+						position = { x=13 y=32 }
+						
+					}
+					
+					iconType = {
+						name ="expansion_bg_6"
+						spriteType = "GFX_nat_ideas_economic_bg_6"
+						position = { x=13 y=29 }
+						
+					}
+					
+					iconType = {
+						name ="expansion_bg_7"
+						spriteType = "GFX_nat_ideas_economic_bg_7"
+						position = { x=13 y=28 }
+						
+					}
+					
+					iconType = {
+						name ="expansion_bg_8"
+						spriteType = "GFX_nat_ideas_economic_bg_8"
+						position = { x=13 y=26 }
+						
+					}
+					
+					iconType = {
+						name ="expansion_bg_9"
+						spriteType = "GFX_nat_ideas_economic_bg_9"
+						position = { x=13 y=25 }
+						
+					}
+					
+					iconType = {
+						name ="expansion_bg_10"
+						spriteType = "GFX_nat_ideas_economic_bg_10"
+						position = { x=13 y=25 }
+						
+					}
+					
+					background = {
+						name = "innovation_border_Background"
+						quadTextureSprite ="GFX_fullborder_tiled"
+						position = { x=0 y=0 }					
+					}	
+					
+					iconType = {
+						name = "nat_ideas_expansion_1_unavailable" 
+						position = {x=23 y=40}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_expansion_1_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_expansion_1_available" 
+						position = {x=23 y=40}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_expansion_1_tt"
+					}
+					iconType = {
+						name = "nat_ideas_expansion_1_completed" 
+						position = {x=23 y=40}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_expansion_1_tt"
+					}
+					iconType = {
+						name ="expansion_icon_1"
+						spriteType = "GFX_nat_ideas_expansion_icon"
+						position = { x=74 y=47 }
+						
+					}
+					instantTextboxType = {
+						name = "expansion_1"
+						position = {x=0 y=53}
+						font = "hoi_18mbs"
+						text = "Isolation I"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_expansion_2_unavailable" 
+						position = {x=23 y=90}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_expansion_2_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_expansion_2_available" 
+						position = {x=23 y=90}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_expansion_2_tt"
+					}
+					iconType = {
+						name = "nat_ideas_expansion_2_completed" 
+						position = {x=23 y=90}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_expansion_2_tt"
+					}
+					iconType = {
+						name ="expansion_icon_2"
+						spriteType = "GFX_nat_ideas_expansion_icon"
+						position = { x=74 y=97 }
+						
+					}
+					instantTextboxType = {
+						name = "expansion_2"
+						position = {x=0 y=102}
+						font = "hoi_18mbs"
+						text = "Isolation II"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_expansion_3_unavailable" 
+						position = {x=23 y=140}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_expansion_3_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_expansion_3_available" 
+						position = {x=23 y=140}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_expansion_3_tt"
+					}
+					iconType = {
+						name = "nat_ideas_expansion_3_completed" 
+						position = {x=23 y=140}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_expansion_3_tt"
+					}
+					iconType = {
+						name ="expansion_icon_3"
+						spriteType = "GFX_nat_ideas_expansion_icon"
+						position = { x=74 y=147 }
+						
+					}
+					instantTextboxType = {
+						name = "expansion_3"
+						position = {x=0 y=153}
+						font = "hoi_18mbs"
+						text = "Isolation III"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_expansion_4_unavailable" 
+						position = {x=23 y=190}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_expansion_4_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_expansion_4_available" 
+						position = {x=23 y=190}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_expansion_4_tt"
+					}
+					iconType = {
+						name = "nat_ideas_expansion_4_completed" 
+						position = {x=23 y=190}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_expansion_4_tt"
+					}
+					iconType = {
+						name ="expansion_icon_4"
+						spriteType = "GFX_nat_ideas_expansion_icon"
+						position = { x=74 y=197 }
+						
+					}
+					instantTextboxType = {
+						name = "expansion_4"
+						position = {x=0 y=203}
+						font = "hoi_18mbs"
+						text = "Isolation IV"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_expansion_5_unavailable" 
+						position = {x=23 y=240}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_expansion_5_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_expansion_5_available" 
+						position = {x=23 y=240}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_expansion_5_tt"
+					}
+					iconType = {
+						name = "nat_ideas_expansion_5_completed" 
+						position = {x=23 y=240}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_expansion_5_tt"
+					}
+					iconType = {
+						name ="expansion_icon_5"
+						spriteType = "GFX_nat_ideas_expansion_icon"
+						position = { x=74 y=247 }
+						
+					}
+					instantTextboxType = {
+						name = "expansion_5"
+						position = {x=0 y=253}
+						font = "hoi_18mbs"
+						text = "Isolation V"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_expansion_6_unavailable" 
+						position = {x=23 y=290}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_expansion_6_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_expansion_6_available" 
+						position = {x=23 y=290}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_expansion_6_tt"
+					}
+					iconType = {
+						name = "nat_ideas_expansion_6_completed" 
+						position = {x=23 y=290}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_expansion_6_tt"
+					}
+					iconType = {
+						name ="expansion_icon_6"
+						spriteType = "GFX_nat_ideas_expansion_icon"
+						position = { x=74 y=297 }
+						
+					}
+					instantTextboxType = {
+						name = "expansion_6"
+						position = {x=0 y=303}
+						font = "hoi_18mbs"
+						text = "Isolation VI"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_expansion_7_unavailable" 
+						position = {x=23 y=340}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_expansion_7_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_expansion_7_available" 
+						position = {x=23 y=340}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_expansion_7_tt"
+					}
+					iconType = {
+						name = "nat_ideas_expansion_7_completed" 
+						position = {x=23 y=340}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_expansion_7_tt"
+					}
+					iconType = {
+						name ="expansion_icon_7"
+						spriteType = "GFX_nat_ideas_expansion_icon"
+						position = { x=74 y=347 }
+						
+					}
+					instantTextboxType = {
+						name = "expansion_7"
+						position = {x=0 y=353}
+						font = "hoi_18mbs"
+						text = "Isolation VII"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_expansion_8_unavailable" 
+						position = {x=23 y=390}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_expansion_8_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_expansion_8_available" 
+						position = {x=23 y=390}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_expansion_8_tt"
+					}
+					iconType = {
+						name = "nat_ideas_expansion_8_completed" 
+						position = {x=23 y=390}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_expansion_8_tt"
+					}
+					iconType = {
+						name ="expansion_icon_8"
+						spriteType = "GFX_nat_ideas_expansion_icon"
+						position = { x=74 y=397 }
+						
+					}
+					instantTextboxType = {
+						name = "expansion_8"
+						position = {x=0 y=403}
+						font = "hoi_18mbs"
+						text = "Isolation VIII"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_expansion_9_unavailable" 
+						position = {x=23 y=440}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_expansion_9_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_expansion_9_available" 
+						position = {x=23 y=440}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_expansion_9_tt"
+					}
+					iconType = {
+						name = "nat_ideas_expansion_9_completed" 
+						position = {x=23 y=440}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_expansion_9_tt"
+					}
+					iconType = {
+						name ="expansion_icon_9"
+						spriteType = "GFX_nat_ideas_expansion_icon"
+						position = { x=74 y=447 }
+						
+					}
+					instantTextboxType = {
+						name = "expansion_9"
+						position = {x=0 y=453}
+						font = "hoi_18mbs"
+						text = "Isolation IX"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_expansion_10_unavailable" 
+						position = {x=23 y=490}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_expansion_10_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_expansion_10_available" 
+						position = {x=23 y=490}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_expansion_10_tt"
+					}
+					iconType = {
+						name = "nat_ideas_expansion_10_completed" 
+						position = {x=23 y=490}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_expansion_10_tt"
+					}
+					iconType = {
+						name ="expansion_icon_10"
+						spriteType = "GFX_nat_ideas_expansion_icon"
+						position = { x=74 y=497 }
+						
+					}
+					instantTextboxType = {
+						name = "expansion_10"
+						position = {x=0 y=503}
+						font = "hoi_18mbs"
+						text = "Isolation X"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+				}
+		
+				containerWindowType = {
+					name = "nat_ideas_innovation_container"
+					position = { x=360 y=5 }
+					size = { width = 176 height = 553 }
+
+					instantTextboxType = {
+						name = "innovation_title"
+						position = { x=0 y=13 }
+						orientation = "UPPER_LEFT"
+						font = "hoi_24header"
+						text = "Innovation"
+						maxWidth = 176
+						maxHeight = 23
+						format = center
+					}
+					iconType = {
+						name ="innovation_bg_1"
+						spriteType = "GFX_nat_ideas_economic_bg_1"
+						position = { x=13 y=37 }
+					}
+					
+					iconType = {
+						name ="innovation_bg_2"
+						spriteType = "GFX_nat_ideas_economic_bg_2"
+						position = { x=13 y=35 }
+					}
+					
+					iconType = {
+						name ="innovation_bg_3"
+						spriteType = "GFX_nat_ideas_economic_bg_3"
+						position = { x=13 y=34 }
+					}
+					
+					iconType = {
+						name ="innovation_bg_4"
+						spriteType = "GFX_nat_ideas_economic_bg_4"
+						position = { x=13 y=33 }
+					}
+					
+					iconType = {
+						name ="innovation_bg_5"
+						spriteType = "GFX_nat_ideas_economic_bg_5"
+						position = { x=13 y=32 }
+					}
+					
+					iconType = {
+						name ="innovation_bg_6"
+						spriteType = "GFX_nat_ideas_economic_bg_6"
+						position = { x=13 y=29 }
+					}
+					
+					iconType = {
+						name ="innovation_bg_7"
+						spriteType = "GFX_nat_ideas_economic_bg_7"
+						position = { x=13 y=28 }
+					}
+					
+					iconType = {
+						name ="innovation_bg_8"
+						spriteType = "GFX_nat_ideas_economic_bg_8"
+						position = { x=13 y=26 }
+					}
+					
+					iconType = {
+						name ="innovation_bg_9"
+						spriteType = "GFX_nat_ideas_economic_bg_9"
+						position = { x=13 y=25 }
+					}
+					
+					iconType = {
+						name ="innovation_bg_10"
+						spriteType = "GFX_nat_ideas_economic_bg_10"
+						position = { x=13 y=25 }
+					}
+					
+					background = {
+						name = "innovation_border_Background"
+						quadTextureSprite ="GFX_fullborder_tiled"
+						position = { x=0 y=0 }					
+					}
+					
+					iconType = {
+						name = "nat_ideas_innovation_1_unavailable" 
+						position = {x=23 y=40}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_innovation_1_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_innovation_1_available" 
+						position = {x=23 y=40}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_innovation_1_tt"
+					}
+					iconType = {
+						name = "nat_ideas_innovation_1_completed" 
+						position = {x=23 y=40}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_innovation_1_tt"
+					}
+					iconType = {
+						name ="innovation_icon_1"
+						spriteType = "GFX_nat_ideas_innovation_icon"
+						position = { x=74 y=47 }
+						
+					}
+					instantTextboxType = {
+						name = "innovation_1"
+						position = {x=0 y=53}
+						font = "hoi_18mbs"
+						text = "Innovation I"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_innovation_2_unavailable" 
+						position = {x=23 y=90}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_innovation_2_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_innovation_2_available" 
+						position = {x=23 y=90}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_innovation_2_tt"
+					}
+					iconType = {
+						name = "nat_ideas_innovation_2_completed" 
+						position = {x=23 y=90}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_innovation_2_tt"
+					}
+					iconType = {
+						name ="innovation_icon_2"
+						spriteType = "GFX_nat_ideas_innovation_icon"
+						position = { x=74 y=97 }
+						
+					}
+					instantTextboxType = {
+						name = "innovation_2"
+						position = {x=0 y=103}
+						font = "hoi_18mbs"
+						text = "Innovation II"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_innovation_3_unavailable" 
+						position = {x=23 y=140}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_innovation_3_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_innovation_3_available" 
+						position = {x=23 y=140}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_innovation_3_tt"
+					}
+					iconType = {
+						name = "nat_ideas_innovation_3_completed" 
+						position = {x=23 y=140}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_innovation_3_tt"
+					}
+					iconType = {
+						name ="innovation_icon_3"
+						spriteType = "GFX_nat_ideas_innovation_icon"
+						position = { x=74 y=147 }
+						
+					}
+					instantTextboxType = {
+						name = "innovation_3"
+						position = {x=0 y=153}
+						font = "hoi_18mbs"
+						text = "Innovation III"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_innovation_4_unavailable" 
+						position = {x=23 y=190}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_innovation_4_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_innovation_4_available" 
+						position = {x=23 y=190}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_innovation_4_tt"
+					}
+					iconType = {
+						name = "nat_ideas_innovation_4_completed" 
+						position = {x=23 y=190}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_innovation_4_tt"
+					}
+					iconType = {
+						name ="innovation_icon_4"
+						spriteType = "GFX_nat_ideas_innovation_icon"
+						position = { x=74 y=197 }
+						
+					}
+					instantTextboxType = {
+						name = "innovation_4"
+						position = {x=0 y=203}
+						font = "hoi_18mbs"
+						text = "Innovation IV"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_innovation_5_unavailable" 
+						position = {x=23 y=240}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_innovation_5_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_innovation_5_available" 
+						position = {x=23 y=240}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_innovation_5_tt"
+					}
+					iconType = {
+						name = "nat_ideas_innovation_5_completed" 
+						position = {x=23 y=240}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_innovation_5_tt"
+					}
+					iconType = {
+						name ="innovation_icon_5"
+						spriteType = "GFX_nat_ideas_innovation_icon"
+						position = { x=74 y=247 }
+						
+					}
+					instantTextboxType = {
+						name = "innovation_5"
+						position = {x=0 y=253}
+						font = "hoi_18mbs"
+						text = "Innovation V"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_innovation_6_unavailable" 
+						position = {x=23 y=290}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_innovation_6_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_innovation_6_available" 
+						position = {x=23 y=290}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_innovation_6_tt"
+					}
+					iconType = {
+						name = "nat_ideas_innovation_6_completed" 
+						position = {x=23 y=290}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_innovation_6_tt"
+					}
+					iconType = {
+						name ="innovation_icon_6"
+						spriteType = "GFX_nat_ideas_innovation_icon"
+						position = { x=74 y=297 }
+						
+					}
+					instantTextboxType = {
+						name = "innovation_6"
+						position = {x=0 y=303}
+						font = "hoi_18mbs"
+						text = "Innovation VI"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_innovation_7_unavailable" 
+						position = {x=23 y=340}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_innovation_7_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_innovation_7_available" 
+						position = {x=23 y=340}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_innovation_7_tt"
+					}
+					iconType = {
+						name = "nat_ideas_innovation_7_completed" 
+						position = {x=23 y=340}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_innovation_7_tt"
+					}
+					iconType = {
+						name ="innovation_icon_7"
+						spriteType = "GFX_nat_ideas_innovation_icon"
+						position = { x=74 y=347 }
+						
+					}
+					instantTextboxType = {
+						name = "innovation_7"
+						position = {x=0 y=353}
+						font = "hoi_18mbs"
+						text = "Innovation VII"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_innovation_8_unavailable" 
+						position = {x=23 y=390}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_innovation_8_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_innovation_8_available" 
+						position = {x=23 y=390}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_innovation_8_tt"
+					}
+					iconType = {
+						name = "nat_ideas_innovation_8_completed" 
+						position = {x=23 y=390}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_innovation_8_tt"
+					}
+					iconType = {
+						name ="innovation_icon_8"
+						spriteType = "GFX_nat_ideas_innovation_icon"
+						position = { x=74 y=397 }
+						
+					}
+					instantTextboxType = {
+						name = "innovation_8"
+						position = {x=0 y=403}
+						font = "hoi_18mbs"
+						text = "Innovation VIII"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_innovation_9_unavailable" 
+						position = {x=23 y=440}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_innovation_9_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_innovation_9_available" 
+						position = {x=23 y=440}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_innovation_9_tt"
+					}
+					iconType = {
+						name = "nat_ideas_innovation_9_completed" 
+						position = {x=23 y=440}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_innovation_9_tt"
+					}
+					iconType = {
+						name ="innovation_icon_9"
+						spriteType = "GFX_nat_ideas_innovation_icon"
+						position = { x=74 y=447 }
+						
+					}
+					instantTextboxType = {
+						name = "innovation_9"
+						position = {x=0 y=453}
+						font = "hoi_18mbs"
+						text = "Innovation IX"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_innovation_10_unavailable" 
+						position = {x=23 y=490}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_innovation_10_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_innovation_10_available" 
+						position = {x=23 y=490}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_innovation_10_tt"
+					}
+					iconType = {
+						name = "nat_ideas_innovation_10_completed" 
+						position = {x=23 y=490}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_innovation_10_tt"
+					}
+					iconType = {
+						name ="innovation_icon_10"
+						spriteType = "GFX_nat_ideas_innovation_icon"
+						position = { x=74 y=497 }
+						
+					}
+					instantTextboxType = {
+						name = "innovation_10"
+						position = {x=0 y=503}
+						font = "hoi_18mbs"
+						text = "Innovation X"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+				}
+				
+				containerWindowType = {
+					name = "nat_ideas_diplomatic_container"
+					position = { x=539 y=5 }
+					size = { width = 176 height = 553 }
+
+					instantTextboxType = {
+						name = "diplomatic_title"
+						position = { x=0 y=13 }
+						orientation = "UPPER_LEFT"
+						font = "hoi_24header"
+						text = "Diplomatic"
+						maxWidth = 176
+						maxHeight = 23
+						format = center
+					}
+				
+					iconType = {
+						name ="diplomatic_bg_1"
+						spriteType = "GFX_nat_ideas_economic_bg_1"
+						position = { x=13 y=37 }
+					}
+					
+					iconType = {
+						name ="diplomatic_bg_2"
+						spriteType = "GFX_nat_ideas_economic_bg_2"
+						position = { x=13 y=35 }
+					}
+					
+					iconType = {
+						name ="diplomatic_bg_3"
+						spriteType = "GFX_nat_ideas_economic_bg_3"
+						position = { x=13 y=34 }
+					}
+					
+					iconType = {
+						name ="diplomatic_bg_4"
+						spriteType = "GFX_nat_ideas_economic_bg_4"
+						position = { x=13 y=33 }
+					}
+					
+					iconType = {
+						name ="diplomatic_bg_5"
+						spriteType = "GFX_nat_ideas_economic_bg_5"
+						position = { x=13 y=32 }
+					}
+					
+					iconType = {
+						name ="diplomatic_bg_6"
+						spriteType = "GFX_nat_ideas_economic_bg_6"
+						position = { x=13 y=29 }
+					}
+					
+					iconType = {
+						name ="diplomatic_bg_7"
+						spriteType = "GFX_nat_ideas_economic_bg_7"
+						position = { x=13 y=28 }
+					}
+					
+					iconType = {
+						name ="diplomatic_bg_8"
+						spriteType = "GFX_nat_ideas_economic_bg_8"
+						position = { x=13 y=26 }
+					}
+					
+					iconType = {
+						name ="diplomatic_bg_9"
+						spriteType = "GFX_nat_ideas_economic_bg_9"
+						position = { x=13 y=25 }
+					}
+					
+					iconType = {
+						name ="diplomatic_bg_10"
+						spriteType = "GFX_nat_ideas_economic_bg_10"
+						position = { x=13 y=25 }
+					}
+					
+					background = {
+						name = "diplomatic_border_Background"
+						quadTextureSprite ="GFX_fullborder_tiled"
+						position = { x=0 y=0 }					
+					}
+					
+					iconType = {
+						name = "nat_ideas_diplomatic_1_unavailable" 
+						position = {x=23 y=40}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_diplomatic_1_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_diplomatic_1_available" 
+						position = {x=23 y=40}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_diplomatic_1_tt"
+					}
+					iconType = {
+						name = "nat_ideas_diplomatic_1_completed" 
+						position = {x=23 y=40}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_diplomatic_1_tt"
+					}
+					iconType = {
+						name ="diplomatic_icon_1"
+						spriteType = "GFX_nat_ideas_diplomatic_icon"
+						position = { x=74 y=47 }
+						
+					}
+					instantTextboxType = {
+						name = "diplomatic_1"
+						position = {x=0 y=53}
+						font = "hoi_18mbs"
+						text = "Diplomatic I"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_diplomatic_2_unavailable" 
+						position = {x=23 y=90}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_diplomatic_2_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_diplomatic_2_available" 
+						position = {x=23 y=90}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_diplomatic_2_tt"
+					}
+					iconType = {
+						name = "nat_ideas_diplomatic_2_completed" 
+						position = {x=23 y=90}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_diplomatic_2_tt"
+					}
+					iconType = {
+						name ="diplomatic_icon_2"
+						spriteType = "GFX_nat_ideas_diplomatic_icon"
+						position = { x=74 y=97 }
+						
+					}
+					instantTextboxType = {
+						name = "diplomatic_2"
+						position = {x=0 y=103}
+						font = "hoi_18mbs"
+						text = "Diplomatic II"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_diplomatic_3_unavailable" 
+						position = {x=23 y=140}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_diplomatic_3_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_diplomatic_3_available" 
+						position = {x=23 y=140}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_diplomatic_3_tt"
+					}
+					iconType = {
+						name = "nat_ideas_diplomatic_3_completed" 
+						position = {x=23 y=140}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_diplomatic_3_tt"
+					}
+					iconType = {
+						name ="diplomatic_icon_3"
+						spriteType = "GFX_nat_ideas_diplomatic_icon"
+						position = { x=74 y=147 }
+						
+					}
+					instantTextboxType = {
+						name = "diplomatic_3"
+						position = {x=0 y=153}
+						font = "hoi_18mbs"
+						text = "Diplomatic III"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_diplomatic_4_unavailable" 
+						position = {x=23 y=190}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_diplomatic_4_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_diplomatic_4_available" 
+						position = {x=23 y=190}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_diplomatic_4_tt"
+					}
+					iconType = {
+						name = "nat_ideas_diplomatic_4_completed" 
+						position = {x=23 y=190}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_diplomatic_4_tt"
+					}
+					iconType = {
+						name ="diplomatic_icon_4"
+						spriteType = "GFX_nat_ideas_diplomatic_icon"
+						position = { x=74 y=197 }
+						
+					}
+					instantTextboxType = {
+						name = "diplomatic_4"
+						position = {x=0 y=203}
+						font = "hoi_18mbs"
+						text = "Diplomatic IV"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_diplomatic_5_unavailable" 
+						position = {x=23 y=240}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_diplomatic_5_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_diplomatic_5_available" 
+						position = {x=23 y=240}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_diplomatic_5_tt"
+					}
+					iconType = {
+						name = "nat_ideas_diplomatic_5_completed" 
+						position = {x=23 y=240}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_diplomatic_5_tt"
+					}
+					iconType = {
+						name ="diplomatic_icon_5"
+						spriteType = "GFX_nat_ideas_diplomatic_icon"
+						position = { x=74 y=247 }
+						
+					}
+					instantTextboxType = {
+						name = "diplomatic_5"
+						position = {x=0 y=253}
+						font = "hoi_18mbs"
+						text = "Diplomatic V"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_diplomatic_6_unavailable" 
+						position = {x=23 y=290}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_diplomatic_6_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_diplomatic_6_available" 
+						position = {x=23 y=290}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_diplomatic_6_tt"
+					}
+					iconType = {
+						name = "nat_ideas_diplomatic_6_completed" 
+						position = {x=23 y=290}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_diplomatic_6_tt"
+					}
+					iconType = {
+						name ="diplomatic_icon_6"
+						spriteType = "GFX_nat_ideas_diplomatic_icon"
+						position = { x=74 y=297 }
+						
+					}
+					instantTextboxType = {
+						name = "diplomatic_6"
+						position = {x=0 y=303}
+						font = "hoi_18mbs"
+						text = "Diplomatic VI"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_diplomatic_7_unavailable" 
+						position = {x=23 y=340}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_diplomatic_7_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_diplomatic_7_available" 
+						position = {x=23 y=340}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_diplomatic_7_tt"
+					}
+					iconType = {
+						name = "nat_ideas_diplomatic_7_completed" 
+						position = {x=23 y=340}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_diplomatic_7_tt"
+					}
+					iconType = {
+						name ="diplomatic_icon_7"
+						spriteType = "GFX_nat_ideas_diplomatic_icon"
+						position = { x=74 y=347 }
+						
+					}
+					instantTextboxType = {
+						name = "diplomatic_7"
+						position = {x=0 y=353}
+						font = "hoi_18mbs"
+						text = "Diplomatic VII"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_diplomatic_8_unavailable" 
+						position = {x=23 y=390}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_diplomatic_8_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_diplomatic_8_available" 
+						position = {x=23 y=390}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_diplomatic_8_tt"
+					}
+					iconType = {
+						name = "nat_ideas_diplomatic_8_completed" 
+						position = {x=23 y=390}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_diplomatic_8_tt"
+					}
+					iconType = {
+						name ="diplomatic_icon_8"
+						spriteType = "GFX_nat_ideas_diplomatic_icon"
+						position = { x=74 y=397 }
+						
+					}
+					instantTextboxType = {
+						name = "diplomatic_8"
+						position = {x=0 y=403}
+						font = "hoi_18mbs"
+						text = "Diplomatic VIII"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_diplomatic_9_unavailable" 
+						position = {x=23 y=440}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_diplomatic_9_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_diplomatic_9_available" 
+						position = {x=23 y=440}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_diplomatic_9_tt"
+					}
+					iconType = {
+						name = "nat_ideas_diplomatic_9_completed" 
+						position = {x=23 y=440}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_diplomatic_9_tt"
+					}
+					iconType = {
+						name ="diplomatic_icon_9"
+						spriteType = "GFX_nat_ideas_diplomatic_icon"
+						position = { x=74 y=447 }
+						
+					}
+					instantTextboxType = {
+						name = "diplomatic_9"
+						position = {x=0 y=453}
+						font = "hoi_18mbs"
+						text = "Diplomatic IX"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_diplomatic_10_unavailable" 
+						position = {x=23 y=490}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_diplomatic_10_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_diplomatic_10_available" 
+						position = {x=23 y=490}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_diplomatic_10_tt"
+					}
+					iconType = {
+						name = "nat_ideas_diplomatic_10_completed" 
+						position = {x=23 y=490}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_diplomatic_10_tt"
+					}
+					iconType = {
+						name ="diplomatic_icon_10"
+						spriteType = "GFX_nat_ideas_diplomatic_icon"
+						position = { x=74 y=497 }
+						
+					}
+					instantTextboxType = {
+						name = "diplomatic_10"
+						position = {x=0 y=503}
+						font = "hoi_18mbs"
+						text = "Diplomatic X"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+				}
+				
+				containerWindowType = {
+					name = "nat_ideas_quality_container"
+					position = { x=718 y=5 }
+					size = { width = 176 height = 553 }
+					
+					instantTextboxType = {
+						name = "quality_title"
+						position = { x=0 y=13 }
+						orientation = "UPPER_LEFT"
+						font = "hoi_24header"
+						text = "Quality"
+						maxWidth = 176
+						maxHeight = 23
+						format = center
+					}
+					
+					iconType = {
+						name ="quality_bg_1"
+						spriteType = "GFX_nat_ideas_economic_bg_1"
+						position = { x=13 y=37 }
+					}
+					
+					iconType = {
+						name ="quality_bg_2"
+						spriteType = "GFX_nat_ideas_economic_bg_2"
+						position = { x=13 y=35 }
+					}
+					
+					iconType = {
+						name ="quality_bg_3"
+						spriteType = "GFX_nat_ideas_economic_bg_3"
+						position = { x=13 y=34 }
+					}
+					
+					iconType = {
+						name ="quality_bg_4"
+						spriteType = "GFX_nat_ideas_economic_bg_4"
+						position = { x=13 y=33 }
+					}
+					
+					iconType = {
+						name ="quality_bg_5"
+						spriteType = "GFX_nat_ideas_economic_bg_5"
+						position = { x=13 y=32 }
+					}
+					
+					iconType = {
+						name ="quality_bg_6"
+						spriteType = "GFX_nat_ideas_economic_bg_6"
+						position = { x=13 y=29 }
+					}
+					
+					iconType = {
+						name ="quality_bg_7"
+						spriteType = "GFX_nat_ideas_economic_bg_7"
+						position = { x=13 y=28 }
+					}
+					
+					iconType = {
+						name ="quality_bg_8"
+						spriteType = "GFX_nat_ideas_economic_bg_8"
+						position = { x=13 y=26 }
+					}
+					
+					iconType = {
+						name ="quality_bg_9"
+						spriteType = "GFX_nat_ideas_economic_bg_9"
+						position = { x=13 y=25 }
+					}
+					
+					iconType = {
+						name ="quality_bg_10"
+						spriteType = "GFX_nat_ideas_economic_bg_10"
+						position = { x=13 y=25 }
+					}
+					
+					background = {
+						name = "quality_border_Background"
+						quadTextureSprite ="GFX_fullborder_tiled"
+						position = { x=0 y=0 }					
+					}
+					
+					iconType = {
+						name = "nat_ideas_quality_1_unavailable" 
+						position = {x=23 y=40}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_quality_1_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_quality_1_available" 
+						position = {x=23 y=40}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_quality_1_tt"
+					}
+					iconType = {
+						name = "nat_ideas_quality_1_completed" 
+						position = {x=23 y=40}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_quality_1_tt"
+					}
+					iconType = {
+						name ="quality_icon_1"
+						spriteType = "GFX_nat_ideas_quality_icon"
+						position = { x=74 y=47 }
+						
+					}
+					instantTextboxType = {
+						name = "quality_1"
+						position = {x=0 y=53}
+						font = "hoi_18mbs"
+						text = "Quality I"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_quality_2_unavailable" 
+						position = {x=23 y=90}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_quality_2_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_quality_2_available" 
+						position = {x=23 y=90}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_quality_2_tt"
+					}
+					iconType = {
+						name = "nat_ideas_quality_2_completed" 
+						position = {x=23 y=90}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_quality_2_tt"
+					}
+					iconType = {
+						name ="quality_icon_2"
+						spriteType = "GFX_nat_ideas_quality_icon"
+						position = { x=74 y=97 }
+						
+					}
+					instantTextboxType = {
+						name = "quality_2"
+						position = {x=0 y=103}
+						font = "hoi_18mbs"
+						text = "Quality II"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_quality_3_unavailable" 
+						position = {x=23 y=140}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_quality_3_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_quality_3_available" 
+						position = {x=23 y=140}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_quality_3_tt"
+					}
+					iconType = {
+						name = "nat_ideas_quality_3_completed" 
+						position = {x=23 y=140}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_quality_3_tt"
+					}
+					iconType = {
+						name ="quality_icon_3"
+						spriteType = "GFX_nat_ideas_quality_icon"
+						position = { x=74 y=147 }
+						
+					}
+					instantTextboxType = {
+						name = "quality_3"
+						position = {x=0 y=153}
+						font = "hoi_18mbs"
+						text = "Quality III"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_quality_4_unavailable" 
+						position = {x=23 y=190}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_quality_4_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_quality_4_available" 
+						position = {x=23 y=190}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_quality_4_tt"
+					}
+					iconType = {
+						name = "nat_ideas_quality_4_completed" 
+						position = {x=23 y=190}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_quality_4_tt"
+					}
+					iconType = {
+						name ="quality_icon_4"
+						spriteType = "GFX_nat_ideas_quality_icon"
+						position = { x=74 y=197 }
+						
+					}
+					instantTextboxType = {
+						name = "quality_4"
+						position = {x=0 y=203}
+						font = "hoi_18mbs"
+						text = "Quality IV"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_quality_5_unavailable" 
+						position = {x=23 y=240}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_quality_5_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_quality_5_available" 
+						position = {x=23 y=240}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_quality_5_tt"
+					}
+					iconType = {
+						name = "nat_ideas_quality_5_completed" 
+						position = {x=23 y=240}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_quality_5_tt"
+					}
+					iconType = {
+						name ="quality_icon_5"
+						spriteType = "GFX_nat_ideas_quality_icon"
+						position = { x=74 y=247 }
+						
+					}
+					instantTextboxType = {
+						name = "quality_5"
+						position = {x=0 y=253}
+						font = "hoi_18mbs"
+						text = "Quality V"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_quality_6_unavailable" 
+						position = {x=23 y=290}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_quality_6_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_quality_6_available" 
+						position = {x=23 y=290}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_quality_6_tt"
+					}
+					iconType = {
+						name = "nat_ideas_quality_6_completed" 
+						position = {x=23 y=290}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_quality_6_tt"
+					}
+					iconType = {
+						name ="quality_icon_6"
+						spriteType = "GFX_nat_ideas_quality_icon"
+						position = { x=74 y=297 }
+						
+					}
+					instantTextboxType = {
+						name = "quality_6"
+						position = {x=0 y=303}
+						font = "hoi_18mbs"
+						text = "Quality VI"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_quality_7_unavailable" 
+						position = {x=23 y=340}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_quality_7_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_quality_7_available" 
+						position = {x=23 y=340}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_quality_7_tt"
+					}
+					iconType = {
+						name = "nat_ideas_quality_7_completed" 
+						position = {x=23 y=340}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_quality_7_tt"
+					}
+					iconType = {
+						name ="quality_icon_7"
+						spriteType = "GFX_nat_ideas_quality_icon"
+						position = { x=74 y=347 }
+						
+					}
+					instantTextboxType = {
+						name = "quality_7"
+						position = {x=0 y=353}
+						font = "hoi_18mbs"
+						text = "Quality VII"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_quality_8_unavailable" 
+						position = {x=23 y=390}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_quality_8_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_quality_8_available" 
+						position = {x=23 y=390}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_quality_8_tt"
+					}
+					iconType = {
+						name = "nat_ideas_quality_8_completed" 
+						position = {x=23 y=390}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_quality_8_tt"
+					}
+					iconType = {
+						name ="quality_icon_8"
+						spriteType = "GFX_nat_ideas_quality_icon"
+						position = { x=74 y=397 }
+						
+					}
+					instantTextboxType = {
+						name = "quality_8"
+						position = {x=0 y=403}
+						font = "hoi_18mbs"
+						text = "Quality VIII"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_quality_9_unavailable" 
+						position = {x=23 y=440}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_quality_9_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_quality_9_available" 
+						position = {x=23 y=440}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_quality_9_tt"
+					}
+					iconType = {
+						name = "nat_ideas_quality_9_completed" 
+						position = {x=23 y=440}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_quality_9_tt"
+					}
+					iconType = {
+						name ="quality_icon_9"
+						spriteType = "GFX_nat_ideas_quality_icon"
+						position = { x=74 y=447 }
+						
+					}
+					instantTextboxType = {
+						name = "quality_9"
+						position = {x=0 y=453}
+						font = "hoi_18mbs"
+						text = "Quality IX"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_quality_10_unavailable" 
+						position = {x=23 y=490}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_quality_10_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_quality_10_available" 
+						position = {x=23 y=490}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_quality_10_tt"
+					}
+					iconType = {
+						name = "nat_ideas_quality_10_completed" 
+						position = {x=23 y=490}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_quality_10_tt"
+					}
+					iconType = {
+						name ="quality_icon_10"
+						spriteType = "GFX_nat_ideas_quality_icon"
+						position = { x=74 y=497 }
+						
+					}
+					instantTextboxType = {
+						name = "quality_10"
+						position = {x=0 y=503}
+						font = "hoi_18mbs"
+						text = "Quality X"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+				}
+				
+				containerWindowType = {
+					name = "nat_ideas_quantity_container"
+					position = { x=897 y=5 }
+					size = { width = 176 height = 553 }
+					
+					instantTextboxType = {
+						name = "quantity_title"
+						position = { x=0 y=13 }
+						orientation = "UPPER_LEFT"
+						font = "hoi_24header"
+						text = "Quantity"
+						maxWidth = 176
+						maxHeight = 23
+						format = center
+					}
+					
+					iconType = {
+						name ="quantity_bg_1"
+						spriteType = "GFX_nat_ideas_economic_bg_1"
+						position = { x=13 y=37 }
+					}
+					
+					iconType = {
+						name ="quantity_bg_2"
+						spriteType = "GFX_nat_ideas_economic_bg_2"
+						position = { x=13 y=35 }
+					}
+					
+					iconType = {
+						name ="quantity_bg_3"
+						spriteType = "GFX_nat_ideas_economic_bg_3"
+						position = { x=13 y=34 }
+					}
+					
+					iconType = {
+						name ="quantity_bg_4"
+						spriteType = "GFX_nat_ideas_economic_bg_4"
+						position = { x=13 y=33 }
+					}
+					
+					iconType = {
+						name ="quantity_bg_5"
+						spriteType = "GFX_nat_ideas_economic_bg_5"
+						position = { x=13 y=32 }
+					}
+					
+					iconType = {
+						name ="quantity_bg_6"
+						spriteType = "GFX_nat_ideas_economic_bg_6"
+						position = { x=13 y=29 }
+					}
+					
+					iconType = {
+						name ="quantity_bg_7"
+						spriteType = "GFX_nat_ideas_economic_bg_7"
+						position = { x=13 y=28 }
+					}
+					
+					iconType = {
+						name ="quantity_bg_8"
+						spriteType = "GFX_nat_ideas_economic_bg_8"
+						position = { x=13 y=26 }
+					}
+					
+					iconType = {
+						name ="quantity_bg_9"
+						spriteType = "GFX_nat_ideas_economic_bg_9"
+						position = { x=13 y=25 }
+					}
+					
+					iconType = {
+						name ="quantity_bg_10"
+						spriteType = "GFX_nat_ideas_economic_bg_10"
+						position = { x=13 y=25 }
+					}
+					
+					background = {
+						name = "quantity_border_Background"
+						quadTextureSprite ="GFX_fullborder_tiled"
+						position = { x=0 y=0 }					
+					}
+					
+					iconType = {
+						name = "nat_ideas_quantity_1_unavailable" 
+						position = {x=23 y=40}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_quantity_1_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_quantity_1_available" 
+						position = {x=23 y=40}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_quantity_1_tt"
+					}
+					iconType = {
+						name = "nat_ideas_quantity_1_completed" 
+						position = {x=23 y=40}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_quantity_1_tt"
+					}
+					iconType = {
+						name ="quantity_icon_1"
+						spriteType = "GFX_nat_ideas_quantity_icon"
+						position = { x=74 y=47 }
+						
+					}
+					instantTextboxType = {
+						name = "quantity_1"
+						position = {x=0 y=53}
+						font = "hoi_18mbs"
+						text = "Quantity I"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_quantity_2_unavailable" 
+						position = {x=23 y=90}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_quantity_2_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_quantity_2_available" 
+						position = {x=23 y=90}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_quantity_2_tt"
+					}
+					iconType = {
+						name = "nat_ideas_quantity_2_completed" 
+						position = {x=23 y=90}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_quantity_2_tt"
+					}
+					iconType = {
+						name ="quantity_icon_2"
+						spriteType = "GFX_nat_ideas_quantity_icon"
+						position = { x=74 y=97 }
+						
+					}
+					instantTextboxType = {
+						name = "quantity_2"
+						position = {x=0 y=103}
+						font = "hoi_18mbs"
+						text = "Quantity II"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_quantity_3_unavailable" 
+						position = {x=23 y=140}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_quantity_3_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_quantity_3_available" 
+						position = {x=23 y=140}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_quantity_3_tt"
+					}
+					iconType = {
+						name = "nat_ideas_quantity_3_completed" 
+						position = {x=23 y=140}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_quantity_3_tt"
+					}
+					iconType = {
+						name ="quantity_icon_3"
+						spriteType = "GFX_nat_ideas_quantity_icon"
+						position = { x=74 y=147 }
+						
+					}
+					instantTextboxType = {
+						name = "quantity_3"
+						position = {x=0 y=153}
+						font = "hoi_18mbs"
+						text = "Quantity III"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_quantity_4_unavailable" 
+						position = {x=23 y=190}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_quantity_4_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_quantity_4_available" 
+						position = {x=23 y=190}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_quantity_4_tt"
+					}
+					iconType = {
+						name = "nat_ideas_quantity_4_completed" 
+						position = {x=23 y=190}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_quantity_4_tt"
+					}
+					iconType = {
+						name ="quantity_icon_4"
+						spriteType = "GFX_nat_ideas_quantity_icon"
+						position = { x=74 y=197 }
+						
+					}
+					instantTextboxType = {
+						name = "quantity_4"
+						position = {x=0 y=203}
+						font = "hoi_18mbs"
+						text = "Quantity IV"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_quantity_5_unavailable" 
+						position = {x=23 y=240}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_quantity_5_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_quantity_5_available" 
+						position = {x=23 y=240}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_quantity_5_tt"
+					}
+					iconType = {
+						name = "nat_ideas_quantity_5_completed" 
+						position = {x=23 y=240}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_quantity_5_tt"
+					}
+					iconType = {
+						name ="quantity_icon_5"
+						spriteType = "GFX_nat_ideas_quantity_icon"
+						position = { x=74 y=247 }
+						
+					}
+					instantTextboxType = {
+						name = "quantity_5"
+						position = {x=0 y=253}
+						font = "hoi_18mbs"
+						text = "Quantity V"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_quantity_6_unavailable" 
+						position = {x=23 y=290}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_quantity_6_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_quantity_6_available" 
+						position = {x=23 y=290}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_quantity_6_tt"
+					}
+					iconType = {
+						name = "nat_ideas_quantity_6_completed" 
+						position = {x=23 y=290}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_quantity_6_tt"
+					}
+					iconType = {
+						name ="quantity_icon_6"
+						spriteType = "GFX_nat_ideas_quantity_icon"
+						position = { x=74 y=297 }
+						
+					}
+					instantTextboxType = {
+						name = "quantity_6"
+						position = {x=0 y=303}
+						font = "hoi_18mbs"
+						text = "Quantity VI"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_quantity_7_unavailable" 
+						position = {x=23 y=340}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_quantity_7_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_quantity_7_available" 
+						position = {x=23 y=340}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_quantity_7_tt"
+					}
+					iconType = {
+						name = "nat_ideas_quantity_7_completed" 
+						position = {x=23 y=340}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_quantity_7_tt"
+					}
+					iconType = {
+						name ="quantity_icon_7"
+						spriteType = "GFX_nat_ideas_quantity_icon"
+						position = { x=74 y=347 }
+						
+					}
+					instantTextboxType = {
+						name = "quantity_7"
+						position = {x=0 y=353}
+						font = "hoi_18mbs"
+						text = "Quantity VII"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_quantity_8_unavailable" 
+						position = {x=23 y=390}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_quantity_8_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_quantity_8_available" 
+						position = {x=23 y=390}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_quantity_8_tt"
+					}
+					iconType = {
+						name = "nat_ideas_quantity_8_completed" 
+						position = {x=23 y=390}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_quantity_8_tt"
+					}
+					iconType = {
+						name ="quantity_icon_8"
+						spriteType = "GFX_nat_ideas_quantity_icon"
+						position = { x=74 y=397 }
+						
+					}
+					instantTextboxType = {
+						name = "quantity_8"
+						position = {x=0 y=403}
+						font = "hoi_18mbs"
+						text = "Quantity VIII"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_quantity_9_unavailable" 
+						position = {x=23 y=440}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_quantity_9_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_quantity_9_available" 
+						position = {x=23 y=440}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_quantity_9_tt"
+					}
+					iconType = {
+						name = "nat_ideas_quantity_9_completed" 
+						position = {x=23 y=440}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_quantity_9_tt"
+					}
+					iconType = {
+						name ="quantity_icon_9"
+						spriteType = "GFX_nat_ideas_quantity_icon"
+						position = { x=74 y=447 }
+						
+					}
+					instantTextboxType = {
+						name = "quantity_9"
+						position = {x=0 y=453}
+						font = "hoi_18mbs"
+						text = "Quantity IX"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_quantity_10_unavailable" 
+						position = {x=23 y=490}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_quantity_10_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_quantity_10_available" 
+						position = {x=23 y=490}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_quantity_10_tt"
+					}
+					iconType = {
+						name = "nat_ideas_quantity_10_completed" 
+						position = {x=23 y=490}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_quantity_10_tt"
+					}
+					iconType = {
+						name ="quantity_icon_10"
+						spriteType = "GFX_nat_ideas_quantity_icon"
+						position = { x=74 y=497 }
+						
+					}
+					instantTextboxType = {
+						name = "quantity_10"
+						position = {x=0 y=503}
+						font = "hoi_18mbs"
+						text = "Quantity X"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+				}
+				
+				### ADMIRALITY ###
+				containerWindowType = {
+					name = "nat_ideas_admirality_container"
+					position = { x=1076 y=5 }
+					size = { width = 176 height = 553 }
+					
+					instantTextboxType = {
+						name = "admirality_title"
+						position = { x=0 y=13 }
+						orientation = "UPPER_LEFT"
+						font = "hoi_24header"
+						text = "Admirality"
+						maxWidth = 176
+						maxHeight = 23
+						format = center
+					}
+					
+					iconType = {
+						name ="admirality_bg_1"
+						spriteType = "GFX_nat_ideas_economic_bg_1"
+						position = { x=13 y=37 }
+					}
+					
+					iconType = {
+						name ="admirality_bg_2"
+						spriteType = "GFX_nat_ideas_economic_bg_2"
+						position = { x=13 y=35 }
+					}
+					
+					iconType = {
+						name ="admirality_bg_3"
+						spriteType = "GFX_nat_ideas_economic_bg_3"
+						position = { x=13 y=34 }
+					}
+					
+					iconType = {
+						name ="admirality_bg_4"
+						spriteType = "GFX_nat_ideas_economic_bg_4"
+						position = { x=13 y=33 }
+					}
+					
+					iconType = {
+						name ="admirality_bg_5"
+						spriteType = "GFX_nat_ideas_economic_bg_5"
+						position = { x=13 y=32 }
+					}
+					
+					iconType = {
+						name ="admirality_bg_6"
+						spriteType = "GFX_nat_ideas_economic_bg_6"
+						position = { x=13 y=29 }
+					}
+					
+					iconType = {
+						name ="admirality_bg_7"
+						spriteType = "GFX_nat_ideas_economic_bg_7"
+						position = { x=13 y=28 }
+					}
+					
+					iconType = {
+						name ="admirality_bg_8"
+						spriteType = "GFX_nat_ideas_economic_bg_8"
+						position = { x=13 y=26 }
+					}
+					
+					iconType = {
+						name ="admirality_bg_9"
+						spriteType = "GFX_nat_ideas_economic_bg_9"
+						position = { x=13 y=25 }
+					}
+					
+					iconType = {
+						name ="admirality_bg_10"
+						spriteType = "GFX_nat_ideas_economic_bg_10"
+						position = { x=13 y=25 }
+					}
+					
+					background = {
+						name = "admirality_border_Background"
+						quadTextureSprite ="GFX_fullborder_tiled"
+						position = { x=0 y=0 }					
+					}
+					#admirality | Admirality | nat_ideas_admirality_1_tt
+					iconType = {
+						name = "nat_ideas_admirality_1_unavailable" 
+						position = {x=23 y=40}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_admirality_1_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_admirality_1_available" 
+						position = {x=23 y=40}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_admirality_1_tt"
+					}
+					iconType = {
+						name = "nat_ideas_admirality_1_completed" 
+						position = {x=23 y=40}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_admirality_1_tt"
+					}
+					iconType = {
+						name ="admirality_icon_1"
+						spriteType = "GFX_nat_ideas_admirality_icon"
+						position = { x=74 y=47 }
+						
+					}
+					instantTextboxType = {
+						name = "admirality_1"
+						position = {x=0 y=53}
+						font = "hoi_18mbs"
+						text = "Admirality I"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_admirality_2_unavailable" 
+						position = {x=23 y=90}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_admirality_2_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_admirality_2_available" 
+						position = {x=23 y=90}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_admirality_2_tt"
+					}
+					iconType = {
+						name = "nat_ideas_admirality_2_completed" 
+						position = {x=23 y=90}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_admirality_2_tt"
+					}
+					iconType = {
+						name ="admirality_icon_2"
+						spriteType = "GFX_nat_ideas_admirality_icon"
+						position = { x=74 y=97 }
+						
+					}
+					instantTextboxType = {
+						name = "admirality_2"
+						position = {x=0 y=103}
+						font = "hoi_18mbs"
+						text = "Admirality II"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_admirality_3_unavailable" 
+						position = {x=23 y=140}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_admirality_3_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_admirality_3_available" 
+						position = {x=23 y=140}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_admirality_3_tt"
+					}
+					iconType = {
+						name = "nat_ideas_admirality_3_completed" 
+						position = {x=23 y=140}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_admirality_3_tt"
+					}
+					iconType = {
+						name ="admirality_icon_3"
+						spriteType = "GFX_nat_ideas_admirality_icon"
+						position = { x=74 y=147 }
+						
+					}
+					instantTextboxType = {
+						name = "admirality_3"
+						position = {x=0 y=153}
+						font = "hoi_18mbs"
+						text = "Admirality III"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_admirality_4_unavailable" 
+						position = {x=23 y=190}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_admirality_4_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_admirality_4_available" 
+						position = {x=23 y=190}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_admirality_4_tt"
+					}
+					iconType = {
+						name = "nat_ideas_admirality_4_completed" 
+						position = {x=23 y=190}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_admirality_4_tt"
+					}
+					iconType = {
+						name ="admirality_icon_4"
+						spriteType = "GFX_nat_ideas_admirality_icon"
+						position = { x=74 y=197 }
+						
+					}
+					instantTextboxType = {
+						name = "admirality_4"
+						position = {x=0 y=203}
+						font = "hoi_18mbs"
+						text = "Admirality IV"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_admirality_5_unavailable" 
+						position = {x=23 y=240}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_admirality_5_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_admirality_5_available" 
+						position = {x=23 y=240}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_admirality_5_tt"
+					}
+					iconType = {
+						name = "nat_ideas_admirality_5_completed" 
+						position = {x=23 y=240}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_admirality_5_tt"
+					}
+					iconType = {
+						name ="admirality_icon_5"
+						spriteType = "GFX_nat_ideas_admirality_icon"
+						position = { x=74 y=247 }
+						
+					}
+					instantTextboxType = {
+						name = "admirality_5"
+						position = {x=0 y=253}
+						font = "hoi_18mbs"
+						text = "Admirality V"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_admirality_6_unavailable" 
+						position = {x=23 y=290}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_admirality_6_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_admirality_6_available" 
+						position = {x=23 y=290}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_admirality_6_tt"
+					}
+					iconType = {
+						name = "nat_ideas_admirality_6_completed" 
+						position = {x=23 y=290}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_admirality_6_tt"
+					}
+					iconType = {
+						name ="admirality_icon_6"
+						spriteType = "GFX_nat_ideas_admirality_icon"
+						position = { x=74 y=297 }
+						
+					}
+					instantTextboxType = {
+						name = "admirality_6"
+						position = {x=0 y=303}
+						font = "hoi_18mbs"
+						text = "Admirality VI"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_admirality_7_unavailable" 
+						position = {x=23 y=340}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_admirality_7_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_admirality_7_available" 
+						position = {x=23 y=340}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_admirality_7_tt"
+					}
+					iconType = {
+						name = "nat_ideas_admirality_7_completed" 
+						position = {x=23 y=340}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_admirality_7_tt"
+					}
+					iconType = {
+						name ="admirality_icon_7"
+						spriteType = "GFX_nat_ideas_admirality_icon"
+						position = { x=74 y=347 }
+						
+					}
+					instantTextboxType = {
+						name = "admirality_7"
+						position = {x=0 y=353}
+						font = "hoi_18mbs"
+						text = "Admirality VII"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_admirality_8_unavailable" 
+						position = {x=23 y=390}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_admirality_8_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_admirality_8_available" 
+						position = {x=23 y=390}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_admirality_8_tt"
+					}
+					iconType = {
+						name = "nat_ideas_admirality_8_completed" 
+						position = {x=23 y=390}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_admirality_8_tt"
+					}
+					iconType = {
+						name ="admirality_icon_8"
+						spriteType = "GFX_nat_ideas_admirality_icon"
+						position = { x=74 y=397 }
+						
+					}
+					instantTextboxType = {
+						name = "admirality_8"
+						position = {x=0 y=403}
+						font = "hoi_18mbs"
+						text = "Admirality VIII"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_admirality_9_unavailable" 
+						position = {x=23 y=440}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_admirality_9_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_admirality_9_available" 
+						position = {x=23 y=440}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_admirality_9_tt"
+					}
+					iconType = {
+						name = "nat_ideas_admirality_9_completed" 
+						position = {x=23 y=440}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_admirality_9_tt"
+					}
+					iconType = {
+						name ="admirality_icon_9"
+						spriteType = "GFX_nat_ideas_admirality_icon"
+						position = { x=74 y=447 }
+						
+					}
+					instantTextboxType = {
+						name = "admirality_9"
+						position = {x=0 y=453}
+						font = "hoi_18mbs"
+						text = "Admirality IX"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_admirality_10_unavailable" 
+						position = {x=23 y=490}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_admirality_10_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_admirality_10_available" 
+						position = {x=23 y=490}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_admirality_10_tt"
+					}
+					iconType = {
+						name = "nat_ideas_admirality_10_completed" 
+						position = {x=23 y=490}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_admirality_10_tt"
+					}
+					iconType = {
+						name ="admirality_icon_10"
+						spriteType = "GFX_nat_ideas_admirality_icon"
+						position = { x=74 y=497 }
+						
+					}
+					instantTextboxType = {
+						name = "admirality_10"
+						position = {x=0 y=503}
+						font = "hoi_18mbs"
+						text = "Admirality X"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+				}
+						### Maritime ### maritime
+				containerWindowType = {
+					name = "nat_ideas_maritime_container"
+					position = { x=1255 y=5 }
+					size = { width = 176 height = 553 }
+					
+					instantTextboxType = {
+						name = "maritime_title"
+						position = { x=0 y=13 }
+						orientation = "UPPER_LEFT"
+						font = "hoi_24header"
+						text = "Maritime"
+						maxWidth = 176
+						maxHeight = 23
+						format = center
+					}
+					
+					iconType = {
+						name ="maritime_bg_1"
+						spriteType = "GFX_nat_ideas_economic_bg_1"
+						position = { x=13 y=37 }
+					}
+					
+					iconType = {
+						name ="maritime_bg_2"
+						spriteType = "GFX_nat_ideas_economic_bg_2"
+						position = { x=13 y=35 }
+					}
+					
+					iconType = {
+						name ="maritime_bg_3"
+						spriteType = "GFX_nat_ideas_economic_bg_3"
+						position = { x=13 y=34 }
+					}
+					
+					iconType = {
+						name ="maritime_bg_4"
+						spriteType = "GFX_nat_ideas_economic_bg_4"
+						position = { x=13 y=33 }
+					}
+					
+					iconType = {
+						name ="maritime_bg_5"
+						spriteType = "GFX_nat_ideas_economic_bg_5"
+						position = { x=13 y=32 }
+					}
+					
+					iconType = {
+						name ="maritime_bg_6"
+						spriteType = "GFX_nat_ideas_economic_bg_6"
+						position = { x=13 y=29 }
+					}
+					
+					iconType = {
+						name ="maritime_bg_7"
+						spriteType = "GFX_nat_ideas_economic_bg_7"
+						position = { x=13 y=28 }
+					}
+					
+					iconType = {
+						name ="maritime_bg_8"
+						spriteType = "GFX_nat_ideas_economic_bg_8"
+						position = { x=13 y=26 }
+					}
+					
+					iconType = {
+						name ="maritime_bg_9"
+						spriteType = "GFX_nat_ideas_economic_bg_9"
+						position = { x=13 y=25 }
+					}
+					
+					iconType = {
+						name ="maritime_bg_10"
+						spriteType = "GFX_nat_ideas_economic_bg_10"
+						position = { x=13 y=25 }
+					}
+					
+					background = {
+						name = "maritime_border_Background"
+						quadTextureSprite ="GFX_fullborder_tiled"
+						position = { x=0 y=0 }					
+					}
+					#maritime | maritime | nat_ideas_maritime_1_tt
+					iconType = {
+						name = "nat_ideas_maritime_1_unavailable" 
+						position = {x=23 y=40}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_maritime_1_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_maritime_1_available" 
+						position = {x=23 y=40}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_maritime_1_tt"
+					}
+					iconType = {
+						name = "nat_ideas_maritime_1_completed" 
+						position = {x=23 y=40}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_maritime_1_tt"
+					}
+					iconType = {
+						name ="maritime_icon_1"
+						spriteType = "GFX_nat_ideas_maritime_icon"
+						position = { x=74 y=47 }
+						
+					}
+					instantTextboxType = {
+						name = "maritime_1"
+						position = {x=0 y=53}
+						font = "hoi_18mbs"
+						text = "Maritime I"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_maritime_2_unavailable" 
+						position = {x=23 y=90}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_maritime_2_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_maritime_2_available" 
+						position = {x=23 y=90}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_maritime_2_tt"
+					}
+					iconType = {
+						name = "nat_ideas_maritime_2_completed" 
+						position = {x=23 y=90}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_maritime_2_tt"
+					}
+					iconType = {
+						name ="maritime_icon_2"
+						spriteType = "GFX_nat_ideas_maritime_icon"
+						position = { x=74 y=97 }
+						
+					}
+					instantTextboxType = {
+						name = "maritime_2"
+						position = {x=0 y=103}
+						font = "hoi_18mbs"
+						text = "Maritime II"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_maritime_3_unavailable" 
+						position = {x=23 y=140}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_maritime_3_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_maritime_3_available" 
+						position = {x=23 y=140}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_maritime_3_tt"
+					}
+					iconType = {
+						name = "nat_ideas_maritime_3_completed" 
+						position = {x=23 y=140}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_maritime_3_tt"
+					}
+					iconType = {
+						name ="maritime_icon_3"
+						spriteType = "GFX_nat_ideas_maritime_icon"
+						position = { x=74 y=147 }
+						
+					}
+					instantTextboxType = {
+						name = "maritime_3"
+						position = {x=0 y=153}
+						font = "hoi_18mbs"
+						text = "Maritime III"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_maritime_4_unavailable" 
+						position = {x=23 y=190}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_maritime_4_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_maritime_4_available" 
+						position = {x=23 y=190}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_maritime_4_tt"
+					}
+					iconType = {
+						name = "nat_ideas_maritime_4_completed" 
+						position = {x=23 y=190}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_maritime_4_tt"
+					}
+					iconType = {
+						name ="maritime_icon_4"
+						spriteType = "GFX_nat_ideas_maritime_icon"
+						position = { x=74 y=197 }
+						
+					}
+					instantTextboxType = {
+						name = "maritime_4"
+						position = {x=0 y=203}
+						font = "hoi_18mbs"
+						text = "Maritime IV"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_maritime_5_unavailable" 
+						position = {x=23 y=240}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_maritime_5_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_maritime_5_available" 
+						position = {x=23 y=240}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_maritime_5_tt"
+					}
+					iconType = {
+						name = "nat_ideas_maritime_5_completed" 
+						position = {x=23 y=240}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_maritime_5_tt"
+					}
+					iconType = {
+						name ="maritime_icon_5"
+						spriteType = "GFX_nat_ideas_maritime_icon"
+						position = { x=74 y=247 }
+						
+					}
+					instantTextboxType = {
+						name = "maritime_5"
+						position = {x=0 y=253}
+						font = "hoi_18mbs"
+						text = "Maritime V"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_maritime_6_unavailable" 
+						position = {x=23 y=290}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_maritime_6_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_maritime_6_available" 
+						position = {x=23 y=290}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_maritime_6_tt"
+					}
+					iconType = {
+						name = "nat_ideas_maritime_6_completed" 
+						position = {x=23 y=290}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_maritime_6_tt"
+					}
+					iconType = {
+						name ="maritime_icon_6"
+						spriteType = "GFX_nat_ideas_maritime_icon"
+						position = { x=74 y=297 }
+						
+					}
+					instantTextboxType = {
+						name = "maritime_6"
+						position = {x=0 y=303}
+						font = "hoi_18mbs"
+						text = "Maritime VI"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_maritime_7_unavailable" 
+						position = {x=23 y=340}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_maritime_7_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_maritime_7_available" 
+						position = {x=23 y=340}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_maritime_7_tt"
+					}
+					iconType = {
+						name = "nat_ideas_maritime_7_completed" 
+						position = {x=23 y=340}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_maritime_7_tt"
+					}
+					iconType = {
+						name ="maritime_icon_7"
+						spriteType = "GFX_nat_ideas_maritime_icon"
+						position = { x=74 y=347 }
+						
+					}
+					instantTextboxType = {
+						name = "maritime_7"
+						position = {x=0 y=353}
+						font = "hoi_18mbs"
+						text = "Maritime VII"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_maritime_8_unavailable" 
+						position = {x=23 y=390}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_maritime_8_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_maritime_8_available" 
+						position = {x=23 y=390}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_maritime_8_tt"
+					}
+					iconType = {
+						name = "nat_ideas_maritime_8_completed" 
+						position = {x=23 y=390}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_maritime_8_tt"
+					}
+					iconType = {
+						name ="maritime_icon_8"
+						spriteType = "GFX_nat_ideas_maritime_icon"
+						position = { x=74 y=397 }
+						
+					}
+					instantTextboxType = {
+						name = "maritime_8"
+						position = {x=0 y=403}
+						font = "hoi_18mbs"
+						text = "Maritime VIII"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_maritime_9_unavailable" 
+						position = {x=23 y=440}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_maritime_9_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_maritime_9_available" 
+						position = {x=23 y=440}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_maritime_9_tt"
+					}
+					iconType = {
+						name = "nat_ideas_maritime_9_completed" 
+						position = {x=23 y=440}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_maritime_9_tt"
+					}
+					iconType = {
+						name ="maritime_icon_9"
+						spriteType = "GFX_nat_ideas_maritime_icon"
+						position = { x=74 y=447 }
+						
+					}
+					instantTextboxType = {
+						name = "maritime_9"
+						position = {x=0 y=453}
+						font = "hoi_18mbs"
+						text = "Maritime IX"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_maritime_10_unavailable" 
+						position = {x=23 y=490}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_maritime_10_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_maritime_10_available" 
+						position = {x=23 y=490}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_maritime_10_tt"
+					}
+					iconType = {
+						name = "nat_ideas_maritime_10_completed" 
+						position = {x=23 y=490}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_maritime_10_tt"
+					}
+					iconType = {
+						name ="maritime_icon_10"
+						spriteType = "GFX_nat_ideas_maritime_icon"
+						position = { x=74 y=497 }
+						
+					}
+					instantTextboxType = {
+						name = "maritime_10"
+						position = {x=0 y=503}
+						font = "hoi_18mbs"
+						text = "Maritime X"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+				}
+								### Pilots ### pilots
+				containerWindowType = {
+					name = "nat_ideas_pilots_container"
+					position = { x=1434 y=5 }
+					size = { width = 176 height = 553 }
+					
+					instantTextboxType = {
+						name = "pilots_title"
+						position = { x=0 y=13 }
+						orientation = "UPPER_LEFT"
+						font = "hoi_24header"
+						text = "pilots"
+						maxWidth = 176
+						maxHeight = 23
+						format = center
+					}
+					
+					iconType = {
+						name ="pilots_bg_1"
+						spriteType = "GFX_nat_ideas_economic_bg_1"
+						position = { x=13 y=37 }
+					}
+					
+					iconType = {
+						name ="pilots_bg_2"
+						spriteType = "GFX_nat_ideas_economic_bg_2"
+						position = { x=13 y=35 }
+					}
+					
+					iconType = {
+						name ="pilots_bg_3"
+						spriteType = "GFX_nat_ideas_economic_bg_3"
+						position = { x=13 y=34 }
+					}
+					
+					iconType = {
+						name ="pilots_bg_4"
+						spriteType = "GFX_nat_ideas_economic_bg_4"
+						position = { x=13 y=33 }
+					}
+					
+					iconType = {
+						name ="pilots_bg_5"
+						spriteType = "GFX_nat_ideas_economic_bg_5"
+						position = { x=13 y=32 }
+					}
+					
+					iconType = {
+						name ="pilots_bg_6"
+						spriteType = "GFX_nat_ideas_economic_bg_6"
+						position = { x=13 y=29 }
+					}
+					
+					iconType = {
+						name ="pilots_bg_7"
+						spriteType = "GFX_nat_ideas_economic_bg_7"
+						position = { x=13 y=28 }
+					}
+					
+					iconType = {
+						name ="pilots_bg_8"
+						spriteType = "GFX_nat_ideas_economic_bg_8"
+						position = { x=13 y=26 }
+					}
+					
+					iconType = {
+						name ="pilots_bg_9"
+						spriteType = "GFX_nat_ideas_economic_bg_9"
+						position = { x=13 y=25 }
+					}
+					
+					iconType = {
+						name ="pilots_bg_10"
+						spriteType = "GFX_nat_ideas_economic_bg_10"
+						position = { x=13 y=25 }
+					}
+					
+					background = {
+						name = "pilots_border_Background"
+						quadTextureSprite ="GFX_fullborder_tiled"
+						position = { x=0 y=0 }					
+					}
+					#pilots | pilots | nat_ideas_pilots_1_tt
+					iconType = {
+						name = "nat_ideas_pilots_1_unavailable" 
+						position = {x=23 y=40}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_pilots_1_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_pilots_1_available" 
+						position = {x=23 y=40}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_pilots_1_tt"
+					}
+					iconType = {
+						name = "nat_ideas_pilots_1_completed" 
+						position = {x=23 y=40}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_pilots_1_tt"
+					}
+					iconType = {
+						name ="pilots_icon_1"
+						spriteType = "GFX_nat_ideas_pilots_icon"
+						position = { x=74 y=47 }
+						
+					}
+					instantTextboxType = {
+						name = "pilots_1"
+						position = {x=0 y=53}
+						font = "hoi_18mbs"
+						text = "Pilots I"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_pilots_2_unavailable" 
+						position = {x=23 y=90}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_pilots_2_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_pilots_2_available" 
+						position = {x=23 y=90}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_pilots_2_tt"
+					}
+					iconType = {
+						name = "nat_ideas_pilots_2_completed" 
+						position = {x=23 y=90}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_pilots_2_tt"
+					}
+					iconType = {
+						name ="pilots_icon_2"
+						spriteType = "GFX_nat_ideas_pilots_icon"
+						position = { x=74 y=97 }
+						
+					}
+					instantTextboxType = {
+						name = "pilots_2"
+						position = {x=0 y=103}
+						font = "hoi_18mbs"
+						text = "Pilots II"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_pilots_3_unavailable" 
+						position = {x=23 y=140}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_pilots_3_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_pilots_3_available" 
+						position = {x=23 y=140}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_pilots_3_tt"
+					}
+					iconType = {
+						name = "nat_ideas_pilots_3_completed" 
+						position = {x=23 y=140}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_pilots_3_tt"
+					}
+					iconType = {
+						name ="pilots_icon_3"
+						spriteType = "GFX_nat_ideas_pilots_icon"
+						position = { x=74 y=147 }
+						
+					}
+					instantTextboxType = {
+						name = "pilots_3"
+						position = {x=0 y=153}
+						font = "hoi_18mbs"
+						text = "Pilots III"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_pilots_4_unavailable" 
+						position = {x=23 y=190}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_pilots_4_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_pilots_4_available" 
+						position = {x=23 y=190}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_pilots_4_tt"
+					}
+					iconType = {
+						name = "nat_ideas_pilots_4_completed" 
+						position = {x=23 y=190}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_pilots_4_tt"
+					}
+					iconType = {
+						name ="pilots_icon_4"
+						spriteType = "GFX_nat_ideas_pilots_icon"
+						position = { x=74 y=197 }
+						
+					}
+					instantTextboxType = {
+						name = "pilots_4"
+						position = {x=0 y=203}
+						font = "hoi_18mbs"
+						text = "Pilots IV"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_pilots_5_unavailable" 
+						position = {x=23 y=240}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_pilots_5_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_pilots_5_available" 
+						position = {x=23 y=240}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_pilots_5_tt"
+					}
+					iconType = {
+						name = "nat_ideas_pilots_5_completed" 
+						position = {x=23 y=240}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_pilots_5_tt"
+					}
+					iconType = {
+						name ="pilots_icon_5"
+						spriteType = "GFX_nat_ideas_pilots_icon"
+						position = { x=74 y=247 }
+						
+					}
+					instantTextboxType = {
+						name = "pilots_5"
+						position = {x=0 y=253}
+						font = "hoi_18mbs"
+						text = "Pilots V"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_pilots_6_unavailable" 
+						position = {x=23 y=290}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_pilots_6_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_pilots_6_available" 
+						position = {x=23 y=290}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_pilots_6_tt"
+					}
+					iconType = {
+						name = "nat_ideas_pilots_6_completed" 
+						position = {x=23 y=290}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_pilots_6_tt"
+					}
+					iconType = {
+						name ="pilots_icon_6"
+						spriteType = "GFX_nat_ideas_pilots_icon"
+						position = { x=74 y=297 }
+						
+					}
+					instantTextboxType = {
+						name = "pilots_6"
+						position = {x=0 y=303}
+						font = "hoi_18mbs"
+						text = "Pilots VI"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_pilots_7_unavailable" 
+						position = {x=23 y=340}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_pilots_7_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_pilots_7_available" 
+						position = {x=23 y=340}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_pilots_7_tt"
+					}
+					iconType = {
+						name = "nat_ideas_pilots_7_completed" 
+						position = {x=23 y=340}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_pilots_7_tt"
+					}
+					iconType = {
+						name ="pilots_icon_7"
+						spriteType = "GFX_nat_ideas_pilots_icon"
+						position = { x=74 y=347 }
+						
+					}
+					instantTextboxType = {
+						name = "pilots_7"
+						position = {x=0 y=353}
+						font = "hoi_18mbs"
+						text = "Pilots VII"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_pilots_8_unavailable" 
+						position = {x=23 y=390}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_pilots_8_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_pilots_8_available" 
+						position = {x=23 y=390}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_pilots_8_tt"
+					}
+					iconType = {
+						name = "nat_ideas_pilots_8_completed" 
+						position = {x=23 y=390}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_pilots_8_tt"
+					}
+					iconType = {
+						name ="pilots_icon_8"
+						spriteType = "GFX_nat_ideas_pilots_icon"
+						position = { x=74 y=397 }
+						
+					}
+					instantTextboxType = {
+						name = "pilots_8"
+						position = {x=0 y=403}
+						font = "hoi_18mbs"
+						text = "Pilots VIII"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_pilots_9_unavailable" 
+						position = {x=23 y=440}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_pilots_9_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_pilots_9_available" 
+						position = {x=23 y=440}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_pilots_9_tt"
+					}
+					iconType = {
+						name = "nat_ideas_pilots_9_completed" 
+						position = {x=23 y=440}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_pilots_9_tt"
+					}
+					iconType = {
+						name ="pilots_icon_9"
+						spriteType = "GFX_nat_ideas_pilots_icon"
+						position = { x=74 y=447 }
+						
+					}
+					instantTextboxType = {
+						name = "pilots_9"
+						position = {x=0 y=453}
+						font = "hoi_18mbs"
+						text = "Pilots IX"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_pilots_10_unavailable" 
+						position = {x=23 y=490}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_pilots_10_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_pilots_10_available" 
+						position = {x=23 y=490}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_pilots_10_tt"
+					}
+					iconType = {
+						name = "nat_ideas_pilots_10_completed" 
+						position = {x=23 y=490}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_pilots_10_tt"
+					}
+					iconType = {
+						name ="pilots_icon_10"
+						spriteType = "GFX_nat_ideas_pilots_icon"
+						position = { x=74 y=497 }
+						
+					}
+					instantTextboxType = {
+						name = "pilots_10"
+						position = {x=0 y=503}
+						font = "hoi_18mbs"
+						text = "Pilots X"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+				}
+
+								### Airframes ### airframes
+				containerWindowType = {
+					name = "nat_ideas_airframes_container"
+					position = { x=1613 y=5 }
+					size = { width = 176 height = 553 }
+					
+					instantTextboxType = {
+						name = "airframes_title"
+						position = { x=0 y=13 }
+						orientation = "UPPER_LEFT"
+						font = "hoi_24header"
+						text = "airframes"
+						maxWidth = 176
+						maxHeight = 23
+						format = center
+					}
+					
+					iconType = {
+						name ="airframes_bg_1"
+						spriteType = "GFX_nat_ideas_economic_bg_1"
+						position = { x=13 y=37 }
+					}
+					
+					iconType = {
+						name ="airframes_bg_2"
+						spriteType = "GFX_nat_ideas_economic_bg_2"
+						position = { x=13 y=35 }
+					}
+					
+					iconType = {
+						name ="airframes_bg_3"
+						spriteType = "GFX_nat_ideas_economic_bg_3"
+						position = { x=13 y=34 }
+					}
+					
+					iconType = {
+						name ="airframes_bg_4"
+						spriteType = "GFX_nat_ideas_economic_bg_4"
+						position = { x=13 y=33 }
+					}
+					
+					iconType = {
+						name ="airframes_bg_5"
+						spriteType = "GFX_nat_ideas_economic_bg_5"
+						position = { x=13 y=32 }
+					}
+					
+					iconType = {
+						name ="airframes_bg_6"
+						spriteType = "GFX_nat_ideas_economic_bg_6"
+						position = { x=13 y=29 }
+					}
+					
+					iconType = {
+						name ="airframes_bg_7"
+						spriteType = "GFX_nat_ideas_economic_bg_7"
+						position = { x=13 y=28 }
+					}
+					
+					iconType = {
+						name ="airframes_bg_8"
+						spriteType = "GFX_nat_ideas_economic_bg_8"
+						position = { x=13 y=26 }
+					}
+					
+					iconType = {
+						name ="airframes_bg_9"
+						spriteType = "GFX_nat_ideas_economic_bg_9"
+						position = { x=13 y=25 }
+					}
+					
+					iconType = {
+						name ="airframes_bg_10"
+						spriteType = "GFX_nat_ideas_economic_bg_10"
+						position = { x=13 y=25 }
+					}
+					
+					background = {
+						name = "airframes_border_Background"
+						quadTextureSprite ="GFX_fullborder_tiled"
+						position = { x=0 y=0 }					
+					}
+					#airframes | airframes | nat_ideas_airframes_1_tt
+					iconType = {
+						name = "nat_ideas_airframes_1_unavailable" 
+						position = {x=23 y=40}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_airframes_1_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_airframes_1_available" 
+						position = {x=23 y=40}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_airframes_1_tt"
+					}
+					iconType = {
+						name = "nat_ideas_airframes_1_completed" 
+						position = {x=23 y=40}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_airframes_1_tt"
+					}
+					iconType = {
+						name ="airframes_icon_1"
+						spriteType = "GFX_nat_ideas_airframes_icon"
+						position = { x=74 y=47 }
+						
+					}
+					instantTextboxType = {
+						name = "airframes_1"
+						position = {x=0 y=53}
+						font = "hoi_18mbs"
+						text = "Airframes I"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_airframes_2_unavailable" 
+						position = {x=23 y=90}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_airframes_2_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_airframes_2_available" 
+						position = {x=23 y=90}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_airframes_2_tt"
+					}
+					iconType = {
+						name = "nat_ideas_airframes_2_completed" 
+						position = {x=23 y=90}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_airframes_2_tt"
+					}
+					iconType = {
+						name ="airframes_icon_2"
+						spriteType = "GFX_nat_ideas_airframes_icon"
+						position = { x=74 y=97 }
+						
+					}
+					instantTextboxType = {
+						name = "airframes_2"
+						position = {x=0 y=103}
+						font = "hoi_18mbs"
+						text = "Airframes II"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_airframes_3_unavailable" 
+						position = {x=23 y=140}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_airframes_3_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_airframes_3_available" 
+						position = {x=23 y=140}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_airframes_3_tt"
+					}
+					iconType = {
+						name = "nat_ideas_airframes_3_completed" 
+						position = {x=23 y=140}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_airframes_3_tt"
+					}
+					iconType = {
+						name ="airframes_icon_3"
+						spriteType = "GFX_nat_ideas_airframes_icon"
+						position = { x=74 y=147 }
+						
+					}
+					instantTextboxType = {
+						name = "airframes_3"
+						position = {x=0 y=153}
+						font = "hoi_18mbs"
+						text = "Airframes III"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_airframes_4_unavailable" 
+						position = {x=23 y=190}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_airframes_4_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_airframes_4_available" 
+						position = {x=23 y=190}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_airframes_4_tt"
+					}
+					iconType = {
+						name = "nat_ideas_airframes_4_completed" 
+						position = {x=23 y=190}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_airframes_4_tt"
+					}
+					iconType = {
+						name ="airframes_icon_4"
+						spriteType = "GFX_nat_ideas_airframes_icon"
+						position = { x=74 y=197 }
+						
+					}
+					instantTextboxType = {
+						name = "airframes_4"
+						position = {x=0 y=203}
+						font = "hoi_18mbs"
+						text = "Airframes IV"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_airframes_5_unavailable" 
+						position = {x=23 y=240}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_airframes_5_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_airframes_5_available" 
+						position = {x=23 y=240}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_airframes_5_tt"
+					}
+					iconType = {
+						name = "nat_ideas_airframes_5_completed" 
+						position = {x=23 y=240}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_airframes_5_tt"
+					}
+					iconType = {
+						name ="airframes_icon_5"
+						spriteType = "GFX_nat_ideas_airframes_icon"
+						position = { x=74 y=247 }
+						
+					}
+					instantTextboxType = {
+						name = "airframes_5"
+						position = {x=0 y=253}
+						font = "hoi_18mbs"
+						text = "Airframes V"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_airframes_6_unavailable" 
+						position = {x=23 y=290}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_airframes_6_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_airframes_6_available" 
+						position = {x=23 y=290}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_airframes_6_tt"
+					}
+					iconType = {
+						name = "nat_ideas_airframes_6_completed" 
+						position = {x=23 y=290}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_airframes_6_tt"
+					}
+					iconType = {
+						name ="airframes_icon_6"
+						spriteType = "GFX_nat_ideas_airframes_icon"
+						position = { x=74 y=297 }
+						
+					}
+					instantTextboxType = {
+						name = "airframes_6"
+						position = {x=0 y=303}
+						font = "hoi_18mbs"
+						text = "Airframes VI"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_airframes_7_unavailable" 
+						position = {x=23 y=340}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_airframes_7_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_airframes_7_available" 
+						position = {x=23 y=340}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_airframes_7_tt"
+					}
+					iconType = {
+						name = "nat_ideas_airframes_7_completed" 
+						position = {x=23 y=340}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_airframes_7_tt"
+					}
+					iconType = {
+						name ="airframes_icon_7"
+						spriteType = "GFX_nat_ideas_airframes_icon"
+						position = { x=74 y=347 }
+						
+					}
+					instantTextboxType = {
+						name = "airframes_7"
+						position = {x=0 y=353}
+						font = "hoi_18mbs"
+						text = "Airframes VII"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_airframes_8_unavailable" 
+						position = {x=23 y=390}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_airframes_8_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_airframes_8_available" 
+						position = {x=23 y=390}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_airframes_8_tt"
+					}
+					iconType = {
+						name = "nat_ideas_airframes_8_completed" 
+						position = {x=23 y=390}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_airframes_8_tt"
+					}
+					iconType = {
+						name ="airframes_icon_8"
+						spriteType = "GFX_nat_ideas_airframes_icon"
+						position = { x=74 y=397 }
+						
+					}
+					instantTextboxType = {
+						name = "airframes_8"
+						position = {x=0 y=403}
+						font = "hoi_18mbs"
+						text = "Airframes VIII"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_airframes_9_unavailable" 
+						position = {x=23 y=440}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_airframes_9_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_airframes_9_available" 
+						position = {x=23 y=440}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_airframes_9_tt"
+					}
+					iconType = {
+						name = "nat_ideas_airframes_9_completed" 
+						position = {x=23 y=440}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_airframes_9_tt"
+					}
+					iconType = {
+						name ="airframes_icon_9"
+						spriteType = "GFX_nat_ideas_airframes_icon"
+						position = { x=74 y=447 }
+						
+					}
+					instantTextboxType = {
+						name = "airframes_9"
+						position = {x=0 y=453}
+						font = "hoi_18mbs"
+						text = "Airframes IX"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+					
+					iconType = {
+						name = "nat_ideas_airframes_10_unavailable" 
+						position = {x=23 y=490}	
+						spriteType = "GFX_nat_ideas_idea_button_unavailable"
+						pdx_tooltip = "nat_ideas_airframes_10_tt"
+					}
+					buttonType = {
+						name = "nat_ideas_airframes_10_available" 
+						position = {x=23 y=490}	
+						spriteType = "GFX_nat_ideas_idea_button_available"
+						pdx_tooltip = "nat_ideas_airframes_10_tt"
+					}
+					iconType = {
+						name = "nat_ideas_airframes_10_completed" 
+						position = {x=23 y=490}	
+						spriteType = "GFX_nat_ideas_idea_button_completed"
+						pdx_tooltip = "nat_ideas_airframes_10_tt"
+					}
+					iconType = {
+						name ="airframes_icon_10"
+						spriteType = "GFX_nat_ideas_airframes_icon"
+						position = { x=74 y=497 }
+						
+					}
+					instantTextboxType = {
+						name = "airframes_10"
+						position = {x=0 y=503}
+						font = "hoi_18mbs"
+						text = "Airframes X"
+						maxWidth = 180
+						maxHeight = 23
+						format = center
+						allwaystransparent = yes
+					}
+				}
+		}
+	}
+}

@@ -3,7 +3,7 @@ NDefines.NGame.START_DATE = "2000.1.1.12"
 NDefines.NGame.END_DATE = "2070.1.1.1"
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 50000
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 10000
-NDefines.NGame.GAME_SPEED_SECONDS = { 0.4, 0.25, 0.1, 0.05, 0.0 }
+NDefines.NGame.GAME_SPEED_SECONDS = { 100.0, 0.25, 0.1, 0.05, 0.0 }
 
 -- NDiplomacy Defines
 NDefines.NDiplomacy.MAX_OPINION_VALUE = 250
@@ -83,14 +83,14 @@ NDefines.NDiplomacy.BASE_PEACE_TAKE_UNCONTROLLED_STATE_FACTOR = 10.0		-- (10.0 i
 NDefines.NDiplomacy.BASE_PEACE_TAKE_FACTION_CONTROLLED_STATE_FACTOR = 0.5	-- (0.5 in vanilla) Base factor for taking state you do not control, but someone in faction does
 NDefines.NDiplomacy.BASE_PEACE_FORCE_GOVERNMENT_COST = 100 				-- (100 in vanilla) Base cost for forcing a country to change government.
 -- In peace conference, cost is factored based on how many times the state has been contested and for how long it has been uncontested (for everyone else)
-NDefines.NDiplomacy.PEACE_COST_FACTOR_CONTESTED_MAX = 10										-- (15 in vanilla) To prevent overflows due to the exponential increase, cap the contested factor to this
-NDefines.NDiplomacy.PEACE_COST_FACTOR_UNCONTESTED_MAX = 10										-- (15 in vanilla) To prevent overflows due to the exponential increase, cap the uncontested factor to this
+NDefines.NDiplomacy.PEACE_COST_FACTOR_CONTESTED_MAX = 15										-- (15 in vanilla) To prevent overflows due to the exponential increase, cap the contested factor to this
+NDefines.NDiplomacy.PEACE_COST_FACTOR_UNCONTESTED_MAX = 15										-- (15 in vanilla) To prevent overflows due to the exponential increase, cap the uncontested factor to this
 NDefines.NDiplomacy.PEACE_COST_FACTOR_CONTESTED_BID = 1.20										-- (1.20 in vanilla) Cost factor for each contested bid on the state.
 NDefines.NDiplomacy.PEACE_COST_FACTOR_UNCONTESTED_BID_MIN = 1.15								-- (1.15 in vanilla) Minimum cost factor for each turn a bid has been uncontested on the state.
 NDefines.NDiplomacy.PEACE_COST_FACTOR_UNCONTESTED_BID_MAX = 1.60								-- (1.60 in vanilla) Maximum cost factor for each turn a bid has been uncontested on the state.
 NDefines.NDiplomacy.PEACE_COST_FACTOR_UNCONTESTED_BID_STEP = 0.15								-- (0.15 in vanilla) Uncontested cost factor will increase by this much each turn.
-NDefines.NDiplomacy.PEACE_COST_FACTOR_CAPITAL_SHIP_IC = 0.005									-- (0.005 in vanilla) In peace conference, cost for taking one capital ship per IC
-NDefines.NDiplomacy.PEACE_COST_FACTOR_SCREENING_SHIP_IC = 0.005								-- (0.005 in vanilla) In peace conference, cost for taking a part of the screening ships per IC
+NDefines.NDiplomacy.PEACE_COST_FACTOR_CAPITAL_SHIP_IC = 0.0005									-- (0.005 in vanilla) In peace conference, cost for taking one capital ship per IC
+NDefines.NDiplomacy.PEACE_COST_FACTOR_SCREENING_SHIP_IC = 0.0005								-- (0.005 in vanilla) In peace conference, cost for taking a part of the screening ships per IC
 NDefines.NDiplomacy.PEACE_INCREASE_COST_FACTOR_PER_MISSING_PERCENT_FOR_CAPITULATION = 0.002	-- (0.002 in vanilla) increase factor if loser has not capitulated, for every percent between surrender level and BASE_SURRENDER_LEVEL
 -- peace action taker has a discount if they occupy the state depending on compliance
 -- it's a table where first value is the compliance level, and the second the factor
@@ -102,8 +102,8 @@ NDefines.NDiplomacy.PEACE_COST_FACTOR_COMPLIANCE_STEPS = {
 -- In peace conference, adding a stackable to a peace action, increment the cost by a percentage
 NDefines.NDiplomacy.PEACE_COST_FACTOR_STACK_DEMILITARIZED_ZONE = 0.1 -- vanilla is 0.25
 NDefines.NDiplomacy.PEACE_COST_FACTOR_STACK_WAR_REPARATION = 0.1 -- vanilla is 0.25
-NDefines.NDiplomacy.PEACE_COST_FACTOR_STACK_RESOURCE_RIGHTS = 0.3 -- vanilla is 0.25
-NDefines.NDiplomacy.PEACE_COST_FACTOR_STACK_DISMANTLE_INDUSTRY = 0.4 -- vanilla is 0.25
+NDefines.NDiplomacy.PEACE_COST_FACTOR_STACK_RESOURCE_RIGHTS = 0.25 -- vanilla is 0.25
+NDefines.NDiplomacy.PEACE_COST_FACTOR_STACK_DISMANTLE_INDUSTRY = 0.25 -- vanilla is 0.25
 -- peace conference can set timed effect, set length in days
 NDefines.NDiplomacy.PEACE_TIMED_EFFECT_LENGTH_DEMILITARIZED_ZONE = 1095 -- vanilla is 1825 days (5 years)
 NDefines.NDiplomacy.PEACE_TIMED_EFFECT_LENGTH_WAR_REPARATION = 1095
@@ -217,8 +217,8 @@ NDefines.NMilitary.HOURLY_ORG_MOVEMENT_IMPACT = -0.1 -- -0.2
 NDefines.NMilitary.ZERO_ORG_MOVEMENT_MODIFIER = -0.2 -- -0.8
 NDefines.NMilitary.INFRASTRUCTURE_MOVEMENT_SPEED_IMPACT = -0.02 -- -0.05
 
-NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 30 -- Vanilla 24
-NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 24 --24
+NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 50 -- Vanilla 24
+NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 50 --24
 NDefines.NMilitary.FIELD_MARSHAL_ARMIES_CAP = 6 -- Vanilla 5
 NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 10 -- 10
 NDefines.NMilitary.COMBAT_MINIMUM_TIME = 8 -- 4
@@ -265,15 +265,15 @@ NDefines.NMilitary.NON_CORE_SUPPLY_AIR_SPEED = -0.10 -- -0.25
 NDefines.NMilitary.OUT_OF_SUPPLY_MORALE = -0.15 -- -0.30
 NDefines.NMilitary.AIR_SUPPORT_BASE = 0.5 -- 0.25
 NDefines.NMilitary.REINFORCE_CHANCE = 0.1 -- 0.02
-NDefines.NMilitary.PARACHUTE_DISRUPTED_AA_PENALTY = 0.75 -- 1
+NDefines.NMilitary.PARACHUTE_DISRUPTED_AA_PENALTY = 0.9 -- 1
 NDefines.NMilitary.PARACHUTE_COMPLETE_ORG = 0.3 -- 0.1
 NDefines.NMilitary.PARACHUTE_ORG_REGAIN_PENALTY_DURATION = 80 -- 120
 NDefines.NMilitary.PARACHUTE_ORG_REGAIN_PENALTY_MULT = -0.6 -- -0.8
-NDefines.NMilitary.PARADROP_PENALTY = -0.15 -- -0.3
+NDefines.NMilitary.PARADROP_PENALTY = -0.2 -- -0.3
 NDefines.NMilitary.PARADROP_HOURS = 12 -- 48
-NDefines.NMilitary.ENCIRCLED_DISBAND_MANPOWER_FACTOR = 0.25 -- 0.20
+NDefines.NMilitary.ENCIRCLED_DISBAND_MANPOWER_FACTOR = 0.20 -- 0.20
 NDefines.NMilitary.ORG_LOSS_FACTOR_ON_CONQUER = 0.3 -- 0.2
-NDefines.NMilitary.PLANNING_MAX = 0.1 -- 0.3
+NDefines.NMilitary.PLANNING_MAX = 0.3 -- 0.3
 NDefines.NMilitary.CIVILWAR_ORGANIZATION_FACTOR = 1.0 -- 0.3
 NDefines.NMilitary.PLAN_CONSIDERED_GOOD = 2.5 -- 0.25
 NDefines.NMilitary.PLAN_PROVINCE_BASE_IMPORTANCE = 1.0 -- 2.0
@@ -302,7 +302,7 @@ NDefines.NMilitary.ACCLIMATIZATION_LOSS_SPEED_FACTOR = 0.5 -- 2.0
 NDefines.NMilitary.UNIT_LEADER_ASSIGN_TRAIT_COST = 15.0 -- 15
 NDefines.NMilitary.ATTACHED_WINGS_ORDER_UPDATE_DAYS = 1 -- 5
 NDefines.NMilitary.BORDER_WAR_WIN_DAYS_AGAINST_EMPTY_OPPONENTS = 21 -- 14
-NDefines.NMilitary.XP_GAIN_FOR_SHATTERING = 10.0 -- 30.0
+NDefines.NMilitary.XP_GAIN_FOR_SHATTERING = 30.0 -- 30.0
 NDefines.NMilitary.ARMY_IDLE_FUEL_MULT = 0.05 -- 0.0
 NDefines.NMilitary.OUT_OF_FUEL_SPEED_MULT = 0.7 -- 0.4
 NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.02 -- 0.07
@@ -318,16 +318,16 @@ NDefines.NMilitary.FIELD_EXPERIENCE_MAX_PER_DAY = 2 -- 1.2
 NDefines.NMilitary.LEADER_EXPERIENCE_SCALE = 1.25 -- 1.0
 NDefines.NMilitary.BASE_LEADER_TRAIT_GAIN_XP = 0.55 -- 0.45
 NDefines.NMilitary.ARMY_LEADER_XP_GAIN_PER_UNIT_IN_COMBAT = 0.175 -- 0.1
-NDefines.NMilitary.TRAINING_ATTRITION = 0.1 -- 0.05
-NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 1000 --500 --Increased Max Experience cuz reasons
-NDefines.NMilitary.MAX_AIR_EXPERIENCE = 1000 --500
-NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 1000 --500
+NDefines.NMilitary.TRAINING_ATTRITION = 0.01 -- 0.05
+NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 2000 --500 --Increased Max Experience cuz reasons
+NDefines.NMilitary.MAX_AIR_EXPERIENCE = 2000 --500
+NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 2000 --500
 NDefines.NMilitary.SHIP_MORALE_TO_ORG_REGAIN_BASE = 0.5 -- buffed from 0.2 -- Handles the Hourly Reorganization
 NDefines.NMilitary.ENGAGEMENT_WIDTH_PER_WIDTH = 3.0			-- how much enemy combat width we are allowed to engage per width of our own -- vanilla is 2.0
 
 NDefines.NMilitary.NEW_ARMY_LEADER_LEVEL_CHANCES = {			-- chances for new army leaders to start at a given level
 	0.90, -- 90% for level one
-	0.10  -- 10% for level two
+	0.20  -- 10% for level two
 		  -- 0% for level three to ten
 }
 NDefines.NMilitary.BATALION_NOT_CHANGED_EXPERIENCE_DROP = 0.0		-- Division experience drop if unit has same batalion
@@ -335,12 +335,12 @@ NDefines.NMilitary.BATALION_CHANGED_EXPERIENCE_DROP = 0.75		-- Division experien
 
 --Operative Stuff in NMilitary
 NDefines.NMilitary.NEW_OPERATIVE_RANDOM_PERSONALITY_TRAIT_CHANCES = {  			-- chances to gain a personality trait for new operatives
-	0.6, -- up from vanilla 50% for first trait
-	0.2  -- up from vanilla 10% for second trait after that
+	0.90, -- up from vanilla 50% for first trait
+	0.40  -- up from vanilla 10% for second trait after that
 }
 NDefines.NMilitary.NEW_OPERATIVE_RANDOM_BASIC_TRAIT_CHANCES = {  				-- chances to gain a basic trait for new operatives
-	0.35, -- up from vanilla 25% for first trait
-	0.15  -- up from vanilla 5% for second trait after that
+	0.90, -- up from vanilla 25% for first trait
+	0.20  -- up from vanilla 5% for second trait after that
 }
 NDefines.NMilitary.WAR_SCORE_AIR_WORTH = 0.02	            	-- how much strategic bombing will affect warscore
 NDefines.NMilitary.WAR_SCORE_AIR_WORTH_CAP = 500				-- the warscore liit we get from strategic bombing
@@ -355,7 +355,7 @@ NDefines.NAir.AIR_WING_MAX_STATS_DEFENCE = 999 -- 100
 NDefines.NAir.AIR_WING_MAX_STATS_AGILITY = 999 -- 100
 NDefines.NAir.AIR_WING_MAX_STATS_SPEED = 4000 -- 800
 NDefines.NAir.AIR_WING_MAX_STATS_BOMBING = 999 -- 100
-NDefines.NAir.AIR_WING_AVERAGE_SIZE = 50 -- Eyeballed average amount of airplanes in the airwings
+NDefines.NAir.AIR_WING_AVERAGE_SIZE = 100 -- Eyeballed average amount of airplanes in the airwings
 NDefines.NAir.AIR_WING_BOMB_DAMAGE_FACTOR = 45 -- 2
 NDefines.NAir.BIGGEST_AGILITY_FACTOR_DIFF = 5 -- 2.5
 NDefines.NAir.COMBAT_BETTER_AGILITY_DAMAGE_REDUCTION = 0.80 -- 0.45
@@ -404,8 +404,8 @@ NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_MIN_CAP = 1 -- 20
 NDefines.NAir.EFFICIENCY_REGION_CHANGE_PENALTY_FACTOR = 0.2 -- 0.9
 NDefines.NAir.AIR_WING_XP_MAX = 1500.0 -- 1000.0
 NDefines.NAir.AIR_WING_XP_TRAINING_MAX = 1100 -- 300
-NDefines.NAir.AIR_WING_XP_LEVELS = {300, 600, 1100, 1400} -- {100, 300, 700, 900}
-NDefines.NAir.AIR_WING_XP_TRAINING_MISSION_GAIN_DAILY = 1.25 -- 3.3
+NDefines.NAir.AIR_WING_XP_LEVELS = { 100, 300, 700, 900 } -- {100, 300, 700, 900}
+NDefines.NAir.AIR_WING_XP_TRAINING_MISSION_GAIN_DAILY = 3.3 -- 3.3
 NDefines.NAir.AIR_WING_XP_AIR_VS_AIR_COMBAT_GAIN = 2.0 -- 0.8
 NDefines.NAir.AIR_WING_XP_GROUND_MISSION_COMPLETED_GAIN = 1.2 -- 0.28
 NDefines.NAir.AIR_WING_XP_RECON_MISSION_COMPLETED_GAIN = 0.12 -- 0.05
@@ -421,7 +421,7 @@ NDefines.NAir.DISRUPTION_FACTOR = 6.0 -- 4.0
 NDefines.NAir.DISRUPTION_FACTOR_CARRIER = 6.0 -- 8.0
 NDefines.NAir.CARRIER_SIZE_STAT_INCREMENT = 1 -- 10
 
-NDefines.NNavy.MAX_SUBMARINES_PER_AUTO_TASK_FORCE = 4 -- 30
+NDefines.NNavy.MAX_SUBMARINES_PER_AUTO_TASK_FORCE = 30 -- 30
 NDefines.NNavy.BEST_CAPITALS_TO_CARRIER_RATIO = 4 -- 1
 NDefines.NNavy.BEST_CAPITALS_TO_SCREENS_RATIO = 0.5 -- 0.25
 NDefines.NNavy.DETECTION_CHANCE_BALANCE = 1.5 -- 2.5
@@ -858,7 +858,7 @@ NDefines.NAI.PEACE_AI_EVALUATE_OTHER_ALWAYS = false				-- Whether AI should alwa
 -- NOperatives Defines
 NDefines.NOperatives.AGENCY_AI_BASE_NUM_FACTORIES = 20.0 --25 in Vanilla
 NDefines.NOperatives.AGENCY_AI_PER_UPGRADE_FACTORIES = 10.0 -- 6 in Vanilla
-NDefines.NOperatives.AGENCY_UPGRADE_DAYS = 75 -- 20 in Vanilla
+NDefines.NOperatives.AGENCY_UPGRADE_DAYS = 50 -- 20 in Vanilla
 NDefines.NResistance.GARRISON_MANPOWER_LOST_BY_ATTACK = 0.02 	-- Ratio of manpower lost by garrison at each attack on garrison (this number will be reduced by the hardness of garrison template)
 NDefines.NResistance.GARRISON_EQUIPMENT_LOST_BY_ATTACK = 0.04 	-- Ratio of equipment lost by garrison at each attack on garrison (this number will be reduced by the hardness of garrison template)
 NDefines.NResistance.RESISTANCE_GROWTH_BASE = 0.1 --base resistance growth
@@ -867,14 +867,14 @@ NDefines.NOperatives.BASE_COUNTER_INTELLIGENCE_RATING = 1.0 -- Set to 1 to preve
 NDefines.NOperatives.AGENCY_UPGRADE_PER_OPERATIVE_SLOT = 6 -- Reduced from vanilla
 NDefines.NOperatives.BECOME_SPYMASTER_MIN_UPGRADES = 8 -- Boosted from 3
 
-NDefines.NOperatives.MAX_OPERATIVE_SLOT_FROM_AGENCY_UPGRADES = 4					-- (normaly 1) max operative slots gained from upgrades
+NDefines.NOperatives.MAX_OPERATIVE_SLOT_FROM_AGENCY_UPGRADES = 6					-- (normaly 1) max operative slots gained from upgrades
 NDefines.NOperatives.INTEL_NETWORK_GAIN_RATE_ON_WRONG_CONTROLLER = -9.9				-- (normaly -10.0) Amount of network strength lost in a state when it does not have the right controller anymore
 NDefines.NOperatives.INTEL_NETWORK_GAIN_RATE_ON_OUT_OF_RANGE = -1.57				-- (normaly -1.75) Amount of network strength lost in a state that has the right controller but is out of range of any operative
 			--may come back to below, but makes much more of a diffrence than i thaught
 		--NDefines.NOperatives.INTEL_NETWORK_MIN_VP_TO_TARGET = 10,					-- (normaly 15) The minimum value of the highest VP in a state to consider the state as a valid target to start building an intel network
 NDefines.NOperatives.INTEL_NETWORK_OPERATIVE_GAIN_STACKING_FACTOR = 0.6				-- (normaly 0.5) When multiple operative are present in the same location, this factor is applied for each operative with a lower gain than the max. So if operatives have the gain [ 3, 1, 2 ] in the same location, it is sorted to [ 1, 2, 3 ] then converted to [ 1*D^2, 2*D^1, 3 ], with D being this define, so if D=0.5 we have [ 0.25, 1, 3 ] and the final gain from operative at this location will be 4.25. Putting this define to 0 is equivalent to considering the maximum value only.
 
-NDefines.NOperatives.QUIET_INTEL_NETWORK_DAILY_XP_GAIN = 0.112						-- (normaly 0.0)
+NDefines.NOperatives.QUIET_INTEL_NETWORK_DAILY_XP_GAIN = 0.4						-- (normaly 0.0)
 
 -- used for calculating how many operatives will a spy master gain from its faction members
 -- first number in every now is number of operatives gained
