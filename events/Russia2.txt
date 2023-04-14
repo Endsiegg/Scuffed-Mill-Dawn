@@ -73,9 +73,9 @@ country_event = {
 	option = {	#Horrible!
 		name = russia.1.o1
 		log = "[GetDateText]: [This.GetName]: russia.1.o1 executed"
-		navy_experience = 2
-		add_stability = -0.02
-		add_political_power = -10
+		navy_experience = -50
+		add_stability = -0.05
+		add_political_power = -50
 		set_temp_variable = { party_index = 6 }
 		set_temp_variable = { party_popularity_increase = -0.05 }
 		set_temp_variable = { temp_outlook_increase = -0.05 }
