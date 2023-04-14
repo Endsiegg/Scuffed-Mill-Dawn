@@ -389,7 +389,7 @@ leader_traits = {
 			factor = 1
 		}
 	}
-	emerging_Communist-State = {
+	emerging_Communist_State = {
 		random = no
 
 		ai_will_do = {
@@ -632,7 +632,7 @@ leader_traits = {
 
 	emotional = {
 		random = yes
-
+		improve_relations_maintain_cost_factor = 0.1
 		ai_will_do = {
 			factor = 1
 		}
@@ -667,7 +667,7 @@ leader_traits = {
 	}
 	greedy = {
 		random = yes
-
+		tax_gain_multiplier_modifier = 0.05
 		ai_will_do = {
 			factor = 1
 		}
@@ -702,7 +702,7 @@ leader_traits = {
 	}
 	stubborn = {
 		random = yes
-
+		ai_focus_defense_factor = 0.25
 		ai_will_do = {
 			factor = 1
 		}
@@ -747,7 +747,7 @@ leader_traits = {
 	}
 	war_criminal = {
 		random = no
-
+		opinion_gain_monthly_factor = -0.5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1215,7 +1215,7 @@ leader_traits = {
 			value = 80
 		}
 
-		#contain all muslims
+#contain all muslims
 		ai_strategy = {
 			type = contain
 			id = "TRK"
@@ -2417,7 +2417,7 @@ leader_traits = {
 	}
 	king = {
 		random = no
-
+		political_power_factor = 0.1
 		ai_will_do = {
 			factor = 1
 		}
@@ -2578,7 +2578,7 @@ leader_traits = {
 	}
 	communist_sympathizer = {
 		random = no
-		communism_drift = 0.01
+		communism_drift = 0.05
 
 		ai_will_do = {
 			factor = 0
@@ -2728,12 +2728,14 @@ leader_traits = {
 	}
 
 	Pro_Western = {
+		democratic_drift = 0.1
 
 	}
 	Fighter = {
-
+		army_defence_factor = 0.05
+		army_attack_factor = 0.05
 	}
 	Reformer = {
-
+		corruption_cost_factor = -0.1
 	}
 }
