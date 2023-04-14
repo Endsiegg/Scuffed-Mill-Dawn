@@ -3,9 +3,10 @@
 #Rumors of a 3rd Intifada.
 news_event = {
 	id = Israel.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Israel.1" }
 	title = Israel.1.t
 	desc = Israel.1.d
-	picture = GFX_new_intifada
+	picture = GFX_3rd_Intifada
 
 	major = yes
 
@@ -21,9 +22,10 @@ news_event = {
 
 country_event = {
 	id = Israel.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Israel.2" }
 	title = Israel.2.t
 	desc = Israel.2.d
-	picture = GFX_new_intifada
+	picture = GFX_3rd_Intifada
 
 	fire_only_once = yes
 
@@ -42,30 +44,56 @@ country_event = {
 }
 country_event = {
 	id = Israel.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Israel.3" }
 	title = "Israel asks for Designation"
 	desc = "Israel is asking that we designate Hamas the current ruling party in Gaza as a terrorist organization."
-	picture = GFX_new_intifada
+	picture = GFX_3rd_Intifada
 
-	fire_only_once = yes
+	fire_only_once = no
 
 	is_triggered_only = yes
 
 	option = {
 		name = "Ofcourse they are"
-		log = "[GetDateText]: [This.GetName]: Israel.2.a executed"
-		ISR = {
-			add_political_power = 10
+		log = "[GetDateText]: [This.GetName]: Israel.3.a executed"
+		Root = {
+			add_opinion_modifier = { target = HAM modifier = HAM_Are_Terrorists }
+			reverse_add_opinion_modifier = { target = HAM modifier = large_decrease }
 		}
+		every_country = {		
+		news_event = { id = Israel.19 }	
+		}
+		ai_chance = {
+			factor = 60
+		}			
 	}
 	option = {
-		name = "We will refrain from the designation"
-		log = "[GetDateText]: [This.GetName]: Israel.2.b executed"
+		name = "Only the military wing of Hamas are terrorists"
+		log = "[GetDateText]: [This.GetName]: Israel.3.b executed"
+		Root = {
+			add_opinion_modifier = { target = HAM modifier = HAM_Are_Partly_Terrorists }
+			reverse_add_opinion_modifier = { target = HAM modifier = medium_decrease }
+		}	
+		ai_chance = {
+			factor = 35
+		}			
 	}
+	option = {	
+		name = "Hamas are not terrorists"
+		log = "[GetDateText]: [This.GetName]: Israel.3.c executed"	
+		ISR = {
+			add_opinion_modifier = { target = ROOT modifier = small_decrease }
+		}
+		ai_chance = {
+			factor = 5
+		}		
+	}	
 }
 country_event = {
 	id = Israel.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Israel.4" }
 	title = "The 2001 Election"
-	desc = "The 2001 Election in Israel is taking place and it is expected that Ariel Sharon should be winning by a landslide"
+	desc = "The 2001 Election in Israel is taking place and it is expected that Ariel Sharon should be winning by a landslide, there is still enough time for other politicians to win the public's support. Now we must choose who will lead our nation."
 	picture = GFX_election_rally
 
 	fire_only_once = yes
@@ -73,12 +101,21 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "We shall see how things develop"
-		log = "[GetDateText]: [This.GetName]: Israel.2.a executed"
+	name = "Ariel Sharon"
+	ai_chance = { factor = 900 }
+	log = "[GetDateText]: [This.GetName]: Israel.4.a executed"
+	add_to_variable = { party_pop_array^1 = 0.1 }			
+	}		
+	option = {
+	name = "Ehud Barak"
+	ai_chance = { factor = 10 }
+	log = "[GetDateText]: [This.GetName]: Israel.4.a executed"
+	add_to_variable = { party_pop_array^3 = 0.4 }    				
 	}
 }
 country_event = {
 	id = Israel.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Israel.5" }
 	title = "Operation Defensive Shield"
 	desc = "In order to counter the extremism that has targeted our nation which resulted in the deaths to suicide bombers we shall mobalize our forces in order to take out these terrorists and bring them to justice"
 	picture = GFX_election_rally
@@ -89,13 +126,14 @@ country_event = {
 
 	option = {
 		name = "We will do what must be done"
-		log = "[GetDateText]: [This.GetName]: Israel.2.a executed"
+		log = "[GetDateText]: [This.GetName]: Israel.5.a executed"
 		subtract_from_variable = { hap_isr = 5 }
-		subtract_from_variable = { ter_isr = 5 }
+		subtract_from_variable = { ter_isr = 10 }
 	}
 }
 country_event = {
 	id = Israel.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Israel.6" }
 	title = "The Israeli Arabs"
 	desc = "Now that there is peace the question as to if Israeli Arabs want to live in palestine has been raised. However to our surprise most Israeli Arabs would prefer to stay in Israel and continue their lives rathern than having their communities fall under Palestine"
 	picture = GFX_election_rally
@@ -106,23 +144,29 @@ country_event = {
 
 	option = {
 		name = "Very Interesting"
-		log = "[GetDateText]: [This.GetName]: Israel.2.a executed"
+		log = "[GetDateText]: [This.GetName]: Israel.6.a executed"
 		add_stability = 0.1
 	}
 }
 country_event = {
 	id = Israel.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Israel.7" }
 	title = "Missile Attack"
 	desc = "Rockets have hit our territory from Gaza"
 	picture = GFX_terrorist_attack
 
-	fire_only_once = yes
+	fire_only_once = no
 
 	is_triggered_only = yes
 
+    trigger = {
+        check_variable = { ter_gaza = 65 }
+        original_tag = ISR
+    }
+
 	option = {
 		name = "Oh no"
-		log = "[GetDateText]: [This.GetName]: Israel.2.a executed"
+		log = "[GetDateText]: [This.GetName]: Israel.7.a executed"
 		204 = {
 			damage_building = {
 				type = infrastructure
@@ -133,5 +177,839 @@ country_event = {
 				damage = 0.7
 			}
 		}
+		custom_effect_tooltip = israelis_under_attacktt
+		subtract_from_variable = { hap_isr = 10 }
+		subtract_from_variable = { ter_gaza = 10 }
 	}
+}
+country_event = {
+	id = Israel.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Israel.8" }
+	title = "Withdraw From Gaza"
+	desc = "The media is targeting Ariel Sharon and accuses him for corruption, withdrawing from gaza will cool down the media. Also we can stay in gaza and our population will be happy for that but Ariel's position might be threatened."
+	picture = GFX_politics_protest
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Withdraw!"
+		log = "[GetDateText]: [This.GetName]: Israel.8.a executed"
+			add_war_support = -0.05
+			add_stability = -0.05
+			subtract_from_variable = { hap_gaza = 20 }
+			set_variable = { is_attacking_gaza = 2 }
+			subtract_from_variable = { hap_isr = 10 }
+			subtract_from_variable = { ter_gaza = 15 }
+			custom_effect_tooltip = "This will change the state of conflict away from occupation, but will keep the Palestinians calm and will anger our population"
+	        subtract_from_variable = { party_pop_array^1 = 0.1 }							
+		}
+	
+	option = {
+		name = "Stay!"
+		log = "[GetDateText]: [This.GetName]: Israel.8.a executed"
+		ISR = {
+			add_war_support = 0.05
+			add_stability = -0.05
+			add_to_variable = { hap_gaza = 10 }
+			add_to_variable = { ter_gaza = 15 }
+			custom_effect_tooltip = "This will anger the Palestinians!"
+		}		
+	}	
+}
+country_event = {
+	id = Israel.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Israel.9.a" }
+	title = "Ultimatum To Yasser Arafat"
+	desc = "The peace negotiations with Arafat have failed, Arafat organaized a mass suicide bomber terrorists to attack Israel, we will send him an ultimatum to either stop the attacks or we will stop it ourselves."
+	picture = GFX_politics_protest
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Send the ultimatum!"
+		log = "[GetDateText]: [This.GetName]: Israel.9.a executed"
+ 		if = {
+			limit = {
+				PAL = {
+					exists = yes
+				}
+			}
+			PAL = { country_event = { id = Israel.10 days = 3 } }
+		}			
+	}
+}	
+country_event = {
+	id = Israel.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Israel.10.a" }
+	title = "Ultimatum from Israel"
+	desc = "Israel demands us to stop the suicide bombers attack or we will face a war."
+	picture = GFX_terrorist_attack
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Accept The Demands"
+		log = "[GetDateText]: [This.GetName]: Israel.10.a executed"
+		ISR = {
+			country_event = { id = Israel.11 days = 1 }
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+}	
+country_event = {
+	id = Israel.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Israel.11.a" }
+	title = "Ultimatum Accepted"
+	desc = "Arafat Accepted our demands, the suicide bomber wave has stopped."
+	picture = GFX_terrorist_attack
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Accept The Demands"
+		log = "[GetDateText]: [This.GetName]: Israel.11.a executed"
+		ISR = {
+			add_to_variable = { hap_isr = 10 }
+			subtract_from_variable = { ter_isr = 15 }	
+        }			
+	}
+}
+
+country_event = {
+	id = Israel.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Israel.11.a" }
+	title = "UN Condemns Israel"
+	desc = "Another vote to condemn Israel has been approved in the UN, most of the arab league supported the decision."
+	picture = GFX_news_3rd_Intifada
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "You got to be f#@!$%^ kidding me..."
+		log = "[GetDateText]: [This.GetName]: Israel.12.a executed"
+		ISR = {
+			add_political_power = -100
+        }			
+	}
+}
+
+country_event = {
+	id = Israel_Leb.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Israel.11.a" }
+	title = "The proposal"
+	desc = "The Israelis offered us a cooperation to eliminate the hezbollah together in order to kick out Iran from our country and regain stability over entire Lebanon, The Israelis claims that if we will help them out we will recieve an economic aid from them and they will repair the damage that the war would cause, the decision is now under our choice."
+	picture = GFX_politics_speak
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Accept the Deal"
+		log = "[GetDateText]: [This.GetName]: Israel.11.a executed"
+		ISR = {
+			country_event = { id = Israel.11 days = 1 }
+		}
+		ai_chance = {
+			base = 85
+		}
+	}
+	option = {
+		name = "Reject The Deal"
+		log = "[GetDateText]: [This.GetName]: Israel.11.a executed"
+		ISR = {
+			country_event = { id = Israel.11 days = 1 }
+		}
+		ai_chance = {
+			base = 15
+		}
+	}	
+}
+
+country_event = {
+	id = Israel_Leb.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Israel.11.a" }
+	title = "The Lebanese Respond To Our Deal"
+	desc = "The Lebanese Accepted Our Deal"
+	picture = GFX_politics_speak
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "We shall secure the levant's safety"
+		log = "[GetDateText]: [This.GetName]: Israel.11.a executed"
+		ISR = { create_faction = The_United_Front }
+		ISR = { add_to_faction = LEB }	
+		ISR = { declare_war_on = { type = annex_everything    target = HEZ }
+		}
+		LEB = { declare_war_on = { type = annex_everything    target = HEZ }
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+country_event = {
+	id = Israel_Leb.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Israel.11.a" }
+	title = "Secret Deal"
+	desc = "We got a secret message from an unknown source that claims he is offering us a one time special deal, we do not know what the deal is and who is it from, but most likely it was a mossad agent, we have the choice to either hear what the deal is or ignore it completly."
+	picture = GFX_politics_speak
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Approach Israel Secretly"
+		log = "[GetDateText]: [This.GetName]: Israel_Leb.1.a executed"
+		LEB = {
+			country_event = { id = Israel.11 days = 1 }
+		}
+		ai_chance = {
+			base = 75
+		}
+	}
+}		
+
+news_event = {
+	id = Israel.18
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Israel.19" }
+	title = "Israel Joins NATO"
+	desc = "Israel's application to NATO has been accepted, now they are an official NATO member state."
+	picture = GFX_3rd_Intifada
+
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Now NATO has a new commitment to Israel and Israel commits to NATO"
+	}	
+}
+
+news_event = {
+	id = Israel.19
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Israel.19" }
+	title = "Israel.19.t"
+	desc = "Israel.19.d"
+	picture = GFX_3rd_Intifada
+
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Interesting"
+	}	
+}
+
+news_event = {
+	id = Israel.20
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Israel.19" }
+	title = "Israel and the GCC Members announce a formal military exercise together"
+	desc = "The world understands that the exercise is an actual preparation against Iran and their proxies, now the question is how this is going to escalate? Will Iran act now? or they will let it slide?"
+	picture = GFX_3rd_Intifada
+
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	option = {
+		name = "A major war is about to come soon..."
+	}	
+}
+
+country_event = {
+	id = Israel.21
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Israel.19" }
+	title = "The Final Straw"
+	desc = "The zionists and the pesky sunnis are teaming up against us formally. We cannot let it slide anymore, death to the zionists."
+	picture = GFX_3rd_Intifada
+
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	option = {
+		ai_chance = {
+			base = 100
+		}	
+		name = "Kill them all"
+		declare_war_on = { target = ISR    type = puppet_wargoal_focus }
+		HEZ = {
+		    declare_war_on = { target = ISR    type = puppet_wargoal_focus }
+		}
+		SYR = {
+		    declare_war_on = { target = ISR    type = puppet_wargoal_focus }
+		}
+		IRQ = {
+		    declare_war_on = { target = ISR    type = puppet_wargoal_focus }
+		}
+		every_country = {
+            news_event = { id = Israel.23 }	
+		}		
+	}	
+
+	option = {
+		ai_chance = {
+			base = 0
+		}	
+		name = "No. Better wait and strike them when we are actually ready."
+		every_country = {
+            news_event = { id = Israel.24 }	
+		}		
+	}	
+}
+
+news_event = {
+	id = Israel.22
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Israel.19" }
+	title = "Israel and the GCC Members announce a formal matual defense agreement together"
+	desc = "The world isnt surprised that the announcement is declared, everyone knows this is an actual alliance that is forming right now against Iran, we can only estimate the next moves of each nation in the middle east."
+	picture = GFX_3rd_Intifada
+
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Something bad develops"
+	}	
+}
+
+news_event = {
+	id = Israel.23
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Israel.19" }
+	title = "Iran officialy declares war on Israel."
+	desc = "Iran officialy declares war on Israel, the gulf nations will be have to get involved aswell, now what will the west do? join Israel? or sit aside?."
+	picture = GFX_3rd_Intifada
+
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	option = {
+		name = "A tragedy that could have been prevented..."
+	}	
+}
+
+news_event = {
+	id = Israel.24
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Israel.19" }
+	title = "Iran is threatening the middle eastern coalition."
+	desc = "Iran is officialy threatening the coalition, Khamenei's statements: Each rat will face his punishment, there is not an option for a cancerous regime like the zionist to exist, all of you will face the consequences."
+	picture = GFX_3rd_Intifada
+
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	option = {
+		name = "This is only going to get worse"
+	}	
+}
+
+news_event = {
+	id = Israel.25
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Israel.19" }
+	title = "Nato has officialy declared that any attack against Israel by any country will be an attack against all members."
+	desc = "The announcement came after the increasing tentions between Iran and Israel. Iran's respones: Another American imperialist colony and their puppets are afraid of the power we possess to destroy their iperialist illigal zionist regime"
+	picture = GFX_3rd_Intifada
+
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Another war with many more tragedies incoming"
+	}	
+}
+
+news_event = {
+	id = Israel.26
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Israel.19" }
+	title = "Nato has officialy imposed trade sanctions on Iran"
+	desc = "Iran kept trying to hack and damage Israeli infrastructure which resulted in a failure and got exposed doing that, Nato officialy retaliates with economic sanctions. Iran didnt take the responsibility for the cyber attack."
+	picture = GFX_3rd_Intifada
+
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Iran cant rely on the west to develop their economy."
+	}	
+}
+
+country_event = {
+	id = Israel.27
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Israel.27" }
+	title = "We are prepared for anything"
+	desc = "Israel.27.d"
+	picture = GFX_3rd_Intifada
+
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	option = {
+		name = "We are not alone."
+		add_stability = 0.05
+	}	
+}
+
+country_event = {
+	id = Israel.28
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Israel.19" }
+	title = "The Final Choice"
+	desc = "Israel.28.d"
+	picture = GFX_3rd_Intifada
+
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	option = {
+		name = "The Western Defensive Option"
+		log = "[GetDateText]: [This.GetName]: Israel.2.a executed"
+		complete_national_focus = ISR_west_option
+	}	
+	option = {
+		name = "Independent Solo Option"
+		log = "[GetDateText]: [This.GetName]: Israel.2.a executed"
+		complete_national_focus = ISR_solo_option
+	}	
+	option = {
+		name = "The Middle Eastern Coalition Option"
+		log = "[GetDateText]: [This.GetName]: Israel.2.a executed"
+		complete_national_focus = ISR_me_coalition_option	
+	}	
+}
+
+news_event = {
+	id = Israel.29
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Israel.19" }
+	title = "Large scale Israeli military exercise"
+	desc = "Israel.29.d"
+	picture = GFX_3rd_Intifada
+
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	option = {
+		name = "This cannot be good... right?"
+	}	
+}
+
+country_event = {
+	id = Israel.30
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Israel.19" }
+	title = "USA pruposes the Abrahams Accords agreement"
+	desc = "The UAE and Bahrain are interested in establishing a formal and warm relations with Israel, the US invites us to sign the agreements in washington"
+	picture = GFX_3rd_Intifada
+
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Peace is strength"
+	}	
+}
+
+news_event = {
+	id = Israel.31
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Israel.19" }
+	title = "Abrahams Accords Announced!"
+	desc = "Israel, UAE and Bahrain officialy signed a normalization agreement meditated by the US!"
+	picture = GFX_abrahams_accords
+
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	option = {
+		name = "New era for the middle east"
+	}	
+}
+
+news_event = {
+	id = Israel.32
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Israel.19" }
+	title = "Qatar Joins The Abrahams Accords Announced!"
+	desc = ""
+	picture = GFX_abrahams_accords
+
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	option = {
+		name = "New era for the middle east"
+	}	
+}
+
+news_event = {
+	id = Israel.33
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Israel.19" }
+	title = "Oman Joins The Abrahams Accords Announced!"
+	desc = ""
+	picture = GFX_abrahams_accords
+
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	option = {
+		name = "New era for the middle east"
+	}	
+}
+
+news_event = {
+	id = Israel.34
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Israel.19" }
+	title = "Sauidi Arabia Joins The Abrahams Accords Announced!"
+	desc = ""
+	picture = GFX_abrahams_accords
+
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	option = {
+		name = "The muslim world is opening up to Israel"
+	}	
+}
+
+news_event = {
+	id = Israel.35
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Israel.19" }
+	title = "Ultra nationalism is on the rise in Israel"
+	desc = "With the increasing antisemitism and the threats Israel faces, the jewish people demand to end every possible threat and retrieve the promised land that was taken from them at all costs."
+	picture = GFX_news_election_rally
+
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Is the middle east in danger?"
+	}	
+}
+
+country_event = {
+	id = Israel.36
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Israel.19" }
+	title = "Ultra Nationalist Protests"
+	desc = "The Otzma Yehudit party leader Itamar Ben Gvir demands the government to resign and hand the nation towards the people's wishes"
+	picture = GFX_news_election_rally
+
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	option = {
+		name = "This is getting out of control"
+		add_popularity = {
+			ideology = nationalist
+			popularity = 0.20
+		}		
+	}	
+}
+
+country_event = {
+	id = Israel.37
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Israel.19" }
+	title = "The Government Caves In..."
+	desc = "The Otzma Yehudit party has officialy gaines the majority of the people's support, The government has no choice but to resign and hand the nation to the new chosen leader."
+	picture = GFX_news_election_rally
+
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	option = {
+		name = "We are the house owners."
+		custom_effect_tooltip = "Otzma Yehudit will be empowered."
+				hidden_effect = {
+					clear_array = ruling_party
+					clear_array = gov_coalition_array
+					add_to_array = { ruling_party = 21 } #Nat_Fascism
+					update_government_coalition_strength = yes
+					update_party_name = yes
+					set_coalition_drift = yes
+					meta_effect = {
+						text = {
+							set_country_flag = [META_SET_RULING_PARTY]
+						}
+						META_SET_RULING_PARTY = "[meta_set_ruling_leader]"
+					}
+					set_leader = yes
+					set_politics = {
+						ruling_party = nationalist
+						elections_allowed = no
+					}
+			        create_country_leader = {
+				    name = "Itamar Ben-Gvir"
+				    picture = "itamar_ben_gvir.dds"
+				    expire = "2045.1.1"
+				    ideology = Nat_Fascism
+				    traits = {
+				    Lawyer
+			        ruthless
+				}
+			}					
+		}		
+	}	
+}
+
+news_event = {
+	id = Israel.38
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Israel.19" }
+	title = "Israel's nationalists have seized the government"
+	desc = "The Otzma Yehudit party leader Itamar Ben Gvir demanded the current Israeli government to resign and hand the nation to them after much of the tentions and pressure that was putted on the government"
+	picture = GFX_news_election_rally
+
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Oh no..."		
+	}	
+}
+
+country_event = {
+	id = Israel.39
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Israel.19" }
+	title = "Kurdish Independence"
+	desc = "Israel.39.d"
+	picture = GFX_news_election_rally
+
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Better be friends than enemies"
+		ISR = {
+			add_opinion_modifier = { target = PREV modifier = large_increase }
+			reverse_add_opinion_modifier = { target = KUR modifier = large_increase }
+		}		
+		KUR = {
+			country_event = { id = Israel.40 }
+	    }
+		hidden_effect = {		
+		KUR = {
+		if = {
+		limit = {
+		country_exists = ROJ
+		}
+        annex_country = {
+            target = ROJ
+            transfer_troops = yes
+        }	
+		}
+		}
+		ROJ = {
+		remove_state_core = 575
+		remove_state_core = 571
+		}
+		if = {
+		limit = {
+		OR = {
+		575 = { is_controlled_by = KUR }
+		575 = { is_controlled_by = ROJ }
+		}
+		}
+		ISR = {
+		transfer_state = 575
+		}
+		}
+		
+		if = {
+		limit = {
+		OR = {
+		571 = { is_controlled_by = KUR }
+		571 = { is_controlled_by = ROJ }
+		}
+		}
+		ISR = {
+		transfer_state = 571
+		}
+		}		
+	}
+	}
+}	
+
+country_event = {
+	id = Israel.40
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Israel.19" }
+	title = "Kurdish Independence"
+	desc = ""
+	picture = GFX_news_election_rally
+
+	fire_only_once = no
+
+	is_triggered_only = yes
+	
+	option = {
+		name = Kurdistan.9.a
+		log = "[GetDateText]: [This.GetName]: Kurdistan.9.a executed"		#Declare full independence
+		ai_chance = {
+			factor = 100
+		}
+		swap_ideas = {
+			remove_idea = Non_State_Actor
+			add_idea = Lacks_International_Recognition
+		}
+		add_to_array = {
+			global.Unrecognised_States = THIS
+		}
+		set_variable = {
+			var = Granted_Recognition
+			value = 0
+		}
+		IRQ = { set_country_flag = original_owner_@FROM }
+		PER = { set_country_flag = original_owner_@FROM }
+		TUR = { set_country_flag = original_owner_@FROM }
+		SYR = { set_country_flag = original_owner_@FROM }
+		hidden_effect = {
+		every_country = {
+		news_event = { id = Israel.41 days = 1}
+        }
+		ISR = {
+		set_country_flag = Recognised_KUR
+		KUR = {
+			add_opinion_modifier = {
+				target = ISR
+				modifier = recognises_us
+			}
+			news_event = { id = recognition.2 }
+		}		
+		}
+		}
+	}	
+}
+
+news_event = {
+	id = Israel.41
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Israel.19" }
+	title = "Kurdistan Declares Independence"
+	desc = "When Israel occupied Iraq, the Kurd's chance for independence has increased, now their independence has came with Israel's help."
+	picture = GFX_news_election_rally
+
+	fire_only_once = no
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "A bright future for the Kurds?"
+	}	
+}
+
+country_event = {
+	id = Israel.42
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Israel.19" }
+	title = "The Turks Hold Some Of Our Land"
+	desc = "Israel.42.d"
+	picture = GFX_3rd_Intifada
+
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	option = {
+		name = "God is on our side, each city shall be reclaimed"
+		log = "[GetDateText]: [This.GetName]: Israel.2.a executed"
+		complete_national_focus = ISR_the_last_war_decision2
+	}	
+	option = {
+		name = "There is no need, we are good with what we have gained."
+	}		
+}
+
+country_event = {
+	id = Israel.43
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Israel.19" }
+	title = "The Kuwait Naval Base"
+	desc = "Since Israel integrated Kuwait, our naval base is technically an Israeli territory now. Fortunately, We recieved a message from Israeli diplomats that we can keep the base to our selves as long as we will maintain the good relations between our two nations."
+	picture = GFX_3rd_Intifada
+
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	option = {
+		name = "The Israeli expansion wont affect our power projection after all."
+		USA = {
+			add_opinion_modifier = { target = PREV modifier = large_increase }
+			reverse_add_opinion_modifier = { target = ISR modifier = large_increase }
+		}			
+	}			
+}
+
+news_event = {
+	id = Israel.44
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Israel.19" }
+	title = "Lebanon Joins The Abrahams Accords Announced!"
+	desc = ""
+	picture = GFX_abrahams_accords
+
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	option = {
+		name = "New era for the middle east"
+	}	
+}
+
+news_event = {
+	id = Israel.45
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Israel.45" }
+	title = "The middle eastern peace confederation"
+	desc = "Israel.45.d"
+	picture = GFX_abrahams_accords
+
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Unbelievable!"
+	}	
+}
+
+news_event = {
+	id = Israel.46
+	immediate = { log = "[GetDateText]: [Root.GetName]: event Israel.46" }
+	title = "The middle eastern peace confederation alliance is announced"
+	desc = "After the first middle eastern confederation the second announcement has came. A new alliance has been established in the middle east!"
+	picture = GFX_abrahams_accords
+
+	fire_only_once = no
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Who would've thought it could happen"
+	}	
 }
