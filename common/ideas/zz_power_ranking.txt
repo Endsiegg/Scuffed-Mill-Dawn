@@ -213,6 +213,26 @@ ideas = {
 			}
 		}
 
-
+		# For 2 specific countries
+		indonesia_divided = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea indonesia_divided" }
+			picture = GFX_idea_indonesia_divided
+			allowed = { original_tag = IND }
+			allowed_civil_war = { always = yes }
+			modifier = {
+				#Non-power:
+				political_power_factor = -0.35
+			}
+		}
+		india_divided = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea india_divided" }
+			picture = GFX_idea_india_divided
+			allowed = { original_tag = RAJ }
+			allowed_civil_war = { always = yes }
+			modifier = {
+				#Non-power:
+				political_power_factor = -0.35
+			}
+		}
 	}
 }
