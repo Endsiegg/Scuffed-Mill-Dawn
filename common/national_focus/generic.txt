@@ -354,11 +354,6 @@
 				set_temp_variable = { influence_target = THIS.id }
 				change_influence_percentage = yes
 			}
-
-			custom_effect_tooltip = influence_on_neighbors_tt
-			set_temp_variable = { treasury_change = gdp_total_display }
-			multiply_temp_variable = { treasury_change = 0.5 }
-			modify_treasury_effect = yes
 		}
 
 		ai_will_do = {

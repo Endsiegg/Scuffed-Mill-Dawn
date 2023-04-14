@@ -27,7 +27,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_focus_ending_clintonomics"
-			add_political_power = 75
+			add_political_power = 100
 		}
 
 		ai_will_do = {
@@ -50,7 +50,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ECONOMY }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_focus_enjoy_surplus"
-			set_temp_variable = { treasury_change = 160.00 }
+			set_temp_variable = { treasury_change = 1000.00 }
 			modify_treasury_effect = yes
 
 			hidden_effect = {
@@ -169,28 +169,28 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESOURCE }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_focus_late_renew_investments"
-				804 = {
-                	add_building_construction = {
-                    	type = synthetic_refinery
-                    	level = 1
-                    	instant_build = yes
-                	}
-            	}
-				789 = {
-                	add_building_construction = {
-                    		type = synthetic_refinery
-                    		level = 1
-                    		instant_build = yes
-                	}
-            	}
-				785 = {
-                	add_building_construction = {
-                    		type = synthetic_refinery
-                    		level = 1
-                    		instant_build = yes
-                	}
-            	}
-			set_temp_variable = { treasury_change = -12.75 }
+			769 = {
+				add_building_construction = {
+				 type = offices
+				level = 2
+				instant_build = yes
+			}
+		}
+		771 = {
+			add_building_construction = {
+			 type = offices
+			level = 2
+			instant_build = yes
+		}
+	}
+	795 = {
+		add_building_construction = {
+		 type = offices
+		level = 2
+		instant_build = yes
+	}
+}
+			set_temp_variable = { treasury_change = -20.00	 }
 			modify_treasury_effect = yes
 
 			hidden_effect = {
@@ -221,7 +221,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_focus_rise_internet"
-			add_political_power = 175
+			add_political_power = 200
 
 			hidden_effect = {
 				set_temp_variable = { party_index = 1 }
@@ -3797,9 +3797,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_MILITARY }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_focus_continuing_arms_contracts"
-			set_temp_variable = { temp_opinion = 6 }
+			set_temp_variable = { temp_opinion = 10 }
 			change_defense_industry_opinion = yes
-			set_temp_variable = { temp_opinion = 7 }
+			set_temp_variable = { temp_opinion = 10 }
 			change_wall_street_opinion = yes
 
 			add_dynamic_modifier = { modifier = USA_focus_military_industrial_complex }
@@ -3832,7 +3832,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_focus_a_new_mechanized_transport"
 			add_tech_bonus = {
 				name = IFV_mech_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = Cat_IFV
 			}
@@ -4213,8 +4213,8 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_focus_rebalancing_the_books"
 			add_political_power = 100
-			add_stability = 0.03
-			add_war_support = 0.03
+			add_stability = 0.05
+			add_war_support = 0.05
 			army_experience = 20
 			air_experience = 20
 			navy_experience = 20
@@ -4417,6 +4417,13 @@ focus_tree = {
 			set_temp_variable = { party_popularity_increase = 0.02 }
 			set_temp_variable = { temp_outlook_increase = 0.001 }
 			add_relative_party_popularity = yes	
+					add_tech_bonus = {
+				name = SOV_yak_130
+				bonus = 2
+				ahead_reduction = 2
+				uses = 1
+				category = CAT_FIXED_WING
+			}
 		}
 
 		ai_will_do = {
@@ -4619,7 +4626,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_focus_new_aircraft_models"
 			add_tech_bonus = {
 				name = CAS_air_bonus
-				bonus = 0.25
+				bonus = 1.00
 				uses = 1
 				category = Cat_CAS
 			}
@@ -5427,7 +5434,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_focus_pushing_the_anti_smoking_initiative"
 			add_political_power = 50
-			add_stability = 0.04
+			add_stability = 0.10
 		}
 
 		ai_will_do = {
@@ -5474,6 +5481,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_FOREIGN_POLICY }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_focus_state_visit_to_vietnam"
+			add_political_power = 100
 			USA = { add_opinion_modifier = { target = VIE modifier = minor_improve_trade }
 			}
 			VIE = { add_opinion_modifier = { target = USA modifier = minor_improve_trade }
@@ -8902,8 +8910,8 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_FOREIGN_POLICY }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_focus_ending_clintonomics"
-			add_war_support = -0.04
-			add_stability = 0.04
+			add_war_support = 0.05
+			add_stability = 0.05
 			add_political_power = 50
 		}
 
@@ -9000,7 +9008,7 @@ focus_tree = {
 		completion_reward = {
 			add_dynamic_modifier = { modifier = us_fiscal_and_econ_policy }	
 			add_to_variable = { fiscal_econ_market_resources = -0.1 }
-			add_to_variable = { fiscal_econ_export_money_return = 0.05 }
+			add_to_variable = { fiscal_econ_export_money_return = 5 }
 			custom_effect_tooltip = market_resources_minus10_tooltip
 			custom_effect_tooltip = export_return5_tooltip
 			log = "[GetDateText]: [Root.GetName]: Focus USA_focus_ending_clintonomics"
@@ -9726,7 +9734,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_FOREIGN_POLICY }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_focus_ending_clintonomics"
-			add_political_power = 50
+			add_political_power = 150
 			USA = { add_opinion_modifier = { target = PER modifier = minor_improve_trade }
 			}
 			PER = { add_opinion_modifier = { target = USA modifier = minor_improve_trade }
@@ -9762,7 +9770,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_FOREIGN_POLICY }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_focus_ending_clintonomics"
-			add_political_power = 50
+			add_political_power = 150
 			USA = { add_opinion_modifier = { target = SOV modifier = minor_improve_trade }
 			}
 			SOV = { add_opinion_modifier = { target = USA modifier = minor_improve_trade }
@@ -9798,7 +9806,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_FOREIGN_POLICY }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_focus_ending_clintonomics"
-			add_political_power = 50
+			add_political_power = 150
 			USA = { add_opinion_modifier = { target = RAJ modifier = minor_improve_trade }
 			}
 			RAJ = { add_opinion_modifier = { target = USA modifier = minor_improve_trade }

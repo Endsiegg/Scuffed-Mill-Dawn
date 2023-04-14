@@ -46,7 +46,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 100
+			add_political_power = 200
 			log = "[GetDateText]: [This.GetName]: focus CHI_Chairman_Jiang_Reign executed"
 		}
 
@@ -328,7 +328,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 100
+			add_political_power = 200
 			log = "[GetDateText]: [This.GetName]: focus CHI_Shanghai_Clique_Dominance executed"
 		}
 
@@ -1117,6 +1117,7 @@ focus_tree = {
 					emerging_Communist-State
 					rational
 					polished
+					career_politician
 				}
 			}
 			add_political_power = 100
@@ -8444,42 +8445,7 @@ communist_cadres_at_least_positive_opinion = yes
 				has_opinion = { target = CHI value > -1 }
 				has_country_flag = signed_BRI
 			}
-			if = {
-				limit = { is_ai = no }
-				custom_trigger_tooltip = {
-					tooltip = CHI_PAK_railway_tt
-					418 = {
-						infrastructure > 2
-					}
-					573 = {
-						infrastructure > 2
-					}
-					563 = {
-						infrastructure > 2
-					}
-					426 = {
-						infrastructure > 2
-					}
-					422 = {
-						infrastructure > 2
-					}
-					421 = {
-						infrastructure > 2
-					}
-					420 = {
-						infrastructure > 2
-					}
-					419 = {
-						infrastructure > 2
-					}
-					417 = {
-						infrastructure > 2
-					}
-					416 = {
-						infrastructure > 2
-					}
-				}
-			}
+		
 		}
 
 		completion_reward = {
@@ -9357,7 +9323,7 @@ communist_cadres_at_least_positive_opinion = yes
 		completion_reward = {
 			set_temp_variable = { treasury_change = -10 }
 			modify_treasury_effect = yes
-			add_stability = 0.05
+			add_stability = 0.10
 			log = "[GetDateText]: [This.GetName]: focus CHI_Ecological_Preservation_Movement executed"
 		}
 
@@ -10829,9 +10795,9 @@ communist_cadres_at_least_positive_opinion = yes
 		}
 
 		completion_reward = {
-			set_temp_variable = { treasury_change = -5 }
+			set_temp_variable = { treasury_change = -15 }
 			modify_treasury_effect = yes
-			add_stability = 0.02
+			add_stability = 0.15
 			log = "[GetDateText]: [This.GetName]: focus CHI_Electric_Car_Project executed"
 		}
 
@@ -10881,6 +10847,10 @@ communist_cadres_at_least_positive_opinion = yes
 				set_temp_variable = { influence_target = THIS }
 				change_influence_percentage = yes
 			}
+			increase_exports = yes
+			set_temp_variable = { treasury_change = gdp_total_display }
+            set_temp_variable = { treasury_change = 2000	 }
+            modify_treasury_effect = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Expand_Abroad executed"
 		}
 
@@ -11497,14 +11467,10 @@ communist_cadres_at_least_positive_opinion = yes
 
 		completion_reward = {
 			
-			set_temp_variable = { treasury_change = -6 }
+			set_temp_variable = { treasury_change = -25 }
 			modify_treasury_effect = yes
-			add_tech_bonus = {
-				name = CHI_Invest_in_AVIC
-				bonus = 0.3
-				uses = 1
-				category = Cat_AIR_EQP
-			}
+		add_ideas = fighter_production_bonus
+			
 			log = "[GetDateText]: [This.GetName]: focus CHI_Invest_in_AVIC executed"
 		}
 
@@ -15717,7 +15683,7 @@ communist_cadres_at_least_positive_opinion = yes
 			if = {
 				limit = { NOT = { has_completed_focus = CHI_Form_the_SCO } }
 				effect_tooltip = {
-					add_stability = 0.02
+					add_stability = 0.10
 				}
 			}
 			log = "[GetDateText]: [This.GetName]: focus CHI_Development_Assistance executed"
@@ -16415,10 +16381,7 @@ communist_cadres_at_least_positive_opinion = yes
 						has_idea = rival_government
 					}
 				}
-				set_temp_variable = { percent_change = 1 }
-				set_temp_variable = { tag_index = CHI }
-				set_temp_variable = { influence_target = THIS }
-				change_influence_percentage = yes
+				add_stability = 0.05
 			}
 			set_temp_variable = { modify_chinese_aggression = -1 }
 			CHI_modify_chinese_aggression = yes
@@ -16657,7 +16620,7 @@ communist_cadres_at_least_positive_opinion = yes
 					}
 					influence_higher_10 = yes
 				}
-				add_stability = 0.02
+				add_stability = 0.05
 				set_temp_variable = { debt_change = 1 }
 				modify_debt_effect = yes
 			}
@@ -16803,7 +16766,8 @@ communist_cadres_at_least_positive_opinion = yes
 						has_idea = Lacks_International_Recognition
 						has_idea = rival_government
 					}
-					NOT = { has_idea = CHI_solar_power has_idea = CHI_nuclear_power has_idea = CHI_coal }
+				
+				    NOT	= { has_idea = CHI_solar_power has_idea = CHI_nuclear_power has_idea = CHI_coal }
 					influence_higher_10 = yes
 				}
 				add_stability = 0.05
@@ -16849,7 +16813,7 @@ communist_cadres_at_least_positive_opinion = yes
 						has_idea = rival_government
 					}
 				}
-				add_stability = 0.02
+				add_stability = 0.05
 			}
 			set_temp_variable = { modify_chinese_aggression = -1 }
 			CHI_modify_chinese_aggression = yes

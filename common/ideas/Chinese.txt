@@ -303,7 +303,7 @@ ideas = {
 			allowed = { original_tag = CHI }
 			picture = disjointed_government
 			modifier = {
-				political_power_gain = 0.05
+				political_power_gain = 0.15
 				max_command_power = 10
 				command_power_gain = 0.5
 				consumer_goods_factor = -0.02
@@ -318,7 +318,7 @@ ideas = {
 			}
 			modifier = {
 				stability_factor = 0.05
-				communism_drift = 0.05
+				communism_drift = 1.00
 			}
 		}
 
@@ -1019,8 +1019,8 @@ ideas = {
 			modifier = {
 				political_power_factor = 0.1
 				research_speed_factor = 0.1
-				foreign_subversive_activites = 0.1
-				stability_factor = 0.025
+				foreign_subversive_activites = -0.1
+				stability_factor = 0.05
 			}
 		}
 
