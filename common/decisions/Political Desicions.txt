@@ -5256,7 +5256,7 @@ generic_coalition_politics_desicions = {
 			}
 		}
 		modifier = {
-			democratic_drift = 0.1
+			democratic_drift = 0.3
 			political_power_factor = -0.25
 		}
 
@@ -5285,7 +5285,7 @@ generic_coalition_politics_desicions = {
 		}
 
 		modifier = {
-			communism_drift = 0.1
+			communism_drift = 0.3
 			political_power_factor = -0.25
 		}
 
@@ -5314,7 +5314,7 @@ generic_coalition_politics_desicions = {
 		}
 
 		modifier = {
-			neutrality_drift = 0.1
+			neutrality_drift = 0.3
 			political_power_factor = -0.25
 		}
 
@@ -5343,7 +5343,7 @@ generic_coalition_politics_desicions = {
 		}
 
 		modifier = {
-			nationalist_drift = 0.1
+			nationalist_drift = 0.3
 			political_power_factor = -0.25
 		}
 
@@ -5429,7 +5429,7 @@ generic_coalition_politics_desicions = {
 		}
 
 		modifier = {
-			fascism_drift = 0.1
+			fascism_drift = 0.3
 			political_power_factor = -0.25
 		}
 

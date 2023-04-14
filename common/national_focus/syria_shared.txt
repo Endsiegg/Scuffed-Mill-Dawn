@@ -2158,11 +2158,13 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SYR_support_tactics"
 		add_doctrine_cost_reduction = {
+			name = SYR_support_tact
                 category = Cat_naval_doctrine
                 uses = 3
                 cost_reduction = 0.5
             }
 		add_doctrine_cost_reduction = {
+			name = SYR_air_tact
                 category = air_doctrine
                 uses = 3
                 cost_reduction = 0.5
@@ -4346,6 +4348,7 @@ shared_focus = {
 		if = {
 			limit = { has_completed_focus = SYR_guerrilla_warfare }
 			add_doctrine_cost_reduction = {
+				name = SYR_irgc_military_college_1
 				category = Cat_GUERRILLA_WARFARE
 				cost_reduction = 0.5
 				uses = 1
@@ -4353,6 +4356,7 @@ shared_focus = {
 		}
 		else = {
 			add_doctrine_cost_reduction = {
+				name = SYR_irgc_military_college_2
 				category = Cat_DECENTRALIZED_WARFARE
 				cost_reduction = 0.5
 				uses = 1
@@ -5338,6 +5342,7 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SYR_air_practice_with_britain"
 		add_doctrine_cost_reduction = {
+			name = SYR_air_practice
                 category = air_doctrine
                 uses = 1
                 cost_reduction = 0.5

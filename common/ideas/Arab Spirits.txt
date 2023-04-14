@@ -92,9 +92,9 @@ ideas = {
 			}
 
 			modifier = {
-				production_speed_buildings_factor = -0.1
+				production_speed_buildings_factor = -0.2
 				corruption_cost_factor = 0.5
-				economic_cycles_cost_factor = 0.25
+				economic_cycles_cost_factor = 0.5
 				political_power_gain = 0.5
 				drift_defence_factor = 0.25
 				local_resources_factor = 0.5
