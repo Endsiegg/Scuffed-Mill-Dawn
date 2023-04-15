@@ -1445,26 +1445,26 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_centralized_development"
 			111 = { # Wielkopolska
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
 			474 = { # West Pomerania
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
 			433 = { # Lodz
-			add_extra_state_shared_building_slots = 3
+			add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1477,7 +1477,7 @@ focus_tree = {
 				}
 			}
 
-			set_temp_variable = { treasury_change = -30 }
+			set_temp_variable = { treasury_change = -100 }
 			modify_treasury_effect = yes
 		}
 
@@ -4878,39 +4878,39 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_centralized_development"
 			111 = { # Wielkopolska
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
 			474 = { # West Pomerania
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
 			625 = { # Lubisz
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
 			626 = { # Lower Silesia
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
 
-			set_temp_variable = { treasury_change = -30 }
+			set_temp_variable = { treasury_change = -100 }
 			modify_treasury_effect = yes
 		}
 
@@ -5308,7 +5308,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_EQUIPMENT }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_buy_old_leopards"
-			set_temp_variable = { treasury_change = -3 }
+			set_temp_variable = { treasury_change = -75 }
 			modify_treasury_effect = yes
 			if = {
 				limit = { has_dlc = "No Step Back" }
@@ -5331,7 +5331,7 @@ focus_tree = {
 			GER = {
 				add_opinion_modifier = { target = ROOT modifier = POL_bought_leopards }
 				reverse_add_opinion_modifier = { target = ROOT modifier = POL_bought_leopards }
-				set_temp_variable = { treasury_change = 30 }
+				set_temp_variable = { treasury_change = 75 }
 				modify_treasury_effect = yes
 			}
 		}
@@ -5411,7 +5411,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = POL_speak_against_russia
-		mutually_exclusive = { focus = POL_rely_on_europe }
+		#mutually_exclusive = { focus = POL_rely_on_europe }
 		cost = 5
 
 		cancel_if_invalid = no
@@ -5490,10 +5490,10 @@ focus_tree = {
 				producer = USA
 			}
 
-			set_temp_variable = { treasury_change = -4 }
+			set_temp_variable = { treasury_change = -200 }
 			modify_treasury_effect = yes
 			USA = {
-				set_temp_variable = { treasury_change = 3 }
+				set_temp_variable = { treasury_change = 200 }
 				modify_treasury_effect = yes
 			}
 		}
@@ -5525,7 +5525,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = POL_artillery_and_aa_support
 				bonus = 3
-				uses = 2
+				uses = 1
 				category = Cat_ARTILLERY
 			}
 		}
@@ -5764,7 +5764,8 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_pravda_i_spravedlivost"
-			create_country_leader = {
+			hidden_effect = {
+				create_country_leader = {
 				name = "Andrzej Duda"
 				picture = "Andrzej_Duda.dds"
 				expire = "2050.1.1"
@@ -5775,6 +5776,7 @@ focus_tree = {
 					lawyer
 					likeable
 					honest
+				}
 				}
 			}
 		}
