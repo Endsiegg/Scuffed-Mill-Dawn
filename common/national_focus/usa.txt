@@ -418,22 +418,82 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_USA_ECONOMIC_REGULATION }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_focus_2000_targeted_regulations"
-			769 = { add_extra_state_shared_building_slots = 1 }
-			771 = { add_extra_state_shared_building_slots = 1 }
-			811 = { add_extra_state_shared_building_slots = 1 }
-			778 = { add_extra_state_shared_building_slots = 1 }
-			767 = { add_extra_state_shared_building_slots = 1 }
-			768 = { add_extra_state_shared_building_slots = 1 }
-			770 = { add_extra_state_shared_building_slots = 1 }
-			772 = { add_extra_state_shared_building_slots = 1 }
-			777 = { add_extra_state_shared_building_slots = 1 }
-			810 = { add_extra_state_shared_building_slots = 1 }
-			809 = { add_extra_state_shared_building_slots = 1 }
+	
+			769 = {
+            	add_building_construction = {
+                	type = industrial_complex
+                	level = 1
+            		instant_build = yes
+            	}
+            }
+			771 = {
+            	add_building_construction = {
+                	type = industrial_complex
+                	level = 1
+                	instant_build = yes
+            	}
+            }
+			811 = {
+          		add_building_construction = {
+          			type = industrial_complex
+          			level = 1
+          			instant_build = yes
+    			}
+        	}
+			778 = {
+                add_building_construction = {
+                	type = industrial_complex
+                	level = 1
+                	instant_build = yes
+            	}
+            }
+			767 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			768 = {
+				add_building_construction = {
+				 type = offices
+				level = 1
+				instant_build = yes
+			}
+		}
+		770 = {
+			add_building_construction = {
+			 type = offices
+			level = 1
+			instant_build = yes
+		}
+	}
+	772 = {
+		add_building_construction = {
+		 type = offices
+		level = 1
+		instant_build = yes
+	}
+}
+777 = {
+	add_building_construction = {
+	 type = offices
+	level = 1
+	instant_build = yes
+}
+}
+810 = {
+	add_building_construction = {
+	 type = offices
+	level = 1
+	instant_build = yes
+}
+}
 
-			set_temp_variable = { treasury_change = -27.5 }
+			set_temp_variable = { treasury_change = -95 }
 			modify_treasury_effect = yes	
 			set_temp_variable = { party_index = 2 }
-			set_temp_variable = { party_popularity_increase = 0.002 }
+			set_temp_variable = { party_popularity_increase = 0.1 }
 			add_relative_party_popularity = yes					
 		}
 
@@ -613,24 +673,84 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_USA_ECONOMIC_REGULATION }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_focus_early_admin_dereg"
-			795 = { add_extra_state_shared_building_slots = 1 }
-			800 = { add_extra_state_shared_building_slots = 1 }
-			789 = { add_extra_state_shared_building_slots = 1 }
-			807 = { add_extra_state_shared_building_slots = 1 }
-			806 = { add_extra_state_shared_building_slots = 1 }
-			803 = { add_extra_state_shared_building_slots = 1 }
-			775 = { add_extra_state_shared_building_slots = 1 }
-			777 = { add_extra_state_shared_building_slots = 1 }
-			783 = { add_extra_state_shared_building_slots = 1 }
-			790 = { add_extra_state_shared_building_slots = 1 }
+			795 = {
+            	add_building_construction = {
+                	type = industrial_complex
+                	level = 1
+            		instant_build = yes
+            	}
+            }
+			800 = {
+            	add_building_construction = {
+                	type = industrial_complex
+                	level = 1
+                	instant_build = yes
+            	}
+            }
+			789 = {
+          		add_building_construction = {
+          			type = industrial_complex
+          			level = 1
+          			instant_build = yes
+    			}
+        	}
+			807 = {
+                add_building_construction = {
+                	type = industrial_complex
+                	level = 1
+                	instant_build = yes
+            	}
+            }
+			806 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			803 = {
+				add_building_construction = {
+				 type = offices
+				level = 1
+				instant_build = yes
+			}
+		}
+		775 = {
+			add_building_construction = {
+			 type = offices
+			level = 1
+			instant_build = yes
+		}
+	}
+	777 = {
+		add_building_construction = {
+		 type = offices
+		level = 1
+		instant_build = yes
+	}
+}
+783 = {
+	add_building_construction = {
+	 type = offices
+	level = 1
+	instant_build = yes
+}
+}
+790 = {
+	add_building_construction = {
+	 type = offices
+	level = 1
+	instant_build = yes
+}
+}
 
-			set_temp_variable = { treasury_change = -25 }
+			set_temp_variable = { treasury_change = -95 }
 			modify_treasury_effect = yes
 			set_temp_variable = { party_index = 1 }
-			set_temp_variable = { party_popularity_increase = 0.002 }
+			set_temp_variable = { party_popularity_increase = 0.1 }
 			add_relative_party_popularity = yes		
 			set_temp_variable = { party_index = 16 }
-			set_temp_variable = { party_popularity_increase = 0.001 }
+			set_temp_variable = { party_popularity_increase = 0.0001 }
 			add_relative_party_popularity = yes				
 		}
 
@@ -3832,7 +3952,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_focus_a_new_mechanized_transport"
 			add_tech_bonus = {
 				name = IFV_mech_bonus
-				bonus = 1.0
+				bonus = 2.0
 				uses = 1
 				category = Cat_IFV
 			}
@@ -4626,7 +4746,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_focus_new_aircraft_models"
 			add_tech_bonus = {
 				name = CAS_air_bonus
-				bonus = 1.00
+				bonus = 2.00
 				uses = 1
 				category = Cat_CAS
 			}
@@ -5150,7 +5270,7 @@ focus_tree = {
 			add_to_variable = { mic_army_training_time = -0.10 }
 			add_to_variable = { mic_army_unit_xp_gain = 0.10 }
 			add_to_variable = { mic_recruitable_population = 0.02 }
-			add_to_variable = { mic_personnel_cost = 0.1 }
+			add_to_variable = { mic_personnel_cost = 0.2 }
 
 			custom_effect_tooltip = political_power_gain_minus5_tooltip
 			custom_effect_tooltip = division_attack5_tooltip
@@ -5159,7 +5279,7 @@ focus_tree = {
 			custom_effect_tooltip = division_training_minus10_tooltip
 			custom_effect_tooltip = division_xp_gain10_tooltip
 			custom_effect_tooltip = monthly_recruit_pop2_tooltip
-			custom_effect_tooltip = personnel_cost10_tooltip
+			custom_effect_tooltip = personnel_cost20_tooltip
 			set_temp_variable = { temp_opinion = 3 }
 			change_defense_industry_opinion = yes
 
@@ -5824,10 +5944,10 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_focus_religous_freedoms_debate"
 			add_dynamic_modifier = { modifier = USA_domestic_policies }
-			add_to_variable = { domestic_policy_daily_political_gain = -0.2 }
+			add_to_variable = { domestic_policy_daily_political_gain = -0.05 }
 			add_to_variable = { domestic_drift_defense = -0.05 }
 
-			custom_effect_tooltip = political_power_gain_minus20_tooltip
+			custom_effect_tooltip = political_power_gain_minus5_tooltip
 			custom_effect_tooltip = ideological_drift_defense_minus5_tooltip
 			
 			add_popularity = { ideology = democratic popularity = 0.05 }
@@ -9008,7 +9128,7 @@ focus_tree = {
 		completion_reward = {
 			add_dynamic_modifier = { modifier = us_fiscal_and_econ_policy }	
 			add_to_variable = { fiscal_econ_market_resources = -0.1 }
-			add_to_variable = { fiscal_econ_export_money_return = 5 }
+			add_to_variable = { fiscal_econ_export_money_return = 0.15 }
 			custom_effect_tooltip = market_resources_minus10_tooltip
 			custom_effect_tooltip = export_return5_tooltip
 			log = "[GetDateText]: [Root.GetName]: Focus USA_focus_ending_clintonomics"
