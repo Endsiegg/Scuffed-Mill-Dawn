@@ -250,7 +250,7 @@ focus_tree = {
 		icon = Greater_Israel
 		x = 17
 		y = 16
-		cost = 5
+		cost = 10
 		available_if_capitulated = yes
 		prerequisite = {
 			focus = ISR_israel_first
@@ -319,7 +319,7 @@ focus_tree = {
 		icon = goal_ISR_fasicst
 		x = 17
 		y = 17
-		cost = 2
+		cost = 10
 		available_if_capitulated = yes
 		prerequisite = {
 			focus = ISR_greater_israel
@@ -338,7 +338,7 @@ focus_tree = {
 		icon = break_free2
 		x = 17
 		y = 18
-		cost = 1
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = {
 			focus = ISR_israel_nationalism
@@ -391,7 +391,7 @@ focus_tree = {
 		icon = our_border
 		x = 17
 		y = 19
-		cost = 5
+		cost = 10
 		available_if_capitulated = yes
 		available = {
 		    has_government = nationalist
@@ -416,7 +416,7 @@ focus_tree = {
 		icon = israel_egypt
 		x = 17
 		y = 20
-		cost = 5
+		cost = 10
 		available_if_capitulated = yes
 		available = {
 		    has_government = nationalist
@@ -450,7 +450,7 @@ focus_tree = {
 		icon = israel_sinai
 		x = 17
 		y = 21
-		cost = 5
+		cost = 10
 		available_if_capitulated = yes
 		available = {
 		    has_government = nationalist
@@ -483,7 +483,7 @@ focus_tree = {
 		icon = ban_al_jazeera
 		x = 17
 		y = 22
-		cost = 5
+		cost = 10
 		available_if_capitulated = yes
 		available = {
 		    has_government = nationalist
@@ -506,7 +506,7 @@ focus_tree = {
 		icon = jew_jordan
 		x = 15
 		y = 22
-		cost = 5
+		cost = 10
 		available_if_capitulated = yes
 		available = {
 		    has_government = nationalist
@@ -534,7 +534,7 @@ focus_tree = {
 		icon = jew_egypt
 		x = 19
 		y = 22
-		cost = 5
+		cost = 10
 		available_if_capitulated = yes
 		available = {
 		    has_government = nationalist
@@ -562,7 +562,7 @@ focus_tree = {
 		icon = north_border
 		x = 17
 		y = 23
-		cost = 5
+		cost = 10
 		available_if_capitulated = yes
 		available = {
 		    has_government = nationalist
@@ -660,7 +660,7 @@ focus_tree = {
 		icon = jew_north
 		x = 17
 		y = 24
-		cost = 5
+		cost = 10
 		available_if_capitulated = yes
 		available = {
 		    has_government = nationalist
@@ -722,7 +722,7 @@ focus_tree = {
 		icon = gulf_war
 		x = 17
 		y = 25
-		cost = 5
+		cost = 10
 		available_if_capitulated = yes
 		available = {
 		    has_government = nationalist
@@ -777,7 +777,7 @@ focus_tree = {
 		icon = jew_gulf
 		x = 17
 		y = 26
-		cost = 5
+		cost = 10
 		available_if_capitulated = yes
 		available = {
 		    has_government = nationalist			
@@ -845,12 +845,10 @@ focus_tree = {
 		icon = egypt_land
 		x = 16
 		y = 27
-		cost = 5
+		cost = 10
 		available_if_capitulated = yes
 		available = {
 		    has_government = nationalist
-			EGY = {
-			has_idea = judaism
 			}
 		}	
 		prerequisite = { focus = ISR_pan_judaism_gulf }
@@ -904,12 +902,10 @@ focus_tree = {
 		icon = jordan_land
 		x = 14
 		y = 27
-		cost = 5
+		cost = 10
 		available_if_capitulated = yes
 		available = {
 		    has_government = nationalist
-			JOR = {
-			has_idea = judaism
 			}
 		}	
 		prerequisite = { focus = ISR_pan_judaism_gulf }
@@ -939,12 +935,10 @@ focus_tree = {
 		icon = lebanon_land
 		x = 18
 		y = 27
-		cost = 5
+		cost = 10
 		available_if_capitulated = yes
 		available = {
 		    has_government = nationalist
-			LEB = {
-			has_idea = judaism
 			}
 		}	
 		prerequisite = { focus = ISR_pan_judaism_gulf }
@@ -995,20 +989,7 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		available = {
-		    has_government = nationalist
-			OR = {
-			SYR = {
-			has_idea = judaism
-			}
-			NUS = {
-			has_idea = judaism
-			}
-			FSA = {
-			has_idea = judaism
-			}	
-			ISI = {
-			has_idea = judaism
-			}			
+		    has_government = nationalist			
 			}
 		}	
 		prerequisite = { focus = ISR_pan_judaism_gulf }
@@ -1103,13 +1084,10 @@ focus_tree = {
 		icon = iraq_land
 		x = 20
 		y = 27
-		cost = 5
+		cost = 10
 		available_if_capitulated = yes
 		available = {
 		    has_government = nationalist
-			LEB = {
-			has_idea = judaism
-			}
 		}	
 		prerequisite = { focus = ISR_pan_judaism_gulf }
 		ai_will_do = {
@@ -1179,16 +1157,10 @@ focus_tree = {
 		icon = gulf_land
 		x = 22
 		y = 27
-		cost = 5
+		cost = 10
 		available_if_capitulated = yes
 		available = {
-		    has_government = nationalist
-			SAU = {
-			has_idea = judaism
-			}
-			KUW = {
-			has_idea = judaism
-			}			
+		    has_government = nationalist			
 		}	
 		prerequisite = { focus = ISR_pan_judaism_gulf }
 		ai_will_do = {
@@ -1238,7 +1210,7 @@ focus_tree = {
 		icon = Generic_War_Propaganda05
 		x = 17
 		y = 28
-		cost = 5
+		cost = 10
 		available_if_capitulated = yes
 		available = {
 		    has_government = nationalist
@@ -1263,7 +1235,7 @@ focus_tree = {
 		icon = generic_entrenchment
 		x = 17
 		y = 29
-		cost = 0
+		cost = 5
 		available_if_capitulated = yes
 		available = {
 		    always = no
@@ -1282,7 +1254,7 @@ focus_tree = {
 		icon = turkey
 		x = 17
 		y = 30
-		cost = 5
+		cost = 10
 		available_if_capitulated = yes
 		available = {
 		    has_government = nationalist
@@ -1307,7 +1279,7 @@ focus_tree = {
 		icon = jew_turkey
 		x = 17
 		y = 31
-		cost = 5
+		cost = 10
 		available_if_capitulated = yes
 		available = {
 		    has_government = nationalist
@@ -1339,9 +1311,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		available = {
 		    has_government = nationalist
-			TUR = {
-			has_idea = judaism
-			}
 		}	
 		prerequisite = { focus = ISR_pan_judaism_turkey }
 		ai_will_do = {
@@ -2141,12 +2110,12 @@ focus_tree = {
 		add_extra_state_shared_building_slots = 1
 		add_building_construction = {
 			type = dockyard
-			level = 3
+			level = 2
 			instant_build = yes
 			}
 			add_building_construction = {
 			type = naval_base
-			level = 4
+			level = 2
 			province = 1065
 			instant_build = yes
 			}
@@ -2154,7 +2123,7 @@ focus_tree = {
 		205 = {
 			add_extra_state_shared_building_slots = 3
 		}		
-		set_temp_variable = { treasury_change = -65 }
+		set_temp_variable = { treasury_change = -35 }
 		modify_treasury_effect = yes
 		}		
 		
@@ -2177,7 +2146,7 @@ focus_tree = {
 		205 = { 
 		add_building_construction = {
 			type = offices
-			level = 5
+			level = 3
 			instant_build = yes			
 			}
 		}	
@@ -2187,14 +2156,14 @@ focus_tree = {
 		204 = { 
 		add_building_construction = {
 				type = offices
-				level = 5
+				level = 3
 				instant_build = yes
 				}
 		}
         204 = { 
-		add_extra_state_shared_building_slots = 5
+		add_extra_state_shared_building_slots = 3
         }		
-		set_temp_variable = { treasury_change = -100 }
+		set_temp_variable = { treasury_change = -50 }
 		modify_treasury_effect = yes
 		}				
 	}
@@ -2245,12 +2214,12 @@ focus_tree = {
 			204 = {
 			add_building_construction = {
 				type = industrial_complex
-				level = 3
+				level = 1
 				instant_build = yes
 			}
-			add_extra_state_shared_building_slots = 3
+			add_extra_state_shared_building_slots = 1
 		}
-		set_temp_variable = { treasury_change = -15 }
+		set_temp_variable = { treasury_change = -3 }
 		modify_treasury_effect = yes
 		}
 	}
@@ -2272,7 +2241,7 @@ focus_tree = {
 		206 = {
 			add_extra_state_shared_building_slots = 4
 		}
-			set_temp_variable = { treasury_change = -15 }
+			set_temp_variable = { treasury_change = -8 }
 			modify_treasury_effect = yes
 		}
 	}
@@ -2294,12 +2263,12 @@ focus_tree = {
 		206 = {
 			add_building_construction = {
 				type = industrial_complex
-				level = 3
+				level = 1
 				instant_build = yes
 			}		
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 		    }			
-			set_temp_variable = { treasury_change = -15 }
+			set_temp_variable = { treasury_change = -4 }
 			modify_treasury_effect = yes
 		}
 	}
@@ -2322,7 +2291,7 @@ focus_tree = {
 			add_extra_state_shared_building_slots = 2
 		}
 		build_railway = {
-			level = 1
+			level = 5
 			fallback = yes
 			start_province = 11970 
 			target_province = 1015
@@ -2347,20 +2316,20 @@ focus_tree = {
 		206 = { 
 		add_building_construction = {
 			type = dockyard
-			level = 3
+			level = 2
 			instant_build = yes
 			}
 			add_building_construction = {
 			type = naval_base
-			level = 6
+			level = 2
 			province = 1015
 			instant_build = yes
 			}
 		}
 		206 = {
-			add_extra_state_shared_building_slots = 3
+			add_extra_state_shared_building_slots = 2
 		}		
-		set_temp_variable = { treasury_change = -75 }
+		set_temp_variable = { treasury_change = -25 }
 		modify_treasury_effect = yes
 		}				
 	}	
@@ -2382,12 +2351,12 @@ focus_tree = {
 		207 = {
 			add_building_construction = {
 				type = industrial_complex
-				level = 7
+				level = 3
 				instant_build = yes
 			}	
-			add_extra_state_shared_building_slots = 5
+			add_extra_state_shared_building_slots = 3
 		    }
-			set_temp_variable = { treasury_change = -85 }
+			set_temp_variable = { treasury_change = -45 }
 			modify_treasury_effect = yes
 		}
 	}
@@ -2409,12 +2378,12 @@ focus_tree = {
 		205 = {
 			add_building_construction = {
 				type = industrial_complex
-				level = 6
+				level = 3
 				instant_build = yes
 			}	
-			add_extra_state_shared_building_slots = 4
+			add_extra_state_shared_building_slots = 3
 		    }
-			set_temp_variable = { treasury_change = -70 }
+			set_temp_variable = { treasury_change = -45 }
 			modify_treasury_effect = yes
 		}
 	}	
@@ -2436,12 +2405,12 @@ focus_tree = {
 		207 = { 
 		add_building_construction = {
 			type = offices
-			level = 5
+			level = 3
 			instant_build = yes			
 			}
 		}	
 		207 = { 
-		add_extra_state_shared_building_slots = 5
+		add_extra_state_shared_building_slots = 3
 		}
 		206 = { 
 		add_building_construction = {
@@ -2453,7 +2422,7 @@ focus_tree = {
         206 = { 
 		add_extra_state_shared_building_slots = 3
         }		
-		set_temp_variable = { treasury_change = -60 }
+		set_temp_variable = { treasury_change = -45 }
 		modify_treasury_effect = yes
 		}				
 	}
@@ -3535,7 +3504,7 @@ focus_tree = {
 				name = fighter_bonus
 				bonus = 3.0
 				uses = 2
-				category = Cat_FIGHTER
+				category = Cat_MR_FIGHTER
 			}
 		}
 	}
@@ -3801,7 +3770,8 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		NATO_join = yes
+			log = "[GetDateText]: [Root.GetName]: Focus ISR_nato_membership"
+			USA = { country_event = { id = NATO.14 days = 1 } }
 		every_country = {
 		    news_event = { id = Israel.18 }	
 		}		
@@ -4592,12 +4562,12 @@ focus_tree = {
 		}
 			completion_reward = {
 			204 = {
-			add_extra_state_shared_building_slots = 4
+			add_extra_state_shared_building_slots = 2
 			}
 			204 = {
 				add_building_construction = {
 					type = dockyard
-					level = 4
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -4626,7 +4596,6 @@ focus_tree = {
 			    missile_submarine_hull_3 = 1
 				attack_submarine_hull_3 = 1
 				corvette_hull_3 = 1
-				destroyer_hull_3 = 1
 		    }
 			set_temp_variable = { treasury_change = -15 }
 			modify_treasury_effect = yes			
@@ -4650,7 +4619,6 @@ focus_tree = {
 		}
 		completion_reward = {
 		    set_technology = {
-			    carrier_hull_3 = 1
 				carrier_hull_2 = 1
 				carrier_hull_1 = 1
 		    }
@@ -4700,7 +4668,6 @@ focus_tree = {
 		completion_reward = {	
 		    set_technology = {
 			    cruiser_hull_2 = 1
-				cruiser_hull_3 = 1
 		    }		
 			set_temp_variable = { treasury_change = -20 }
 			modify_treasury_effect = yes			
@@ -5165,7 +5132,9 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_research_slot = 1
+			modifier = {
+				research_speed_factor = 0.10
+			}
 			set_temp_variable = { percent_change = 2 }
 			change_domestic_influence_percentage = yes			
 		}
@@ -5203,7 +5172,9 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_research_slot = 1
+			modifier = {
+				research_speed_factor = 0.10
+			}
 		set_temp_variable = { percent_change = 2 }
 		change_domestic_influence_percentage = yes
 		}
@@ -5622,11 +5593,11 @@ focus_tree = {
 		}
 		completion_reward = {
         add_equipment_to_stockpile = {
-        type = MR_Fighter4
+        type = MR_Fighter3
         amount = 1000
-        producer = ISR
+        producer = USA
         }			
-		set_temp_variable = { treasury_change = -73.5 }
+		set_temp_variable = { treasury_change = -50 }
 		modify_treasury_effect = yes		   				
 		}
 	}	
