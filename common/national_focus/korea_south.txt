@@ -21,7 +21,7 @@ focus_tree = {
 		x = 0
 		y = 0
 
-		cost = 8
+		cost = 5
 
 		search_filters = {}
 
@@ -29,9 +29,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			army_experience = 25
-			navy_experience = 25
-			air_experience = 25
+			army_experience = 50
+			navy_experience = 50
+			air_experience = 50
 			log = "[GetDateText]: [This.GetName]: focus KOR_the_rok_armed_forces executed"
 		}
 
@@ -48,7 +48,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = KOR_the_rok_armed_forces
 
-		cost = 8
+		cost = 5
 
 		prerequisite = { focus = KOR_the_rok_armed_forces }
 
@@ -78,7 +78,7 @@ focus_tree = {
 		cost = 10
 
 		prerequisite = { focus = KOR_foreign_procurement }
-		mutually_exclusive = { focus = KOR_c295 }
+		#mutually_exclusive = { focus = KOR_c295 }
 
 		search_filters = {FOCUS_FILTER_AIRCRAFT FOCUS_FILTER_EQUIPMENT}
 
@@ -95,11 +95,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			set_temp_variable = { treasury_change = -10 }
+			set_temp_variable = { treasury_change = -20 }
 			modify_treasury_effect = yes
 			add_equipment_to_stockpile = {
 				type = naval_plane4
-				amount = 20
+				amount = 50
 				producer = USA
 			}
 			log = "[GetDateText]: [This.GetName]: focus KOR_p8_poseidon executed"
@@ -121,7 +121,7 @@ focus_tree = {
 		cost = 10
 
 		prerequisite = { focus = KOR_foreign_procurement }
-		mutually_exclusive = { focus = KOR_p8_poseidon }
+		#mutually_exclusive = { focus = KOR_p8_poseidon }
 
 		search_filters = {FOCUS_FILTER_AIRCRAFT FOCUS_FILTER_EQUIPMENT}
 
@@ -138,11 +138,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			set_temp_variable = { treasury_change = -2 }
+			set_temp_variable = { treasury_change = -20 }
 			modify_treasury_effect = yes
 			add_equipment_to_stockpile = {
 				type = naval_plane3
-				amount = 20
+				amount = 50
 				producer = SPR
 			}
 			log = "[GetDateText]: [This.GetName]: focus KOR_c295 executed"
@@ -177,7 +177,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			set_temp_variable = { treasury_change = -1.5 }
+			set_temp_variable = { treasury_change = -5 }
 			modify_treasury_effect = yes
 			add_ideas = f16_upgrades
 			log = "[GetDateText]: [This.GetName]: focus KOR_upgrade_f16s executed"
@@ -215,11 +215,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			set_temp_variable = { treasury_change = -20 }
+			set_temp_variable = { treasury_change = -30 }
 			modify_treasury_effect = yes
 			add_equipment_to_stockpile = {
 				type = MR_Fighter4
-				amount = 60
+				amount = 100
 				producer = USA
 			}
 			log = "[GetDateText]: [This.GetName]: focus KOR_order_f35s executed"
@@ -238,7 +238,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = KOR_the_rok_armed_forces
 
-		cost = 8
+		cost = 5
 
 		prerequisite = { focus = KOR_the_rok_armed_forces }
 
@@ -278,7 +278,7 @@ focus_tree = {
 			set_temp_variable = { treasury_change = -5 }
 			modify_treasury_effect = yes
 			add_tech_bonus = {
-				bonus = 0.5
+				bonus = 1
 				uses = 2
 				category = Cat_D_SUB
 			}
@@ -311,7 +311,7 @@ focus_tree = {
 			set_temp_variable = { treasury_change = -10 }
 			modify_treasury_effect = yes
 			add_tech_bonus = {
-				bonus = 0.5
+				bonus = 1
 				uses = 2
 				category = Cat_FRIGATE
 			}
@@ -344,7 +344,7 @@ focus_tree = {
 			set_temp_variable = { treasury_change = -15 }
 			modify_treasury_effect = yes
 			add_tech_bonus = {
-				bonus = 0.5
+				bonus = 1
 				uses = 2
 				category = Cat_DESTROYER
 			}
@@ -377,7 +377,7 @@ focus_tree = {
 			set_temp_variable = { treasury_change = -20 }
 			modify_treasury_effect = yes
 			add_tech_bonus = {
-				bonus = 0.5
+				bonus = 1
 				uses = 2
 				category = Cat_LPD
 			}
@@ -407,9 +407,15 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			set_temp_variable = { treasury_change = -2 }
+			set_temp_variable = { treasury_change = -20 }
 			modify_treasury_effect = yes
 			608 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
 				add_building_construction = {
 					type = naval_base
 					level = 2
@@ -480,7 +486,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			set_temp_variable = { treasury_change = -2 }
+			set_temp_variable = { treasury_change = -5 }
 			modify_treasury_effect = yes
 			add_ideas = Bolster_The_Navy
 			log = "[GetDateText]: [This.GetName]: focus KOR_ship_building_effort executed"
@@ -563,7 +569,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			set_temp_variable = { treasury_change = -1.5 }
+			set_temp_variable = { treasury_change = -5 }
 			modify_treasury_effect = yes
 			add_timed_idea = {
 				idea = scientific_advances5
@@ -598,7 +604,7 @@ focus_tree = {
 			set_temp_variable = { treasury_change = -2 }
 			modify_treasury_effect = yes
 			add_tech_bonus = {
-				bonus = 0.25
+				bonus = 2
 				uses = 2
 				category = Cat_INF_WEP
 			}
@@ -631,7 +637,7 @@ focus_tree = {
 			set_temp_variable = { treasury_change = -5 }
 			modify_treasury_effect = yes
 			add_tech_bonus = {
-				bonus = 0.25
+				bonus = 2
 				uses = 2
 				category = Cat_IFV
 			}
@@ -661,11 +667,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			set_temp_variable = { treasury_change = -7.5 }
+			set_temp_variable = { treasury_change = -10 }
 			modify_treasury_effect = yes
 			add_tech_bonus = {
-				bonus = 0.25
-				uses = 2
+				bonus = 3
+				uses = 1
 				category = Cat_MBT
 			}
 			log = "[GetDateText]: [This.GetName]: focus KOR_tank_improvements executed"
@@ -725,7 +731,7 @@ focus_tree = {
 			set_temp_variable = { treasury_change = -0.5 }
 			modify_treasury_effect = yes
 			add_tech_bonus = {
-				bonus = 0.25
+				bonus = 1
 				uses = 2
 				category = Cat_CnC
 			}
@@ -758,7 +764,7 @@ focus_tree = {
 			set_temp_variable = { treasury_change = -0.5 }
 			modify_treasury_effect = yes
 			add_tech_bonus = {
-				bonus = 0.25
+				bonus = 1
 				uses = 2
 				category = encryption_tech
 			}
@@ -791,7 +797,7 @@ focus_tree = {
 			add_doctrine_cost_reduction = {
 				name = GENERIC_land_doctrine_innovations
 				category = land_doctrine
-				uses = 2
+				uses = 3
 				cost_reduction = 0.5
 			}
 			log = "[GetDateText]: [This.GetName]: focus KOR_it_augmentation executed"
@@ -823,7 +829,7 @@ focus_tree = {
 			set_temp_variable = { treasury_change = -0.5 }
 			modify_treasury_effect = yes
 			add_tech_bonus = {
-				bonus = 0.25
+				bonus = 1
 				uses = 3
 				technology = body_armor_2010
 				technology = body_armor_2030
@@ -859,7 +865,7 @@ focus_tree = {
 			set_temp_variable = { treasury_change = -0.5 }
 			modify_treasury_effect = yes
 			add_tech_bonus = {
-				bonus = 0.25
+				bonus = 1
 				uses = 2
 				technology = camouflage3
 				technology = camouflage4
@@ -917,7 +923,7 @@ focus_tree = {
 		search_filters = {}
 
 		available = {
-			num_divisions < 46
+			num_divisions < 75
 		}
 
 		completion_reward = {
@@ -946,8 +952,8 @@ focus_tree = {
 		search_filters = {}
 
 		available = {
-			has_idea = KOR_korea_aerospace_industries_aircraft_company
-			has_idea = KOR_korea_aerospace_industries_helicopter_company
+			#has_idea = KOR_korea_aerospace_industries_aircraft_company
+			#has_idea = KOR_korea_aerospace_industries_helicopter_company
 		}
 
 		completion_reward = {
@@ -981,7 +987,7 @@ focus_tree = {
 			set_temp_variable = { treasury_change = -5 }
 			modify_treasury_effect = yes
 			add_tech_bonus = {
-				bonus = 0.25
+				bonus = 1
 				uses = 2
 				category = Cat_HELI
 			}
@@ -1014,7 +1020,7 @@ focus_tree = {
 			set_temp_variable = { treasury_change = -2.5 }
 			modify_treasury_effect = yes
 			add_tech_bonus = {
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = Cat_A_UAV
 			}
@@ -1047,7 +1053,7 @@ focus_tree = {
 			set_temp_variable = { treasury_change = -7.5 }
 			modify_treasury_effect = yes
 			add_tech_bonus = {
-				bonus = 0.25
+				bonus = 1
 				uses = 4
 				technology = MR_Fighter2
 				technology = MR_Fighter3
@@ -1415,7 +1421,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 25
+			add_political_power = 100
 			log = "[GetDateText]: [This.GetName]: focus KOR_state_of_the_republic executed"
 		}
 
@@ -1446,7 +1452,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 50
+			add_political_power = 75
 			custom_effect_tooltip = KOR_leftparties_tt
 			log = "[GetDateText]: [This.GetName]: focus KOR_the_korean_left executed"
 		}
@@ -2427,7 +2433,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = KOR_state_of_the_republic
 
-		cost = 10
+		cost = 5
 
 		prerequisite = { focus = KOR_the_korean_left }
 		mutually_exclusive = { focus = KOR_anti_capitalist_backlash }
@@ -2459,7 +2465,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = KOR_state_of_the_republic
 
-		cost = 10
+		cost = 5
 
 		prerequisite = { focus = KOR_address_inequality }
 
@@ -2503,7 +2509,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = KOR_state_of_the_republic
 
-		cost = 10
+		cost = 5
 
 		prerequisite = { focus = KOR_income_led_growth }
 
@@ -2543,7 +2549,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = KOR_state_of_the_republic
 
-		cost = 10
+		cost = 5
 
 		prerequisite = { focus = KOR_address_inequality }
 
@@ -2578,7 +2584,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = KOR_state_of_the_republic
 
-		cost = 10
+		cost = 5
 
 		prerequisite = { focus = KOR_investigate_corruption }
 
@@ -2623,7 +2629,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = KOR_state_of_the_republic
 
-		cost = 10
+		cost = 5
 
 		prerequisite = { focus = KOR_address_inequality }
 
@@ -2708,7 +2714,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = KOR_state_of_the_republic
 
-		cost = 10
+		cost = 5
 
 		prerequisite = { focus = KOR_empower_trade_unions }
 
@@ -2947,7 +2953,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = KOR_state_of_the_republic
 
-		cost = 10
+		cost = 5
 
 		prerequisite = { focus = KOR_the_korean_left }
 
@@ -2994,7 +3000,7 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = KOR_negotiation_success_tt
-			add_to_variable = { reunification_chance = 1 }
+			add_to_variable = { reunification_chance = 2 }
 			set_temp_variable = { temp_opinion = -5 }
 			change_intelligence_community_opinion = yes
 			set_temp_variable = { temp_opinion = -5 }
@@ -3016,7 +3022,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = KOR_state_of_the_republic
 
-		cost = 10
+		cost = 5
 
 		prerequisite = { focus = KOR_sunshine_policy }
 
@@ -3054,9 +3060,9 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = KOR_negotiation_success_tt
-			add_to_variable = { reunification_chance = 1 }
+			add_to_variable = { reunification_chance = 2 }
 			support_for_reunification_2 = yes
-			add_war_support = -0.02
+			add_war_support = -0.05
 			add_opinion_modifier = {
 				target = NKO
 				modifier = kaesong_industrial_park
@@ -3088,7 +3094,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = KOR_state_of_the_republic
 
-		cost = 10
+		cost = 5
 
 		prerequisite = { focus = KOR_joint_development }
 
@@ -3116,7 +3122,7 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = KOR_negotiation_success_tt
-			add_to_variable = { reunification_chance = 1 }
+			add_to_variable = { reunification_chance = 2 }
 			unlock_decision_tooltip = KOR_organize_joint_sporting_events
 			unlock_decision_tooltip = KOR_screen_north_korean_films
 			unlock_decision_tooltip = KOR_encourage_sympathetic_portrayals_of_the_north
@@ -3136,7 +3142,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = KOR_state_of_the_republic
 
-		cost = 10
+		cost = 5
 
 		prerequisite = { focus = KOR_sporting_events }
 		prerequisite = { focus = KOR_wind_down_propaganda }
@@ -3153,7 +3159,7 @@ focus_tree = {
 				NKO = { has_government = democratic }
 				NKO = { has_government = neutrality }
 			}
-			has_war_support < 0.6
+			#has_war_support < 0.6
 			custom_trigger_tooltip = {
 				tooltip = support_for_reunification_more_50_tt
 				check_variable = { KOR.SFR > 50 }
@@ -3229,7 +3235,7 @@ focus_tree = {
 				NKO = { has_government = democratic }
 				NKO = { has_government = neutrality }
 			}
-			has_war_support < 0.55
+			#has_war_support < 0.55
 			custom_trigger_tooltip = {
 				tooltip = support_for_reunification_more_50_tt
 				check_variable = { KOR.SFR > 50 }
@@ -3304,7 +3310,7 @@ focus_tree = {
 				NKO = { has_government = democratic }
 				NKO = { has_government = neutrality }
 			}
-			has_war_support < 0.55
+			#has_war_support < 0.55
 			custom_trigger_tooltip = {
 				tooltip = support_for_reunification_more_50_tt
 				check_variable = { KOR.SFR > 50 }
@@ -3378,7 +3384,7 @@ focus_tree = {
 				NKO = { has_government = democratic }
 				NKO = { has_government = neutrality }
 			}
-			has_war_support < 0.5
+			#has_war_support < 0.5
 			custom_trigger_tooltip = {
 				tooltip = support_for_reunification_more_50_tt
 				check_variable = { KOR.SFR > 50 }
@@ -3445,7 +3451,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = KOR_state_of_the_republic
 
-		cost = 10
+		cost = 5
 
 		prerequisite = { focus = KOR_sunshine_policy }
 
@@ -3467,7 +3473,7 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = KOR_negotiation_success_tt
-			add_to_variable = { reunification_chance = 1 }
+			add_to_variable = { reunification_chance = 3 }
 			support_for_reunification_2 = yes
 			add_war_support = -0.02
 			NKO = {
@@ -3493,7 +3499,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = KOR_state_of_the_republic
 
-		cost = 10
+		cost = 5
 
 		prerequisite = { focus = KOR_soften_rhetoric }
 
@@ -3515,7 +3521,7 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = KOR_negotiation_success_tt
-			add_to_variable = { reunification_chance = 1 }
+			add_to_variable = { reunification_chance = 3 }
 			unlock_decision_tooltip = KOR_cease_propaganda_broadcasts
 			unlock_decision_tooltip = KOR_cease_propaganda_leaflets
 			log = "[GetDateText]: [This.GetName]: focus KOR_wind_down_propaganda executed"
@@ -3585,7 +3591,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = KOR_state_of_the_republic
 
-		cost = 10
+		cost = 5
 
 		prerequisite = { focus = KOR_the_korean_left }
 
@@ -3616,7 +3622,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = KOR_state_of_the_republic
 
-		cost = 10
+		cost = 5
 
 		prerequisite = { focus = KOR_reform_the_nis }
 
@@ -3660,7 +3666,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = KOR_state_of_the_republic
 
-		cost = 10
+		cost = 5
 
 		prerequisite = { focus = KOR_restrict_cyber_operations }
 
@@ -3830,7 +3836,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 50
+			add_political_power = 100
 			log = "[GetDateText]: [This.GetName]: focus KOR_electoral_reform executed"
 		}
 
@@ -3945,7 +3951,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 50
+			add_political_power = 100
 			log = "[GetDateText]: [This.GetName]: focus KOR_progressive_policies executed"
 		}
 
@@ -4046,7 +4052,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 50
+			add_political_power = 100
 			log = "[GetDateText]: [This.GetName]: focus KOR_centrist_policies executed"
 		}
 
@@ -4152,7 +4158,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 50
+			add_political_power = 75
 			log = "[GetDateText]: [This.GetName]: focus KOR_the_korean_right executed"
 		}
 
@@ -4180,7 +4186,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			set_temp_variable = { temp_opinion = 5 }
+			set_temp_variable = { temp_opinion = 10 }
 			change_intelligence_community_opinion = yes
 			strengthen_NIS = yes
 			conservative_policy_effect = yes
@@ -4310,7 +4316,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = KOR_state_of_the_republic
 
-		cost = 10
+		cost = 5
 
 		prerequisite = { focus = KOR_the_korean_right }
 
@@ -4361,7 +4367,7 @@ focus_tree = {
 		completion_reward = {
 			set_temp_variable = { treasury_change = -5 }
 			modify_treasury_effect = yes
-						set_temp_variable = { temp_opinion = 5 }
+						set_temp_variable = { temp_opinion = 10 }
 			change_chaebols_opinion = yes
 			increase_chaebol_dependence = yes
 			conservative_policy_effect = yes
@@ -4403,7 +4409,7 @@ focus_tree = {
 				}
 			}
 			add_political_power = -100
-						set_temp_variable = { temp_opinion = 5 }
+						set_temp_variable = { temp_opinion = 10 }
 			change_chaebols_opinion = yes
 			increase_chaebol_dependence = yes
 			set_temp_variable = { temp_opinion = -5 }
@@ -4483,7 +4489,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 50
+			add_political_power = 100
 			log = "[GetDateText]: [This.GetName]: focus KOR_the_threat_from_the_north executed"
 		}
 
@@ -4690,10 +4696,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_war_support = 0.02
+			add_war_support = 0.05
 			add_popularity = {
 				ideology = democratic
-				popularity = 0.02
+				popularity = 0.05
 			}
 			recalculate_party = yes
 			log = "[GetDateText]: [This.GetName]: focus KOR_promote_patriotism executed"
@@ -4786,8 +4792,8 @@ focus_tree = {
 
 		cost = 10
 
-		prerequisite = { focus = KOR_arrest_sympathizers }
-		prerequisite = { focus = KOR_champion_human_rights focus = KOR_commemorate_dictatorship }
+		prerequisite = { focus = KOR_arrest_sympathizers focus = KOR_champion_human_rights focus = KOR_commemorate_dictatorship }
+		#prerequisite = { focus = KOR_champion_human_rights focus = KOR_commemorate_dictatorship }
 		mutually_exclusive = { focus = KOR_defensive_approach }
 		mutually_exclusive = { focus = KOR_subversive_approach }
 
@@ -4846,9 +4852,9 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 				idea = KOR_military_buildup
-				days = 70
+				days = 730
 			}
-			set_temp_variable = { temp_opinion = 5 }
+			set_temp_variable = { temp_opinion = 10 }
 			change_the_military_opinion = yes
 			custom_effect_tooltip = KOR_negotiation_failure_tt
 			subtract_from_variable = { reunification_chance = 1 }
@@ -4916,8 +4922,8 @@ focus_tree = {
 
 		cost = 10
 
-		prerequisite = { focus = KOR_arrest_sympathizers }
-		prerequisite = { focus = KOR_champion_human_rights focus = KOR_commemorate_dictatorship }
+		prerequisite = { focus = KOR_arrest_sympathizers focus = KOR_champion_human_rights focus = KOR_commemorate_dictatorship }
+		#prerequisite = { focus = KOR_champion_human_rights focus = KOR_commemorate_dictatorship }
 		mutually_exclusive = { focus = KOR_offensive_approach }
 		mutually_exclusive = { focus = KOR_subversive_approach }
 
@@ -5007,7 +5013,7 @@ focus_tree = {
 			custom_effect_tooltip = KOR_negotiation_failure_tt
 			subtract_from_variable = { reunification_chance = 1 }
 			support_for_reunification_2_less = yes
-			set_temp_variable = { temp_opinion = 5 }
+			set_temp_variable = { temp_opinion = 10 }
 			change_the_military_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus KOR_expanded_fortifications executed"
 		}
@@ -5074,8 +5080,8 @@ focus_tree = {
 
 		cost = 10
 
-		prerequisite = { focus = KOR_arrest_sympathizers }
-		prerequisite = { focus = KOR_champion_human_rights focus = KOR_commemorate_dictatorship }
+		prerequisite = { focus = KOR_arrest_sympathizers focus = KOR_champion_human_rights focus = KOR_commemorate_dictatorship  }
+		#prerequisite = { focus = KOR_champion_human_rights focus = KOR_commemorate_dictatorship }
 		mutually_exclusive = { focus = KOR_offensive_approach }
 		mutually_exclusive = { focus = KOR_defensive_approach }
 
@@ -5269,8 +5275,8 @@ focus_tree = {
 
 		cost = 10
 
-		prerequisite = { focus = KOR_arrest_sympathizers }
-		prerequisite = { focus = KOR_commemorate_dictatorship }
+		prerequisite = { focus = KOR_arrest_sympathizers focus = KOR_commemorate_dictatorship  }
+		#prerequisite = { focus = KOR_commemorate_dictatorship }
 
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
@@ -5309,8 +5315,8 @@ focus_tree = {
 
 		cost = 10
 
-		prerequisite = { focus = KOR_arrest_sympathizers }
-		prerequisite = { focus = KOR_commemorate_dictatorship }
+		prerequisite = { focus = KOR_arrest_sympathizers focus = KOR_commemorate_dictatorship }
+		#prerequisite = { focus = KOR_commemorate_dictatorship }
 
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
@@ -5677,7 +5683,7 @@ focus_tree = {
 		x = 61
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
@@ -5712,7 +5718,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 50
+			add_political_power = 100
 			log = "[GetDateText]: [This.GetName]: focus KOR_bridging_eurasia executed"
 		}
 
@@ -5753,6 +5759,7 @@ focus_tree = {
 				}
 			}
 			log = "[GetDateText]: [This.GetName]: focus KOR_rapprochement_with_russia executed"
+			add_political_power = 50
 		}
 
 		ai_will_do = {
@@ -5787,7 +5794,7 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 				idea = KOR_russian_satellites
-				days = 90
+				days = 365
 			}
 			custom_effect_tooltip = KOR_russian_satellites_tt
 			set_temp_variable = { percent_change = 1 }
@@ -5852,7 +5859,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = KOR_middle_power_diplomacy
 
-		cost = 8
+		cost = 5
 
 		search_filters = {FOCUS_FILTER_INFLUENCE FOCUS_FILTER_INTERNAL_FACTION}
 
@@ -5924,18 +5931,21 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			set_temp_variable = { treasury_change = -7.5 }
+			set_temp_variable = { treasury_change = -15 }
 			modify_treasury_effect = yes
+			set_temp_variable = { int_investment_change = treasury_change }
+			set_temp_variable = { int_investment_change = 15 }
+			modify_international_investment_effect = yes
 			CZE = {
 				add_opinion_modifier = {
 					target = KOR
 					modifier = trade_mission
 				}
 				1018 = {
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -5991,6 +6001,7 @@ focus_tree = {
 				}
 			}
 			log = "[GetDateText]: [This.GetName]: focus KOR_lessons_from_germany executed"
+			add_political_power = 50
 		}
 
 		ai_will_do = {
@@ -6006,7 +6017,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = KOR_middle_power_diplomacy
 
-		cost = 10
+		cost = 5
 
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 
@@ -6053,7 +6064,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = KOR_middle_power_diplomacy
 
-		cost = 8
+		cost = 5
 
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
@@ -6097,7 +6108,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 50
+			add_political_power = 100
 			log = "[GetDateText]: [This.GetName]: focus KOR_turn_to_the_middle_east executed"
 		}
 
@@ -6170,7 +6181,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-						set_temp_variable = { temp_opinion = 5 }
+						set_temp_variable = { temp_opinion = 10 }
 			change_chaebols_opinion = yes
 			set_temp_variable = { temp_opinion = -5 }
 			change_labour_unions_opinion = yes
@@ -6309,6 +6320,7 @@ focus_tree = {
 				}
 			}
 			log = "[GetDateText]: [This.GetName]: focus KOR_one_heart_one_soul executed"
+			add_political_power = 50
 		}
 
 		ai_will_do = {
@@ -6341,7 +6353,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-						set_temp_variable = { temp_opinion = 5 }
+						set_temp_variable = { temp_opinion = 10 }
 			change_chaebols_opinion = yes
 			set_temp_variable = { temp_opinion = -5 }
 			change_labour_unions_opinion = yes
@@ -6368,6 +6380,9 @@ focus_tree = {
 				change_influence_percentage = yes
 			}
 			log = "[GetDateText]: [This.GetName]: focus KOR_increase_trade_volume executed"
+			set_temp_variable = { treasury_change = gdp_total }
+			multiply_temp_variable = { treasury_change = 0.002 }
+			modify_treasury_effect = yes
 		}
 
 		ai_will_do = {
@@ -6383,7 +6398,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = KOR_middle_power_diplomacy
 
-		cost = 10
+		cost = 5
 
 		search_filters = {FOCUS_FILTER_INFLUENCE}
 
@@ -6402,6 +6417,9 @@ focus_tree = {
 		completion_reward = {
 			set_temp_variable = { treasury_change = -10 }
 			modify_treasury_effect = yes
+			set_temp_variable = { int_investment_change = treasury_change }
+			set_temp_variable = { int_investment_change = 10 }
+			modify_international_investment_effect = yes
 			PER = {
 				add_opinion_modifier = {
 					target = KOR
@@ -6410,21 +6428,21 @@ focus_tree = {
 				399 = {
 					add_building_construction = {
 						type = infrastructure
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
 				400 = {
 					add_building_construction = {
 						type = infrastructure
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
 				978 = {
 					add_building_construction = {
 						type = infrastructure
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -6522,6 +6540,7 @@ focus_tree = {
 				}
 			}
 			log = "[GetDateText]: [This.GetName]: focus KOR_engage_the_arabs executed"
+			add_political_power = 50
 		}
 
 		ai_will_do = {
@@ -6570,6 +6589,8 @@ focus_tree = {
 				}
 			}
 			log = "[GetDateText]: [This.GetName]: focus KOR_export_military_hardware executed"
+			set_temp_variable = { treasury_change = 30.5 }
+			modify_treasury_effect = yes
 		}
 
 		ai_will_do = {
@@ -6604,6 +6625,9 @@ focus_tree = {
 		completion_reward = {
 			set_temp_variable = { treasury_change = -22.5 }
 			modify_treasury_effect = yes
+			set_temp_variable = { int_investment_change = treasury_change }
+			set_temp_variable = { int_investment_change = 22.5 }
+			modify_international_investment_effect = yes
 			SAU = {
 				add_opinion_modifier = {
 					target = KOR
@@ -6656,7 +6680,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-						set_temp_variable = { temp_opinion = 5 }
+						set_temp_variable = { temp_opinion = 10 }
 			change_chaebols_opinion = yes
 			set_temp_variable = { temp_opinion = -5 }
 			change_labour_unions_opinion = yes
@@ -6684,6 +6708,9 @@ focus_tree = {
 				change_influence_percentage = yes
 			}
 			log = "[GetDateText]: [This.GetName]: focus KOR_trade_with_the_gcc executed"
+			set_temp_variable = { treasury_change = gdp_total }
+			multiply_temp_variable = { treasury_change = 0.002 }
+			modify_treasury_effect = yes
 		}
 
 		ai_will_do = {
@@ -6710,7 +6737,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 50
+			add_political_power = 100
 			log = "[GetDateText]: [This.GetName]: focus KOR_peace_in_east_asia executed"
 		}
 
@@ -6822,7 +6849,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			set_temp_variable = { temp_opinion = 5 }
+			set_temp_variable = { temp_opinion = 10 }
 			change_chaebols_opinion = yes
 			set_temp_variable = { temp_opinion = -5 }
 			change_labour_unions_opinion = yes
@@ -6853,6 +6880,9 @@ focus_tree = {
 				change_influence_percentage = yes
 			}
 			log = "[GetDateText]: [This.GetName]: focus KOR_trading_partners executed"
+			set_temp_variable = { treasury_change = gdp_total }
+			multiply_temp_variable = { treasury_change = 0.002 }
+			modify_treasury_effect = yes
 		}
 
 		ai_will_do = {
@@ -6886,7 +6916,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			army_experience = 25
+			army_experience = 50
 			add_timed_idea = {
 				idea = KOR_CHI_exchange
 				days = 365
@@ -7081,7 +7111,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 50
+			add_political_power = 75
 			JAP = {
 				add_opinion_modifier = {
 					target = KOR
@@ -7120,7 +7150,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 100
-			set_temp_variable = { arg_popularity = 0.02 }
+			set_temp_variable = { arg_popularity = 0.05 }
 			add_ruling_outlook_popularity = yes
 			JAP = {
 				add_opinion_modifier = {
@@ -7215,7 +7245,7 @@ focus_tree = {
 			}
 			add_timed_idea = {
 				idea = KOR_JAP_trade_war
-				days = 180
+				days = 365
 			}
 			set_temp_variable = { percent_change = -2 }
 			set_temp_variable = { tag_index = JAP.id }
@@ -7279,6 +7309,7 @@ focus_tree = {
 				}
 			}
 			log = "[GetDateText]: [This.GetName]: focus KOR_eternal_allies executed"
+			add_political_power = 50
 		}
 
 		ai_will_do = {
@@ -7319,6 +7350,7 @@ focus_tree = {
 				}
 			}
 			log = "[GetDateText]: [This.GetName]: focus KOR_draw_closer_to_japan executed"
+			add_political_power = 50
 		}
 
 		ai_will_do = {
@@ -7352,7 +7384,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			set_temp_variable = { temp_opinion = 5 }
+			set_temp_variable = { temp_opinion = 10 }
 			change_chaebols_opinion = yes
 			set_temp_variable = { temp_opinion = -5 }
 			change_labour_unions_opinion = yes
@@ -7383,6 +7415,9 @@ focus_tree = {
 				change_influence_percentage = yes
 			}
 			log = "[GetDateText]: [This.GetName]: focus KOR_improve_economic_relations executed"
+			set_temp_variable = { treasury_change = gdp_total }
+			multiply_temp_variable = { treasury_change = 0.002 }
+			modify_treasury_effect = yes
 		}
 
 		ai_will_do = {
@@ -7499,7 +7534,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			set_temp_variable = { temp_opinion = 5 }
+			set_temp_variable = { temp_opinion = 10 }
 			change_intelligence_community_opinion = yes
 			add_intel = {
 				target = NKO
@@ -7960,7 +7995,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 50
+			add_political_power = 100
 			log = "[GetDateText]: [This.GetName]: focus KOR_southern_focus executed"
 		}
 
@@ -7998,6 +8033,9 @@ focus_tree = {
 				}
 			}
 			log = "[GetDateText]: [This.GetName]: focus KOR_overtures_to_asean executed"
+			set_temp_variable = { treasury_change = gdp_total }
+			multiply_temp_variable = { treasury_change = 0.002 }
+			modify_treasury_effect = yes
 		}
 
 		ai_will_do = {
@@ -8026,6 +8064,9 @@ focus_tree = {
 		completion_reward = {
 			set_temp_variable = { treasury_change = -5 }
 			modify_treasury_effect = yes
+			set_temp_variable = { int_investment_change = treasury_change }
+			set_temp_variable = { int_investment_change = 5 }
+			modify_international_investment_effect = yes
 			every_other_country = {
 				limit = {
 					OR = {
@@ -8110,6 +8151,10 @@ focus_tree = {
 				}
 			}
 			log = "[GetDateText]: [This.GetName]: focus KOR_two_tigers executed"
+			set_temp_variable = { treasury_change = gdp_total }
+			multiply_temp_variable = { treasury_change = 0.002 }
+			modify_treasury_effect = yes
+			add_political_power = 50
 		}
 
 		ai_will_do = {
@@ -8125,7 +8170,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = KOR_middle_power_diplomacy
 
-		cost = 10
+		cost = 5
 
 		search_filters = {FOCUS_FILTER_INFLUENCE}
 
@@ -8138,6 +8183,9 @@ focus_tree = {
 		completion_reward = {
 			set_temp_variable = { treasury_change = -14 }
 			modify_treasury_effect = yes
+			set_temp_variable = { int_investment_change = treasury_change }
+			set_temp_variable = { int_investment_change = 14 }
+			modify_international_investment_effect = yes
 			RAJ = {
 				add_opinion_modifier = {
 					target = KOR
@@ -8191,16 +8239,19 @@ focus_tree = {
 		completion_reward = {
 			set_temp_variable = { treasury_change = -7.5 }
 			modify_treasury_effect = yes
+			set_temp_variable = { int_investment_change = treasury_change }
+			set_temp_variable = { int_investment_change = 7.5 }
+			modify_international_investment_effect = yes
 			RAJ = {
 				add_opinion_modifier = {
 					target = KOR
 					modifier = trade_mission
 				}
 				440 = {
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -8225,7 +8276,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = KOR_middle_power_diplomacy
 
-		cost = 8
+		cost = 5
 
 		search_filters = {}
 
@@ -8252,6 +8303,9 @@ focus_tree = {
 				}
 			}
 			log = "[GetDateText]: [This.GetName]: focus KOR_promote_korean_defense_companies executed"
+			set_temp_variable = { treasury_change = gdp_total }
+			multiply_temp_variable = { treasury_change = 0.009 }
+			modify_treasury_effect = yes
 		}
 
 		ai_will_do = {
@@ -8277,8 +8331,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 50
+			add_political_power = 100
 			log = "[GetDateText]: [This.GetName]: focus KOR_engage_with_africa executed"
+			set_temp_variable = { treasury_change = gdp_total }
+			multiply_temp_variable = { treasury_change = 0.002 }
+			modify_treasury_effect = yes
 		}
 
 		ai_will_do = {
@@ -8299,7 +8356,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_STABILITY}
 
 		prerequisite = { focus = KOR_engage_with_africa }
-		mutually_exclusive = { focus = KOR_corporate_interests }
+		#mutually_exclusive = { focus = KOR_corporate_interests }
 
 		available = {
 			has_war = no
@@ -8336,6 +8393,9 @@ focus_tree = {
 		completion_reward = {
 			set_temp_variable = { treasury_change = -3 }
 			modify_treasury_effect = yes
+			set_temp_variable = { int_investment_change = treasury_change }
+			set_temp_variable = { int_investment_change = 3 }
+			modify_international_investment_effect = yes
 			every_other_country = {
 				limit = {
 					OR = {
@@ -8406,14 +8466,14 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INTERNAL_FACTION}
 
 		prerequisite = { focus = KOR_engage_with_africa }
-		mutually_exclusive = { focus = KOR_a_responsible_power }
+		#mutually_exclusive = { focus = KOR_a_responsible_power }
 
 		available = {
 			has_idea = chaebols
 		}
 
 		completion_reward = {
-			set_temp_variable = { temp_opinion = 10 }
+			set_temp_variable = { temp_opinion = 20 }
 			change_chaebols_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus KOR_corporate_interests executed"
 		}
@@ -8431,7 +8491,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = KOR_middle_power_diplomacy
 
-		cost = 8
+		cost = 5
 
 		search_filters = {}
 
@@ -8509,6 +8569,9 @@ focus_tree = {
 		completion_reward = {
 			set_temp_variable = { treasury_change = -30 }
 			modify_treasury_effect = yes
+			set_temp_variable = { int_investment_change = treasury_change }
+			set_temp_variable = { int_investment_change = 30 }
+			modify_international_investment_effect = yes
 			every_other_country = {
 				limit = {
 					OR = {

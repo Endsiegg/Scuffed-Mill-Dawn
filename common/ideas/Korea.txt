@@ -1442,9 +1442,9 @@ ideas = {
 
 			modifier = {
 				stability_factor = 0.05
-				consumer_goods_factor = -0.01
+				consumer_goods_factor = -0.02
 				foreign_subversive_activites = 0.2
-				communism_drift = 0.01
+				communism_drift = 0.05
 				custom_modifier_tooltip = Ryugyong_Hotel_idea_tt
 			}
 		}
