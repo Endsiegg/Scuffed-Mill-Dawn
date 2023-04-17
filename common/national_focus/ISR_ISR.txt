@@ -5622,9 +5622,9 @@ focus_tree = {
 		}
 		completion_reward = {
         add_equipment_to_stockpile = {
-        type = MR_Fighter4
-        amount = 1000
-        producer = ISR
+        type = MR_Fighter3
+        amount = 100
+        producer = USA
         }			
 		set_temp_variable = { treasury_change = -73.5 }
 		modify_treasury_effect = yes		   				
