@@ -119,8 +119,8 @@ set_research_slots = 7
 	add_to_variable = { fiscal_econ_market_resources = 0.00 }
 	add_to_variable = { fiscal_econ_interest_rate = -2 }
 	add_to_variable = { fiscal_econ_tax_efficiency = 0.00 }
-	add_to_variable = { fiscal_econ_investment_return = 0.05 }
-	add_to_variable = { fiscal_econ_export_money_return = 0.1 }
+	add_to_variable = { fiscal_econ_investment_return = 0.03 }
+	add_to_variable = { fiscal_econ_export_money_return = 0.06 }
 	add_to_variable = { fiscal_econ_health_cost = 0.90 }
 	add_to_variable = { fiscal_econ_welfare_cost = 0.45 }
 	add_to_variable = { fiscal_econ_bureaucracy_cost = 0.30 }
@@ -208,7 +208,7 @@ set_research_slots = 7
 	}
 	set_variable = { mic_civ_construction_speed = -1 }
 	set_variable = { mic_daily_political_gain = -0.10 }
-	set_variable = { mic_war_support_weekly = -0.001 }
+	set_variable = { mic_war_support_weekly = -0.002 }
 	add_to_variable = { mic_bureaucracy_cost = 0.00 }
 	add_to_variable = { mic_personnel_cost = 0.00 }
 	set_variable = { mic_leader_xp_gain = 0.25 }
