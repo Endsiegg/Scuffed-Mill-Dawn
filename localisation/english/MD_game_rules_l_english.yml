@@ -80,6 +80,11 @@
  RULE_YES_ALLOW_CHEAT_DECISIONS_DESC: "Cheat Decisions Enabled"
  RULE_NO_ALLOW_CHEAT_DECISIONS_DESC: "Cheat Decisions Disabled"
 
+ RULE_ALLOW_AUTO_ANNEX:0 "Auto Annexation of AI"
+ RULE_ALLOW_ANNEX_DESC:0 "Auto Annex enabled. This will auto annex AI after war completion, navy will be taken"
+ RULE_BLOCKED_ANNEX_DESC:0 "Auto Annex disabled"
+
+
  RULE_ALLOW_ENABLE_LEDGER: "Enable MD Ledger"
  RULE_ALLOW_ENABLE_LEDGER_YES_DESC: "MD's Ledger is enabled. (Some information from the La Resistance intel ledger may by made redundant. Disble this feature if you want a harder game.)"
  RULE_ALLOW_ENABLE_LEDGER_NO_DESC: "Disables the MD ledger. This is better for users who prefer a more authentic experience and want to utilize La Resistance to gain critical information."
