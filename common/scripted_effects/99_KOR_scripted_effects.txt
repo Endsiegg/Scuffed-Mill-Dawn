@@ -151,6 +151,16 @@ progressive_policy_effect = {
 	}
 }
 
+support_for_reunification_5 = {
+	custom_effect_tooltip = support_for_reunification_5_tt
+	add_to_variable = { SFR = 5 }
+	clamp_variable = {
+		var = SFR
+		min = 0
+		max = 100
+	}
+}
+
 support_for_reunification_2 = {
 	custom_effect_tooltip = support_for_reunification_2_tt
 	add_to_variable = { SFR = 2 }

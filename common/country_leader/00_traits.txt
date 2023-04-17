@@ -389,7 +389,7 @@ leader_traits = {
 			factor = 1
 		}
 	}
-	emerging_Communist_State = {
+	emerging_Communist-State = {
 		random = no
 
 		ai_will_do = {
