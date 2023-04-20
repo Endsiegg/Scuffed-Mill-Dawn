@@ -7680,17 +7680,7 @@
 		prerequisite = { focus = BRA_odebrecht_corruption }
 		prerequisite = { focus = BRA_petrobras_indictment }
 		prerequisite = { focus = BRA_searchandseizure }
-		available = {
-			OR = {
-				has_idea = paralyzing_corruption
-				has_idea = crippling_corruption
-				has_idea = rampant_corruption
-				has_idea = unrestrained_corruption
-				has_idea = systematic_corruption
-				has_idea = widespread_corruption
-				has_idea = medium_corruption
-			}
-		}
+
 
 		search_filters = {FOCUS_FILTER_CORRUPTION}
 
