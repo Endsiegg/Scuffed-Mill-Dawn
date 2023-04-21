@@ -37,6 +37,7 @@ state = {
 			offices = 1
 			air_base = 2
 			synthetic_refinery = 1
+			industrial_complex = 1
 			5239 = {
 				naval_base = 2
 

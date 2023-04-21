@@ -239,10 +239,10 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CAN_Alberta"
-			set_temp_variable = { treasury_change = -0.5 }
+			set_temp_variable = { treasury_change = -2 }
 			modify_treasury_effect = yes
 			755 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 8
 			}
 		}
 
@@ -274,13 +274,13 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CAN_Athabasca_Oil_Refineries"
-			set_temp_variable = { treasury_change = -7.5 }
+			set_temp_variable = { treasury_change = -15 }
 			modify_treasury_effect = yes
 			755 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -319,10 +319,10 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CAN_Saskatchewan"
-			set_temp_variable = { treasury_change = -0.5 }
+			set_temp_variable = { treasury_change = -2 }
 			modify_treasury_effect = yes
 			756 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 8
 			}
 		}
 
@@ -651,7 +651,7 @@ focus_tree = {
 			}
 			add_resource = {
 				type = oil
-				amount = 3
+				amount = 5
 				state = 755
 			}
 		}
@@ -825,7 +825,7 @@ focus_tree = {
 			modify_treasury_effect = yes
 			add_resource = {
 				type = oil
-				amount = 3
+				amount = 10
 				state = 756
 			}
 		}
@@ -886,7 +886,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CAN_Abqaiq_Refineries"
-			set_temp_variable = { treasury_change = -8 }
+			set_temp_variable = { treasury_change = -7 }
 			modify_treasury_effect = yes
 			set_temp_variable = { percent_change = 1 }
 			if = {
@@ -1589,7 +1589,7 @@ focus_tree = {
 			CAN_modify_subsidy_changes = yes
 			add_timed_idea = {
 				idea = CAN_production
-				days = 730
+				days = 3650
 			}
 		}
 
@@ -1614,7 +1614,7 @@ focus_tree = {
 			CAN_modify_subsidy_changes = yes
 			add_timed_idea = {
 				idea = CAN_build
-				days = 730
+				days = 3650
 			}
 			custom_effect_tooltip = CAN_canadian_economy_dynamic_modifier_modify_tt
 			set_temp_variable = { CAN_value_change = -0.05 }
@@ -1730,7 +1730,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus CAN_Heavy_Industries_Focus"
 			add_timed_idea = {
 				idea = CAN_heavy
-				days = 200
+				days = 1000
 			}
 			set_temp_variable = { treasury_change = -3 }
 			modify_treasury_effect = yes
@@ -1786,7 +1786,7 @@ focus_tree = {
 				idea = CAN_aecon
 				days = 730
 			}
-			one_random_synthetic_refinery = yes
+			two_random_synthetic_refinery = yes
 		}
 
 		ai_will_do = {
@@ -1835,7 +1835,8 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CAN_Nuclear_Energy_Developments"
 			#add_ideas = CAN_nuclear
-			add_war_support = 0.05
+			add_war_support = 0.10
+			add_stability = 0.10
 
 		}
 
@@ -1935,12 +1936,12 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CAN_Expand_Automobile_Manufactoring"
-			set_temp_variable = { treasury_change = -7.5 }
+			set_temp_variable = { treasury_change = -15 }
 			modify_treasury_effect = yes
             763 = {
 				add_building_construction = {
                     type = industrial_complex
-                    level = 1
+                    level = 2
                     instant_build = yes
 				}
             }
@@ -2990,12 +2991,16 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: CAN_economy_investments_global"
 			add_political_power = 150
+			set_temp_variable = { treasury_change = 150 }
+			modify_treasury_effect = yes
+		}
+			
 		}
 
 		ai_will_do = {
 			factor = 1
 		}
-	}
+		
 
 	focus = {
 		id = CAN_europe_invest
@@ -3011,7 +3016,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: CAN_europe_invest"
 			add_political_power = 100
-			set_temp_variable = { treasury_change = 10 }
+			set_temp_variable = { treasury_change = 75 }
 			modify_treasury_effect = yes
 		}
 
@@ -3034,7 +3039,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: CAN_asia_invest"
 			add_political_power = 100
-			set_temp_variable = { treasury_change = 10 }
+			set_temp_variable = { treasury_change = 75 }
 			modify_treasury_effect = yes
 		}
 
@@ -5119,10 +5124,10 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CAN_US_Investments"
 			add_tech_bonus = {
-				name = Cat_MBT
+				name = CAT_FIXED_WING
 				uses = 1
-				bonus = 0.50
-				category = Cat_MBT
+				bonus = 1.0
+				category = CAT_FIXED_WING
 			}
 		}
 
@@ -5202,13 +5207,13 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CAN_nato_exercises "
-			army_experience = 15
+			army_experience = 25
 			every_country = {
 				limit = {
 					NOT = { tag = CAN }
 					has_idea = NATO_member
 				}
-				army_experience = 15
+				army_experience = 25
 			}
 		}
 
@@ -5329,7 +5334,7 @@ focus_tree = {
 			add_doctrine_cost_reduction = {
 				name = CAN_study_american_war_doctrine
 				category = land_doctrine
-				uses = 1
+				uses = 2
 				cost_reduction = 0.5
 			}
 		}
@@ -5375,8 +5380,8 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CAN_nato_research "
-			add_war_support = 0.05
-			add_stability = 0.05
+			add_war_support = 0.1
+			add_stability = 0.1
 		}
 
 		ai_will_do = {
@@ -6217,8 +6222,7 @@ focus_tree = {
 		relative_position_id = CAN_global_companys
 
 		prerequisite = { focus =  CAN_global_companys }
-		mutually_exclusive = { focus = CAN_hyundai }
-		mutually_exclusive = { focus = CAN_ak }
+	
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -6244,9 +6248,7 @@ focus_tree = {
 
 		prerequisite = { focus =  CAN_global_companys}
 
-		mutually_exclusive = { focus =  CAN_huawai }
-
-		mutually_exclusive = { focus =  CAN_ak }
+	
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CAN_hyundai"
@@ -6263,8 +6265,7 @@ focus_tree = {
 		relative_position_id = CAN_global_companys
 
 		prerequisite = { focus = CAN_global_companys }
-		mutually_exclusive = { focus = CAN_huawai }
-		mutually_exclusive = { focus = CAN_hyundai }
+	
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CAN_ak "
@@ -6446,7 +6447,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CAN_Canadian_Armed_Forces"
-			add_war_support = 0.05
+			add_war_support = 0.1
 		}
 
 		ai_will_do = {
@@ -6515,7 +6516,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CAN_new_manufacturers"
-			set_temp_variable = { treasury_change = -7.5 }
+			set_temp_variable = { treasury_change = -10 }
 			modify_treasury_effect = yes
 			random_owned_controlled_state = {
 				prioritize = { 763 762 }
@@ -6529,7 +6530,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -7169,7 +7170,7 @@ focus_tree = {
 			763 = {
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				add_building_construction = {
