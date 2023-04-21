@@ -481,7 +481,7 @@ ideas = {
 			equipment_bonus = {
 				Inf_equipment = {
 					build_cost_ic = -0.15
-					soft_attack = -0.04
+					soft_attack = -0.05
 					instant = yes
 				}
 			}
@@ -494,7 +494,7 @@ ideas = {
 			allowed_civil_war = { always = yes }
 			equipment_bonus = {
 				Inf_equipment = {
-					build_cost_ic = 0.25
+					build_cost_ic = 0.10
 					soft_attack = 0.05
 					instant = yes
 				}

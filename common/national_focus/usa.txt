@@ -3922,12 +3922,7 @@ focus_tree = {
 			set_temp_variable = { temp_opinion = 10 }
 			change_wall_street_opinion = yes
 
-			add_dynamic_modifier = { modifier = USA_focus_military_industrial_complex }
-			add_to_variable = { mic_mil_construction_speed = 0.10 }
-			add_to_variable = { mic_dockyard_construction_speed = 0.10 }
-
-			custom_effect_tooltip = mil_construction_speed10_tooltip
-			custom_effect_tooltip = dockyard_construction_speed10_tooltip
+			add_ideas = fighter_production_bonus
 		}
 
 		ai_will_do = {
@@ -3979,8 +3974,8 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_focus_the_pentagon_wars_begin"
-			add_political_power = -50
-			add_stability = -0.01
+			add_political_power = -100
+			add_stability = -0.5
 			add_war_support = 0.03
 			army_experience = 10
 			air_experience = 10
@@ -5578,7 +5573,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_focus_dealing_with_anti_globalist_protest"
 			add_political_power = 50
-			add_war_support = -0.02
+			add_war_support = -0.05
 		}
 
 		ai_will_do = {
@@ -8891,7 +8886,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_FOREIGN_POLICY }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_focus_ending_clintonomics"
-			add_political_power = 100
+			add_political_power = 50
 		}
 
 		ai_will_do = {
@@ -15254,6 +15249,18 @@ focus_tree = {
 			custom_effect_tooltip = police_cost_minus10_tooltip
 			custom_effect_tooltip = bureaucracy_cost_minus10_tooltip
 			custom_effect_tooltip = foreign_influence_defense10_tooltip
+			if = { limit = { has_idea = cartels_4 }
+			remove_ideas = cartels_4
+		}
+		else_if = { limit = { has_idea = cartels_3 }
+			remove_ideas = cartels_3
+		}
+		else_if = { limit = { has_idea = cartels_2 }
+			remove_ideas = cartels_2
+		}
+		else_if = { limit = { has_idea = cartels_1 }
+			remove_ideas = cartels_1
+		}
 		}
 
 		ai_will_do = {
@@ -15371,6 +15378,18 @@ focus_tree = {
 			custom_effect_tooltip = police_cost_minus10_tooltip
 			custom_effect_tooltip = bureaucracy_cost_minus10_tooltip
 			custom_effect_tooltip = foreign_influence_defense10_tooltip
+			if = { limit = { has_idea = cartels_4 }
+			remove_ideas = cartels_4
+		}
+		else_if = { limit = { has_idea = cartels_3 }
+			remove_ideas = cartels_3
+		}
+		else_if = { limit = { has_idea = cartels_2 }
+			remove_ideas = cartels_2
+		}
+		else_if = { limit = { has_idea = cartels_1 }
+			remove_ideas = cartels_1
+		}
 		}
 
 		ai_will_do = {
@@ -15487,6 +15506,18 @@ focus_tree = {
 				custom_effect_tooltip = police_cost5_tooltip
 				custom_effect_tooltip = bureaucracy_cost5_tooltip
 				custom_effect_tooltip = foreign_influence_defense15_tooltip
+				if = { limit = { has_idea = cartels_4 }
+				remove_ideas = cartels_4
+			}
+			else_if = { limit = { has_idea = cartels_3 }
+				remove_ideas = cartels_3
+			}
+			else_if = { limit = { has_idea = cartels_2 }
+				remove_ideas = cartels_2
+			}
+			else_if = { limit = { has_idea = cartels_1 }
+				remove_ideas = cartels_1
+			}
 			}
 	
 			ai_will_do = {

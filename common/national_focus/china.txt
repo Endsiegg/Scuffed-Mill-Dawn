@@ -11167,7 +11167,7 @@ communist_cadres_at_least_positive_opinion = yes
 			change_defense_industry_opinion = yes
 			add_tech_bonus = {
 				name = CHI_Expand_CSIC
-				bonus = 0.2
+				bonus = 0.25
 				uses = 1
 				category = Cat_AIR_EQP
 			}
@@ -11500,10 +11500,10 @@ communist_cadres_at_least_positive_opinion = yes
 			set_temp_variable = { treasury_change = -8 }
 			modify_treasury_effect = yes
 			add_tech_bonus = {
-				name = CHI_Aircraft_Improvements
-				bonus = 0.25
+				name = CHI_Expand_CSIC
+				bonus = 0.5
 				uses = 2
-				category = CAT_FIXED_WING
+				category = Cat_AIR_EQP
 			}
 			log = "[GetDateText]: [This.GetName]: focus CHI_Aircraft_Improvements executed"
 		}
@@ -11539,17 +11539,11 @@ communist_cadres_at_least_positive_opinion = yes
 			set_temp_variable = { treasury_change = -15 }
 			modify_treasury_effect = yes
 			add_tech_bonus = {
-				name = CHI_Develop_Stealth_Fighters
-				bonus = 0.5
+				name = SOV_yak_130
+				bonus = 1
+				ahead_reduction = 1
 				uses = 1
-				technology = MR_Fighter4
-				technology = MR_Fighter5
-				technology = MR_Fighter6
-				technology = MR_Fighter7
-				technology = AS_Fighter4
-				technology = AS_Fighter5
-				technology = AS_Fighter6
-				technology = AS_Fighter7
+				category = CAT_FIXED_WING
 			}
 			log = "[GetDateText]: [This.GetName]: focus CHI_Develop_Stealth_Fighters executed"
 		}
