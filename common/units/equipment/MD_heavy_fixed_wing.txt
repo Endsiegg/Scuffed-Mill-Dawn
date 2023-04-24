@@ -800,7 +800,7 @@ equipments = {
 		air_attack = 0
 		air_defence = 13
 
-		build_cost_ic = 300
+		build_cost_ic = 200
 		naval_strike_attack = 0
 		naval_strike_targetting = 0
 	}
@@ -818,7 +818,7 @@ equipments = {
 		air_attack = 0
 		air_defence = 15
 
-		build_cost_ic = 400
+		build_cost_ic = 200
 		resources = {
 			aluminium = 3
 			rubber = 1
