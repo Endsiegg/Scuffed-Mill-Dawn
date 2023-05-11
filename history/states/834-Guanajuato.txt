@@ -33,8 +33,7 @@ state = {
 		buildings = {
 			infrastructure = 1
 			internet_station = 1
-			industrial_complex = 3
-			offices = 1
+			industrial_complex = 1
 		}
 		add_core_of = MEX
 		add_core_of = TAM

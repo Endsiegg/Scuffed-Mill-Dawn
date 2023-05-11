@@ -1493,7 +1493,7 @@ equipments = {
 		air_ground_attack = 10
 		air_bombing = 25
 
-		build_cost_ic = 205
+		build_cost_ic = 140
 		resources = {
 
 			aluminium = 1
@@ -1521,7 +1521,7 @@ equipments = {
 		naval_strike_targetting = 11
 		air_bombing = 28
 
-		build_cost_ic = 190
+		build_cost_ic = 145
 		resources = {
 
 			aluminium = 1
@@ -1549,7 +1549,7 @@ equipments = {
 		air_bombing = 32
 
 
-		build_cost_ic = 195
+		build_cost_ic = 150
 		resources = {
 
 
@@ -1578,7 +1578,7 @@ equipments = {
 		naval_strike_targetting = 14
 		air_bombing = 36
 
-		build_cost_ic = 200
+		build_cost_ic = 155
 		resources = {
 
 			aluminium = 1
