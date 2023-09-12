@@ -43,19 +43,20 @@ equipment_modules = {
 		add_stats = {
 			naval_speed = 16
 			naval_range = 3500
+			build_cost_ic = 250
 		}
 
 		multiply_stats = {
-			build_cost_ic = 0.06
+			#build_cost_ic = 0.06
 			surface_visibility = 0.3
 			fuel_consumption = 0.3
 		}
 
-		dismantle_cost_ic = 120
+		dismantle_cost_ic = 20
 
 		can_convert_from = {
 			module_category = module_surface_power_source_category
-			convert_cost_ic = 1200
+			convert_cost_ic = 50
 		}
 	}
 
@@ -66,23 +67,24 @@ equipment_modules = {
 		add_stats = {
 			naval_speed = 17
 			naval_range = 3000
+			build_cost_ic = 500
 		}
 
 		multiply_stats = {
-			build_cost_ic = 0.09
+			#build_cost_ic = 0.09
 			surface_visibility = 0.25
 			fuel_consumption = 0.25
 		}
 
-		dismantle_cost_ic = 180
+		dismantle_cost_ic = 40
 
 		can_convert_from = {
 			module_category = module_surface_power_source_category
-			convert_cost_ic = 1800
+			convert_cost_ic = 250
 		}
 		can_convert_from = {
 			module = module_surface_oil_power
-			convert_cost_ic = 1200
+			convert_cost_ic = 100
 		}
 	}
 
@@ -93,23 +95,24 @@ equipment_modules = {
 		add_stats = {
 			naval_speed = 18
 			naval_range = 4000
+			build_cost_ic = 750
 		}
 
 		multiply_stats = {
-			build_cost_ic = 0.12
+		#	build_cost_ic = 0.12
 			surface_visibility = 0.2
 			fuel_consumption = 0.2
 		}
 
-		dismantle_cost_ic = 240
+		dismantle_cost_ic = 60
 
 		can_convert_from = {
 			module_category = module_surface_power_source_category
-			convert_cost_ic = 2400
+			convert_cost_ic = 300
 		}
 		can_convert_from = {
 			module = module_surface_diesel_power
-			convert_cost_ic = 1500
+			convert_cost_ic = 200
 		}
 	}
 
@@ -120,23 +123,24 @@ equipment_modules = {
 		add_stats = {
 			naval_speed = 19
 			naval_range = 4500
+			build_cost_ic = 800
 		}
 
 		multiply_stats = {
-			build_cost_ic = 0.15
+		#	build_cost_ic = 0.15
 			surface_visibility = 0.15
 			fuel_consumption = 0.15
 		}
 
-		dismantle_cost_ic = 300
+		dismantle_cost_ic = 70
 
 		can_convert_from = {
 			module_category = module_surface_power_source_category
-			convert_cost_ic = 3000
+			convert_cost_ic = 300
 		}
 		can_convert_from = {
 			module = module_surface_jet_turbine_power
-			convert_cost_ic = 1800
+			convert_cost_ic = 200
 		}
 	}
 
@@ -147,23 +151,24 @@ equipment_modules = {
 		add_stats = {
 			naval_speed = 20
 			naval_range = 5000
+			build_cost_ic = 850
 		}
 
 		multiply_stats = {
-			build_cost_ic = 0.18
+		#	build_cost_ic = 0.18
 			surface_visibility = 0.1
 			fuel_consumption = 0.1
 		}
 
-		dismantle_cost_ic = 360
+		dismantle_cost_ic = 80
 
 		can_convert_from = {
 			module_category = module_surface_power_source_category
-			convert_cost_ic = 3600
+			convert_cost_ic = 300
 		}
 		can_convert_from = {
 			module = module_surface_jet_turbine_power2
-			convert_cost_ic = 2100
+			convert_cost_ic = 200
 		}
 	}
 #LIGHT CONVENTIONAL SHIP ENGINES
@@ -173,19 +178,20 @@ equipment_modules = {
 		add_stats = {
 			naval_speed = 17
 			naval_range = 1250
+			build_cost_ic = 100
 		}
 
 		multiply_stats = {
-			build_cost_ic = 0.09
+			#build_cost_ic = 0.09
 			surface_visibility = 0.25
 			fuel_consumption = 0.25
 		}
 
-		dismantle_cost_ic = 45
+		dismantle_cost_ic = 10
 
 		can_convert_from = {
 			module_category = module_light_surface_power_source_category
-			convert_cost_ic = 450
+			convert_cost_ic = 50
 		}
 	}
 	module_light_surface_jet_turbine_power = {
@@ -195,23 +201,24 @@ equipment_modules = {
 		add_stats = {
 			naval_speed = 18
 			naval_range = 1500
+			build_cost_ic = 200
 		}
 
 		multiply_stats = {
-			build_cost_ic = 0.12
+			#build_cost_ic = 0.12
 			surface_visibility = 0.2
 			fuel_consumption = 0.2
 		}
 
-		dismantle_cost_ic = 60
+		dismantle_cost_ic = 20
 
 		can_convert_from = {
 			module_category = module_light_surface_power_source_category
-			convert_cost_ic = 600
+			convert_cost_ic = 100
 		}
 		can_convert_from = {
 			module = module_light_surface_diesel_power
-			convert_cost_ic = 375
+			convert_cost_ic = 50
 		}
 	}
 
@@ -222,10 +229,11 @@ equipment_modules = {
 		add_stats = {
 			naval_speed = 19
 			naval_range = 1750
+			build_cost_ic = 300
 		}
 
 		multiply_stats = {
-			build_cost_ic = 0.15
+		#	build_cost_ic = 0.15
 			surface_visibility = 0.15
 			fuel_consumption = 0.15
 		}
@@ -234,11 +242,11 @@ equipment_modules = {
 
 		can_convert_from = {
 			module_category = module_light_surface_power_source_category
-			convert_cost_ic = 750
+			convert_cost_ic = 100
 		}
 		can_convert_from = {
 			module = module_light_surface_jet_turbine_power
-			convert_cost_ic = 450
+			convert_cost_ic = 50
 		}
 	}
 
@@ -249,10 +257,11 @@ equipment_modules = {
 		add_stats = {
 			naval_speed = 20
 			naval_range = 2000
+			build_cost_ic = 350
 		}
 
 		multiply_stats = {
-			build_cost_ic = 0.18
+		#	build_cost_ic = 0.18
 			surface_visibility = 0.1
 			fuel_consumption = 0.1
 		}
@@ -261,11 +270,11 @@ equipment_modules = {
 
 		can_convert_from = {
 			module_category = module_light_surface_power_source_category
-			convert_cost_ic = 900
+			convert_cost_ic = 100
 		}
 		can_convert_from = {
 			module = module_light_surface_jet_turbine_power2
-			convert_cost_ic = 525
+			convert_cost_ic = 50
 		}
 	}
 #SHIP NUCLEAR REACTORS
@@ -279,7 +288,7 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-			build_cost_ic = 0.1
+		#	build_cost_ic = 0.1
 			fuel_consumption = -1.0
 		}
 
@@ -287,7 +296,7 @@ equipment_modules = {
 
 		can_convert_from = {
 			module_category = module_surface_power_source_category
-			convert_cost_ic = 2000
+			convert_cost_ic = 1000
 		}
 	}
 
@@ -302,19 +311,19 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-			build_cost_ic = 0.15
+		#	build_cost_ic = 0.15
 			fuel_consumption = -1.0
 		}
 
-		dismantle_cost_ic = 300
+		dismantle_cost_ic = 200
 
 		can_convert_from = {
 			module_category = module_surface_power_source_category
-			convert_cost_ic = 3000
+			convert_cost_ic = 1000
 		}
 		can_convert_from = {
 			module = module_surface_early_reactor_power
-			convert_cost_ic = 2000
+			convert_cost_ic = 500
 		}
 	}
 
@@ -328,19 +337,19 @@ equipment_modules = {
 			build_cost_ic = 500
 		}
 		multiply_stats = {
-			build_cost_ic = 0.2
+		#	build_cost_ic = 0.2
 			fuel_consumption = -1.0
 		}
 
-		dismantle_cost_ic = 400
+		dismantle_cost_ic = 100
 
 		can_convert_from = {
 			module_category = module_surface_power_source_category
-			convert_cost_ic = 4000
+			convert_cost_ic = 250
 		}
 		can_convert_from = {
 			module = module_surface_adv_reactor_power
-			convert_cost_ic = 2500
+			convert_cost_ic = 250
 		}
 	}
 
@@ -351,21 +360,22 @@ equipment_modules = {
 		add_stats = {
 			naval_speed = 22
 			naval_range = 20000
+			build_cost_ic = 250
 		}
 		multiply_stats = {
-			build_cost_ic = 0.25
+			#build_cost_ic = 0.25
 			fuel_consumption = -1.0
 		}
 
-		dismantle_cost_ic = 500
+		dismantle_cost_ic = 100
 
 		can_convert_from = {
 			module_category = module_surface_power_source_category
-			convert_cost_ic = 5000
+			convert_cost_ic = 200
 		}
 		can_convert_from = {
 			module = module_surface_mod_reactor_power
-			convert_cost_ic = 3000
+			convert_cost_ic = 125
 		}
 	}
 #CONVENTIONAL SUB ENGINES
@@ -375,10 +385,11 @@ equipment_modules = {
 		add_stats = {
 			naval_speed = 13
 			naval_range = 1500
+			build_cost_ic = 100
 		}
 
 		multiply_stats = {
-			build_cost_ic = 0.06
+		#	build_cost_ic = 0.06
 			sub_visibility = 0.2
 			fuel_consumption = 0.3
 		}
@@ -387,7 +398,7 @@ equipment_modules = {
 
 		can_convert_from = {
 			module_category = module_sub_power_source_category
-			convert_cost_ic = 240
+			convert_cost_ic = 100
 		}
 	}
 
@@ -398,10 +409,11 @@ equipment_modules = {
 		add_stats = {
 			naval_speed = 14
 			naval_range = 2000
+			build_cost_ic = 150
 		}
 
 		multiply_stats = {
-			build_cost_ic = 0.09
+		#	build_cost_ic = 0.09
 			sub_visibility = 0.16
 			fuel_consumption = 0.25
 		}
@@ -410,11 +422,11 @@ equipment_modules = {
 
 		can_convert_from = {
 			module_category = module_sub_power_source_category
-			convert_cost_ic = 360
+			convert_cost_ic = 100
 		}
 		can_convert_from = {
 			module = module_sub_diesel_electric_power
-			convert_cost_ic = 240
+			convert_cost_ic = 100
 		}
 	}
 
@@ -425,10 +437,11 @@ equipment_modules = {
 		add_stats = {
 			naval_speed = 15
 			naval_range = 2500
+			build_cost_ic = 200
 		}
 
 		multiply_stats = {
-			build_cost_ic = 0.12
+		#	build_cost_ic = 0.12
 			sub_visibility = 0.12
 			fuel_consumption = 0.2
 		}
@@ -437,11 +450,11 @@ equipment_modules = {
 
 		can_convert_from = {
 			module_category = module_sub_power_source_category
-			convert_cost_ic = 480
+			convert_cost_ic = 100
 		}
 		can_convert_from = {
 			module = module_sub_diesel_electric_power2
-			convert_cost_ic = 300
+			convert_cost_ic = 100
 		}
 	}
 
@@ -452,10 +465,11 @@ equipment_modules = {
 		add_stats = {
 			naval_speed = 16
 			naval_range = 3000
+			build_cost_ic = 250
 		}
 
 		multiply_stats = {
-			build_cost_ic = 0.15
+		#	build_cost_ic = 0.15
 			sub_visibility = 0.08
 			fuel_consumption = 0.15
 		}
@@ -464,11 +478,11 @@ equipment_modules = {
 
 		can_convert_from = {
 			module_category = module_sub_power_source_category
-			convert_cost_ic = 600
+			convert_cost_ic = 100
 		}
 		can_convert_from = {
 			module = module_sub_diesel_electric_power3
-			convert_cost_ic = 360
+			convert_cost_ic = 100
 		}
 	}
 
@@ -479,10 +493,11 @@ equipment_modules = {
 		add_stats = {
 			naval_speed = 17
 			naval_range = 3500
+			build_cost_ic = 300
 		}
 
 		multiply_stats = {
-			build_cost_ic = 0.18
+		#	build_cost_ic = 0.18
 			sub_visibility = 0.04
 			fuel_consumption = 0.1
 		}
@@ -491,11 +506,11 @@ equipment_modules = {
 
 		can_convert_from = {
 			module_category = module_sub_power_source_category
-			convert_cost_ic = 720
+			convert_cost_ic = 100
 		}
 		can_convert_from = {
 			module = module_sub_diesel_electric_power4
-			convert_cost_ic = 420
+			convert_cost_ic = 100
 		}
 	}
 #SUB NUCLEAR REACTOR
@@ -505,19 +520,20 @@ equipment_modules = {
 		add_stats = {
 			naval_speed = 15
 			naval_range = 20000
+			build_cost_ic = 1000
 		}
 
 		multiply_stats = {
-			build_cost_ic = 0.12
+		#	build_cost_ic = 0.12
 			fuel_consumption = -1.0
-			sub_visibility = 0.25
+			sub_visibility = 0.10
 		}
 
 		dismantle_cost_ic = 48
 
 		can_convert_from = {
 			module_category = module_sub_power_source_category
-			convert_cost_ic = 480
+			convert_cost_ic = 500
 		}
 	}
 
@@ -528,23 +544,24 @@ equipment_modules = {
 		add_stats = {
 			naval_speed = 16
 			naval_range = 20000
+			build_cost_ic = 500
 		}
 
 		multiply_stats = {
-			build_cost_ic = 0.16
+		#	build_cost_ic = 0.16
 			fuel_consumption = -1.0
-			sub_visibility = 0.2
+			sub_visibility = 0.05
 		}
 
 		dismantle_cost_ic = 64
 
 		can_convert_from = {
 			module_category = module_sub_power_source_category
-			convert_cost_ic = 640
+			convert_cost_ic = 250
 		}
 		can_convert_from = {
 			module = module_sub_early_reactor_power
-			convert_cost_ic = 400
+			convert_cost_ic = 250
 		}
 	}
 
@@ -555,23 +572,24 @@ equipment_modules = {
 		add_stats = {
 			naval_speed = 17
 			naval_range = 20000
+			build_cost_ic = 250
 		}
 
 		multiply_stats = {
-			build_cost_ic = 0.2
+		#	build_cost_ic = 0.2
 			fuel_consumption = -1.0
-			sub_visibility = 0.15
+			sub_visibility = -0.1
 		}
 
 		dismantle_cost_ic = 80
 
 		can_convert_from = {
 			module_category = module_sub_power_source_category
-			convert_cost_ic = 800
+			convert_cost_ic = 125
 		}
 		can_convert_from = {
 			module = module_sub_adv_reactor_power
-			convert_cost_ic = 480
+			convert_cost_ic = 125
 		}
 	}
 
@@ -582,23 +600,24 @@ equipment_modules = {
 		add_stats = {
 			naval_speed = 18
 			naval_range = 20000
+			build_cost_ic = 200
 		}
 
 		multiply_stats = {
 			build_cost_ic = 0.24
 			fuel_consumption = -1.0
-			sub_visibility = 0.1
+			sub_visibility = -0.2
 		}
 
 		dismantle_cost_ic = 96
 
 		can_convert_from = {
 			module_category = module_sub_power_source_category
-			convert_cost_ic = 960
+			convert_cost_ic = 100
 		}
 		can_convert_from = {
 			module = module_sub_mod_reactor_power
-			convert_cost_ic = 560
+			convert_cost_ic = 100
 		}
 	}
 
@@ -614,7 +633,7 @@ equipment_modules = {
 			sub_attack = 12
 			torpedo_attack = 2
 			mines_sweeping = 0.5
-			build_cost_ic = 1600
+			build_cost_ic = 250
 			fuel_consumption = 20
 			max_strength = 40
 			max_organisation = 0.057
@@ -639,7 +658,7 @@ equipment_modules = {
 			sub_attack = 15
 			torpedo_attack = 3
 			mines_sweeping = 1
-			build_cost_ic = 1600
+			build_cost_ic = 500
 			fuel_consumption = 20
 			max_strength = 40
 			max_organisation = 0.057
@@ -664,7 +683,7 @@ equipment_modules = {
 			sub_attack = 16
 			torpedo_attack = 4
 			mines_sweeping = 0.75
-			build_cost_ic = 3000
+			build_cost_ic = 1000
 			fuel_consumption = 40
 			max_strength = 80
 			max_organisation = 0.114
@@ -690,7 +709,7 @@ equipment_modules = {
 			sub_attack = 20
 			torpedo_attack = 4.5
 			mines_sweeping = 1.5
-			build_cost_ic = 3000
+			build_cost_ic = 1250
 			fuel_consumption = 40
 			max_strength = 80
 			max_organisation = 0.114
@@ -716,7 +735,7 @@ equipment_modules = {
 			sub_attack = 24
 			torpedo_attack = 5
 			mines_sweeping = 2.25
-			build_cost_ic = 3000
+			build_cost_ic = 1500
 			fuel_consumption = 40
 			max_strength = 80
 			max_organisation = 0.114
@@ -742,7 +761,7 @@ equipment_modules = {
 		add_average_stats = {
 			hg_armor_piercing = -50
 		}
-		dismantle_cost_ic = 1000000
+		#dismantle_cost_ic = 1000000
 	}
 
 	module_light_flight_deck_2 = {
@@ -754,7 +773,7 @@ equipment_modules = {
 		add_average_stats = {
 			hg_armor_piercing = -50
 		}
-		dismantle_cost_ic = 1000000
+		#dismantle_cost_ic = 1000000
 	}
 
 	module_light_flight_deck_3 = {
@@ -766,7 +785,7 @@ equipment_modules = {
 		add_average_stats = {
 			hg_armor_piercing = -50
 		}
-		dismantle_cost_ic = 1000000
+	#	dismantle_cost_ic = 1000000
 	}
 
 #CARRIER FLIGHT DECKS
@@ -775,14 +794,14 @@ equipment_modules = {
 
 		add_stats = {
 			carrier_size = 1
-			build_cost_ic = 7000
+			build_cost_ic = 5000
 			max_strength = 200
 			max_organisation = 0.286
 			surface_visibility = 10
 			fuel_consumption = 100
 		}
 
-		dismantle_cost_ic = 1000000
+		#dismantle_cost_ic = 1000000
 
 		manpower = 200
 	}
@@ -792,14 +811,14 @@ equipment_modules = {
 
 		add_stats = {
 			carrier_size = 2
-			build_cost_ic = 14000
+			build_cost_ic = 10000
 			max_strength = 400
 			max_organisation = 0.571
 			surface_visibility = 20
 			fuel_consumption = 200
 		}
 
-		dismantle_cost_ic = 1000000
+		#dismantle_cost_ic = 1000000
 
 		manpower = 400
 	}
@@ -809,14 +828,14 @@ equipment_modules = {
 
 		add_stats = {
 			carrier_size = 3
-			build_cost_ic = 21000
+			build_cost_ic = 15000
 			max_strength = 600
 			max_organisation = 0.857
 			surface_visibility = 30
 			fuel_consumption = 300
 		}
 
-		dismantle_cost_ic = 1000000
+	#	dismantle_cost_ic = 1000000
 
 		manpower = 600
 	}
@@ -826,14 +845,14 @@ equipment_modules = {
 
 		add_stats = {
 			carrier_size = 4
-			build_cost_ic = 28000
+			build_cost_ic = 20000
 			max_strength = 800
 			max_organisation = 1.143
 			surface_visibility = 40
 			fuel_consumption = 400
 		}
 
-		dismantle_cost_ic = 1000000
+	#	dismantle_cost_ic = 1000000
 
 		manpower = 800
 	}
@@ -843,14 +862,14 @@ equipment_modules = {
 
 		add_stats = {
 			carrier_size = 5
-			build_cost_ic = 35000
+			build_cost_ic = 25000
 			max_strength = 1000
 			max_organisation = 1.428
 			surface_visibility = 50
 			fuel_consumption = 1000
 		}
 
-		dismantle_cost_ic = 1000000
+	#	dismantle_cost_ic = 1000000
 
 		manpower = 1000
 	}
@@ -860,14 +879,14 @@ equipment_modules = {
 
 		add_stats = {
 			carrier_size = 6
-			build_cost_ic = 42000
+			build_cost_ic = 30000
 			max_strength = 1200
 			max_organisation = 1.714
 			surface_visibility = 60
 			fuel_consumption = 600
 		}
 
-		dismantle_cost_ic = 1000000
+	#	dismantle_cost_ic = 1000000
 
 		manpower = 1200
 	}
@@ -877,14 +896,14 @@ equipment_modules = {
 
 		add_stats = {
 			carrier_size = 7
-			build_cost_ic = 49000
+			build_cost_ic = 35000
 			max_strength = 1400
 			max_organisation = 2
 			surface_visibility = 70
 			fuel_consumption = 700
 		}
 
-		dismantle_cost_ic = 1000000
+	#	dismantle_cost_ic = 1000000
 
 		manpower = 1400
 	}
@@ -894,14 +913,14 @@ equipment_modules = {
 
 		add_stats = {
 			carrier_size = 8
-			build_cost_ic = 56000
+			build_cost_ic = 40000
 			max_strength = 1600
 			max_organisation = 2.286
 			surface_visibility = 80
 			fuel_consumption = 800
 		}
 
-		dismantle_cost_ic = 1000000
+	#	dismantle_cost_ic = 1000000
 
 		manpower = 1600
 	}
@@ -911,14 +930,14 @@ equipment_modules = {
 
 		add_stats = {
 			carrier_size = 9
-			build_cost_ic = 63000
+			build_cost_ic = 45000
 			max_strength = 1800
 			max_organisation = 2.571
 			surface_visibility = 90
 			fuel_consumption = 900
 		}
 
-		dismantle_cost_ic = 1000000
+	#	dismantle_cost_ic = 1000000
 
 		manpower = 1800
 	}
@@ -928,14 +947,14 @@ equipment_modules = {
 
 		add_stats = {
 			carrier_size = 10
-			build_cost_ic = 70000
+			build_cost_ic = 50000
 			max_strength = 2000
 			max_organisation = 2.857
 			surface_visibility = 100
 			fuel_consumption = 1000
 		}
 
-		dismantle_cost_ic = 1000000
+	#	dismantle_cost_ic = 1000000
 
 		manpower = 2000
 	}
@@ -947,15 +966,15 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 350
 			fuel_consumption = 5
-			max_strength = 10
+			max_strength = -50
 			max_organisation = 0.014
-			surface_visibility = 0.5
+		#	surface_visibility = 0.5
 		}
 		manpower = 10
 
 		multiply_stats = {
 			naval_range = 1
-			build_cost_ic = 0.01
+			#build_cost_ic = 0.01
 		}
 
 		dismantle_cost_ic = 10
@@ -966,21 +985,21 @@ equipment_modules = {
 		category = module_esm_category
 
 		add_stats = {
-			build_cost_ic = 1350
-			fuel_consumption = 5
+			build_cost_ic = 500
+			#fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.425
+			max_organisation = 1
+		#	surface_visibility = 0.425
 		}
 		manpower = 10
 
 		multiply_stats = {
 			max_strength = 0.2
 			surface_visibility = -0.2
-			build_cost_ic = 0.1
+		#	build_cost_ic = 0.1
 		}
 
-		dismantle_cost_ic = 200
+		dismantle_cost_ic = 50
 
 	}
 
@@ -989,25 +1008,25 @@ equipment_modules = {
 		parent = module_esm_1
 
 		add_stats = {
-			build_cost_ic = 850
-			fuel_consumption = 5
+			build_cost_ic = 750
+			#fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.363
+			max_organisation = 2
+			#surface_visibility = 0.363
 		}
 		manpower = 10
 
 		multiply_stats = {
 			max_strength = 0.25
-			surface_visibility = -0.25
-			build_cost_ic = 0.15
+			surface_visibility = -0.3
+		#	build_cost_ic = 0.15
 		}
 
-		dismantle_cost_ic = 150
+		dismantle_cost_ic = 100
 
 		can_convert_from = {
 			module = module_esm_1
-			convert_cost_ic = 500
+			convert_cost_ic = 250
 		}
 
 		build_cost_resources = {
@@ -1020,25 +1039,25 @@ equipment_modules = {
 		parent = module_esm_2
 
 		add_stats = {
-			build_cost_ic = 450
-			fuel_consumption = 5
+			build_cost_ic = 1000
+			#fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.3
+			max_organisation = 1
+		#	surface_visibility = 0.3
 		}
 		manpower = 10
 
 		multiply_stats = {
 			max_strength = 0.3
-			surface_visibility = -0.3
-			build_cost_ic = 0.2
+			surface_visibility = -0.4
+		#	build_cost_ic = 0.2
 		}
 
 		dismantle_cost_ic = 100
 
 		can_convert_from = {
 			module = module_esm_2
-			convert_cost_ic = 500
+			convert_cost_ic = 250
 		}
 
 		build_cost_resources = {
@@ -1050,18 +1069,18 @@ equipment_modules = {
 		category = module_sub_esm_category
 
 		add_stats = {
-			build_cost_ic = 1350
-			fuel_consumption = 5
+			build_cost_ic = 1000
+		#	fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			sub_visibility = 0.425
+			max_organisation = 1
+		#sub_visibility = 0.425
 		}
 		manpower = 10
 
 		multiply_stats = {
 			max_strength = 0.2
 			sub_visibility = -0.2
-			build_cost_ic = 0.1
+		#	build_cost_ic = 0.1
 		}
 
 		dismantle_cost_ic = 200
@@ -1073,25 +1092,25 @@ equipment_modules = {
 		parent = module_sub_esm_1
 
 		add_stats = {
-			build_cost_ic = 850
-			fuel_consumption = 5
+			build_cost_ic = 1250
+		#	fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			sub_visibility = 0.363
+			max_organisation = 1
+		#	sub_visibility = 0.363
 		}
 		manpower = 10
 
 		multiply_stats = {
 			max_strength = 0.25
-			sub_visibility = -0.25
-			build_cost_ic = 0.15
+			sub_visibility = -0.3
+		#	build_cost_ic = 0.15
 		}
 
 		dismantle_cost_ic = 150
 
 		can_convert_from = {
 			module = module_sub_esm_1
-			convert_cost_ic = 500
+			convert_cost_ic = 250
 		}
 
 		build_cost_resources = {
@@ -1104,25 +1123,25 @@ equipment_modules = {
 		parent = module_sub_esm_2
 
 		add_stats = {
-			build_cost_ic = 450
-			fuel_consumption = 5
+			build_cost_ic = 1500
+		#	fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			sub_visibility = 0.3
+			max_organisation = 1
+		#	sub_visibility = 0.3
 		}
 		manpower = 10
 
 		multiply_stats = {
 			max_strength = 0.3
 			sub_visibility = -0.3
-			build_cost_ic = 0.2
+		#	build_cost_ic = 0.2
 		}
 
 		dismantle_cost_ic = 100
 
 		can_convert_from = {
 			module = module_sub_esm_2
-			convert_cost_ic = 500
+			convert_cost_ic = 250
 		}
 
 		build_cost_resources = {
@@ -1229,16 +1248,17 @@ equipment_modules = {
 		category = module_point_defense_system_category
 
 		add_stats = {
-			anti_air_attack = 0.5
-			build_cost_ic = 275
-			fuel_consumption = 2.5
+			anti_air_attack = 1
+			build_cost_ic = 250
+		#	fuel_consumption = 2.5
 			max_strength = 5
-			max_organisation = 0.007
-			surface_visibility = 0.25
+		#	max_organisation = 1
+		#	surface_visibility = 0.25
 		}
 		manpower = 5
 		multiply_stats = {
 			max_strength = 0.05
+			anti_air_attack = 0.05
 		}
 
 		dismantle_cost_ic = 10
@@ -1249,16 +1269,17 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 500
-			fuel_consumption = 5
+		#	fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.475
-			anti_air_attack = 0.625
+		#	max_organisation = 0.014
+		#	surface_visibility = 0.475
+			anti_air_attack = 1.5
 		}
 		manpower = 10
 
 		multiply_stats = {
-			max_strength = 0.15
+			max_strength = 0.1
+			anti_air_attack = 0.05
 		}
 
 		dismantle_cost_ic = 15
@@ -1275,17 +1296,18 @@ equipment_modules = {
 		parent = module_ciws_1
 
 		add_stats = {
-			build_cost_ic = 525
-			fuel_consumption = 5
+			build_cost_ic = 600
+		#	fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.438
-			anti_air_attack = 0.75
+		#	max_organisation = 0.014
+		#	surface_visibility = 0.438
+			anti_air_attack = 2
 		}
 		manpower = 10
 
 		multiply_stats = {
-			max_strength = 0.18
+			max_strength = 0.15
+			anti_air_attack = 0.05
 		}
 
 		dismantle_cost_ic = 17.5
@@ -1306,17 +1328,18 @@ equipment_modules = {
 		parent = module_ciws_2
 
 		add_stats = {
-			build_cost_ic = 550
-			fuel_consumption = 5
+			build_cost_ic = 650
+		#	fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.4
-			anti_air_attack = 0.825
+		#	max_organisation = 0.014
+		#	surface_visibility = 0.4
+			anti_air_attack = 2.5
 		}
 		manpower = 10
 
 		multiply_stats = {
-			max_strength = 0.21
+			max_strength = 0.20
+			anti_air_attack = 0.05
 		}
 
 		dismantle_cost_ic = 20
@@ -1337,17 +1360,18 @@ equipment_modules = {
 		parent = module_ciws_3
 
 		add_stats = {
-			build_cost_ic = 575
-			fuel_consumption = 5
+			build_cost_ic = 700
+			#fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.363
-			anti_air_attack = 1
+		#	max_organisation = 0.014
+		#	surface_visibility = 0.363
+			anti_air_attack = 3
 		}
 		manpower = 10
 
 		multiply_stats = {
-			max_strength = 0.24
+			max_strength = 0.25
+			anti_air_attack = 0.05
 		}
 
 		dismantle_cost_ic = 22.5
@@ -1368,17 +1392,18 @@ equipment_modules = {
 		parent = module_ciws_4
 
 		add_stats = {
-			build_cost_ic = 600
-			fuel_consumption = 5
+			build_cost_ic = 750
+		#	fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.325
-			anti_air_attack = 1.125
+		#	max_organisation = 0.014
+		#	surface_visibility = 0.325
+			anti_air_attack = 3.5
 		}
 		manpower = 10
 
 		multiply_stats = {
-			max_strength = 0.27
+			max_strength = 0.3
+			anti_air_attack = 0.05
 		}
 
 		dismantle_cost_ic = 25
@@ -1400,16 +1425,17 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 625
-			fuel_consumption = 5
+		#	fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.3
-			anti_air_attack = 1.25
+		#	max_organisation = 0.014
+		#	surface_visibility = 0.3
+			anti_air_attack = 4
 		}
 		manpower = 10
 
 		multiply_stats = {
-			max_strength = 0.3
+			max_strength = 0.35
+			anti_air_attack = 0.05
 		}
 
 		dismantle_cost_ic = 27.5
@@ -1429,13 +1455,13 @@ equipment_modules = {
 		category = module_gun_battery_category
 
 		add_stats = {
-			build_cost_ic = 1500
+			build_cost_ic = 500
 			lg_attack = 8
-			anti_air_attack = 2
-			fuel_consumption = 10
+		#	anti_air_attack = 2
+		#	fuel_consumption = 10
 			max_strength = 20
-			max_organisation = 0.028
-			surface_visibility = 1
+		#	max_organisation = 0.028
+		#	surface_visibility = 1
 		}
 
 		manpower = 20
@@ -1449,20 +1475,20 @@ equipment_modules = {
 			convert_cost_ic = 100
 		}
 
-		dismantle_cost_ic = 500
+		#dismantle_cost_ic = 500
 	}
 
 	module_100mm_battery = {
 		category = module_gun_battery_category
 
 		add_stats = {
-			build_cost_ic = 2050
+			build_cost_ic = 1000
 			lg_attack = 10
-			anti_air_attack = 2.5
-			fuel_consumption = 15
+		#	anti_air_attack = 2.5
+			#fuel_consumption = 15
 			max_strength = 30
-			max_organisation = 0.044
-			surface_visibility = 1.5
+		#	max_organisation = 0.044
+		#	surface_visibility = 1.5
 		}
 
 		manpower = 30
@@ -1471,20 +1497,24 @@ equipment_modules = {
 			lg_armor_piercing = 12
 		}
 
-		dismantle_cost_ic = 700
+		can_convert_from = {
+			module_category = module_light_guns_category
+			convert_cost_ic = 100
+		}
+	#	dismantle_cost_ic = 700
 	}
 
 	module_127mm_battery = {
 		category = module_gun_battery_category
 
 		add_stats = {
-			build_cost_ic = 2800
+			build_cost_ic = 1500
 			lg_attack = 12
-			anti_air_attack = 3
-			fuel_consumption = 20
+		#	anti_air_attack = 3
+		#	fuel_consumption = 20
 			max_strength = 40
-			max_organisation = 0.057
-			surface_visibility = 2
+		#	max_organisation = 0.057
+		#	surface_visibility = 2
 		}
 
 		manpower = 40
@@ -1492,21 +1522,24 @@ equipment_modules = {
 		add_average_stats = {
 			lg_armor_piercing = 13
 		}
-
-		dismantle_cost_ic = 950
+		can_convert_from = {
+			module_category = module_light_guns_category
+			convert_cost_ic = 100
+		}
+	#	dismantle_cost_ic = 950
 	}
 
 	module_152mm_battery = {
 		category = module_gun_battery_category
 
 		add_stats = {
-			build_cost_ic = 3700
+			build_cost_ic = 2000
 			lg_attack = 14
-			anti_air_attack = 3.5
-			fuel_consumption = 30
+		#	anti_air_attack = 3.5
+		#	fuel_consumption = 30
 			max_strength = 60
-			max_organisation = 0.086
-			surface_visibility = 3
+		#	max_organisation = 0.086
+		#	surface_visibility = 3
 		}
 
 		manpower = 60
@@ -1515,20 +1548,24 @@ equipment_modules = {
 			lg_armor_piercing = 14
 		}
 
-		dismantle_cost_ic = 1250
+		can_convert_from = {
+			module_category = module_light_guns_category
+			convert_cost_ic = 100
+		}
+	#	dismantle_cost_ic = 1250
 	}
 #76mm GUNS
 	module_76mm_gun_1 = {
 		category = module_light_guns_category
 
 		add_stats = {
-			build_cost_ic = 600
-			fuel_consumption = 5
+			build_cost_ic = 250
+		#	fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.475
+		#	max_organisation = 0.014
+		#	surface_visibility = 0.475
 			lg_attack = 4
-			anti_air_attack = 1.125
+		#	anti_air_attack = 1.125
 		}
 		manpower = 10
 		add_average_stats = {
@@ -1538,7 +1575,7 @@ equipment_modules = {
 		dismantle_cost_ic = 25
 
 		multiply_stats = {
-			max_strength = 0.1
+			#max_strength = 0.1
 		}
 
 		can_convert_from = {
@@ -1552,13 +1589,13 @@ equipment_modules = {
 		parent = module_76mm_gun_1
 
 		add_stats = {
-			build_cost_ic = 650
-			fuel_consumption = 5
+			build_cost_ic = 500
+		#	fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.413
+		#	max_organisation = 0.014
+		#	surface_visibility = 0.413
 			lg_attack = 5
-			anti_air_attack = 1.25
+		#	anti_air_attack = 1.25
 		}
 		manpower = 10
 		add_average_stats = {
@@ -1568,7 +1605,7 @@ equipment_modules = {
 		dismantle_cost_ic = 30
 
 		multiply_stats = {
-			max_strength = 0.15
+			#max_strength = 0.15
 		}
 
 		can_convert_from = {
@@ -1587,13 +1624,13 @@ equipment_modules = {
 		parent = module_76mm_gun_2
 
 		add_stats = {
-			build_cost_ic = 700
-			fuel_consumption = 5
+			build_cost_ic = 750
+		#	fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.35
+		#	max_organisation = 0.014
+		#	surface_visibility = 0.35
 			lg_attack = 6
-			anti_air_attack = 1.375
+		#	anti_air_attack = 1.375
 		}
 		manpower = 10
 		add_average_stats = {
@@ -1603,7 +1640,7 @@ equipment_modules = {
 		dismantle_cost_ic = 35
 
 		multiply_stats = {
-			max_strength = 0.2
+			#max_strength = 0.2
 		}
 
 		can_convert_from = {
@@ -1622,13 +1659,13 @@ equipment_modules = {
 		parent = module_76mm_gun_3
 
 		add_stats = {
-			build_cost_ic = 750
-			fuel_consumption = 5
+			build_cost_ic = 1000
+		#	fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.3
+		#	max_organisation = 0.014
+		#	surface_visibility = 0.3
 			lg_attack = 7
-			anti_air_attack = 1.5
+		#	anti_air_attack = 1.5
 		}
 		manpower = 10
 		add_average_stats = {
@@ -1638,7 +1675,7 @@ equipment_modules = {
 		dismantle_cost_ic = 40
 
 		multiply_stats = {
-			max_strength = 0.25
+		#	max_strength = 0.25
 		}
 
 		can_convert_from = {
@@ -1656,20 +1693,20 @@ equipment_modules = {
 		category = module_light_guns_category
 
 		add_stats = {
-			build_cost_ic = 700
-			fuel_consumption = 5
+			build_cost_ic = 500
+		#	fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.475
+		#	max_organisation = 0.014
+		#	surface_visibility = 0.475
 			lg_attack = 6
-			anti_air_attack = 1.25
+		#	anti_air_attack = 1.25
 		}
 		manpower = 10
 		add_average_stats = {
 			lg_armor_piercing = 20
 		}
 		multiply_stats = {
-			max_strength = 0.05
+			max_strength = 0.10
 		}
 
 		dismantle_cost_ic = 35
@@ -1686,19 +1723,19 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 750
-			fuel_consumption = 5
+			#fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.413
+			#max_organisation = 0.014
+		#	surface_visibility = 0.413
 			lg_attack = 7.5
-			anti_air_attack = 1.5
+		#	anti_air_attack = 1.5
 		}
 		manpower = 10
 		add_average_stats = {
 			lg_armor_piercing = 24
 		}
 		multiply_stats = {
-			max_strength = 0.075
+			max_strength = 0.15
 		}
 
 		dismantle_cost_ic = 40
@@ -1719,20 +1756,20 @@ equipment_modules = {
 		parent = module_127mm_guns_2
 
 		add_stats = {
-			build_cost_ic = 800
-			fuel_consumption = 5
+			build_cost_ic = 1000
+		#	fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.35
+		#	max_organisation = 0.014
+		#	surface_visibility = 0.35
 			lg_attack = 9
-			anti_air_attack = 1.75
+		#	anti_air_attack = 1.75
 		}
 		manpower = 10
 		add_average_stats = {
 			lg_armor_piercing = 28
 		}
 		multiply_stats = {
-			max_strength = 0.1
+			max_strength = 0.15
 		}
 
 		dismantle_cost_ic = 45
@@ -1753,20 +1790,20 @@ equipment_modules = {
 		parent = module_127mm_guns_3
 
 		add_stats = {
-			build_cost_ic = 850
-			fuel_consumption = 5
+			build_cost_ic = 1250
+		#	fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.3
+		#	max_organisation = 0.014
+		#	surface_visibility = 0.3
 			lg_attack = 10.5
-			anti_air_attack = 2
+		#	anti_air_attack = 2
 		}
 		manpower = 10
 		add_average_stats = {
 			lg_armor_piercing = 32
 		}
 		multiply_stats = {
-			max_strength = 0.125
+			max_strength = 0.20
 		}
 
 		dismantle_cost_ic = 50
@@ -1786,18 +1823,18 @@ equipment_modules = {
 		category = module_heavy_guns_category
 
 		add_stats = {
-			build_cost_ic = 1500
-			fuel_consumption = 10
+			build_cost_ic = 1000
+			fuel_consumption = 5
 			max_strength = 20
-			max_organisation = 0.028
-			surface_visibility = 1
-			hg_attack = 16
-			lg_attack = 16
+		#	max_organisation = 0.028
+		#	surface_visibility = 1
+			hg_attack = 15
+			lg_attack = 15
 		}
 		manpower = 20
 		add_average_stats = {
-			hg_armor_piercing = -50
-			lg_armor_piercing = 32
+			hg_armor_piercing = 50
+			lg_armor_piercing = 30
 		}
 
 		dismantle_cost_ic = 400
@@ -1808,21 +1845,21 @@ equipment_modules = {
 		parent = module_heavy_guns_1
 
 		add_stats = {
-			build_cost_ic = 1700
-			fuel_consumption = 10
-			max_strength = 20
-			max_organisation = 0.028
-			surface_visibility = 0.9
+			build_cost_ic = 1500
+			fuel_consumption = 5
+			max_strength = 30
+		#	max_organisation = 0.028
+		#	surface_visibility = 0.9
 			hg_attack = 20
 			lg_attack = 20
 		}
 		manpower = 20
 		add_average_stats = {
-			hg_armor_piercing = -50
+			hg_armor_piercing = 60
 			lg_armor_piercing = 40
 		}
 
-		dismantle_cost_ic = 500
+		dismantle_cost_ic = 400
 
 		can_convert_from = {
 			module_category = module_heavy_guns_category
@@ -1835,21 +1872,21 @@ equipment_modules = {
 		parent = module_heavy_guns_2
 
 		add_stats = {
-			build_cost_ic = 1900
-			fuel_consumption = 10
+			build_cost_ic = 2000
+			fuel_consumption = 5
 			max_strength = 20
-			max_organisation = 0.028
-			surface_visibility = 0.75
-			hg_attack = 24
-			lg_attack = 24
+		#	max_organisation = 0.028
+		#	surface_visibility = 0.75
+			hg_attack = 25
+			lg_attack = 25
 		}
 		manpower = 20
 		add_average_stats = {
-			hg_armor_piercing = -50
-			lg_armor_piercing = 48
+			hg_armor_piercing = 70
+			lg_armor_piercing = 50
 		}
 
-		dismantle_cost_ic = 600
+		dismantle_cost_ic = 400
 
 		can_convert_from = {
 			module_category = module_heavy_guns_category
@@ -1866,11 +1903,11 @@ equipment_modules = {
 		category = module_railguns_category
 
 		add_stats = {
-			build_cost_ic = 1400
+			build_cost_ic = 2000
 			fuel_consumption = 10
 			max_strength = 20
-			max_organisation = 0.028
-			surface_visibility = 0.75
+		#	max_organisation = 0.028
+		#	surface_visibility = 0.75
 			lg_attack = 15
 		}
 		manpower = 20
@@ -1891,11 +1928,11 @@ equipment_modules = {
 		parent = module_railgun_1
 
 		add_stats = {
-			build_cost_ic = 1500
+			build_cost_ic = 2500
 			fuel_consumption = 10
 			max_strength = 20
-			max_organisation = 0.028
-			surface_visibility = 0.7
+		#	max_organisation = 0.028
+		#	surface_visibility = 0.7
 			lg_attack = 20
 		}
 		manpower = 20
@@ -1920,11 +1957,11 @@ equipment_modules = {
 		parent = module_railgun_2
 
 		add_stats = {
-			build_cost_ic = 1600
+			build_cost_ic = 3000
 			fuel_consumption = 10
 			max_strength = 20
-			max_organisation = 0.028
-			surface_visibility = 0.65
+		#	max_organisation = 0.028
+		#	surface_visibility = 0.65
 			lg_attack = 25
 		}
 		manpower = 20
@@ -1954,11 +1991,11 @@ equipment_modules = {
 		parent = module_railgun_3
 
 		add_stats = {
-			build_cost_ic = 1700
+			build_cost_ic = 3500
 			fuel_consumption = 10
 			max_strength = 20
-			max_organisation = 0.028
-			surface_visibility = 0.6
+		#	max_organisation = 0.028
+		#	surface_visibility = 0.6
 			lg_attack = 30
 		}
 		manpower = 20
@@ -1989,10 +2026,10 @@ equipment_modules = {
 		category = module_vls_category
 
 		add_stats = {
-			build_cost_ic = 1560
+			build_cost_ic = 1000
 			torpedo_attack = 9
 			max_strength = 20
-			max_organisation = 0.028
+			#max_organisation = 0.028
 			fuel_consumption = 10
 		}
 
@@ -2012,10 +2049,10 @@ equipment_modules = {
 		parent = module_vls_asm_1
 
 		add_stats = {
-			build_cost_ic = 1620
+			build_cost_ic = 1250
 			torpedo_attack = 10.5
 			max_strength = 20
-			max_organisation = 0.028
+			#max_organisation = 0.028
 			fuel_consumption = 10
 		}
 
@@ -2034,10 +2071,10 @@ equipment_modules = {
 		parent = module_vls_asm_2
 
 		add_stats = {
-			build_cost_ic = 1680
+			build_cost_ic = 1500
 			torpedo_attack = 12
 			max_strength = 20
-			max_organisation = 0.028
+			#max_organisation = 0.028
 			fuel_consumption = 10
 		}
 
@@ -2056,10 +2093,10 @@ equipment_modules = {
 		parent = module_vls_asm_3
 
 		add_stats = {
-			build_cost_ic = 1740
+			build_cost_ic = 1750
 			torpedo_attack = 13.5
 			max_strength = 20
-			max_organisation = 0.028
+		#	max_organisation = 0.028
 			fuel_consumption = 10
 		}
 
@@ -2078,10 +2115,10 @@ equipment_modules = {
 		parent = module_vls_asm_4
 
 		add_stats = {
-			build_cost_ic = 1800
+			build_cost_ic = 2000
 			torpedo_attack = 15
 			max_strength = 20
-			max_organisation = 0.028
+		#	max_organisation = 0.028
 			fuel_consumption = 10
 		}
 
@@ -2100,10 +2137,10 @@ equipment_modules = {
 		parent = module_vls_asm_5
 
 		add_stats = {
-			build_cost_ic = 1860
+			build_cost_ic = 2250
 			torpedo_attack = 16.5
 			max_strength = 20
-			max_organisation = 0.028
+		#	max_organisation = 0.028
 			fuel_consumption = 10
 		}
 		manpower = 20
@@ -2120,10 +2157,10 @@ equipment_modules = {
 		category = module_vls_category
 
 		add_stats = {
-			build_cost_ic = 1560
-			anti_air_attack = 4.375
+			build_cost_ic = 1000
+			anti_air_attack = 5
 			max_strength = 20
-			max_organisation = 0.028
+		#	max_organisation = 0.028
 			fuel_consumption = 10
 		}
 
@@ -2142,10 +2179,10 @@ equipment_modules = {
 		parent = module_vls_sam_1
 
 		add_stats = {
-			build_cost_ic = 1620
-			anti_air_attack = 5
+			build_cost_ic = 1250
+			anti_air_attack = 6
 			max_strength = 20
-			max_organisation = 0.028
+		#	max_organisation = 0.028
 			fuel_consumption = 10
 		}
 
@@ -2164,10 +2201,10 @@ equipment_modules = {
 		parent = module_vls_sam_2
 
 		add_stats = {
-			build_cost_ic = 1680
-			anti_air_attack = 5.625
+			build_cost_ic = 1500
+			anti_air_attack = 7
 			max_strength = 20
-			max_organisation = 0.028
+		#	max_organisation = 0.028
 			fuel_consumption = 10
 		}
 
@@ -2186,10 +2223,10 @@ equipment_modules = {
 		parent = module_vls_sam_3
 
 		add_stats = {
-			build_cost_ic = 1740
-			anti_air_attack = 6.25
+			build_cost_ic = 1750
+			anti_air_attack = 8
 			max_strength = 20
-			max_organisation = 0.028
+		#	max_organisation = 0.028
 			fuel_consumption = 10
 		}
 
@@ -2208,10 +2245,10 @@ equipment_modules = {
 		parent = module_vls_sam_4
 
 		add_stats = {
-			build_cost_ic = 1800
-			anti_air_attack = 6.875
+			build_cost_ic = 2000
+			anti_air_attack = 9
 			max_strength = 20
-			max_organisation = 0.028
+		#	max_organisation = 0.028
 			fuel_consumption = 10
 		}
 
@@ -2230,10 +2267,10 @@ equipment_modules = {
 		parent = module_vls_sam_5
 
 		add_stats = {
-			build_cost_ic = 1860
-			anti_air_attack = 7.5
+			build_cost_ic = 2250
+			anti_air_attack = 10
 			max_strength = 20
-			max_organisation = 0.028
+		#	max_organisation = 0.028
 			fuel_consumption = 10
 		}
 
@@ -2251,14 +2288,15 @@ equipment_modules = {
 		category = module_vls_category
 
 		add_stats = {
-			build_cost_ic = 1560
-			hg_attack = 13.5
+			build_cost_ic = 1000
+			hg_attack = 10
 			max_strength = 20
-			max_organisation = 0.028
+		#	max_organisation = 0.028
 			fuel_consumption = 10
+			hg_armor_piercing = -5
 		}
 		add_average_stats = {
-			hg_armor_piercing = -50
+		#	hg_armor_piercing = -50
 		}
 
 		manpower = 20
@@ -2276,14 +2314,15 @@ equipment_modules = {
 		parent = module_vls_lam_1
 
 		add_stats = {
-			build_cost_ic = 1680
+			build_cost_ic = 1250
 			hg_attack = 15
 			max_strength = 20
-			max_organisation = 0.028
+		#	max_organisation = 0.028
 			fuel_consumption = 10
+			hg_armor_piercing = -10
 		}
 		add_average_stats = {
-			hg_armor_piercing = -50
+			#hg_armor_piercing = -50
 		}
 
 		manpower = 20
@@ -2301,14 +2340,15 @@ equipment_modules = {
 		parent = module_vls_lam_2
 
 		add_stats = {
-			build_cost_ic = 1740
-			hg_attack = 16.5
+			build_cost_ic = 1500
+			hg_attack = 20
 			max_strength = 20
-			max_organisation = 0.028
+		#	max_organisation = 0.028
 			fuel_consumption = 10
+			hg_armor_piercing = -15
 		}
 		add_average_stats = {
-			hg_armor_piercing = -50
+		#	hg_armor_piercing = -50
 		}
 
 		manpower = 20
@@ -2326,11 +2366,12 @@ equipment_modules = {
 		parent = module_vls_lam_3
 
 		add_stats = {
-			build_cost_ic = 1800
-			hg_attack = 18
+			build_cost_ic = 1750
+			hg_attack = 25
 			max_strength = 20
-			max_organisation = 0.028
+		#	max_organisation = 0.028
 			fuel_consumption = 10
+			hg_armor_piercing = -20
 		}
 		add_average_stats = {
 			hg_armor_piercing = -50
@@ -2350,14 +2391,15 @@ equipment_modules = {
 		category = module_vls_category
 
 		add_stats = {
-			build_cost_ic = 1860
-			hg_attack = 19.5
+			build_cost_ic = 2000
+			hg_attack = 30
 			max_strength = 20
-			max_organisation = 0.028
+			#max_organisation = 0.028
 			fuel_consumption = 10
+			hg_armor_piercing = -5
 		}
 		add_average_stats = {
-			hg_armor_piercing = -50
+		#	hg_armor_piercing = -50
 		}
 
 		manpower = 20
@@ -2374,10 +2416,10 @@ equipment_modules = {
 		category = module_vls_sub_category
 
 		add_stats = {
-			build_cost_ic = 1560
-			torpedo_attack = 9
+			build_cost_ic = 1000
+			torpedo_attack = 8
 			max_strength = 20
-			max_organisation = 0.028
+		#	max_organisation = 0.028
 			fuel_consumption = 10
 		}
 
@@ -2397,10 +2439,10 @@ equipment_modules = {
 		parent = module_vls_sub_asm_1
 
 		add_stats = {
-			build_cost_ic = 1620
-			torpedo_attack = 10.5
+			build_cost_ic = 1250
+			torpedo_attack = 10
 			max_strength = 20
-			max_organisation = 0.028
+		#	max_organisation = 0.028
 			fuel_consumption = 10
 		}
 
@@ -2419,10 +2461,10 @@ equipment_modules = {
 		parent = module_vls_sub_asm_2
 
 		add_stats = {
-			build_cost_ic = 1680
+			build_cost_ic = 1500
 			torpedo_attack = 12
 			max_strength = 20
-			max_organisation = 0.028
+		#	max_organisation = 0.028
 			fuel_consumption = 10
 		}
 
@@ -2441,10 +2483,10 @@ equipment_modules = {
 		parent = module_vls_sub_asm_3
 
 		add_stats = {
-			build_cost_ic = 1740
-			torpedo_attack = 13.5
+			build_cost_ic = 1750
+			torpedo_attack = 14
 			max_strength = 20
-			max_organisation = 0.028
+		#	max_organisation = 0.028
 			fuel_consumption = 10
 		}
 
@@ -2463,10 +2505,10 @@ equipment_modules = {
 		parent = module_vls_sub_asm_4
 
 		add_stats = {
-			build_cost_ic = 1800
-			torpedo_attack = 15
+			build_cost_ic = 2000
+			torpedo_attack = 16
 			max_strength = 20
-			max_organisation = 0.028
+		#	max_organisation = 0.028
 			fuel_consumption = 10
 		}
 
@@ -2485,10 +2527,10 @@ equipment_modules = {
 		parent = module_vls_sub_asm_5
 
 		add_stats = {
-			build_cost_ic = 1860
-			torpedo_attack = 16.5
+			build_cost_ic = 2250
+			torpedo_attack = 18
 			max_strength = 20
-			max_organisation = 0.028
+		#	max_organisation = 0.028
 			fuel_consumption = 10
 		}
 		manpower = 20
@@ -2505,14 +2547,15 @@ equipment_modules = {
 		category = module_vls_sub_category
 
 		add_stats = {
-			build_cost_ic = 1560
-			hg_attack = 13.5
+			build_cost_ic = 1000
+			hg_attack = 15
 			max_strength = 20
 			max_organisation = 0.028
 			fuel_consumption = 10
+			hg_armor_piercing = -5
 		}
 		add_average_stats = {
-			hg_armor_piercing = -50
+		#	hg_armor_piercing = -50
 		}
 
 		manpower = 20
@@ -2530,14 +2573,15 @@ equipment_modules = {
 		parent = module_vls_sub_lam_1
 
 		add_stats = {
-			build_cost_ic = 1680
-			hg_attack = 15
+			build_cost_ic = 1250
+			hg_attack = 20
 			max_strength = 20
-			max_organisation = 0.028
+		#	max_organisation = 0.028
 			fuel_consumption = 10
+			hg_armor_piercing = -10
 		}
 		add_average_stats = {
-			hg_armor_piercing = -50
+			#hg_armor_piercing = -50
 		}
 
 		manpower = 20
@@ -2555,14 +2599,15 @@ equipment_modules = {
 		parent = module_vls_sub_lam_2
 
 		add_stats = {
-			build_cost_ic = 1740
-			hg_attack = 16.5
+			build_cost_ic = 1500
+			hg_attack = 25
 			max_strength = 20
-			max_organisation = 0.028
+		#	max_organisation = 0.028
 			fuel_consumption = 10
+			hg_armor_piercing = -15
 		}
 		add_average_stats = {
-			hg_armor_piercing = -50
+		#	hg_armor_piercing = -50
 		}
 
 		manpower = 20
@@ -2580,14 +2625,15 @@ equipment_modules = {
 		parent = module_vls_sub_lam_3
 
 		add_stats = {
-			build_cost_ic = 1800
-			hg_attack = 18
+			build_cost_ic = 1750
+			hg_attack = 30
 			max_strength = 20
-			max_organisation = 0.028
+		#	max_organisation = 0.028
 			fuel_consumption = 10
+			hg_armor_piercing = -20
 		}
 		add_average_stats = {
-			hg_armor_piercing = -50
+		#	hg_armor_piercing = -50
 		}
 
 		manpower = 20
@@ -2604,14 +2650,15 @@ equipment_modules = {
 		category = module_vls_sub_category
 
 		add_stats = {
-			build_cost_ic = 1860
-			hg_attack = 19.5
+			build_cost_ic = 2000
+			hg_attack = 35
 			max_strength = 20
-			max_organisation = 0.028
+		#	max_organisation = 0.028
 			fuel_consumption = 10
+			hg_armor_piercing = -25
 		}
 		add_average_stats = {
-			hg_armor_piercing = -50
+		#	hg_armor_piercing = -50
 		}
 
 		manpower = 20
@@ -2629,11 +2676,11 @@ equipment_modules = {
 		category = module_turret_missile_category
 
 		add_stats = {
-			build_cost_ic = 950
+			build_cost_ic = 500
 			fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.475
+			#max_organisation = 0.014
+		#	surface_visibility = 0.475
 			anti_air_attack = 1.5
 		}
 		manpower = 10
@@ -2656,17 +2703,17 @@ equipment_modules = {
 		parent = module_ram_1
 
 		add_stats = {
-			build_cost_ic = 1000
+			build_cost_ic = 600
 			fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.45
-			anti_air_attack = 1.875
+		#	max_organisation = 0.014
+		#	surface_visibility = 0.45
+			anti_air_attack = 2
 		}
 		manpower = 10
 
 		multiply_stats = {
-			max_strength = 0.18
+			max_strength = 0.2
 		}
 
 		dismantle_cost_ic = 70
@@ -2682,17 +2729,17 @@ equipment_modules = {
 		parent = module_ram_2
 
 		add_stats = {
-			build_cost_ic = 1050
+			build_cost_ic = 700
 			fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.413
-			anti_air_attack = 2.25
+		#	max_organisation = 0.014
+		#	surface_visibility = 0.413
+			anti_air_attack = 2.5
 		}
 		manpower = 10
 
 		multiply_stats = {
-			max_strength = 0.21
+			max_strength = 0.25
 		}
 
 		dismantle_cost_ic = 80
@@ -2708,17 +2755,17 @@ equipment_modules = {
 		parent = module_ram_3
 
 		add_stats = {
-			build_cost_ic = 1100
+			build_cost_ic = 800
 			fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.375
-			anti_air_attack = 2.625
+		#	max_organisation = 0.014
+		#	surface_visibility = 0.375
+			anti_air_attack = 3.0
 		}
 		manpower = 10
 
 		multiply_stats = {
-			max_strength = 0.24
+			max_strength = 0.3
 		}
 
 		dismantle_cost_ic = 90
@@ -2734,17 +2781,17 @@ equipment_modules = {
 		parent = module_ram_4
 
 		add_stats = {
-			build_cost_ic = 1150
+			build_cost_ic = 900
 			fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.338
-			anti_air_attack = 3
+		#	max_organisation = 0.014
+		#	surface_visibility = 0.338
+			anti_air_attack = 3.5
 		}
 		manpower = 10
 
 		multiply_stats = {
-			max_strength = 0.27
+			max_strength = 0.35
 		}
 
 		dismantle_cost_ic = 100
@@ -2759,17 +2806,17 @@ equipment_modules = {
 		category = module_turret_missile_category
 		parent = module_ram_5
 		add_stats = {
-			build_cost_ic = 1200
+			build_cost_ic = 1000
 			fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.3
-			anti_air_attack = 3.375
+		#	max_organisation = 0.014
+		#	surface_visibility = 0.3
+			anti_air_attack = 4.0
 		}
 		manpower = 10
 
 		multiply_stats = {
-			max_strength = 0.3
+			max_strength = 0.4
 		}
 
 		dismantle_cost_ic = 110
@@ -2784,12 +2831,12 @@ equipment_modules = {
 		category = module_turret_missile_category
 
 		add_stats = {
-			build_cost_ic = 950
+			build_cost_ic = 500
 			fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.475
-			anti_air_attack = 4.375
+		#	max_organisation = 0.014
+		#	surface_visibility = 0.475
+			anti_air_attack = 5
 		}
 		manpower = 10
 
@@ -2807,12 +2854,12 @@ equipment_modules = {
 		parent = module_aa_missiles_1
 
 		add_stats = {
-			build_cost_ic = 1000
+			build_cost_ic = 600
 			fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.45
-			anti_air_attack = 5
+		#	max_organisation = 0.014
+		#	surface_visibility = 0.45
+			anti_air_attack = 6
 		}
 		manpower = 10
 
@@ -2829,12 +2876,12 @@ equipment_modules = {
 		parent = module_aa_missiles_2
 
 		add_stats = {
-			build_cost_ic = 1050
+			build_cost_ic = 700
 			fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.413
-			anti_air_attack = 5.625
+			#max_organisation = 0.014
+			##surface_visibility = 0.413
+			anti_air_attack = 7
 		}
 		manpower = 10
 
@@ -2851,12 +2898,12 @@ equipment_modules = {
 		parent = module_aa_missiles_3
 
 		add_stats = {
-			build_cost_ic = 1100
+			build_cost_ic = 800
 			fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.375
-			anti_air_attack = 6.25
+		#	max_organisation = 0.014
+		#	surface_visibility = 0.375
+			anti_air_attack = 8
 		}
 		manpower = 10
 
@@ -2873,12 +2920,12 @@ equipment_modules = {
 		parent = module_aa_missiles_4
 
 		add_stats = {
-			build_cost_ic = 1150
+			build_cost_ic = 900
 			fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.338
-			anti_air_attack = 6.875
+		#	max_organisation = 0.014
+		#	surface_visibility = 0.338
+			anti_air_attack = 9
 		}
 		manpower = 10
 
@@ -2895,12 +2942,12 @@ equipment_modules = {
 		parent = module_aa_missiles_5
 
 		add_stats = {
-			build_cost_ic = 1200
+			build_cost_ic = 1000
 			fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.3
-			anti_air_attack = 7.5
+		#	max_organisation = 0.014
+		#	surface_visibility = 0.3
+			anti_air_attack = 10
 		}
 		manpower = 10
 
@@ -2917,11 +2964,11 @@ equipment_modules = {
 
 		add_stats = {
 			sub_attack = 30
-			build_cost_ic = 950
+			build_cost_ic = 500
 			fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.475
+		#	max_organisation = 0.014
+		#	surface_visibility = 0.475
 		}
 		manpower = 10
 
@@ -2939,11 +2986,11 @@ equipment_modules = {
 
 		add_stats = {
 			sub_attack = 36
-			build_cost_ic = 1000
+			build_cost_ic = 600
 			fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.45
+		#	max_organisation = 0.014
+			#surface_visibility = 0.45
 		}
 		manpower = 10
 
@@ -2961,11 +3008,11 @@ equipment_modules = {
 
 		add_stats = {
 			sub_attack = 42
-			build_cost_ic = 1050
+			build_cost_ic = 700
 			fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.413
+		#	max_organisation = 0.014
+		#	surface_visibility = 0.413
 		}
 		manpower = 10
 
@@ -2983,11 +3030,11 @@ equipment_modules = {
 
 		add_stats = {
 			sub_attack = 48
-			build_cost_ic = 1100
+			build_cost_ic = 800
 			fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.375
+		#	max_organisation = 0.014
+		#	surface_visibility = 0.375
 		}
 		manpower = 10
 
@@ -3005,11 +3052,11 @@ equipment_modules = {
 
 		add_stats = {
 			sub_attack = 54
-			build_cost_ic = 1150
+			build_cost_ic = 900
 			fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.338
+		#	max_organisation = 0.014
+		#	surface_visibility = 0.338
 		}
 		manpower = 10
 
@@ -3027,11 +3074,11 @@ equipment_modules = {
 
 		add_stats = {
 			sub_attack = 60
-			build_cost_ic = 1200
+			build_cost_ic = 1000
 			fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.3
+		#	max_organisation = 0.014
+		#	surface_visibility = 0.3
 		}
 		manpower = 10
 
@@ -3047,12 +3094,12 @@ equipment_modules = {
 		category = module_turret_missile_category
 
 		add_stats = {
-			build_cost_ic = 950
+			build_cost_ic = 500
 			fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.475
-			torpedo_attack = 9
+		#	max_organisation = 0.014
+		##	surface_visibility = 0.475
+			torpedo_attack = 8
 		}
 		manpower = 10
 
@@ -3070,12 +3117,12 @@ equipment_modules = {
 		parent = module_asm_1
 
 		add_stats = {
-			build_cost_ic = 1000
+			build_cost_ic = 600
 			fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.45
-			torpedo_attack = 10.5
+		#	max_organisation = 0.014
+		#	surface_visibility = 0.45
+			torpedo_attack = 10
 		}
 		manpower = 10
 
@@ -3092,11 +3139,11 @@ equipment_modules = {
 		parent = module_asm_2
 
 		add_stats = {
-			build_cost_ic = 1050
+			build_cost_ic = 700
 			fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.413
+		#	max_organisation = 0.014
+		#	surface_visibility = 0.413
 			torpedo_attack = 12
 		}
 		manpower = 10
@@ -3114,12 +3161,12 @@ equipment_modules = {
 		parent = module_asm_3
 
 		add_stats = {
-			build_cost_ic = 1100
+			build_cost_ic = 800
 			fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.375
-			torpedo_attack = 13.5
+		#	max_organisation = 0.014
+		#	surface_visibility = 0.375
+			torpedo_attack = 14
 		}
 		manpower = 10
 		dismantle_cost_ic = 90
@@ -3135,12 +3182,12 @@ equipment_modules = {
 		parent = module_asm_4
 
 		add_stats = {
-			build_cost_ic = 1150
+			build_cost_ic = 900
 			fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.338
-			torpedo_attack = 15
+		#	max_organisation = 0.014
+		#	surface_visibility = 0.338
+			torpedo_attack = 16
 		}
 		manpower = 10
 
@@ -3157,12 +3204,12 @@ equipment_modules = {
 		parent = module_asm_5
 
 		add_stats = {
-			build_cost_ic = 1200
+			build_cost_ic = 1000
 			fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.3
-			torpedo_attack = 16.5
+		#	max_organisation = 0.014
+		#	surface_visibility = 0.3
+			torpedo_attack = 18
 		}
 		manpower = 10
 		dismantle_cost_ic = 110
@@ -3510,8 +3557,8 @@ equipment_modules = {
 			build_cost_ic = 550
 			fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.475
+		#	max_organisation = 0.014
+		#	surface_visibility = 0.475
 			sub_visibility = 0.475
 			sub_attack = 15
 		}
@@ -3538,8 +3585,8 @@ equipment_modules = {
 			build_cost_ic = 575
 			fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.438
+		#	max_organisation = 0.014
+		#	surface_visibility = 0.438
 			sub_visibility = 0.438
 			sub_attack = 18
 		}
@@ -3566,8 +3613,8 @@ equipment_modules = {
 			build_cost_ic = 600
 			fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.388
+		#	max_organisation = 0.014
+		#	surface_visibility = 0.388
 			sub_visibility = 0.388
 			sub_attack = 21
 		}
@@ -3594,8 +3641,8 @@ equipment_modules = {
 			build_cost_ic = 625
 			fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.363
+		#	max_organisation = 0.014
+		#	surface_visibility = 0.363
 			sub_visibility = 0.363
 			sub_attack = 24
 		}
@@ -3622,8 +3669,8 @@ equipment_modules = {
 			build_cost_ic = 650
 			fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.325
+		#	max_organisation = 0.014
+		#	surface_visibility = 0.325
 			sub_visibility = 0.325
 			sub_attack = 27
 		}
@@ -3650,8 +3697,8 @@ equipment_modules = {
 			build_cost_ic = 675
 			fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.3
+		#	max_organisation = 0.014
+		##	surface_visibility = 0.3
 			sub_visibility = 0.3
 			sub_attack = 30
 		}
@@ -3677,8 +3724,8 @@ equipment_modules = {
 			build_cost_ic = 550
 			fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.475
+		#	max_organisation = 0.014
+		#	surface_visibility = 0.475
 			sub_visibility = 0.475
 			torpedo_attack = 5
 		}
@@ -3705,8 +3752,8 @@ equipment_modules = {
 			build_cost_ic = 575
 			fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.438
+		#	max_organisation = 0.014
+		#	surface_visibility = 0.438
 			sub_visibility = 0.438
 			torpedo_attack = 6
 		}
@@ -3733,8 +3780,8 @@ equipment_modules = {
 			build_cost_ic = 600
 			fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.388
+		#	max_organisation = 0.014
+		#	surface_visibility = 0.388
 			sub_visibility = 0.388
 			torpedo_attack = 7
 		}
@@ -3761,8 +3808,8 @@ equipment_modules = {
 			build_cost_ic = 625
 			fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.363
+		#	max_organisation = 0.014
+		#	surface_visibility = 0.363
 			sub_visibility = 0.363
 			torpedo_attack = 8
 		}
@@ -3789,8 +3836,8 @@ equipment_modules = {
 			build_cost_ic = 650
 			fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.325
+		#	max_organisation = 0.014
+		#	surface_visibility = 0.325
 			sub_visibility = 0.325
 			torpedo_attack = 9
 		}
@@ -3817,8 +3864,8 @@ equipment_modules = {
 			build_cost_ic = 675
 			fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.3
+		#	max_organisation = 0.014
+		#	surface_visibility = 0.3
 			sub_visibility = 0.3
 			torpedo_attack = 10
 		}
@@ -3844,8 +3891,8 @@ equipment_modules = {
 			build_cost_ic = 550
 			fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.5
+		#	max_organisation = 0.014
+		#	surface_visibility = 0.5
 			mines_planting = 3
 		}
 		manpower = 10
@@ -3857,11 +3904,11 @@ equipment_modules = {
 		category = module_mineclearing_category
 
 		add_stats = {
-			build_cost_ic = 750
+			build_cost_ic = 500
 			fuel_consumption = 5
 			max_strength = 10
-			max_organisation = 0.014
-			surface_visibility = 0.5
+		#	max_organisation = 0.014
+		#	surface_visibility = 0.5
 			mines_sweeping = 3
 		}
 
@@ -3872,12 +3919,12 @@ equipment_modules = {
 		category = module_anti_submarine_mortar_category
 
 		add_stats = {
-			sub_attack = 4
+			sub_attack = 6
 			build_cost_ic = 200
 			fuel_consumption = 2.5
 			max_strength = 5
-			max_organisation = 0.007
-			surface_visibility = 0.25
+		#	max_organisation = 0.007
+		#	surface_visibility = 0.25
 		}
 		manpower = 5
 

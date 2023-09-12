@@ -4,9 +4,9 @@
 @corvette_armor = 6
 @frigate_armor = 8
 @destroyer_armor = 10
-@cruiser_armor = 12
+@cruiser_armor = 15
 @helicopter_operator_armor = 16
-@battlecruiser_armor = 14
+@battlecruiser_armor = 25
 @attack_sub_armor = 4
 @missile_sub_armor = 6
 
@@ -15,30 +15,30 @@
 @destroyer_hp = 240
 @cruiser_hp = 440
 @helicopter_operator_hp = 800
-@battlecruiser_hp = 800
+@battlecruiser_hp = 1000
 @battleship_hp = 1250
 @carrier_hp = 800
 @attack_sub_hp = 90
 @missile_sub_hp = 150
 
-@corvette_build_cost = 2100
-@frigate_build_cost = 5600
-@destroyer_build_cost = 8400
-@cruiser_build_cost = 15400
-@helicopter_operator_build_cost = 28000
-@battlecruiser_build_cost = 28000
-@battleship_build_cost = 43750
-@carrier_build_cost = 28000
-@attack_sub_build_cost = 3150
-@missile_sub_build_cost = 5250
+@corvette_build_cost = 1000
+@frigate_build_cost = 2000
+@destroyer_build_cost = 3000
+@cruiser_build_cost = 4000
+@helicopter_operator_build_cost = 4000
+@battlecruiser_build_cost = 16000
+@battleship_build_cost = 20000
+@carrier_build_cost = 1000
+@attack_sub_build_cost = 1000
+@missile_sub_build_cost = 1000
 
 @corvette_fuel_consumption = 30
-@frigate_fuel_consumption = 80
+@frigate_fuel_consumption = 60
 @destroyer_fuel_consumption = 120
 @cruiser_fuel_consumption = 220
-@helicopter_operator_fuel_consumption = 400
+@helicopter_operator_fuel_consumption = 220
 @battlecruiser_fuel_consumption = 400
-@battleship_fuel_consumption = 625
+@battleship_fuel_consumption = 600
 @carrier_fuel_consumption = 400
 @attack_sub_fuel_consumption = 45
 @missile_sub_fuel_consumption = 75
@@ -71,10 +71,10 @@
 @destroyer_range = 1000
 @cruiser_range = 1500
 @helicopter_operator_range = 1500
-@battlecruiser_range = 2000
+@battlecruiser_range = 2500
 @battleship_range = 2500
 @carrier_range = 2500
-@attack_sub_range = 0
+@attack_sub_range = 500
 @missile_sub_range = 1500
 
 ###MDs Naval Ships
@@ -211,7 +211,7 @@ equipments = {
 		build_cost_ic = @corvette_build_cost
 		manpower = @corvette_hp
 		resources = {
-			steel = 5
+			steel = 2
 		}
 	}
 
@@ -263,8 +263,8 @@ equipments = {
 		build_cost_ic = @corvette_build_cost
 		manpower = @corvette_hp
 		resources = {
-			steel = 5
-			aluminium = 1
+			steel = 2
+			#aluminium = 1
 		}
 	}
 
@@ -308,8 +308,8 @@ equipments = {
 		build_cost_ic = @corvette_build_cost
 		manpower = @corvette_hp
 		resources = {
-			steel = 5
-			aluminium = 2
+			steel = 2
+			#aluminium = 2
 		}
 	}
 
@@ -354,9 +354,9 @@ equipments = {
 		build_cost_ic = @corvette_build_cost
 		manpower = @corvette_hp
 		resources = {
-			steel = 5
-			aluminium = 2
-			chromium = 1
+			steel = 3
+			#aluminium = 2
+			#chromium = 1
 		}
 	}
 
@@ -400,9 +400,9 @@ equipments = {
 		build_cost_ic = @corvette_build_cost
 		manpower = @corvette_hp
 		resources = {
-			steel = 5
-			aluminium = 3
-			chromium = 1
+			steel = 3
+			#aluminium = 3
+			#chromium = 1
 		}
 	}
 
@@ -446,9 +446,9 @@ equipments = {
 		build_cost_ic = @corvette_build_cost
 		manpower = @corvette_hp
 		resources = {
-			steel = 5
-			aluminium = 3
-			chromium = 2
+			steel = 4
+			#aluminium = 3
+			#chromium = 2
 		}
 	}
 
@@ -546,7 +546,7 @@ equipments = {
 
 		build_cost_ic = 2020.60
 		resources = {
-			steel = 5
+			steel = 2
 		}
 
 		manpower = 400
@@ -601,7 +601,7 @@ equipments = {
 
 		build_cost_ic = 2420.30
 		resources = {
-			steel = 4
+			steel = 2
 		}
 
 		manpower = 400
@@ -655,7 +655,7 @@ equipments = {
 
 		build_cost_ic = 2860.30
 		resources = {
-			steel = 5
+			steel = 2
 		}
 
 		manpower = 500
@@ -709,7 +709,7 @@ equipments = {
 
 		build_cost_ic = 3260.30
 		resources = {
-			steel = 6
+			steel = 2
 		}
 
 		manpower = 500
@@ -763,7 +763,7 @@ equipments = {
 
 		build_cost_ic = 3660.30
 		resources = {
-			steel = 6
+			steel = 2
 		}
 
 		manpower = 500
@@ -817,8 +817,8 @@ equipments = {
 
 		build_cost_ic = 3860.30
 		resources = {
-			steel = 7
-			chromium = 1
+			steel = 2
+			#chromium = 1
 		}
 
 		manpower = 500
@@ -872,8 +872,8 @@ equipments = {
 
 		build_cost_ic = 3860.30
 		resources = {
-			steel = 8
-			chromium = 1
+			steel = 2
+		#	chromium = 1
 		}
 
 		manpower = 500
@@ -1035,7 +1035,7 @@ equipments = {
 		build_cost_ic = @frigate_build_cost
 		manpower = @frigate_hp
 		resources = {
-			steel = 5
+			steel = 3
 		}
 	}
 
@@ -1090,8 +1090,8 @@ equipments = {
 		build_cost_ic = @frigate_build_cost
 		manpower = @frigate_hp
 		resources = {
-			steel = 5
-			aluminium = 1
+			steel = 3
+			#aluminium = 1
 		}
 	}
 
@@ -1139,8 +1139,8 @@ equipments = {
 		build_cost_ic = @frigate_build_cost
 		manpower = @frigate_hp
 		resources = {
-			steel = 5
-			aluminium = 2
+			steel = 3
+			#aluminium = 2
 		}
 	}
 
@@ -1187,9 +1187,9 @@ equipments = {
 		build_cost_ic = @frigate_build_cost
 		manpower = @frigate_hp
 		resources = {
-			steel = 5
-			aluminium = 2
-			chromium = 1
+			steel = 4
+		#	aluminium = 2
+		#	chromium = 1
 		}
 	}
 
@@ -1236,9 +1236,9 @@ equipments = {
 		build_cost_ic = @frigate_build_cost
 		manpower = @frigate_hp
 		resources = {
-			steel = 5
-			aluminium = 3
-			chromium = 1
+			steel = 4
+			#aluminium = 3
+			#chromium = 1
 		}
 	}
 
@@ -1286,8 +1286,8 @@ equipments = {
 		manpower = @frigate_hp
 		resources = {
 			steel = 5
-			aluminium = 3
-			chromium = 2
+		#	aluminium = 3
+		#	chromium = 2
 		}
 	}
 
@@ -1368,7 +1368,7 @@ equipments = {
 		}
 		build_cost_ic = 4580.49
 		resources = {
-			steel = 5
+			steel = 2
 		}
 		manpower = 375 ##Reprsents AI and automation becoming more prevalent
 	}
@@ -1406,7 +1406,7 @@ equipments = {
 		}
 		build_cost_ic = 4768.49
 		resources = {
-			steel = 4
+			steel = 2
 		}
 		manpower = 375
 	}
@@ -1443,7 +1443,7 @@ equipments = {
 		}
 		build_cost_ic = 4980.9
 		resources = {
-			steel = 5
+			steel = 3
 		}
 		manpower = 350
 	}
@@ -1480,7 +1480,7 @@ equipments = {
 		}
 		build_cost_ic = 5260.69
 		resources = {
-			steel = 6
+			steel = 4
 		}
 		manpower = 350
 	}
@@ -1517,7 +1517,7 @@ equipments = {
 		}
 		build_cost_ic = 5480.49
 		resources = {
-			steel = 7
+			steel = 4
 		}
 		manpower = 325
 	}
@@ -1554,8 +1554,8 @@ equipments = {
 		}
 		build_cost_ic = 5630.39
 		resources = {
-			steel = 8
-			chromium = 1
+			steel = 5
+			#chromium = 1
 		}
 		manpower = 325
 	}
@@ -1592,8 +1592,8 @@ equipments = {
 		}
 		build_cost_ic = 5839.56
 		resources = {
-			steel = 9
-			chromium = 1
+			steel = 5
+		#	chromium = 1
 		}
 		manpower = 420
 	}
@@ -1779,7 +1779,7 @@ equipments = {
 		build_cost_ic = @destroyer_build_cost
 		manpower = @destroyer_hp
 		resources = {
-			steel = 5
+			steel = 4
 		}
 	}
 
@@ -1837,8 +1837,8 @@ equipments = {
 		build_cost_ic = @destroyer_build_cost
 		manpower = @destroyer_hp
 		resources = {
-			steel = 5
-			aluminium = 2
+			steel = 4
+		#	aluminium = 2
 		}
 	}
 
@@ -1889,9 +1889,9 @@ equipments = {
 		build_cost_ic = @destroyer_build_cost
 		manpower = @destroyer_hp
 		resources = {
-			steel = 5
-			aluminium = 2
-			chromium = 1
+			steel = 4
+		#	aluminium = 2
+		#	chromium = 1
 		}
 	}
 
@@ -1943,8 +1943,8 @@ equipments = {
 		manpower = @destroyer_hp
 		resources = {
 			steel = 5
-			aluminium = 3
-			chromium = 1
+			#aluminium = 3
+			#chromium = 1
 		}
 	}
 
@@ -1996,8 +1996,8 @@ equipments = {
 		manpower = @destroyer_hp
 		resources = {
 			steel = 5
-			aluminium = 3
-			chromium = 2
+			#aluminium = 3
+			#chromium = 2
 		}
 	}
 
@@ -2160,8 +2160,8 @@ equipments = {
 		manpower = @destroyer_hp
 		resources = {
 			steel = 5
-			chromium = 2
-			aluminium = 2
+			chromium = 1
+		#	aluminium = 2
 		}
 	}
 
@@ -2220,8 +2220,8 @@ equipments = {
 		manpower = @destroyer_hp
 		resources = {
 			steel = 5
-			chromium = 3
-			aluminium = 3
+			chromium = 2
+			#aluminium = 3
 		}
 	}
 
@@ -2273,8 +2273,8 @@ equipments = {
 		manpower = @destroyer_hp
 		resources = {
 			steel = 5
-			chromium = 4
-			aluminium = 4
+			chromium = 3
+		#	aluminium = 4
 		}
 	}
 
@@ -2382,7 +2382,7 @@ equipments = {
 
 		build_cost_ic = 7417.66
 		resources = {
-			steel = 5
+			steel = 2
 		}
 
 		manpower = 400
@@ -2438,7 +2438,7 @@ equipments = {
 
 		build_cost_ic = 7417.66
 		resources = {
-			steel = 5
+			steel = 2
 		}
 
 		manpower = 400
@@ -2493,8 +2493,8 @@ equipments = {
 
 		build_cost_ic = 7417.66
 		resources = {
-			aluminium = 1
-			steel = 5
+		#	aluminium = 1
+			steel = 3
 		}
 
 		manpower = 420
@@ -2549,8 +2549,8 @@ equipments = {
 
 		build_cost_ic = 7417.66
 		resources = {
-			aluminium = 1
-			steel = 4
+		#	aluminium = 1
+			steel = 3
 		}
 
 		manpower = 420
@@ -2604,7 +2604,7 @@ equipments = {
 
 		build_cost_ic = 7417.66
 		resources = {
-			aluminium = 1
+		#	aluminium = 1
 			steel = 5
 		}
 
@@ -2659,9 +2659,9 @@ equipments = {
 
 		build_cost_ic = 7417.66
 		resources = {
-			aluminium = 1
+			#aluminium = 1
 			steel = 6
-			chromium = 1
+			#chromium = 1
 		}
 
 		manpower = 420
@@ -2715,9 +2715,9 @@ equipments = {
 
 		build_cost_ic = 7417.66
 		resources = {
-			aluminium = 1
+		#	aluminium = 1
 			steel = 7
-			chromium = 1
+		#	chromium = 1
 		}
 
 		manpower = 420
@@ -3019,7 +3019,7 @@ equipments = {
 		manpower = @cruiser_hp
 		resources = {
 			steel = 5
-			aluminium = 1
+		#	aluminium = 1
 		}
 	}
 
@@ -3071,7 +3071,7 @@ equipments = {
 		manpower = @cruiser_hp
 		resources = {
 			steel = 5
-			aluminium = 2
+			#aluminium = 2
 		}
 	}
 
@@ -3124,8 +3124,8 @@ equipments = {
 		manpower = @cruiser_hp
 		resources = {
 			steel = 5
-			aluminium = 2
-			chromium = 2
+		#	aluminium = 2
+			chromium = 1
 		}
 	}
 
@@ -3177,7 +3177,7 @@ equipments = {
 		manpower = @cruiser_hp
 		resources = {
 			steel = 5
-			aluminium = 3
+		#	aluminium = 3
 			chromium = 2
 		}
 	}
@@ -3219,7 +3219,7 @@ equipments = {
 
 		build_cost_ic = 8364.99
 		resources = {
-			aluminium = 1
+			#aluminium = 1
 			steel = 4
 		}
 		manpower = 960
@@ -3262,7 +3262,7 @@ equipments = {
 
 		build_cost_ic = 8860.99
 		resources = {
-			aluminium = 1
+		#	aluminium = 1
 			steel = 5
 		}
 
@@ -3307,7 +3307,7 @@ equipments = {
 
 		build_cost_ic = 9160.99
 		resources = {
-			aluminium = 1
+			#aluminium = 1
 			steel = 7
 		}
 
@@ -3351,7 +3351,7 @@ equipments = {
 
 		build_cost_ic = 9450.75
 		resources = {
-			aluminium = 2
+		#	aluminium = 2
 			steel = 8
 		}
 
@@ -3396,8 +3396,8 @@ equipments = {
 
 		build_cost_ic = 9975.25
 		resources = {
-			aluminium = 2
-			steel = 10
+		#	aluminium = 2
+			steel = 5
 			chromium = 1
 		}
 
@@ -3442,8 +3442,8 @@ equipments = {
 
 		build_cost_ic = 10265.45
 		resources = {
-			aluminium = 2
-			steel = 11
+		#	aluminium = 2
+			steel = 5
 			chromium = 1
 		}
 
@@ -3669,7 +3669,7 @@ equipments = {
 		manpower = @battlecruiser_hp
 		resources = {
 			steel = 5
-			aluminium = 1
+		#	aluminium = 1
 		}
 	}
 
@@ -3692,7 +3692,7 @@ equipments = {
 		manpower = @battlecruiser_hp
 		resources = {
 			steel = 5
-			aluminium = 2
+		#	aluminium = 2
 			chromium = 1
 		}
 	}
@@ -3735,9 +3735,9 @@ equipments = {
 
 		build_cost_ic = 20981.37
 		resources = {
-			aluminium = 1
+		#	aluminium = 1
 			steel = 6
-			tungsten = 1
+		#	tungsten = 1
 		}
 
 		manpower = 1140
@@ -3780,9 +3780,9 @@ equipments = {
 
 		build_cost_ic = 22350.37
 		resources = {
-			aluminium = 1
-			steel = 9
-			chromium = 1
+		#	aluminium = 1
+			steel = 6
+		#	chromium = 1
 		}
 
 		manpower = 1140
@@ -3825,9 +3825,9 @@ equipments = {
 
 		build_cost_ic = 25250.00
 		resources = {
-			aluminium = 2
-			steel = 11
-			chromium = 1
+		#	aluminium = 2
+			steel = 6
+		#	chromium = 1
 		}
 
 		manpower = 1140
@@ -3870,9 +3870,9 @@ equipments = {
 
 		build_cost_ic = 27650.00
 		resources = {
-			aluminium = 2
-			steel = 12
-			chromium = 1
+		#	aluminium = 2
+			steel = 6
+		#	chromium = 1
 		}
 		manpower = 1140
 	}
@@ -4133,7 +4133,7 @@ equipments = {
 		manpower = @battleship_hp
 		resources = {
 			steel = 5
-			aluminium = 1
+		#	aluminium = 1
 		}
 
 	}
@@ -4156,7 +4156,7 @@ equipments = {
 		manpower = @battleship_hp
 		resources = {
 			steel = 5
-			aluminium = 2
+		#	aluminium = 2
 			chromium = 1
 		}
 
@@ -4316,7 +4316,7 @@ equipments = {
 		build_cost_ic = @helicopter_operator_build_cost
 		manpower = @helicopter_operator_hp
 		resources = {
-			steel = 5
+			steel = 3
 		}
 	}
 
@@ -4326,7 +4326,7 @@ equipments = {
 		priority = 5
 		module_slots = inherit
 		resources = {
-			steel = 5
+			steel = 3
 		}
 	}
 
@@ -4370,8 +4370,8 @@ equipments = {
 		build_cost_ic = @helicopter_operator_build_cost
 		manpower = @helicopter_operator_hp
 		resources = {
-			steel = 5
-			aluminium = 2
+			steel = 3
+		#	aluminium = 2
 		}
 	}
 
@@ -4416,9 +4416,9 @@ equipments = {
 		build_cost_ic = @helicopter_operator_build_cost
 		manpower = @helicopter_operator_hp
 		resources = {
-			steel = 5
-			tungsten = 2
-			chromium = 2
+			steel = 4
+		#	tungsten = 2
+		#	chromium = 1
 		}
 	}
 
@@ -4464,8 +4464,8 @@ equipments = {
 		manpower = @helicopter_operator_hp
 		resources = {
 			steel = 5
-			aluminium = 3
-			chromium = 2
+		#	aluminium = 3
+			chromium = 1
 		}
 	}
 
@@ -4740,7 +4740,7 @@ equipments = {
 		manpower = @carrier_hp
 		resources = {
 			steel = 5
-			aluminium = 1
+		#	aluminium = 1
 		}
 	}
 
@@ -4790,7 +4790,7 @@ equipments = {
 		manpower = @carrier_hp
 		resources = {
 			steel = 5
-			aluminium = 2
+		#	aluminium = 2
 			chromium = 1
 		}
 	}
@@ -4841,7 +4841,7 @@ equipments = {
 		manpower = @carrier_hp
 		resources = {
 			steel = 5
-			aluminium = 2
+		#	aluminium = 2
 			chromium = 2
 		}
 	}
@@ -4892,8 +4892,8 @@ equipments = {
 		manpower = @carrier_hp
 		resources = {
 			steel = 5
-			aluminium = 3
-			chromium = 2
+		#	aluminium = 3
+			chromium = 3
 		}
 	}
 
@@ -4934,9 +4934,9 @@ equipments = {
 
 		build_cost_ic = 80936
 		resources = {
-			aluminium = 2
-			tungsten = 3
-			steel = 14
+		#	aluminium = 2
+		#	tungsten = 3
+			steel = 5
 		}
 		manpower = 4120
 	}
@@ -4978,9 +4978,9 @@ equipments = {
 
 		build_cost_ic = 91777
 		resources = {
-			aluminium = 3
-			tungsten = 4
-			steel = 15
+		#	aluminium = 3
+		#	tungsten = 4
+			steel = 5
 		}
 
 		manpower = 4320
@@ -5022,9 +5022,9 @@ equipments = {
 
 		build_cost_ic = 101551
 		resources = {
-			aluminium = 3
-			tungsten = 4
-			steel = 16
+		#	aluminium = 3
+		#	tungsten = 4
+			steel = 5
 		}
 
 		manpower = 4310
@@ -5066,9 +5066,9 @@ equipments = {
 
 		build_cost_ic = 102635
 		resources = {
-			aluminium = 3
-			chromium = 4
-			steel = 18
+		#	aluminium = 3
+			chromium = 1
+			steel = 5
 		}
 
 		manpower = 3900
@@ -5110,9 +5110,9 @@ equipments = {
 
 		build_cost_ic = 111141
 		resources = {
-			aluminium = 3
-			chromium = 5
-			steel = 18
+		#	aluminium = 3
+			chromium = 2
+			steel = 5
 		}
 
 		manpower = 3400
@@ -5153,9 +5153,9 @@ equipments = {
 
 		build_cost_ic = 120320
 		resources = {
-			aluminium = 4
-			chromium = 5
-			steel = 18
+		#	aluminium = 4
+			chromium = 3
+			steel = 5
 		}
 
 		manpower = 3250
@@ -5196,9 +5196,9 @@ equipments = {
 
 		build_cost_ic = 128400
 		resources = {
-			aluminium = 4
-			chromium = 6
-			steel = 18
+		#	aluminium = 4
+			chromium = 3
+			steel = 5
 		}
 
 		manpower = 3100
@@ -5246,7 +5246,7 @@ equipments = {
 
 		build_cost_ic = 25000.00
 		resources = {
-			aluminium = 1
+		#	aluminium = 1
 			steel = 4
 		}
 
@@ -5298,7 +5298,7 @@ equipments = {
 
 		build_cost_ic = 27350.35
 		resources = {
-			aluminium = 1
+		#	aluminium = 1
 			steel = 5
 		}
 
@@ -5348,8 +5348,8 @@ equipments = {
 
 		build_cost_ic = 29450.45
 		resources = {
-			aluminium = 1
-			steel = 7
+		#	aluminium = 1
+			steel = 5
 		}
 
 		manpower = 1400
@@ -5398,8 +5398,8 @@ equipments = {
 
 		build_cost_ic = 32000.45
 		resources = {
-			aluminium = 1
-			steel = 8
+			#aluminium = 1
+			steel = 5
 			chromium = 1
 		}
 
@@ -5449,8 +5449,8 @@ equipments = {
 
 		build_cost_ic = 32000.45
 		resources = {
-			aluminium = 1
-			steel = 8
+		#	aluminium = 1
+			steel = 5
 			chromium = 2
 		}
 
@@ -5500,8 +5500,8 @@ equipments = {
 
 		build_cost_ic = 34350.25
 		resources = {
-			aluminium = 2
-			steel = 9
+		#	aluminium = 2
+			steel = 5
 			chromium = 3
 		}
 		manpower = 2000
@@ -5547,8 +5547,8 @@ equipments = {
 
 		build_cost_ic = 36250.25
 		resources = {
-			aluminium = 2
-			steel = 11
+		#	aluminium = 2
+			steel = 5
 			chromium = 3
 		}
 
@@ -5596,7 +5596,7 @@ equipments = {
 
 		build_cost_ic = 12575.65
 		resources = {
-			tungsten = 1
+		#	tungsten = 1
 			steel = 4
 		}
 
@@ -5644,8 +5644,8 @@ equipments = {
 
 		build_cost_ic = 16755.85
 		resources = {
-			tungsten = 1
-			steel = 6
+		#	tungsten = 1
+			steel = 5
 		}
 
 		manpower = 1000
@@ -5691,9 +5691,9 @@ equipments = {
 
 		build_cost_ic = 19586.56
 		resources = {
-			tungsten = 2
-			steel = 8
-			chromium = 2
+		#	tungsten = 2
+			steel = 5
+		#	chromium = 2
 		}
 
 		manpower = 1000
@@ -5740,9 +5740,9 @@ equipments = {
 
 		build_cost_ic = 21245.52
 		resources = {
-			tungsten = 2
-			steel = 10
-			chromium = 2
+		#	tungsten = 2
+			steel = 5
+			#chromium = 2
 		}
 
 		manpower = 1000
@@ -5789,9 +5789,9 @@ equipments = {
 
 		build_cost_ic = 23451.61
 		resources = {
-			tungsten = 2
-			steel = 11
-			chromium = 3
+		#	tungsten = 2
+			steel = 5
+		#	chromium = 3
 		}
 		manpower = 1000
 	}
@@ -5841,7 +5841,7 @@ equipments = {
 
 		build_cost_ic = 7000.00
 		resources = {
-			steel = 5
+			steel = 3
 		}
 
 		manpower = 4500
@@ -5884,7 +5884,7 @@ equipments = {
 
 		build_cost_ic = 8500.00
 		resources = {
-			steel = 4
+			steel = 3
 		}
 
 		manpower = 750
@@ -5932,7 +5932,7 @@ equipments = {
 
 		build_cost_ic = 10750.60
 		resources = {
-			steel = 5
+			steel = 4
 		}
 
 		manpower = 750
@@ -5978,9 +5978,9 @@ equipments = {
 
 		build_cost_ic = 12715.98
 		resources = {
-			tungsten = 1
-			steel = 6
-			chromium = 1
+		#	tungsten = 1
+			steel = 4
+		#	chromium = 1
 		}
 
 		manpower = 750
@@ -6030,9 +6030,9 @@ equipments = {
 
 		build_cost_ic = 13850.80
 		resources = {
-			tungsten = 1
-			steel = 7
-			chromium = 1
+		#	tungsten = 1
+			steel = 5
+		#	chromium = 1
 		}
 
 		manpower = 750
@@ -6078,9 +6078,9 @@ equipments = {
 
 		build_cost_ic = 15000.00
 		resources = {
-			tungsten = 1
-			steel = 9
-			chromium = 2
+		#	tungsten = 1
+			steel = 5
+		#	chromium = 2
 		}
 
 		manpower = 750
@@ -6179,7 +6179,7 @@ equipments = {
 		build_cost_ic = @attack_sub_build_cost
 		manpower = @attack_sub_hp
 		resources = {
-			steel = 5
+			steel = 3
 		}
 	}
 	attack_submarine_hull_1 = {
@@ -6198,7 +6198,7 @@ equipments = {
 			fixed_ship_battery_slot = module_anti_ship_torpedoes_1
 		}
 		resources = {
-			steel = 5
+			steel = 3
 		}
 	}
 	attack_submarine_hull_2 = {
@@ -6240,8 +6240,8 @@ equipments = {
 		build_cost_ic = @attack_sub_build_cost
 		manpower = @attack_sub_hp
 		resources = {
-			steel = 5
-			aluminium = 1
+			steel = 3
+		#	aluminium = 1
 		}
 	}
 	attack_submarine_hull_3 = {
@@ -6283,8 +6283,8 @@ equipments = {
 		build_cost_ic = @attack_sub_build_cost
 		manpower = @attack_sub_hp
 		resources = {
-			steel = 5
-			aluminium = 2
+			steel = 3
+		#	aluminium = 2
 		}
 	}
 	attack_submarine_hull_4 = {
@@ -6325,9 +6325,9 @@ equipments = {
 		build_cost_ic = @attack_sub_build_cost
 		manpower = @attack_sub_hp
 		resources = {
-			steel = 5
-			aluminium = 2
-			chromium = 1
+			steel = 4
+		#	aluminium = 2
+		#	chromium = 1
 		}
 	}
 	attack_submarine_hull_5 = {
@@ -6368,9 +6368,9 @@ equipments = {
 		build_cost_ic = @attack_sub_build_cost
 		manpower = @attack_sub_hp
 		resources = {
-			steel = 5
-			aluminium = 2
-			chromium = 2
+			steel = 4
+		#	aluminium = 2
+			chromium = 1
 		}
 	}
 	attack_submarine_hull_6 = {
@@ -6413,7 +6413,7 @@ equipments = {
 		manpower = @attack_sub_hp
 		resources = {
 			steel = 5
-			aluminium = 3
+		#	aluminium = 3
 			chromium = 2
 		}
 	}
@@ -7287,7 +7287,7 @@ equipments = {
 		build_cost_ic = @missile_sub_build_cost
 		manpower = @missile_sub_hp
 		resources = {
-			steel = 5
+			steel = 4
 		}
 	}
 
@@ -7307,7 +7307,7 @@ equipments = {
 			fixed_ship_battery_slot = module_anti_ship_torpedoes_1
 		}
 		resources = {
-			steel = 5
+			steel = 4
 		}
 	}
 
@@ -7352,8 +7352,8 @@ equipments = {
 		build_cost_ic = @missile_sub_build_cost
 		manpower = @missile_sub_hp
 		resources = {
-			steel = 5
-			aluminium = 1
+			steel = 4
+		#	aluminium = 1
 		}
 	}
 
@@ -7396,8 +7396,8 @@ equipments = {
 		build_cost_ic = @missile_sub_build_cost
 		manpower = @missile_sub_hp
 		resources = {
-			steel = 5
-			aluminium = 2
+			steel = 4
+			aluminium = 1
 		}
 	}
 
@@ -7441,7 +7441,7 @@ equipments = {
 		manpower = @missile_sub_hp
 		resources = {
 			steel = 5
-			aluminium = 2
+			aluminium = 1
 			chromium = 1
 		}
 	}
@@ -7486,7 +7486,7 @@ equipments = {
 		manpower = @missile_sub_hp
 		resources = {
 			steel = 5
-			aluminium = 3
+			aluminium = 2
 			chromium = 1
 		}
 	}
@@ -7530,7 +7530,7 @@ equipments = {
 		manpower = @missile_sub_hp
 		resources = {
 			steel = 5
-			aluminium = 3
+			aluminium = 2
 			chromium = 2
 		}
 	}
