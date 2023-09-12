@@ -1,4 +1,3 @@
-
 state = {
 	id = 832
 	name = "STATE_832"
@@ -31,7 +30,7 @@ state = {
 		buildings = {
 			infrastructure = 3
 			internet_station = 2
-			offices = 1
+			offices = 2
 			air_base = 2
 		}
 		add_core_of = MEX

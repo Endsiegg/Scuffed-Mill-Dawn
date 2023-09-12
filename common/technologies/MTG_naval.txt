@@ -1,5 +1,4 @@
-
-#Written by Londinium, Bluehunter, Angriest Bird
+# Author(s): Londinimum, BlueHunter, Angriest Bird, Simone
 technologies = {
 	#Years (x-axis)
 	@1945 = -1
@@ -94,6 +93,10 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
 				factor = 5
 				num_of_naval_factories < 5
 			}
@@ -150,6 +153,10 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 
 		categories = {
@@ -182,6 +189,10 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 
 		categories = {
@@ -214,6 +225,14 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2009.1.1
+			}
 		}
 
 		categories = {
@@ -246,6 +265,14 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2024.1.1
+			}
 		}
 
 		categories = {
@@ -273,6 +300,14 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2039.1.1
+			}
 		}
 
 		categories = {
@@ -309,6 +344,10 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 
 		categories = {
@@ -341,6 +380,10 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 
 		categories = {
@@ -373,6 +416,10 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 
 		categories = {
@@ -405,6 +452,14 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2009.1.1
+			}
 		}
 
 		categories = {
@@ -437,6 +492,14 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2024.1.1
+			}
 		}
 
 		categories = {
@@ -464,6 +527,14 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2039.1.1
+			}
 		}
 
 		categories = {
@@ -500,6 +571,10 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 
 		categories = {
@@ -532,6 +607,10 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 
 		categories = {
@@ -569,6 +648,14 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2004.1.1
+			}
 		}
 
 		categories = {
@@ -601,6 +688,14 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2024.1.1
+			}
 		}
 
 		categories = {
@@ -628,6 +723,14 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2044.1.1
+			}
 		}
 
 		categories = {
@@ -660,6 +763,14 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2014.1.1
+			}
 		}
 
 		categories = {
@@ -692,6 +803,14 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2029.1.1
+			}
 		}
 
 		categories = {
@@ -719,6 +838,14 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2044.1.1
+			}
 		}
 
 		categories = {
@@ -758,6 +885,14 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 1964.1.1
+			}
 		}
 
 		categories = {
@@ -784,6 +919,14 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 1964.1.1
+			}
 		}
 
 		categories = {
@@ -813,6 +956,14 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 1984.1.1
+			}
 		}
 
 		research_cost = 1.0
@@ -857,6 +1008,14 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2004.1.1
+			}
 		}
 
 		categories = {
@@ -883,6 +1042,14 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 1984.1.1
+			}
 		}
 
 		categories = {
@@ -916,6 +1083,14 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2024.1.1
+			}
 		}
 
 		categories = {
@@ -947,6 +1122,14 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2044.1.1
+			}
 		}
 
 		categories = {
@@ -973,6 +1156,14 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2014.1.1
+			}
 		}
 
 		categories = {
@@ -1032,6 +1223,10 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 
 		categories = {
@@ -1074,6 +1269,10 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 
 		categories = {
@@ -1107,6 +1306,10 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 
 		categories = {
@@ -1148,6 +1351,10 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 
 		categories = {
@@ -1185,6 +1392,10 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 
 		categories = {
@@ -1223,6 +1434,14 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2004.1.1
+			}
 		}
 
 		categories = {
@@ -1260,6 +1479,14 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2019.1.1
+			}
 		}
 
 		categories = {
@@ -1292,6 +1519,14 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2044.1.1
+			}
 		}
 
 		categories = {
@@ -1325,11 +1560,16 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 
 		categories = {
 			Cat_NAVAL_EQP
 			Cat_SURFACE_SHIP
+			Cat_CARRIER
 			Cat_CV
 			Cat_N_CV
 		}
@@ -1358,11 +1598,16 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 
 		categories = {
 			Cat_NAVAL_EQP
 			Cat_SURFACE_SHIP
+			Cat_CARRIER
 			Cat_CV
 			Cat_N_CV
 		}
@@ -1391,11 +1636,20 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2004.1.1
+			}
 		}
 
 		categories = {
 			Cat_NAVAL_EQP
 			Cat_SURFACE_SHIP
+			Cat_CARRIER
 			Cat_CV
 			Cat_N_CV
 		}
@@ -1424,11 +1678,20 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2024.1.1
+			}
 		}
 
 		categories = {
 			Cat_NAVAL_EQP
 			Cat_SURFACE_SHIP
+			Cat_CARRIER
 			Cat_CV
 			Cat_N_CV
 		}
@@ -1452,11 +1715,20 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2044.1.1
+			}
 		}
 
 		categories = {
 			Cat_NAVAL_EQP
 			Cat_SURFACE_SHIP
+			Cat_CARRIER
 			Cat_CV
 			Cat_N_CV
 		}
@@ -1503,6 +1775,10 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 
 		categories = {
@@ -1538,6 +1814,10 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 
 		categories = {
@@ -1573,6 +1853,10 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 
 		categories = {
@@ -1608,6 +1892,14 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2014.1.1
+			}
 		}
 
 		categories = {
@@ -1638,6 +1930,14 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2039.1.1
+			}
 		}
 
 		categories = {
@@ -1669,6 +1969,10 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 
 		categories = {
@@ -1703,6 +2007,10 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 
 		categories = {
@@ -1737,6 +2045,10 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 
 		categories = {
@@ -1772,6 +2084,14 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2009.1.1
+			}
 		}
 
 		categories = {
@@ -1806,6 +2126,14 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2024.1.1
+			}
 		}
 
 		categories = {
@@ -1835,6 +2163,14 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2039.1.1
+			}
 		}
 
 		categories = {
@@ -1869,6 +2205,10 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 
 		categories = {
@@ -1902,6 +2242,10 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 
 		categories = {
@@ -1935,6 +2279,10 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 
 		categories = {
@@ -1968,6 +2316,14 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2009.1.1
+			}
 		}
 
 		categories = {
@@ -2001,6 +2357,14 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2024.1.1
+			}
 		}
 
 		categories = {
@@ -2029,6 +2393,14 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0.01
+				date < 2039.1.1
+			}
 		}
 
 		categories = {
@@ -2074,6 +2446,10 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -2103,6 +2479,14 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -2133,6 +2517,10 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -2163,6 +2551,14 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2014.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -2189,6 +2585,14 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2039.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -2219,6 +2623,10 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -2251,6 +2659,10 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -2283,6 +2695,14 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2014.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -2309,6 +2729,14 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2014.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -2349,6 +2777,10 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -2377,6 +2809,10 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -2409,6 +2845,10 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -2441,6 +2881,14 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2014.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -2469,6 +2917,10 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -2497,6 +2949,10 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -2527,6 +2983,10 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -2555,6 +3015,14 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2004.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -2585,6 +3053,14 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2019.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -2613,6 +3089,14 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2034.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -2639,6 +3123,14 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2044.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -2668,6 +3160,10 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -2698,6 +3194,10 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -2728,6 +3228,14 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2004.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -2756,6 +3264,14 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2019.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -2784,6 +3300,14 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2034.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -2808,6 +3332,14 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2044.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -2846,6 +3378,10 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -2899,6 +3435,10 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -2928,6 +3468,10 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -2962,6 +3506,10 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -2991,6 +3539,10 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -3015,6 +3567,10 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -3044,6 +3600,10 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -3073,6 +3633,10 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -3102,6 +3666,10 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -3126,6 +3694,10 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -3155,6 +3727,10 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -3189,6 +3765,10 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -3218,6 +3798,10 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -3242,6 +3826,10 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -3271,6 +3859,10 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -3296,10 +3888,14 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = @row155 y = @1975}
+			position = { x = @row155 y = @1975 }
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -3325,10 +3921,14 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = @row155 y = @1990}
+			position = { x = @row155 y = @1990 }
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -3354,10 +3954,14 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = @row155 y = @2005}
+			position = { x = @row155 y = @2005 }
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -3383,10 +3987,14 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = @row155 y = @2020}
+			position = { x = @row155 y = @2020 }
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -3412,10 +4020,14 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = @row155 y = @2035}
+			position = { x = @row155 y = @2035 }
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -3436,10 +4048,14 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = @row155 y = @2045}
+			position = { x = @row155 y = @2045 }
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -3481,6 +4097,10 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -3511,6 +4131,10 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -3541,6 +4165,10 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -3571,6 +4199,10 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -3601,6 +4233,10 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -3631,6 +4267,10 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -3656,6 +4296,10 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -3682,10 +4326,14 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = @row175 y = @1975}
+			position = { x = @row175 y = @1975 }
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -3712,10 +4360,14 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = @row175 y = @1985}
+			position = { x = @row175 y = @1985 }
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -3742,10 +4394,14 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = @row175 y = @2000}
+			position = { x = @row175 y = @2000 }
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -3776,6 +4432,10 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -3806,6 +4466,10 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -3831,6 +4495,10 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -3859,10 +4527,14 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = @row185 y = @1975}
+			position = { x = @row185 y = @1975 }
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -3889,10 +4561,14 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = @row185 y = @1985}
+			position = { x = @row185 y = @1985 }
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -3921,10 +4597,14 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = @row185 y = @2000}
+			position = { x = @row185 y = @2000 }
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -3953,10 +4633,18 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = @row185 y = @2015}
+			position = { x = @row185 y = @2015 }
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2014.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -3985,10 +4673,18 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = @row185 y = @2030}
+			position = { x = @row185 y = @2030 }
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2029.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -4016,6 +4712,14 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2044.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -4041,10 +4745,14 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = @row195 y = @1975}
+			position = { x = @row195 y = @1975 }
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -4070,10 +4778,14 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = @row195 y = @1985}
+			position = { x = @row195 y = @1985 }
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -4099,10 +4811,14 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = @row195 y = @2000}
+			position = { x = @row195 y = @2000 }
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -4128,10 +4844,18 @@ technologies = {
 
 		folder = {
 			name = mtgnavalfolder
-			position = { x = @row195 y = @2015}
+			position = { x = @row195 y = @2015 }
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2014.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -4161,6 +4885,14 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2029.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -4185,6 +4917,14 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2044.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -4215,6 +4955,10 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -4245,6 +4989,10 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -4276,6 +5024,14 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2009.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -4306,6 +5062,14 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2019.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -4336,6 +5100,14 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2034.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -4361,6 +5133,14 @@ technologies = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2044.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 		categories = {
 			Cat_NAVAL_MISC
@@ -4368,13 +5148,12 @@ technologies = {
 	}
 
 
-
-	##Landing Craft
+	# Landing Craft
 	tech_mtg_landing_craft = {
 		on_research_complete = { log = "[GetDateText]: [Root.GetName]: add tech tech_mtg_landing_craft" }
 
 		transport_capacity = -0.20
-		naval_invasion_capacity = 1
+		naval_invasion_capacity = 4
 		amphibious_invasion = 0.05
 		amphibious_invasion_defence = 0.05
 
@@ -4398,6 +5177,10 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 
 		categories = {
@@ -4411,7 +5194,7 @@ technologies = {
 		invasion_preparation = -0.25
 		amphibious_invasion = 0.05
 		amphibious_invasion_defence = 0.05
-		naval_invasion_capacity = 2
+		naval_invasion_capacity = 3
 
 		path = {
 			leads_to_tech = tech_mtg_air_cushioned_landing_craft
@@ -4433,6 +5216,10 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 
 		categories = {
@@ -4467,6 +5254,10 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 
 		categories = {
@@ -4501,6 +5292,10 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 
 		categories = {
@@ -4534,6 +5329,14 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2014.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 
 		categories = {
@@ -4544,7 +5347,7 @@ technologies = {
 	tech_mtg_advanced_landing_craft = {
 		on_research_complete = { log = "[GetDateText]: [Root.GetName]: add tech tech_mtg_advanced_landing_craft" }
 
-		naval_invasion_capacity = 2
+		naval_invasion_capacity = 3
 		amphibious_invasion = 0.05
 		amphibious_invasion_defence = 0.05
 
@@ -4568,6 +5371,14 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2024.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 
 		categories = {
@@ -4607,6 +5418,14 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2034.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 
 		categories = {
@@ -4618,7 +5437,7 @@ technologies = {
 		on_research_complete = { log = "[GetDateText]: [Root.GetName]: add tech tech_mtg_smart_landing_craft" }
 
 		invasion_preparation = -0.25
-		naval_invasion_capacity = 5
+		naval_invasion_capacity = 3
 		amphibious_invasion = 0.05
 		amphibious_invasion_defence = 0.05
 
@@ -4637,11 +5456,18 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0.01
+				date < 2044.1.1
+			}
+			modifier = {
+				factor = 0
+				num_of_naval_factories < 1
+			}
 		}
 
 		categories = {
 			Cat_NAVAL_MISC
 		}
 	}
-
 }

@@ -91,6 +91,7 @@ set_leader = {
 	else_if = { limit = { original_tag = IND } set_leader_IND = yes }
 	else_if = { limit = { original_tag = KOR } set_leader_KOR = yes }
 	else_if = { limit = { original_tag = LAO } set_leader_LAO = yes }
+	else_if = { limit = { original_tag = MAC } set_leader_MAC = yes }
 	else_if = { limit = { original_tag = MAY } set_leader_MAY = yes }
 	else_if = { limit = { original_tag = MLD } set_leader_MLD = yes }
 	else_if = { limit = { original_tag = MON } set_leader_MON = yes }
@@ -140,6 +141,7 @@ set_leader = {
 	else_if = { limit = { original_tag = HON } set_leader_HON = yes }
 	else_if = { limit = { original_tag = NIC } set_leader_NIC = yes }
 	else_if = { limit = { original_tag = PAR } set_leader_PAR = yes }
+	else_if = { limit = { original_tag = SMA } set_leader_SMA = yes }
 	else_if = { limit = { original_tag = PRU } set_leader_PRU = yes }
 	else_if = { limit = { original_tag = SUR } set_leader_SUR = yes }
 	else_if = { limit = { original_tag = URG } set_leader_URG = yes }

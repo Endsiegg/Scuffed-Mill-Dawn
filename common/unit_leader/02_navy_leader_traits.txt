@@ -110,7 +110,7 @@ leader_traits = {
 
 		}
 		trait_xp_factor = {
-			ironside = 0.5     #+100%
+			ironside = 0.5	 #+100%
 		}
 
 		new_commander_weight = {
@@ -277,7 +277,7 @@ leader_traits = {
 		}
 
 		trait_xp_factor = {
-			air_controller = 0.5     #+100%
+			air_controller = 0.5	 #+100%
 		}
 
 		new_commander_weight = {
@@ -1064,8 +1064,10 @@ leader_traits = {
 		type = navy
 
 		gain_xp = {
-			is_fighting_in_terrain = water_deep_ocean
-			is_fighting_in_terrain = ocean
+			OR = {
+				is_fighting_in_terrain = water_deep_ocean
+				is_fighting_in_terrain = ocean
+			}
 		}
 
 		cost = 1000
@@ -1099,8 +1101,10 @@ leader_traits = {
 		type = navy
 
 		gain_xp = {
-			is_fighting_in_terrain = water_shallow_sea
-			is_fighting_in_terrain = water_littoral
+			OR = {
+				is_fighting_in_terrain = water_shallow_sea
+				is_fighting_in_terrain = water_littoral
+			}
 		}
 
 		cost = 1000

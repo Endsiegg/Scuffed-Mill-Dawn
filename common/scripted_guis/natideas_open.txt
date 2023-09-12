@@ -49,7 +49,7 @@ scripted_gui = {
 		ai_check = {
 			OR = {
 				has_political_power > 200
-				has_completed_focus = POL_camp_of_national_unity
+			#	has_completed_focus = POL_camp_of_national_unity
 			}
 		}
 		

@@ -367,11 +367,10 @@ set_leader_CHI = {
 				traits = {
 					engineer
 					emerging_Communist-State
-					career_politician
+					rational
 					polished
 					honest
 					capable
-					rational
 				}
 			}
 

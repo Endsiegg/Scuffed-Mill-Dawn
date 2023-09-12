@@ -19,7 +19,7 @@ technology_sharing_group = {
 	desc = NATO_Tech_Share_desc
 	picture = GFX_technology_sharing_default
 
-	research_sharing_per_country_bonus = 0.1
+	research_sharing_per_country_bonus = 0.01
 
 	available = {
 		or = {
@@ -35,7 +35,7 @@ technology_sharing_group = {
 	desc = Major_Non_NATO_Ally_desc
 	picture = GFX_Major_Non_NATO_Ally_sharing
 
-	research_sharing_per_country_bonus = 0.1
+	research_sharing_per_country_bonus = 0.01
 
 	available = {
 		has_country_flag = Major_Non_NATO_Ally
@@ -48,7 +48,7 @@ technology_sharing_group = {
 	desc = CSTO_Tech_Share_desc
 	picture = GFX_technology_sharing_default
 
-	research_sharing_per_country_bonus = 0.1
+	research_sharing_per_country_bonus = 0.01
 	is_faction_sharing = yes
 
 	available = {
@@ -67,7 +67,7 @@ technology_sharing_group = {
 	desc = SHANGHAI_PACT_Share_desc
 	picture = GFX_technology_sharing_default
 
-	research_sharing_per_country_bonus = 0.1
+	research_sharing_per_country_bonus = 0.02
 	is_faction_sharing = yes
 
 	available = {
@@ -84,7 +84,7 @@ technology_sharing_group = {
 	desc = GCC_Share_desc
 	picture = GFX_technology_sharing_default
 
-	research_sharing_per_country_bonus = 0.1
+	research_sharing_per_country_bonus = 0.02
 	is_faction_sharing = yes
 
 	available = {
@@ -102,7 +102,7 @@ technology_sharing_group = {
 	desc = Greater_China_Share_desc
 	picture = GFX_technology_sharing_default
 
-	research_sharing_per_country_bonus = 0.1
+	research_sharing_per_country_bonus = 0.025
 	is_faction_sharing = yes
 
 	available = {
@@ -116,7 +116,7 @@ technology_sharing_group = {
 	desc = Iron_Brothers_Share_desc
 	picture = GFX_technology_sharing_default
 
-	research_sharing_per_country_bonus = 0.1
+	research_sharing_per_country_bonus = 0.02
 
 	available = {
 	}
@@ -129,7 +129,7 @@ technology_sharing_group = {
 	desc = China_Africa_Share_desc
 	picture = GFX_technology_sharing_default
 
-	research_sharing_per_country_bonus = 0.1
+	research_sharing_per_country_bonus = 0.01
 
 	available = {
 	}
@@ -141,7 +141,7 @@ technology_sharing_group = {
 	desc = EU_Tech_Share_desc
 	picture = GFX_technology_sharing_default
 
-	research_sharing_per_country_bonus = 0.1
+	research_sharing_per_country_bonus = 0.01
 
 	available = {
 		has_idea = EU_member
@@ -155,7 +155,7 @@ technology_sharing_group = {
 	desc = anti_hezbollah_Tech_Share_desc
 	picture = GFX_technology_sharing_default
 
-	research_sharing_per_country_bonus = 0.1
+	research_sharing_per_country_bonus = 0.05
 
 	available = {
 	}
@@ -167,7 +167,7 @@ technology_sharing_group = {
 	desc = israel_usa_Tech_Share_Share_desc
 	picture = GFX_technology_sharing_default
 
-	research_sharing_per_country_bonus = 0.1
+	research_sharing_per_country_bonus = 0.05
 
 	available = {
 	}
@@ -180,7 +180,7 @@ technology_sharing_group = {
 	desc = korea_europe_Share_desc
 	picture = GFX_technology_sharing_default
 
-	research_sharing_per_country_bonus = 0.1
+	research_sharing_per_country_bonus = 0.01
 
 	available = {
 	}
@@ -193,7 +193,7 @@ technology_sharing_group = {
 	desc = korea_israel_Share_desc
 	picture = GFX_technology_sharing_default
 
-	research_sharing_per_country_bonus = 0.1
+	research_sharing_per_country_bonus = 0.02
 
 	available = {
 	}
@@ -207,7 +207,7 @@ technology_sharing_group = {
 	picture = GFX_technology_sharing_default
 
 	is_faction_sharing = yes
-	research_sharing_per_country_bonus = 0.1
+	research_sharing_per_country_bonus = 0.02
 
 	available = {
 		is_in_faction = yes
@@ -215,18 +215,5 @@ technology_sharing_group = {
 			is_in_faction_with = PER
 			tag = PER
 		}
-	}
-}
-
-technology_sharing_group = {
-
-	id = germany_allies_Tech_Share
-	name = germany_allies_Share_name
-	desc = germany_allies_Share_desc
-	picture = GFX_technology_sharing_default
-
-	research_sharing_per_country_bonus = 0.1
-
-	available = {
 	}
 }

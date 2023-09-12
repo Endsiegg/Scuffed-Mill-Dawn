@@ -279,6 +279,9 @@
  tooltip_POTEF_is_caucasus: "когда §Y[GEO.GetNameWithFlag]§!, §Y[ARM.GetNameWithFlag]§! или §Y[AZE.GetNameWithFlag]§! §YПрезидент Европейской Федерации (POTEF)§!"
  tooltip_POTEF_is_visegrad: "когда §Y[POL.GetNameWithFlag]§!, §Y[CZE.GetNameWithFlag]§!, §Y[SLO.GetNameWithFlag]§!, §Y[HUN.GetNameWithFlag]§! или §Y[BLR.GetNameWithFlag]§! §YПрезидент Европейской Федерации (POTEF)§!"
  tooltip_POTEF_is_baltic: "когда §Y[EST.GetNameWithFlag]§!, §Y[LAT.GetNameWithFlag]§! или §Y[LIT.GetNameWithFlag]§! §YПрезидент Европейской Федерации (POTEF)§!"
+ 
+ focus_POTEF301_effect_tt: "Каждый член Европейского Союза §Gулучшит мнение на +25§! со всеми латинскими странами.\n"
+ focus_POTEF502_effect_tt: "Каждый член Европейского Союза §Gулучшит мнение на +30§! со следующими странами: [KAZ.GetNameWithFlag], [KYR.GetNameWithFlag], [TAJ.GetNameWithFlag], [UZB.GetNameWithFlag], [TRK.GetNameWithFlag], [PER.GetNameWithFlag], [TUR.GetNameWithFlag], [GRE.GetNameWithFlag].\nТакже [CHI.GetFlag][CHI.GetAdjective] влияние в этих странах будет §Gуменьшено§!.\n"
 
  ### trigger tooltips ###
  tooltip_focus_POTEF203_trigger: "Находится во фракции §YЕвропейский Союз Обороны§!"
@@ -409,11 +412,16 @@
  EU_POTEF_Nat_Autocracy_nominee_loc_key: " - [?global.var_POTEF_nominee_22.GetFlag] §Y[?global.var_POTEF_nominee_22.GetLeader]§!"
  EU_POTEF_Monarchist_nominee_loc_key: " - [?global.var_POTEF_nominee_23.GetFlag] §Y[?global.var_POTEF_nominee_23.GetLeader]§!"
 
-#######################################
-### European Federation Flag Change ###
-#######################################
+ #######################################
+ ### European Federation Flag Change ###
+ #######################################
 
-EFS_flag_category: "Смена флага Европейской Федерации"
-EFS_flag_category_desc: "После создания Европейской федерации государства решили принять новые флаги по общему европейскому образцу."
-EFS_flag_change: "Смена флага Европейской Федерации"
-EFS_flag_change_desc: "Смена флага на общеевропейский, как в европейском федеральном государстве."
+ EFS_flag_category: "Смена флага Европейской Федерации"
+ EFS_flag_category_desc: "После создания Европейской федерации государства решили принять новые флаги по общему европейскому образцу."
+ EFS_flag_change: "Смена флага Европейской Федерации"
+ EFS_flag_change_desc: "Смена флага на общеевропейский, как в европейском федеральном государстве."
+
+ USoE_Flag_Reset_Flag_category: "Флаг СШЕ"
+ USoE_Flag_Reset_Flag_category_desc: ""
+ USoE_reset_flag: "Сбросить флаг СШЕ"
+ USoE_reset_flag_desc: "Изменить флаг СШЕ на стандартный флаг ЕС (отменить это действие нельзя)."

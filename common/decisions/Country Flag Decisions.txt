@@ -8,8 +8,11 @@ different_country_flags_category = {
 		allowed = {
 			NOT = {
 				original_tag = USA
+				original_tag = BOS
 			}
+
 		}
+
 		visible = {
 			has_country_flag = dynamic_flag
 			has_elections = yes
@@ -63,6 +66,24 @@ different_country_flags_category = {
 					ROOTTAG = "[?original_tag.GetTag]"
 				}
 			}
+			if = {
+				limit = { tag = PER }
+				NOT = {
+					OR = {
+						emerging_hardline_shiite_are_in_power = yes
+						emerging_moderate_shiite_are_in_power = yes
+					}
+				}
+			}
+			if = {
+				limit = { tag = AZE }
+				NOT = {
+					OR = {
+						emerging_hardline_shiite_are_in_power = yes
+						emerging_moderate_shiite_are_in_power = yes
+					}
+				}
+			}
 		}
 
 		complete_effect = {
@@ -105,7 +126,17 @@ different_country_flags_category = {
 		icon = GFX_decision_generic_form_nation
 		cost = 0
 		ai_will_do = { factor = 1 }
+		allowed = {
+			NOT = {
+				original_tag = BOS
+			}
+		}
 		visible = {
+			NOT = { original_tag = BOS }
+			NOT = {
+				has_cosmetic_tag = PER_IRANIAN_EMPIRE
+				has_cosmetic_tag = PER_interim_government
+			}
 			has_country_flag = dynamic_flag
 			has_elections = no
 			OR = {
@@ -208,6 +239,24 @@ different_country_flags_category = {
 					ROOTTAG = "[?original_tag.GetTag]"
 				}
 			}
+			if = {
+				limit = { tag = PER }
+				NOT = {
+					OR = {
+						emerging_hardline_shiite_are_in_power = yes
+						emerging_moderate_shiite_are_in_power = yes
+					}
+				}
+			}
+			if = {
+				limit = { tag = AZE }
+				NOT = {
+					OR = {
+						emerging_hardline_shiite_are_in_power = yes
+						emerging_moderate_shiite_are_in_power = yes
+					}
+				}
+			}
 		}
 
 		complete_effect = {
@@ -234,9 +283,18 @@ different_country_flags_category = {
 		icon = GFX_decision_generic_form_nation
 		cost = 0
 		ai_will_do = { factor = 1 }
+		allowed = {
+			NOT = {
+				original_tag = BOS
+			}
+		}
 		visible = {
 			has_country_flag = dynamic_flag
 			has_elections = no
+			NOT = {
+				has_cosmetic_tag = PER_IRANIAN_EMPIRE
+				has_cosmetic_tag = PER_interim_government
+			}
 			if = {
 				limit = { has_country_flag = is_civil_war_faction }
 				meta_trigger = {
@@ -287,6 +345,24 @@ different_country_flags_category = {
 						}
 					}
 					ROOTTAG = "[?original_tag.GetTag]"
+				}
+			}
+			if = {
+				limit = { tag = PER }
+				NOT = {
+					OR = {
+						emerging_hardline_shiite_are_in_power = yes
+						emerging_moderate_shiite_are_in_power = yes
+					}
+				}
+			}
+			if = {
+				limit = { tag = AZE }
+				NOT = {
+					OR = {
+						emerging_hardline_shiite_are_in_power = yes
+						emerging_moderate_shiite_are_in_power = yes
+					}
 				}
 			}
 		}
@@ -314,7 +390,13 @@ different_country_flags_category = {
 		icon = GFX_decision_generic_form_nation
 		cost = 0
 		ai_will_do = { factor = 1 }
+		allowed = {
+			NOT = {
+				original_tag = BOS
+			}
+		}
 		visible = {
+			NOT = { original_tag = BOS }
 			has_country_flag = dynamic_flag
 			has_elections = no
 			if = {
@@ -363,6 +445,24 @@ different_country_flags_category = {
 				is_in_array = { array = ruling_party value = 8 }
 				is_in_array = { array = ruling_party value = 9 }
 				is_in_array = { array = ruling_party value = 11 }
+			}
+			if = {
+				limit = { tag = PER }
+				NOT = {
+					OR = {
+						emerging_hardline_shiite_are_in_power = yes
+						emerging_moderate_shiite_are_in_power = yes
+					}
+				}
+			}
+			if = {
+				limit = { tag = AZE }
+				NOT = {
+					OR = {
+						emerging_hardline_shiite_are_in_power = yes
+						emerging_moderate_shiite_are_in_power = yes
+					}
+				}
 			}
 		}
 		complete_effect = {
@@ -415,6 +515,11 @@ different_country_flags_category = {
 		icon = GFX_decision_generic_form_nation
 		cost = 0
 		ai_will_do = { factor = 1 }
+		allowed = {
+			NOT = {
+				original_tag = BOS
+			}
+		}
 		visible = {
 			has_country_flag = dynamic_rebel_flag
 			has_civil_war = yes
@@ -482,6 +587,24 @@ different_country_flags_category = {
 						}
 					}
 					ROOTTAG = "[?original_tag.GetTag]"
+				}
+			}
+			if = {
+				limit = { tag = PER }
+				NOT = {
+					OR = {
+						emerging_hardline_shiite_are_in_power = yes
+						emerging_moderate_shiite_are_in_power = yes
+					}
+				}
+			}
+			if = {
+				limit = { tag = AZE }
+				NOT = {
+					OR = {
+						emerging_hardline_shiite_are_in_power = yes
+						emerging_moderate_shiite_are_in_power = yes
+					}
 				}
 			}
 		}
@@ -509,6 +632,11 @@ different_country_flags_category = {
 		icon = GFX_decision_generic_form_nation
 		cost = 0
 		ai_will_do = { factor = 1 }
+		allowed = {
+			NOT = {
+				original_tag = BOS
+			}
+		}
 		visible = {
 			has_country_flag = dynamic_rebel_flag
 			has_civil_war = yes
@@ -548,6 +676,24 @@ different_country_flags_category = {
 						}
 					}
 					ROOTTAG = "[?original_tag.GetTag]"
+				}
+			}
+			if = {
+				limit = { tag = PER }
+				NOT = {
+					OR = {
+						emerging_hardline_shiite_are_in_power = yes
+						emerging_moderate_shiite_are_in_power = yes
+					}
+				}
+			}
+			if = {
+				limit = { tag = AZE }
+				NOT = {
+					OR = {
+						emerging_hardline_shiite_are_in_power = yes
+						emerging_moderate_shiite_are_in_power = yes
+					}
 				}
 			}
 		}
@@ -579,6 +725,9 @@ different_country_flags_category = {
 				has_country_flag = dynamic_flag
 				has_country_flag = fix_your_broken_dynamic_tags
 			}
+			NOT = {
+				has_cosmetic_tag = PER_mullahs_government
+			}
 			if = {
 				limit = { NOT = { tag = original_tag } }
 				any_country_with_original_tag = {
@@ -587,6 +736,24 @@ different_country_flags_category = {
 				}
 			}
 			else = { always = no }
+			if = {
+				limit = { tag = PER }
+				NOT = {
+					OR = {
+						emerging_hardline_shiite_are_in_power = yes
+						emerging_moderate_shiite_are_in_power = yes
+					}
+				}
+			}
+			if = {
+				limit = { tag = AZE }
+				NOT = {
+					OR = {
+						emerging_hardline_shiite_are_in_power = yes
+						emerging_moderate_shiite_are_in_power = yes
+					}
+				}
+			}
 		}
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision add_dynamic_flag"
@@ -654,7 +821,7 @@ different_country_flags_category = {
 					AND = {
 						has_civil_war = yes
 						OR = {
-							NOT = {tag = USA}
+							NOT = { tag = USA }
 							has_cosmetic_tag = USA_REB
 							has_cosmetic_tag = USA_REB_S
 						}
@@ -670,7 +837,7 @@ different_country_flags_category = {
 				set_cosmetic_tag = USA
 			}
 			else_if = {
-				limit = {check_variable = { USA_state_number = 51 } }
+				limit = { check_variable = { USA_state_number = 51 } }
 				set_cosmetic_tag = USA_51
 			}
 			else = {
@@ -705,7 +872,7 @@ different_country_flags_category = {
 		ai_will_do = { factor = 1 }
 		allowed = { tag = IRQ }
 		visible = {
-			has_cosmetic_tag = IRQ
+			NOT = { has_cosmetic_tag = IRQ_NEW }
 			date > 2008.01.22
 		}
 		complete_effect = {

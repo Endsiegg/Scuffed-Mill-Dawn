@@ -2,7 +2,7 @@ state = {
 	id = 1055
 	name = "STATE_1055"
 	manpower = 3705980
-	state_category = state_05
+	state_category = state_04
 
 	history = {
 		owner = POR
@@ -23,7 +23,7 @@ state = {
 			}
 		}
 		add_core_of = POR
-		add_core_of = GLC
+		add_core_of = GAL
 		2017.1.1 = {
 			add_manpower = -248352
 			buildings = {

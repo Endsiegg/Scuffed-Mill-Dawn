@@ -1,3 +1,4 @@
+#@ -1,1031 +1,540 @@
 ideas = {
 
 	country = {
@@ -51,7 +52,7 @@ ideas = {
 			picture = research_bonus
 
 			modifier = {
-				consumer_goods_factor =  -0.05
+				consumer_goods_factor = -0.05
 			}
 		}
 
@@ -68,7 +69,7 @@ ideas = {
 			picture = research_bonus
 
 			modifier = {
-				consumer_goods_factor =  -0.03
+				consumer_goods_factor = -0.03
 			}
 		}
 
@@ -83,6 +84,7 @@ ideas = {
 			}
 
 			picture = ISR_carmel_program
+			picture = research_bonus
 
 			modifier = {
 				army_armor_speed_factor = 0.05
@@ -102,6 +104,7 @@ ideas = {
 			}
 
 			picture = manpower_bonus
+			picture = research_bonus
 
 			modifier = {
 				conscription = 0.03
@@ -253,6 +256,7 @@ ideas = {
 			}
 
 			picture = reserve_divisions
+			picture = research_bonus
 
 			modifier = {
 				army_org_factor = 0.1
@@ -271,6 +275,7 @@ ideas = {
 			}
 
 			picture = ISR_Mossad
+			picture = research_bonus
 
 			modifier = {
 				operative_slot = 2
@@ -289,6 +294,7 @@ ideas = {
 			}
 
 			picture = yozma_ISR
+			picture = research_bonus
 
 			modifier = {
 				research_speed_factor = 0.08
@@ -306,6 +312,7 @@ ideas = {
 			}
 
 			picture = israel_shin_bet
+			picture = research_bonus
 
 			modifier = {
 				resistance_target = -0.1
@@ -324,6 +331,7 @@ ideas = {
 			}
 
 			picture = ISR_Aman
+			picture = research_bonus
 
 			modifier = {
 				recon_factor = 0.05
@@ -430,6 +438,7 @@ ideas = {
 			}
 
 			picture = drone_ISR
+			picture = research_bonus
 
 			equipment_bonus = {
 				Air_UAV_equipment = {
@@ -449,6 +458,7 @@ ideas = {
 			}
 
 			picture = ISR_very_low_happiness
+			picture = research_bonus
 
 			modifier = {
 				stability_weekly = -0.03
@@ -463,6 +473,7 @@ ideas = {
 			}
 
 			picture = ISR_low_happiness
+			picture = research_bonus
 
 			modifier = {
 				stability_weekly = -0.01
@@ -477,6 +488,7 @@ ideas = {
 			}
 
 			picture = ISR_moderate_happiness
+			picture = research_bonus
 
 			modifier = {
 			}
@@ -489,6 +501,7 @@ ideas = {
 			}
 
 			picture = ISR_high_happiness
+			picture = research_bonus
 
 			modifier = {
 				stability_weekly = 0.01
@@ -503,6 +516,7 @@ ideas = {
 			}
 
 			picture = ISR_very_high_happiness
+			picture = research_bonus
 
 			modifier = {
 				stability_weekly = 0.03
@@ -517,12 +531,14 @@ ideas = {
 			}
 
 			picture = ISR_low_terrorism
+			picture = research_bonus
 
 
 			modifier = {
 
 			}
 		}
+
 
 		isr_moderate_terrorism = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: Us Investment" }
@@ -532,16 +548,17 @@ ideas = {
 			}
 
 			picture = ISR_moderate_terrorism
+			picture = research_bonus
 
 
 			modifier = {
-
-			stability_weekly = -0.005
-            war_support_weekly = 0.008
-            resistance_growth = 0.06
-
+				stability_weekly = -0.005
+				war_support_weekly = -0.008
+				resistance_growth = 0.06
+				required_garrison_factor = 0.07
 			}
 		}
+
 
 		isr_high_terrorism = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: Us Investment" }
@@ -551,14 +568,14 @@ ideas = {
 			}
 
 			picture = ISR_high_terrorism
+			picture = research_bonus
 
 
 			modifier = {
-
-			stability_weekly = -0.010
-            war_support_weekly = 0.013
-            resistance_growth = 0.12
-
+				stability_weekly = -0.010
+				war_support_weekly = -0.013
+				resistance_growth = 0.12
+				required_garrison_factor = 0.10
 			}
 		}
 
@@ -570,14 +587,14 @@ ideas = {
 			}
 
 			picture = ISR_very_high_terrorism
+			picture = research_bonus
 
 
 			modifier = {
-
-            stability_weekly = -0.015
-            war_support_weekly = 0.018
-            resistance_growth = 0.17
-
+				stability_weekly = -0.015
+				war_support_weekly = -0.018
+				resistance_growth = 0.17
+				required_garrison_factor = 0.14
 			}
 		}
 
@@ -592,7 +609,6 @@ ideas = {
 
 
 			modifier = {
-
             stability_weekly = -0.020
             war_support_weekly = 0.025
             resistance_growth = 0.22
@@ -999,6 +1015,7 @@ ideas = {
 			}
 
 			cancel = {}
+			picture = research_bonus
 
 			picture = idea_faction_jerusalem_defence_pact_member
 
@@ -1029,3 +1046,4 @@ ideas = {
 			}
 		}
 	}	
+}

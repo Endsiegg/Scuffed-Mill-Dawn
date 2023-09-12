@@ -1,4 +1,4 @@
-﻿# Author(s): Manchu Yu, Momokio
+﻿# Author(s): Manchu Yu
 # Last Modified 14/02/2022 by Angriest Bird
 focus_tree = {
 	id = korea_south
@@ -10,6 +10,7 @@ focus_tree = {
 			original_tag = KOR
 		}
 	}
+	shared_focus = KOR_korea_reunified
 
 	continuous_focus_position = { x = 0 y = 1000 }
 
@@ -21,17 +22,12 @@ focus_tree = {
 		x = 0
 		y = 0
 
-		cost = 5
-
-		search_filters = {}
-
-		available = {
-		}
+		cost = 8
 
 		completion_reward = {
-			army_experience = 50
-			navy_experience = 50
-			air_experience = 50
+			army_experience = 25
+			navy_experience = 25
+			air_experience = 25
 			log = "[GetDateText]: [This.GetName]: focus KOR_the_rok_armed_forces executed"
 		}
 
@@ -48,14 +44,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = KOR_the_rok_armed_forces
 
-		cost = 5
+		cost = 8
 
 		prerequisite = { focus = KOR_the_rok_armed_forces }
 
-		search_filters = {FOCUS_FILTER_INDUSTRY}
-
-		available = {
-		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
 			add_ideas = foreign_procurement
@@ -78,9 +71,9 @@ focus_tree = {
 		cost = 10
 
 		prerequisite = { focus = KOR_foreign_procurement }
-		#mutually_exclusive = { focus = KOR_c295 }
+		mutually_exclusive = { focus = KOR_c295 }
 
-		search_filters = {FOCUS_FILTER_AIRCRAFT FOCUS_FILTER_EQUIPMENT}
+		search_filters = { FOCUS_FILTER_AIRCRAFT FOCUS_FILTER_EQUIPMENT }
 
 		available = {
 			USA = {
@@ -95,11 +88,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			set_temp_variable = { treasury_change = -20 }
+			set_temp_variable = { treasury_change = -10 }
 			modify_treasury_effect = yes
 			add_equipment_to_stockpile = {
 				type = naval_plane4
-				amount = 50
+				amount = 20
 				producer = USA
 			}
 			log = "[GetDateText]: [This.GetName]: focus KOR_p8_poseidon executed"
@@ -121,9 +114,9 @@ focus_tree = {
 		cost = 10
 
 		prerequisite = { focus = KOR_foreign_procurement }
-		#mutually_exclusive = { focus = KOR_p8_poseidon }
+		mutually_exclusive = { focus = KOR_p8_poseidon }
 
-		search_filters = {FOCUS_FILTER_AIRCRAFT FOCUS_FILTER_EQUIPMENT}
+		search_filters = { FOCUS_FILTER_AIRCRAFT FOCUS_FILTER_EQUIPMENT }
 
 		available = {
 			SPR = {
@@ -138,11 +131,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			set_temp_variable = { treasury_change = -20 }
+			set_temp_variable = { treasury_change = -2 }
 			modify_treasury_effect = yes
 			add_equipment_to_stockpile = {
 				type = naval_plane3
-				amount = 50
+				amount = 20
 				producer = SPR
 			}
 			log = "[GetDateText]: [This.GetName]: focus KOR_c295 executed"
@@ -165,7 +158,7 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_c295 focus = KOR_p8_poseidon }
 
-		search_filters = {FOCUS_FILTER_AIRCRAFT}
+		search_filters = { FOCUS_FILTER_AIRCRAFT }
 
 		available = {
 			USA = {
@@ -177,7 +170,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			set_temp_variable = { treasury_change = -5 }
+			set_temp_variable = { treasury_change = -1.5 }
 			modify_treasury_effect = yes
 			add_ideas = f16_upgrades
 			log = "[GetDateText]: [This.GetName]: focus KOR_upgrade_f16s executed"
@@ -200,7 +193,7 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_upgrade_f16s }
 
-		search_filters = {FOCUS_FILTER_AIRCRAFT FOCUS_FILTER_EQUIPMENT}
+		search_filters = { FOCUS_FILTER_AIRCRAFT FOCUS_FILTER_EQUIPMENT }
 
 		available = {
 			USA = {
@@ -215,11 +208,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			set_temp_variable = { treasury_change = -30 }
+			set_temp_variable = { treasury_change = -20 }
 			modify_treasury_effect = yes
 			add_equipment_to_stockpile = {
 				type = MR_Fighter4
-				amount = 100
+				amount = 60
 				producer = USA
 			}
 			log = "[GetDateText]: [This.GetName]: focus KOR_order_f35s executed"
@@ -238,14 +231,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = KOR_the_rok_armed_forces
 
-		cost = 5
+		cost = 8
 
 		prerequisite = { focus = KOR_the_rok_armed_forces }
 
-		search_filters = {FOCUS_FILTER_NAVY}
-
-		available = {
-		}
+		search_filters = { FOCUS_FILTER_NAVY }
 
 		completion_reward = {
 			navy_experience = 50
@@ -269,16 +259,14 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_blue_water_navy }
 
-		search_filters = {FOCUS_FILTER_NAVY FOCUS_FILTER_RESEARCH}
-
-		available = {
-		}
+		search_filters = { FOCUS_FILTER_NAVY FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			set_temp_variable = { treasury_change = -5 }
 			modify_treasury_effect = yes
 			add_tech_bonus = {
-				bonus = 1
+				name = KOR_kss_program
+				bonus = 0.5
 				uses = 2
 				category = Cat_D_SUB
 			}
@@ -302,16 +290,14 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_kss_program }
 
-		search_filters = {FOCUS_FILTER_NAVY FOCUS_FILTER_RESEARCH}
-
-		available = {
-		}
+		search_filters = { FOCUS_FILTER_NAVY FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			set_temp_variable = { treasury_change = -10 }
 			modify_treasury_effect = yes
 			add_tech_bonus = {
-				bonus = 1
+				name = KOR_ffx_program
+				bonus = 0.5
 				uses = 2
 				category = Cat_FRIGATE
 			}
@@ -335,16 +321,14 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_ffx_program }
 
-		search_filters = {FOCUS_FILTER_NAVY FOCUS_FILTER_RESEARCH}
-
-		available = {
-		}
+		search_filters = { FOCUS_FILTER_NAVY FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			set_temp_variable = { treasury_change = -15 }
 			modify_treasury_effect = yes
 			add_tech_bonus = {
-				bonus = 1
+				name = KOR_kdx_program
+				bonus = 0.5
 				uses = 2
 				category = Cat_DESTROYER
 			}
@@ -368,16 +352,14 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_kdx_program }
 
-		search_filters = {FOCUS_FILTER_NAVY FOCUS_FILTER_RESEARCH}
-
-		available = {
-		}
+		search_filters = { FOCUS_FILTER_NAVY FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			set_temp_variable = { treasury_change = -20 }
 			modify_treasury_effect = yes
 			add_tech_bonus = {
-				bonus = 1
+				name = KOR_lpx_program
+				bonus = 0.5
 				uses = 2
 				category = Cat_LPD
 			}
@@ -401,21 +383,12 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_blue_water_navy }
 
-		search_filters = {FOCUS_FILTER_NAVY}
-
-		available = {
-		}
+		search_filters = { FOCUS_FILTER_NAVY }
 
 		completion_reward = {
-			set_temp_variable = { treasury_change = -20 }
+			set_temp_variable = { treasury_change = -2 }
 			modify_treasury_effect = yes
 			608 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
 				add_building_construction = {
 					type = naval_base
 					level = 2
@@ -443,10 +416,7 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_jeju_complex }
 
-		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY}
-
-		available = {
-		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY }
 
 		completion_reward = {
 			set_temp_variable = { treasury_change = -15 }
@@ -480,13 +450,10 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_expand_dockyards }
 
-		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY}
-
-		available = {
-		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY }
 
 		completion_reward = {
-			set_temp_variable = { treasury_change = -5 }
+			set_temp_variable = { treasury_change = -2 }
 			modify_treasury_effect = yes
 			add_ideas = Bolster_The_Navy
 			log = "[GetDateText]: [This.GetName]: focus KOR_ship_building_effort executed"
@@ -509,10 +476,7 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_ship_building_effort }
 
-		search_filters = {FOCUS_FILTER_NAVY}
-
-		available = {
-		}
+		search_filters = { FOCUS_FILTER_NAVY }
 
 		completion_reward = {
 			add_ideas = KOR_smart_navy
@@ -536,11 +500,6 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_the_rok_armed_forces }
 
-		search_filters = {}
-
-		available = {
-		}
-
 		completion_reward = {
 			army_experience = 50
 			log = "[GetDateText]: [This.GetName]: focus KOR_modernize_the_army executed"
@@ -563,13 +522,10 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_modernize_the_army }
 
-		search_filters = {FOCUS_FILTER_RESEARCH}
-
-		available = {
-		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			set_temp_variable = { treasury_change = -5 }
+			set_temp_variable = { treasury_change = -1.5 }
 			modify_treasury_effect = yes
 			add_timed_idea = {
 				idea = scientific_advances5
@@ -595,16 +551,14 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_rd_funding }
 
-		search_filters = {FOCUS_FILTER_RESEARCH}
-
-		available = {
-		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			set_temp_variable = { treasury_change = -2 }
 			modify_treasury_effect = yes
 			add_tech_bonus = {
-				bonus = 2
+				name = KOR_rifle_modernization_program
+				bonus = 0.25
 				uses = 2
 				category = Cat_INF_WEP
 			}
@@ -628,16 +582,14 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_rifle_modernization_program }
 
-		search_filters = {FOCUS_FILTER_RESEARCH}
-
-		available = {
-		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			set_temp_variable = { treasury_change = -5 }
 			modify_treasury_effect = yes
 			add_tech_bonus = {
-				bonus = 2
+				name = KOR_next_generation_ifvs
+				bonus = 0.25
 				uses = 2
 				category = Cat_IFV
 			}
@@ -661,17 +613,15 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_next_generation_ifvs }
 
-		search_filters = {FOCUS_FILTER_RESEARCH}
-
-		available = {
-		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			set_temp_variable = { treasury_change = -10 }
+			set_temp_variable = { treasury_change = -7.5 }
 			modify_treasury_effect = yes
 			add_tech_bonus = {
-				bonus = 3
-				uses = 1
+				name = KOR_tank_improvements
+				bonus = 0.25
+				uses = 2
 				category = Cat_MBT
 			}
 			log = "[GetDateText]: [This.GetName]: focus KOR_tank_improvements executed"
@@ -693,8 +643,6 @@ focus_tree = {
 		cost = 7
 
 		prerequisite = { focus = KOR_modernize_the_army }
-
-		search_filters = {}
 
 		available = {
 			NOT = { has_idea = no_women_in_military }
@@ -722,16 +670,14 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_women_in_the_special_forces }
 
-		search_filters = {FOCUS_FILTER_RESEARCH}
-
-		available = {
-		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			set_temp_variable = { treasury_change = -0.5 }
 			modify_treasury_effect = yes
 			add_tech_bonus = {
-				bonus = 1
+				name = KOR_ticn_program
+				bonus = 0.25
 				uses = 2
 				category = Cat_CnC
 			}
@@ -755,16 +701,14 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_ticn_program }
 
-		search_filters = {FOCUS_FILTER_RESEARCH}
-
-		available = {
-		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			set_temp_variable = { treasury_change = -0.5 }
 			modify_treasury_effect = yes
 			add_tech_bonus = {
-				bonus = 1
+				name = KOR_bolster_cyber_security
+				bonus = 0.25
 				uses = 2
 				category = encryption_tech
 			}
@@ -788,16 +732,13 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_bolster_cyber_security }
 
-		search_filters = {FOCUS_FILTER_RESEARCH}
-
-		available = {
-		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = GENERIC_land_doctrine_innovations
 				category = land_doctrine
-				uses = 3
+				uses = 2
 				cost_reduction = 0.5
 			}
 			log = "[GetDateText]: [This.GetName]: focus KOR_it_augmentation executed"
@@ -820,16 +761,14 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_modernize_the_army }
 
-		search_filters = {FOCUS_FILTER_RESEARCH}
-
-		available = {
-		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			set_temp_variable = { treasury_change = -0.5 }
 			modify_treasury_effect = yes
 			add_tech_bonus = {
-				bonus = 1
+				name = KOR_warrior_platform
+				bonus = 0.25
 				uses = 3
 				technology = body_armor_2010
 				technology = body_armor_2030
@@ -856,16 +795,14 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_warrior_platform }
 
-		search_filters = {FOCUS_FILTER_RESEARCH}
-
-		available = {
-		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			set_temp_variable = { treasury_change = -0.5 }
 			modify_treasury_effect = yes
 			add_tech_bonus = {
-				bonus = 1
+				name = KOR_new_uniforms
+				bonus = 0.25
 				uses = 2
 				technology = camouflage3
 				technology = camouflage4
@@ -891,11 +828,6 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_new_uniforms }
 
-		search_filters = {}
-
-		available = {
-		}
-
 		completion_reward = {
 			set_temp_variable = { treasury_change = -1 }
 			modify_treasury_effect = yes
@@ -920,10 +852,8 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_focus_on_the_sof }
 
-		search_filters = {}
-
 		available = {
-			num_divisions < 75
+			num_divisions < 46
 		}
 
 		completion_reward = {
@@ -949,11 +879,9 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_the_rok_armed_forces }
 
-		search_filters = {}
-
 		available = {
-			#has_idea = KOR_korea_aerospace_industries_aircraft_company
-			#has_idea = KOR_korea_aerospace_industries_helicopter_company
+			has_idea = KOR_korea_aerospace_industries_aircraft_company
+			has_idea = KOR_korea_aerospace_industries_helicopter_company
 		}
 
 		completion_reward = {
@@ -978,16 +906,14 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_korea_aerospace_industries }
 
-		search_filters = {FOCUS_FILTER_AIRCRAFT FOCUS_FILTER_RESEARCH}
-
-		available = {
-		}
+		search_filters = { FOCUS_FILTER_AIRCRAFT FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			set_temp_variable = { treasury_change = -5 }
 			modify_treasury_effect = yes
 			add_tech_bonus = {
-				bonus = 1
+				name = KOR_korean_helicopters
+				bonus = 0.25
 				uses = 2
 				category = Cat_HELI
 			}
@@ -1011,16 +937,14 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_korean_helicopters }
 
-		search_filters = {FOCUS_FILTER_AIRCRAFT FOCUS_FILTER_RESEARCH}
-
-		available = {
-		}
+		search_filters = { FOCUS_FILTER_AIRCRAFT FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			set_temp_variable = { treasury_change = -2.5 }
 			modify_treasury_effect = yes
 			add_tech_bonus = {
-				bonus = 1
+				name = KOR_next_generation_uavs
+				bonus = 0.5
 				uses = 1
 				category = Cat_A_UAV
 			}
@@ -1044,16 +968,14 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_next_generation_uavs }
 
-		search_filters = {FOCUS_FILTER_AIRCRAFT FOCUS_FILTER_RESEARCH}
-
-		available = {
-		}
+		search_filters = { FOCUS_FILTER_AIRCRAFT FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			set_temp_variable = { treasury_change = -7.5 }
 			modify_treasury_effect = yes
 			add_tech_bonus = {
-				bonus = 1
+				name = KOR_experimental_fighter
+				bonus = 0.25
 				uses = 4
 				technology = MR_Fighter2
 				technology = MR_Fighter3
@@ -1080,10 +1002,7 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_experimental_fighter }
 
-		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH}
-
-		available = {
-		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
 			if = {
@@ -1121,10 +1040,7 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_the_rok_armed_forces }
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
-
-		available = {
-		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
 			add_political_power = 100
@@ -1149,7 +1065,7 @@ focus_tree = {
 		prerequisite = { focus = KOR_conscription_policy }
 		mutually_exclusive = { focus = KOR_maintain_hardline_approach }
 
-		search_filters = {FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL }
 
 		bypass = {
 			OR = {
@@ -1201,7 +1117,7 @@ focus_tree = {
 		prerequisite = { focus = KOR_conscription_policy }
 		mutually_exclusive = { focus = KOR_tolerate_objectors }
 
-		search_filters = {FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT}
+		search_filters = { FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 
 		available = {
 			OR = {
@@ -1236,7 +1152,7 @@ focus_tree = {
 		prerequisite = { focus = KOR_tolerate_objectors focus = KOR_maintain_hardline_approach }
 		mutually_exclusive = { focus = KOR_favor_traditional_values }
 
-		search_filters = {FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL }
 
 		available = {
 			NOT = { has_idea = KOR_national_assembly_conservative }
@@ -1290,10 +1206,7 @@ focus_tree = {
 		prerequisite = { focus = KOR_tolerate_objectors focus = KOR_maintain_hardline_approach }
 		mutually_exclusive = { focus = KOR_repeal_article_92_6 }
 
-		search_filters = {FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL}
-
-		available = {
-		}
+		search_filters = { FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
 			set_temp_variable = { temp_opinion = 5 }
@@ -1320,7 +1233,7 @@ focus_tree = {
 		prerequisite = { focus = KOR_repeal_article_92_6 focus = KOR_favor_traditional_values }
 		mutually_exclusive = { focus = KOR_require_naturalized_citizens }
 
-		search_filters = {FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_MANPOWER FOCUS_FILTER_MILITARY_LAWS FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_MANPOWER FOCUS_FILTER_MILITARY_LAWS FOCUS_FILTER_POLITICAL }
 
 		available = {
 			OR = {
@@ -1378,7 +1291,7 @@ focus_tree = {
 		prerequisite = { focus = KOR_repeal_article_92_6 focus = KOR_favor_traditional_values }
 		mutually_exclusive = { focus = KOR_reduce_conscription }
 
-		search_filters = {FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL }
 
 		available = {
 			has_idea = draft_army
@@ -1415,13 +1328,10 @@ focus_tree = {
 
 		cost = 5
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
-
-		available = {
-		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_political_power = 100
+			add_political_power = 25
 			log = "[GetDateText]: [This.GetName]: focus KOR_state_of_the_republic executed"
 		}
 
@@ -1442,7 +1352,7 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_state_of_the_republic }
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		available = {
 			OR = {
@@ -1452,7 +1362,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 75
+			add_political_power = 50
 			custom_effect_tooltip = KOR_leftparties_tt
 			log = "[GetDateText]: [This.GetName]: focus KOR_the_korean_left executed"
 		}
@@ -1474,11 +1384,6 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_the_korean_left }
 		mutually_exclusive = { focus = KOR_address_inequality }
-
-		search_filters = {}
-
-		available = {
-		}
 
 		completion_reward = {
 			add_stability = -0.05
@@ -1506,10 +1411,7 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_anti_capitalist_backlash }
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
-
-		available = {
-		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
 			set_temp_variable = { party_index = 4 }
@@ -1536,10 +1438,7 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_support_underground_organizations }
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
-
-		available = {
-		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
 			set_temp_variable = { party_index = 4 }
@@ -1566,10 +1465,7 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_spread_radical_beliefs }
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
-
-		available = {
-		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
 			set_temp_variable = { party_index = 4 }
@@ -1596,11 +1492,6 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_national_liberation }
 
-		search_filters = {}
-
-		available = {
-		}
-
 		completion_reward = {
 			unlock_decision_tooltip = KOR_recruitment_campaign
 			log = "[GetDateText]: [This.GetName]: focus KOR_form_armed_militias executed"
@@ -1622,11 +1513,6 @@ focus_tree = {
 		cost = 10
 
 		prerequisite = { focus = KOR_national_liberation }
-
-		search_filters = {}
-
-		available = {
-		}
 
 		completion_reward = {
 			unlock_decision_tooltip = KOR_raid_armories
@@ -1651,11 +1537,6 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_make_preparations }
 		prerequisite = { focus = KOR_form_armed_militias }
-
-		search_filters = {}
-
-		available = {
-		}
 
 		bypass = { has_government = communism }
 
@@ -1690,7 +1571,7 @@ focus_tree = {
 			hidden_effect = {
 				random_country_with_original_tag = {
 					original_tag_to_check = KOR
-					limit = { NOT = { has_government = communism }}
+					limit = { NOT = { has_government = communism } }
 					remove_ideas = { rival_government }
 					remove_from_array = { global.rival_governments = THIS }
 					add_opinion_modifier = {
@@ -1739,98 +1620,98 @@ focus_tree = {
 					set_cosmetic_tag = KOR_REB_S
 				}
 				if = {
-					limit = { check_variable = { juche_volunteers > 0 }}
+					limit = { check_variable = { juche_volunteers > 0 } }
 					add_manpower = 4000
 					608 = {
 						create_unit = { division = " name = \"2nd Volunteers\" division_template = \"National Liberation Volunteers\" start_experience_factor = 0.1 start_equipment_factor = 0.01" owner = KOR }
 					}
 				}
 				if = {
-					limit = { check_variable = { juche_volunteers > 1 }}
+					limit = { check_variable = { juche_volunteers > 1 } }
 					add_manpower = 4000
 					608 = {
 						create_unit = { division = " name = \"3rd Volunteers\" division_template = \"National Liberation Volunteers\" start_experience_factor = 0.1 start_equipment_factor = 0.01" owner = KOR }
 					}
 				}
 				if = {
-					limit = { check_variable = { juche_volunteers > 2 }}
+					limit = { check_variable = { juche_volunteers > 2 } }
 					add_manpower = 4000
 					608 = {
 						create_unit = { division = " name = \"4th Volunteers\" division_template = \"National Liberation Volunteers\" start_experience_factor = 0.1 start_equipment_factor = 0.01" owner = KOR }
 					}
 				}
 				if = {
-					limit = { check_variable = { juche_volunteers > 3 }}
+					limit = { check_variable = { juche_volunteers > 3 } }
 					add_manpower = 4000
 					608 = {
 						create_unit = { division = " name = \"5th Volunteers\" division_template = \"National Liberation Volunteers\" start_experience_factor = 0.1 start_equipment_factor = 0.01" owner = KOR }
 					}
 				}
 				if = {
-					limit = { check_variable = { juche_volunteers > 4 }}
+					limit = { check_variable = { juche_volunteers > 4 } }
 					add_manpower = 4000
 					608 = {
 						create_unit = { division = " name = \"6th Volunteers\" division_template = \"National Liberation Volunteers\" start_experience_factor = 0.1 start_equipment_factor = 0.01" owner = KOR }
 					}
 				}
 				if = {
-					limit = { check_variable = { juche_volunteers > 5 }}
+					limit = { check_variable = { juche_volunteers > 5 } }
 					add_manpower = 4000
 					608 = {
 						create_unit = { division = " name = \"7th Volunteers\" division_template = \"National Liberation Volunteers\" start_experience_factor = 0.1 start_equipment_factor = 0.01" owner = KOR }
 					}
 				}
 				if = {
-					limit = { check_variable = { juche_volunteers > 6 }}
+					limit = { check_variable = { juche_volunteers > 6 } }
 					add_manpower = 4000
 					608 = {
 						create_unit = { division = " name = \"8th Volunteers\" division_template = \"National Liberation Volunteers\" start_experience_factor = 0.1 start_equipment_factor = 0.01" owner = KOR }
 					}
 				}
 				if = {
-					limit = { check_variable = { juche_volunteers > 7 }}
+					limit = { check_variable = { juche_volunteers > 7 } }
 					add_manpower = 4000
 					608 = {
 						create_unit = { division = " name = \"9th Volunteers\" division_template = \"National Liberation Volunteers\" start_experience_factor = 0.1 start_equipment_factor = 0.01" owner = KOR }
 					}
 				}
 				if = {
-					limit = { check_variable = { juche_volunteers > 8 }}
+					limit = { check_variable = { juche_volunteers > 8 } }
 					add_manpower = 4000
 					608 = {
 						create_unit = { division = " name = \"10th Volunteers\" division_template = \"National Liberation Volunteers\" start_experience_factor = 0.1 start_equipment_factor = 0.01" owner = KOR }
 					}
 				}
 				if = {
-					limit = { check_variable = { juche_volunteers > 9 }}
+					limit = { check_variable = { juche_volunteers > 9 } }
 					add_manpower = 4000
 					608 = {
 						create_unit = { division = " name = \"11th Volunteers\" division_template = \"National Liberation Volunteers\" start_experience_factor = 0.1 start_equipment_factor = 0.01" owner = KOR }
 					}
 				}
 				if = {
-					limit = { check_variable = { juche_volunteers > 10 }}
+					limit = { check_variable = { juche_volunteers > 10 } }
 					add_manpower = 4000
 					608 = {
 						create_unit = { division = " name = \"12th Volunteers\" division_template = \"National Liberation Volunteers\" start_experience_factor = 0.1 start_equipment_factor = 0.01" owner = KOR }
 					}
 				}
 				if = {
-					limit = { check_variable = { juche_volunteers > 11 }}
+					limit = { check_variable = { juche_volunteers > 11 } }
 					add_manpower = 4000
 					608 = {
 						create_unit = { division = " name = \"13th Volunteers\" division_template = \"National Liberation Volunteers\" start_experience_factor = 0.1 start_equipment_factor = 0.01" owner = KOR }
 					}
 				}
 				if = {
-					limit = { check_variable = { juche_volunteers > 12 }}
+					limit = { check_variable = { juche_volunteers > 12 } }
 					add_manpower = 4000
 					608 = {
 						create_unit = { division = " name = \"14th Volunteers\" division_template = \"National Liberation Volunteers\" start_experience_factor = 0.1 start_equipment_factor = 0.01" owner = KOR }
 					}
 				}
 				if = {
-					limit = { check_variable = { juche_volunteers > 13 }}
+					limit = { check_variable = { juche_volunteers > 13 } }
 					add_manpower = 4000
 					608 = {
 						create_unit = { division = " name = \"15th Volunteers\" division_template = \"National Liberation Volunteers\" start_experience_factor = 0.1 start_equipment_factor = 0.01" owner = KOR }
@@ -2361,8 +2242,6 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_ignite_the_rebellion }
 
-		search_filters = {}
-
 		available = {
 			has_government = communism
 		}
@@ -2395,8 +2274,6 @@ focus_tree = {
 		cost = 10
 
 		prerequisite = { focus = KOR_request_northern_assistance }
-
-		search_filters = {}
 
 		available = {
 			has_government = communism
@@ -2433,12 +2310,12 @@ focus_tree = {
 		y = 2
 		relative_position_id = KOR_state_of_the_republic
 
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = KOR_the_korean_left }
 		mutually_exclusive = { focus = KOR_anti_capitalist_backlash }
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		available = {
 			OR = {
@@ -2465,11 +2342,11 @@ focus_tree = {
 		y = 3
 		relative_position_id = KOR_state_of_the_republic
 
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = KOR_address_inequality }
 
-		search_filters = {FOCUS_FILTER_EXPENDITURE FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_EXPENDITURE FOCUS_FILTER_POLITICAL }
 
 		available = {
 			OR = {
@@ -2509,11 +2386,11 @@ focus_tree = {
 		y = 4
 		relative_position_id = KOR_state_of_the_republic
 
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = KOR_income_led_growth }
 
-		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		available = {
 			OR = {
@@ -2549,11 +2426,11 @@ focus_tree = {
 		y = 3
 		relative_position_id = KOR_state_of_the_republic
 
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = KOR_address_inequality }
 
-		search_filters = {FOCUS_FILTER_CORRUPTION FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_CORRUPTION FOCUS_FILTER_POLITICAL }
 
 		available = {
 			OR = {
@@ -2584,11 +2461,11 @@ focus_tree = {
 		y = 4
 		relative_position_id = KOR_state_of_the_republic
 
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = KOR_investigate_corruption }
 
-		search_filters = {FOCUS_FILTER_EXPENDITURE FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_EXPENDITURE FOCUS_FILTER_POLITICAL }
 
 		available = {
 			OR = {
@@ -2629,11 +2506,11 @@ focus_tree = {
 		y = 3
 		relative_position_id = KOR_state_of_the_republic
 
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = KOR_address_inequality }
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		available = {
 			OR = {
@@ -2714,11 +2591,11 @@ focus_tree = {
 		y = 4
 		relative_position_id = KOR_state_of_the_republic
 
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = KOR_empower_trade_unions }
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		available = {
 			OR = {
@@ -2805,7 +2682,7 @@ focus_tree = {
 		prerequisite = { focus = KOR_ratify_ilo_conventions }
 		mutually_exclusive = { focus = KOR_a_liberated_economy }
 
-		search_filters = {FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_STABILITY}
+		search_filters = { FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_STABILITY }
 
 		available = {
 			OR = {
@@ -2883,7 +2760,7 @@ focus_tree = {
 		prerequisite = { focus = KOR_ratify_ilo_conventions }
 		mutually_exclusive = { focus = KOR_a_fair_economy }
 
-		search_filters = {FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_POLITICAL }
 
 		available = {
 			OR = {
@@ -2953,11 +2830,11 @@ focus_tree = {
 		y = 2
 		relative_position_id = KOR_state_of_the_republic
 
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = KOR_the_korean_left }
 
-		search_filters = {FOCUS_FILTER_KOREAN_PENINSULA FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_KOREAN_PENINSULA FOCUS_FILTER_POLITICAL }
 
 		available = {
 			OR = {
@@ -3000,10 +2877,9 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = KOR_negotiation_success_tt
-			add_to_variable = { reunification_chance = 2 }
+			add_to_variable = { reunification_chance = 1 }
 			set_temp_variable = { temp_opinion = -5 }
 			change_intelligence_community_opinion = yes
-			set_temp_variable = { temp_opinion = -5 }
 			change_the_military_opinion = yes
 			liberal_policy_effect = yes
 			log = "[GetDateText]: [This.GetName]: focus KOR_sunshine_policy executed"
@@ -3022,11 +2898,11 @@ focus_tree = {
 		y = 3
 		relative_position_id = KOR_state_of_the_republic
 
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = KOR_sunshine_policy }
 
-		search_filters = {FOCUS_FILTER_KOREAN_PENINSULA FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT}
+		search_filters = { FOCUS_FILTER_KOREAN_PENINSULA FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 
 		available = {
 			OR = {
@@ -3060,9 +2936,9 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = KOR_negotiation_success_tt
-			add_to_variable = { reunification_chance = 2 }
+			add_to_variable = { reunification_chance = 1 }
 			support_for_reunification_2 = yes
-			add_war_support = -0.05
+			add_war_support = -0.02
 			add_opinion_modifier = {
 				target = NKO
 				modifier = kaesong_industrial_park
@@ -3094,11 +2970,11 @@ focus_tree = {
 		y = 4
 		relative_position_id = KOR_state_of_the_republic
 
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = KOR_joint_development }
 
-		search_filters = {FOCUS_FILTER_KOREAN_PENINSULA FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_KOREAN_PENINSULA FOCUS_FILTER_POLITICAL }
 
 		available = {
 			OR = {
@@ -3122,7 +2998,7 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = KOR_negotiation_success_tt
-			add_to_variable = { reunification_chance = 2 }
+			add_to_variable = { reunification_chance = 1 }
 			unlock_decision_tooltip = KOR_organize_joint_sporting_events
 			unlock_decision_tooltip = KOR_screen_north_korean_films
 			unlock_decision_tooltip = KOR_encourage_sympathetic_portrayals_of_the_north
@@ -3142,12 +3018,12 @@ focus_tree = {
 		y = 5
 		relative_position_id = KOR_state_of_the_republic
 
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = KOR_sporting_events }
 		prerequisite = { focus = KOR_wind_down_propaganda }
 
-		search_filters = {FOCUS_FILTER_KOREAN_PENINSULA FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_KOREAN_PENINSULA FOCUS_FILTER_POLITICAL }
 
 		available = {
 			OR = {
@@ -3159,7 +3035,7 @@ focus_tree = {
 				NKO = { has_government = democratic }
 				NKO = { has_government = neutrality }
 			}
-			#has_war_support < 0.6
+			has_war_support < 0.6
 			custom_trigger_tooltip = {
 				tooltip = support_for_reunification_more_50_tt
 				check_variable = { KOR.SFR > 50 }
@@ -3223,7 +3099,7 @@ focus_tree = {
 		prerequisite = { focus = KOR_offer_talks }
 		mutually_exclusive = { focus = KOR_propose_unity_government }
 
-		search_filters = {FOCUS_FILTER_KOREAN_PENINSULA}
+		search_filters = { FOCUS_FILTER_KOREAN_PENINSULA }
 
 		available = {
 			OR = {
@@ -3235,7 +3111,7 @@ focus_tree = {
 				NKO = { has_government = democratic }
 				NKO = { has_government = neutrality }
 			}
-			#has_war_support < 0.55
+			has_war_support < 0.55
 			custom_trigger_tooltip = {
 				tooltip = support_for_reunification_more_50_tt
 				check_variable = { KOR.SFR > 50 }
@@ -3298,7 +3174,7 @@ focus_tree = {
 		prerequisite = { focus = KOR_offer_talks }
 		mutually_exclusive = { focus = KOR_propose_south_led_unification }
 
-		search_filters = {FOCUS_FILTER_KOREAN_PENINSULA}
+		search_filters = { FOCUS_FILTER_KOREAN_PENINSULA }
 
 		available = {
 			OR = {
@@ -3310,7 +3186,7 @@ focus_tree = {
 				NKO = { has_government = democratic }
 				NKO = { has_government = neutrality }
 			}
-			#has_war_support < 0.55
+			has_war_support < 0.55
 			custom_trigger_tooltip = {
 				tooltip = support_for_reunification_more_50_tt
 				check_variable = { KOR.SFR > 50 }
@@ -3372,7 +3248,7 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_propose_unity_government focus = KOR_propose_south_led_unification }
 
-		search_filters = {FOCUS_FILTER_KOREAN_PENINSULA FOCUS_FILTER_ANNEXATION}
+		search_filters = { FOCUS_FILTER_KOREAN_PENINSULA FOCUS_FILTER_ANNEXATION }
 
 		available = {
 			OR = {
@@ -3384,7 +3260,7 @@ focus_tree = {
 				NKO = { has_government = democratic }
 				NKO = { has_government = neutrality }
 			}
-			#has_war_support < 0.5
+			has_war_support < 0.5
 			custom_trigger_tooltip = {
 				tooltip = support_for_reunification_more_50_tt
 				check_variable = { KOR.SFR > 50 }
@@ -3451,11 +3327,11 @@ focus_tree = {
 		y = 3
 		relative_position_id = KOR_state_of_the_republic
 
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = KOR_sunshine_policy }
 
-		search_filters = {FOCUS_FILTER_KOREAN_PENINSULA FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT}
+		search_filters = { FOCUS_FILTER_KOREAN_PENINSULA FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 
 		available = {
 			OR = {
@@ -3473,7 +3349,7 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = KOR_negotiation_success_tt
-			add_to_variable = { reunification_chance = 3 }
+			add_to_variable = { reunification_chance = 1 }
 			support_for_reunification_2 = yes
 			add_war_support = -0.02
 			NKO = {
@@ -3499,11 +3375,11 @@ focus_tree = {
 		y = 4
 		relative_position_id = KOR_state_of_the_republic
 
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = KOR_soften_rhetoric }
 
-		search_filters = {FOCUS_FILTER_KOREAN_PENINSULA FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_KOREAN_PENINSULA FOCUS_FILTER_POLITICAL }
 
 		available = {
 			OR = {
@@ -3521,7 +3397,7 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = KOR_negotiation_success_tt
-			add_to_variable = { reunification_chance = 3 }
+			add_to_variable = { reunification_chance = 1 }
 			unlock_decision_tooltip = KOR_cease_propaganda_broadcasts
 			unlock_decision_tooltip = KOR_cease_propaganda_leaflets
 			log = "[GetDateText]: [This.GetName]: focus KOR_wind_down_propaganda executed"
@@ -3545,7 +3421,7 @@ focus_tree = {
 		prerequisite = { focus = KOR_wind_down_propaganda }
 		prerequisite = { focus = KOR_protect_whistle_blowers }
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		available = {
 			OR = {
@@ -3591,11 +3467,11 @@ focus_tree = {
 		y = 2
 		relative_position_id = KOR_state_of_the_republic
 
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = KOR_the_korean_left }
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		available = {
 			OR = {
@@ -3622,11 +3498,11 @@ focus_tree = {
 		y = 3
 		relative_position_id = KOR_state_of_the_republic
 
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = KOR_reform_the_nis }
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		available = {
 			OR = {
@@ -3666,11 +3542,11 @@ focus_tree = {
 		y = 4
 		relative_position_id = KOR_state_of_the_republic
 
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = KOR_restrict_cyber_operations }
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		available = {
 			OR = {
@@ -3714,7 +3590,7 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_protect_whistle_blowers }
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		available = {
 			OR = {
@@ -3759,7 +3635,7 @@ focus_tree = {
 		prerequisite = { focus = KOR_repeal_the_national_security_law }
 		prerequisite = { focus = KOR_strengthen_oversight }
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		available = {
 			OR = {
 				KOR_has_progressive_government = yes
@@ -3805,10 +3681,7 @@ focus_tree = {
 			}
 			set_temp_variable = { temp_opinion = 5 }
 			change_intelligence_community_opinion = yes
-			hidden_effect = {
-				set_temp_variable = { temp_opinion = 5 }
-			change_intelligence_community_opinion = yes
-			}
+			hidden_effect = { change_intelligence_community_opinion = yes }
 			log = "[GetDateText]: [This.GetName]: focus KOR_decouple_politics_from_intelligence executed"
 		}
 
@@ -3829,14 +3702,14 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_state_of_the_republic }
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		available = {
 			has_elections = yes
 		}
 
 		completion_reward = {
-			add_political_power = 100
+			add_political_power = 50
 			log = "[GetDateText]: [This.GetName]: focus KOR_electoral_reform executed"
 		}
 
@@ -3858,7 +3731,7 @@ focus_tree = {
 		prerequisite = { focus = KOR_electoral_reform }
 		mutually_exclusive = { focus = KOR_end_proportional_representation }
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		available = {
 			has_elections = yes
@@ -3911,7 +3784,7 @@ focus_tree = {
 		prerequisite = { focus = KOR_electoral_reform }
 		mutually_exclusive = { focus = KOR_expand_proportional_representation }
 
-		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 
 		available = {
 			has_elections = yes
@@ -3944,14 +3817,14 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_expand_proportional_representation }
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		available = {
 			KOR_has_progressive_government = yes
 		}
 
 		completion_reward = {
-			add_political_power = 100
+			add_political_power = 50
 			log = "[GetDateText]: [This.GetName]: focus KOR_progressive_policies executed"
 		}
 
@@ -3972,7 +3845,7 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_progressive_policies }
 
-		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 
 		available = {
 			OR = {
@@ -4004,7 +3877,7 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_campaign_against_discrimination }
 
-		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
+		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 
 		available = {
 			OR = {
@@ -4039,7 +3912,7 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_expand_proportional_representation }
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		available = {
 			custom_trigger_tooltip = {
@@ -4052,7 +3925,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 100
+			add_political_power = 50
 			log = "[GetDateText]: [This.GetName]: focus KOR_centrist_policies executed"
 		}
 
@@ -4073,7 +3946,7 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_centrist_policies }
 
-		search_filters = {FOCUS_FILTER_EXPENDITURE FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_EXPENDITURE FOCUS_FILTER_POLITICAL }
 
 		available = {
 			custom_trigger_tooltip = {
@@ -4107,7 +3980,7 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_liberal_economics }
 
-		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH }
 
 		available = {
 			custom_trigger_tooltip = {
@@ -4145,7 +4018,7 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_state_of_the_republic }
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		available = {
 			OR = {
@@ -4158,7 +4031,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 75
+			add_political_power = 50
 			log = "[GetDateText]: [This.GetName]: focus KOR_the_korean_right executed"
 		}
 
@@ -4179,14 +4052,12 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_the_korean_right }
 
-		search_filters = {FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_POLITICAL }
 
-		available = {
-			KOR_has_conservative_government = yes
-		}
+		available = { KOR_has_conservative_government = yes }
 
 		completion_reward = {
-			set_temp_variable = { temp_opinion = 10 }
+			set_temp_variable = { temp_opinion = 5 }
 			change_intelligence_community_opinion = yes
 			strengthen_NIS = yes
 			conservative_policy_effect = yes
@@ -4210,11 +4081,9 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_empower_the_nis }
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = {
-			KOR_has_conservative_government = yes
-		}
+		available = { KOR_has_conservative_government = yes }
 
 		completion_reward = {
 			set_temp_variable = { party_index = 1 }
@@ -4241,11 +4110,9 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_manipulate_public_opinion }
 
-		search_filters = {FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_POLITICAL }
 
-		available = {
-			KOR_has_conservative_government = yes
-		}
+		available = { KOR_has_conservative_government = yes }
 
 		completion_reward = {
 			add_political_power = 150
@@ -4282,11 +4149,9 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_domestic_surveillance }
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = {
-			KOR_has_conservative_government = yes
-		}
+		available = { KOR_has_conservative_government = yes }
 
 		completion_reward = {
 			add_political_power = 200
@@ -4316,15 +4181,13 @@ focus_tree = {
 		y = 2
 		relative_position_id = KOR_state_of_the_republic
 
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = KOR_the_korean_right }
 
-		search_filters = {FOCUS_FILTER_EXPENDITURE FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_EXPENDITURE FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_POLITICAL }
 
-		available = {
-			KOR_has_conservative_government = yes
-		}
+		available = { KOR_has_conservative_government = yes }
 
 		completion_reward = {
 			hidden_effect = {
@@ -4358,16 +4221,14 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_cut_taxes_on_the_rich }
 
-		search_filters = {FOCUS_FILTER_EXPENDITURE FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_EXPENDITURE FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_POLITICAL }
 
-		available = {
-			KOR_has_conservative_government = yes
-		}
+		available = { KOR_has_conservative_government = yes }
 
 		completion_reward = {
 			set_temp_variable = { treasury_change = -5 }
 			modify_treasury_effect = yes
-						set_temp_variable = { temp_opinion = 10 }
+			set_temp_variable = { temp_opinion = 5 }
 			change_chaebols_opinion = yes
 			increase_chaebol_dependence = yes
 			conservative_policy_effect = yes
@@ -4391,7 +4252,7 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_subsidize_chaebols }
 
-		search_filters = {FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_POLITICAL }
 
 		available = {
 			KOR_has_conservative_government = yes
@@ -4409,7 +4270,7 @@ focus_tree = {
 				}
 			}
 			add_political_power = -100
-						set_temp_variable = { temp_opinion = 10 }
+			set_temp_variable = { temp_opinion = 5 }
 			change_chaebols_opinion = yes
 			increase_chaebol_dependence = yes
 			set_temp_variable = { temp_opinion = -5 }
@@ -4435,7 +4296,7 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_restrict_union_activity }
 
-		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH }
 
 		available = {
 			KOR_has_conservative_government = yes
@@ -4475,7 +4336,7 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_the_korean_right }
 
-		search_filters = {FOCUS_FILTER_KOREAN_PENINSULA FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_KOREAN_PENINSULA FOCUS_FILTER_POLITICAL }
 
 		available = {
 			OR = {
@@ -4489,7 +4350,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 100
+			add_political_power = 50
 			log = "[GetDateText]: [This.GetName]: focus KOR_the_threat_from_the_north executed"
 		}
 
@@ -4510,7 +4371,7 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_the_threat_from_the_north }
 
-		search_filters = {FOCUS_FILTER_KOREAN_PENINSULA FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT}
+		search_filters = { FOCUS_FILTER_KOREAN_PENINSULA FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 
 		available = {
 			OR = {
@@ -4553,7 +4414,7 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_ban_pro_northern_groups }
 
-		search_filters = {FOCUS_FILTER_KOREAN_PENINSULA FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT}
+		search_filters = { FOCUS_FILTER_KOREAN_PENINSULA FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 
 		available = {
 			OR = {
@@ -4596,7 +4457,7 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_the_threat_from_the_north }
 
-		search_filters = {FOCUS_FILTER_KOREAN_PENINSULA FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_KOREAN_PENINSULA FOCUS_FILTER_POLITICAL }
 
 		available = {
 			OR = {
@@ -4638,7 +4499,7 @@ focus_tree = {
 		prerequisite = { focus = KOR_praise_the_south }
 		mutually_exclusive = { focus = KOR_commemorate_dictatorship }
 
-		search_filters = {FOCUS_FILTER_KOREAN_PENINSULA FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_KOREAN_PENINSULA FOCUS_FILTER_POLITICAL }
 
 		available = {
 			OR = {
@@ -4683,7 +4544,7 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_the_korean_right }
 
-		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 
 		available = {
 			OR = {
@@ -4696,10 +4557,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_war_support = 0.05
+			add_war_support = 0.02
 			add_popularity = {
 				ideology = democratic
-				popularity = 0.05
+				popularity = 0.02
 			}
 			recalculate_party = yes
 			log = "[GetDateText]: [This.GetName]: focus KOR_promote_patriotism executed"
@@ -4722,7 +4583,7 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_promote_patriotism }
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		available = {
 			OR = {
@@ -4757,15 +4618,13 @@ focus_tree = {
 		prerequisite = { focus = KOR_venerate_park_chung_hee }
 		mutually_exclusive = { focus = KOR_champion_human_rights }
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = {
-			KOR_has_conservative_government = yes
-		}
+		available = { KOR_has_conservative_government = yes }
 
 		completion_reward = {
 			custom_effect_tooltip = KOR_yusin_emerges_tt
-			add_to_array =  { gov_coalition_array = 0 }
+			add_to_array = { gov_coalition_array = 0 }
 			set_temp_variable = { party_index = 0 }
 			set_temp_variable = { party_popularity_increase = 0.1 }
 			set_temp_variable = { temp_outlook_increase = 0.1 }
@@ -4792,12 +4651,12 @@ focus_tree = {
 
 		cost = 10
 
-		prerequisite = { focus = KOR_arrest_sympathizers focus = KOR_champion_human_rights focus = KOR_commemorate_dictatorship }
-		#prerequisite = { focus = KOR_champion_human_rights focus = KOR_commemorate_dictatorship }
+		prerequisite = { focus = KOR_arrest_sympathizers }
+		prerequisite = { focus = KOR_champion_human_rights focus = KOR_commemorate_dictatorship }
 		mutually_exclusive = { focus = KOR_defensive_approach }
 		mutually_exclusive = { focus = KOR_subversive_approach }
 
-		search_filters = {FOCUS_FILTER_KOREAN_PENINSULA FOCUS_FILTER_WAR_SUPPORT}
+		search_filters = { FOCUS_FILTER_KOREAN_PENINSULA FOCUS_FILTER_WAR_SUPPORT }
 
 		available = {
 			OR = {
@@ -4836,7 +4695,7 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_offensive_approach }
 
-		search_filters = {FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_KOREAN_PENINSULA}
+		search_filters = { FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_KOREAN_PENINSULA }
 
 		available = {
 			OR = {
@@ -4852,9 +4711,9 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 				idea = KOR_military_buildup
-				days = 730
+				days = 70
 			}
-			set_temp_variable = { temp_opinion = 10 }
+			set_temp_variable = { temp_opinion = 5 }
 			change_the_military_opinion = yes
 			custom_effect_tooltip = KOR_negotiation_failure_tt
 			subtract_from_variable = { reunification_chance = 1 }
@@ -4878,7 +4737,7 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_military_buildup }
 
-		search_filters = {FOCUS_FILTER_ANNEXATION FOCUS_FILTER_KOREAN_PENINSULA}
+		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_KOREAN_PENINSULA }
 
 		available = {
 			OR = {
@@ -4922,12 +4781,12 @@ focus_tree = {
 
 		cost = 10
 
-		prerequisite = { focus = KOR_arrest_sympathizers focus = KOR_champion_human_rights focus = KOR_commemorate_dictatorship }
-		#prerequisite = { focus = KOR_champion_human_rights focus = KOR_commemorate_dictatorship }
+		prerequisite = { focus = KOR_arrest_sympathizers }
+		prerequisite = { focus = KOR_champion_human_rights focus = KOR_commemorate_dictatorship }
 		mutually_exclusive = { focus = KOR_offensive_approach }
 		mutually_exclusive = { focus = KOR_subversive_approach }
 
-		search_filters = {FOCUS_FILTER_KOREAN_PENINSULA}
+		search_filters = { FOCUS_FILTER_KOREAN_PENINSULA }
 
 		available = {
 			OR = {
@@ -4964,7 +4823,7 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_defensive_approach }
 
-		search_filters = {FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_KOREAN_PENINSULA}
+		search_filters = { FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_KOREAN_PENINSULA }
 
 		available = {
 			OR = {
@@ -5013,7 +4872,7 @@ focus_tree = {
 			custom_effect_tooltip = KOR_negotiation_failure_tt
 			subtract_from_variable = { reunification_chance = 1 }
 			support_for_reunification_2_less = yes
-			set_temp_variable = { temp_opinion = 10 }
+			set_temp_variable = { temp_opinion = 5 }
 			change_the_military_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus KOR_expanded_fortifications executed"
 		}
@@ -5035,7 +4894,7 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_expanded_fortifications }
 
-		search_filters = {FOCUS_FILTER_KOREAN_PENINSULA}
+		search_filters = { FOCUS_FILTER_KOREAN_PENINSULA }
 
 		available = {
 			OR = {
@@ -5080,12 +4939,12 @@ focus_tree = {
 
 		cost = 10
 
-		prerequisite = { focus = KOR_arrest_sympathizers focus = KOR_champion_human_rights focus = KOR_commemorate_dictatorship  }
-		#prerequisite = { focus = KOR_champion_human_rights focus = KOR_commemorate_dictatorship }
+		prerequisite = { focus = KOR_arrest_sympathizers }
+		prerequisite = { focus = KOR_champion_human_rights focus = KOR_commemorate_dictatorship }
 		mutually_exclusive = { focus = KOR_offensive_approach }
 		mutually_exclusive = { focus = KOR_defensive_approach }
 
-		search_filters = {FOCUS_FILTER_KOREAN_PENINSULA}
+		search_filters = { FOCUS_FILTER_KOREAN_PENINSULA }
 
 		available = {
 			OR = {
@@ -5140,7 +4999,7 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_subversive_approach }
 
-		search_filters = {FOCUS_FILTER_KOREAN_PENINSULA}
+		search_filters = { FOCUS_FILTER_KOREAN_PENINSULA }
 
 		available = {
 			OR = {
@@ -5188,7 +5047,7 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_intensify_propaganda }
 
-		search_filters = {FOCUS_FILTER_KOREAN_PENINSULA}
+		search_filters = { FOCUS_FILTER_KOREAN_PENINSULA }
 
 		available = {
 			OR = {
@@ -5275,22 +5134,20 @@ focus_tree = {
 
 		cost = 10
 
-		prerequisite = { focus = KOR_arrest_sympathizers focus = KOR_commemorate_dictatorship  }
-		#prerequisite = { focus = KOR_commemorate_dictatorship }
+		prerequisite = { focus = KOR_arrest_sympathizers }
+		prerequisite = { focus = KOR_commemorate_dictatorship }
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = {
-			KOR_has_conservative_government = yes
-		}
+		available = { KOR_has_conservative_government = yes }
 
 		completion_reward = {
 			custom_effect_tooltip = KOR_yusin_emerges_tt
 			if = {
 				limit = {
-					NOT = { is_in_array = { gov_coalition_array = 0 }}
+					NOT = { is_in_array = { gov_coalition_array = 0 } }
 				}
-				add_to_array =  { gov_coalition_array = 0 }
+				add_to_array = { gov_coalition_array = 0 }
 			}
 			set_temp_variable = { party_index = 0 }
 			set_temp_variable = { party_popularity_increase = 0.25 }
@@ -5315,14 +5172,12 @@ focus_tree = {
 
 		cost = 10
 
-		prerequisite = { focus = KOR_arrest_sympathizers focus = KOR_commemorate_dictatorship }
-		#prerequisite = { focus = KOR_commemorate_dictatorship }
+		prerequisite = { focus = KOR_arrest_sympathizers }
+		prerequisite = { focus = KOR_commemorate_dictatorship }
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = {
-			KOR_has_conservative_government = yes
-		}
+		available = { KOR_has_conservative_government = yes }
 
 		completion_reward = {
 			add_political_power = 100
@@ -5348,15 +5203,12 @@ focus_tree = {
 		prerequisite = { focus = KOR_raise_tensions }
 		prerequisite = { focus = KOR_clamp_down_on_political_activism }
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = {
-			KOR_has_conservative_government = yes
-		}
+		available = { KOR_has_conservative_government = yes }
 
 		completion_reward = {
 			set_country_flag = do_not_retire
-
 			if = {
 				limit = {
 					has_government = democratic
@@ -5449,11 +5301,9 @@ focus_tree = {
 		prerequisite = { focus = KOR_raise_tensions }
 		prerequisite = { focus = KOR_clamp_down_on_political_activism }
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		available = {
-			KOR_has_conservative_government = yes
-		}
+		available = { KOR_has_conservative_government = yes }
 
 		completion_reward = {
 			add_political_power = 150
@@ -5480,7 +5330,7 @@ focus_tree = {
 		prerequisite = { focus = KOR_muzzle_the_media }
 		mutually_exclusive = { focus = KOR_favor_the_nis }
 
-		search_filters = {FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_WAR_SUPPORT}
+		search_filters = { FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_WAR_SUPPORT }
 
 		available = {
 			KOR_has_conservative_government = yes
@@ -5515,7 +5365,7 @@ focus_tree = {
 		prerequisite = { focus = KOR_muzzle_the_media }
 		mutually_exclusive = { focus = KOR_favor_armed_forces }
 
-		search_filters = {FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_POLITICAL }
 
 		available = {
 			KOR_has_conservative_government = yes
@@ -5546,14 +5396,11 @@ focus_tree = {
 
 		cost = 10
 
-		prerequisite = { focus = KOR_favor_armed_forces }
-		prerequisite = { focus = KOR_favor_the_nis }
+		prerequisite = { focus = KOR_favor_armed_forces focus = KOR_favor_the_nis }
 
-		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 
-		available = {
-			KOR_has_conservative_government = yes
-		}
+		available = { KOR_has_conservative_government = yes }
 
 		completion_reward = {
 			hidden_effect = {
@@ -5590,7 +5437,7 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_install_the_yusin_dictatorship }
 
-		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 
 		available = {
 			KOR_has_conservative_government = yes
@@ -5626,7 +5473,7 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_install_the_yusin_dictatorship }
 
-		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 
 		available = {
 			KOR_has_conservative_government = yes
@@ -5657,7 +5504,7 @@ focus_tree = {
 
 		prerequisite = { focus = KOR_install_the_yusin_dictatorship }
 
-		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 
 		available = {
 			KOR_has_conservative_government = yes
@@ -5683,12 +5530,9 @@ focus_tree = {
 		x = 61
 		y = 0
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
-
-		available = {
-		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
 			add_ideas = KOR_global_korea
@@ -5710,15 +5554,12 @@ focus_tree = {
 
 		cost = 5
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		prerequisite = { focus = KOR_middle_power_diplomacy }
 
-		available = {
-		}
-
 		completion_reward = {
-			add_political_power = 100
+			add_political_power = 50
 			log = "[GetDateText]: [This.GetName]: focus KOR_bridging_eurasia executed"
 		}
 
@@ -5736,8 +5577,6 @@ focus_tree = {
 		relative_position_id = KOR_middle_power_diplomacy
 
 		cost = 2
-
-		search_filters = {}
 
 		prerequisite = { focus = KOR_bridging_eurasia }
 
@@ -5759,7 +5598,6 @@ focus_tree = {
 				}
 			}
 			log = "[GetDateText]: [This.GetName]: focus KOR_rapprochement_with_russia executed"
-			add_political_power = 50
 		}
 
 		ai_will_do = {
@@ -5777,7 +5615,7 @@ focus_tree = {
 
 		cost = 5
 
-		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		prerequisite = { focus = KOR_rapprochement_with_russia }
 
@@ -5794,7 +5632,7 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 				idea = KOR_russian_satellites
-				days = 365
+				days = 90
 			}
 			custom_effect_tooltip = KOR_russian_satellites_tt
 			set_temp_variable = { percent_change = 1 }
@@ -5819,7 +5657,7 @@ focus_tree = {
 
 		cost = 5
 
-		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = { FOCUS_FILTER_STABILITY }
 
 		prerequisite = { focus = KOR_satellite_assistance }
 
@@ -5859,9 +5697,9 @@ focus_tree = {
 		y = 5
 		relative_position_id = KOR_middle_power_diplomacy
 
-		cost = 5
+		cost = 8
 
-		search_filters = {FOCUS_FILTER_INFLUENCE FOCUS_FILTER_INTERNAL_FACTION}
+		search_filters = { FOCUS_FILTER_INFLUENCE FOCUS_FILTER_INTERNAL_FACTION }
 
 		prerequisite = { focus = KOR_russian_energy }
 
@@ -5876,7 +5714,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-						set_temp_variable = { temp_opinion = 10 }
+			set_temp_variable = { temp_opinion = 10 }
 			change_chaebols_opinion = yes
 			set_temp_variable = { temp_opinion = -5 }
 			change_labour_unions_opinion = yes
@@ -5916,7 +5754,7 @@ focus_tree = {
 
 		cost = 10
 
-		search_filters = {FOCUS_FILTER_INFLUENCE}
+		search_filters = { FOCUS_FILTER_INFLUENCE }
 
 		prerequisite = { focus = KOR_bridging_eurasia }
 
@@ -5931,21 +5769,18 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			set_temp_variable = { treasury_change = -15 }
+			set_temp_variable = { treasury_change = -7.5 }
 			modify_treasury_effect = yes
-			set_temp_variable = { int_investment_change = treasury_change }
-			set_temp_variable = { int_investment_change = 15 }
-			modify_international_investment_effect = yes
 			CZE = {
 				add_opinion_modifier = {
 					target = KOR
 					modifier = trade_mission
 				}
 				1018 = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = industrial_complex
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -5972,7 +5807,7 @@ focus_tree = {
 
 		cost = 5
 
-		search_filters = {FOCUS_FILTER_KOREAN_PENINSULA}
+		search_filters = { FOCUS_FILTER_KOREAN_PENINSULA }
 
 		prerequisite = { focus = KOR_czech_investments }
 
@@ -6001,7 +5836,6 @@ focus_tree = {
 				}
 			}
 			log = "[GetDateText]: [This.GetName]: focus KOR_lessons_from_germany executed"
-			add_political_power = 50
 		}
 
 		ai_will_do = {
@@ -6017,9 +5851,9 @@ focus_tree = {
 		y = 4
 		relative_position_id = KOR_middle_power_diplomacy
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 
 		prerequisite = { focus = KOR_lessons_from_germany }
 
@@ -6064,9 +5898,9 @@ focus_tree = {
 		y = 5
 		relative_position_id = KOR_middle_power_diplomacy
 
-		cost = 5
+		cost = 8
 
-		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		prerequisite = { focus = KOR_british_military_exercises }
 
@@ -6100,15 +5934,12 @@ focus_tree = {
 
 		cost = 5
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		prerequisite = { focus = KOR_middle_power_diplomacy }
 
-		available = {
-		}
-
 		completion_reward = {
-			add_political_power = 100
+			add_political_power = 50
 			log = "[GetDateText]: [This.GetName]: focus KOR_turn_to_the_middle_east executed"
 		}
 
@@ -6126,8 +5957,6 @@ focus_tree = {
 		relative_position_id = KOR_middle_power_diplomacy
 
 		cost = 2
-
-		search_filters = {}
 
 		prerequisite = { focus = KOR_turn_to_the_middle_east }
 
@@ -6166,7 +5995,7 @@ focus_tree = {
 
 		cost = 5
 
-		search_filters = {FOCUS_FILTER_INFLUENCE FOCUS_FILTER_INTERNAL_FACTION}
+		search_filters = { FOCUS_FILTER_INFLUENCE FOCUS_FILTER_INTERNAL_FACTION }
 
 		prerequisite = { focus = KOR_cautious_optimism }
 
@@ -6181,7 +6010,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-						set_temp_variable = { temp_opinion = 10 }
+			set_temp_variable = { temp_opinion = 5 }
 			change_chaebols_opinion = yes
 			set_temp_variable = { temp_opinion = -5 }
 			change_labour_unions_opinion = yes
@@ -6225,8 +6054,6 @@ focus_tree = {
 
 		cost = 7
 
-		search_filters = {}
-
 		prerequisite = { focus = KOR_a_free_trade_agreement }
 
 		available = {
@@ -6259,7 +6086,7 @@ focus_tree = {
 
 		cost = 10
 
-		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		prerequisite = { focus = KOR_iron_dome }
 
@@ -6294,8 +6121,6 @@ focus_tree = {
 
 		cost = 3
 
-		search_filters = {}
-
 		prerequisite = { focus = KOR_turn_to_the_middle_east }
 
 		available = {
@@ -6320,7 +6145,6 @@ focus_tree = {
 				}
 			}
 			log = "[GetDateText]: [This.GetName]: focus KOR_one_heart_one_soul executed"
-			add_political_power = 50
 		}
 
 		ai_will_do = {
@@ -6338,7 +6162,7 @@ focus_tree = {
 
 		cost = 4
 
-		search_filters = {FOCUS_FILTER_INFLUENCE FOCUS_FILTER_INTERNAL_FACTION}
+		search_filters = { FOCUS_FILTER_INFLUENCE FOCUS_FILTER_INTERNAL_FACTION }
 
 		prerequisite = { focus = KOR_one_heart_one_soul }
 
@@ -6353,7 +6177,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-						set_temp_variable = { temp_opinion = 10 }
+			set_temp_variable = { temp_opinion = 5 }
 			change_chaebols_opinion = yes
 			set_temp_variable = { temp_opinion = -5 }
 			change_labour_unions_opinion = yes
@@ -6380,9 +6204,6 @@ focus_tree = {
 				change_influence_percentage = yes
 			}
 			log = "[GetDateText]: [This.GetName]: focus KOR_increase_trade_volume executed"
-			set_temp_variable = { treasury_change = gdp_total }
-			multiply_temp_variable = { treasury_change = 0.002 }
-			modify_treasury_effect = yes
 		}
 
 		ai_will_do = {
@@ -6398,9 +6219,9 @@ focus_tree = {
 		y = 4
 		relative_position_id = KOR_middle_power_diplomacy
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_INFLUENCE}
+		search_filters = { FOCUS_FILTER_INFLUENCE }
 
 		prerequisite = { focus = KOR_increase_trade_volume }
 
@@ -6417,9 +6238,6 @@ focus_tree = {
 		completion_reward = {
 			set_temp_variable = { treasury_change = -10 }
 			modify_treasury_effect = yes
-			set_temp_variable = { int_investment_change = treasury_change }
-			set_temp_variable = { int_investment_change = 10 }
-			modify_international_investment_effect = yes
 			PER = {
 				add_opinion_modifier = {
 					target = KOR
@@ -6428,21 +6246,21 @@ focus_tree = {
 				399 = {
 					add_building_construction = {
 						type = infrastructure
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
 				400 = {
 					add_building_construction = {
 						type = infrastructure
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
 				978 = {
 					add_building_construction = {
 						type = infrastructure
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -6469,7 +6287,7 @@ focus_tree = {
 
 		cost = 10
 
-		search_filters = {FOCUS_FILTER_INFLUENCE}
+		search_filters = { FOCUS_FILTER_INFLUENCE }
 
 		prerequisite = { focus = KOR_iranian_infrastructure_projects }
 
@@ -6509,8 +6327,6 @@ focus_tree = {
 
 		cost = 3
 
-		search_filters = {}
-
 		prerequisite = { focus = KOR_turn_to_the_middle_east }
 
 		available = {
@@ -6540,7 +6356,6 @@ focus_tree = {
 				}
 			}
 			log = "[GetDateText]: [This.GetName]: focus KOR_engage_the_arabs executed"
-			add_political_power = 50
 		}
 
 		ai_will_do = {
@@ -6558,7 +6373,7 @@ focus_tree = {
 
 		cost = 5
 
-		search_filters = {FOCUS_FILTER_INFLUENCE}
+		search_filters = { FOCUS_FILTER_INFLUENCE }
 
 		prerequisite = { focus = KOR_engage_the_arabs }
 
@@ -6589,8 +6404,6 @@ focus_tree = {
 				}
 			}
 			log = "[GetDateText]: [This.GetName]: focus KOR_export_military_hardware executed"
-			set_temp_variable = { treasury_change = 30.5 }
-			modify_treasury_effect = yes
 		}
 
 		ai_will_do = {
@@ -6608,7 +6421,7 @@ focus_tree = {
 
 		cost = 10
 
-		search_filters = {FOCUS_FILTER_INFLUENCE}
+		search_filters = { FOCUS_FILTER_INFLUENCE }
 
 		prerequisite = { focus = KOR_export_military_hardware }
 
@@ -6625,9 +6438,6 @@ focus_tree = {
 		completion_reward = {
 			set_temp_variable = { treasury_change = -22.5 }
 			modify_treasury_effect = yes
-			set_temp_variable = { int_investment_change = treasury_change }
-			set_temp_variable = { int_investment_change = 22.5 }
-			modify_international_investment_effect = yes
 			SAU = {
 				add_opinion_modifier = {
 					target = KOR
@@ -6664,7 +6474,7 @@ focus_tree = {
 
 		cost = 5
 
-		search_filters = {FOCUS_FILTER_INFLUENCE FOCUS_FILTER_INTERNAL_FACTION}
+		search_filters = { FOCUS_FILTER_INFLUENCE FOCUS_FILTER_INTERNAL_FACTION }
 
 		prerequisite = { focus = KOR_the_largest_shipyard_in_the_world }
 
@@ -6680,7 +6490,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-						set_temp_variable = { temp_opinion = 10 }
+			set_temp_variable = { temp_opinion = 5 }
 			change_chaebols_opinion = yes
 			set_temp_variable = { temp_opinion = -5 }
 			change_labour_unions_opinion = yes
@@ -6708,9 +6518,6 @@ focus_tree = {
 				change_influence_percentage = yes
 			}
 			log = "[GetDateText]: [This.GetName]: focus KOR_trade_with_the_gcc executed"
-			set_temp_variable = { treasury_change = gdp_total }
-			multiply_temp_variable = { treasury_change = 0.002 }
-			modify_treasury_effect = yes
 		}
 
 		ai_will_do = {
@@ -6728,7 +6535,7 @@ focus_tree = {
 
 		cost = 5
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		prerequisite = { focus = KOR_middle_power_diplomacy }
 
@@ -6737,7 +6544,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 100
+			add_political_power = 50
 			log = "[GetDateText]: [This.GetName]: focus KOR_peace_in_east_asia executed"
 		}
 
@@ -6755,8 +6562,6 @@ focus_tree = {
 		relative_position_id = KOR_middle_power_diplomacy
 
 		cost = 2
-
-		search_filters = {}
 
 		prerequisite = { focus = KOR_peace_in_east_asia }
 
@@ -6795,7 +6600,7 @@ focus_tree = {
 
 		cost = 3
 
-		search_filters = {FOCUS_FILTER_INFLUENCE}
+		search_filters = { FOCUS_FILTER_INFLUENCE }
 
 		prerequisite = { focus = KOR_improve_relations_with_china }
 
@@ -6834,7 +6639,7 @@ focus_tree = {
 
 		cost = 5
 
-		search_filters = {FOCUS_FILTER_INFLUENCE FOCUS_FILTER_INTERNAL_FACTION}
+		search_filters = { FOCUS_FILTER_INFLUENCE FOCUS_FILTER_INTERNAL_FACTION }
 
 		prerequisite = { focus = KOR_improve_relations_with_china }
 
@@ -6849,7 +6654,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			set_temp_variable = { temp_opinion = 10 }
+			set_temp_variable = { temp_opinion = 5 }
 			change_chaebols_opinion = yes
 			set_temp_variable = { temp_opinion = -5 }
 			change_labour_unions_opinion = yes
@@ -6880,9 +6685,6 @@ focus_tree = {
 				change_influence_percentage = yes
 			}
 			log = "[GetDateText]: [This.GetName]: focus KOR_trading_partners executed"
-			set_temp_variable = { treasury_change = gdp_total }
-			multiply_temp_variable = { treasury_change = 0.002 }
-			modify_treasury_effect = yes
 		}
 
 		ai_will_do = {
@@ -6900,8 +6702,6 @@ focus_tree = {
 
 		cost = 4
 
-		search_filters = {}
-
 		prerequisite = { focus = KOR_hallyu_in_china }
 		prerequisite = { focus = KOR_trading_partners }
 
@@ -6916,7 +6716,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			army_experience = 50
+			army_experience = 25
 			add_timed_idea = {
 				idea = KOR_CHI_exchange
 				days = 365
@@ -6948,8 +6748,6 @@ focus_tree = {
 		relative_position_id = KOR_middle_power_diplomacy
 
 		cost = 5
-
-		search_filters = {}
 
 		prerequisite = { focus = KOR_hallyu_in_china }
 		prerequisite = { focus = KOR_trading_partners }
@@ -7010,8 +6808,6 @@ focus_tree = {
 
 		cost = 7
 
-		search_filters = {}
-
 		prerequisite = { focus = KOR_military_exchanges }
 		prerequisite = { focus = KOR_a_shared_history }
 		prerequisite = { focus = KOR_defend_our_claims }
@@ -7030,7 +6826,7 @@ focus_tree = {
 		}
 
 		bypass = {
-			NKO = { NOT = { is_guaranteed_by = CHI }}
+			NKO = { NOT = { is_guaranteed_by = CHI } }
 		}
 
 		completion_reward = {
@@ -7098,7 +6894,7 @@ focus_tree = {
 
 		cost = 5
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		prerequisite = { focus = KOR_peace_in_east_asia }
 
@@ -7111,7 +6907,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 75
+			add_political_power = 50
 			JAP = {
 				add_opinion_modifier = {
 					target = KOR
@@ -7136,7 +6932,7 @@ focus_tree = {
 
 		cost = 7
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		prerequisite = { focus = KOR_revisit_historical_grievances }
 
@@ -7150,7 +6946,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 100
-			set_temp_variable = { arg_popularity = 0.05 }
+			set_temp_variable = { arg_popularity = 0.02 }
 			add_ruling_outlook_popularity = yes
 			JAP = {
 				add_opinion_modifier = {
@@ -7182,7 +6978,7 @@ focus_tree = {
 
 		cost = 7
 
-		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 
 		prerequisite = { focus = KOR_demand_reparations }
 
@@ -7223,7 +7019,7 @@ focus_tree = {
 
 		cost = 10
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		prerequisite = { focus = KOR_defend_our_claims }
 
@@ -7245,7 +7041,7 @@ focus_tree = {
 			}
 			add_timed_idea = {
 				idea = KOR_JAP_trade_war
-				days = 365
+				days = 180
 			}
 			set_temp_variable = { percent_change = -2 }
 			set_temp_variable = { tag_index = JAP.id }
@@ -7279,8 +7075,6 @@ focus_tree = {
 
 		cost = 2
 
-		search_filters = {}
-
 		prerequisite = { focus = KOR_peace_in_east_asia }
 
 		available = {
@@ -7309,7 +7103,6 @@ focus_tree = {
 				}
 			}
 			log = "[GetDateText]: [This.GetName]: focus KOR_eternal_allies executed"
-			add_political_power = 50
 		}
 
 		ai_will_do = {
@@ -7326,8 +7119,6 @@ focus_tree = {
 		relative_position_id = KOR_middle_power_diplomacy
 
 		cost = 5
-
-		search_filters = {}
 
 		prerequisite = { focus = KOR_peace_in_east_asia }
 
@@ -7350,7 +7141,6 @@ focus_tree = {
 				}
 			}
 			log = "[GetDateText]: [This.GetName]: focus KOR_draw_closer_to_japan executed"
-			add_political_power = 50
 		}
 
 		ai_will_do = {
@@ -7368,7 +7158,7 @@ focus_tree = {
 
 		cost = 5
 
-		search_filters = {FOCUS_FILTER_INTERNAL_FACTION}
+		search_filters = { FOCUS_FILTER_INTERNAL_FACTION }
 
 		prerequisite = { focus = KOR_peace_in_east_asia }
 
@@ -7384,7 +7174,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			set_temp_variable = { temp_opinion = 10 }
+			set_temp_variable = { temp_opinion = 5 }
 			change_chaebols_opinion = yes
 			set_temp_variable = { temp_opinion = -5 }
 			change_labour_unions_opinion = yes
@@ -7415,9 +7205,6 @@ focus_tree = {
 				change_influence_percentage = yes
 			}
 			log = "[GetDateText]: [This.GetName]: focus KOR_improve_economic_relations executed"
-			set_temp_variable = { treasury_change = gdp_total }
-			multiply_temp_variable = { treasury_change = 0.002 }
-			modify_treasury_effect = yes
 		}
 
 		ai_will_do = {
@@ -7435,7 +7222,7 @@ focus_tree = {
 
 		cost = 10
 
-		search_filters = {FOCUS_FILTER_KOREAN_PENINSULA FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_KOREAN_PENINSULA FOCUS_FILTER_POLITICAL }
 
 		prerequisite = { focus = KOR_eternal_allies }
 
@@ -7518,7 +7305,7 @@ focus_tree = {
 
 		cost = 5
 
-		search_filters = {FOCUS_FILTER_INTERNAL_FACTION}
+		search_filters = { FOCUS_FILTER_INTERNAL_FACTION }
 
 		prerequisite = { focus = KOR_improve_economic_relations }
 
@@ -7534,7 +7321,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			set_temp_variable = { temp_opinion = 10 }
+			set_temp_variable = { temp_opinion = 5 }
 			change_intelligence_community_opinion = yes
 			add_intel = {
 				target = NKO
@@ -7566,7 +7353,7 @@ focus_tree = {
 
 		cost = 8
 
-		search_filters = {FOCUS_FILTER_KOREAN_PENINSULA FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_KOREAN_PENINSULA FOCUS_FILTER_POLITICAL }
 
 		prerequisite = { focus = KOR_improve_economic_relations }
 		prerequisite = { focus = KOR_step_up_military_exercises }
@@ -7660,7 +7447,7 @@ focus_tree = {
 
 		cost = 5
 
-		search_filters = {FOCUS_FILTER_KOREAN_PENINSULA}
+		search_filters = { FOCUS_FILTER_KOREAN_PENINSULA }
 
 		prerequisite = { focus = KOR_intelligence_cooperation }
 		prerequisite = { focus = KOR_strengthen_anti_northern_coalition }
@@ -7714,7 +7501,7 @@ focus_tree = {
 
 		cost = 4
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		prerequisite = { focus = KOR_intelligence_cooperation }
 		prerequisite = { focus = KOR_strengthen_anti_northern_coalition }
@@ -7777,7 +7564,7 @@ focus_tree = {
 
 		cost = 5
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		prerequisite = { focus = KOR_peace_in_east_asia }
 
@@ -7821,7 +7608,7 @@ focus_tree = {
 
 		cost = 4
 
-		search_filters = {FOCUS_FILTER_INFLUENCE FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_INFLUENCE FOCUS_FILTER_POLITICAL }
 
 		prerequisite = { focus = KOR_wind_down_the_us_presence }
 
@@ -7861,7 +7648,7 @@ focus_tree = {
 
 		cost = 4
 
-		search_filters = {FOCUS_FILTER_INFLUENCE FOCUS_FILTER_KOREAN_PENINSULA FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_INFLUENCE FOCUS_FILTER_KOREAN_PENINSULA FOCUS_FILTER_POLITICAL }
 
 		prerequisite = { focus = KOR_revisit_the_alliance }
 
@@ -7915,7 +7702,7 @@ focus_tree = {
 
 		cost = 5
 
-		search_filters = {FOCUS_FILTER_INFLUENCE FOCUS_FILTER_KOREAN_PENINSULA FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_INFLUENCE FOCUS_FILTER_KOREAN_PENINSULA FOCUS_FILTER_POLITICAL }
 
 		prerequisite = { focus = KOR_secure_wartime_control }
 
@@ -7987,15 +7774,12 @@ focus_tree = {
 
 		cost = 5
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		prerequisite = { focus = KOR_middle_power_diplomacy }
 
-		available = {
-		}
-
 		completion_reward = {
-			add_political_power = 100
+			add_political_power = 50
 			log = "[GetDateText]: [This.GetName]: focus KOR_southern_focus executed"
 		}
 
@@ -8014,8 +7798,6 @@ focus_tree = {
 
 		cost = 2
 
-		search_filters = {}
-
 		prerequisite = { focus = KOR_southern_focus }
 
 		available = {
@@ -8033,9 +7815,6 @@ focus_tree = {
 				}
 			}
 			log = "[GetDateText]: [This.GetName]: focus KOR_overtures_to_asean executed"
-			set_temp_variable = { treasury_change = gdp_total }
-			multiply_temp_variable = { treasury_change = 0.002 }
-			modify_treasury_effect = yes
 		}
 
 		ai_will_do = {
@@ -8053,7 +7832,7 @@ focus_tree = {
 
 		cost = 5
 
-		search_filters = {FOCUS_FILTER_INFLUENCE}
+		search_filters = { FOCUS_FILTER_INFLUENCE }
 
 		prerequisite = { focus = KOR_overtures_to_asean }
 
@@ -8064,9 +7843,6 @@ focus_tree = {
 		completion_reward = {
 			set_temp_variable = { treasury_change = -5 }
 			modify_treasury_effect = yes
-			set_temp_variable = { int_investment_change = treasury_change }
-			set_temp_variable = { int_investment_change = 5 }
-			modify_international_investment_effect = yes
 			every_other_country = {
 				limit = {
 					OR = {
@@ -8106,7 +7882,7 @@ focus_tree = {
 
 		cost = 5
 
-		search_filters = {FOCUS_FILTER_KOREAN_PENINSULA}
+		search_filters = { FOCUS_FILTER_KOREAN_PENINSULA }
 
 		prerequisite = { focus = KOR_support_development }
 
@@ -8135,7 +7911,7 @@ focus_tree = {
 
 		cost = 2
 
-		search_filters = {FOCUS_FILTER_INFLUENCE}
+		search_filters = { FOCUS_FILTER_INFLUENCE }
 
 		prerequisite = { focus = KOR_southern_focus }
 
@@ -8151,10 +7927,6 @@ focus_tree = {
 				}
 			}
 			log = "[GetDateText]: [This.GetName]: focus KOR_two_tigers executed"
-			set_temp_variable = { treasury_change = gdp_total }
-			multiply_temp_variable = { treasury_change = 0.002 }
-			modify_treasury_effect = yes
-			add_political_power = 50
 		}
 
 		ai_will_do = {
@@ -8170,9 +7942,9 @@ focus_tree = {
 		y = 3
 		relative_position_id = KOR_middle_power_diplomacy
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_INFLUENCE}
+		search_filters = { FOCUS_FILTER_INFLUENCE }
 
 		prerequisite = { focus = KOR_two_tigers }
 
@@ -8183,9 +7955,6 @@ focus_tree = {
 		completion_reward = {
 			set_temp_variable = { treasury_change = -14 }
 			modify_treasury_effect = yes
-			set_temp_variable = { int_investment_change = treasury_change }
-			set_temp_variable = { int_investment_change = 14 }
-			modify_international_investment_effect = yes
 			RAJ = {
 				add_opinion_modifier = {
 					target = KOR
@@ -8228,8 +7997,6 @@ focus_tree = {
 
 		cost = 10
 
-		search_filters = {}
-
 		prerequisite = { focus = KOR_national_highways }
 
 		available = {
@@ -8239,19 +8006,16 @@ focus_tree = {
 		completion_reward = {
 			set_temp_variable = { treasury_change = -7.5 }
 			modify_treasury_effect = yes
-			set_temp_variable = { int_investment_change = treasury_change }
-			set_temp_variable = { int_investment_change = 7.5 }
-			modify_international_investment_effect = yes
 			RAJ = {
 				add_opinion_modifier = {
 					target = KOR
 					modifier = trade_mission
 				}
 				440 = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = industrial_complex
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -8276,9 +8040,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = KOR_middle_power_diplomacy
 
-		cost = 5
-
-		search_filters = {}
+		cost = 8
 
 		prerequisite = { focus = KOR_asean_mediation }
 		prerequisite = { focus = KOR_smart_phone_manufacturing }
@@ -8303,9 +8065,6 @@ focus_tree = {
 				}
 			}
 			log = "[GetDateText]: [This.GetName]: focus KOR_promote_korean_defense_companies executed"
-			set_temp_variable = { treasury_change = gdp_total }
-			multiply_temp_variable = { treasury_change = 0.009 }
-			modify_treasury_effect = yes
 		}
 
 		ai_will_do = {
@@ -8323,19 +8082,13 @@ focus_tree = {
 
 		cost = 5
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		prerequisite = { focus = KOR_middle_power_diplomacy }
 
-		available = {
-		}
-
 		completion_reward = {
-			add_political_power = 100
+			add_political_power = 50
 			log = "[GetDateText]: [This.GetName]: focus KOR_engage_with_africa executed"
-			set_temp_variable = { treasury_change = gdp_total }
-			multiply_temp_variable = { treasury_change = 0.002 }
-			modify_treasury_effect = yes
 		}
 
 		ai_will_do = {
@@ -8353,10 +8106,10 @@ focus_tree = {
 
 		cost = 5
 
-		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = { FOCUS_FILTER_STABILITY }
 
 		prerequisite = { focus = KOR_engage_with_africa }
-		#mutually_exclusive = { focus = KOR_corporate_interests }
+		mutually_exclusive = { focus = KOR_corporate_interests }
 
 		available = {
 			has_war = no
@@ -8382,7 +8135,7 @@ focus_tree = {
 
 		cost = 5
 
-		search_filters = {FOCUS_FILTER_INFLUENCE}
+		search_filters = { FOCUS_FILTER_INFLUENCE }
 
 		prerequisite = { focus = KOR_a_responsible_power }
 
@@ -8393,9 +8146,6 @@ focus_tree = {
 		completion_reward = {
 			set_temp_variable = { treasury_change = -3 }
 			modify_treasury_effect = yes
-			set_temp_variable = { int_investment_change = treasury_change }
-			set_temp_variable = { int_investment_change = 3 }
-			modify_international_investment_effect = yes
 			every_other_country = {
 				limit = {
 					OR = {
@@ -8433,7 +8183,7 @@ focus_tree = {
 
 		cost = 5
 
-		search_filters = {FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_STABILITY}
+		search_filters = { FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_STABILITY }
 
 		prerequisite = { focus = KOR_development_assistance }
 
@@ -8463,17 +8213,17 @@ focus_tree = {
 
 		cost = 5
 
-		search_filters = {FOCUS_FILTER_INTERNAL_FACTION}
+		search_filters = { FOCUS_FILTER_INTERNAL_FACTION }
 
 		prerequisite = { focus = KOR_engage_with_africa }
-		#mutually_exclusive = { focus = KOR_a_responsible_power }
+		mutually_exclusive = { focus = KOR_a_responsible_power }
 
 		available = {
 			has_idea = chaebols
 		}
 
 		completion_reward = {
-			set_temp_variable = { temp_opinion = 20 }
+			set_temp_variable = { temp_opinion = 10 }
 			change_chaebols_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus KOR_corporate_interests executed"
 		}
@@ -8491,9 +8241,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = KOR_middle_power_diplomacy
 
-		cost = 5
-
-		search_filters = {}
+		cost = 8
 
 		prerequisite = { focus = KOR_a_responsible_power focus = KOR_corporate_interests }
 
@@ -8525,8 +8273,6 @@ focus_tree = {
 
 		cost = 5
 
-		search_filters = {}
-
 		prerequisite = { focus = KOR_peacekeeping_contributions }
 
 		available = {
@@ -8557,7 +8303,7 @@ focus_tree = {
 
 		cost = 10
 
-		search_filters = {FOCUS_FILTER_INFLUENCE}
+		search_filters = { FOCUS_FILTER_INFLUENCE }
 
 		prerequisite = { focus = KOR_corporate_interests }
 
@@ -8569,9 +8315,6 @@ focus_tree = {
 		completion_reward = {
 			set_temp_variable = { treasury_change = -30 }
 			modify_treasury_effect = yes
-			set_temp_variable = { int_investment_change = treasury_change }
-			set_temp_variable = { int_investment_change = 30 }
-			modify_international_investment_effect = yes
 			every_other_country = {
 				limit = {
 					OR = {
@@ -8640,7 +8383,7 @@ focus_tree = {
 
 		cost = 10
 
-		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESOURCE}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESOURCE }
 
 		prerequisite = { focus = KOR_establish_manufacturing_plants }
 
@@ -8677,8 +8420,6 @@ focus_tree = {
 		relative_position_id = KOR_middle_power_diplomacy
 
 		cost = 4
-
-		search_filters = {}
 
 		prerequisite = { focus = KOR_anti_piracy_operations }
 		prerequisite = { focus = KOR_ethical_investments }
@@ -8719,7 +8460,7 @@ focus_tree = {
 
 		cost = 10
 
-		search_filters = {FOCUS_FILTER_INFLUENCE FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_INFLUENCE FOCUS_FILTER_POLITICAL }
 
 		prerequisite = { focus = KOR_anti_piracy_operations }
 		prerequisite = { focus = KOR_land_acquisitions }
@@ -8752,5 +8493,5 @@ focus_tree = {
 		}
 	}
 
-	shared_focus = KOR_korea_reunified
+
 }

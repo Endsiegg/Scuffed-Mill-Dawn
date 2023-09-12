@@ -1,7 +1,9 @@
 version="1.0.0"
 tags={
 	"Alternative History"
-	"Map"
+	"Gameplay"
+	"Events"
+	"Graphics"
 }
 name="Scuffed Millennium Dawn"
 picture="thumbnail.png"
@@ -44,7 +46,6 @@ replace_path="history/general"
 replace_path="map/strategicregions"
 replace_path="map/supplyareas"
 replace_path="history/countries/"
-replace_path="common/bookmarks"
 replace_path="events/"
 replace_path="gfx/loadingscreens"
 replace_path="portraits"

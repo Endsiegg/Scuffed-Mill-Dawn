@@ -186,15 +186,15 @@ project_monetary_cost_calculation = { #Replaces AC_calc_pp_cost in the section
 # method for handling the cost and construction_speed of any given project.
 get_building_construction_values = {
 	set_temp_variable = { construction_speed = 0 }
-	if = { limit = { check_variable = { project_building_type^project_type  = 1 } }
+	if = { limit = { check_variable = { project_building_type^project_type = 1 } }
 		set_temp_variable = { building_cost = global.BUILD_CONST_COST_CIVILIAN_FACTORY }
 		add_to_temp_variable = { var = construction_speed value = modifier@production_speed_industrial_complex_factor }
 	}
-	else_if = { limit = { check_variable = { project_building_type^project_type  = 2 } }
+	else_if = { limit = { check_variable = { project_building_type^project_type = 2 } }
 		set_temp_variable = { building_cost = global.BUILD_CONST_COST_MILITARY_FACTORY }
 		add_to_temp_variable = { var = construction_speed value = modifier@production_speed_arms_factory_factor }
 	}
-	else_if = { limit = { check_variable = { project_building_type^project_type  = 3 } }
+	else_if = { limit = { check_variable = { project_building_type^project_type = 3 } }
 		set_temp_variable = { building_cost = global.BUILD_CONST_COST_DOCKYARD }
 		add_to_temp_variable = { var = construction_speed value = modifier@production_speed_dockyard_factor }
 	}
@@ -557,7 +557,13 @@ end_project = {
 		# Refund Remaining Cash if the project is unfinished
 		if = { limit = { check_variable = { project_monetary_cost^project > 0 } }
 			add_to_variable = { var = treasury value = project_monetary_cost^project }
-			subtract_from_variable = { var = int_investments value = project_monetary_cost^project }
+			if = { limit = { check_variable = { int_investments > project_monetary_cost^project } }
+				subtract_from_variable = { var = int_investments value = project_monetary_cost^project }
+				clamp_variable = { var = int_investments min = 0 }
+			}
+			else = {
+				subtract_from_variable = { var = treasury value = project_monetary_cost^project }
+			}
 			set_temp_variable = { return_to_sender = project_monetary_cost^project }
 			multiply_temp_variable = { return_to_sender = 0.10 }
 			var:project_array^project = {
