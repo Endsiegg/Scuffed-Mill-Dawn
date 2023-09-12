@@ -1,4 +1,3 @@
-
 state = {
 	id = 754
 	name = "STATE_754"
@@ -52,8 +51,7 @@ state = {
 			internet_station = 2
 			air_base = 4
 			dockyard = 1
-			offices = 4
-			industrial_complex = 2
+			offices = 2
 			1408 = {
 				naval_base = 5
 
