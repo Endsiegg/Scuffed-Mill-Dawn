@@ -263,6 +263,24 @@ opinion_modifiers = {
 		value = 25
 	}
 
+	middle_eastern_silk_road = {
+		value = 50
+	}
+
+	ISR_Arab_Conflict = {
+		value = -25
+	}
+	
+	hostile = {
+		value = -50
+	}
+
+	european_union_member_trade = {
+		value = 50
+	}
+	abrahams_accords = {
+		value = 25
+	}
 	huge_increase = {
 		value = 50
 	}

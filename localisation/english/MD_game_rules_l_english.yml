@@ -11,6 +11,11 @@
  MD_CHEAT_RULES: "Cheat Options"
  MD_RANDOM_RULES: "Randomizer Rules"
 
+
+ RULE_ALLOW_AUTO_ANNEX:0 "Auto Annexation of AI"
+ RULE_ALLOW_ANNEX_DESC:0 "Auto Annex enabled. This will auto annex AI after war completion, navy will be taken"
+ RULE_BLOCKED_ANNEX_DESC:0 "Auto Annex disabled"
+
  # AI RULES
  RULE_HARD_AI_ECONOMIC: "Economic AI"
  RULE_DISABLE_HARD_AI_ECONOMIC: "Standard restriction"

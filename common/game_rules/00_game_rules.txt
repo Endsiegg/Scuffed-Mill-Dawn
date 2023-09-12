@@ -59,6 +59,23 @@ rule_enable_ai_debt_war = {
 #
 
 # PEACE DEAL RULES
+allow_auto_annex = {
+	name = "RULE_ALLOW_AUTO_ANNEX"
+	group = "MD_RULES"
+	icon = "GFX_release_nations"
+
+	default = {
+		name = yes
+		text = "RULE_OPTION_ALLOWED"
+		desc = "RULE_ALLOW_ANNEX_DESC"
+	}
+	
+	option = {
+		name = no
+		text = "RULE_OPTION_BLOCKED"
+		desc = "RULE_BLOCKED_ANNEX_DESC"
+	}
+}
 allow_chaotic_PC = {
 	name = "RULE_ALLOW_CHAOTIC_PEACE_CONFERENCE"
 	group = "MD_PEACE_DEALS"

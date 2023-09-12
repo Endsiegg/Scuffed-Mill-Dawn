@@ -1,4 +1,24 @@
+#@ -1,1031 +1,540 @@
 ideas = {
+
+	country = {
+
+		ISR_vanguard_of_judaism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_vanguard_of_judaism" }
+
+			allowed = {
+				always = no
+			}
+
+			picture = ISR_state_symbol
+
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = 0.10
+			}
+		}
+
+	}
 
 	country = {
 
@@ -63,6 +83,7 @@ ideas = {
 				always = no
 			}
 
+			picture = ISR_carmel_program
 			picture = research_bonus
 
 			modifier = {
@@ -82,6 +103,7 @@ ideas = {
 				always = no
 			}
 
+			picture = manpower_bonus
 			picture = research_bonus
 
 			modifier = {
@@ -148,6 +170,48 @@ ideas = {
 
 	country = {
 
+		effective_f35_training_program = {
+		    on_add = { log = "[GetDateText]: [Root.GetName]: Us Investment" }
+			
+			allowed = {
+			always = no
+			}
+			
+			picture = israel_f35_idea
+			
+			modifier = {
+				air_agility_factor = 0.2
+                air_maximum_speed_factor = 0.1
+                air_accidents_factor = -0.15
+                air_superiority_bonus_in_combat = 0.1
+                air_range_factor = 0.1
+
+
+			}
+		}
+	}
+
+	country = {
+
+		Monthly_Aliyahs = {
+		    on_add = { log = "[GetDateText]: [Root.GetName]: Us Investment" }
+			
+			allowed = {
+			always = no
+			}
+			
+			picture = ISR_Alliyah
+			
+			modifier = {
+				monthly_population = 1.5
+                research_speed_factor = 0.12
+				
+			}
+		}
+	}
+
+	country = {
+
 		israeli_intelligence = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: Us Investment" }
 
@@ -191,6 +255,7 @@ ideas = {
 				always = no
 			}
 
+			picture = reserve_divisions
 			picture = research_bonus
 
 			modifier = {
@@ -209,6 +274,7 @@ ideas = {
 				always = no
 			}
 
+			picture = ISR_Mossad
 			picture = research_bonus
 
 			modifier = {
@@ -227,6 +293,7 @@ ideas = {
 				always = no
 			}
 
+			picture = yozma_ISR
 			picture = research_bonus
 
 			modifier = {
@@ -244,6 +311,7 @@ ideas = {
 				always = no
 			}
 
+			picture = israel_shin_bet
 			picture = research_bonus
 
 			modifier = {
@@ -262,6 +330,7 @@ ideas = {
 				always = no
 			}
 
+			picture = ISR_Aman
 			picture = research_bonus
 
 			modifier = {
@@ -283,8 +352,8 @@ ideas = {
 			picture = research_bonus
 
 			modifier = {
-				weekly_manpower = 1000
-				MONTHLY_POPULATION = 0.5
+				weekly_manpower = 250
+				MONTHLY_POPULATION = 0.2
 			}
 		}
 
@@ -368,6 +437,7 @@ ideas = {
 				always = no
 			}
 
+			picture = drone_ISR
 			picture = research_bonus
 
 			equipment_bonus = {
@@ -387,6 +457,7 @@ ideas = {
 				always = no
 			}
 
+			picture = ISR_very_low_happiness
 			picture = research_bonus
 
 			modifier = {
@@ -401,6 +472,7 @@ ideas = {
 				always = no
 			}
 
+			picture = ISR_low_happiness
 			picture = research_bonus
 
 			modifier = {
@@ -415,6 +487,7 @@ ideas = {
 				always = no
 			}
 
+			picture = ISR_moderate_happiness
 			picture = research_bonus
 
 			modifier = {
@@ -427,6 +500,7 @@ ideas = {
 				always = no
 			}
 
+			picture = ISR_high_happiness
 			picture = research_bonus
 
 			modifier = {
@@ -441,6 +515,7 @@ ideas = {
 				always = no
 			}
 
+			picture = ISR_very_high_happiness
 			picture = research_bonus
 
 			modifier = {
@@ -455,6 +530,7 @@ ideas = {
 				always = no
 			}
 
+			picture = ISR_low_terrorism
 			picture = research_bonus
 
 
@@ -471,6 +547,7 @@ ideas = {
 				always = no
 			}
 
+			picture = ISR_moderate_terrorism
 			picture = research_bonus
 
 
@@ -490,6 +567,7 @@ ideas = {
 				always = no
 			}
 
+			picture = ISR_high_terrorism
 			picture = research_bonus
 
 
@@ -508,6 +586,7 @@ ideas = {
 				always = no
 			}
 
+			picture = ISR_very_high_terrorism
 			picture = research_bonus
 
 
@@ -526,15 +605,445 @@ ideas = {
 				always = no
 			}
 
-			picture = research_bonus
+			picture = ISR_apocalyptic_terrorism
 
 
 			modifier = {
-				stability_weekly = -0.020
-				war_support_weekly = -0.025
-				resistance_growth = 0.22
-				required_garrison_factor = 0.18
+            stability_weekly = -0.020
+            war_support_weekly = 0.025
+            resistance_growth = 0.22
+
 			}
 		}
 	}
+    country = {
+		ISR_iraq_idea = {
+			allowed = {
+			}
+
+			allowed_civil_war = {
+			}
+
+			cancel = {
+			    NOT = {
+				    IRQ = { has_government = communism }
+				}			
+			}
+
+			picture = politicised_army
+
+			targeted_modifier = {
+				tag = IRQ
+				attack_bonus_against = 0.15
+			}
+		}	
+	}	
+    country = {
+		ISR_syria_idea = {
+			allowed = {
+			}
+
+			allowed_civil_war = {
+			}
+
+			cancel = {
+			    NOT = {
+				    SYR = { has_government = communism }
+				}	
+			}
+
+			picture = politicised_army
+
+			targeted_modifier = {
+				tag = SYR
+				attack_bonus_against = 0.15
+			}
+		}	
+	}	
+    country = {
+		ISR_hamas_idea = {
+			allowed = {
+			}
+
+			allowed_civil_war = {
+			}
+
+			cancel = {
+			NOT = {
+			    country_exists = HAM
+				}
+			}
+
+			picture = politicised_army
+
+			targeted_modifier = {
+				tag = HAM
+				attack_bonus_against = 0.15
+			}
+		}	
+	}	
+    country = {
+		ISR_hezbollah_idea = {
+			allowed = {
+			}
+
+			allowed_civil_war = {
+			}
+
+			cancel = {
+			    NOT = {
+				    country_exists = HEZ
+				}	
+			}
+
+			picture = politicised_army
+
+			targeted_modifier = {
+				tag = HEZ
+				attack_bonus_against = 0.15
+			}
+		}	
+	}	
+    country = {
+		ISR_iran_idea = {
+			allowed = {
+			}
+
+			allowed_civil_war = {
+			}
+
+			cancel = {
+			    NOT = {
+				    PER = { has_government = communism }
+				}			
+			}
+
+			picture = politicised_army
+
+			targeted_modifier = {
+				tag = PER
+				attack_bonus_against = 0.15
+			}
+		}	
+	}
+    country = {
+		ISR_yemen_help = {
+			allowed = {
+			}
+
+			allowed_civil_war = {
+			}
+
+			cancel = {
+			    NOT = {
+				    country_exists = HOU
+				}			
+			}
+
+			picture = politicised_army
+
+			targeted_modifier = {
+				tag = HOU
+				attack_bonus_against = 0.15
+			}
+		}	
+	}
+	country = {
+		ISR_armor_focus = {
+
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_armor_focus" }
+
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = tank_industry
+
+			cancel = {
+			}
+
+			modifier = {
+			consumer_goods_factor = 0.04
+			}
+			equipment_bonus = {
+				SP_arty_equipment = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+				APC_Equipment = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+				IFV_Equipment = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+				mbt_hull = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+				Rec_tank_Equipment = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+				util_vehicle_equipment = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+			}
+		}
+	}
+	country = {
+		ISR_foreign_ships1 = {
+
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_foreign_ships" }
+
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = coastal_navy
+
+			cancel = {
+			}
+
+			modifier = {
+			industrial_capacity_dockyard = 1.5
+			naval_detection = -0.1
+			naval_morale = -0.1
+			naval_speed_factor = -0.2
+			navy_max_range = -0.15
+			naval_torpedo_cooldown_factor = 0.1
+			navy_capital_ship_attack_factor = -0.1
+			navy_capital_ship_defence_factor = -0.1
+			navy_screen_attack_factor = -0.1
+			navy_visibility = 0.1
+			repair_speed_factor = -0.25
+			}
+			equipment_bonus = {
+			}
+		}
+	}	
+	country = {
+		ISR_foreign_ships2 = {
+
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_foreign_ships" }
+
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = coastal_navy
+
+			cancel = {
+			}
+
+			modifier = {
+			industrial_capacity_dockyard = 1
+			naval_detection = -0.05
+			naval_morale = -0.05
+			naval_speed_factor = -0.15
+			navy_max_range = -0.10
+			naval_torpedo_cooldown_factor = 0.05
+			navy_capital_ship_attack_factor = -0.05
+			navy_capital_ship_defence_factor = -0.05
+			navy_screen_attack_factor = -0.05
+			navy_visibility = 0.05
+			repair_speed_factor = -0.25
+			}
+			equipment_bonus = {
+			}
+		}
+	}
+	country = {
+		ISR_foreign_ships2b = {
+
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_foreign_ships" }
+
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = coastal_navy
+
+			cancel = {
+			}
+
+			modifier = {
+			industrial_capacity_dockyard = 2
+			naval_detection = -0.15
+			naval_morale = -0.15
+			naval_speed_factor = -0.25
+			navy_max_range = -0.2
+			naval_torpedo_cooldown_factor = 0.15
+			navy_capital_ship_attack_factor = -0.15
+			navy_capital_ship_defence_factor = -0.15
+			navy_screen_attack_factor = -0.15
+			navy_visibility = 0.15
+			repair_speed_factor = -0.25
+			}
+			equipment_bonus = {
+			}
+		}
+	}
+	country = {
+		ISR_space_program_1 = {
+			allowed = {
+			}
+
+			allowed_civil_war = {
+			}
+
+			cancel = {}
+
+			picture = ISR_space_program
+
+			modifier = {
+				decryption_factor = 0.10
+				army_attack_factor = 0.05
+				max_planning_factor = 0.10
+				research_speed_factor = 0.05
+			}
+		}
+	}
+	country = {
+		ISR_space_program_2 = {
+
+			allowed = {
+			}
+
+			allowed_civil_war = {
+			}
+
+			cancel = {}
+
+			picture = ISR_space_program
+
+			modifier = {
+				decryption_factor = 0.10
+				army_attack_factor = 0.05
+				max_planning_factor = 0.10
+				research_speed_factor = 0.07
+			}
+		}
+	}
+	country = {
+		ISR_space_program_3 = {
+
+
+			allowed = {
+			}
+
+			allowed_civil_war = {
+			}
+
+			cancel = {}
+
+			picture = ISR_space_program
+
+			modifier = {
+				decryption_factor = 0.10
+				army_attack_factor = 0.05
+				max_planning_factor = 0.10
+				research_speed_factor = 0.10
+			}
+		}
+	}
+	country = {
+		ISR_space_program_4 = {
+
+
+			allowed = {
+			}
+
+			allowed_civil_war = {
+			}
+
+			cancel = {}
+
+			picture = ISR_space_program
+
+			modifier = {
+				decryption_factor = 0.2
+				army_attack_factor = 0.1
+				max_planning_factor = 0.15
+				research_speed_factor = 0.15
+			}
+		}
+	}	
+	country = {
+		me_confederation = {
+
+
+			allowed = {
+			}
+
+			allowed_civil_war = {
+			}
+
+			cancel = {}
+
+			picture = idea_faction_jerusalem_defence_pact_member
+
+			modifier = {
+				trade_opinion_factor = 0.1
+				stability_factor = 0.03
+				consumer_goods_factor = -0.03
+			}
+		}
+	}
+	country = {
+		me_confederation_alliance = {
+
+
+			allowed = {
+			}
+
+			allowed_civil_war = {
+			}
+
+			cancel = {}
+			picture = research_bonus
+
+			picture = idea_faction_jerusalem_defence_pact_member
+
+			modifier = {
+				trade_opinion_factor = 0.1
+				stability_factor = 0.03
+				consumer_goods_factor = -0.03
+				custom_modifier_tooltip = faction_jerusalem_defence_pact_member_TT
+			}
+		}
+	}
+	country = {
+		ISR_tech_capital = {
+            on_add = { log = "[GetDateText]: [Root.GetName]: add idea ISR_tech_capital" }
+
+			allowed = {
+			}
+
+			allowed_civil_war = {
+			}
+
+			cancel = {}
+
+			picture = ISR_tech_capital
+
+			modifier = {
+				custom_modifier_tooltip = isr_tech_capital_idea_tt
+			}
+		}
+	}	
 }

@@ -106,6 +106,10 @@ script_enum_equipment_bonus_type = {
 	AA_Equipment
 
 	## AIR
+	cv_awacs_equipment
+	awacs_equipment 
+	cv_awacs_equipment 
+	missile
 	Strike_fighter_equipment
 	L_Strike_fighter_equipment
 	AS_Fighter_equipment
