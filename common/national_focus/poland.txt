@@ -16,13 +16,13 @@ focus_tree = {
 		icon = Poland
 		x = 20
 		y = 0
-		cost = 5
+		cost = 10
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_revitalize_government"
-			add_political_power = 200
+			add_political_power = 120
 		}
 
 		ai_will_do = { factor = 10 }
@@ -34,7 +34,7 @@ focus_tree = {
 		x = 13
 		y = 1
 		relative_position_id = POL_revitalize_government
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = POL_revitalize_government }
 		mutually_exclusive = { focus = POL_stay_on_track }
@@ -71,8 +71,8 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_stay_on_track"
-			add_political_power = 150
-			add_stability = 0.05
+			add_political_power = 50
+			add_stability = 0.03
 		}
 
 		ai_will_do = {
@@ -90,7 +90,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = POL_change_of_path
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = POL_change_of_path }
 		mutually_exclusive = { focus = POL_falanga }
@@ -106,7 +106,7 @@ focus_tree = {
 
 			add_timed_idea = {
 				idea = POL_red_dream_emerging_buff
-				days = 365
+				days = 200
 			}
 		}
 
@@ -120,7 +120,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_red_dream
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = POL_red_dream }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -144,7 +144,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = POL_red_dream
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = POL_red_front }
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
@@ -152,7 +152,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_militias"
 			add_stability = -0.1
-			add_war_support = 0.1
+			add_war_support = 0.05
 		}
 
 		ai_will_do = { factor = 10 }
@@ -164,7 +164,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = POL_red_dream
-		cost = 1
+		cost = 10
 
 		prerequisite = { focus = POL_red_front }
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_FACTION }
@@ -189,7 +189,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = POL_red_dream
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = POL_militias }
 		prerequisite = { focus = POL_pressure_unions }
@@ -198,7 +198,7 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 				idea = POL_communist_strike
-				days = 120
+				days = 300
 			}
 		}
 
@@ -211,7 +211,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_start_communist_strike
-		cost = 5
+		cost = 20
 
 		prerequisite = { focus = POL_start_communist_strike }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -229,7 +229,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_new_communism
-		cost = 5
+		cost = 10
 
 		available = {
 			OR = {
@@ -311,7 +311,7 @@ focus_tree = {
 		x = -5
 		y = 1
 		relative_position_id = POL_ZKP
-		cost = 5
+		cost = 10
 
 		search_filters = { FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 
@@ -319,7 +319,7 @@ focus_tree = {
 		prerequisite = { focus = POL_ZKP }
 
 		completion_reward = {
-			add_political_power = 100
+			add_political_power = 50
 			add_stability = -0.05
 
 			set_temp_variable = { temp_opinion = -5 }
@@ -335,9 +335,9 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = POL_start_detransition
-		cost = 5
+		cost = 10
 
-		# mutually_exclusive = { focus = POL_communist_limited_nationalisation }
+		mutually_exclusive = { focus = POL_communist_limited_nationalisation }
 		available = { emerging_communist_state_are_in_power = yes }
 		prerequisite = { focus = POL_start_detransition }
 
@@ -361,9 +361,9 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = POL_start_detransition
-		cost = 5
+		cost = 10
 
-		# mutually_exclusive = { focus = POL_communist_mass_nationalisation }
+		mutually_exclusive = { focus = POL_communist_mass_nationalisation }
 		available = { emerging_communist_state_are_in_power = yes }
 		prerequisite = { focus = POL_start_detransition }
 
@@ -387,7 +387,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_communist_mass_nationalisation
-		cost = 5
+		cost = 10
 
 		available = { emerging_communist_state_are_in_power = yes }
 
@@ -396,11 +396,10 @@ focus_tree = {
 			focus = POL_communist_limited_nationalisation
 		}
 
-		# mutually_exclusive = { focus = POL_comm_naval_development }
+		mutually_exclusive = { focus = POL_comm_naval_development }
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			three_random_infrastructure = yes
 			three_random_infrastructure = yes
 		}
 		ai_will_do = { factor = 5 }
@@ -412,7 +411,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_communist_limited_nationalisation
-		cost = 5
+		cost = 10
 
 		available = { emerging_communist_state_are_in_power = yes }
 
@@ -421,12 +420,11 @@ focus_tree = {
 			focus = POL_communist_limited_nationalisation
 		}
 
-		# mutually_exclusive = { focus = POL_comm_infrastructure_development }
+		mutually_exclusive = { focus = POL_comm_infrastructure_development }
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			two_random_dockyards = yes
-			two_random_dockyards = yes
+			one_random_dockyard = yes
 		}
 
 		ai_will_do = { factor = 10 }
@@ -447,16 +445,15 @@ focus_tree = {
 			focus = POL_comm_naval_development
 		}
 
-		# mutually_exclusive = { focus = POL_civilian_production_focus }
+		mutually_exclusive = { focus = POL_civilian_production_focus }
 
 		search_filters = { FOCUS_FILTER_INTERNAL_FACTION }
 		completion_reward = {
-			set_temp_variable = { temp_opinion = 10 }
+			set_temp_variable = { temp_opinion = 5 }
 			change_the_military_opinion = yes
-			three_random_arms_factory = yes
 			add_timed_idea = {
 				idea = POL_military_focus
-				days = 3652
+				days = 1095
 			}
 		}
 
@@ -477,14 +474,13 @@ focus_tree = {
 			focus = POL_comm_infrastructure_development
 			focus = POL_comm_naval_development
 		}
-		# mutually_exclusive = { focus = POL_military_production_focus }
+		mutually_exclusive = { focus = POL_military_production_focus }
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			three_random_industrial_complex = yes
 			add_timed_idea = {
 				idea = POL_civilian_focus
-				days = 3652
+				days = 1095
 			}
 		}
 
@@ -505,17 +501,17 @@ focus_tree = {
 			focus = POL_civilian_production_focus
 			focus = POL_military_production_focus
 		}
-		# mutually_exclusive = { focus = POL_develop_alternative_fuel }
+		mutually_exclusive = { focus = POL_develop_alternative_fuel }
 
 		search_filters = { FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_RESOURCE }
 		completion_reward = {
 			add_resource = {
 				type = oil
-				amount = 30
+				amount = 5
 				state = 112
 			}
 
-			set_temp_variable = { temp_opinion = 10 }
+			set_temp_variable = { temp_opinion = 5 }
 			change_fossil_fuel_industry_opinion = yes
 			set_temp_variable = { treasury_change = -7.0 }
 			modify_treasury_effect = yes
@@ -538,7 +534,7 @@ focus_tree = {
 			focus = POL_civilian_production_focus
 			focus = POL_military_production_focus
 		}
-		# mutually_exclusive = { focus = POL_develop_oil }
+		mutually_exclusive = { focus = POL_develop_oil }
 
 		search_filters = { FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_RESOURCE }
 		completion_reward = {
@@ -643,7 +639,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_ZKP
-		cost = 5
+		cost = 10
 
 		available = { emerging_communist_state_are_in_power = yes }
 		prerequisite = { focus = POL_ZKP }
@@ -663,7 +659,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = POL_ZKP
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = POL_ZKP }
 		available = { emerging_communist_state_are_in_power = yes }
@@ -682,7 +678,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = POL_comm_internal_affairs
-		cost = 5
+		cost = 10
 
 		available = { emerging_communist_state_are_in_power = yes }
 		prerequisite = { focus = POL_comm_internal_affairs }
@@ -703,7 +699,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_incerase_centralisation
-		cost = 5
+		cost = 10
 
 		available = { emerging_communist_state_are_in_power = yes }
 		prerequisite = { focus = POL_incerase_centralisation }
@@ -723,7 +719,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = POL_increase_healthcare
-		cost = 5
+		cost = 10
 
 		available = { emerging_communist_state_are_in_power = yes }
 		prerequisite = { focus = POL_increase_healthcare }
@@ -745,7 +741,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = POL_increase_healthcare
-		cost = 5
+		cost = 10
 
 		available = { emerging_communist_state_are_in_power = yes }
 		prerequisite = { focus = POL_increase_healthcare }
@@ -767,7 +763,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = POL_increase_internal_security
-		cost = 5
+		cost = 10
 
 		available = { emerging_communist_state_are_in_power = yes }
 		prerequisite = {
@@ -796,7 +792,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_combat_far_right_movement
-		cost = 5
+		cost = 10
 
 		available = { emerging_communist_state_are_in_power = yes }
 		prerequisite = { focus = POL_combat_far_right_movement }
@@ -818,7 +814,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = POL_comm_internal_affairs
-		cost = 5
+		cost = 10
 
 		available = { emerging_communist_state_are_in_power = yes }
 
@@ -848,7 +844,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_hold_communist_summit
-		cost = 5
+		cost = 10
 
 		available = { emerging_communist_state_are_in_power = yes }
 		prerequisite = { focus = POL_hold_communist_summit }
@@ -884,7 +880,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = POL_comm_external_affairs
-		cost = 5
+		cost = 10
 
 		available = {
 			OR = {
@@ -909,6 +905,7 @@ focus_tree = {
 				limit = { has_idea = EU_member }
 
 				remove_ideas = EU_member
+				leaving_EU = yes
 			}
 		}
 
@@ -921,7 +918,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_connect_to_neighbours
-		cost = 5
+		cost = 10
 
 		available = { emerging_communist_state_are_in_power = yes }
 
@@ -930,9 +927,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_INTERNAL_FACTION }
 		completion_reward = {
 			add_ideas = { POL_clergy_opressed }
-			set_temp_variable = { temp_opinion = -10 }
+			set_temp_variable = { temp_opinion = -5 }
 			change_the_clergy_opinion = yes
-			add_stability = -0.2
+			add_stability = -0.1
 		}
 
 		ai_will_do = { factor = 10 }
@@ -944,7 +941,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_comm_leave_eu
-		cost = 5
+		cost = 10
 
 		available = {
 			OR = {
@@ -976,7 +973,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_comm_leave_nato
-		cost = 5
+		cost = 10
 
 		available = {
 			OR = {
@@ -997,7 +994,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_MILITARY_LAWS FOCUS_FILTER_INTERNAL_FACTION }
 		completion_reward = {
-			set_temp_variable = { temp_opinion = -10 }
+			set_temp_variable = { temp_opinion = -5 }
 			change_the_military_opinion = yes
 
 			if = {
@@ -1027,7 +1024,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = POL_push_on_clergy
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = POL_push_on_clergy }
 		prerequisite = { focus = POL_reduce_extensive_military_funding }
@@ -1058,7 +1055,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_armia_ludowa
-		cost = 5
+		cost = 10
 
 		available = {
 			emerging_communist_state_are_in_power = yes
@@ -1071,7 +1068,7 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 				idea = POL_prepare_for_worst_idea
-				days = 3652
+				days = 1095
 			}
 		}
 
@@ -1136,7 +1133,7 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = POL_PPS
-		cost = 5
+		cost = 10
 
 		available = { emerging_anarchist_communism_are_in_power = yes }
 		prerequisite = { focus = POL_PPS }
@@ -1145,7 +1142,7 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 				idea = POL_external_relations_revision_idea
-				days = 720
+				days = 180
 			}
 		}
 
@@ -1158,7 +1155,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = POL_external_relations_revision
-		cost = 5
+		cost = 10
 
 		available = { emerging_anarchist_communism_are_in_power = yes }
 		prerequisite = { focus = POL_external_relations_revision }
@@ -1182,7 +1179,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_influence_neighbours
-		cost = 5
+		cost = 10
 
 		available = { emerging_anarchist_communism_are_in_power = yes }
 		prerequisite = { focus = POL_influence_neighbours }
@@ -1239,15 +1236,15 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_close_the_market
-		cost = 5
+		cost = 10
 
 		available = { emerging_anarchist_communism_are_in_power = yes }
 		prerequisite = { focus = POL_close_the_market }
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_political_power = -100
-			set_temp_variable = { treasury_change = 100.0 }
+			add_political_power = -50
+			set_temp_variable = { treasury_change = 10.0 }
 			modify_treasury_effect = yes
 		}
 
@@ -1260,15 +1257,15 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_PPS
-		cost = 5
+		cost = 10
 
 		available = { emerging_anarchist_communism_are_in_power = yes }
 		prerequisite = { focus = POL_PPS }
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		completion_reward = {
-			add_stability = 0.05
-			add_political_power = 100
+			add_stability = 0.03
+			add_political_power = 50
 		}
 
 		ai_will_do = { factor = 10 }
@@ -1280,7 +1277,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_social_matters
-		cost = 5
+		cost = 10
 
 		available = { emerging_anarchist_communism_are_in_power = yes }
 		prerequisite = { focus = POL_social_matters }
@@ -1288,7 +1285,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_FACTION }
 		completion_reward = {
 			add_political_power = -100
-			set_temp_variable = { temp_opinion = 10 }
+			set_temp_variable = { temp_opinion = 5 }
 			change_labour_unions_opinion = yes
 		}
 
@@ -1301,7 +1298,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_rework_unions
-		cost = 5
+		cost = 10
 
 		available = { emerging_anarchist_communism_are_in_power = yes }
 		prerequisite = { focus = POL_rework_unions }
@@ -1326,7 +1323,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_leftist_propaganda
-		cost = 5
+		cost = 10
 
 		available = { emerging_anarchist_communism_are_in_power = yes }
 		prerequisite = { focus = POL_leftist_propaganda }
@@ -1345,7 +1342,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_women_power
-		cost = 5
+		cost = 10
 
 		available = { emerging_anarchist_communism_are_in_power = yes }
 		prerequisite = { focus = POL_women_power }
@@ -1366,7 +1363,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_decrease_centralization
-		cost = 5
+		cost = 10
 
 		available = { emerging_anarchist_communism_are_in_power = yes }
 		prerequisite = { focus = POL_decrease_centralization }
@@ -1387,7 +1384,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_leave_capitalist_deals
-		cost = 5
+		cost = 10
 
 		available = { emerging_anarchist_communism_are_in_power = yes }
 		prerequisite = { focus = POL_women_power }
@@ -1403,11 +1400,11 @@ focus_tree = {
 
 	focus = {
 		id = POL_reorganize_construction
-		icon = Social_democracy
+		icon = social_democracy
 		x = 3
 		y = 1
 		relative_position_id = POL_PPS
-		cost = 5
+		cost = 10
 
 		available = { emerging_anarchist_communism_are_in_power = yes }
 		prerequisite = { focus = POL_PPS }
@@ -1419,7 +1416,7 @@ focus_tree = {
 
 			add_timed_idea = {
 				idea = POL_construction_reform
-				days = 1826
+				days = 1095
 			}
 		}
 
@@ -1439,45 +1436,41 @@ focus_tree = {
 		cancel_if_invalid = no
 
 		prerequisite = { focus = POL_reorganize_construction }
-		# mutually_exclusive = { focus = POL_anarchist_development }
+		mutually_exclusive = { focus = POL_anarchist_development }
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_centralized_development"
 			111 = { # Wielkopolska
-				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
 			474 = { # West Pomerania
-				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
 			433 = { # Lodz
-			add_extra_state_shared_building_slots = 2
-					add_building_construction = {
+				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
 			626 = { # Lower Silesia
-				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 1
 					instant_build = yes
 				}
 			}
 
-			set_temp_variable = { treasury_change = -100 }
+			set_temp_variable = { treasury_change = -30 }
 			modify_treasury_effect = yes
 		}
 
@@ -1492,7 +1485,7 @@ focus_tree = {
 		relative_position_id = POL_reorganize_construction
 		cost = 10
 
-		# mutually_exclusive = { focus = POL_develop_central_areas }
+		mutually_exclusive = { focus = POL_develop_central_areas }
 		available = { emerging_anarchist_communism_are_in_power = yes }
 
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_CORRUPTION }
@@ -1511,7 +1504,7 @@ focus_tree = {
 		icon = polishair
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 
 		relative_position_id = POL_develop_central_areas
 		cancel_if_invalid = no
@@ -1523,7 +1516,7 @@ focus_tree = {
 			focus = POL_anarchist_development
 		}
 
-		# mutually_exclusive = { focus = POL_develop_ports }
+		mutually_exclusive = { focus = POL_develop_ports }
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -1533,14 +1526,7 @@ focus_tree = {
 			random_owned_controlled_state = {
 				add_building_construction = {
 					type = air_base
-					level = 4
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				add_building_construction = {
-					type = air_base
-					level = 4
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -1565,17 +1551,17 @@ focus_tree = {
 			focus = POL_anarchist_development
 		}
 
-		# mutually_exclusive = { focus = POL_develop_airports }
+		mutually_exclusive = { focus = POL_develop_airports }
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			set_temp_variable = { treasury_change = -3 }
 			modify_treasury_effect = yes
-			two_random_dockyards = yes
+
 			random_owned_controlled_state = {
 				add_building_construction = {
 					type = naval_base
-					level = 3
+					level = 2
 					instant_build = yes
 					province = {
 						all_provinces = yes
@@ -1586,7 +1572,7 @@ focus_tree = {
 			}
 		}
 
-		ai_will_do = { factor = 5}
+		ai_will_do = { factor = 5 }
 	}
 
 	focus = {
@@ -1611,7 +1597,7 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 				idea = POL_quality_control_idea
-				days = 1826
+				days = 1095
 			}
 		}
 
@@ -1640,7 +1626,7 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 				idea = POL_speed_development_idea
-				days = 1826
+				days = 1095
 			}
 		}
 
@@ -1670,11 +1656,11 @@ focus_tree = {
 			# some is paid by oligarchs
 			set_temp_variable = { treasury_change = -10 }
 			modify_treasury_effect = yes
-			set_temp_variable = { temp_opinion = 10 }
+			set_temp_variable = { temp_opinion = 5 }
 			change_oligarchs_opinion = yes
 			increase_corruption = yes
-			two_random_industrial_complex = yes
-			two_random_arms_factory = yes
+			one_random_industrial_complex = yes
+			one_random_arms_factory = yes
 		}
 
 		ai_will_do = { factor = 5 }
@@ -1700,13 +1686,11 @@ focus_tree = {
 		mutually_exclusive = { focus = POL_oligarchic_control }
 
 		completion_reward = {
-			add_stability = 0.1
-			add_political_power = 200
+			add_stability = 0.05
+			add_political_power = 50
 			decrease_corruption = yes
-			set_temp_variable = { temp_opinion = -10 }
+			set_temp_variable = { temp_opinion = -5 }
 			change_oligarchs_opinion = yes
-			one_random_industrial_complex = yes
-			one_random_arms_factory = yes
 		}
 
 		ai_will_do = { factor = 10 }
@@ -1738,7 +1722,7 @@ focus_tree = {
 			focus = POL_fight_oligarchs
 		}
 
-		# mutually_exclusive = { focus = POL_increase_research_funding }
+		mutually_exclusive = { focus = POL_increase_research_funding }
 
 		completion_reward = {
 			set_temp_variable = { treasury_change = -15.0 }
@@ -1777,7 +1761,7 @@ focus_tree = {
 			focus = POL_fight_oligarchs
 		}
 
-		# mutually_exclusive = { focus = POL_broaden_university_education }
+		mutually_exclusive = { focus = POL_broaden_university_education }
 
 		completion_reward = {
 			add_political_power = 150
@@ -1805,9 +1789,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INTERNAL_FACTION }
 
 		completion_reward = {
-			set_temp_variable = { temp_opinion = 15 }
+			set_temp_variable = { temp_opinion = 5 }
 			change_farmers_opinion = yes
-			set_temp_variable = { treasury_change = 300 }
+			set_temp_variable = { treasury_change = 10 }
 			modify_treasury_effect = yes
 		}
 
@@ -1828,7 +1812,7 @@ focus_tree = {
 			add_ideas = { POL_paf_idea }
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -1844,16 +1828,10 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			army_experience = 150
-			add_doctrine_cost_reduction = {
-				name = land_doctrine
-				category = land_doctrine
-				cost_reduction = 0.5
-				uses = 3
-			}
+			army_experience = 35
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -1873,12 +1851,12 @@ focus_tree = {
 			add_doctrine_cost_reduction = {
 				name = land_doctrine
 				category = land_doctrine
-				cost_reduction = 0.5
-				uses = 3
+				cost_reduction = 0.3
+				uses = 1
 			}
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -1894,16 +1872,10 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			army_experience = 150
-			add_doctrine_cost_reduction = {
-				name = land_doctrine
-				category = land_doctrine
-				cost_reduction = 0.3
-				uses = 1
-			}
+			army_experience = 25
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -1911,7 +1883,7 @@ focus_tree = {
 		icon = POL_twardy
 		x = -1
 		y = 1
-		cost = 5
+		cost = 7
 
 		relative_position_id = POL_modern_army
 		cancel_if_invalid = no
@@ -1923,13 +1895,13 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = armor
-				bonus = 3
-				uses = 2
+				bonus = 0.3
+				uses = 1
 				category = Cat_ARMOR
 			}
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -1937,25 +1909,24 @@ focus_tree = {
 		icon = tanks5
 		x = -1
 		y = 1
-		cost = 10
+		cost = 7
 
 		relative_position_id = POL_armor
 		cancel_if_invalid = no
 		prerequisite = { focus = POL_armor }
-		# mutually_exclusive = { focus = POL_recon_tanks }
+		mutually_exclusive = { focus = POL_recon_tanks }
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
 				name = Cat_MBT
-				bonus = 3
-				ahead_reduction = 1.0
+				bonus = 0.3
 				uses = 1
 				category = Cat_MBT
 			}
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -1968,19 +1939,19 @@ focus_tree = {
 		relative_position_id = POL_armor
 		cancel_if_invalid = no
 		prerequisite = { focus = POL_armor }
-		# mutually_exclusive = { focus = POL_mbts }
+		mutually_exclusive = { focus = POL_mbts }
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
 				name = Cat_REC_TANK
-				bonus = 3
+				bonus = 0.3
 				uses = 1
 				category = Cat_REC_TANK
 			}
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -1988,7 +1959,7 @@ focus_tree = {
 		icon = POL_pgz
 		x = 1
 		y = 1
-		cost = 10
+		cost = 7
 
 		relative_position_id = POL_modern_army
 		cancel_if_invalid = no
@@ -1997,10 +1968,10 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			four_random_arms_factory = yes
+			one_random_arms_factory = yes
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -2019,13 +1990,13 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = Cat_UTIL
-				bonus = 3
+				bonus = 0.3
 				uses = 1
 				category = Cat_UTIL
 			}
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -2038,19 +2009,19 @@ focus_tree = {
 		relative_position_id = POL_motorized_army
 		cancel_if_invalid = no
 		prerequisite = { focus = POL_motorized_army }
-		# mutually_exclusive = { focus = POL_apcs }
+		mutually_exclusive = { focus = POL_apcs }
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
 				name = Cat_IFV
-				bonus = 3
+				bonus = 0.3
 				uses = 1
 				category = Cat_IFV
 			}
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -2063,19 +2034,19 @@ focus_tree = {
 		relative_position_id = POL_motorized_army
 		cancel_if_invalid = no
 		prerequisite = { focus = POL_motorized_army }
-		# mutually_exclusive = { focus = POL_ifvs }
+		mutually_exclusive = { focus = POL_ifvs }
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
 				name = Cat_APC
-				bonus = 3
+				bonus = 0.3
 				uses = 1
 				category = Cat_APC
 			}
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -2083,7 +2054,7 @@ focus_tree = {
 		icon = general_staff
 		x = 1
 		y = 1
-		cost = 5
+		cost = 7
 
 		relative_position_id = POL_recon_tanks
 		cancel_if_invalid = no
@@ -2095,13 +2066,13 @@ focus_tree = {
 			add_doctrine_cost_reduction = {
 				name = land_doctrine
 				category = land_doctrine
-				cost_reduction = 0.5
-				uses = 3
+				cost_reduction = 0.3
+				uses = 1
 			}
-			army_experience = 100
+			army_experience = 5
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -2109,7 +2080,7 @@ focus_tree = {
 		icon = army_doctrine
 		x = -1
 		y = 1
-		cost = 5
+		cost = 7
 
 		relative_position_id = POL_hq
 		cancel_if_invalid = no
@@ -2119,15 +2090,15 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_doctrine_cost_reduction = {
-				name =  Cat_NETWORK_CENTRIC_WARFARE
-				category =  Cat_NETWORK_CENTRIC_WARFARE
-				cost_reduction = 0.5
-				uses = 3
+				name = Cat_NETWORK_CENTRIC_WARFARE
+				category = Cat_NETWORK_CENTRIC_WARFARE
+				cost_reduction = 0.3
+				uses = 1
 			}
-			army_experience = 100
+			army_experience = 5
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -2135,7 +2106,7 @@ focus_tree = {
 		icon = army_officers_communist
 		x = 1
 		y = 1
-		cost = 5
+		cost = 7
 
 		relative_position_id = POL_hq
 		cancel_if_invalid = no
@@ -2147,13 +2118,13 @@ focus_tree = {
 			add_doctrine_cost_reduction = {
 				name = Cat_DECENTRALIZED_WARFARE
 				category = Cat_DECENTRALIZED_WARFARE
-				cost_reduction = 0.5
-				uses = 3
+				cost_reduction = 0.3
+				uses = 1
 			}
-			army_experience = 100
+			army_experience = 5
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -2168,11 +2139,11 @@ focus_tree = {
 		prerequisite = { focus = POL_network_centric }
 
 		completion_reward = {
-			army_experience = 100
+			army_experience = 25
 			add_ideas = { POL_network_centric_doctrine_idea }
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -2187,13 +2158,13 @@ focus_tree = {
 		prerequisite = { focus = POL_decentralized }
 
 		completion_reward = {
-			army_experience = 100
+			army_experience = 30
 			add_ideas = {
 				POL_decentralized_doctrine_idea
 			}
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -2245,7 +2216,7 @@ focus_tree = {
 			}
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -2297,7 +2268,7 @@ focus_tree = {
 			}
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -2349,7 +2320,7 @@ focus_tree = {
 			}
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -2403,7 +2374,7 @@ focus_tree = {
 			}
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -2419,13 +2390,13 @@ focus_tree = {
 		prerequisite = { focus = POL_modern_army }
 		prerequisite = { focus = POL_establish_territorial_defence_force }
 
-		# mutually_exclusive = { focus = POL_quality }
+		mutually_exclusive = { focus = POL_quality }
 
 		completion_reward = {
 			add_ideas = { POL_quantity_small_arms_idea }
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -2441,19 +2412,19 @@ focus_tree = {
 		prerequisite = { focus = POL_modern_army }
 		prerequisite = { focus = POL_establish_territorial_defence_force }
 
-		# mutually_exclusive = { focus = POL_quantity }
+		mutually_exclusive = { focus = POL_quantity }
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
 				name = Cat_INF_WEP
-				bonus = 3
+				bonus = 0.3
 				uses = 1
 				category = Cat_INF_WEP
 			}
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -2471,13 +2442,13 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = Cat_SUPPORT_WEAPONS
-				bonus = 3
+				bonus = 0.3
 				uses = 1
 				category = Cat_SUPPORT_WEAPONS
 			}
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -2490,25 +2461,25 @@ focus_tree = {
 		relative_position_id = POL_support_equipment
 		cancel_if_invalid = no
 		prerequisite = { focus = POL_support_equipment }
-		# mutually_exclusive = { focus = POL_aa_weapons }
+		mutually_exclusive = { focus = POL_aa_weapons }
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
 				name = Cat_L_AT
-				bonus = 3
+				bonus = 0.3
 				uses = 1
 				category = Cat_L_AT
 			}
 			add_tech_bonus = {
 				name = Cat_H_AT
-				bonus = 3
+				bonus = 0.3
 				uses = 1
 				category = Cat_H_AT
 			}
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -2521,19 +2492,19 @@ focus_tree = {
 		relative_position_id = POL_support_equipment
 		cancel_if_invalid = no
 		prerequisite = { focus = POL_support_equipment }
-		# mutually_exclusive = { focus = POL_at_weapons }
+		mutually_exclusive = { focus = POL_at_weapons }
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
 				name = Cat_L_AA
-				bonus = 3
+				bonus = 0.3
 				uses = 1
 				category = Cat_L_AA
 			}
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -2551,13 +2522,13 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = Cat_SP_ARTY
-				bonus = 3
+				bonus = 0.3
 				uses = 1
 				category = Cat_SP_ARTY
 			}
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -2572,12 +2543,12 @@ focus_tree = {
 		prerequisite = { focus = POL_polish_armed_forces }
 
 		completion_reward = {
-			army_experience = 150
-			navy_experience = 150
-			air_experience = 150
+			army_experience = 25
+			navy_experience = 25
+			air_experience = 25
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -2593,15 +2564,9 @@ focus_tree = {
 
 		completion_reward = {
 			army_experience = 20
-			add_tech_bonus = {
-				name = Cat_GROM
-				bonus = 3
-				uses = 1
-				category = Cat_SPECIAL_FORCES
-			}
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -2620,13 +2585,13 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = Cat_NVG
-				bonus = 3
+				bonus = 0.3
 				uses = 1
 				category = Cat_NVG
 			}
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -2646,13 +2611,13 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = Cat_TRANS_PLANE
-				bonus = 3
+				bonus = 0.3
 				uses = 1
 				category = Cat_TRANS_PLANE
 			}
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -2672,21 +2637,21 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = electronics
-				bonus = 3
-				uses = 2
+				bonus = 0.3
+				uses = 1
 				category = electronics
 			}
 			116 = {
 				add_building_construction = {
 					type = radar_station
-					level = 3
+					level = 1
 					instant_build = yes
 				}
 			}
 			628 = {
 				add_building_construction = {
 					type = radar_station
-					level = 3
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -2695,7 +2660,7 @@ focus_tree = {
 			modify_treasury_effect = yes
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -2712,10 +2677,10 @@ focus_tree = {
 		prerequisite = { focus = pol_night_vision }
 
 		completion_reward = {
-			army_experience = 50
+			army_experience = 30
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -2739,11 +2704,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			army_experience = 100
-			air_experience = 100
+			army_experience = 30
+			air_experience = 20
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -2751,7 +2716,7 @@ focus_tree = {
 		icon = POL_anaconda_16
 		x = -1
 		y = 1
-		cost = 5
+		cost = 10
 
 		relative_position_id = POL_military_exercise
 		cancel_if_invalid = no
@@ -2761,7 +2726,7 @@ focus_tree = {
 			POL = { country_event = { id = poland.5 } }
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -2776,10 +2741,10 @@ focus_tree = {
 		prerequisite = { focus = POL_polish_armed_forces }
 
 		completion_reward = {
-			air_experience = 150
+			air_experience = 15
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -2791,7 +2756,7 @@ focus_tree = {
 
 		relative_position_id = POL_airforce
 		cancel_if_invalid = no
-		prerequisite = { focus = POL_airforce}
+		prerequisite = { focus = POL_airforce }
 		mutually_exclusive = { focus = POL_operational }
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -2799,12 +2764,12 @@ focus_tree = {
 			add_doctrine_cost_reduction = {
 				name = Cat_battlefield_support_tree
 				category = Cat_battlefield_support_tree
-				cost_reduction = 0.5
-				uses = 3
+				cost_reduction = 0.3
+				uses = 1
 			}
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -2816,7 +2781,7 @@ focus_tree = {
 
 		relative_position_id = POL_airforce
 		cancel_if_invalid = no
-		prerequisite = { focus = POL_airforce}
+		prerequisite = { focus = POL_airforce }
 		mutually_exclusive = { focus = POL_battlefield }
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -2824,12 +2789,12 @@ focus_tree = {
 			add_doctrine_cost_reduction = {
 				name = POL_operational
 				category = Cat_operational_integrity_tree
-				cost_reduction = 0.5
-				uses = 3
+				cost_reduction = 0.3
+				uses = 1
 			}
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -2847,7 +2812,7 @@ focus_tree = {
 			116 = { # Warmia
 				add_building_construction = {
 					type = air_base
-					level = 4
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -2856,7 +2821,7 @@ focus_tree = {
 			modify_treasury_effect = yes
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -2875,13 +2840,13 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = Cat_A_UAV
-				bonus = 3
+				bonus = 0.3
 				uses = 1
 				category = Cat_A_UAV
 			}
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -2899,13 +2864,13 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = Cat_CAS
-				bonus = 3
+				bonus = 0.3
 				uses = 1
 				category = Cat_CAS
 			}
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -2923,10 +2888,10 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			four_random_arms_factory = yes
+			one_random_arms_factory = yes
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -2945,13 +2910,13 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = Cat_AS_FIGHTER
-				bonus = 3
+				bonus = 0.3
 				uses = 1
 				category = Cat_AS_FIGHTER
 			}
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -2967,17 +2932,17 @@ focus_tree = {
 
 		mutually_exclusive = { focus = POL_fighter }
 
-		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_AIRCRAFT}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_AIRCRAFT }
 		completion_reward = {
 			add_tech_bonus = {
 				name = Cat_S_FIGHTER
-				bonus = 3
+				bonus = 0.3
 				uses = 1
 				category = Cat_S_FIGHTER
 			}
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -2995,13 +2960,13 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = Cat_MR_FIGHTER
-				bonus = 3
+				bonus = 0.3
 				uses = 1
 				category = Cat_MR_FIGHTER
 			}
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -3019,13 +2984,13 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = Cat_TRANS_PLANE
-				bonus = 3
+				bonus = 0.3
 				uses = 1
 				category = Cat_TRANS_PLANE
 			}
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -3047,13 +3012,13 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = Cat_TRANS_HELI
-				bonus = 3
+				bonus = 0.3
 				uses = 1
 				category = Cat_TRANS_HELI
 			}
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -3073,13 +3038,13 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = Cat_TRANS_HELI
-				bonus = 3
+				bonus = 0.3
 				uses = 1
 				category = Cat_TRANS_HELI
 			}
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -3098,13 +3063,13 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = Cat_STR_BOMBER
-				bonus = 3
+				bonus = 0.3
 				uses = 1
 				category = Cat_STR_BOMBER
 			}
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -3123,13 +3088,13 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = Cat_NAVAL_PLANE
-				bonus = 3
+				bonus = 0.3
 				uses = 1
 				category = Cat_NAVAL_PLANE
 			}
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -3147,7 +3112,7 @@ focus_tree = {
 			add_ideas = { POL_baltic_idea }
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -3165,13 +3130,13 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = Cat_MR_FIGHTER
-				bonus = 3
+				bonus = 0.3
 				uses = 1
 				category = Cat_MR_FIGHTER
 			}
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -3186,10 +3151,10 @@ focus_tree = {
 		prerequisite = { focus = POL_polish_armed_forces }
 
 		completion_reward = {
-			navy_experience = 100
+			navy_experience = 25
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -3202,19 +3167,19 @@ focus_tree = {
 		relative_position_id = POL_navy
 		cancel_if_invalid = no
 		prerequisite = { focus = POL_navy }
-		# mutually_exclusive = { focus = POL_submarine }
+		mutually_exclusive = { focus = POL_submarine }
 
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY }
 		completion_reward = {
 			add_tech_bonus = {
 				name = Cat_M_Cruiser
-				bonus = 3
+				bonus = 0.3
 				uses = 1
 				category = Cat_M_Cruiser
 			}
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -3227,19 +3192,19 @@ focus_tree = {
 		relative_position_id = POL_navy
 		cancel_if_invalid = no
 		prerequisite = { focus = POL_navy }
-		# mutually_exclusive = { focus = POL_orp_pilsudski }
+		mutually_exclusive = { focus = POL_orp_pilsudski }
 
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY }
 		completion_reward = {
 			add_tech_bonus = {
 				name = Cat_D_SUB
-				bonus = 3
+				bonus = 0.3
 				uses = 1
 				category = Cat_D_SUB
 			}
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -3255,11 +3220,10 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			two_random_dockyards = yes
-			two_random_dockyards = yes
+			one_random_dockyard = yes
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -3275,16 +3239,16 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			two_random_dockyards = yes
+			one_random_dockyard = yes
 			add_tech_bonus = {
 				name = Cat_SURFACE_SHIP
-				bonus = 3
+				bonus = 0.3
 				uses = 1
 				category = Cat_SURFACE_SHIP
 			}
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -3306,7 +3270,7 @@ focus_tree = {
 			add_ideas = { POL_martime_group_idea }
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -3326,13 +3290,13 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = Cat_CARRIER
-				bonus = 3
+				bonus = 0.3
 				uses = 1
 				category = Cat_CARRIER
 			}
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -3352,13 +3316,13 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = Cat_DESTROYER
-				bonus = 3
+				bonus = 0.3
 				uses = 1
 				category = Cat_DESTROYER
 			}
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -3377,13 +3341,13 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = Cat_ATT_SUB
-				bonus = 3
+				bonus = 0.3
 				uses = 1
 				category = Cat_ATT_SUB
 			}
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -3402,13 +3366,13 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = Cat_M_SUB
-				bonus = 3
+				bonus = 0.3
 				uses = 1
 				category = Cat_M_SUB
 			}
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -3426,7 +3390,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = Cat_DESTROYER
-				bonus = 3
+				bonus = 0.3
 				uses = 1
 				category = Cat_DESTROYER
 			}
@@ -3436,7 +3400,7 @@ focus_tree = {
 			}
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -3461,7 +3425,7 @@ focus_tree = {
 			}
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	focus = {
@@ -3489,7 +3453,7 @@ focus_tree = {
 			modify_treasury_effect = yes
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 1 }
 	}
 
 	### Crocomoth's space
@@ -3510,11 +3474,11 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_reassure_elections"
 			add_popularity = {
 				ideology = democratic
-				popularity = 0.2
+				popularity = 0.1
 			}
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 50 }
 	}
 
 	focus = {
@@ -3533,12 +3497,12 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_poland_our_home"
 			custom_effect_tooltip = POL_party_pop_TT
 			add_stability = 0.05
-			add_war_support = 0.05
+			add_war_support = 0.03
 			add_to_variable = { party_pop_array^3 = 0.1 }
 			recalculate_party = yes
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 50 }
 	}
 
 	focus = {
@@ -3555,10 +3519,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_continue_transition"
-			four_random_industrial_complex = yes
+			two_random_industrial_complex = yes
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 50 }
 	}
 
 	focus = {
@@ -3580,11 +3544,11 @@ focus_tree = {
 			modify_treasury_effect = yes
 			add_timed_idea = {
 				idea = POL_2000_social_program
-				days = 1826
+				days = 365
 			}
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 50 }
 	}
 
 	### Socialists subtree
@@ -3626,7 +3590,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_socialists_win
-		cost = 5
+		cost = 10
 
 		available = {
 			date < 2005.11.11
@@ -3640,10 +3604,10 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_united_we_stand"
 			add_stability = 0.05
-			add_war_support = 0.05
+			add_war_support = 0.02
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 50 }
 	}
 
 	focus = {
@@ -3652,7 +3616,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_united_we_stand
-		cost = 5
+		cost = 10
 
 		available = {
 			date < 2005.11.11
@@ -3672,11 +3636,11 @@ focus_tree = {
 
 			add_timed_idea = {
 				idea = encryption_bonus
-				days = 1826
+				days = 1095
 			}
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 50 }
 	}
 
 	focus = {
@@ -3685,8 +3649,8 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = POL_security_summit
-		# mutually_exclusive = { focus = POL_speed_up_privatization }
-		cost = 5
+		mutually_exclusive = { focus = POL_speed_up_privatization }
+		cost = 10
 
 		available = {
 			date < 2005.11.11
@@ -3701,7 +3665,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_focus_on_social_projects"
 			add_timed_idea = {
 				idea = POL_social_program_focus
-				days = 1826
+				days = 1095
 			}
 		}
 
@@ -3720,7 +3684,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = POL_security_summit
-		# mutually_exclusive = { focus = POL_focus_on_social_projects }
+		mutually_exclusive = { focus = POL_focus_on_social_projects }
 		cost = 10
 
 		available = {
@@ -3754,7 +3718,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_focus_on_social_projects
-		# mutually_exclusive = { focus = POL_innovative_approach }
+		mutually_exclusive = { focus = POL_innovative_approach }
 		cost = 10
 
 		available = {
@@ -3773,17 +3737,17 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_support_traditional_industry"
 			add_resource = {
 				type = steel
-				amount = 40
+				amount = 5
 				state = 626
 			}
 
 			add_resource = {
 				type = aluminium
-				amount = 40
+				amount = 4
 				state = 626
 			}
 
-			set_temp_variable = { treasury_change = -40 }
+			set_temp_variable = { treasury_change = -10 }
 			modify_treasury_effect = yes
 		}
 
@@ -3802,7 +3766,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_speed_up_privatization
-		# mutually_exclusive = { focus = POL_support_traditional_industry }
+		mutually_exclusive = { focus = POL_support_traditional_industry }
 		cost = 10
 
 		available = {
@@ -3819,7 +3783,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_INTERNAL_FACTION }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_support_trditional_industry"
-			three_office_construction = yes
+			one_office_construction = yes
 			set_temp_variable = { temp_opinion = -5 }
 			change_farmers_opinion = yes
 			set_temp_variable = { temp_opinion = 5 }
@@ -3841,7 +3805,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = POL_support_traditional_industry
-		cost = 1
+		cost = 10
 
 		available = {
 			date < 2005.11.11
@@ -3860,7 +3824,7 @@ focus_tree = {
 			add_to_variable = { party_pop_array^3 = 0.1 }
 			recalculate_party = yes
 			custom_effect_tooltip = POL_secure_unions_TT
-			set_temp_variable = { temp_opinion = 10 }
+			set_temp_variable = { temp_opinion = 5 }
 			change_labour_unions_opinion = yes
 		}
 
@@ -3874,7 +3838,7 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = POL_united_we_stand
-		cost = 5
+		cost = 10
 
 		available = {
 			date < 2005.11.11
@@ -3913,7 +3877,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_support_war_on_terror
-		cost = 5
+		cost = 10
 
 		cancel_if_invalid = no
 		available = {
@@ -3928,7 +3892,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_polish_volunteer_corps"
 			add_timed_idea = {
 				idea = idea_focus_volunteer_corps
-				days = 1826
+				days = 1095
 			}
 		}
 
@@ -3941,7 +3905,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_polish_volunteer_corps
-		cost = 5
+		cost = 10
 
 		available = {
 			date < 2005.11.11
@@ -3954,8 +3918,8 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_study_allied_reports"
-			army_experience = 100
-			air_experience = 100
+			army_experience = 50
+			air_experience = 20
 		}
 
 		ai_will_do = { factor = 10 }
@@ -3968,7 +3932,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = POL_finish_social_program
-		cost = 3
+		cost = 10
 
 		available = {
 			date < 2005.11.11
@@ -4002,7 +3966,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_continue_eu_intergration
-		cost = 5
+		cost = 10
 
 		available = {
 			date < 2005.11.11
@@ -4018,7 +3982,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_FOREIGN_INVESTMENTS }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_eu_funding"
-			set_temp_variable = { treasury_change = 150 }
+			set_temp_variable = { treasury_change = 15 }
 			modify_treasury_effect = yes
 		}
 
@@ -4031,7 +3995,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_eu_funding
-		cost = 3
+		cost = 10
 
 		available = {
 			date < 2005.11.11
@@ -4065,8 +4029,8 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = POL_connections_to_eu_members
-		# mutually_exclusive = { focus = POL_focus_on_economic_deals }
-		cost = 5
+		mutually_exclusive = { focus = POL_focus_on_economic_deals }
+		cost = 10
 
 		available = {
 			date < 2005.11.11
@@ -4107,7 +4071,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = POL_connections_to_eu_members
-		# mutually_exclusive = { focus = POL_focus_on_political_connections }
+		mutually_exclusive = { focus = POL_focus_on_political_connections }
 		cost = 10
 
 		available = {
@@ -4124,7 +4088,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_INTERNAL_FACTION }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_focus_on_economic_deals"
-			three_random_industrial_complex = yes
+			two_random_industrial_complex = yes
 			set_temp_variable = { temp_opinion = 5 }
 			change_international_bankers_opinion = yes
 		}
@@ -4208,7 +4172,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_conservatives_win
-		cost = 5
+		cost = 10
 
 		available = {
 			date < 2005.11.11
@@ -4221,10 +4185,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_reassure_elections_result"
-			add_stability = 0.1
+			add_stability = 0.05
 		}
 
-		ai_will_do = { factor = 10 }
+		ai_will_do = { factor = 50 }
 	}
 
 	focus = {
@@ -4233,7 +4197,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_reassure_elections_result
-		cost = 5
+		cost = 10
 
 		available = {
 			date < 2005.11.11
@@ -4250,7 +4214,7 @@ focus_tree = {
 				POL_christian_state_1
 			}
 
-			set_temp_variable = { temp_opinion = 10 }
+			set_temp_variable = { temp_opinion = 5 }
 			change_the_clergy_opinion = yes
 		}
 
@@ -4263,8 +4227,8 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = POL_christian_values
-		# mutually_exclusive = { focus = POL_reuse_central_planning }
-		cost = 5
+		mutually_exclusive = { focus = POL_reuse_central_planning }
+		cost = 10
 
 		available = {
 			date < 2005.11.11
@@ -4300,8 +4264,8 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = POL_christian_values
-		# mutually_exclusive = { focus = POL_attack_communism }
-		cost = 5
+		mutually_exclusive = { focus = POL_attack_communism }
+		cost = 10
 
 		available = {
 			date < 2005.11.11
@@ -4335,7 +4299,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_attack_communism
-		# mutually_exclusive = { focus = POL_social_development_priority }
+		mutually_exclusive = { focus = POL_social_development_priority }
 		cost = 10
 
 		available = {
@@ -4376,7 +4340,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_reuse_central_planning
-		# mutually_exclusive = { focus = POL_more_liberal_taxes }
+		mutually_exclusive = { focus = POL_more_liberal_taxes }
 		cost = 10
 
 		available = {
@@ -4466,7 +4430,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = POL_reassure_elections_result
-		cost = 5
+		cost = 10
 
 		available = {
 			date < 2005.11.11
@@ -4501,7 +4465,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_focus_on_internal_matters
-		cost = 5
+		cost = 10
 
 		cancel_if_invalid = no
 		prerequisite = { focus = POL_focus_on_internal_matters }
@@ -4530,7 +4494,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_local_security_priority
-		cost = 5
+		cost = 10
 
 		available = {
 			date < 2005.11.11
@@ -4546,7 +4510,7 @@ focus_tree = {
 			add_stability = 0.05
 			add_timed_idea = {
 				idea = civilian_industry_project2
-				days = 1826
+				days = 720
 			}
 		}
 
@@ -4559,7 +4523,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_new_ideals
-		cost = 5
+		cost = 10
 
 		cancel_if_invalid = no
 
@@ -4618,7 +4582,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_platforma_obivatelska
-		cost = 5
+		cost = 10
 
 		available = {
 			OR = {
@@ -4637,7 +4601,7 @@ focus_tree = {
 
 			add_timed_idea = {
 				idea = POL_improved_administration
-				days = 1826
+				days = 1095
 			}
 		}
 
@@ -4650,7 +4614,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_improve_civil_administration
-		cost = 5
+		cost = 10
 
 		available = {
 			OR = {
@@ -4669,7 +4633,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_construction_tax_cuts"
 			add_timed_idea = {
 				idea = POL_contruction_taxes
-				days = 1826
+				days = 1095
 			}
 
 			set_temp_variable = { treasury_change = -10 }
@@ -4685,7 +4649,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_construction_tax_cuts
-		cost = 1
+		cost = 10
 
 		available = {
 			OR = {
@@ -4716,7 +4680,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_international_law_support
-		cost = 5
+		cost = 10
 
 		available = {
 			OR = {
@@ -4739,7 +4703,7 @@ focus_tree = {
 				swap_ideas = { remove_idea = POL_christian_state_2 add_idea = POL_liberal_state }
 			}
 			else_if = {
-				limit ={
+				limit = {
 					NOT = {
 						has_idea = POL_christian_state_2
 						has_idea = POL_christian_state_1
@@ -4764,7 +4728,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_separate_church
-		cost = 5
+		cost = 10
 
 		available = {
 			OR = {
@@ -4804,7 +4768,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = POL_platforma_obivatelska
-		cost = 5
+		cost = 10
 
 		available = {
 			OR = {
@@ -4820,7 +4784,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_railways_for_poland"
 			three_random_infrastructure = yes
-			three_random_infrastructure = yes
 		}
 
 		ai_will_do = { factor = 10 }
@@ -4832,7 +4795,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_railways_for_poland
-		cost = 5
+		cost = 10
 
 		available = {
 			OR = {
@@ -4848,7 +4811,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESOURCE FOCUS_FILTER_INTERNAL_FACTION }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_bio_fuel"
-			three_random_synthetic_refinery = yes
+			two_random_synthetic_refinery = yes
 			set_temp_variable = { temp_opinion = -5 }
 			change_fossil_fuel_industry_opinion = yes
 		}
@@ -4878,39 +4841,35 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_centralized_development"
 			111 = { # Wielkopolska
-				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
 			474 = { # West Pomerania
-				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
 			625 = { # Lubisz
-				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
 			626 = { # Lower Silesia
-				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
 
-			set_temp_variable = { treasury_change = -100 }
+			set_temp_variable = { treasury_change = -30 }
 			modify_treasury_effect = yes
 		}
 
@@ -4938,7 +4897,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_new_market_for_farms"
 			add_ideas = { POL_new_farms_market }
-			set_temp_variable = { temp_opinion = 10 }
+			set_temp_variable = { temp_opinion = 5 }
 			change_farmers_opinion = yes
 		}
 
@@ -4965,7 +4924,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_it_giant"
-			three_office_construction = yes
+			two_office_construction = yes
 		}
 
 		ai_will_do = { factor = 10 }
@@ -4977,7 +4936,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = POL_platforma_obivatelska
-		cost = 5
+		cost = 10
 
 		available = {
 			OR = {
@@ -5006,7 +4965,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_promote_eu_values
-		cost = 5
+		cost = 10
 
 		available = {
 			OR = {
@@ -5021,7 +4980,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_no_more_expeditions"
 			set_rule = { can_send_volunteers = no }
-			add_stability = 0.1
+			add_stability = 0.05
 			set_temp_variable = { temp_opinion = -5 }
 			change_the_military_opinion = yes
 		}
@@ -5035,7 +4994,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_no_more_expeditions
-		cost = 5
+		cost = 10
 
 		available = {
 			OR = {
@@ -5084,7 +5043,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_fix_brain_drain
-		cost = 5
+		cost = 10
 
 		available = {
 			OR = {
@@ -5110,7 +5069,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_look_into_history
-		cost = 5
+		cost = 10
 
 		available = {
 			OR = {
@@ -5126,7 +5085,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_focus_on_housing"
 			add_timed_idea = {
 				idea = POL_housing_focus
-				days = 1461
+				days = 1095
 			}
 		}
 
@@ -5172,7 +5131,7 @@ focus_tree = {
 		y = 2
 		mutually_exclusive = { focus = POL_reapproach_russia }
 		relative_position_id = POL_shifting_politics
-		cost = 5
+		cost = 10
 
 		available = {
 			NOT = {
@@ -5218,9 +5177,9 @@ focus_tree = {
 		icon = align_to_europe
 		x = -1
 		y = 1
-		# mutually_exclusive = { focus = POL_friends_from_afar }
+		mutually_exclusive = { focus = POL_friends_from_afar }
 		relative_position_id = POL_speak_against_russia
-		cost = 5
+		cost = 10
 
 		cancel_if_invalid = no
 		prerequisite = { focus = POL_speak_against_russia }
@@ -5257,7 +5216,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_rely_on_europe
-		cost = 5
+		cost = 10
 
 		cancel_if_invalid = no
 		prerequisite = { focus = POL_rely_on_europe }
@@ -5272,14 +5231,14 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_INTERNAL_FACTION }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_rhienmetal_plant"
-			four_random_arms_factory = yes
+			two_random_arms_factory = yes
 			# They get some profit for construction, right?
 			GER = {
-				set_temp_variable = { treasury_change = 30 }
+				set_temp_variable = { treasury_change = 3 }
 				modify_treasury_effect = yes
 			}
 
-			set_temp_variable = { temp_opinion = 10 }
+			set_temp_variable = { temp_opinion = 5 }
 			change_the_military_opinion = yes
 		}
 
@@ -5293,7 +5252,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_rhienmetal_plant
-		cost = 5
+		cost = 10
 
 		cancel_if_invalid = no
 		prerequisite = { focus = POL_rhienmetal_plant }
@@ -5308,7 +5267,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_EQUIPMENT }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_buy_old_leopards"
-			set_temp_variable = { treasury_change = -75 }
+			set_temp_variable = { treasury_change = -3 }
 			modify_treasury_effect = yes
 			if = {
 				limit = { has_dlc = "No Step Back" }
@@ -5316,14 +5275,14 @@ focus_tree = {
 				add_equipment_to_stockpile = {
 					type = mbt_hull_1
 					variant_name = "Leopard 2A4"
-					amount = 300
+					amount = 150
 					producer = GER
 				}
 			}
 			else = {
 				add_equipment_to_stockpile = {
 					type = MBT_4
-					amount = 300
+					amount = 150
 					producer = GER
 				}
 			}
@@ -5331,7 +5290,7 @@ focus_tree = {
 			GER = {
 				add_opinion_modifier = { target = ROOT modifier = POL_bought_leopards }
 				reverse_add_opinion_modifier = { target = ROOT modifier = POL_bought_leopards }
-				set_temp_variable = { treasury_change = 75 }
+				set_temp_variable = { treasury_change = 2 }
 				modify_treasury_effect = yes
 			}
 		}
@@ -5345,7 +5304,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_buy_old_leopards
-		cost = 5
+		cost = 10
 
 		cancel_if_invalid = no
 		prerequisite = { focus = POL_buy_old_leopards }
@@ -5392,7 +5351,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_anti_russian_front"
 			add_timed_idea = {
 				idea = POL_anti_russian_focus
-				days = 3652
+				days = 1095
 			}
 		}
 
@@ -5411,8 +5370,8 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = POL_speak_against_russia
-		#mutually_exclusive = { focus = POL_rely_on_europe }
-		cost = 5
+		mutually_exclusive = { focus = POL_rely_on_europe }
+		cost = 10
 
 		cancel_if_invalid = no
 		prerequisite = { focus = POL_speak_against_russia }
@@ -5442,7 +5401,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_friends_from_afar
-		cost = 5
+		cost = 10
 
 		cancel_if_invalid = no
 		prerequisite = { focus = POL_friends_from_afar }
@@ -5457,7 +5416,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_american_bases"
-			four_random_arms_factory = yes
+			one_random_arms_factory = yes
 		}
 
 		ai_will_do = { factor = 10 }
@@ -5486,14 +5445,14 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_aircraft_purchases"
 			add_equipment_to_stockpile = {
 				type = MR_Fighter2
-				amount = 200
+				amount = 70
 				producer = USA
 			}
 
-			set_temp_variable = { treasury_change = -200 }
+			set_temp_variable = { treasury_change = -4 }
 			modify_treasury_effect = yes
 			USA = {
-				set_temp_variable = { treasury_change = 200 }
+				set_temp_variable = { treasury_change = 3 }
 				modify_treasury_effect = yes
 			}
 		}
@@ -5507,7 +5466,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_aircraft_purchases
-		cost = 5
+		cost = 10
 
 		cancel_if_invalid = no
 		prerequisite = { focus = POL_aircraft_purchases }
@@ -5524,8 +5483,8 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_artillery_and_aa_support"
 			add_tech_bonus = {
 				name = POL_artillery_and_aa_support
-				bonus = 3
-				uses = 1
+				bonus = 0.5
+				uses = 2
 				category = Cat_ARTILLERY
 			}
 		}
@@ -5540,7 +5499,7 @@ focus_tree = {
 		y = 2
 		mutually_exclusive = { focus = POL_speak_against_russia }
 		relative_position_id = POL_shifting_politics
-		cost = 5
+		cost = 10
 
 		available = {
 			SOV = { has_government = democratic }
@@ -5595,7 +5554,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_INTERNAL_FACTION }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_rewire_old_plants"
-			four_random_arms_factory = yes
+			two_random_arms_factory = yes
 			set_temp_variable = { temp_opinion = 5 }
 			change_the_military_opinion = yes
 		}
@@ -5609,7 +5568,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_rewire_old_plants
-		cost = 5
+		cost = 10
 
 		cancel_if_invalid = no
 		prerequisite = { focus = POL_rewire_old_plants }
@@ -5632,14 +5591,14 @@ focus_tree = {
 				add_equipment_to_stockpile = {
 					type = mbt_hull_1
 					variant_name = "Leopard 2A4"
-					amount = 600
+					amount = 225
 					producer = SOV
 				}
 			}
 			else = {
 				add_equipment_to_stockpile = {
 					type = MBT_4
-					amount = 600
+					amount = 225
 					producer = SOV
 				}
 			}
@@ -5678,7 +5637,7 @@ focus_tree = {
 			modify_treasury_effect = yes
 			add_equipment_to_stockpile = {
 				type = MR_Fighter2
-				amount = 200
+				amount = 70
 				producer = SOV
 			}
 			SOV = {
@@ -5696,7 +5655,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_update_mig_fleet
-		cost = 5
+		cost = 10
 
 		cancel_if_invalid = no
 		prerequisite = { focus = POL_update_mig_fleet }
@@ -5711,7 +5670,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_military_exp_sharing"
-			army_experience = 100
+			army_experience = 45
 		}
 
 		ai_will_do = { factor = 10 }
@@ -5723,7 +5682,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_military_exp_sharing
-		cost = 5
+		cost = 10
 
 		cancel_if_invalid = no
 		prerequisite = { focus = POL_military_exp_sharing }
@@ -5740,7 +5699,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_joint_military_assets"
 			add_timed_idea = {
 				idea = POL_joint_russian_assets
-				days = 3652
+				days = 1095
 			}
 		}
 
@@ -5764,21 +5723,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_pravda_i_spravedlivost"
-			hidden_effect = {
-				create_country_leader = {
-				name = "Andrzej Duda"
-				picture = "Andrzej_Duda.dds"
-				expire = "2050.1.1"
-				ideology = conservatism
-				traits = {
-					polish_president
-					western_conservatism
-					lawyer
-					likeable
-					honest
-				}
-				}
-			}
 		}
 
 		ai_will_do = { factor = 100 }
@@ -5801,7 +5745,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_promote_industrial_quality"
 			add_timed_idea = {
 				idea = POL_promoted_industrial_quality
-				days = 3652
+				days = 1095
 			}
 		}
 
@@ -5824,24 +5768,24 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_fight_regional_inequality"
 			628 = {
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = industrial_complex
-						level = 4
+						level = 1
 						instant_build = yes
 					}
 			}
 
 			1014 = {
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = industrial_complex
-						level = 4
+						level = 1
 						instant_build = yes
 					}
 			}
 
-			set_temp_variable = { treasury_change = -30 }
+			set_temp_variable = { treasury_change = -15 }
 			modify_treasury_effect = yes
 			set_temp_variable = { temp_opinion = -5 }
 			change_international_bankers_opinion = yes
@@ -5856,7 +5800,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_fight_regional_inequality
-		cost = 5
+		cost = 10
 
 		available = { western_conservatism_are_in_power = yes }
 		cancel_if_invalid = no
@@ -5868,7 +5812,7 @@ focus_tree = {
 			628 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -5876,12 +5820,12 @@ focus_tree = {
 			1014 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
 
-			set_temp_variable = { treasury_change = -14}
+			set_temp_variable = { treasury_change = -14 }
 			modify_treasury_effect = yes
 		}
 
@@ -5894,7 +5838,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_eastern_infrastructure
-		cost = 5
+		cost = 10
 
 		available = { western_conservatism_are_in_power = yes }
 		cancel_if_invalid = no
@@ -5905,10 +5849,10 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_support_for_farms"
 			add_timed_idea = {
 				idea = agricultural_investments2
-				days = 3652
+				days = 1095
 			}
 
-			set_temp_variable = { temp_opinion = 10 }
+			set_temp_variable = { temp_opinion = 5 }
 			change_farmers_opinion = yes
 		}
 
@@ -5932,7 +5876,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_mod_and_trad"
 			add_timed_idea = {
 				idea = POL_modernization_and_tradition
-				days = 3652
+				days = 1095
 			}
 		}
 
@@ -5970,7 +5914,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_pravda_i_spravedlivost
-		cost = 5
+		cost = 10
 
 		bypass = {
 			OR = {
@@ -6014,7 +5958,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_continue_anti_corrpution
-		cost = 5
+		cost = 10
 
 		available = { western_conservatism_are_in_power = yes }
 		cancel_if_invalid = no
@@ -6037,7 +5981,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_empower_the_law
-		cost = 5
+		cost = 10
 
 		available = { western_conservatism_are_in_power = yes }
 		cancel_if_invalid = no
@@ -6058,7 +6002,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_guarantee_family_support
-		cost = 5
+		cost = 10
 
 		available = { western_conservatism_are_in_power = yes }
 		cancel_if_invalid = no
@@ -6100,7 +6044,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_christian_priority
-		cost = 5
+		cost = 10
 
 		available = { western_conservatism_are_in_power = yes }
 		cancel_if_invalid = no
@@ -6109,8 +6053,8 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_religious_tolerance"
-			add_stability = 0.1
-			add_political_power = 100
+			add_stability = 0.05
+			add_political_power = 50
 		}
 
 		ai_will_do = { factor = 10 }
@@ -6122,7 +6066,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = POL_pravda_i_spravedlivost
-		cost = 5
+		cost = 10
 
 		available = { western_conservatism_are_in_power = yes }
 		cancel_if_invalid = no
@@ -6131,7 +6075,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_honor_lost_army"
-			add_war_support = 0.1
+			add_war_support = 0.05
 		}
 
 		ai_will_do = { factor = 10 }
@@ -6143,7 +6087,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_honor_lost_army
-		cost = 5
+		cost = 10
 
 		available = { western_conservatism_are_in_power = yes }
 		cancel_if_invalid = no
@@ -6156,7 +6100,7 @@ focus_tree = {
 			subtract_from_variable = { party_pop_array^5 = 0.1 }
 			subtract_from_variable = { party_pop_array^3 = 0.1 }
 			recalculate_party = yes
-			add_political_power = 100
+			add_political_power = 50
 		}
 
 		ai_will_do = { factor = 10 }
@@ -6168,7 +6112,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_condemn_communists
-		cost = 5
+		cost = 10
 
 		available = { western_conservatism_are_in_power = yes }
 		cancel_if_invalid = no
@@ -6177,7 +6121,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_FACTION }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POL_ban_communist_symbols"
-			add_political_power = 100
+			add_political_power = 50
 			every_other_country = {
 				limit = {
 					OR = {
@@ -6206,7 +6150,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_ban_communist_symbols
-		cost = 5
+		cost = 10
 
 		available = { western_conservatism_are_in_power = yes }
 		cancel_if_invalid = no
@@ -6250,7 +6194,7 @@ focus_tree = {
 		x = 17
 		y = 1
 		relative_position_id = POL_change_of_path
-		cost = 1
+		cost = 5
 
 		prerequisite = { focus = POL_change_of_path }
 		mutually_exclusive = { focus = POL_red_dream }
@@ -6273,7 +6217,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_falanga
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = POL_falanga }
 
@@ -6294,7 +6238,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = POL_Warsaw_march
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = POL_Warsaw_march }
 
@@ -6305,7 +6249,7 @@ focus_tree = {
 			add_stability = -0.05
 			add_timed_idea = {
 				idea = POL_united_nationalists
-				days = 1826
+				days = 300
 			}
 		}
 
@@ -6318,7 +6262,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_unite_nationalist_movements
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = POL_unite_nationalist_movements }
 
@@ -6341,7 +6285,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = POL_Warsaw_march
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = POL_Warsaw_march }
 
@@ -6367,7 +6311,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_connect_to_conservative_politicians
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = POL_connect_to_conservative_politicians }
 
@@ -6391,7 +6335,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = POL_reorganize_nationalists_squads
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = POL_reorganize_nationalists_squads }
 		prerequisite = { focus = POL_manifest_nacii }
@@ -6402,7 +6346,7 @@ focus_tree = {
 
 			add_timed_idea = {
 				idea = POL_political_violence
-				days = 100
+				days = 300
 			}
 		}
 
@@ -6415,7 +6359,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_escalate_political_violence
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = POL_escalate_political_violence }
 
@@ -6440,7 +6384,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = POL_increase_media_exposure
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = POL_increase_media_exposure }
 
@@ -6453,7 +6397,7 @@ focus_tree = {
 				20 = {
 					add_equipment_to_stockpile = {
 						type = infantry_weapons1 #AK-74
-						amount = 200
+						amount = 1000
 						producer = SOV
 					}
 
@@ -6462,7 +6406,7 @@ focus_tree = {
 				40 = {
 					add_equipment_to_stockpile = {
 						type = infantry_weapons1 #AK-74
-						amount = 2000
+						amount = 500
 						producer = SOV
 					}
 
@@ -6471,7 +6415,7 @@ focus_tree = {
 				10 = {
 					add_equipment_to_stockpile = {
 						type = infantry_weapons1 #AK-74
-						amount = 2000
+						amount = 250
 						producer = SOV
 					}
 
@@ -6489,7 +6433,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_gather_guns
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = POL_gather_guns }
 
@@ -6497,7 +6441,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: POL_train_nationalist_troops"
 			custom_effect_tooltip = POL_nationalist_spending_TT
-			army_experience = 100
+			army_experience = 30
 			add_to_variable = { nationalist_debt = -3.0 }
 		}
 
@@ -6510,7 +6454,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = POL_increase_media_exposure
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = POL_increase_media_exposure }
 
@@ -6534,7 +6478,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_localize_programs
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = POL_localize_programs }
 
@@ -6560,7 +6504,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = POL_discreditate_opponents
-		cost = 5
+		cost = 20
 
 		prerequisite = { focus = POL_discreditate_opponents }
 		prerequisite = { focus = POL_train_nationalist_troops }
@@ -6687,7 +6631,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_new_foreighn_ministry
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = POL_new_foreighn_ministry }
 
@@ -6709,6 +6653,7 @@ focus_tree = {
 				limit = { has_idea = EU_member }
 
 				remove_ideas = EU_member
+				leaving_EU = yes
 			}
 		}
 
@@ -6721,7 +6666,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_nationalist_leave_eu
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = POL_nationalist_leave_eu }
 
@@ -6754,7 +6699,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = POL_nationalist_leave_nato
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = POL_nationalist_leave_nato }
 		mutually_exclusive = { focus = POL_reach_out_to_russia }
@@ -6794,7 +6739,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = POL_nationalist_leave_nato
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = POL_nationalist_leave_nato }
 		mutually_exclusive = { focus = POL_local_cooperation }
@@ -6833,7 +6778,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = POL_local_cooperation
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = POL_local_cooperation }
 		available = {
@@ -6871,7 +6816,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = POL_local_cooperation
-		cost = 5
+		cost = 10
 
 		prerequisite = {
 			focus = POL_local_cooperation
@@ -6900,7 +6845,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = POL_reach_out_to_russia
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = POL_reach_out_to_russia }
 		available = {
@@ -6931,7 +6876,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_fund_friendly_movements
-		cost = 5
+		cost = 20
 
 		prerequisite = { focus = POL_fund_friendly_movements }
 		prerequisite = {
@@ -6963,7 +6908,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = POL_new_allience
-		cost = 5
+		cost = 20
 
 		prerequisite = { focus = POL_new_allience }
 		available = {
@@ -6988,7 +6933,7 @@ focus_tree = {
 			random_owned_controlled_state = {
 				add_building_construction = {
 					type = infrastructure
-					level = 3
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -7015,7 +6960,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_new_allience
-		cost = 10
+		cost = 20
 
 		prerequisite = { focus = POL_new_allience }
 
@@ -7047,10 +6992,10 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 3
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = industrial_complex
-						level = 3
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -7074,10 +7019,10 @@ focus_tree = {
 								include_locked = yes
 							}
 						}
-						add_extra_state_shared_building_slots = 2
+						add_extra_state_shared_building_slots = 1
 						add_building_construction = {
 							type = industrial_complex
-							level = 2
+							level = 1
 							instant_build = yes
 						}
 					}
@@ -7092,10 +7037,10 @@ focus_tree = {
 								include_locked = yes
 							}
 						}
-						add_extra_state_shared_building_slots = 2
+						add_extra_state_shared_building_slots = 1
 						add_building_construction = {
 							type = arms_factory
-							level = 2
+							level = 1
 							instant_build = yes
 						}
 					}
@@ -7115,7 +7060,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = POL_new_allience
-		cost = 10
+		cost = 20
 
 		prerequisite = { focus = POL_new_allience }
 		available = {
@@ -7201,7 +7146,7 @@ focus_tree = {
 		}
 
 		prerequisite = { focus = POL_economical_comitee }
-		# mutually_exclusive = { focus = POL_limited_nationalization }
+		mutually_exclusive = { focus = POL_limited_nationalization }
 
 		search_filters = { FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -7224,7 +7169,7 @@ focus_tree = {
 		cost = 10
 
 		prerequisite = { focus = POL_economical_comitee }
-		# mutually_exclusive = { focus = POL_mass_nationalization }
+		mutually_exclusive = { focus = POL_mass_nationalization }
 
 		available = {
 			OR = {
@@ -7265,7 +7210,7 @@ focus_tree = {
 			}
 		}
 
-		# mutually_exclusive = { focus = POL_local_infrastructure_development }
+		mutually_exclusive = { focus = POL_local_infrastructure_development }
 
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_INTERNAL_FACTION }
 		completion_reward = {
@@ -7296,7 +7241,7 @@ focus_tree = {
 			}
 		}
 
-		# mutually_exclusive = { focus = POL_centralized_infrastructure_development }
+		mutually_exclusive = { focus = POL_centralized_infrastructure_development }
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -7400,11 +7345,11 @@ focus_tree = {
 			}
 		}
 
-		# mutually_exclusive = { focus = POL_military_expansion }
+		mutually_exclusive = { focus = POL_military_expansion }
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			four_random_industrial_complex = yes
+			two_random_industrial_complex = yes
 		}
 
 		ai_will_do = { factor = 5 }
@@ -7430,13 +7375,13 @@ focus_tree = {
 			}
 		}
 
-		# mutually_exclusive = { focus = POL_further_industrial_expansion }
+		mutually_exclusive = { focus = POL_further_industrial_expansion }
 
 		search_filters = { FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			set_temp_variable = { temp_opinion = 5 }
 			change_the_military_opinion = yes
-			four_random_arms_factory = yes
+			two_random_arms_factory = yes
 		}
 
 		ai_will_do = { factor = 10 }
@@ -7462,11 +7407,11 @@ focus_tree = {
 			}
 		}
 
-		# mutually_exclusive = { focus = POL_develop_metals }
+		mutually_exclusive = { focus = POL_develop_metals }
 
 		search_filters = { FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_RESOURCE }
 		completion_reward = {
-			three_random_synthetic_refinery = yes
+			two_random_synthetic_refinery = yes
 			set_temp_variable = { temp_opinion = -5 }
 			change_fossil_fuel_industry_opinion = yes
 		}
@@ -7494,19 +7439,19 @@ focus_tree = {
 			}
 		}
 
-		# mutually_exclusive = { focus = POL_develop_bio_fuel }
+		mutually_exclusive = { focus = POL_develop_bio_fuel }
 
 		search_filters = { FOCUS_FILTER_RESOURCE }
 		completion_reward = {
 			add_resource = {
 				type = steel
-				amount = 40
+				amount = 5
 				state = 115
 			}
 
 			add_resource = {
 				type = aluminium
-				amount = 40
+				amount = 4
 				state = 115
 			}
 
@@ -7524,7 +7469,7 @@ focus_tree = {
 		x = 5
 		y = 1
 		relative_position_id = POL_day_of_Phalanga
-		cost = 5
+		cost = 10
 
 		prerequisite = {
 			focus = POL_day_of_Phalanga
@@ -7542,7 +7487,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 100
 			add_stability = 0.05
-			add_war_support = 0.05
+			add_war_support = 0.03
 		}
 
 		ai_will_do = { factor = 10 }
@@ -7554,7 +7499,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = POL_social_comitee
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = POL_social_comitee }
 		available = {
@@ -7606,7 +7551,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_ban_abortions
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = POL_ban_abortions }
 		available = {
@@ -7621,7 +7566,7 @@ focus_tree = {
 			set_temp_variable = { treasury_change = -10.0 }
 			modify_treasury_effect = yes
 
-			add_stability = 0.1
+			add_stability = 0.05
 		}
 
 		ai_will_do = { factor = 10 }
@@ -7633,7 +7578,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_promote_egalatarianism
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = POL_promote_egalatarianism }
 		available = {
@@ -7659,7 +7604,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = POL_social_comitee
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = POL_social_comitee }
 		available = {
@@ -7674,7 +7619,7 @@ focus_tree = {
 			set_temp_variable = { treasury_change = -5 }
 			modify_treasury_effect = yes
 			add_war_support = 0.05
-			add_stability = 0.05
+			add_stability = 0.03
 		}
 
 		ai_will_do = { factor = 10 }
@@ -7686,7 +7631,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_mandatory_patriotic_education
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = POL_mandatory_patriotic_education }
 		available = {
@@ -7698,7 +7643,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INTERNAL_FACTION }
 		completion_reward = {
-			set_temp_variable = { temp_opinion = 10 }
+			set_temp_variable = { temp_opinion = 5 }
 			change_the_military_opinion = yes
 			add_ideas = { POL_paramilitary_organization_idea }
 		}
@@ -7712,7 +7657,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_paramilitary_organization
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = POL_paramilitary_organization }
 		available = {
@@ -7739,7 +7684,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_local_hitleryugent
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = POL_local_hitleryugent }
 		available = {

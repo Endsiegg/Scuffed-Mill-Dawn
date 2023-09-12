@@ -22,65 +22,22 @@ focus_tree = {
 		x = 2
 		y = 0
 
-		cost = 10
+		cost = 6
 
-		search_filters = {FOCUS_FILTER_INTERNAL_FACTION}
-		prerequisite = { }
-		mutually_exclusive = { }
+		search_filters = { FOCUS_FILTER_INTERNAL_FACTION }
+
 		available = {
 			OR = {
 				has_country_leader = { name = "Helmut Kohl" }
 				has_country_leader = { name = "Angela Merkel" }
 			}
 		}
-		historical_ai = { }
-		select_effect = { }
-		bypass = { }
-		cancel = { }
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_conservative_ties_to_the_automotive_industry"
-			set_temp_variable = { temp_opinion = 10 }
+			set_temp_variable = { temp_opinion = 5 }
 			change_industrial_conglomerates_opinion = yes
-			hidden_effect = {
-				random_owned_controlled_state = {
-					if = {
-						limit = {
-							free_building_slots = {
-								building = industrial_complex
-								size > 0
-								include_locked = yes
-							}
-						}
-						add_extra_state_shared_building_slots = 3
-						add_building_construction = {
-							type = industrial_complex
-							level = 3
-							instant_build = yes
-						}
-					}
-				}
-				random_owned_controlled_state = {
-					if = {
-						limit = {
-							free_building_slots = {
-								building = industrial_complex
-								size > 0
-								include_locked = yes
-							}
-						}
-						add_extra_state_shared_building_slots = 3
-						add_building_construction = {
-							type = industrial_complex
-							level = 3
-							instant_build = yes
-						}
-					}
-				}
-			}
 		}
 
 		ai_will_do = {
@@ -95,9 +52,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_conservative_ties_to_the_automotive_industry
 
-		cost = 10
+		cost = 11
 
-		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+		search_filters = { FOCUS_FILTER_EUROPEAN_UNION }
 		prerequisite = {
 			focus = GER_conservative_ties_to_the_automotive_industry
 		}
@@ -132,8 +89,6 @@ focus_tree = {
 		}
 		cancel = { }
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_automotive_investments_in_europe"
@@ -161,25 +116,6 @@ focus_tree = {
 					invest_in_EU_single_market_cic = yes
 				}
 			}
-			hidden_effect = {
-				random_owned_controlled_state = {
-					if = {
-						limit = {
-							free_building_slots = {
-								building = industrial_complex
-								size > 0
-								include_locked = yes
-							}
-						}
-						add_extra_state_shared_building_slots = 3
-						add_building_construction = {
-							type = industrial_complex
-							level = 3
-							instant_build = yes
-						}
-					}
-				}
-			}
 		}
 
 		ai_will_do = {
@@ -195,9 +131,9 @@ focus_tree = {
 		y = 2
 		relative_position_id = GER_conservative_ties_to_the_automotive_industry
 
-		cost = 10
+		cost = 7
 
-		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_INTERNAL_FACTION}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_INTERNAL_FACTION }
 		prerequisite = {
 			focus = GER_automotive_investments_in_europe
 			focus = GER_utilize_spd_influence_in_lower_saxony
@@ -206,27 +142,21 @@ focus_tree = {
 		available = {
 			has_full_control_of_state = 38
 		}
-		historical_ai = { }
-		select_effect = { }
-		bypass = { }
-		cancel = { }
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_strengthen_volkswagen"
 			set_temp_variable = { treasury_change = -30 }
 			modify_treasury_effect = yes
 			38 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
-			set_temp_variable = { temp_opinion = 10 }
+			set_temp_variable = { temp_opinion = 5 }
 			change_small_medium_business_owners_opinion = yes
 			change_labour_unions_opinion = yes
 		}
@@ -243,7 +173,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_strengthen_volkswagen
 
-		cost = 10
+		cost = 12
 
 		prerequisite = {
 			focus = GER_strengthen_volkswagen
@@ -257,20 +187,14 @@ focus_tree = {
 			}
 			SOV = { has_opinion = { target = ROOT value > 4 } }
 		}
-		historical_ai = { }
-		select_effect = { }
-		bypass = { }
-		cancel = { }
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_the_kaluga_plant"
-			set_temp_variable = { treasury_change = -30 }
+			set_temp_variable = { treasury_change = -7.5 }
 			modify_treasury_effect = yes
-			add_offsite_building = { type = industrial_complex level = 3 }
-			set_temp_variable = { percent_change = 0.6}
+			add_offsite_building = { type = industrial_complex level = 1 }
+			set_temp_variable = { percent_change = 0.6 }
 			set_temp_variable = { tag_index = GER }
 			set_temp_variable = { influence_target = SOV }
 			change_influence_percentage = yes
@@ -288,7 +212,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_strengthen_volkswagen
 
-		cost = 10
+		cost = 12
 
 		prerequisite = {
 			focus = GER_strengthen_volkswagen
@@ -303,20 +227,14 @@ focus_tree = {
 			RAJ = { has_opinion = { target = ROOT value > 4 } }
 
 		}
-		historical_ai = { }
-		select_effect = { }
-		bypass = { }
-		cancel = { }
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_the_aurangabad_plant"
-			set_temp_variable = { treasury_change = -40 }
+			set_temp_variable = { treasury_change = -22.5 }
 			modify_treasury_effect = yes
-			add_offsite_building = { type = industrial_complex level = 4 }
-			set_temp_variable = { percent_change = 0.6}
+			add_offsite_building = { type = industrial_complex level = 1 }
+			set_temp_variable = { percent_change = 0.6 }
 			set_temp_variable = { tag_index = GER }
 			set_temp_variable = { influence_target = RAJ }
 			change_influence_percentage = yes
@@ -333,7 +251,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = GER_strengthen_volkswagen
 
-		cost = 10
+		cost = 12
 
 		prerequisite = {
 			focus = GER_the_aurangabad_plant
@@ -347,20 +265,14 @@ focus_tree = {
 			}
 			CHI = { has_opinion = { target = ROOT value > 9 } }
 		}
-		historical_ai = { }
-		select_effect = { }
-		bypass = { }
-		cancel = { }
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_expand_volkswagen_into_china"
-			set_temp_variable = { treasury_change = -50 }
+			set_temp_variable = { treasury_change = -22.5 }
 			modify_treasury_effect = yes
-			add_offsite_building = { type = industrial_complex level = 5 }
-			set_temp_variable = { percent_change = 2}
+			add_offsite_building = { type = industrial_complex level = 3 }
+			set_temp_variable = { percent_change = 2 }
 			set_temp_variable = { tag_index = GER }
 			set_temp_variable = { influence_target = CHI }
 			change_influence_percentage = yes
@@ -378,9 +290,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_strengthen_volkswagen
 
-		cost = 10
+		cost = 16
 
-		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_INTERNAL_FACTION}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_INTERNAL_FACTION }
 		prerequisite = {
 			focus = GER_strengthen_volkswagen
 		}
@@ -388,25 +300,19 @@ focus_tree = {
 		available = {
 			has_full_control_of_state = 44
 		}
-		historical_ai = { }
-		select_effect = { }
-		bypass = { }
-		cancel = { }
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_dresden_and_leipzig_factories"
-			set_temp_variable = { treasury_change = -60 }
+			set_temp_variable = { treasury_change = -35 }
 			modify_treasury_effect = yes
 			set_temp_variable = { temp_opinion = 5 }
 			change_labour_unions_opinion = yes
 			44 = {
-				add_extra_state_shared_building_slots = 6
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 6
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -426,11 +332,10 @@ focus_tree = {
 		y = 0
 		relative_position_id = GER_conservative_ties_to_the_automotive_industry
 
-		cost = 3
+		cost = 4
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		prerequisite = { }
-		mutually_exclusive = { }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
 		available = {
 			OR = {
 				has_country_leader = { name = "Gerhard Schröder" }
@@ -440,13 +345,7 @@ focus_tree = {
 				has_country_leader = { name = "Cem Özdemir" }
 			}
 		}
-		historical_ai = { }
-		select_effect = { }
-		bypass = { }
-		cancel = { }
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_seize_opposition_weakness"
@@ -465,32 +364,26 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_seize_opposition_weakness
 
-		cost = 5
+		cost = 6
 
 		prerequisite = {
 			focus = GER_seize_opposition_weakness
 		}
 		mutually_exclusive = { }
-		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		available = {
 			has_country_leader = { name = "Gerhard Schröder" }
 			has_war = no
 			has_full_control_of_state = 38
 		}
-		historical_ai = { }
-		select_effect = { }
-		bypass = { }
-		cancel = { }
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_utilize_spd_influence_in_lower_saxony"
-			set_temp_variable = { treasury_change = -10 }
+			set_temp_variable = { treasury_change = -5 }
 			modify_treasury_effect = yes
 			38 = {
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 2
 			}
 		}
 
@@ -506,22 +399,16 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_seize_opposition_weakness
 
-		cost = 5
+		cost = 11
 
 		prerequisite = {
 			focus = GER_seize_opposition_weakness
 		}
 		mutually_exclusive = { }
-		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		available = {
 		}
-		historical_ai = { }
-		select_effect = { }
-		bypass = { }
-		cancel = { }
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_infrastructural_reform"
@@ -529,11 +416,11 @@ focus_tree = {
 			modify_treasury_effect = yes
 			if = {
 				limit = { has_full_control_of_state = 39 }
-				39 = { add_building_construction = { type = infrastructure level = 3 instant_build = yes } }
+				39 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
 			}
 			if = {
 				limit = { has_full_control_of_state = 45 }
-				45 = { add_building_construction = { type = infrastructure level = 3 instant_build = yes } }
+				45 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
 			}
 		}
 
@@ -553,9 +440,8 @@ focus_tree = {
 
 		cost = 5
 
-		prerequisite = { }
-		mutually_exclusive = { }
-		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		available = { }
 		historical_ai = { }
 		select_effect = { }
@@ -567,23 +453,21 @@ focus_tree = {
 		}
 		cancel = { }
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_coal_industry_compromise"
-			set_temp_variable = { treasury_change = -10 }
+			set_temp_variable = { treasury_change = -5 }
 			modify_treasury_effect = yes
 			if = {
 				limit = { has_full_control_of_state = 39 }
 				39 = {
-					add_extra_state_shared_building_slots = 4
+					add_extra_state_shared_building_slots = 1
 				}
 			}
 			if = {
 				limit = { has_full_control_of_state = 40 }
 				40 = {
-					add_extra_state_shared_building_slots = 4
+					add_extra_state_shared_building_slots = 1
 				}
 			}
 		}
@@ -600,15 +484,13 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_coal_industry_compromise
 
-		cost = 5
+		cost = 12
 
 		prerequisite = {
 			focus = GER_coal_industry_compromise
 		}
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_foreign_policy_pragmatism"
@@ -650,20 +532,18 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_coal_industry_compromise
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		prerequisite = {
 			focus = GER_coal_industry_compromise
 		}
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_limited_haushaltskonsolidierung"
-			add_political_power = 200
+			add_political_power = 150
 		}
 
 		ai_will_do = {
@@ -678,16 +558,14 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_coal_industry_compromise
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		prerequisite = {
 			focus = GER_international_business
 		}
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_green_card_initiative"
@@ -706,9 +584,9 @@ focus_tree = {
 		y = 2
 		relative_position_id = GER_seize_opposition_weakness
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		prerequisite = {
 			focus = GER_infrastructural_reform
 		}
@@ -719,13 +597,7 @@ focus_tree = {
 		available = {
 			date > 2002.9.1
 		}
-		historical_ai = { }
-		select_effect = { }
-		bypass = { }
-		cancel = { }
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_schroeder_ii"
@@ -736,42 +608,7 @@ focus_tree = {
 			factor = 1
 		}
 	}
-	focus = {
-		id = GER_sports_funding
-		icon = trade
-	
-		x = -1
-		y = 4
-		relative_position_id = GER_seize_opposition_weakness
-	
-		cost = 10
-	
-		prerequisite = {
-			focus = GER_schroeder_ii
-		}
-		mutually_exclusive = { }
-		available = { }
-		historical_ai = { }
-		select_effect = { }
-		bypass = { }
-		cancel = { }
-	
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = no
-	
-		complete_tooltip = { }
-		completion_reward = {
-			#Need to add custom idea EndSieg
-			set_temp_variable = { treasury_change = gdp_total_display }
-			multiply_temp_variable = { treasury_change = 0.05 }
-			modify_treasury_effect = yes
-		}
-	
-		ai_will_do = {
-			factor = 1
-		}
-	}
+
 	focus = {
 		id = GER_auffangbank_concept
 		icon = EU_Banking
@@ -780,23 +617,18 @@ focus_tree = {
 		y = 3
 		relative_position_id = GER_seize_opposition_weakness
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		prerequisite = {
 			focus = GER_schroeder_ii
 		}
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_auffangbank_concept"
-			add_political_power = 100
-			set_temp_variable = { treasury_change = gdp_total_display }
-			multiply_temp_variable = { treasury_change = 0.15 }
-			modify_treasury_effect = yes
+			add_political_power = 50
 		}
 
 		ai_will_do = {
@@ -811,25 +643,20 @@ focus_tree = {
 		y = 4
 		relative_position_id = GER_seize_opposition_weakness
 
-		cost = 5
+		cost = 10
 
 		prerequisite = {
 			focus = GER_auffangbank_concept
 		}
 		mutually_exclusive = { }
-		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
-			set_temp_variable = { treasury_change = gdp_total_display }
-			multiply_temp_variable = { treasury_change = 0.08 }
-			modify_treasury_effect = yes
 			log = "[GetDateText]: [Root.GetName]: Focus GER_back_deutsche_bank"
 			random_owned_state = {
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 2
 			}
 		}
 
@@ -845,24 +672,18 @@ focus_tree = {
 		y = 2
 		relative_position_id = GER_coal_industry_compromise
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_EXPENDITURE}
+		search_filters = { FOCUS_FILTER_EXPENDITURE }
 		prerequisite = {
 			focus = GER_limited_haushaltskonsolidierung
 		}
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_pension_reform"
 			increase_social_spending = yes
-			#Need to add idea to lower social spending EndSieg
-			set_temp_variable = { treasury_change = gdp_total_display }
-			multiply_temp_variable = { treasury_change = 0.07 }
-			modify_treasury_effect = yes
 		}
 
 		ai_will_do = {
@@ -877,9 +698,9 @@ focus_tree = {
 		y = 2
 		relative_position_id = GER_coal_industry_compromise
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		prerequisite = {
 			focus = GER_limited_haushaltskonsolidierung
 		}
@@ -889,13 +710,7 @@ focus_tree = {
 		mutually_exclusive = { }
 		available = {
 		}
-		historical_ai = { }
-		select_effect = { }
-		bypass = { }
-		cancel = { }
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_digitalized_education_system"
@@ -905,7 +720,7 @@ focus_tree = {
 			  }
 			  add_tech_bonus = {
 				name = GER_digitalized_education_system
-				bonus = 3
+				bonus = 0.3
 				uses = 2
 				category = internet_tech
 			}
@@ -923,16 +738,14 @@ focus_tree = {
 		y = 2
 		relative_position_id = GER_coal_industry_compromise
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		prerequisite = {
 			focus = GER_green_card_initiative
 		}
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_scientific_exchanges"
@@ -951,16 +764,14 @@ focus_tree = {
 		y = 3
 		relative_position_id = GER_coal_industry_compromise
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		prerequisite = {
 			focus = GER_digitalized_education_system
 		}
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_improved_federal_education_standards"
@@ -982,7 +793,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = GER_coal_industry_compromise
 
-		cost = 5
+		cost = 10
 
 		prerequisite = {
 			focus = GER_auffangbank_concept
@@ -991,16 +802,13 @@ focus_tree = {
 			focus = GER_digitalized_education_system
 		}
 		mutually_exclusive = { }
-		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_homegrown_software"
-			random_owned_state = { add_extra_state_shared_building_slots = 4 }
-			random_owned_state = { add_extra_state_shared_building_slots = 4 }
+			random_owned_state = { add_extra_state_shared_building_slots = 2 }
 		}
 
 		ai_will_do = {
@@ -1015,22 +823,19 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_homegrown_software
 
-		cost = 5
+		cost = 10
 
 		prerequisite = {
 			focus = GER_homegrown_software
 		}
 		mutually_exclusive = { }
-		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_the_internet_neuland"
-			random_owned_state = { add_extra_state_shared_building_slots = 4 }
-			random_owned_state = { add_extra_state_shared_building_slots = 4 }
+			random_owned_state = { add_extra_state_shared_building_slots = 2 }
 		}
 
 		ai_will_do = {
@@ -1047,9 +852,9 @@ focus_tree = {
 		y = 3
 		relative_position_id = GER_seize_opposition_weakness
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		prerequisite = {
 			focus = GER_schroeder_ii
 		}
@@ -1059,13 +864,7 @@ focus_tree = {
 			has_stability > 0.60
 			has_civil_war = no
 		}
-		historical_ai = { }
-		select_effect = { }
-		bypass = { }
-		cancel = { }
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_agenda_2010"
@@ -1077,42 +876,7 @@ focus_tree = {
 			factor = 1
 		}
 	}
-	focus = {
-		id = GER_hartz_iv
-		icon = union_negotiations
-	
-		x = -2
-		y = 2
-		relative_position_id = GER_agenda_2010
-	
-		cost = 5
-	
-		prerequisite = {
-			focus = GER_agenda_2010
-		}
-		mutually_exclusive = { }
-		available = {
-			has_stability > 0.60
-			has_civil_war = no
-		}
-		historical_ai = { }
-		select_effect = { }
-		bypass = { }
-		cancel = { }
-	
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = no
-	
-		complete_tooltip = { }
-		completion_reward = {
-			add_stability = 0.1
-		}
-	
-		ai_will_do = {
-			factor = 1
-		}
-	}
+
 	focus = {
 		id = GER_sonderparteitag		#6 February 2004
 		icon = german_parliament
@@ -1121,7 +885,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_agenda_2010
 
-		cost = 5
+		cost = 10
 
 		prerequisite = {
 			focus = GER_agenda_2010
@@ -1132,18 +896,12 @@ focus_tree = {
 			has_stability > 0.60
 			has_civil_war = no
 		}
-		historical_ai = { }
-		select_effect = { }
-		bypass = { }
-		cancel = { }
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_sonderparteitag"
 			add_political_power = -100
-			add_stability = -0.05
+			add_stability = -0.01
 		}
 
 		ai_will_do = {
@@ -1158,7 +916,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = GER_agenda_2010
 
-		cost = 5
+		cost = 10
 
 		prerequisite = {
 			focus = GER_sonderparteitag
@@ -1168,17 +926,11 @@ focus_tree = {
 			date > 2005.5.1
 			has_stability > 0.60
 		}
-		historical_ai = { }
-		select_effect = { }
-		bypass = { }
-		cancel = { }
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_vertrauensfrage"
-			add_stability = -0.05
+			add_stability = -0.01
 		}
 
 		ai_will_do = {
@@ -1195,9 +947,9 @@ focus_tree = {
 		y = 3
 		relative_position_id = GER_agenda_2010
 
-		cost = 3
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		prerequisite = {
 			focus = GER_vertrauensfrage
 		}
@@ -1206,8 +958,6 @@ focus_tree = {
 		}
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_schroeder_iii"
@@ -1228,18 +978,16 @@ focus_tree = {
 
 		cost = 10
 
-		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		prerequisite = {
 			focus = GER_schroeder_iii
 		}
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_gewerkschaftsgesetz"
-			set_temp_variable = { treasury_change = -30 }
+			set_temp_variable = { treasury_change = -20 }
 			modify_treasury_effect = yes
 			random_owned_state = {
 				limit = {
@@ -1249,10 +997,9 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -1270,23 +1017,21 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_schroeder_iii
 
-		cost = 5
+		cost = 10
 
 		prerequisite = {
 			focus = GER_schroeder_iii
 		}
 		mutually_exclusive = { }
-		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_regions_of_innovation"
-			random_owned_state = { add_extra_state_shared_building_slots = 3 }
-			random_owned_state = { add_extra_state_shared_building_slots = 3 }
-			random_owned_state = { add_extra_state_shared_building_slots = 3 }
+			random_owned_state = { add_extra_state_shared_building_slots = 1 }
+			random_owned_state = { add_extra_state_shared_building_slots = 1 }
+			random_owned_state = { add_extra_state_shared_building_slots = 1 }
 		}
 
 		ai_will_do = {
@@ -1301,21 +1046,19 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_schroeder_iii
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT}
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
 		prerequisite = {
 			focus = GER_schroeder_iii
 		}
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_trust_in_germany"
-			add_stability = 0.05
-			add_war_support = 0.05
+			add_stability = 0.025
+			add_war_support = 0.025
 		}
 
 		ai_will_do = {
@@ -1330,20 +1073,18 @@ focus_tree = {
 		y = 2
 		relative_position_id = GER_schroeder_iii
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_INTERNAL_FACTION}
+		search_filters = { FOCUS_FILTER_INTERNAL_FACTION }
 		prerequisite = {
 			focus = GER_gewerkschaftsgesetz
 		}
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_further_union_reassurances"
-			set_temp_variable = { temp_opinion = 10 }
+			set_temp_variable = { temp_opinion = 5 }
 			change_labour_unions_opinion = yes
 		}
 
@@ -1361,18 +1102,16 @@ focus_tree = {
 
 		cost = 10
 
-		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		prerequisite = {
 			focus = GER_regions_of_innovation
 		}
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_anti_unemployment_efforts"
-			set_temp_variable = { treasury_change = -30 }
+			set_temp_variable = { treasury_change = -20 }
 			modify_treasury_effect = yes
 			random_owned_state = {
 				limit = {
@@ -1382,10 +1121,9 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -1403,9 +1141,9 @@ focus_tree = {
 		y = 2
 		relative_position_id = GER_schroeder_iii
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+		search_filters = { FOCUS_FILTER_EUROPEAN_UNION }
 		prerequisite = {
 			focus = GER_trust_in_germany
 		}
@@ -1416,12 +1154,10 @@ focus_tree = {
 		bypass = { NOT = { has_idea = EU_member } }
 		cancel = { NOT = { has_idea = EU_member } }
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_pan_european_efforts"
-			set_temp_variable = { modify_eurosceptic = -0.05 }
+			set_temp_variable = { modify_eurosceptic = -0.03 }
 			EU_eurosceptic_change = yes
 			hidden_effect = {
 				every_other_country = {
@@ -1448,20 +1184,18 @@ focus_tree = {
 		y = 3
 		relative_position_id = GER_schroeder_iii
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_INTERNAL_FACTION}
+		search_filters = { FOCUS_FILTER_INTERNAL_FACTION }
 		prerequisite = {
 			focus = GER_further_union_reassurances
 		}
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_close_ranks_with_the_international_unions"
-			set_temp_variable = { temp_opinion = 10 }
+			set_temp_variable = { temp_opinion = 5 }
 			change_labour_unions_opinion = yes
 		}
 
@@ -1479,24 +1213,19 @@ focus_tree = {
 
 		cost = 10
 
-		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		prerequisite = {
 			focus = GER_anti_unemployment_efforts
 		}
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_economic_prosperity"
-			set_temp_variable = { treasury_change = -30 }
 			random_owned_state = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
-					type = industrial_complex 
-					level = 3 
-					instant_build = yes
+					type = industrial_complex level = 1 instant_build = yes
 				}
 			}
 		}
@@ -1513,9 +1242,9 @@ focus_tree = {
 		y = 3
 		relative_position_id = GER_schroeder_iii
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_EUROPEAN_UNION FOCUS_FILTER_RESEARCH}
+		search_filters = { FOCUS_FILTER_EUROPEAN_UNION FOCUS_FILTER_RESEARCH }
 		prerequisite = {
 			focus = GER_pan_european_efforts
 		}
@@ -1525,13 +1254,7 @@ focus_tree = {
 			has_idea = EU_member
 		}
 
-		historical_ai = { }
-		select_effect = { }
-		bypass = { }
-		cancel = { }
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_continental_education_investments"
@@ -1557,7 +1280,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = GER_schroeder_iii
 
-		cost = 5
+		cost = 10
 
 		prerequisite = {
 			focus = GER_close_ranks_with_the_international_unions
@@ -1570,13 +1293,7 @@ focus_tree = {
 		}
 		available = {
 		}
-		historical_ai = { }
-		select_effect = { }
-		bypass = { }
-		cancel = { }
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_return_to_old_social_democracy"
@@ -1595,21 +1312,19 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_return_to_old_social_democracy
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		prerequisite = {
 			focus = GER_return_to_old_social_democracy
 		}
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_brandtism"
-			add_popularity = { ideology = democratic popularity = 0.1 }
-			add_popularity = { ideology = neutrality popularity = 0.1 }
+			add_popularity = { ideology = democratic popularity = 0.02 }
+			add_popularity = { ideology = neutrality popularity = 0.02 }
 			recalculate_party = yes
 		}
 
@@ -1625,20 +1340,18 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_return_to_old_social_democracy
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_INTERNAL_FACTION}
+		search_filters = { FOCUS_FILTER_INTERNAL_FACTION }
 		prerequisite = {
 			focus = GER_return_to_old_social_democracy
 		}
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_european_leftism"
-			set_temp_variable = { temp_opinion = 10 }
+			set_temp_variable = { temp_opinion = 5 }
 			change_labour_unions_opinion = yes
 		}
 
@@ -1663,18 +1376,16 @@ focus_tree = {
 			focus = GER_european_leftism
 		}
 		mutually_exclusive = { }
-		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_arbeiterstaat"
-			random_owned_state = { add_extra_state_shared_building_slots = 4 }
-			random_owned_state = { add_extra_state_shared_building_slots = 4 }
-			random_owned_state = { add_extra_state_shared_building_slots = 4}
-			random_owned_state = { add_extra_state_shared_building_slots = 4 }
+			random_owned_state = { add_extra_state_shared_building_slots = 1 }
+			random_owned_state = { add_extra_state_shared_building_slots = 1 }
+			random_owned_state = { add_extra_state_shared_building_slots = 1 }
+			random_owned_state = { add_extra_state_shared_building_slots = 1 }
 		}
 
 		ai_will_do = {
@@ -1691,28 +1402,26 @@ focus_tree = {
 
 		cost = 10
 
-		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_INTERNAL_FACTION}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_INTERNAL_FACTION }
 		prerequisite = {
 			focus = GER_arbeiterstaat
 		}
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_heavy_industry_focus"
-			set_temp_variable = { treasury_change = -200 }
+			set_temp_variable = { treasury_change = -150 }
 			modify_treasury_effect = yes
 			set_temp_variable = { temp_opinion = 5 }
 			change_labour_unions_opinion = yes
 			if = {
 				limit = { has_full_control_of_state = 43 }
 				43 = {
-					add_extra_state_shared_building_slots = 6
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = industrial_complex
-						level = 6
+						level = 4
 						instant_build = yes
 					}
 				}
@@ -1720,10 +1429,10 @@ focus_tree = {
 			if = {
 				limit = { has_full_control_of_state = 39 }
 				39 = {
-					add_extra_state_shared_building_slots = 6
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = industrial_complex
-						level = 6
+						level = 4
 						instant_build = yes
 					}
 				}
@@ -1743,7 +1452,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = GER_schroeder_iii
 
-		cost = 5
+		cost = 10
 
 		prerequisite = {
 			focus = GER_economic_prosperity
@@ -1756,8 +1465,6 @@ focus_tree = {
 		}
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_continue_the_third_way"
@@ -1776,15 +1483,13 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_continue_the_third_way
 
-		cost = 5
+		cost = 10
 
 		prerequisite = {
 			focus = GER_continue_the_third_way
 		}
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_appeasement_in_eastern_europe"
@@ -1812,9 +1517,9 @@ focus_tree = {
 		y = 2
 		relative_position_id = GER_continue_the_third_way
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+		search_filters = { FOCUS_FILTER_EUROPEAN_UNION }
 		prerequisite = {
 			focus = GER_appeasement_in_eastern_europe
 		}
@@ -1829,13 +1534,7 @@ focus_tree = {
 				NOT = { has_government = fascism }
 			}
 		}
-		historical_ai = { }
-		select_effect = { }
-		bypass = { }
-		cancel = { }
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_non_aggression_principle_with_russia"
@@ -1861,9 +1560,9 @@ focus_tree = {
 		y = 2
 		relative_position_id = GER_continue_the_third_way
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		prerequisite = {
 			focus = GER_appeasement_in_eastern_europe
 		}
@@ -1872,8 +1571,6 @@ focus_tree = {
 		}
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_break_with_putin"
@@ -1892,9 +1589,9 @@ focus_tree = {
 		y = 3
 		relative_position_id = GER_continue_the_third_way
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		prerequisite = {
 			focus = GER_non_aggression_principle_with_russia
 		}
@@ -1906,20 +1603,14 @@ focus_tree = {
 			SOV = { has_government = communism }
 		}
 
-		historical_ai = { }
-		select_effect = { }
-		bypass = { }
-		cancel = { }
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_seek_russias_favor"
 			set_politics = {
 				ruling_party = communism
 			}
-			add_popularity = { ideology = communism popularity = 0.4 }
+			add_popularity = { ideology = communism popularity = 0.2 }
 			recalculate_party = yes
 		}
 
@@ -1935,9 +1626,9 @@ focus_tree = {
 		y = 3
 		relative_position_id = GER_continue_the_third_way
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		prerequisite = {
 			focus = GER_arbeiterstaat
 			focus = GER_non_aggression_principle_with_russia
@@ -1947,15 +1638,13 @@ focus_tree = {
 		}
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_international_non_alignment"
 			set_politics = {
 				ruling_party = neutrality
 			}
-			add_popularity = { ideology = neutrality popularity = 0.4 }
+			add_popularity = { ideology = neutrality popularity = 0.2 }
 			recalculate_party = yes
 		}
 
@@ -1972,9 +1661,9 @@ focus_tree = {
 		y = 3
 		relative_position_id = GER_agenda_2010
 
-		cost = 3
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		prerequisite = {
 			focus = GER_vertrauensfrage
 		}
@@ -1983,15 +1672,13 @@ focus_tree = {
 		}
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_angela_merkel"
 			custom_effect_tooltip = tooltip_cdu_power_in_GER
 			add_popularity = {
 				ideology = democratic
-				popularity = 0.1
+				popularity = 0.075
 			}
 		}
 
@@ -2011,26 +1698,24 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_angela_merkel
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = { FOCUS_FILTER_STABILITY }
 		prerequisite = {
 			focus = GER_angela_merkel
 		}
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_energy_reform"
 			set_temp_variable = { party_index = 1 }
-			set_temp_variable = { party_popularity_increase = 0.1 }
-			set_temp_variable = { temp_outlook_increase = 0.1 }
+			set_temp_variable = { party_popularity_increase = 0.05 }
+			set_temp_variable = { temp_outlook_increase = 0.05 }
 			add_relative_party_popularity = yes
 			set_temp_variable = { party_index = 17 }
-			set_temp_variable = { party_popularity_increase = 0.1 }
-			set_temp_variable = { temp_outlook_increase = 0.1 }
+			set_temp_variable = { party_popularity_increase = 0.05 }
+			set_temp_variable = { temp_outlook_increase = 0.05 }
 			add_relative_party_popularity = yes
 		}
 
@@ -2046,22 +1731,20 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_angela_merkel
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = { FOCUS_FILTER_STABILITY }
 		prerequisite = {
 			focus = GER_angela_merkel
 		}
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_gesundheitspraemie"
 			set_temp_variable = { party_index = 1 }
-			set_temp_variable = { party_popularity_increase = 0.1 }
-			set_temp_variable = { temp_outlook_increase = 0.1 }
+			set_temp_variable = { party_popularity_increase = 0.03 }
+			set_temp_variable = { temp_outlook_increase = 0.03 }
 			add_relative_party_popularity = yes
 		}
 
@@ -2077,9 +1760,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_angela_merkel
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		prerequisite = {
 			focus = GER_angela_merkel
 		}
@@ -2088,8 +1771,6 @@ focus_tree = {
 		}
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_bmvi"
@@ -2108,16 +1789,14 @@ focus_tree = {
 		y = 2
 		relative_position_id = GER_angela_merkel
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		prerequisite = {
 			focus = GER_bmvi
 		}
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_digitalrat"
@@ -2141,9 +1820,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_angela_merkel
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		prerequisite = {
 			focus = GER_angela_merkel
 		}
@@ -2152,15 +1831,13 @@ focus_tree = {
 		}
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_seek_centrist_compromises"
 			custom_effect_tooltip = tooltip_status_quo_in_GER
 			set_temp_variable = { party_index = 1 }
-			set_temp_variable = { party_popularity_increase = 0.1 }
-			set_temp_variable = { temp_outlook_increase = 0.1 }
+			set_temp_variable = { party_popularity_increase = 0.03 }
+			set_temp_variable = { temp_outlook_increase = 0.03 }
 			add_relative_party_popularity = yes
 		}
 
@@ -2180,44 +1857,17 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_seek_centrist_compromises
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = { FOCUS_FILTER_STABILITY }
 		prerequisite = {
 			focus = GER_seek_centrist_compromises
 		}
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_token_atomausstieg"
-					
-				42 = {	
-					remove_building = {
-					type = nuclear_reactor
-					level = 2
-					}
-				}
-				43 = {	
-					remove_building = {
-					type = nuclear_reactor
-					level = 2
-					}
-				}
-				964 = {	
-					remove_building = {
-					type = nuclear_reactor
-					level = 1
-					}
-				}
-				41 = {	
-					remove_building = {
-					type = nuclear_reactor
-					level = 1
-					}
-				}
 		}
 
 		ai_will_do = {
@@ -2234,20 +1884,17 @@ focus_tree = {
 
 		cost = 10
 
-		search_filters = {FOCUS_FILTER_INTERNAL_FACTION}
+		search_filters = { FOCUS_FILTER_INTERNAL_FACTION }
 		prerequisite = {
 			focus = GER_token_atomausstieg
 		}
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_strengthen_the_service_sector"
-			set_temp_variable = { temp_opinion = 10 }
+			set_temp_variable = { temp_opinion = 5 }
 			change_small_medium_business_owners_opinion = yes
-			three_office_construction = yes
 		}
 
 		ai_will_do = {
@@ -2262,22 +1909,19 @@ focus_tree = {
 		y = 2
 		relative_position_id = GER_seek_centrist_compromises
 
-		cost = 5
+		cost = 10
 
 		prerequisite = {
 			focus = GER_token_atomausstieg
 		}
 		mutually_exclusive = { }
-		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_industrial_outsourcing"
-			random_owned_state = { add_extra_state_shared_building_slots = 8 }
-			three_office_construction = yes
+			random_owned_state = { add_extra_state_shared_building_slots = 1 }
 		}
 
 		ai_will_do = {
@@ -2292,26 +1936,21 @@ focus_tree = {
 		y = 2
 		relative_position_id = GER_seek_centrist_compromises
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = { FOCUS_FILTER_STABILITY }
 		prerequisite = {
 			focus = GER_token_atomausstieg
 		}
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_redistribute_cap_subsidies"
 			set_temp_variable = { party_index = 1 }
-			set_temp_variable = { party_popularity_increase = 0.1 }
-			set_temp_variable = { temp_outlook_increase = 0.1 }
+			set_temp_variable = { party_popularity_increase = 0.03 }
+			set_temp_variable = { temp_outlook_increase = 0.03 }
 			add_relative_party_popularity = yes
-			set_temp_variable = { treasury_change = gdp_total_display }
-			multiply_temp_variable = { treasury_change = 0.5 }
-			modify_treasury_effect = yes
 		}
 
 		ai_will_do = {
@@ -2326,9 +1965,9 @@ focus_tree = {
 		y = 3
 		relative_position_id = GER_seek_centrist_compromises
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_EUROPEAN_UNION FOCUS_FILTER_INDUSTRY}
+		search_filters = { FOCUS_FILTER_EUROPEAN_UNION FOCUS_FILTER_INDUSTRY }
 		prerequisite = {
 			focus = GER_strengthen_the_service_sector
 		}
@@ -2341,8 +1980,6 @@ focus_tree = {
 		bypass = { NOT = { has_idea = EU_member } }
 		cancel = { NOT = { has_idea = EU_member } }
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_european_business_opportunities"
@@ -2373,23 +2010,23 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_full_control_of_state = 39 }
-				39 = { add_extra_state_shared_building_slots = 4 }
+				39 = { add_extra_state_shared_building_slots = 1 }
 			}
 			if = {
 				limit = { has_full_control_of_state = 43 }
-				43 = { add_extra_state_shared_building_slots = 4 }
+				43 = { add_extra_state_shared_building_slots = 1 }
 			}
 			if = {
 				limit = { has_full_control_of_state = 38 }
-				38 = { add_extra_state_shared_building_slots = 4 }
+				38 = { add_extra_state_shared_building_slots = 1 }
 			}
 			if = {
 				limit = { has_full_control_of_state = 40 }
-				40 = { add_extra_state_shared_building_slots = 4 }
+				40 = { add_extra_state_shared_building_slots = 1 }
 			}
 			if = {
 				limit = { has_full_control_of_state = 37 }
-				37 = { add_extra_state_shared_building_slots = 4 }
+				37 = { add_extra_state_shared_building_slots = 1 }
 			}
 		}
 
@@ -2401,42 +2038,7 @@ focus_tree = {
 				}
 		}
 	}
-	focus = {
-		id = GER_global_trade_initiatives
-		icon = global_community
-	
-		x = -1
-		y = 4
-		relative_position_id = GER_seek_centrist_compromises
-	
-		cost = 10
-	
-		prerequisite = {
-			focus = GER_industrial_outsourcing
-		}
-		mutually_exclusive = { }
-		available = { }
-		historical_ai = { }
-		select_effect = { }
-		bypass = { }
-		cancel = { }
-	
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = no
-	
-		complete_tooltip = { }
-		completion_reward = {
-			three_office_construction = yes
-			set_temp_variable = { treasury_change = gdp_total_display }
-			multiply_temp_variable = { treasury_change = 0.9 }
-			modify_treasury_effect = yes
-		}
-	
-		ai_will_do = {
-			factor = 1
-		}
-	}
+
 	focus = {
 		id = GER_animal_rights_reform
 		icon = agrarwende
@@ -2445,22 +2047,20 @@ focus_tree = {
 		y = 3
 		relative_position_id = GER_seek_centrist_compromises
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = { FOCUS_FILTER_STABILITY }
 		prerequisite = {
 			focus = GER_redistribute_cap_subsidies
 		}
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_animal_rights_reform"
 			set_temp_variable = { party_index = 1 }
-			set_temp_variable = { party_popularity_increase = 0.1 }
-			set_temp_variable = { temp_outlook_increase = 0.1 }
+			set_temp_variable = { party_popularity_increase = 0.03 }
+			set_temp_variable = { temp_outlook_increase = 0.03 }
 			add_relative_party_popularity = yes
 		}
 
@@ -2478,9 +2078,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_angela_merkel
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_EUROPEAN_UNION FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT}
+		search_filters = { FOCUS_FILTER_EUROPEAN_UNION FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 		prerequisite = {
 			focus = GER_angela_merkel
 		}
@@ -2489,24 +2089,18 @@ focus_tree = {
 		}
 		available = {
 			has_government = nationalist
-			NOT= { has_idea = NATO_member }
+			NOT = { has_idea = NATO_member }
 		}
 
-		historical_ai = { }
-		select_effect = { }
-		bypass = { }
-		cancel = { }
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_radicalize_german_conservatism"
 			set_temp_variable = { modify_eurosceptic = 0.15 }
 			set_temp_variable = { modify_eurosceptic_target = ROOT }
 			eurosceptic_change = yes
-			add_war_support = 0.1
-			add_popularity = { ideology = nationalist popularity = 0.1 }
+			add_war_support = 0.05
+			add_popularity = { ideology = nationalist popularity = 0.03 }
 			recalculate_party = yes
 		}
 
@@ -2526,20 +2120,18 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_radicalize_german_conservatism
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		prerequisite = {
 			focus = GER_radicalize_german_conservatism
 		}
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_military_spending_offensive"
-			add_popularity = { ideology = nationalist popularity = 0.2 }
+			add_popularity = { ideology = nationalist popularity = 0.03 }
 			recalculate_party = yes
 		}
 
@@ -2555,89 +2147,19 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_radicalize_german_conservatism
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		prerequisite = {
 			focus = GER_radicalize_german_conservatism
 		}
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_partial_autobahn_privatization"
-			add_popularity = { ideology = nationalist popularity = 0.1 }
+			add_popularity = { ideology = nationalist popularity = 0.03 }
 			recalculate_party = yes
-			random_owned_controlled_state = {
-				if = {
-					limit = {
-						free_building_slots = {
-							building = infrastructure
-							size > 0
-							include_locked = yes
-						}
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 3
-						instant_build = yes
-					}
-
-				}
-			}
-			random_owned_controlled_state = {
-				if = {
-					limit = {
-						free_building_slots = {
-							building = infrastructure
-							size > 0
-							include_locked = yes
-						}
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 3
-						instant_build = yes
-					}
-
-				}
-			}
-			random_owned_controlled_state = {
-				if = {
-					limit = {
-						free_building_slots = {
-							building = infrastructure
-							size > 0
-							include_locked = yes
-						}
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 3
-						instant_build = yes
-					}
-
-				}
-			}
-			random_owned_controlled_state = {
-				if = {
-					limit = {
-						free_building_slots = {
-							building = infrastructure
-							size > 0
-							include_locked = yes
-						}
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 3
-						instant_build = yes
-					}
-
-				}
-			}
 		}
 
 		ai_will_do = {
@@ -2654,9 +2176,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_radicalize_german_conservatism
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		prerequisite = {
 			focus = GER_radicalize_german_conservatism
 		}
@@ -2674,17 +2196,11 @@ focus_tree = {
 				}
 			}
 		}
-		historical_ai = { }
-		select_effect = { }
-		bypass = { }
-		cancel = { }
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_german_nationalism"
-			add_popularity = { ideology = nationalist popularity = 0.1 }
+			add_popularity = { ideology = nationalist popularity = 0.05 }
 			recalculate_party = yes
 		}
 
@@ -2700,20 +2216,18 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_german_nationalism
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		prerequisite = {
 			focus = GER_german_nationalism
 		}
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_rehabilitate_prussia"
-			add_popularity = { ideology = nationalist popularity = 0.1 }
+			add_popularity = { ideology = nationalist popularity = 0.05 }
 			recalculate_party = yes
 		}
 
@@ -2731,9 +2245,9 @@ focus_tree = {
 		y = 2
 		relative_position_id = GER_german_nationalism
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		prerequisite = {
 			focus = GER_rehabilitate_prussia
 		}
@@ -2746,17 +2260,11 @@ focus_tree = {
 				nationalist > 0.4
 			}
 		}
-		historical_ai = { }
-		select_effect = { }
-		bypass = { }
-		cancel = { }
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_imperial_ambition"
-			add_popularity = { ideology = neutrality popularity = 0.1 }
+			add_popularity = { ideology = neutrality popularity = 0.05 }
 			recalculate_party = yes
 		}
 
@@ -2772,22 +2280,20 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_imperial_ambition
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		prerequisite = {
 			focus = GER_imperial_ambition
 		}
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_reestablish_local_thrones"
-			add_political_power = 150
-			add_popularity = { ideology = nationalist popularity = 0.1 }
-			add_popularity = { ideology = neutrality popularity = 0.1 }
+			add_political_power = 75
+			add_popularity = { ideology = nationalist popularity = 0.03 }
+			add_popularity = { ideology = neutrality popularity = 0.03 }
 			recalculate_party = yes
 		}
 
@@ -2803,25 +2309,19 @@ focus_tree = {
 		y = 2
 		relative_position_id = GER_imperial_ambition
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		prerequisite = {
 			focus = GER_reestablish_local_thrones
 		}
 		mutually_exclusive = { }
 		available = { nationalist > 0.3 }
-		historical_ai = { }
-		select_effect = { }
-		bypass = { }
-		cancel = { }
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_hohenzollern_restoration"
-			add_popularity = { ideology = nationalist popularity = 0.1 }
+			add_popularity = { ideology = nationalist popularity = 0.05 }
 			set_politics = {
 				ruling_party = nationalist
 				elections_allowed = yes
@@ -2843,9 +2343,9 @@ focus_tree = {
 		y = 2
 		relative_position_id = GER_german_nationalism
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 		prerequisite = {
 			focus = GER_rehabilitate_prussia
 		}
@@ -2855,18 +2355,11 @@ focus_tree = {
 		available = {
 			nationalist > 0.4
 		}
-		historical_ai = { }
-		select_effect = { }
-		bypass = { }
-		cancel = { }
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_national_ambition"
- 			add_war_support = 0.1
-		}
+ add_war_support = 0.05 }
 
 
 		ai_will_do = {
@@ -2881,20 +2374,18 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_national_ambition
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		prerequisite = {
 			focus = GER_national_ambition
 		}
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_voelkisch_fervor"
-			add_popularity = { ideology = nationalist popularity = 0.2 }
+			add_popularity = { ideology = nationalist popularity = 0.1 }
 			recalculate_party = yes
 		}
 
@@ -2910,16 +2401,14 @@ focus_tree = {
 		y = 2
 		relative_position_id = GER_national_ambition
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_POLITICAL}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		prerequisite = {
 			focus = GER_voelkisch_fervor
 		}
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_dismantle_democracy"
@@ -2950,20 +2439,15 @@ focus_tree = {
 		y = 0
 		relative_position_id = GER_conservative_ties_to_the_automotive_industry
 
-		cost = 5
+		cost = 10
 
 		prerequisite = { }
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_international_business"
 			custom_effect_tooltip = tooltip_trade_deals_with_GER
-			set_temp_variable = { treasury_change = gdp_total_display }
-			multiply_temp_variable = { treasury_change = 0.1 }
-			modify_treasury_effect = yes
 		}
 
 
@@ -2979,15 +2463,13 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_international_business
 
-		cost = 5
+		cost = 10
 
 		prerequisite = {
 			focus = GER_international_business
 		}
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_sino_german_deals"
@@ -2998,9 +2480,6 @@ focus_tree = {
 					add_opinion_modifier = { target = ROOT modifier = german_trade_policy_trade }
 				}
 			}
-			set_temp_variable = { treasury_change = gdp_total_display }
-			multiply_temp_variable = { treasury_change = 0.05 }
-			modify_treasury_effect = yes
 		}
 
 		ai_will_do = {
@@ -3015,9 +2494,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_international_business
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_RESOURCE}
+		search_filters = { FOCUS_FILTER_RESOURCE }
 		prerequisite = {
 			focus = GER_international_business
 		}
@@ -3025,17 +2504,11 @@ focus_tree = {
 		available = {
 			has_full_control_of_state = 38
 		}
-		historical_ai = { }
-		select_effect = { }
-		bypass = { }
-		cancel = { }
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_oil_trade_negotiations"
-			38 = { add_resource = { type = oil amount = 30 } }
+			38 = { add_resource = { type = oil amount = 2 } }
 			if = {
 				limit = { NOT = { has_war_with = NOR } }
 				NOR = {
@@ -3092,15 +2565,13 @@ focus_tree = {
 		y = 2
 		relative_position_id = GER_international_business
 
-		cost = 5
+		cost = 10
 
 		prerequisite = {
 			focus = GER_international_business
 		}
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_trans_atlantic_trade"
@@ -3111,9 +2582,6 @@ focus_tree = {
 					add_opinion_modifier = { target = ROOT modifier = german_trade_policy_trade }
 				}
 			}
-			set_temp_variable = { treasury_change = gdp_total_display }
-			multiply_temp_variable = { treasury_change = 0.05 }
-			modify_treasury_effect = yes
 		}
 
 		ai_will_do = {
@@ -3128,15 +2596,13 @@ focus_tree = {
 		y = 3
 		relative_position_id = GER_international_business
 
-		cost = 5
+		cost = 10
 
 		prerequisite = {
 			focus = GER_trans_atlantic_trade
 		}
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_trade_with_canada"
@@ -3147,9 +2613,6 @@ focus_tree = {
 					add_opinion_modifier = { target = ROOT modifier = german_trade_policy_trade }
 				}
 			}
-			set_temp_variable = { treasury_change = gdp_total_display }
-			multiply_temp_variable = { treasury_change = 0.01 }
-			modify_treasury_effect = yes
 		}
 
 		ai_will_do = {
@@ -3164,9 +2627,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_international_business
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_EUROPEAN_UNION FOCUS_FILTER_STABILITY}
+		search_filters = { FOCUS_FILTER_EUROPEAN_UNION FOCUS_FILTER_STABILITY }
 		prerequisite = {
 			focus = GER_international_business
 		}
@@ -3174,21 +2637,15 @@ focus_tree = {
 		available = {
 			NOT = { has_war_with = SOV }
 		}
-		historical_ai = { }
-		select_effect = { }
-		bypass = { }
-		cancel = { }
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_nord_stream"
 			set_temp_variable = { modify_eurosceptic = 0.05 }
 			EU_potential_eurosceptic_change = yes
-			add_stability = 0.1
+			add_stability = 0.01
 			if = {
-				limit = { NOT = { SOV = { has_completed_focus = SOV_nordstream } } }
+				limit = { NOT = { SOV = { has_completed_focus = SOV_nord_stream } } }
 				if = {
 					limit = { NOT = { has_war_with = SOV } }
 					SOV = {
@@ -3222,15 +2679,12 @@ focus_tree = {
 					add_opinion_modifier = { target = ROOT modifier = great_opposition_to_nord_stream }
 				}
 			}
-			set_temp_variable = { treasury_change = gdp_total_display }
-			multiply_temp_variable = { treasury_change = 0.1 }
-			modify_treasury_effect = yes
 		}
 
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				SOV = { has_completed_focus = SOV_nordstream }
+				SOV = { has_completed_focus = SOV_nord_stream }
 				add = 20
 			}
 		}
@@ -3243,9 +2697,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_nord_stream
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+		search_filters = { FOCUS_FILTER_EUROPEAN_UNION }
 		prerequisite = {
 			focus = GER_nord_stream
 		}
@@ -3254,8 +2708,6 @@ focus_tree = {
 		}
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_appease_eastern_europe"
@@ -3290,9 +2742,9 @@ focus_tree = {
 		y = 2
 		relative_position_id = GER_nord_stream
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_EUROPEAN_UNION FOCUS_FILTER_INDUSTRY}
+		search_filters = { FOCUS_FILTER_EUROPEAN_UNION FOCUS_FILTER_INDUSTRY }
 		prerequisite = {
 			focus = GER_appease_eastern_europe
 		}
@@ -3300,13 +2752,7 @@ focus_tree = {
 		available = {
 			NOT = { has_war_with = POL }
 		}
-		historical_ai = { }
-		select_effect = { }
-		bypass = { }
-		cancel = { }
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_accomodate_polish_migrant_workers"
@@ -3315,15 +2761,15 @@ focus_tree = {
 			eurosceptic_change = yes
 			if = {
 				limit = { has_full_control_of_state = 539 }
-				539 = { add_extra_state_shared_building_slots = 3 }
+				539 = { add_extra_state_shared_building_slots = 1 }
 			}
 			if = {
 				limit = { has_full_control_of_state = 45 }
-				45 = { add_extra_state_shared_building_slots = 3 }
+				45 = { add_extra_state_shared_building_slots = 1 }
 			}
 			if = {
 				limit = { has_full_control_of_state = 44 }
-				44 = { add_extra_state_shared_building_slots = 3 }
+				44 = { add_extra_state_shared_building_slots = 1 }
 			}
 		}
 
@@ -3344,7 +2790,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_nord_stream
 
-		cost = 5
+		cost = 10
 
 		prerequisite = {
 			focus = GER_nord_stream
@@ -3353,13 +2799,7 @@ focus_tree = {
 			focus = GER_appease_eastern_europe
 		}
 		available = { NOT = { has_war_with = SOV } }
-		historical_ai = { }
-		select_effect = { }
-		bypass = { }
-		cancel = { }
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_russo_german_partnership"
@@ -3386,25 +2826,18 @@ focus_tree = {
 
 		cost = 10
 
-		search_filters = {FOCUS_FILTER_EUROPEAN_UNION FOCUS_FILTER_INDUSTRY}
+		search_filters = { FOCUS_FILTER_EUROPEAN_UNION FOCUS_FILTER_INDUSTRY }
 		prerequisite = {
 			focus = GER_russo_german_partnership
 		}
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_closer_integration_with_eaeu_markets"
 			set_temp_variable = { modify_eurosceptic = 0.05 }
 			EU_potential_eurosceptic_change = yes
-			random_owned_state = { add_extra_state_shared_building_slots = 3 } 
-			set_temp_variable = { treasury_change = gdp_total_display }
-			multiply_temp_variable = { treasury_change = 0.1 }
-			modify_treasury_effect = yes
-		}
-			
+			random_owned_state = { add_extra_state_shared_building_slots = 2 } }
 
 			ai_will_do = {
 				factor = 1
@@ -3426,25 +2859,19 @@ focus_tree = {
 
 		cost = 3
 
-		search_filters = {FOCUS_FILTER_EUROPEAN_UNION FOCUS_FILTER_STABILITY}
+		search_filters = { FOCUS_FILTER_EUROPEAN_UNION FOCUS_FILTER_STABILITY }
 		prerequisite = { focus = GER_international_business }
 		mutually_exclusive = { }
 		available = {
 			has_idea = EU_member
 		}
-		historical_ai = { }
-		select_effect = { }
-		bypass = { }
-		cancel = { }
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_cfsp_studies"
 			set_temp_variable = { modify_eurosceptic = -0.05 }
 			EU_eurosceptic_change = yes
-			add_stability = 0.1
+			add_stability = 0.01
 		}
 
 		ai_will_do = {
@@ -3463,9 +2890,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_cfsp_studies
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+		search_filters = { FOCUS_FILTER_EUROPEAN_UNION }
 		prerequisite = {
 			focus = GER_cfsp_studies
 		}
@@ -3476,8 +2903,6 @@ focus_tree = {
 		bypass = { NOT = { has_idea = EU_member } }
 		cancel = { NOT = { has_idea = EU_member } }
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_expand_the_rhine_route"
@@ -3492,9 +2917,6 @@ focus_tree = {
 					add_opinion_modifier = { target = ROOT modifier = german_trade_policy_trade }
 				}
 			}
-			set_temp_variable = { treasury_change = gdp_total_display }
-			multiply_temp_variable = { treasury_change = 0.1 }
-			modify_treasury_effect = yes
 		}
 
 		ai_will_do = {
@@ -3509,7 +2931,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = GER_cfsp_studies
 
-		cost = 5
+		cost = 10
 
 		prerequisite = {
 			focus = GER_expand_the_rhine_route
@@ -3534,8 +2956,6 @@ focus_tree = {
 			}
 		}
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_strengthen_ties_to_belgium"
@@ -3546,9 +2966,6 @@ focus_tree = {
 					add_opinion_modifier = { target = ROOT modifier = german_trade_policy_trade }
 				}
 			}
-			set_temp_variable = { treasury_change = gdp_total_display }
-			multiply_temp_variable = { treasury_change = 0.05 }
-			modify_treasury_effect = yes
 		}
 
 		ai_will_do = {
@@ -3563,14 +2980,12 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_cfsp_studies
 
-		cost = 5
+		cost = 11
 
-		search_filters = {FOCUS_FILTER_EUROPEAN_UNION}
+		search_filters = { FOCUS_FILTER_EUROPEAN_UNION }
 		prerequisite = { focus = GER_cfsp_studies }
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_demand_maastricht_amendments"
@@ -3595,7 +3010,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = GER_cfsp_studies
 
-		cost = 5
+		cost = 10
 
 		prerequisite = {
 			focus = GER_expand_the_rhine_route
@@ -3620,8 +3035,6 @@ focus_tree = {
 			}
 		}
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_northern_markets"
@@ -3632,9 +3045,6 @@ focus_tree = {
 					add_opinion_modifier = { target = ROOT modifier = german_trade_policy_trade }
 				}
 			}
-			set_temp_variable = { treasury_change = gdp_total_display }
-			multiply_temp_variable = { treasury_change = 0.05 }
-			modify_treasury_effect = yes
 		}
 
 		ai_will_do = {
@@ -3649,14 +3059,12 @@ focus_tree = {
 		y = 3
 		relative_position_id = GER_cfsp_studies
 
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = GER_northern_markets }
 		prerequisite = { focus = GER_strengthen_ties_to_belgium }
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_interests_in_the_balkans"
@@ -3674,9 +3082,6 @@ focus_tree = {
 					add_opinion_modifier = { target = ROOT modifier = german_trade_policy_trade }
 				}
 			}
-			set_temp_variable = { treasury_change = gdp_total_display }
-			multiply_temp_variable = { treasury_change = 0.1 }
-			modify_treasury_effect = yes
 		}
 
 		ai_will_do = {
@@ -3693,23 +3098,15 @@ focus_tree = {
 		y = 0
 		relative_position_id = GER_conservative_ties_to_the_automotive_industry
 
-		cost = 5
+		cost = 10
 
 		prerequisite = { }
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_bundeswehr_reform"
-			army_experience = 100
-			add_doctrine_cost_reduction = {
-				name = GER_army_doc
-				cost_reduction = 0.5
-				uses = 3
-				category = land_doctrine
-			}
+			army_experience = 10
 		}
 
 
@@ -3725,23 +3122,21 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_bundeswehr_reform
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		prerequisite = { focus = GER_bundeswehr_reform }
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_modernized_auftragstaktik"
 			add_doctrine_cost_reduction = {
 				name = GER_modernized_auftragstaktik
-                category = land_doctrine
-                uses = 3
-                cost_reduction = 0.5
-            }
+				category = land_doctrine
+				uses = 1
+				cost_reduction = 0.5
+			}
 		}
 
 		ai_will_do = {
@@ -3756,21 +3151,19 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_bundeswehr_reform
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		prerequisite = { focus = GER_bundeswehr_reform }
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_small_arms_grants"
 			add_tech_bonus = {
 				name = infantry_weapons_bonus
-				bonus = 3
-				uses = 2
+				bonus = 0.25
+				uses = 1
 				category = Cat_INF_WEP
 				category = Cat_ARTY
 			}
@@ -3790,19 +3183,17 @@ focus_tree = {
 
 		cost = 10
 
-		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		prerequisite = { focus = GER_bundeswehr_reform }
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_modern_armored_assaults"
 			add_tech_bonus = {
 				name = armor_bonus
-				bonus = 3
-				uses = 3
+				bonus = 0.25
+				uses = 2
 				category = Cat_ARMOR
 			}
 		}
@@ -3821,19 +3212,16 @@ focus_tree = {
 
 		cost = 10
 
-		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		prerequisite = { focus = GER_modernized_auftragstaktik }
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_young_officer_class"
 			add_tech_bonus = {
 				name = motorized_bonus
-				bonus = 1
-				ahead_reduction = 1
+				ahead_reduction = 0.5
 				uses = 1
 				category = Cat_UTIL
 			}
@@ -3853,19 +3241,16 @@ focus_tree = {
 
 		cost = 10
 
-		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		prerequisite = { focus = GER_small_arms_grants }
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_vehicle_development_grants"
 			add_tech_bonus = {
 				name = mechanization_effort
-				bonus = 1
-				ahead_reduction = 1
+				ahead_reduction = 0.75
 				uses = 1
 				category = Cat_IFV
 			}
@@ -3885,19 +3270,16 @@ focus_tree = {
 
 		cost = 10
 
-		search_filters = {FOCUS_FILTER_RESEARCH}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		prerequisite = { focus = GER_modern_armored_assaults }
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_infantry_tactics_reform"
 			add_tech_bonus = {
 				name = special_forces
-				bonus = 1
-				ahead_reduction = 1
+				ahead_reduction = 0.5
 				uses = 1
 				category = Cat_NVG
 				category = Cat_TRANS_SHIP
@@ -3918,7 +3300,7 @@ focus_tree = {
 
 		cost = 10
 
-		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = { FOCUS_FILTER_STABILITY }
 		prerequisite = {
 			focus = GER_young_officer_class
 			focus = GER_vehicle_development_grants
@@ -3926,30 +3308,10 @@ focus_tree = {
 		}
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_modern_doctrines"
-			add_stability = 0.1
-			add_doctrine_cost_reduction = {
-				name = GER_modernized_land
-                category = land_doctrine
-                uses = 3
-                cost_reduction = 0.5
-            }
-			add_doctrine_cost_reduction = {
-				name = GER_modernized_navy
-                category = naval_doctrine
-                uses = 3
-                cost_reduction = 0.5
-            }
-			add_doctrine_cost_reduction = {
-				name = GER_modernized_air
-                category = air_doctrine
-                uses = 3
-                cost_reduction = 0.5
-            }
+			add_stability = 0.01
 		}
 
 		ai_will_do = {
@@ -3964,19 +3326,17 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_modern_doctrines
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = { FOCUS_FILTER_STABILITY }
 		prerequisite = { focus = GER_modern_doctrines }
 		mutually_exclusive = { focus = GER_military_conservatism }
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_fiscal_responsibility"
-			add_stability = 0.1
+			add_stability = 0.01
 		}
 
 		ai_will_do = {
@@ -3991,7 +3351,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = GER_modern_doctrines
 
-		cost = 5
+		cost = 10
 
 		prerequisite = { focus = GER_interests_in_the_balkans }
 		mutually_exclusive = { }
@@ -4001,8 +3361,6 @@ focus_tree = {
 		bypass = { has_war = yes }
 		cancel = { }
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_influence_in_turkey"
@@ -4013,9 +3371,6 @@ focus_tree = {
 					add_opinion_modifier = { target = ROOT modifier = german_trade_policy_trade }
 				}
 			}
-			set_temp_variable = { treasury_change = gdp_total_display }
-			multiply_temp_variable = { treasury_change = 0.01 }
-			modify_treasury_effect = yes
 		}
 
 		ai_will_do = {
@@ -4041,13 +3396,9 @@ focus_tree = {
 		bypass = { has_war = yes }
 		cancel = { }
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_military_cooperation_with_romania"
-			add_to_tech_sharing_group = germany_allies_Tech_Share
-			ROM = { add_to_tech_sharing_group = germany_allies_Tech_Share }
 			if = {
 				limit = { NOT = { has_war_with = ROM } }
 				ROM = {
@@ -4068,9 +3419,9 @@ focus_tree = {
 		y = 2
 		relative_position_id = GER_modern_doctrines
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_STABILITY}
+		search_filters = { FOCUS_FILTER_STABILITY }
 		prerequisite = { focus = GER_fiscal_responsibility }
 		mutually_exclusive = { }
 		available = { }
@@ -4079,13 +3430,11 @@ focus_tree = {
 		bypass = { has_war = yes }
 		cancel = { }
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_abolish_conscription"
-			add_stability = 0.1
-			add_war_support = -0.1
+			add_stability = 0.02
+			add_war_support = -0.02
 		}
 
 		ai_will_do = {
@@ -4100,14 +3449,12 @@ focus_tree = {
 		y = 2
 		relative_position_id = GER_modern_doctrines
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_EXPENDITURE}
+		search_filters = { FOCUS_FILTER_EXPENDITURE }
 		prerequisite = { focus = GER_military_conservatism }
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_uphold_conscription"
@@ -4132,22 +3479,20 @@ focus_tree = {
 		y = 1
 		relative_position_id = GER_modern_doctrines
 
-		cost = 5
+		cost = 10
 
-		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 		prerequisite = { focus = GER_modern_doctrines }
 		mutually_exclusive = { focus = GER_fiscal_responsibility }
 
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_military_conservatism"
-			add_war_support = 0.1
-			add_popularity = { ideology = nationalist popularity = 0.1 }
-			add_popularity = { ideology = communism popularity = 0.1 }
-			add_popularity = { ideology = neutrality popularity = 0.1 }
+			add_war_support = 0.03
+			add_popularity = { ideology = nationalist popularity = 0.04 }
+			add_popularity = { ideology = communism popularity = 0.02 }
+			add_popularity = { ideology = neutrality popularity = 0.01 }
 			recalculate_party = yes
 		}
 

@@ -6,17 +6,45 @@ NZL_DD_HISTORICAL = {
 	for_countries = { NZL }
 
 	type = ship
-	ship_types = { ship_hull_light destroyer }			
+	ship_types = { destroyer }
 
-	prefix = "HMNZS "							
-	fallback_name = "Destroyer %s"					
+	prefix = "HMNZS "
+	fallback_name = "Destroyer %s"
 
-	unique = {											
-		"Arabis" "Arbutus" "Hawea" "Kaniere" "Pukaki" "Rotoiti" "Taupo" "Tutira" "Echuca" "Thrust" "Inverell" "Kiama" "Stawell" 
-		"Otago" "Taranaki" "Waikato" "Blackpool" "Canterbury" "Defender" "Taiaroa" "Waitemata" "Poneke" "Amokura" 
+	unique = {
+		"Tītī" "Urewera" "Kōpuha" "Rarotoka" "Whāngārā" "Kaiti" "Ngāpō" "Hāwea" "Kaikoura" "Māhinaarangi" "Hikurangi" "Wairarapa" "Wāirau" "Hīhīau" "Rongotai" "Tāwhirimatea" "Hūnuku" "Tamatea" "Matata" "Pukekohe" "Kaiwaka" "Whangārei" "Māngere" "Tamaki" "Manurewa" "Whakatāne" "Takapuna" "Hauraki" "Rangitoto" "Te Aroha"
 	}
 }
 
+NZL_FRIGATES_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_FRIGATES
+	for_countries = { NZL }
+	type = ship
+	ship_types = {
+		frigate
+	}
+	prefix = "HMNZS "
+	fallback_name = "FFG-%d"
+
+	unique = {
+		"Pukehina" "Maungamāhoe" "Whitianga" "Tauranga" "Matamata" "Opotiki" "Awanui" "Hukarere" "Tītoki" "Motiti" "Tarawera" "Waihi" "Waikato" "Pukaki" "Rotorua" "Kati Kati" "Papamoa" "Raglan" "Te Awamutu" "Manukau" "Kaipara" "Taupō" "Kaiwera" "Tawhiti" "Nelson" "Motu" "Motuere" "Karamea" "Māhurangi" "Tamatea" "Ruataniwha" "Waihou" "Moturiki" "Whakatere" "Rangitata" "Kaiwera" "Mōtūrau" "Mokau" "Ōkahu" "Hauhungaroa" "Waipa" "Māhina" "Mōtūnau" "Rangiwahia" "Ngongotahā" "Whakatū" "Waimea" "Ōhau" "Hapuku"
+	}
+}
+
+### CORVETTE NAMES ###
+NZL_CORVETTE_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CORVETTE
+
+	for_countries = { NZL }
+	prefix = "HMNZS "
+	type = ship
+	ship_types = { corvette }
+	fallback_name = "KKG-%d"
+
+	unique = {
+		"Rakaia" "Te Anau" "Taramoa" "Karamea" "Waikōura" "Arahura" "Motunau" "Parihaka" "Mōkihinui" "Maungatere" "Kahurangi" "Waikawa" "Motunau" "Motueka" "Hāwera" "Hinewai" "Aroha" "Arahia" "Hinewai" "Kaimai" "Rakiura" "Karamea" "Oreti" "Ōpaoa" "Hokonui" "Wākāinga" "Māngatere" "Ōkārito" "Hinewai" "Wairau" "Mokonui" "Mākaro" "Waipahihi" "Mōkihinui" "Manapōuri" "Māhinga" "Manawapōuri" "Rangitāne" "Whanganui" "Matata" "Karamea" "Wākāinga" "Manapōuri" "Hīhīau" "Arahina" "Motutara" "Tutira" "Hūnuku" "Tītī" "Hinewai" "Kōpuha" "Parengarenga" "Toroa" "Mokoreta" "Ōkara" "Waingāke" "Kāwhia" "Whangārei" "Mangawhai" "Wānaka" "Tamatea" "Moturiki" "Ruatoki" "Waikōura" "Mōkau" "Kaiwaka" "Kohukohu" "Hautū" "Motuere" "Kaipara" "Tamaki" "Pūtauaki" "Awarua" "Māhia" "Kaiti" "Pōhatu" "Waitaki" "Tawhiti" "Kahutara" "Maungārongo" "Manukau" "Waikato" "Rakaia" "Karamea" "Pukaki" "Taramoa" "Motiti" "Rangiwahia" "Waimakariri" "Waimate" "Whakapāpa" "Mōkau" "Mōtūnau" "Ōkārito" "Ōpaoa" "Hokonui" "Arahura" "Waihou" "Moturiki" "Mōkihinui"
+	}
+}
 
 ### LIGHT CRUISER NAMES###
 NZL_CL_HISTORICAL = {
@@ -25,15 +53,13 @@ NZL_CL_HISTORICAL = {
 	for_countries = { NZL }
 
 	type = ship
-	ship_types = { ship_hull_cruiser light_cruiser }
-	
-	prefix = "HMNZS "							
+	ship_types = { cruiser }
+
+	prefix = "HMNZS "
 	fallback_name = "Light Cruiser %s"
 
 	unique = {
-		"Leander" "Achilles" "Gambia" 
-		"Cook Islands" "Northland" "Auckland" "Gisborne" "Hawkes Bay" "Wellington" "Nelson" "Westland" "Marlborough" "Canterbury" "Otago" "Southland" 
-		"Bellona" "Black Prince" "Royalist" "Chatham" "Dunedin" "Diomede" "Philomel" 
+		"Leander" "Achilles" "Gambia" "Cook Islands" "Northland" "Auckland" "Gisborne" "Hawkes Bay" "Wellington" "Nelson" "Westland" "Marlborough" "Canterbury" "Otago" "Southland" "Bellona" "Black Prince" "Royalist" "Chatham" "Dunedin" "Diomede" "Philomel"
 	}
 }
 
@@ -44,50 +70,30 @@ NZL_CA_HISTORICAL = {
 	for_countries = { NZL }
 
 	type = ship
-	ship_types = { ship_hull_cruiser heavy_cruiser }
-	
-	prefix = "HMNZS "							
+	ship_types = { battle_cruiser }
+
+	prefix = "HMNZS "
 	fallback_name = "Heavy Cruiser %s"
 
 	unique = {
-		"Northland" "Auckland" "Gisborne" "Taranaki" "Hawkes Bay" "Wellington" "Nelson" "Westland" "Marlborough" "Canterbury" "Otago" 
-		"Southland" 
+		"Pouākai" "Hawea" "Kaitake" "Tararua" "Kawarau" "Hokitika" "Rātā" "Arahia" "Hurunui" "Tautuku" "Pūtauaki" "Motutapu" "Tūtira" "Wharepapa" "Hāpuku" "Rangitāiki"
 	}
 }
 
-### BATTLESHIP NAMES ###
-NZL_BB_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_BB
+### LHA NAMES ###
+NZL_LHA_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_HELICOPTER_CARRIERS
 
 	for_countries = { NZL }
 
 	type = ship
-	ship_types = { ship_hull_heavy battleship }
-	
-	prefix = "HMNZS "							
-	fallback_name = "Battleship %s"		
+	ship_types = { helicopter_operator }
+
+	prefix = "HMNZS "
+	fallback_name = "LHA %s"
 
 	unique = {
-		"New Zealand" "Northland" "Auckland" "Gisborne" "Taranaki" "Hawkes Bay" "Wellington" "Nelson" "Westland" "Marlborough" "Canterbury" 
-		"Otago" "Southland" 
-	}
-}
-
-### BATTLECRUISER NAMES ###
-NZL_BC_HISTORICAL = {
-	name = NAME_THEME_HISTORICAL_BC
-
-	for_countries = { NZL }
-
-	type = ship
-	ship_types = { ship_hull_heavy battle_cruiser }
-	
-	prefix = "HMNZS "							
-	fallback_name = "Battlecruiser %s"		
-
-	unique = {
-		"New Zealand" "Northland" "Auckland" "Gisborne" "Taranaki" "Hawkes Bay" "Wellington" "Nelson" "Westland" "Marlborough" "Canterbury" 
-		"Otago" "Southland" 
+		"Aoraki" "Maungapōhatu" "Whakapapa" "Arahura" "Mākaro" "Māhia" "Aorere" "Kaiapoi" "Waikaremoana" "Wānaka" "Awatere" "Kahurangi" "Motueka" "Whanganui" "Raukawa"
  	}
 }
 
@@ -98,14 +104,14 @@ NZL_CV_HISTORICAL = {
 	for_countries = { NZL }
 
 	type = ship
-	ship_types = { ship_hull_carrier carrier }
-	
-	prefix = "HMNZS "							
-	fallback_name = "Carrier %s"		
+	ship_types = { carrier }
+
+	prefix = "HMNZS "
+	fallback_name = "Carrier %s"
 
 	unique = {
-		"Vengeance" "New Zealand" "Northland" "Auckland" "Gisborne" "Taranaki" "Hawkes Bay" "Wellington" "Nelson" "Westland" 
-		"Marlborough" "Canterbury" "Otago" "Southland" "Stafford" "Seddon" "Hall-Jones" "Ward" "Massey" 
+		"Vengeance" "New Zealand" "Northland" "Auckland" "Gisborne" "Taranaki" "Hawkes Bay" "Wellington" "Nelson" "Westland"
+		"Marlborough" "Canterbury" "Otago" "Southland" "Stafford" "Seddon" "Hall-Jones" "Ward" "Massey"
 	}
 }
 
@@ -117,13 +123,13 @@ NZL_SS_HISTORICAL = {
 	for_countries = { NZL }
 
 	type = ship
-	ship_types = { ship_hull_submarine submarine }
-	
-	prefix = "HMNZS "							
+	ship_types = { attack_submarine missile_submarine }
+
+	prefix = "HMNZS "
 	fallback_name = "Submarine %s"
-	
+
 	unique = {
-		"Arabis" "Arbutus" "Hawea" "Kaniere" "Pukaki" "Rotoiti" "Taupo" "Tutira" "Echuca" "Thrust" "Inverell" "Kiama" "Stawell" 
+		"Arabis" "Arbutus" "Hawea" "Kaniere" "Pukaki" "Rotoiti" "Taupo" "Tutira" "Echuca" "Thrust" "Inverell" "Kiama" "Stawell"
 		"Otago" "Taranaki" "Waikato" "Blackpool" "Canterbury"
 	}
 }
@@ -137,9 +143,9 @@ NZL_PROVINCES = {
 
 	type = ship
 
-	prefix = "HMNZS "							
+	prefix = "HMNZS "
 	unique = {
-		"Auckland" "New Plymouth" "Hawkes Bay" "Wellington" "Nelson" "Marlborough" "Northland" "Westland" "Canterbury" "Otago" "Southland" 
+		"Auckland" "New Plymouth" "Hawkes Bay" "Wellington" "Nelson" "Marlborough" "Northland" "Westland" "Canterbury" "Otago" "Southland"
 	}
 }
 
@@ -151,7 +157,7 @@ NZL_CITIES = {
 
 	type = ship
 
-	prefix = "HMNZS "							
+	prefix = "HMNZS "
 	unique = {
 		"Auckland" "Wellington" "Christchurch" "Hamilton" "Tauranga" "Napier-Hastings" "Dunedin" "Palmerston North" "Nelson" "Whangarei" "New Plymouth" "Invercargill" "Whanganui" "Gisborne"
 	}
@@ -165,10 +171,10 @@ NZL_TRIBES = {
 
 	type = ship
 
-	prefix = "HMNZS "							
+	prefix = "HMNZS "
 	unique = {
-		"Maori" "Aopouri" "Ngapuhi" "Ngarauru" "Ngatipouri" "Ngaitahu" "Ngatiwhatua" "Ngatitai" "Ngatipaoa" "Ngatierangi" "Ngatiwhaka-aue" 
-		"Ngatiraukawa" "Ngatimaniapoto" "Ngatiawa" "Ngatituwharetoa" "Ngatitama" "Ngatiruanui" "Ngatihau" "Ngatiapa" "Ngatitoa" "Ngatikahungunu" 
-		"Ngahitao" "Rarawa" "Rangitane" "Taranaki" "Te Urewera" "Te Whakatohea"  "Whanauapanui" "Waikato" "Uriohau" 
+		"Maori" "Aopouri" "Ngapuhi" "Ngarauru" "Ngatipouri" "Ngaitahu" "Ngatiwhatua" "Ngatitai" "Ngatipaoa" "Ngatierangi" "Ngatiwhaka-aue"
+		"Ngatiraukawa" "Ngatimaniapoto" "Ngatiawa" "Ngatituwharetoa" "Ngatitama" "Ngatiruanui" "Ngatihau" "Ngatiapa" "Ngatitoa" "Ngatikahungunu"
+		"Ngahitao" "Rarawa" "Rangitane" "Taranaki" "Te Urewera" "Te Whakatohea"  "Whanauapanui" "Waikato" "Uriohau"
 	}
 }

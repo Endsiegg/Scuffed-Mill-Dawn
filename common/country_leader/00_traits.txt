@@ -632,7 +632,7 @@ leader_traits = {
 
 	emotional = {
 		random = yes
-		improve_relations_maintain_cost_factor = 0.1
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -667,7 +667,7 @@ leader_traits = {
 	}
 	greedy = {
 		random = yes
-		tax_gain_multiplier_modifier = 0.05
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -702,7 +702,7 @@ leader_traits = {
 	}
 	stubborn = {
 		random = yes
-		ai_focus_defense_factor = 0.25
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -726,28 +726,28 @@ leader_traits = {
 
 	tech_savy = {
 		random = yes
-		research_speed_factor = 0.1
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
 	polished = {
 		random = yes
-		stability_factor = 0.1
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
 	likeable = {
 		random = yes
-		opinion_gain_monthly_factor = 0.1
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
 	war_criminal = {
 		random = no
-		opinion_gain_monthly_factor = -0.5
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -821,6 +821,17 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
+	corruptible = {
+		corruption_cost_factor = 0.25
+		political_power_factor = 0.10
+		stability_factor = -0.02
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	cornered_fox = {
 		random = no
 		army_defence_factor = 0.15
@@ -893,8 +904,7 @@ leader_traits = {
 		}
 	}
 
-#Disease etc.
-
+	#Disease etc.
 	alzheimer = {
 		random = no
 
@@ -1215,7 +1225,7 @@ leader_traits = {
 			value = 80
 		}
 
-#contain all muslims
+		#contain all muslims
 		ai_strategy = {
 			type = contain
 			id = "TRK"
@@ -2417,7 +2427,7 @@ leader_traits = {
 	}
 	king = {
 		random = no
-		political_power_factor = 0.1
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -2578,7 +2588,7 @@ leader_traits = {
 	}
 	communist_sympathizer = {
 		random = no
-		communism_drift = 0.05
+		communism_drift = 0.01
 
 		ai_will_do = {
 			factor = 0
@@ -2726,16 +2736,36 @@ leader_traits = {
 			factor = 1
 		}
 	}
+	island_warlord = {
+		random = yes
+		production_speed_bunker_factor = 0.2
+		production_speed_coastal_bunker_factor = 0.2
+		production_speed_anti_air_building_factor = 0.2
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	simeonII_trait = {
+		random = yes
+		opinion_gain_monthly_factor = 0.15
+		economic_cycles_cost_factor = -0.1
+		econ_cycle_upg_cost_multiplier_modifier = -0.1
+		interest_rate_multiplier_modifier = -1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
 	Pro_Western = {
-		democratic_drift = 0.1
 
 	}
 	Fighter = {
-		army_defence_factor = 0.05
-		army_attack_factor = 0.05
+
 	}
 	Reformer = {
-		corruption_cost_factor = -0.1
+
 	}
 }

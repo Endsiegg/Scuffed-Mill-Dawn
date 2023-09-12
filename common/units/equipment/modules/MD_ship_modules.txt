@@ -43,11 +43,10 @@ equipment_modules = {
 		add_stats = {
 			naval_speed = 16
 			naval_range = 3500
-			build_cost_ic = 500
 		}
 
 		multiply_stats = {
-			#build_cost_ic = 0.06
+			build_cost_ic = 0.06
 			surface_visibility = 0.3
 			fuel_consumption = 0.3
 		}
@@ -56,7 +55,7 @@ equipment_modules = {
 
 		can_convert_from = {
 			module_category = module_surface_power_source_category
-			convert_cost_ic = 500
+			convert_cost_ic = 1200
 		}
 	}
 
@@ -67,11 +66,10 @@ equipment_modules = {
 		add_stats = {
 			naval_speed = 17
 			naval_range = 3000
-			build_cost_ic = 250
 		}
 
 		multiply_stats = {
-			#build_cost_ic = 0.09
+			build_cost_ic = 0.09
 			surface_visibility = 0.25
 			fuel_consumption = 0.25
 		}
@@ -80,11 +78,11 @@ equipment_modules = {
 
 		can_convert_from = {
 			module_category = module_surface_power_source_category
-			convert_cost_ic = 100
+			convert_cost_ic = 1800
 		}
 		can_convert_from = {
 			module = module_surface_oil_power
-			convert_cost_ic = 50
+			convert_cost_ic = 1200
 		}
 	}
 
@@ -95,11 +93,10 @@ equipment_modules = {
 		add_stats = {
 			naval_speed = 18
 			naval_range = 4000
-			build_cost_ic = 1000
 		}
 
 		multiply_stats = {
-			#build_cost_ic = 0.12
+			build_cost_ic = 0.12
 			surface_visibility = 0.2
 			fuel_consumption = 0.2
 		}
@@ -108,11 +105,11 @@ equipment_modules = {
 
 		can_convert_from = {
 			module_category = module_surface_power_source_category
-			convert_cost_ic = 500
+			convert_cost_ic = 2400
 		}
 		can_convert_from = {
 			module = module_surface_diesel_power
-			convert_cost_ic = 500
+			convert_cost_ic = 1500
 		}
 	}
 
@@ -123,11 +120,10 @@ equipment_modules = {
 		add_stats = {
 			naval_speed = 19
 			naval_range = 4500
-			build_cost_ic = 500
 		}
 
 		multiply_stats = {
-			#build_cost_ic = 0.15
+			build_cost_ic = 0.15
 			surface_visibility = 0.15
 			fuel_consumption = 0.15
 		}
@@ -136,11 +132,11 @@ equipment_modules = {
 
 		can_convert_from = {
 			module_category = module_surface_power_source_category
-			convert_cost_ic = 500
+			convert_cost_ic = 3000
 		}
 		can_convert_from = {
 			module = module_surface_jet_turbine_power
-			convert_cost_ic = 250
+			convert_cost_ic = 1800
 		}
 	}
 
@@ -151,11 +147,10 @@ equipment_modules = {
 		add_stats = {
 			naval_speed = 20
 			naval_range = 5000
-			build_cost_ic = 250
 		}
 
 		multiply_stats = {
-			#build_cost_ic = 0.18
+			build_cost_ic = 0.18
 			surface_visibility = 0.1
 			fuel_consumption = 0.1
 		}
@@ -164,11 +159,11 @@ equipment_modules = {
 
 		can_convert_from = {
 			module_category = module_surface_power_source_category
-			convert_cost_ic = 50
+			convert_cost_ic = 3600
 		}
 		can_convert_from = {
 			module = module_surface_jet_turbine_power2
-			convert_cost_ic = 50
+			convert_cost_ic = 2100
 		}
 	}
 #LIGHT CONVENTIONAL SHIP ENGINES
@@ -178,11 +173,10 @@ equipment_modules = {
 		add_stats = {
 			naval_speed = 17
 			naval_range = 1250
-			build_cost_ic = 100
 		}
 
 		multiply_stats = {
-		#	build_cost_ic = 0.09
+			build_cost_ic = 0.09
 			surface_visibility = 0.25
 			fuel_consumption = 0.25
 		}
@@ -191,7 +185,7 @@ equipment_modules = {
 
 		can_convert_from = {
 			module_category = module_light_surface_power_source_category
-			convert_cost_ic = 50
+			convert_cost_ic = 450
 		}
 	}
 	module_light_surface_jet_turbine_power = {
@@ -201,11 +195,10 @@ equipment_modules = {
 		add_stats = {
 			naval_speed = 18
 			naval_range = 1500
-			build_cost_ic = 200
 		}
 
 		multiply_stats = {
-			#build_cost_ic = 0.12
+			build_cost_ic = 0.12
 			surface_visibility = 0.2
 			fuel_consumption = 0.2
 		}
@@ -214,11 +207,11 @@ equipment_modules = {
 
 		can_convert_from = {
 			module_category = module_light_surface_power_source_category
-			convert_cost_ic = 100
+			convert_cost_ic = 600
 		}
 		can_convert_from = {
 			module = module_light_surface_diesel_power
-			convert_cost_ic = 100
+			convert_cost_ic = 375
 		}
 	}
 
@@ -229,11 +222,10 @@ equipment_modules = {
 		add_stats = {
 			naval_speed = 19
 			naval_range = 1750
-			build_cost_ic = 100
 		}
 
 		multiply_stats = {
-			#build_cost_ic = 0.15
+			build_cost_ic = 0.15
 			surface_visibility = 0.15
 			fuel_consumption = 0.15
 		}
@@ -242,11 +234,11 @@ equipment_modules = {
 
 		can_convert_from = {
 			module_category = module_light_surface_power_source_category
-			convert_cost_ic = 50
+			convert_cost_ic = 750
 		}
 		can_convert_from = {
 			module = module_light_surface_jet_turbine_power
-			convert_cost_ic = 50
+			convert_cost_ic = 450
 		}
 	}
 
@@ -257,11 +249,10 @@ equipment_modules = {
 		add_stats = {
 			naval_speed = 20
 			naval_range = 2000
-			build_cost_ic = 50
 		}
 
 		multiply_stats = {
-			#build_cost_ic = 0.18
+			build_cost_ic = 0.18
 			surface_visibility = 0.1
 			fuel_consumption = 0.1
 		}
@@ -270,11 +261,11 @@ equipment_modules = {
 
 		can_convert_from = {
 			module_category = module_light_surface_power_source_category
-			convert_cost_ic = 25
+			convert_cost_ic = 900
 		}
 		can_convert_from = {
 			module = module_light_surface_jet_turbine_power2
-			convert_cost_ic = 25
+			convert_cost_ic = 525
 		}
 	}
 #SHIP NUCLEAR REACTORS
@@ -288,7 +279,7 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-			#build_cost_ic = 0.1
+			build_cost_ic = 0.1
 			fuel_consumption = -1.0
 		}
 
@@ -296,7 +287,7 @@ equipment_modules = {
 
 		can_convert_from = {
 			module_category = module_surface_power_source_category
-			convert_cost_ic = 1000
+			convert_cost_ic = 2000
 		}
 	}
 
@@ -311,7 +302,7 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-			#build_cost_ic = 0.15
+			build_cost_ic = 0.15
 			fuel_consumption = -1.0
 		}
 
@@ -319,11 +310,11 @@ equipment_modules = {
 
 		can_convert_from = {
 			module_category = module_surface_power_source_category
-			convert_cost_ic = 500
+			convert_cost_ic = 3000
 		}
 		can_convert_from = {
 			module = module_surface_early_reactor_power
-			convert_cost_ic = 500
+			convert_cost_ic = 2000
 		}
 	}
 
@@ -337,7 +328,7 @@ equipment_modules = {
 			build_cost_ic = 500
 		}
 		multiply_stats = {
-			#build_cost_ic = 0.2
+			build_cost_ic = 0.2
 			fuel_consumption = -1.0
 		}
 
@@ -345,11 +336,11 @@ equipment_modules = {
 
 		can_convert_from = {
 			module_category = module_surface_power_source_category
-			convert_cost_ic = 250
+			convert_cost_ic = 4000
 		}
 		can_convert_from = {
 			module = module_surface_adv_reactor_power
-			convert_cost_ic = 250
+			convert_cost_ic = 2500
 		}
 	}
 
@@ -360,10 +351,9 @@ equipment_modules = {
 		add_stats = {
 			naval_speed = 22
 			naval_range = 20000
-			build_cost_ic = 250
 		}
 		multiply_stats = {
-			#build_cost_ic = 0.25
+			build_cost_ic = 0.25
 			fuel_consumption = -1.0
 		}
 
@@ -371,11 +361,11 @@ equipment_modules = {
 
 		can_convert_from = {
 			module_category = module_surface_power_source_category
-			convert_cost_ic = 100
+			convert_cost_ic = 5000
 		}
 		can_convert_from = {
 			module = module_surface_mod_reactor_power
-			convert_cost_ic = 100
+			convert_cost_ic = 3000
 		}
 	}
 #CONVENTIONAL SUB ENGINES
@@ -385,11 +375,10 @@ equipment_modules = {
 		add_stats = {
 			naval_speed = 13
 			naval_range = 1500
-			build_cost_ic = 500
 		}
 
 		multiply_stats = {
-			#build_cost_ic = 0.06
+			build_cost_ic = 0.06
 			sub_visibility = 0.2
 			fuel_consumption = 0.3
 		}
@@ -398,7 +387,7 @@ equipment_modules = {
 
 		can_convert_from = {
 			module_category = module_sub_power_source_category
-			convert_cost_ic = 250
+			convert_cost_ic = 240
 		}
 	}
 
@@ -409,11 +398,10 @@ equipment_modules = {
 		add_stats = {
 			naval_speed = 14
 			naval_range = 2000
-			build_cost_ic = 250
 		}
 
 		multiply_stats = {
-			#build_cost_ic = 0.09
+			build_cost_ic = 0.09
 			sub_visibility = 0.16
 			fuel_consumption = 0.25
 		}
@@ -422,11 +410,11 @@ equipment_modules = {
 
 		can_convert_from = {
 			module_category = module_sub_power_source_category
-			convert_cost_ic = 100
+			convert_cost_ic = 360
 		}
 		can_convert_from = {
 			module = module_sub_diesel_electric_power
-			convert_cost_ic = 100
+			convert_cost_ic = 240
 		}
 	}
 
@@ -437,11 +425,10 @@ equipment_modules = {
 		add_stats = {
 			naval_speed = 15
 			naval_range = 2500
-			build_cost_ic = 100
 		}
 
 		multiply_stats = {
-			#build_cost_ic = 0.12
+			build_cost_ic = 0.12
 			sub_visibility = 0.12
 			fuel_consumption = 0.2
 		}
@@ -450,11 +437,11 @@ equipment_modules = {
 
 		can_convert_from = {
 			module_category = module_sub_power_source_category
-			convert_cost_ic = 50
+			convert_cost_ic = 480
 		}
 		can_convert_from = {
 			module = module_sub_diesel_electric_power2
-			convert_cost_ic = 50
+			convert_cost_ic = 300
 		}
 	}
 
@@ -465,11 +452,10 @@ equipment_modules = {
 		add_stats = {
 			naval_speed = 16
 			naval_range = 3000
-			build_cost_ic = 50
 		}
 
 		multiply_stats = {
-			#build_cost_ic = 0.15
+			build_cost_ic = 0.15
 			sub_visibility = 0.08
 			fuel_consumption = 0.15
 		}
@@ -478,11 +464,11 @@ equipment_modules = {
 
 		can_convert_from = {
 			module_category = module_sub_power_source_category
-			convert_cost_ic = 25
+			convert_cost_ic = 600
 		}
 		can_convert_from = {
 			module = module_sub_diesel_electric_power3
-			convert_cost_ic = 25
+			convert_cost_ic = 360
 		}
 	}
 
@@ -493,11 +479,10 @@ equipment_modules = {
 		add_stats = {
 			naval_speed = 17
 			naval_range = 3500
-			build_cost_ic = 25
 		}
 
 		multiply_stats = {
-			#build_cost_ic = 0.18
+			build_cost_ic = 0.18
 			sub_visibility = 0.04
 			fuel_consumption = 0.1
 		}
@@ -506,11 +491,11 @@ equipment_modules = {
 
 		can_convert_from = {
 			module_category = module_sub_power_source_category
-			convert_cost_ic = 10
+			convert_cost_ic = 720
 		}
 		can_convert_from = {
 			module = module_sub_diesel_electric_power4
-			convert_cost_ic = 10
+			convert_cost_ic = 420
 		}
 	}
 #SUB NUCLEAR REACTOR
@@ -520,11 +505,10 @@ equipment_modules = {
 		add_stats = {
 			naval_speed = 15
 			naval_range = 20000
-			build_cost_ic = 1000
 		}
 
 		multiply_stats = {
-			#build_cost_ic = 0.12
+			build_cost_ic = 0.12
 			fuel_consumption = -1.0
 			sub_visibility = 0.25
 		}
@@ -533,7 +517,7 @@ equipment_modules = {
 
 		can_convert_from = {
 			module_category = module_sub_power_source_category
-			convert_cost_ic = 500
+			convert_cost_ic = 480
 		}
 	}
 
@@ -544,11 +528,10 @@ equipment_modules = {
 		add_stats = {
 			naval_speed = 16
 			naval_range = 20000
-			build_cost_ic = 500
 		}
 
 		multiply_stats = {
-			#build_cost_ic = 0.16
+			build_cost_ic = 0.16
 			fuel_consumption = -1.0
 			sub_visibility = 0.2
 		}
@@ -557,11 +540,11 @@ equipment_modules = {
 
 		can_convert_from = {
 			module_category = module_sub_power_source_category
-			convert_cost_ic = 250
+			convert_cost_ic = 640
 		}
 		can_convert_from = {
 			module = module_sub_early_reactor_power
-			convert_cost_ic = 250
+			convert_cost_ic = 400
 		}
 	}
 
@@ -572,11 +555,10 @@ equipment_modules = {
 		add_stats = {
 			naval_speed = 17
 			naval_range = 20000
-			build_cost_ic = 250
 		}
 
 		multiply_stats = {
-			#build_cost_ic = 0.2
+			build_cost_ic = 0.2
 			fuel_consumption = -1.0
 			sub_visibility = 0.15
 		}
@@ -585,11 +567,11 @@ equipment_modules = {
 
 		can_convert_from = {
 			module_category = module_sub_power_source_category
-			convert_cost_ic = 100
+			convert_cost_ic = 800
 		}
 		can_convert_from = {
 			module = module_sub_adv_reactor_power
-			convert_cost_ic = 100
+			convert_cost_ic = 480
 		}
 	}
 
@@ -600,11 +582,10 @@ equipment_modules = {
 		add_stats = {
 			naval_speed = 18
 			naval_range = 20000
-			build_cost_ic = 100
 		}
 
 		multiply_stats = {
-		#	build_cost_ic = 0.24
+			build_cost_ic = 0.24
 			fuel_consumption = -1.0
 			sub_visibility = 0.1
 		}
@@ -613,15 +594,15 @@ equipment_modules = {
 
 		can_convert_from = {
 			module_category = module_sub_power_source_category
-			convert_cost_ic = 50
+			convert_cost_ic = 960
 		}
 		can_convert_from = {
 			module = module_sub_mod_reactor_power
-			convert_cost_ic = 50
+			convert_cost_ic = 560
 		}
 	}
 
-	#Support Equipment===========================================================================
+	# Support Equipment
 
 	#Since we can't restrict the type of air unit that goes on board, helicopters are represented by stat increases instead
 #HELIPADS
@@ -761,7 +742,7 @@ equipment_modules = {
 		add_average_stats = {
 			hg_armor_piercing = -50
 		}
-		dismantle_cost_ic = 10000
+		dismantle_cost_ic = 1000000
 	}
 
 	module_light_flight_deck_2 = {
@@ -773,7 +754,7 @@ equipment_modules = {
 		add_average_stats = {
 			hg_armor_piercing = -50
 		}
-		dismantle_cost_ic = 10000
+		dismantle_cost_ic = 1000000
 	}
 
 	module_light_flight_deck_3 = {
@@ -785,7 +766,7 @@ equipment_modules = {
 		add_average_stats = {
 			hg_armor_piercing = -50
 		}
-		dismantle_cost_ic = 10000
+		dismantle_cost_ic = 1000000
 	}
 
 #CARRIER FLIGHT DECKS
@@ -793,7 +774,7 @@ equipment_modules = {
 		category = module_flight_decks_category
 
 		add_stats = {
-			carrier_size = 10
+			carrier_size = 1
 			build_cost_ic = 7000
 			max_strength = 200
 			max_organisation = 0.286
@@ -801,7 +782,7 @@ equipment_modules = {
 			fuel_consumption = 100
 		}
 
-		dismantle_cost_ic = 10000
+		dismantle_cost_ic = 1000000
 
 		manpower = 200
 	}
@@ -810,7 +791,7 @@ equipment_modules = {
 		category = module_flight_decks_category
 
 		add_stats = {
-			carrier_size = 20
+			carrier_size = 2
 			build_cost_ic = 14000
 			max_strength = 400
 			max_organisation = 0.571
@@ -818,7 +799,7 @@ equipment_modules = {
 			fuel_consumption = 200
 		}
 
-		dismantle_cost_ic = 10000
+		dismantle_cost_ic = 1000000
 
 		manpower = 400
 	}
@@ -827,7 +808,7 @@ equipment_modules = {
 		category = module_flight_decks_category
 
 		add_stats = {
-			carrier_size = 30
+			carrier_size = 3
 			build_cost_ic = 21000
 			max_strength = 600
 			max_organisation = 0.857
@@ -835,7 +816,7 @@ equipment_modules = {
 			fuel_consumption = 300
 		}
 
-		dismantle_cost_ic = 10000
+		dismantle_cost_ic = 1000000
 
 		manpower = 600
 	}
@@ -844,7 +825,7 @@ equipment_modules = {
 		category = module_flight_decks_category
 
 		add_stats = {
-			carrier_size = 40
+			carrier_size = 4
 			build_cost_ic = 28000
 			max_strength = 800
 			max_organisation = 1.143
@@ -852,7 +833,7 @@ equipment_modules = {
 			fuel_consumption = 400
 		}
 
-		dismantle_cost_ic = 10000
+		dismantle_cost_ic = 1000000
 
 		manpower = 800
 	}
@@ -861,7 +842,7 @@ equipment_modules = {
 		category = module_flight_decks_category
 
 		add_stats = {
-			carrier_size = 50
+			carrier_size = 5
 			build_cost_ic = 35000
 			max_strength = 1000
 			max_organisation = 1.428
@@ -869,7 +850,7 @@ equipment_modules = {
 			fuel_consumption = 1000
 		}
 
-		dismantle_cost_ic = 10000
+		dismantle_cost_ic = 1000000
 
 		manpower = 1000
 	}
@@ -878,7 +859,7 @@ equipment_modules = {
 		category = module_flight_decks_category
 
 		add_stats = {
-			carrier_size = 60
+			carrier_size = 6
 			build_cost_ic = 42000
 			max_strength = 1200
 			max_organisation = 1.714
@@ -886,7 +867,7 @@ equipment_modules = {
 			fuel_consumption = 600
 		}
 
-		dismantle_cost_ic = 10000
+		dismantle_cost_ic = 1000000
 
 		manpower = 1200
 	}
@@ -895,7 +876,7 @@ equipment_modules = {
 		category = module_flight_decks_category
 
 		add_stats = {
-			carrier_size = 70
+			carrier_size = 7
 			build_cost_ic = 49000
 			max_strength = 1400
 			max_organisation = 2
@@ -903,7 +884,7 @@ equipment_modules = {
 			fuel_consumption = 700
 		}
 
-		dismantle_cost_ic = 10000
+		dismantle_cost_ic = 1000000
 
 		manpower = 1400
 	}
@@ -912,7 +893,7 @@ equipment_modules = {
 		category = module_flight_decks_category
 
 		add_stats = {
-			carrier_size = 80
+			carrier_size = 8
 			build_cost_ic = 56000
 			max_strength = 1600
 			max_organisation = 2.286
@@ -920,7 +901,7 @@ equipment_modules = {
 			fuel_consumption = 800
 		}
 
-		dismantle_cost_ic = 10000
+		dismantle_cost_ic = 1000000
 
 		manpower = 1600
 	}
@@ -929,7 +910,7 @@ equipment_modules = {
 		category = module_flight_decks_category
 
 		add_stats = {
-			carrier_size = 90
+			carrier_size = 9
 			build_cost_ic = 63000
 			max_strength = 1800
 			max_organisation = 2.571
@@ -937,7 +918,7 @@ equipment_modules = {
 			fuel_consumption = 900
 		}
 
-		dismantle_cost_ic = 10000
+		dismantle_cost_ic = 1000000
 
 		manpower = 1800
 	}
@@ -946,7 +927,7 @@ equipment_modules = {
 		category = module_flight_decks_category
 
 		add_stats = {
-			carrier_size = 100
+			carrier_size = 10
 			build_cost_ic = 70000
 			max_strength = 2000
 			max_organisation = 2.857
@@ -954,7 +935,7 @@ equipment_modules = {
 			fuel_consumption = 1000
 		}
 
-		dismantle_cost_ic = 10000
+		dismantle_cost_ic = 1000000
 
 		manpower = 2000
 	}
@@ -974,7 +955,7 @@ equipment_modules = {
 
 		multiply_stats = {
 			naval_range = 1
-			#build_cost_ic = 0.01
+			build_cost_ic = 0.01
 		}
 
 		dismantle_cost_ic = 10
@@ -996,7 +977,7 @@ equipment_modules = {
 		multiply_stats = {
 			max_strength = 0.2
 			surface_visibility = -0.2
-			#build_cost_ic = 0.1
+			build_cost_ic = 0.1
 		}
 
 		dismantle_cost_ic = 200
@@ -1019,7 +1000,7 @@ equipment_modules = {
 		multiply_stats = {
 			max_strength = 0.25
 			surface_visibility = -0.25
-			#build_cost_ic = 0.15
+			build_cost_ic = 0.15
 		}
 
 		dismantle_cost_ic = 150
@@ -1050,7 +1031,7 @@ equipment_modules = {
 		multiply_stats = {
 			max_strength = 0.3
 			surface_visibility = -0.3
-			#build_cost_ic = 0.2
+			build_cost_ic = 0.2
 		}
 
 		dismantle_cost_ic = 100
@@ -1080,7 +1061,7 @@ equipment_modules = {
 		multiply_stats = {
 			max_strength = 0.2
 			sub_visibility = -0.2
-			#build_cost_ic = 0.1
+			build_cost_ic = 0.1
 		}
 
 		dismantle_cost_ic = 200
@@ -1103,7 +1084,7 @@ equipment_modules = {
 		multiply_stats = {
 			max_strength = 0.25
 			sub_visibility = -0.25
-			#build_cost_ic = 0.15
+			build_cost_ic = 0.15
 		}
 
 		dismantle_cost_ic = 150
@@ -1134,7 +1115,7 @@ equipment_modules = {
 		multiply_stats = {
 			max_strength = 0.3
 			sub_visibility = -0.3
-			#build_cost_ic = 0.2
+			build_cost_ic = 0.2
 		}
 
 		dismantle_cost_ic = 100
@@ -1462,8 +1443,6 @@ equipment_modules = {
 		add_average_stats = {
 			lg_armor_piercing = 11
 		}
-
-		dismantle_cost_ic = 20
 
 		can_convert_from = {
 			module_category = module_light_guns_category
@@ -3065,7 +3044,7 @@ equipment_modules = {
 	}
 #ANTI SHIP MISSILES
 	module_asm_1 = {
-		category =  module_turret_missile_category
+		category = module_turret_missile_category
 
 		add_stats = {
 			build_cost_ic = 950
@@ -3080,14 +3059,14 @@ equipment_modules = {
 		dismantle_cost_ic = 60
 
 		can_convert_from = {
-			module_category =  module_turret_missile_category
+			module_category = module_turret_missile_category
 			convert_cost_ic = 100
 		}
 
 	}
 
 	module_asm_2 = {
-		category =  module_turret_missile_category
+		category = module_turret_missile_category
 		parent = module_asm_1
 
 		add_stats = {
@@ -3103,13 +3082,13 @@ equipment_modules = {
 		dismantle_cost_ic = 70
 
 		can_convert_from = {
-			module_category =  module_turret_missile_category
+			module_category = module_turret_missile_category
 			convert_cost_ic = 150
 		}
 	}
 
 	module_asm_3 = {
-		category =  module_turret_missile_category
+		category = module_turret_missile_category
 		parent = module_asm_2
 
 		add_stats = {
@@ -3125,13 +3104,13 @@ equipment_modules = {
 		dismantle_cost_ic = 80
 
 		can_convert_from = {
-			module_category =  module_turret_missile_category
+			module_category = module_turret_missile_category
 			convert_cost_ic = 200
 		}
 	}
 
 	module_asm_4 = {
-		category =  module_turret_missile_category
+		category = module_turret_missile_category
 		parent = module_asm_3
 
 		add_stats = {
@@ -3146,13 +3125,13 @@ equipment_modules = {
 		dismantle_cost_ic = 90
 
 		can_convert_from = {
-			module_category =  module_turret_missile_category
+			module_category = module_turret_missile_category
 			convert_cost_ic = 250
 		}
 	}
 
 	module_asm_5 = {
-		category =  module_turret_missile_category
+		category = module_turret_missile_category
 		parent = module_asm_4
 
 		add_stats = {
@@ -3168,13 +3147,13 @@ equipment_modules = {
 		dismantle_cost_ic = 100
 
 		can_convert_from = {
-			module_category =  module_turret_missile_category
+			module_category = module_turret_missile_category
 			convert_cost_ic = 300
 		}
 	}
 
 	module_asm_6 = {
-		category =  module_turret_missile_category
+		category = module_turret_missile_category
 		parent = module_asm_5
 
 		add_stats = {
@@ -3189,7 +3168,7 @@ equipment_modules = {
 		dismantle_cost_ic = 110
 
 		can_convert_from = {
-			module_category =  module_turret_missile_category
+			module_category = module_turret_missile_category
 			convert_cost_ic = 350
 		}
 	}

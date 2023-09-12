@@ -286,6 +286,7 @@ is_asian_nation = {
 		original_tag = KOR
 		original_tag = KYR
 		original_tag = LAO
+		original_tag = MAC
 		original_tag = MIC
 		original_tag = MLD
 		original_tag = MON
@@ -1092,6 +1093,7 @@ Chinese_Speaking = {
 		original_tag = TAI
 		original_tag = SIN
 		original_tag = HKG
+		original_tag = MAC
 		original_tag = WAA
 	}
 }
@@ -1423,5 +1425,32 @@ Is_UN_Member = {
 		original_tag = UKR original_tag = UAE original_tag = ENG original_tag = TNZ original_tag = USA
 		original_tag = URG original_tag = UZB original_tag = VEN original_tag = VIE original_tag = YEM
 		original_tag = ZAM original_tag = ZIM
+	}
+}
+
+cartel_nations = {
+	OR = {
+		# American Nations
+		original_tag = ARG
+		original_tag = BLZ
+		original_tag = BOL
+		original_tag = BRA
+		original_tag = CHL
+		original_tag = COL
+		original_tag = COS
+		original_tag = ECU
+		original_tag = ELS
+		original_tag = GUA
+		original_tag = GUY
+		original_tag = HON
+		original_tag = MEX
+		original_tag = NIC
+		original_tag = PAN
+		original_tag = PAR
+		original_tag = PRU
+		original_tag = SUR
+		original_tag = URG
+		original_tag = USA
+		original_tag = VEN
 	}
 }

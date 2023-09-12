@@ -1401,68 +1401,6 @@ set_prod_display_arrays = {
 		}
 		add_to_array = { prod_9_display_array = global.prod_9_array^7 }
 	}
-
-	###OLD VERSION without tech tree
-	# for_each_loop = {
-	# 	array = global.prod_1_array
-	# 	add_to_array = { prod_1_display_array = global.prod_1_array^i }
-	# }
-	# for_each_loop = {
-	# 	array = global.prod_2_array
-	# 	add_to_array = { prod_2_display_array = global.prod_2_array^i }
-	# }
-	# for_each_loop = {
-	# 	array = global.prod_3_array
-	# 	add_to_array = { prod_3_display_array = global.prod_3_array^i }
-	# }
-	# for_each_loop = {
-	# 	array = global.prod_4_array
-	# 	add_to_array = { prod_4_display_array = global.prod_4_array^i }
-	# }
-	# for_each_loop = {
-	# 	array = global.prod_5_array
-	# 	add_to_array = { prod_5_display_array = global.prod_5_array^i }
-	# }
-	# for_each_loop = {
-	# 	array = global.prod_6_array
-	# 	add_to_array = { prod_6_display_array = global.prod_6_array^i }
-	# }
-	# for_each_loop = {
-	# 	array = global.prod_7_array
-	# 	add_to_array = { prod_7_display_array = global.prod_7_array^i }
-	# }
-	# for_each_loop = {
-	# 	array = global.prod_8_array
-	# 	add_to_array = { prod_8_display_array = global.prod_8_array^i }
-	# }
-	# for_each_loop = {
-	# 	array = global.prod_9_array
-	# 	add_to_array = { prod_9_display_array = global.prod_9_array^i }
-	# }
-	# for_each_loop = {
-	# 	array = global.prod_10_array
-	# 	add_to_array = { prod_10_display_array = global.prod_10_array^i }
-	# }
-	# for_each_loop = {
-	# 	array = global.prod_11_array
-	# 	add_to_array = { prod_11_display_array = global.prod_11_array^i }
-	# }
-	# for_each_loop = {
-	# 	array = global.prod_12_array
-	# 	add_to_array = { prod_12_display_array = global.prod_12_array^i }
-	# }
-	# for_each_loop = {
-	# 	array = global.prod_13_array
-	# 	add_to_array = { prod_13_display_array = global.prod_13_array^i }
-	# }
-	# for_each_loop = {
-	# 	array = global.prod_14_array
-	# 	add_to_array = { prod_14_display_array = global.prod_14_array^i }
-	# }
-	# for_each_loop = {
-	# 	array = global.prod_15_array
-	# 	add_to_array = { prod_15_display_array = global.prod_15_array^i }
-	# }
 }
 
 clear_prod_display_arrays = {
@@ -2512,17 +2450,6 @@ set_gui_nuclear_warhead_cost = {
 	set_variable = { var_gui_nuclear_warhead_cost = temp_NW_costs }
 }
 
-### old version ###
-# set_missile_model_gui = {
-# 	meta_effect = {
-# 		text = {
-# 			set_missile_model_[missile_type] = yes
-# 		}
-# 		missile_type = "[?global.missile_type_tech_array^i]"
-# 	}
-# }
-
-
 set_missile_model = {
 	meta_effect = {
 		text = {
@@ -2531,28 +2458,6 @@ set_missile_model = {
 		missile_type = "[?missile_type_array^i]"
 	}
 }
-
-### old version ###
-# set_warhead_gui = {
-# 	meta_effect = {
-# 		text = {
-# 			set_warhead_tech_[warhead] = yes
-# 		}
-# 		warhead = "[?warhead_tech_array^i]"
-# 	}
-# }
-
-
-
-# set_warhead = {
-# 	meta_effect = {
-# 		text = {
-# 			set_warhead_[warhead] = yes
-# 		}
-# 		warhead = "[?missile_warhead_array^i]"
-# 	}
-# }
-
 
 ### rename to conventional warhead
 set_warhead = {
@@ -2615,50 +2520,6 @@ set_launch_button_number_vars = {
 		set_variable = { var_CV_number_LAM = 0 }
 	}
 }
-
-
-#OLD VERSION
-# set_ship_number_LAM = {
-# 	###
-# 	#log = "set_ship_number_LAM start var_ship_number_LAM = [?var_ship_number_LAM] var_gui_salvo = [?var_gui_salvo]"
-# 	###
-# 	if = {
-# 		limit = {
-# 	 		check_variable = { var_ship_VLS_launcher > var_ship_launcher }
-# 		}
-# 		set_variable = { var_ship_number_LAM = 0 }
-# 		set_variable = { var_ship_number_LAM_loc = 0 }
-# 		set_temp_variable = { temp1_ship_number_LAM = 0 }
-# 		while_loop_effect = {
-# 			limit = {
-# 				check_variable = { var_gui_salvo > temp1_ship_number_LAM }
-# 			}
-# 			add_to_variable = { var_ship_number_LAM = 1 }
-# 			add_to_variable = { var_ship_number_LAM_loc = 1 }
-# 			set_temp_variable = { temp1_ship_number_LAM = var_ship_number_LAM }
-# 			multiply_temp_variable = { temp1_ship_number_LAM = var_ship_VLS_launcher }
-# 		}
-# 		subtract_from_variable = { var_ship_number_LAM = 1 }
-# 	}
-# 	else = {
-# 		set_variable = { var_ship_number_LAM = 0 }
-# 		set_variable = { var_ship_number_LAM_loc = 0 }
-# 		set_temp_variable = { temp1_ship_number_LAM = 0 }
-# 		while_loop_effect = {
-# 			limit = {
-# 				check_variable = { var_gui_salvo > temp1_ship_number_LAM }
-# 			}
-# 			add_to_variable = { var_ship_number_LAM = 1 }
-# 			add_to_variable = { var_ship_number_LAM_loc = 1 }
-# 			set_temp_variable = { temp1_ship_number_LAM = var_ship_number_LAM }
-# 			multiply_temp_variable = { temp1_ship_number_LAM = var_ship_launcher }
-# 		}
-# 		subtract_from_variable = { var_ship_number_LAM = 1 }
-# 	}
-# 	###
-# 	#log = "set_ship_number_LAM stop var_ship_number_LAM = [?var_ship_number_LAM] var_gui_salvo = [?var_gui_salvo]"
-# 	###
-# }
 
 set_ship_number_LAM = {
 	###
@@ -3735,7 +3596,7 @@ launch_nuclear_warhead = {
 					add_to_variable = { var_nuke_recruitable_population_factor = var_nuke_radiation_factor }
 				}
 				add_dynamic_modifier = {
-					modifier =  radiation_modifier
+					modifier = radiation_modifier
 				}
 				add_province_modifier = {
 					static_modifiers = { radiation_[warhead_ID] }
@@ -3788,45 +3649,43 @@ set_nuke_damage = {
 	set_temp_variable = { t14 = 0 }
 	while_loop_effect = {
 		limit = {
-			AND = {
-				check_variable = { ROOT.var_nuke_damage > 0 }
-				NOT = {
-					AND = {
-						check_variable = { t0 > 0 }
-						check_variable = { t1 > 0 }
-						check_variable = { t2 > 0 }
-						check_variable = { t3 > 0 }
-						check_variable = { t4 > 0 }
-						check_variable = { t5 > 0 }
-						check_variable = { t6 > 0 }
-						check_variable = { t7 > 0 }
-						check_variable = { t8 > 0 }
-						check_variable = { t9 > 0 }
-						check_variable = { t10 > 0 }
-						check_variable = { t11 > 0 }
-						check_variable = { t12 > 0 }
-						check_variable = { t13 > 0 }
-						check_variable = { t14 > 0 }
-					}
+			check_variable = { ROOT.var_nuke_damage > 0 }
+			NOT = {
+				AND = {
+					check_variable = { t0 > 0 }
+					check_variable = { t1 > 0 }
+					check_variable = { t2 > 0 }
+					check_variable = { t3 > 0 }
+					check_variable = { t4 > 0 }
+					check_variable = { t5 > 0 }
+					check_variable = { t6 > 0 }
+					check_variable = { t7 > 0 }
+					check_variable = { t8 > 0 }
+					check_variable = { t9 > 0 }
+					check_variable = { t10 > 0 }
+					check_variable = { t11 > 0 }
+					check_variable = { t12 > 0 }
+					check_variable = { t13 > 0 }
+					check_variable = { t14 > 0 }
 				}
-				# AND = {
-				# 	check_variable = { t0 < 1 }
-				# 	check_variable = { t1 < 1 }
-				# 	check_variable = { t2 < 1 }
-				# 	check_variable = { t3 < 1 }
-				# 	check_variable = { t4 < 1 }
-				# 	check_variable = { t5 < 1 }
-				# 	check_variable = { t6 < 1 }
-				# 	check_variable = { t7 < 1 }
-				# 	check_variable = { t8 < 1 }
-				# 	check_variable = { t9 < 1 }
-				# 	check_variable = { t10 < 1 }
-				# 	check_variable = { t11 < 1 }
-				# 	check_variable = { t12 < 1 }
-				# 	check_variable = { t13 < 1 }
-				# 	check_variable = { t14 < 1 }
-				# }
 			}
+			# AND = {
+			# 	check_variable = { t0 < 1 }
+			# 	check_variable = { t1 < 1 }
+			# 	check_variable = { t2 < 1 }
+			# 	check_variable = { t3 < 1 }
+			# 	check_variable = { t4 < 1 }
+			# 	check_variable = { t5 < 1 }
+			# 	check_variable = { t6 < 1 }
+			# 	check_variable = { t7 < 1 }
+			# 	check_variable = { t8 < 1 }
+			# 	check_variable = { t9 < 1 }
+			# 	check_variable = { t10 < 1 }
+			# 	check_variable = { t11 < 1 }
+			# 	check_variable = { t12 < 1 }
+			# 	check_variable = { t13 < 1 }
+			# 	check_variable = { t14 < 1 }
+			# }
 		}
 		###
 		add_to_variable = { global.temp_count = 1 }
@@ -4268,14 +4127,7 @@ clear_nuke_vars = {
 
 ### conventional warhead effects
 
-#### effect not needed already set with  set_conventional_warhead_targets_gui
-# set_conventional_warhead_display_targets = {
-# }
 ####
-
-# OLD NAME
-#set_missile_damage = {
-#
 # NEW NAME
 set_conventional_warhead_damage = {
 	log = "set_conventional_warhead_damage i = [?i] temp1 = [?temp1]"
@@ -5630,7 +5482,7 @@ launch_nuclear_terrorism = {
 					add_to_variable = { var_nuke_recruitable_population_factor = var_nuke_radiation_factor }
 				}
 				add_dynamic_modifier = {
-					modifier =  radiation_modifier
+					modifier = radiation_modifier
 				}
 				add_province_modifier = {
 					static_modifiers = { radiation_[warhead_ID] }
@@ -6082,7 +5934,7 @@ fire_on_alert = {
 					AND = {
 						check_variable = { missile_nuke_array^i = 2 }
 						set_temp_variable = { temp7 = missile_salvo_array^i }
-						multiply_temp_variable  = { temp7 = missile_MIRV_array^i }
+						multiply_temp_variable = { temp7 = missile_MIRV_array^i }
 						set_temp_variable = { temp8 = ROOT.var_strike_limit }
 						OR = {
 							check_variable = { temp8 > temp7 }
@@ -6356,7 +6208,7 @@ calculate_NSAM_AD_gui_vars = {
 	set_variable = { var_NSAM_AD_deploy_ratio = 0 }
 	### add all aa ships
 	set_variable = { var_AD_ships = 0 }
-	if = { limit = { has_dlc = "Man the Guns"}
+	if = { limit = { has_dlc = "Man the Guns" }
 		add_to_variable = { var_AD_ships = num_ships_with_type@stealth_destroyer }
 	}
 	add_to_variable = { var_AD_ships = num_ships_with_type@cruiser }
@@ -6448,7 +6300,7 @@ calculate_SAM_MD_sea_gui_vars = {
 	### check for max deployed
 	### add all aa ships
 	set_temp_variable = { temp_MD_ships = 0 }
-	if = { limit = { has_dlc = "Man the Guns"}
+	if = { limit = { has_dlc = "Man the Guns" }
 		add_to_temp_variable = { temp_MD_ships = num_ships_with_type@stealth_destroyer }
 	}
 	add_to_temp_variable = { temp_MD_ships = num_ships_with_type@cruiser }
@@ -6509,7 +6361,7 @@ calculate_ABM_sea_gui_vars = {
 	### check for max deployed
 	### add all aa ships
 	set_temp_variable = { temp_MD_ships = 0 }
-	if = { limit = { has_dlc = "Man the Guns"}
+	if = { limit = { has_dlc = "Man the Guns" }
 		add_to_temp_variable = { temp_MD_ships = num_ships_with_type@stealth_destroyer }
 	}
 	add_to_temp_variable = { temp_MD_ships = num_ships_with_type@cruiser }
@@ -6639,7 +6491,7 @@ update_deployed_air_missile_defense = {
 update_NSAM_AD_deployed = {
 	### add all aa ships
 	set_variable = { var_AD_ships = 0 }
-	if = { limit = { has_dlc = "Man the Guns"}
+	if = { limit = { has_dlc = "Man the Guns" }
 		add_to_variable = { var_AD_ships = num_ships_with_type@stealth_destroyer }
 	}
 	add_to_variable = { var_AD_ships = num_ships_with_type@cruiser }
@@ -6832,7 +6684,7 @@ update_SAM_AD_deployed = {
 update_deployed_SAM_MD_sea = {
 	### add all aa ships
 	set_temp_variable = { temp_MD_ships = 0 }
-	if = { limit = { has_dlc = "Man the Guns"}
+	if = { limit = { has_dlc = "Man the Guns" }
 		add_to_temp_variable = { temp_MD_ships = num_ships_with_type@stealth_destroyer }
 	}
 	add_to_temp_variable = { temp_MD_ships = num_ships_with_type@cruiser }
@@ -6996,7 +6848,7 @@ update_deployed_SAM_MD_land = {
 update_deployed_ABM_sea = {
 	### add all aa ships
 	set_temp_variable = { temp_MD_ships = 0 }
-	if = { limit = { has_dlc = "Man the Guns"}
+	if = { limit = { has_dlc = "Man the Guns" }
 		add_to_temp_variable = { temp_MD_ships = num_ships_with_type@stealth_destroyer }
 	}
 	add_to_temp_variable = { temp_MD_ships = num_ships_with_type@cruiser }
@@ -7894,16 +7746,16 @@ calculate_GNSS_mil_gui_vars = {
 				set_variable = { var_GNSS_mil_air_cas_efficiency_base = var_GNSS_mil_air_cas_efficiency_min }
 			}
 			#air_nav_efficiency
-			set_variable = { var_GNSS_mil_air_nav_efficiency_base  = global.GNSS_mil_air_nav_efficiency_max_array^var_GNSS_mil_system_idx }
+			set_variable = { var_GNSS_mil_air_nav_efficiency_base = global.GNSS_mil_air_nav_efficiency_max_array^var_GNSS_mil_system_idx }
 			set_variable = { var_GNSS_mil_air_nav_efficiency_min = global.GNSS_mil_air_nav_efficiency_min_array^var_GNSS_mil_system_idx }
-			multiply_variable = { var_GNSS_mil_air_nav_efficiency_base  = var_GNSS_mil_sat_system_bonus }
+			multiply_variable = { var_GNSS_mil_air_nav_efficiency_base = var_GNSS_mil_sat_system_bonus }
 			if = {
 				limit = {
 					check_variable = {
 						var_GNSS_mil_air_nav_efficiency_base  < var_GNSS_mil_air_nav_efficiency_min
 					}
 				}
-				set_variable = { var_GNSS_mil_air_nav_efficiency_base  = var_GNSS_mil_air_nav_efficiency_min }
+				set_variable = { var_GNSS_mil_air_nav_efficiency_base = var_GNSS_mil_air_nav_efficiency_min }
 			}
 			#air_strategic_bomber_bombing_factor
 			set_variable = { var_GNSS_mil_air_strategic_bomber_bombing_factor_base = global.GNSS_mil_air_strategic_bomber_bombing_factor_max_array^var_GNSS_mil_system_idx }
@@ -8093,16 +7945,16 @@ calculate_COM_civ_gui_vars = {
 				set_variable = { var_COM_civ_political_power_factor_base = var_COM_civ_political_power_factor_min }
 			}
 			#decryption_factor
-			set_variable = { var_COM_civ_decryption_factor_base= global.COM_civ_decryption_factor_max_array^var_COM_civ_system_idx }
+			set_variable = { var_COM_civ_decryption_factor_base = global.COM_civ_decryption_factor_max_array^var_COM_civ_system_idx }
 			set_variable = { var_COM_civ_decryption_factor_min = global.COM_civ_decryption_factor_min_array^var_COM_civ_system_idx }
-			multiply_variable = { var_COM_civ_decryption_factor_base= var_COM_civ_sat_system_bonus }
+			multiply_variable = { var_COM_civ_decryption_factor_base = var_COM_civ_sat_system_bonus }
 			if = {
 				limit = {
 					check_variable = {
 						var_COM_civ_decryption_factor_base< var_COM_civ_decryption_factor_min
 					}
 				}
-				set_variable = { var_COM_civ_decryption_factor_base= var_COM_civ_decryption_factor_min }
+				set_variable = { var_COM_civ_decryption_factor_base = var_COM_civ_decryption_factor_min }
 			}
 			#encryption_factor
 			set_variable = { var_COM_civ_encryption_factor_base = global.COM_civ_encryption_factor_max_array^var_COM_civ_system_idx }
@@ -9754,7 +9606,7 @@ launch_OLV = {
 		subtract_from_variable = { ROOT.var_OLV_flights = 1 }
 		subtract_from_variable = { ROOT.var_OLV_inventory = 1 }
 		add_to_variable = { var_orbital_launch_total = 1 }
-		randomize_variable = {
+		randomize_variable = { # Pap has put his Doner in this code and I have no idea what this does
 			var = var_OLV_trajectory
 			distribution = uniform
 			min = 0
@@ -9826,7 +9678,7 @@ launch_OLV = {
 							set_temp_variable = { temp1 = payload_types_array^i }
 							check_variable = { missile_inventory_array^temp1 > 0 }
 						}
-						subtract_from_variable = { missile_inventory_array^temp1 = 1 }
+						subtract_from_variable = { missile_inventory_array^payload_types_array^i = 1 }
 						add_to_variable = { ROOT.var_sat_payload_lost = 1 }
 					}
 				}
@@ -10200,414 +10052,6 @@ add_satellite_from_payload = {
 	clear_array = payload_array
 }
 
-
-### old new
-# add_satellite_from_payload = {
-# 	for_each_loop = {
-# 		array = payload_array
-# 		if = {
-# 			limit = {
-# 				check_variable = { payload_array^i = 111 }
-# 			}
-# 			add_to_temp_variable = { temp_GNSS_satellite_0_num = 1 }
-# 			#add_to_array = { array = GNSS_satellite_array value = temp_GNSS_satellite_0_num index = 0 }
-# 			add_to_array = { orbit_array = payload_array^i }
-# 			set_variable = { var_orbit_display_ID = orbit_array^num }
-# 			subtract_from_variable = { var_orbit_display_ID = 1 }
-# 			add_new_satellite_to_orbit = yes
-# 		}
-# 		if = {
-# 			limit = {
-# 				check_variable = { payload_array^i = 112 }
-# 			}
-# 			add_to_temp_variable = { temp_GNSS_satellite_1_num = 1 }
-# 			#add_to_array = { array = GNSS_satellite_array value = temp_GNSS_satellite_1_num index = 1 }
-# 			add_to_array = { orbit_array = payload_array^i }
-# 			set_variable = { var_orbit_display_ID = orbit_array^num }
-# 			subtract_from_variable = { var_orbit_display_ID = 1 }
-# 			add_new_satellite_to_orbit = yes
-# 		}
-# 		if = {
-# 			limit = {
-# 				check_variable = { payload_array^i = 113 }
-# 			}
-# 			add_to_temp_variable = { temp_GNSS_satellite_2_num = 1 }
-# 			#add_to_array = { array = GNSS_satellite_array value = temp_GNSS_satellite_2_num index = 2 }
-# 			add_to_array = { orbit_array = payload_array^i }
-# 			set_variable = { var_orbit_display_ID = orbit_array^num }
-# 			subtract_from_variable = { var_orbit_display_ID = 1 }
-# 			add_new_satellite_to_orbit = yes
-# 		}
-# 		if = {
-# 			limit = {
-# 				check_variable = { payload_array^i = 114 }
-# 			}
-# 			add_to_temp_variable = { temp_GNSS_satellite_3_num = 1 }
-# 			#add_to_array = { array = GNSS_satellite_array value = temp_GNSS_satellite_3_num index = 3 }
-# 			add_to_array = { orbit_array = payload_array^i }
-# 			set_variable = { var_orbit_display_ID = orbit_array^num }
-# 			subtract_from_variable = { var_orbit_display_ID = 1 }
-# 			add_new_satellite_to_orbit = yes
-# 		}
-# 		if = {
-# 			limit = {
-# 				check_variable = { payload_array^i = 115 }
-# 			}
-# 			add_to_temp_variable = { temp_GNSS_satellite_4_num = 1 }
-# 			#add_to_array = { array = GNSS_satellite_array value = temp_GNSS_satellite_4_num index = 4 }
-# 			add_to_array = { orbit_array = payload_array^i }
-# 			set_variable = { var_orbit_display_ID = orbit_array^num }
-# 			subtract_from_variable = { var_orbit_display_ID = 1 }
-# 			add_new_satellite_to_orbit = yes
-# 		}
-# 		if = {
-# 			limit = {
-# 				check_variable = { payload_array^i = 116 }
-# 			}
-# 			add_to_temp_variable = { temp_GNSS_satellite_5_num = 1 }
-# 			#add_to_array = { array = GNSS_satellite_array value = temp_GNSS_satellite_5_num index = 5 }
-# 			add_to_array = { orbit_array = payload_array^i }
-# 			set_variable = { var_orbit_display_ID = orbit_array^num }
-# 			subtract_from_variable = { var_orbit_display_ID = 1 }
-# 			add_new_satellite_to_orbit = yes
-# 		}
-# 		if = {
-# 			limit = {
-# 				check_variable = { payload_array^i = 117 }
-# 			}
-# 			add_to_temp_variable = { temp_GNSS_satellite_6_num = 1 }
-# 			#add_to_array = { array = GNSS_satellite_array value = temp_GNSS_satellite_6_num index = 6 }
-# 			add_to_array = { orbit_array = payload_array^i }
-# 			set_variable = { var_orbit_display_ID = orbit_array^num }
-# 			subtract_from_variable = { var_orbit_display_ID = 1 }
-# 			add_new_satellite_to_orbit = yes
-# 		}
-# 		if = {
-# 			limit = {
-# 				check_variable = { payload_array^i = 118 }
-# 			}
-# 			add_to_temp_variable = { temp_GNSS_satellite_7_num = 1 }
-# 			#add_to_array = { array = GNSS_satellite_array value = temp_GNSS_satellite_7_num index = 7 }
-# 			add_to_array = { orbit_array = payload_array^i }
-# 			set_variable = { var_orbit_display_ID = orbit_array^num }
-# 			subtract_from_variable = { var_orbit_display_ID = 1 }
-# 			add_new_satellite_to_orbit = yes
-# 		}
-# 		if = {
-# 			limit = {
-# 				check_variable = { payload_array^i = 121 }
-# 			}
-# 			add_to_temp_variable = { temp_COM_satellite_0_num = 1 }
-# 			#add_to_array = { array = COM_satellite_array value = temp_COM_satellite_0_num index = 0 }
-# 			add_to_array = { orbit_array = payload_array^i }
-# 			set_variable = { var_orbit_display_ID = orbit_array^num }
-# 			subtract_from_variable = { var_orbit_display_ID = 1 }
-# 			add_new_satellite_to_orbit = yes
-# 		}
-# 		if = {
-# 			limit = {
-# 				check_variable = { payload_array^i = 122 }
-# 			}
-# 			add_to_temp_variable = { temp_COM_satellite_1_num = 1 }
-# 			#add_to_array = { array = COM_satellite_array value = temp_COM_satellite_1_num index = 1 }
-# 			add_to_array = { orbit_array = payload_array^i }
-# 			set_variable = { var_orbit_display_ID = orbit_array^num }
-# 			subtract_from_variable = { var_orbit_display_ID = 1 }
-# 			add_new_satellite_to_orbit = yes
-# 		}
-# 		if = {
-# 			limit = {
-# 				check_variable = { payload_array^i = 123 }
-# 			}
-# 			add_to_temp_variable = { temp_COM_satellite_2_num = 1 }
-# 			#add_to_array = { array = COM_satellite_array value = temp_COM_satellite_2_num index = 2 }
-# 			add_to_array = { orbit_array = payload_array^i }
-# 			set_variable = { var_orbit_display_ID = orbit_array^num }
-# 			subtract_from_variable = { var_orbit_display_ID = 1 }
-# 			add_new_satellite_to_orbit = yes
-# 		}
-# 		if = {
-# 			limit = {
-# 				check_variable = { payload_array^i = 124 }
-# 			}
-# 			add_to_temp_variable = { temp_COM_satellite_3_num = 1 }
-# 			#add_to_array = { array = COM_satellite_array value = temp_COM_satellite_3_num index = 3 }
-# 			add_to_array = { orbit_array = payload_array^i }
-# 			set_variable = { var_orbit_display_ID = orbit_array^num }
-# 			subtract_from_variable = { var_orbit_display_ID = 1 }
-# 			add_new_satellite_to_orbit = yes
-# 		}
-# 		if = {
-# 			limit = {
-# 				check_variable = { payload_array^i = 125 }
-# 			}
-# 			add_to_temp_variable = { temp_COM_satellite_4_num = 1 }
-# 			#add_to_array = { array = COM_satellite_array value = temp_COM_satellite_4_num index = 4 }
-# 			add_to_array = { orbit_array = payload_array^i }
-# 			set_variable = { var_orbit_display_ID = orbit_array^num }
-# 			subtract_from_variable = { var_orbit_display_ID = 1 }
-# 			add_new_satellite_to_orbit = yes
-# 		}
-# 		if = {
-# 			limit = {
-# 				check_variable = { payload_array^i = 126 }
-# 			}
-# 			add_to_temp_variable = { temp_COM_satellite_5_num = 1 }
-# 			#add_to_array = { array = COM_satellite_array value = temp_COM_satellite_5_num index = 5 }
-# 			add_to_array = { orbit_array = payload_array^i }
-# 			set_variable = { var_orbit_display_ID = orbit_array^num }
-# 			subtract_from_variable = { var_orbit_display_ID = 1 }
-# 			add_new_satellite_to_orbit = yes
-# 		}
-# 		if = {
-# 			limit = {
-# 				check_variable = { payload_array^i = 127 }
-# 			}
-# 			add_to_temp_variable = { temp_COM_satellite_6_num = 1 }
-# 			#add_to_array = { array = COM_satellite_array value = temp_COM_satellite_6_num index = 6 }
-# 			add_to_array = { orbit_array = payload_array^i }
-# 			set_variable = { var_orbit_display_ID = orbit_array^num }
-# 			subtract_from_variable = { var_orbit_display_ID = 1 }
-# 			add_new_satellite_to_orbit = yes
-# 		}
-# 		if = {
-# 			limit = {
-# 				check_variable = { payload_array^i = 128 }
-# 			}
-# 			add_to_temp_variable = { temp_COM_satellite_7_num = 1 }
-# 			#add_to_array = { array = COM_satellite_array value = temp_COM_satellite_7_num index = 7 }
-# 			add_to_array = { orbit_array = payload_array^i }
-# 			set_variable = { var_orbit_display_ID = orbit_array^num }
-# 			subtract_from_variable = { var_orbit_display_ID = 1 }
-# 			add_new_satellite_to_orbit = yes
-# 		}
-# 		if = {
-# 			limit = {
-# 				check_variable = { payload_array^i = 131 }
-# 			}
-# 			add_to_temp_variable = { temp_SPY_satellite_0_num = 1 }
-# 			#add_to_array = { array = SPY_satellite_array value = temp_SPY_satellite_0_num index = 0 }
-# 			add_to_array = { orbit_array = payload_array^i }
-# 			set_variable = { var_orbit_display_ID = orbit_array^num }
-# 			subtract_from_variable = { var_orbit_display_ID = 1 }
-# 			add_new_satellite_to_orbit = yes
-# 		}
-# 		if = {
-# 			limit = {
-# 				check_variable = { payload_array^i = 132 }
-# 			}
-# 			add_to_temp_variable = { temp_SPY_satellite_1_num = 1 }
-# 			#add_to_array = { array = SPY_satellite_array value = temp_SPY_satellite_1_num index = 1 }
-# 			add_to_array = { orbit_array = payload_array^i }
-# 			set_variable = { var_orbit_display_ID = orbit_array^num }
-# 			subtract_from_variable = { var_orbit_display_ID = 1 }
-# 			add_new_satellite_to_orbit = yes
-# 		}
-# 		if = {
-# 			limit = {
-# 				check_variable = { payload_array^i = 133 }
-# 			}
-# 			add_to_temp_variable = { temp_SPY_satellite_2_num = 1 }
-# 			#add_to_array = { array = SPY_satellite_array value = temp_SPY_satellite_2_num index = 2 }
-# 			add_to_array = { orbit_array = payload_array^i }
-# 			set_variable = { var_orbit_display_ID = orbit_array^num }
-# 			subtract_from_variable = { var_orbit_display_ID = 1 }
-# 			add_new_satellite_to_orbit = yes
-# 		}
-# 		if = {
-# 			limit = {
-# 				check_variable = { payload_array^i = 134 }
-# 			}
-# 			add_to_temp_variable = { temp_SPY_satellite_3_num = 1 }
-# 			#add_to_array = { array = SPY_satellite_array value = temp_SPY_satellite_3_num index = 3 }
-# 			add_to_array = { orbit_array = payload_array^i }
-# 			set_variable = { var_orbit_display_ID = orbit_array^num }
-# 			subtract_from_variable = { var_orbit_display_ID = 1 }
-# 			add_new_satellite_to_orbit = yes
-# 		}
-# 		if = {
-# 			limit = {
-# 				check_variable = { payload_array^i = 135 }
-# 			}
-# 			add_to_temp_variable = { temp_SPY_satellite_4_num = 1 }
-# 			#add_to_array = { array = SPY_satellite_array value = temp_SPY_satellite_4_num index = 4 }
-# 			add_to_array = { orbit_array = payload_array^i }
-# 			set_variable = { var_orbit_display_ID = orbit_array^num }
-# 			subtract_from_variable = { var_orbit_display_ID = 1 }
-# 			add_new_satellite_to_orbit = yes
-# 		}
-# 		if = {
-# 			limit = {
-# 				check_variable = { payload_array^i = 136 }
-# 			}
-# 			add_to_temp_variable = { temp_SPY_satellite_5_num = 1 }
-# 			#add_to_array = { array = SPY_satellite_array value = temp_SPY_satellite_5_num index = 5 }
-# 			add_to_array = { orbit_array = payload_array^i }
-# 			set_variable = { var_orbit_display_ID = orbit_array^num }
-# 			subtract_from_variable = { var_orbit_display_ID = 1 }
-# 			add_new_satellite_to_orbit = yes
-# 		}
-# 		if = {
-# 			limit = {
-# 				check_variable = { payload_array^i = 137 }
-# 			}
-# 			add_to_temp_variable = { temp_SPY_satellite_6_num = 1 }
-# 			#add_to_array = { array = SPY_satellite_array value = temp_SPY_satellite_6_num index = 6 }
-# 			add_to_array = { orbit_array = payload_array^i }
-# 			set_variable = { var_orbit_display_ID = orbit_array^num }
-# 			subtract_from_variable = { var_orbit_display_ID = 1 }
-# 			add_new_satellite_to_orbit = yes
-# 		}
-# 		if = {
-# 			limit = {
-# 				check_variable = { payload_array^i = 138 }
-# 			}
-# 			add_to_temp_variable = { temp_SPY_satellite_7_num = 1 }
-# 			#add_to_array = { array = SPY_satellite_array value = temp_SPY_satellite_7_num index = 7 }
-# 			add_to_array = { orbit_array = payload_array^i }
-# 			set_variable = { var_orbit_display_ID = orbit_array^num }
-# 			subtract_from_variable = { var_orbit_display_ID = 1 }
-# 			add_new_satellite_to_orbit = yes
-# 		}
-# 		if = {
-# 			limit = {
-# 				check_variable = { payload_array^i = 141 }
-# 			}
-# 			add_to_temp_variable = { temp_KILL_satellite_0_num = 1 }
-# 			#add_to_array = { array = KILL_satellite_array value = temp_KILL_satellite_0_num index = 0 }
-# 			add_to_array = { orbit_array = payload_array^i }
-# 			set_variable = { var_orbit_display_ID = orbit_array^num }
-# 			subtract_from_variable = { var_orbit_display_ID = 1 }
-# 			add_new_satellite_to_orbit = yes
-# 		}
-# 		if = {
-# 			limit = {
-# 				check_variable = { payload_array^i = 142 }
-# 			}
-# 			add_to_temp_variable = { temp_KILL_satellite_1_num = 1 }
-# 			#add_to_array = { array = KILL_satellite_array value = temp_KILL_satellite_1_num index = 1 }
-# 			add_to_array = { orbit_array = payload_array^i }
-# 			set_variable = { var_orbit_display_ID = orbit_array^num }
-# 			subtract_from_variable = { var_orbit_display_ID = 1 }
-# 			add_new_satellite_to_orbit = yes
-# 		}
-# 		if = {
-# 			limit = {
-# 				check_variable = { payload_array^i = 143 }
-# 			}
-# 			add_to_temp_variable = { temp_KILL_satellite_2_num = 1 }
-# 			#add_to_array = { array = KILL_satellite_array value = temp_KILL_satellite_2_num index = 2 }
-# 			add_to_array = { orbit_array = payload_array^i }
-# 			set_variable = { var_orbit_display_ID = orbit_array^num }
-# 			subtract_from_variable = { var_orbit_display_ID = 1 }
-# 			add_new_satellite_to_orbit = yes
-# 		}
-# 		if = {
-# 			limit = {
-# 				check_variable = { payload_array^i = 144 }
-# 			}
-# 			add_to_temp_variable = { temp_KILL_satellite_3_num = 1 }
-# 			#add_to_array = { array = KILL_satellite_array value = temp_KILL_satellite_3_num index = 3 }
-# 			add_to_array = { orbit_array = payload_array^i }
-# 			set_variable = { var_orbit_display_ID = orbit_array^num }
-# 			subtract_from_variable = { var_orbit_display_ID = 1 }
-# 			add_new_satellite_to_orbit = yes
-# 		}
-# 		if = {
-# 			limit = {
-# 				check_variable = { payload_array^i = 145 }
-# 			}
-# 			add_to_temp_variable = { temp_KILL_satellite_4_num = 1 }
-# 			#add_to_array = { array = KILL_satellite_array value = temp_KILL_satellite_4_num index = 4 }
-# 			add_to_array = { orbit_array = payload_array^i }
-# 			set_variable = { var_orbit_display_ID = orbit_array^num }
-# 			subtract_from_variable = { var_orbit_display_ID = 1 }
-# 			add_new_satellite_to_orbit = yes
-# 		}
-# 		if = {
-# 			limit = {
-# 				check_variable = { payload_array^i = 146 }
-# 			}
-# 			add_to_temp_variable = { temp_KILL_satellite_5_num = 1 }
-# 			#add_to_array = { array = KILL_satellite_array value = temp_KILL_satellite_5_num index = 5 }
-# 			add_to_array = { orbit_array = payload_array^i }
-# 			set_variable = { var_orbit_display_ID = orbit_array^num }
-# 			subtract_from_variable = { var_orbit_display_ID = 1 }
-# 			add_new_satellite_to_orbit = yes
-# 		}
-# 		if = {
-# 			limit = {
-# 				check_variable = { payload_array^i = 151 }
-# 			}
-# 			add_to_temp_variable = { temp_RODS_satellite_0_num = 1 }
-# 			#add_to_array = { array = RODS_satellite_array value = temp_RODS_satellite_0_num index = 0 }
-# 			add_to_array = { orbit_array = payload_array^i }
-# 			set_variable = { var_orbit_display_ID = orbit_array^num }
-# 			subtract_from_variable = { var_orbit_display_ID = 1 }
-# 			add_new_satellite_to_orbit = yes
-# 		}
-# 		if = {
-# 			limit = {
-# 				check_variable = { payload_array^i = 152 }
-# 			}
-# 			add_to_temp_variable = { temp_RODS_satellite_1_num = 1 }
-# 			#add_to_array = { array = RODS_satellite_array value = temp_RODS_satellite_1_num index = 1 }
-# 			add_to_array = { orbit_array = payload_array^i }
-# 			set_variable = { var_orbit_display_ID = orbit_array^num }
-# 			subtract_from_variable = { var_orbit_display_ID = 1 }
-# 			add_new_satellite_to_orbit = yes
-# 		}
-# 		if = {
-# 			limit = {
-# 				check_variable = { payload_array^i = 153 }
-# 			}
-# 			add_to_temp_variable = { temp_RODS_satellite_2_num = 1 }
-# 			#add_to_array = { array = RODS_satellite_array value = temp_RODS_satellite_2_num index = 2 }
-# 			add_to_array = { orbit_array = payload_array^i }
-# 			set_variable = { var_orbit_display_ID = orbit_array^num }
-# 			subtract_from_variable = { var_orbit_display_ID = 1 }
-# 			add_new_satellite_to_orbit = yes
-# 		}
-# 	}
-# 	add_to_array = { array = GNSS_satellite_array value = temp_GNSS_satellite_0_num index = 0 }
-# 	add_to_array = { array = GNSS_satellite_array value = temp_GNSS_satellite_1_num index = 1 }
-# 	add_to_array = { array = GNSS_satellite_array value = temp_GNSS_satellite_2_num index = 2 }
-# 	add_to_array = { array = GNSS_satellite_array value = temp_GNSS_satellite_3_num index = 3 }
-# 	add_to_array = { array = GNSS_satellite_array value = temp_GNSS_satellite_4_num index = 4 }
-# 	add_to_array = { array = GNSS_satellite_array value = temp_GNSS_satellite_5_num index = 5 }
-# 	add_to_array = { array = GNSS_satellite_array value = temp_GNSS_satellite_6_num index = 6 }
-# 	add_to_array = { array = GNSS_satellite_array value = temp_GNSS_satellite_7_num index = 7 }
-# 	add_to_array = { array = COM_satellite_array value = temp_COM_satellite_0_num index = 0 }
-# 	add_to_array = { array = COM_satellite_array value = temp_COM_satellite_1_num index = 1 }
-# 	add_to_array = { array = COM_satellite_array value = temp_COM_satellite_2_num index = 2 }
-# 	add_to_array = { array = COM_satellite_array value = temp_COM_satellite_3_num index = 3 }
-# 	add_to_array = { array = COM_satellite_array value = temp_COM_satellite_4_num index = 4 }
-# 	add_to_array = { array = COM_satellite_array value = temp_COM_satellite_5_num index = 5 }
-# 	add_to_array = { array = COM_satellite_array value = temp_COM_satellite_6_num index = 6 }
-# 	add_to_array = { array = COM_satellite_array value = temp_COM_satellite_7_num index = 7 }
-# 	add_to_array = { array = SPY_satellite_array value = temp_SPY_satellite_0_num index = 0 }
-# 	add_to_array = { array = SPY_satellite_array value = temp_SPY_satellite_1_num index = 1 }
-# 	add_to_array = { array = SPY_satellite_array value = temp_SPY_satellite_2_num index = 2 }
-# 	add_to_array = { array = SPY_satellite_array value = temp_SPY_satellite_3_num index = 3 }
-# 	add_to_array = { array = SPY_satellite_array value = temp_SPY_satellite_4_num index = 4 }
-# 	add_to_array = { array = SPY_satellite_array value = temp_SPY_satellite_5_num index = 5 }
-# 	add_to_array = { array = SPY_satellite_array value = temp_SPY_satellite_6_num index = 6 }
-# 	add_to_array = { array = SPY_satellite_array value = temp_SPY_satellite_7_num index = 7 }
-# 	add_to_array = { array = KILL_satellite_array value = temp_KILL_satellite_0_num index = 0 }
-# 	add_to_array = { array = KILL_satellite_array value = temp_KILL_satellite_1_num index = 1 }
-# 	add_to_array = { array = KILL_satellite_array value = temp_KILL_satellite_2_num index = 2 }
-# 	add_to_array = { array = KILL_satellite_array value = temp_KILL_satellite_3_num index = 3 }
-# 	add_to_array = { array = KILL_satellite_array value = temp_KILL_satellite_4_num index = 4 }
-# 	add_to_array = { array = KILL_satellite_array value = temp_KILL_satellite_5_num index = 5 }
-# 	add_to_array = { array = RODS_satellite_array value = temp_RODS_satellite_0_num index = 0 }
-# 	add_to_array = { array = RODS_satellite_array value = temp_RODS_satellite_1_num index = 1 }
-# 	add_to_array = { array = RODS_satellite_array value = temp_RODS_satellite_2_num index = 2 }
-# 	#
-# 	clear_array = payload_array
-# }
-
-
-
 ###################################
 ### MD_satellite_orbit_view_gui ###
 ###################################
@@ -10864,7 +10308,7 @@ add_new_satellite_to_orbit_3 = {
 	else = {
 		set_temp_variable = { temp3 = 147 }
 		add_to_temp_variable = { temp3 = add_plus_X3 }
-		add_to_variable = { add_plus_X3= 1 }
+		add_to_variable = { add_plus_X3 = 1 }
 	}
 	set_variable = { sat_3_array^temp3 = var_orbit_display_ID } #set_variable = { sat_3_array^temp3 = 1 }
 	log = "sat_3_array^temp3 [?sat_3_array^temp3] var_orbit_display_ID [?var_orbit_display_ID] orbit_array^num [?orbit_array^num]"
@@ -11520,7 +10964,7 @@ check_enrichment = {
 		set_variable = { var_HEU_selected = 1 }
 		set_variable = { var_enrichment_efficiency = 0 }
 		set_variable = { var_CIC_use_enrichment = 0 }
-		set_variable = {  var_enrichment_grade_factor = 0}
+		set_variable = {  var_enrichment_grade_factor = 0 }
 		set_variable = { var_enrichment_grade_factor = 0 }
 		set_variable = { var_enrichment_nuclear_energy_prod_factor = 0 }
 		set_variable = { var_enrichment_nuclear_material_prod_factor = 0 }
@@ -11537,7 +10981,7 @@ check_enrichment = {
 		set_variable = { var_HEU_selected = 1 }
 		set_variable = { var_enrichment_efficiency = 0 }
 		set_variable = { var_CIC_use_enrichment = 0 }
-		set_variable = {  var_enrichment_grade_factor = 0}
+		set_variable = {  var_enrichment_grade_factor = 0 }
 		set_variable = { var_enrichment_grade_factor = 0 }
 		set_variable = { var_enrichment_nuclear_energy_prod_factor = 0 }
 		set_variable = { var_enrichment_nuclear_material_prod_factor = 0 }
@@ -11946,7 +11390,7 @@ set_temp_sea_launch_point_array = {
 		array = enemies
 		index = e
 		var:enemies^e = {
-			for_each_loop  = {
+			for_each_loop = {
 				array = controlled_states
 				index = c
 				var:controlled_states^c = {
@@ -11963,7 +11407,7 @@ set_temp_sea_launch_point_array = {
 			}
 		}
 	}
-	for_each_loop  = {
+	for_each_loop = {
 		array = controlled_states
 		index = r
 		var:controlled_states^r = {
@@ -12077,12 +11521,12 @@ set_SLCM_eligible_launch_points = {
 	set_temp_variable = { temp_num_ship = num_ships_with_type@cruiser }
 	add_to_temp_variable = { temp_num_ship = num_ships_with_type@destroyer }
 	add_to_temp_variable = { temp_num_ship = num_ships_with_type@frigate }
-	if = { limit = { has_dlc = "Man the Guns"}
+	if = { limit = { has_dlc = "Man the Guns" }
 		add_to_temp_variable = { temp_num_ship = num_ships_with_type@stealth_destroyer }
 	}
 
 	#set_temp_sea_launch_point_array = yes
-	for_each_loop  = {
+	for_each_loop = {
 		#array = global.sea_launch_point_array
 		array = temp_sea_launch_point_array
 		break = break_num_SLCM
@@ -12160,11 +11604,11 @@ set_HSCM_eligible_launch_points = {
 	set_temp_variable = { temp_num_ship = num_ships_with_type@cruiser }
 	add_to_temp_variable = { temp_num_ship = num_ships_with_type@destroyer }
 	add_to_temp_variable = { temp_num_ship = num_ships_with_type@frigate }
-	if = { limit = { has_dlc = "Man the Guns"}
+	if = { limit = { has_dlc = "Man the Guns" }
 		add_to_temp_variable = { temp_num_ship = num_ships_with_type@stealth_destroyer }
 	}
 
-	for_each_loop  = {
+	for_each_loop = {
 		#array = global.sea_launch_point_array
 		array = temp_sea_launch_point_array
 		break = break_num_HSCM
@@ -12311,7 +11755,7 @@ set_SLBM_eligible_launch_points = {
 	ROOT = { set_variable = { var_sub_number_LAM = 1 } }
 	set_temp_variable = { temp_num_sub = num_ships_with_type@missile_submarine }
 	#set_temp_sea_launch_point_array = yes
-	for_each_loop  = {
+	for_each_loop = {
 		#array = global.sea_launch_point_array
 		array = temp_sea_launch_point_array
 		break = break_num_sub
@@ -12659,7 +12103,7 @@ check_nuclear_warheads_for_alert_targets = {
 set_GLCM_on_alert = {
 	log = "[GetDateText]: [Root.GetName]: set_GLCM_on_alert"
 	set_temp_variable = { i2 = -1 }
-	### moved to first place (so first loop v2 i2, second loop v1 i1, thrid loop v3 i3)
+	### moved to first place (so first loop v2 i2, second loop v1 i1, third loop v3 i3)
 	for_loop_effect = {
 		start = 51
 		end = 59
@@ -12680,7 +12124,7 @@ set_GLCM_on_alert = {
 set_ALCM_on_alert = {
 	log = "[GetDateText]: [Root.GetName]: set_ALCM_on_alert"
 	set_temp_variable = { i2 = -1 }
-	### moved to first place (so first loop v2 i2, second loop v1 i1, thrid loop v3 i3)
+	### moved to first place (so first loop v2 i2, second loop v1 i1, third loop v3 i3)
 	for_loop_effect = {
 		start = 41
 		end = 49
@@ -12701,7 +12145,7 @@ set_ALCM_on_alert = {
 set_SLCM_on_alert = {
 	log = "[GetDateText]: [Root.GetName]: set_SLCM_on_alert"
 	set_temp_variable = { i2 = -1 }
-	### moved to first place (so first loop v2 i2, second loop v1 i1, thrid loop v3 i3)
+	### moved to first place (so first loop v2 i2, second loop v1 i1, third loop v3 i3)
 	for_loop_effect = {
 		start = 61
 		end = 69
@@ -12723,7 +12167,7 @@ set_SLCM_on_alert = {
 set_HSCM_on_alert = {
 	log = "[GetDateText]: [Root.GetName]: set_HSCM_on_alert"
 	set_temp_variable = { i2 = -1 }
-	### moved to first place (so first loop v2 i2, second loop v1 i1, thrid loop v3 i3)
+	### moved to first place (so first loop v2 i2, second loop v1 i1, third loop v3 i3)
 	for_loop_effect = {
 		start = 71
 		end = 73
@@ -12743,7 +12187,7 @@ set_HSCM_on_alert = {
 
 set_IRBM_on_alert = {
 	log = "[GetDateText]: [Root.GetName]: set_IRBM_on_alert"
-	### moved to first place (so first loop v2, second loop v1 i1, thrid loop v3 i3)
+	### moved to first place (so first loop v2, second loop v1 i1, third loop v3 i3)
 	for_loop_effect = {
 		start = 21
 		end = 29
@@ -12761,7 +12205,7 @@ set_IRBM_on_alert = {
 
 set_ICBM_on_alert = {
 	log = "[GetDateText]: [Root.GetName]: set_ICBM_on_alert"
-	### moved to first place (so first loop v2, second loop v1 i1, thrid loop v3 i3)
+	### moved to first place (so first loop v2, second loop v1 i1, third loop v3 i3)
 	for_loop_effect = {
 		start = 11
 		end = 19
@@ -12779,7 +12223,7 @@ set_ICBM_on_alert = {
 
 set_SLBM_on_alert = {
 	log = "[GetDateText]: [Root.GetName]: set_SLBM_on_alert"
-	### moved to first place (so first loop v2, second loop v1 i1, thrid loop v3 i3)
+	### moved to first place (so first loop v2, second loop v1 i1, third loop v3 i3)
 	for_loop_effect = {
 		start = 31
 		end = 39
@@ -13148,8 +12592,6 @@ set_alert_trajectory_arrays = {
 
 ### to do: change warhead arrays
 
-# old name
-#missile_on_daily = {
 # new name
 # if change here, change fire_on_alert as well
 missile_on_weekly = {
@@ -13233,8 +12675,6 @@ missile_on_weekly = {
 			#does it work ???
 			#set_mod_intercept_chance = yes
 
-			#OLD VERSION
-			#set_warhead = yes
 			set_temp_variable = { temp_missile_type = missile_type_array^i }
 			subtract_from_variable = { missile_inventory_array^temp_missile_type = var_salvo }
 
@@ -13251,15 +12691,6 @@ missile_on_weekly = {
 				set_temp_variable = { temp_check_warhead_type = missile_nuclear_warhead_array^i }
 				subtract_from_variable = { nuclear_warhead_inventory_array^temp_check_warhead_type = temp_check_warhead_num }
 			}
-
-			#OLD VERSION
-			# meta_effect = {
-			# 	text = {
-			# 		subtract_from_variable = { var_inventory_[missile_type]_[missile_tech] = var_salvo } ### needs to be changed no more missile_tech_array
-			# 	}
-			# 	missile_type = "[?missile_type_array^i]"
-			# 	missile_tech = "[?missile_tech_array^i]" ### needs to be changed no more missile_tech_array
-			# }
 
 			subtract_from_variable = { missile_duration_array^i = 1 }
 
@@ -13310,8 +12741,6 @@ missile_on_weekly = {
 			clear_variable = ABM_consumption_sea
 			clear_variable = ABM_consumption_land
 			clear_defense_vars = yes
-			# OLD VERSION
-			#set_missile_damage = yes
 
 			set_missile_warhead_effects = yes
 
