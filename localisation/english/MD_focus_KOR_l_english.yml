@@ -1,4 +1,5 @@
 ﻿l_english:
+ korea_south: "South Korean Focus Tree"
  KOR_the_rok_armed_forces: "The ROK Armed Forces"
  KOR_the_rok_armed_forces_desc: "The Republic of Korea's existence is defined by its constant vulnerability. Clashes with the North are constant reminders of the threat that the DPRK poses to our citizens' security. Beyond the peninsula, we must remain vigilant against new and old enemies that would wish to do us harm. To guard against all such threats, our armed forces must be as strong as they possibly can be."
  KOR_foreign_procurement: "Foreign Procurement"
@@ -520,7 +521,6 @@
  KOR_has_conservative_government_TT: "Has §YConservative§! Government"
  KOR_leftparties_tt: "§YProgressive§! parties: £kor_emerging_communism £kor_emerging_left_wing_radical £kor_non_aligned_social_democrat £kor_non_aligned_greens \n§YLiberal§! parties: £kor_western_liberal £kor_western_social_democrat ."
  KOR_deadlock_pp_tt: "Since the National Assembly is §Ydeadlocked§!, we will have to spend §R100§! Political Power to secure the support of minor parties.\n\n"
- support_for_reunification_5_tt: "[KOR.GetFlag] §YSupport for Reunification§! increases by §G5%§!."
  support_for_reunification_2_tt: "[KOR.GetFlag] §YSupport for Reunification§! increases by §G2%§!."
  support_for_reunification_1_tt: "[KOR.GetFlag] §YSupport for Reunification§! increases by §G1%§!."
  support_for_reunification_5_less_tt: "[KOR.GetFlag] §YSupport for Reunification§! decreases by §R5%§!."
@@ -549,7 +549,7 @@
  NKO_KOR_Koren_War_Ceasefire_tt1: "Has opinion modifier §YFragile Armistice Agreement§!"
  negotiation_result_tt: "The results of the negotiations will be known in §Y30§! days."
  KOR_russian_satellites_tt: "Halves the cost of §YKorean Space Program§!."
- KOR_smart_army_tt: "Will be removed if we have more than §Y75§! divisions."
+ KOR_smart_army_tt: "Will be removed if we have more than §Y45§! divisions."
  KOR_low: "§RLow§!"
  KOR_medium: "§YMedium§!"
  KOR_high: "§GHigh§!"
@@ -562,7 +562,7 @@
  KOR_expeditionary_forces_tt: "All units have been sent to §Y[USA.GetNameDef]§! as §Yexpeditionary forces§!"
  ### The 38th Parallel ###
  38th_parallel_KOR: "Ministry of Unification"
- KOR_38th_parallel: "The 38th Parallel"
+ KOR_38th_parallel: "[Root.38th_parallel]"
  KOR_38th_parallel_desc: "Since the end of the Second World War, Korea has been a divided nation. Ideological polarization and great power conflict have separated families and hindered the realization of the Korean people's full potential. While older generations still remember a united Korea and yearn for reunification, the memory of a united peninsula is gradually beginning to fade away.\n\n§YSupport for Reunification§! determines how much our people will be willing to concede in reunification negotiations. It decreases at a rate of 0.1% per month and is affected by decisions, focuses, and events. If or when reunification takes place, it will need to be kept high to ensure that the country stays together.\n\n[KOR.GetFlag] §YSupport for Reunification§!: [?KOR.SFR]%\n\n[NKO.GetFlag] Likelihood of Accepting Peace: [NKO_peace_likelihood]\n[NKO.GetFlag] Likelihood of Accepting Unity Government: [NKO_unity_likelihood]\n[NKO.GetFlag] Likelihood of Accepting South-Led Government: [NKO_south_likelihood]"
  KOR_close_kaesong_industrial_park: "Close Kaesong Industrial Park"
  KOR_close_kaesong_industrial_park_desc: "Our counterparts across the DMZ cannot be trusted. We should close down the Kaesong industrial park to prevent them from benefitting off of it."

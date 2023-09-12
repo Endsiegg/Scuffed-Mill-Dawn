@@ -345,6 +345,16 @@
  HKG_autonomy_special_administrative_region: "Hong Kong S.A.R."
  HKG_autonomy_special_administrative_region_DEF: "the Hong Kong S.A.R."
  HKG_autonomy_special_administrative_region_ADJ: "Hong Kong"
+ 
+ #Macau
+ MAC_autonomy_special_administrative_region: "Macau S.A.R."
+ MAC_autonomy_special_administrative_region_DEF: "the Macau S.A.R."
+ MAC_autonomy_special_administrative_region_ADJ: "Macau"
+
+ #Outer Mongolia
+ MON_autonomy_special_administrative_region: "Outer Mongol S.A.R"
+ MON_autonomy_special_administrative_region_DEF: "the Outer Mongol S.A.R"
+ MON_autonomy_special_administrative_region_ADJ: "Outer Mongol"
 
  #Korea
  KOR_REB_S_fascism: "Korean National Liberation Movement"
@@ -1428,9 +1438,30 @@
  AZE_REB_S_nationalist_ADJ: "Azerbaijani"
  AZE_REB_S_nationalist_DEF: "the Azerbaijani Armed Forces"
 
- AZE_PER_STATE: "Islamic Republic of Azerbaijan"
- AZE_PER_STATE_ADJ: "Azerbaijani"
- AZE_PER_STATE_DEF: "The Islamic Republic of Azerbaijan"
+ AZE_PER_STATE: "Azarabadgan"
+ AZE_PER_STATE_ADJ: "Azarabadgani"
+ AZE_PER_STATE_DEF: "the Azarabadgan"
+ UNITED_ISLAMIC_REPUBLICS: "United Islamic Republics"
+ UNITED_ISLAMIC_REPUBLICS_ADJ: "Muslim"
+ UNITED_ISLAMIC_REPUBLICS_DEF: "the United Islamic Republics"
+ PER_interim_government: "Revolutionary Iran"
+ PER_interim_government_DEF: "Revolutionary Iran"
+ PER_interim_government_ADJ: "Iranian"
+ PER_iranic_federation: "Iranic Union"
+ PER_iranic_federation_DEF: "the Iranic Union"
+ PER_iranic_federation_ADJ: "Iranic"
+ PER_IRANIAN_EMPIRE: "Achaemenid Iran"
+ PER_IRANIAN_EMPIRE_DEF: "Achaemenid Iran"
+ PER_IRANIAN_EMPIRE_ADJ: "Iranian"
+ PER_AUTH_communism: "Peoples Republic of Iran"
+ PER_AUTH_communism_DEF: "The Peoples Republic of Iran"
+ PER_AUTH_communism_ADJ: "Iranian"
+ PER_AUTH_S_communism: "Socialist Republic of Iran"
+ PER_AUTH_S_communism_DEF: "The Socialist Republic of Iran"
+ PER_AUTH_S_communism_ADJ: "Iranian"
+ PER_mullahs_government: "Islamic Republic"
+ PER_mullahs_government_DEF: "Islamic Republic"
+ PER_mullahs_government_ADJ: "Mullah's"
  #BAN
  BAN_REB_democratic: "Bangladesh Armed Forces"
  BAN_REB_democratic_ADJ: "Bangladeshi"
@@ -1779,7 +1810,6 @@
  CAR_REB_S_nationalist: "Central African Armed Forces"
  CAR_REB_S_nationalist_ADJ: "Central African"
  CAR_REB_S_nationalist_DEF: "The Central African Armed Forces"
-
 
  ## Placeholders for time saving ##
  #Azawad
@@ -2961,9 +2991,9 @@
  USNA_nationalist: "United States of North America"
  USNA_nationalist_ADJ: "North American"
  USNA_nationalist_DEF: "the United States of North America"
- USNA_fascism: "United States of North America"
+ USNA_fascism: "North American Caliphate"
  USNA_fascism_ADJ: "North American"
- USNA_fascism_DEF: "the United States of North America"
+ USNA_fascism_DEF: "the North American Caliphate"
 
  USNA1_democratic: "Communist States of North America"
  USNA1_democratic_ADJ: "North American"
@@ -3012,22 +3042,6 @@
  USNA3_fascism: "Ancapistan"
  USNA3_fascism_ADJ: "North American"
  USNA3_fascism_DEF: "the Ancapistan"
-
- USNA4_democratic: "North American State"
- USNA4_democratic_ADJ: "North American"
- USNA4_democratic_DEF: "the North American State"
- USNA4_communism: "North American State"
- USNA4_communism_ADJ: "North American"
- USNA4_communism_DEF: "the North American State"
- USNA4_neutrality: "North American State"
- USNA4_neutrality_ADJ: "North American"
- USNA4_neutrality_DEF: "the North American State"
- USNA4_nationalist: "North American State"
- USNA4_nationalist_ADJ: "North American"
- USNA4_nationalist_DEF: "the North American State"
- USNA4_fascism: "North American State"
- USNA4_fascism_ADJ: "North American"
- USNA4_fascism_DEF: "the North American State"
 
  USNA4_democratic: "North American State"
  USNA4_democratic_ADJ: "North American"
@@ -3221,22 +3235,6 @@
  INDOCHI_AUTH_SS_fascism_DEF: "the Indochina"
 
  #Visegrad Union
- VISE_democratic: "Visegrad Union"
- VISE_democratic_ADJ: "Visegrad"
- VISE_democratic_DEF: "the Visegrad Union"
- VISE_communism: "Visegrad Union"
- VISE_communism_ADJ: "Visegrad"
- VISE_communism_DEF: "the Visegrad Union"
- VISE_neutrality: "Visegrad Union"
- VISE_neutrality_ADJ: "Visegrad"
- VISE_neutrality_DEF: "the Visegrad Union"
- VISE_nationalist: "Visegrad Union"
- VISE_nationalist_ADJ: "Visegrad"
- VISE_nationalist_DEF: "the Visegrad Union"
- VISE_fascism: "Visegrad Union"
- VISE_fascism_ADJ: "Visegrad"
- VISE_fascism_DEF: "the Visegrad Union"
-
  VISE_democratic: "Socialist States of Central Europe"
  VISE_democratic_ADJ: "Visegrad"
  VISE_democratic_DEF: "the Socialist States of Central Europe"

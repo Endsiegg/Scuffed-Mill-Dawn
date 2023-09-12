@@ -1,4 +1,5 @@
 ﻿l_english:
+ coalition_party_negotiations: "Negotiating with a party for the coalition."
  different_country_flags_category: "Change Flag Decision"
  different_country_flags_category_desc: "We can change our flag to better represent the current ruling party in our country. The current ruling party is the [Root.GetRulingParty]"
 
@@ -37,14 +38,3 @@
  DRC_NEW_flag_desc: "I think a lighter blue would be better."
  RWA_NEW_flag: "Change Flag"
  RWA_NEW_flag_desc: "Our flag has become associated with the brutality of the 1994 genocide. It would be best if it were changed."
-
- #Europe
- EFS_flag_category: "European Federation Flag"
- EFS_flag_category_desc: ""
- EFS_flag_change: "Change European Federation Flag"
- EFS_flag_change_desc: "Today we have the ability to change our state name and flag."
-
- USoE_Flag_Reset_Flag_category: "USoE Flag"
- USoE_Flag_Reset_Flag_category_desc: ""
- USoE_reset_flag: "Reset USoE Flag"
- USoE_reset_flag_desc: "Change the USoE flag to the standard EU flag (cannot be undone)."
