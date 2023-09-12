@@ -827,7 +827,7 @@ focus_tree = {
 		x = -2
 		y = 10
 		relative_position_id = SOV_putin
-		cost = 10
+		cost = 1
 		prerequisite = { focus = SOV_abandon_khrushchyovkas }
 		available = { emerging_reactionaries_are_in_power = yes }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -854,8 +854,8 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_2002_land_reform"
 			set_temp_variable = { treasury_change = -1.5 }
 			modify_treasury_effect = yes
-			random_owned_controlled_state = { add_extra_state_shared_building_slots = 1 }
-			random_owned_controlled_state = { add_extra_state_shared_building_slots = 1 }
+			random_owned_controlled_state = { add_extra_state_shared_building_slots = 2 }
+			random_owned_controlled_state = { add_extra_state_shared_building_slots = 2 }
 		}
 		ai_will_do = { factor = 20 }
 	}
@@ -872,6 +872,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_united_grain_co"
 			one_random_synthetic_refinery = yes
+			one_random_synthetic_refinery = yes
 		}
 		ai_will_do = { factor = 20 }
 	}
@@ -881,7 +882,7 @@ focus_tree = {
 		x = 2
 		y = 9
 		relative_position_id = SOV_putin
-		cost = 10
+		cost = 5
 		available = { emerging_reactionaries_are_in_power = yes }
 		prerequisite = { focus = SOV_npp }
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INFLUENCE FOCUS_FILTER_EXPENDITURE }
@@ -918,6 +919,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_2007_university_reform"
 			one_office_construction = yes
+			one_office_construction = yes
 			set_temp_variable = { party_index = 6 }
 			set_temp_variable = { party_popularity_increase = 0.025 }
 			add_relative_party_popularity = yes
@@ -946,7 +948,7 @@ focus_tree = {
 		x = 4
 		y = 10
 		relative_position_id = SOV_putin
-		cost = 10
+		cost = 5
 		available = { emerging_reactionaries_are_in_power = yes }
 		prerequisite = { focus = SOV_increase_healthcare_spending }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -965,7 +967,7 @@ focus_tree = {
 		x = 3
 		y = 14
 		relative_position_id = SOV_putin
-		cost = 10
+		cost = 5
 		available = {
 			emerging_reactionaries_are_in_power = yes
 			custom_trigger_tooltip = {
@@ -995,7 +997,7 @@ focus_tree = {
 		x = -1
 		y = 15
 		relative_position_id = SOV_putin
-		cost = 10
+		cost = 5
 		available = { emerging_reactionaries_are_in_power = yes }
 		prerequisite = { focus = SOV_invest_in_pharmaceuticals }
 		search_filters = { FOCUS_FILTER_EXPENDITURE }
@@ -1019,7 +1021,7 @@ focus_tree = {
 			has_completed_focus = SOV_rokirovka
 		}
 		relative_position_id = SOV_putin
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = SOV_the_putinka
 			focus = SOV_united_grain_co
@@ -1032,7 +1034,7 @@ focus_tree = {
 			set_temp_variable = { percent_change = -5 }
 			change_domestic_influence_percentage = yes
 			increase_economic_growth = yes
-			add_timed_idea = { idea = production_efficiency_bonus days = 365 }
+			add_timed_idea = { idea = production_efficiency_bonus days = 720 }
 		}
 		ai_will_do = { factor = 20 }
 	}
@@ -1042,7 +1044,7 @@ focus_tree = {
 		x = 0
 		y = 12
 		relative_position_id = SOV_putin
-		cost = 10
+		cost = 5
 		available = { emerging_reactionaries_are_in_power = yes }
 		prerequisite = { focus = SOV_medvedev_modernization_program }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1062,7 +1064,7 @@ focus_tree = {
 		x = 0
 		y = 13
 		relative_position_id = SOV_putin
-		cost = 10
+		cost = 5
 		available = { emerging_reactionaries_are_in_power = yes }
 		prerequisite = { focus = SOV_commercialize_glonass }
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -1072,13 +1074,13 @@ focus_tree = {
 			modify_treasury_effect = yes
 			add_tech_bonus = {
 				name = SOV_increase_roscosmos_funding
-				bonus = 0.35
+				bonus = 1
 				uses = 2
 				category = Cat_space
 			}
 			add_tech_bonus = {
 				name = SOV_increase_roscosmos_funding
-				bonus = 0.5
+				bonus = 1
 				uses = 3
 				category = Cat_satellite
 			}
@@ -1091,12 +1093,13 @@ focus_tree = {
 		x = -2
 		y = 12
 		relative_position_id = SOV_putin
-		cost = 10
+		cost = 5
 		available = { emerging_reactionaries_are_in_power = yes }
 		prerequisite = { focus = SOV_medvedev_modernization_program }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_develop_it_industry"
+			one_office_construction = yes
 			one_office_construction = yes
 			two_random_network_infrastructure = yes
 		}
@@ -1108,7 +1111,7 @@ focus_tree = {
 		x = -2
 		y = 13
 		relative_position_id = SOV_putin
-		cost = 10
+		cost = 5
 		available = { emerging_reactionaries_are_in_power = yes }
 		prerequisite = { focus = SOV_develop_it_industry }
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_EXPENDITURE FOCUS_FILTER_INTERNAL_FACTION }
@@ -1128,7 +1131,7 @@ focus_tree = {
 		x = -1
 		y = 14
 		relative_position_id = SOV_putin
-		cost = 10
+		cost = 5
 		available = { emerging_reactionaries_are_in_power = yes }
 		prerequisite = {
 			focus = SOV_renewable_energy_investments
@@ -1138,7 +1141,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_invest_in_pharmaceuticals"
 			increase_healthcare_budget = yes
-			one_random_industrial_complex = yes
+			three_random_industrial_complex = yes
 		}
 		ai_will_do = { factor = 20 }
 	}
@@ -1149,10 +1152,10 @@ focus_tree = {
 		y = 11
 		available = {
 			emerging_reactionaries_are_in_power = yes
-			date > 2008.5.7
+		#	date > 2008.5.7
 		}
 		relative_position_id = SOV_putin
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = SOV_the_putinka
 			focus = SOV_2011_healthcare_reforms
@@ -1222,7 +1225,7 @@ focus_tree = {
 		y = 13
 		available = { emerging_reactionaries_are_in_power = yes }
 		relative_position_id = SOV_putin
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_eat_burgers_with_obama }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -1239,7 +1242,7 @@ focus_tree = {
 		y = 12
 		available = { emerging_reactionaries_are_in_power = yes }
 		relative_position_id = SOV_putin
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_rokirovka }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -1266,7 +1269,7 @@ focus_tree = {
 		x = 1
 		y = 16
 		relative_position_id = SOV_putin
-		cost = 10
+		cost = 5
 		available = { emerging_reactionaries_are_in_power = yes }
 		prerequisite = { focus = SOV_extend_term_limits }
 		prerequisite = { focus = SOV_putinist_propaganda }
@@ -1274,7 +1277,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_may_decrees"
 			add_political_power = 100
-			one_random_industrial_complex = yes
+			three_random_industrial_complex = yes
 			one_office_construction = yes
 		}
 		ai_will_do = { factor = 20 }
@@ -1286,7 +1289,7 @@ focus_tree = {
 		y = 17
 		available = { emerging_reactionaries_are_in_power = yes }
 		relative_position_id = SOV_putin
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_may_decrees }
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INFLUENCE }
 		completion_reward = {
@@ -1325,7 +1328,7 @@ focus_tree = {
 		x = 0
 		y = 17
 		relative_position_id = SOV_putin
-		cost = 10
+		cost = 5
 		available = { emerging_reactionaries_are_in_power = yes }
 		prerequisite = { focus = SOV_may_decrees }
 		search_filters = { FOCUS_FILTER_INFLUENCE FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_EXPENDITURE }
@@ -1344,7 +1347,7 @@ focus_tree = {
 		x = 2
 		y = 15
 		relative_position_id = SOV_putin
-		cost = 10
+		cost = 5
 		available = { emerging_reactionaries_are_in_power = yes }
 		prerequisite = { focus = SOV_go_russia }
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_EXPENDITURE }
@@ -1402,7 +1405,7 @@ focus_tree = {
 		x = -3
 		y = 17
 		relative_position_id = SOV_putin
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_tighten_ties_with_ukraine }
 		available = {
 			emerging_reactionaries_are_in_power = yes
@@ -1427,7 +1430,7 @@ focus_tree = {
 		x = -4
 		y = 18
 		relative_position_id = SOV_putin
-		cost = 10
+		cost = 5
 		available = {
 			emerging_reactionaries_are_in_power = yes
 			UKR = {
@@ -1461,7 +1464,7 @@ focus_tree = {
 		x = -2
 		y = 18
 		relative_position_id = SOV_putin
-		cost = 10
+		cost = 5
 		available = {
 			emerging_reactionaries_are_in_power = yes
 			UKR = {
@@ -1495,7 +1498,7 @@ focus_tree = {
 		x = -3
 		y = 19
 		relative_position_id = SOV_putin
-		cost = 10
+		cost = 5
 		available = {
 			emerging_reactionaries_are_in_power = yes
 			UKR = {
@@ -1595,7 +1598,7 @@ focus_tree = {
 		x = -7
 		y = 16
 		relative_position_id = SOV_putin
-		cost = 10
+		cost = 5
 		available = {
 			emerging_reactionaries_are_in_power = yes
 			UKR = {
@@ -1709,7 +1712,7 @@ focus_tree = {
 		x = 1
 		y = 18
 		relative_position_id = SOV_putin
-		cost = 10
+		cost = 5
 		available = { emerging_reactionaries_are_in_power = yes }
 		prerequisite = { focus = SOV_loosen_government_censorship }
 		prerequisite = { focus = SOV_gay_propaganda_laws }
@@ -1883,7 +1886,7 @@ focus_tree = {
 		x = -7
 		y = 18
 		relative_position_id = SOV_putin
-		cost = 10
+		cost = 5
 		available = {
 			emerging_reactionaries_are_in_power = yes
 			UKR = {
@@ -1912,7 +1915,7 @@ focus_tree = {
 		x = -9
 		y = 18
 		relative_position_id = SOV_putin
-		cost = 6
+		cost = 2
 		available = {
 			emerging_reactionaries_are_in_power = yes
 			UKR = {
@@ -2001,7 +2004,7 @@ focus_tree = {
 			army_experience = 25
 			add_tech_bonus = {
 				name = SOV_artillery_improvements
-				bonus = 0.8
+				bonus = 1
 				uses = 2
 				category = Cat_ARTILLERY
 			}
@@ -2014,7 +2017,7 @@ focus_tree = {
 		x = -6
 		y = 23
 		relative_position_id = SOV_putin
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_the_final_strike }
 		available = {
 			emerging_reactionaries_are_in_power = yes
@@ -2464,7 +2467,7 @@ focus_tree = {
 		y = 19
 		available = { emerging_reactionaries_are_in_power = yes }
 		relative_position_id = SOV_putin
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_aggressive_foreign_policy }
 		search_filters = { FOCUS_FILTER_EXPENDITURE FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -2485,12 +2488,12 @@ focus_tree = {
 		x = 1
 		y = 20
 		relative_position_id = SOV_putin
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_rein_in_the_government }
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = SOV_more_than_60_support_for_united_russia_TT
-				check_variable = { party_pop_array^6 > 0.60 }
+				check_variable = { party_pop_array^6 > 0.50 }
 			}
 			emerging_reactionaries_are_in_power = yes
 		}
@@ -10231,7 +10234,7 @@ focus_tree = {
 		icon = rus_war
 		x = 25
 		y = 18
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_groznyy_offensive }
 		search_filters = { FOCUS_FILTER_MILITARY_LAWS }
 		completion_reward = {
@@ -10250,7 +10253,7 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = SOV_finish_1998_reforms
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_finish_1998_reforms }
 		search_filters = { FOCUS_FILTER_MILITARY_LAWS FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -10287,7 +10290,7 @@ focus_tree = {
 		x = -3
 		y = 2
 		relative_position_id = SOV_finish_1998_reforms
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_reorganize_air_space_forces }
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_MILITARY_LAWS }
 		completion_reward = {
@@ -10310,7 +10313,7 @@ focus_tree = {
 		x = -8
 		y = 3
 		relative_position_id = SOV_finish_1998_reforms
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_2001_military_reforms }
 		search_filters = { FOCUS_FILTER_MILITARY_LAWS }
 		completion_reward = {
@@ -10330,7 +10333,7 @@ focus_tree = {
 		x = -9
 		y = 4
 		relative_position_id = SOV_finish_1998_reforms
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_csto_training_exercises }
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -10338,7 +10341,7 @@ focus_tree = {
 			army_experience = 25
 			add_tech_bonus = {
 				name = SOV_innovations_committee
-				bonus = 0.50
+				bonus = 1
 				uses = 1
 				category = Cat_NETWORK_CENTRIC_WARFARE
 			}
@@ -10351,7 +10354,7 @@ focus_tree = {
 		x = -7
 		y = 4
 		relative_position_id = SOV_finish_1998_reforms
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_csto_training_exercises }
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -10359,7 +10362,7 @@ focus_tree = {
 			army_experience = 10
 			add_tech_bonus = {
 				name = SOV_ksor_uniform_innovations
-				bonus = 0.10
+				bonus = 1
 				uses = 1
 				category = Cat_INF
 			}
@@ -10372,7 +10375,7 @@ focus_tree = {
 		x = -8
 		y = 5
 		relative_position_id = SOV_finish_1998_reforms
-		cost = 10
+		cost = 5
 		available = { has_completed_focus = SOV_2008_military_reforms }
 		prerequisite = { focus = SOV_innovations_committee }
 		prerequisite = { focus = SOV_ksor_uniform_innovations }
@@ -10382,7 +10385,7 @@ focus_tree = {
 			army_experience = 10
 			add_tech_bonus = {
 				name = SOV_ratnik_program
-				bonus = 0.15
+				bonus = 1
 				uses = 1
 				category = Cat_INF
 			}
@@ -10395,7 +10398,7 @@ focus_tree = {
 		x = -8
 		y = 6
 		relative_position_id = SOV_finish_1998_reforms
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_ratnik_program }
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -10405,7 +10408,7 @@ focus_tree = {
 			modify_treasury_effect = yes
 			add_tech_bonus = {
 				name = SOV_new_infantry_rifles
-				bonus = 0.25
+				bonus = 1
 				uses = 1
 				category = Cat_INF_WEP
 			}
@@ -10418,12 +10421,12 @@ focus_tree = {
 		x = -8
 		y = 7
 		relative_position_id = SOV_finish_1998_reforms
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_new_infantry_rifles }
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_ak12_program"
-			one_random_arms_factory = yes
+			three_random_arms_factory = yes
 			army_experience = 10
 		}
 		ai_will_do = { factor = 20 }
@@ -10434,7 +10437,7 @@ focus_tree = {
 		x = -6
 		y = 6
 		relative_position_id = SOV_finish_1998_reforms
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_ratnik_program }
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -10443,7 +10446,7 @@ focus_tree = {
 			modify_treasury_effect = yes
 			add_tech_bonus = {
 				name = SOV_mechanized_infantry_renovations
-				bonus = 0.35
+				bonus = 1
 				uses = 2
 				category = Cat_AFV
 			}
@@ -10456,7 +10459,7 @@ focus_tree = {
 		x = -6
 		y = 7
 		relative_position_id = SOV_finish_1998_reforms
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_mechanized_infantry_renovations }
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -10465,7 +10468,7 @@ focus_tree = {
 			modify_treasury_effect = yes
 			add_tech_bonus = {
 				name = SOV_armata_universal_combat_platform
-				bonus = 0.45
+				bonus = 3
 				uses = 1
 				category = Cat_MBT
 			}
@@ -10478,7 +10481,7 @@ focus_tree = {
 		x = -10
 		y = 6
 		relative_position_id = SOV_finish_1998_reforms
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_ratnik_program }
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -10487,7 +10490,7 @@ focus_tree = {
 			modify_treasury_effect = yes
 			add_tech_bonus = {
 				name = SOV_updated_uniforms
-				bonus = 0.15
+				bonus = 1
 				uses = 1
 				category = Cat_INF
 			}
@@ -10500,7 +10503,7 @@ focus_tree = {
 		x = -10
 		y = 7
 		relative_position_id = SOV_finish_1998_reforms
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_updated_uniforms }
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -10509,7 +10512,7 @@ focus_tree = {
 			modify_treasury_effect = yes
 			add_tech_bonus = {
 				name = SOV_new_spetsnaz_gear
-				bonus = 0.35
+				bonus = 1
 				uses = 1
 				category = Cat_SPECIAL_FORCES
 			}
@@ -10522,7 +10525,7 @@ focus_tree = {
 		x = -5
 		y = 3
 		relative_position_id = SOV_finish_1998_reforms
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_2001_military_reforms }
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
@@ -10542,7 +10545,7 @@ focus_tree = {
 		x = -5
 		y = 4
 		relative_position_id = SOV_finish_1998_reforms
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_FSB_expansion }
 		prerequisite = { focus = SOV_2008_military_reforms }
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
@@ -10560,7 +10563,7 @@ focus_tree = {
 		x = -3
 		y = 3
 		relative_position_id = SOV_finish_1998_reforms
-		cost = 13
+		cost = 5
 		prerequisite = { focus = SOV_2001_military_reforms }
 		search_filters = { FOCUS_FILTER_MILITARY_LAWS }
 		completion_reward = {
@@ -10582,12 +10585,12 @@ focus_tree = {
 		x = -4
 		y = 5
 		relative_position_id = SOV_finish_1998_reforms
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_2008_military_reforms }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_increased_arms_exports_2"
-			one_random_arms_factory = yes
+			three_random_arms_factory = yes
 		}
 		ai_will_do = { factor = 20 }
 	}
@@ -10597,12 +10600,12 @@ focus_tree = {
 		x = -3
 		y = 4
 		relative_position_id = SOV_finish_1998_reforms
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_2008_military_reforms }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_form_yunarmiya"
-			set_temp_variable = { temp_opinion = 5 }
+			set_temp_variable = { temp_opinion = 10 }
 			change_the_military_opinion = yes
 			add_ideas = POL_military_youth
 		}
@@ -10614,7 +10617,7 @@ focus_tree = {
 		x = -2
 		y = 5
 		relative_position_id = SOV_finish_1998_reforms
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_2008_military_reforms }
 		search_filters = { FOCUS_FILTER_MILITARY_LAWS }
 		completion_reward = {
@@ -10636,7 +10639,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_plausible_deniability_doctrine"
 			increase_intervention_law_effect = yes
-			army_experience = 15
+			army_experience = 50
 		}
 		ai_will_do = { factor = 20 }
 	}
@@ -10646,7 +10649,7 @@ focus_tree = {
 		x = -4
 		y = 7
 		relative_position_id = SOV_finish_1998_reforms
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_plausible_deniability_doctrine }
 		search_filters = { FOCUS_FILTER_MILITARY_LAWS }
 		completion_reward = {
@@ -10663,7 +10666,7 @@ focus_tree = {
 		x = -2
 		y = 7
 		relative_position_id = SOV_finish_1998_reforms
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_plausible_deniability_doctrine }
 		search_filters = { FOCUS_FILTER_MILITARY_LAWS }
 		completion_reward = {
@@ -10695,7 +10698,7 @@ focus_tree = {
 		x = -3
 		y = 8
 		relative_position_id = SOV_finish_1998_reforms
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_rosgvardia }
 		prerequisite = { focus = SOV_form_bars }
 		search_filters = { FOCUS_FILTER_MILITARY_LAWS }
@@ -10711,7 +10714,7 @@ focus_tree = {
 		x = -8
 		y = 8
 		relative_position_id = SOV_finish_1998_reforms
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_armata_universal_combat_platform }
 		prerequisite = { focus = SOV_ak12_program }
 		prerequisite = { focus = SOV_new_spetsnaz_gear }
@@ -10728,7 +10731,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_finish_1998_reforms
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_finish_1998_reforms }
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -10738,7 +10741,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = SOV_coastal_fleet_reforms
 				uses = 2
-				bonus = 0.35
+				bonus = 1
 				category = Cat_DESTROYER
 				category = Cat_FRIGATE
 				category = Cat_CORVETTE
@@ -10753,7 +10756,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SOV_finish_1998_reforms
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_coastal_fleet_reforms }
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -10762,7 +10765,7 @@ focus_tree = {
 			modify_treasury_effect = yes
 			add_tech_bonus = {
 				name = SOV_submarine_reforms
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = Cat_SUB
 			}
@@ -10776,7 +10779,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = SOV_finish_1998_reforms
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_submarine_reforms }
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -10786,7 +10789,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = SOV_new_fleet_doctrines
 				bonus = 0.50
-				uses = 1
+				uses = 2
 				category = Cat_blue_water_navy
 			}
 		}
@@ -10798,7 +10801,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = SOV_finish_1998_reforms
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_finish_1998_reforms }
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -10806,7 +10809,7 @@ focus_tree = {
 			set_temp_variable = { treasury_change = -2 }
 			modify_treasury_effect = yes
 			add_tech_bonus = {
-				bonus = 0.60
+				bonus = 3
 				name = SOV_stealth_fighter_technology
 				uses = 1
 				technology = AS_Fighter4
@@ -10821,7 +10824,7 @@ focus_tree = {
 		x = 2
 		y = 2
 		relative_position_id = SOV_finish_1998_reforms
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_stealth_fighter_technology }
 		search_filters = { FOCUS_FILTER_MILITARY_LAWS }
 		completion_reward = {
@@ -10847,18 +10850,18 @@ focus_tree = {
 			set_temp_variable = { treasury_change = -15 }
 			modify_treasury_effect = yes
 			685 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			687 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -10872,7 +10875,7 @@ focus_tree = {
 		x = 1
 		y = 4
 		relative_position_id = SOV_finish_1998_reforms
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = SOV_new_fleet_doctrines
 			focus = SOV_form_the_uac
@@ -10892,7 +10895,7 @@ focus_tree = {
 		x = 0
 		y = 5
 		relative_position_id = SOV_finish_1998_reforms
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_new_battlefields }
 		search_filters = { FOCUS_FILTER_MILITARY_LAWS }
 		completion_reward = {
@@ -10909,7 +10912,7 @@ focus_tree = {
 		x = 0
 		y = 6
 		relative_position_id = SOV_finish_1998_reforms
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_russian_space_force }
 		search_filters = { FOCUS_FILTER_MILITARY_LAWS FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -10929,7 +10932,7 @@ focus_tree = {
 		x = 0
 		y = 7
 		relative_position_id = SOV_finish_1998_reforms
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_repudiation_of_outer_space_treaty }
 		search_filters = { FOCUS_FILTER_MILITARY_LAWS FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -10942,7 +10945,7 @@ focus_tree = {
 			modify_treasury_effect = yes
 			add_tech_bonus = {
 				name = SOV_militarization_of_space
-				bonus = 0.20
+				bonus = 1
 				uses = 1
 				category = Cat_space
 			}
@@ -10955,7 +10958,7 @@ focus_tree = {
 		x = 1
 		y = 8
 		relative_position_id = SOV_finish_1998_reforms
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_militarization_of_space }
 		prerequisite = { focus = SOV_hypersonic_flight }
 		search_filters = { FOCUS_FILTER_EXPENDITURE }
@@ -10973,7 +10976,7 @@ focus_tree = {
 		x = 1
 		y = 9
 		relative_position_id = SOV_finish_1998_reforms
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_the_new_space_race }
 		search_filters = { FOCUS_FILTER_EXPENDITURE }
 		completion_reward = {
@@ -10990,7 +10993,7 @@ focus_tree = {
 		x = 2
 		y = 5
 		relative_position_id = SOV_finish_1998_reforms
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_new_battlefields }
 		search_filters = { FOCUS_FILTER_EXPENDITURE FOCUS_FILTER_MILITARY_LAWS }
 		completion_reward = {
@@ -11007,7 +11010,7 @@ focus_tree = {
 		x = 2
 		y = 6
 		relative_position_id = SOV_finish_1998_reforms
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_planetary_defense_initiative }
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_EXPENDITURE }
 		completion_reward = {
@@ -11016,13 +11019,13 @@ focus_tree = {
 			modify_treasury_effect = yes
 			add_tech_bonus = {
 				name = SOV_hypersonic_missiles
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = Cat_BM
 			}
 			add_tech_bonus = {
 				name = SOV_hypersonic_missiles
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = Cat_CM
 			}
@@ -11035,7 +11038,7 @@ focus_tree = {
 		x = 2
 		y = 7
 		relative_position_id = SOV_finish_1998_reforms
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_hypersonic_missiles }
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -11043,7 +11046,7 @@ focus_tree = {
 			set_temp_variable = { treasury_change = -3 }
 			modify_treasury_effect = yes
 			add_tech_bonus = {
-				bonus = 0.5
+				bonus = 1
 				name = SOV_hypersonic_flight
 				uses = 1
 				technology = AS_Fighter7
@@ -11059,7 +11062,7 @@ focus_tree = {
 		x = 4
 		y = 5
 		relative_position_id = SOV_finish_1998_reforms
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_new_battlefields }
 		search_filters = { FOCUS_FILTER_EXPENDITURE }
 		completion_reward = {
@@ -11069,7 +11072,7 @@ focus_tree = {
 			modify_treasury_effect = yes
 			add_tech_bonus = {
 				name = SOV_cyberwarfare
-				bonus = 0.25
+				bonus = 1
 				uses = 2
 				category = internet_tech
 			}
@@ -11082,7 +11085,7 @@ focus_tree = {
 		x = 4
 		y = 6
 		relative_position_id = SOV_finish_1998_reforms
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_cyberwarfare }
 		search_filters = { FOCUS_FILTER_EXPENDITURE }
 		completion_reward = {
@@ -11102,7 +11105,7 @@ focus_tree = {
 		x = 4
 		y = 7
 		relative_position_id = SOV_finish_1998_reforms
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_cybersecurity }
 		search_filters = { FOCUS_FILTER_EXPENDITURE }
 		completion_reward = {
@@ -11129,7 +11132,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_economic_programs"
-			one_random_industrial_complex = yes
+			three_random_industrial_complex = yes
 		}
 		ai_will_do = { factor = 50 }
 	}
@@ -11139,7 +11142,7 @@ focus_tree = {
 		x = -8
 		y = 9
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_expand_economic_policy }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -11154,13 +11157,13 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = SOV_economic_programs
-		cost = 13
+		cost = 10
 		prerequisite = { focus = SOV_economic_programs }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_heavy_industry_investments"
-			one_random_industrial_complex = yes
-			one_random_industrial_complex = yes
+			two_random_industrial_complex = yes
+			two_random_industrial_complex = yes
 		}
 		ai_will_do = { factor = 20 }
 	}
@@ -11178,15 +11181,16 @@ focus_tree = {
 			set_temp_variable = { treasury_change = -10 }
 			modify_treasury_effect = yes
 			one_office_construction = yes
+			one_office_construction = yes
 			add_tech_bonus = {
 				name = SOV_heavy_industry_investments
-				bonus = 0.4
+				bonus = 1
 				uses = 1
 				category = Cat_infrastructure
 			}
 			add_tech_bonus = {
 				name = SOV_heavy_industry_investments
-				bonus = 0.4
+				bonus = 1
 				uses = 1
 				category = industry
 			}
@@ -11199,7 +11203,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_heavy_industry_investments }
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -11208,7 +11212,7 @@ focus_tree = {
 			modify_treasury_effect = yes
 			add_tech_bonus = {
 				name = SOV_manufacturing_improvements
-				bonus = 0.5
+				bonus = 1
 				uses = 2
 				category = industry
 			}
@@ -11221,7 +11225,7 @@ focus_tree = {
 		x = -3
 		y = 2
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_heavy_industry_investments }
 		search_filters = { FOCUS_FILTER_RESOURCE }
 		completion_reward = {
@@ -11231,21 +11235,21 @@ focus_tree = {
 			random_owned_controlled_state = {
 				add_resource = {
 					type = steel
-					amount = 3
+					amount = 10
 				}
 				add_resource = {
 					type = tungsten
-					amount = 3
+					amount = 10
 				}
 			}
 			random_owned_controlled_state = {
 				add_resource = {
 					type = chromium
-					amount = 3
+					amount = 10
 				}
 				add_resource = {
 					type = aluminium
-					amount = 3
+					amount = 10
 				}
 			}
 		}
@@ -11257,7 +11261,7 @@ focus_tree = {
 		x = -4
 		y = 3
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_refined_metallurgy }
 		search_filters = { FOCUS_FILTER_RESOURCE }
 		completion_reward = {
@@ -11267,7 +11271,7 @@ focus_tree = {
 			random_owned_controlled_state = {
 				add_resource = {
 					type = tungsten
-					amount = 8
+					amount = 10
 				}
 			}
 		}
@@ -11279,7 +11283,7 @@ focus_tree = {
 		x = -2
 		y = 3
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_refined_metallurgy }
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESOURCE }
 		completion_reward = {
@@ -11289,7 +11293,7 @@ focus_tree = {
 			random_owned_controlled_state = {
 				add_resource = {
 					type = chromium
-					amount = 8
+					amount = 15
 				}
 			}
 		}
@@ -11301,7 +11305,7 @@ focus_tree = {
 		x = -2
 		y = 4
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_expand_gold_mining }
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESOURCE }
 		completion_reward = {
@@ -11311,7 +11315,7 @@ focus_tree = {
 			random_owned_controlled_state = {
 				add_resource = {
 					type = aluminium
-					amount = 8
+					amount = 15
 				}
 			}
 		}
@@ -11323,7 +11327,7 @@ focus_tree = {
 		x = -4
 		y = 4
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_expand_tungsten_mining }
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESOURCE }
 		completion_reward = {
@@ -11333,7 +11337,7 @@ focus_tree = {
 			random_owned_controlled_state = {
 				add_resource = {
 					type = steel
-					amount = 8
+					amount = 20
 				}
 			}
 		}
@@ -11368,10 +11372,10 @@ focus_tree = {
 			set_temp_variable = { treasury_change = -22.5 }
 			modify_treasury_effect = yes
 			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -11392,17 +11396,17 @@ focus_tree = {
 			set_temp_variable = { treasury_change = -20 }
 			modify_treasury_effect = yes
 			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			add_tech_bonus = {
 				name = SOV_domestic_aircraft_production
 				uses = 1
-				bonus = 0.3
+				bonus = 1
 				category = CAT_FIXED_WING
 			}
 		}
@@ -11419,20 +11423,20 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_domestic_helicopter_production"
-		set_temp_variable = { treasury_change = -20 }
+		set_temp_variable = { treasury_change = -15 }
 			modify_treasury_effect = yes
 			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			add_tech_bonus = {
 				name = SOV_domestic_aircraft_production
 				uses = 1
-				bonus = 0.3
+				bonus = 1
 				category = Cat_STR_BOMBER
 				category = CAT_FIXED_WING
 			}
@@ -11453,17 +11457,17 @@ focus_tree = {
 			set_temp_variable = { treasury_change = -15 }
 			modify_treasury_effect = yes
 			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			add_tech_bonus = {
 				name = SOV_domestic_aircraft_production
 				uses = 2
-				bonus = 0.3
+				bonus = 1
 				category = Cat_STR_BOMBER
 				category = CAT_FIXED_WING
 			}
@@ -11476,8 +11480,8 @@ focus_tree = {
 		x = -6
 		y = 6
 		relative_position_id = SOV_economic_programs
-		cost = 10
-		prerequisite = { focus = SOV_industrial_expansion_plan }
+		cost = 5
+		prerequisite= { focus = SOV_industrial_expansion_plan }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_expand_tankograd"
@@ -11494,7 +11498,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = SOV_domestic_aircraft_production
 				uses = 1
-				bonus = 0.3
+				bonus = 1
 				category = Cat_ARMOR
 			}
 		}
@@ -11506,7 +11510,7 @@ focus_tree = {
 		x = -6
 		y = 7
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_expand_tankograd }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -11514,10 +11518,10 @@ focus_tree = {
 			set_temp_variable = { treasury_change = -7.5 }
 			modify_treasury_effect = yes
 			676 = { # Nizhny Tagil
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -11530,7 +11534,7 @@ focus_tree = {
 		x = 1
 		y = 6
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_industrial_expansion_plan }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -11540,7 +11544,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = SOV_domestic_auto_production
 				uses = 1
-				bonus = 0.10
+				bonus = 1
 				category = Cat_AFV
 			}
 			add_ideas = SOV_car_production_revitalization_1_idea
@@ -11553,7 +11557,7 @@ focus_tree = {
 		x = 2
 		y = 8
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = SOV_domestic_auto_production
 			focus = SOV_gaz
@@ -11564,10 +11568,10 @@ focus_tree = {
 			set_temp_variable = { treasury_change = -7.5 }
 			modify_treasury_effect = yes
 			663 = { # Samara
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -11581,7 +11585,7 @@ focus_tree = {
 		x = 0
 		y = 7
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_domestic_auto_production }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -11589,17 +11593,17 @@ focus_tree = {
 			set_temp_variable = { treasury_change = -20 }
 			modify_treasury_effect = yes
 			660 = { # Nizhny Novgorod
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			add_tech_bonus = {
 				name = SOV_domestic_auto_production
 				uses = 1
-				bonus = 0.15
+				bonus = 1
 				category = Cat_AFV
 			}
 		}
@@ -11611,7 +11615,7 @@ focus_tree = {
 		x = 2
 		y = 7
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_domestic_auto_production }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -11619,17 +11623,17 @@ focus_tree = {
 			set_temp_variable = { treasury_change = -7.5 }
 			modify_treasury_effect = yes
 			661 = { # Tatarstan
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			add_tech_bonus = {
 				name = SOV_domestic_auto_production
 				uses = 1
-				bonus = 0.15
+				bonus = 1
 				category = Cat_AFV
 			}
 		}
@@ -11641,7 +11645,7 @@ focus_tree = {
 		x = 0
 		y = 8
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = SOV_domestic_auto_production
 			focus = SOV_kamaz
@@ -11652,14 +11656,14 @@ focus_tree = {
 			set_temp_variable = { treasury_change = -10 }
 			modify_treasury_effect = yes
 			652 = { # Moscow
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
-			set_temp_variable = { temp_opinion = 5 }
+			set_temp_variable = { temp_opinion = 10 }
 			change_oligarchs_opinion = yes
 		}
 		ai_will_do = { factor = 20 }
@@ -11670,7 +11674,7 @@ focus_tree = {
 		x = 0
 		y = 9
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_aurus }
 		mutually_exclusive = { focus = SOV_focus_on_affordable_cars }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -11678,7 +11682,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_aurus"
 			set_temp_variable = { treasury_change = -10 }
 			modify_treasury_effect = yes
-			set_temp_variable = { temp_opinion = 5 }
+			set_temp_variable = { temp_opinion = 10 }
 			change_oligarchs_opinion = yes
 			swap_ideas = {
 				remove_idea = SOV_car_production_revitalization_1_idea
@@ -11699,7 +11703,7 @@ focus_tree = {
 		x = 2
 		y = 9
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_avtovaz }
 		mutually_exclusive = { focus = SOV_focus_on_luxury_cars }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -11707,7 +11711,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_aurus"
 			set_temp_variable = { treasury_change = -10 }
 			modify_treasury_effect = yes
-			set_temp_variable = { temp_opinion = 5 }
+			set_temp_variable = { temp_opinion = 10 }
 			change_oligarchs_opinion = yes
 			swap_ideas = {
 				remove_idea = SOV_car_production_revitalization_1_idea
@@ -11735,7 +11739,7 @@ focus_tree = {
 		x = 1
 		y = 10
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = SOV_focus_on_affordable_cars
 			focus = SOV_focus_on_luxury_cars
@@ -11769,7 +11773,7 @@ focus_tree = {
 		x = 5
 		y = 1
 		relative_position_id = SOV_finish_1998_reforms
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_finish_1998_reforms }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -11777,17 +11781,17 @@ focus_tree = {
 			set_temp_variable = { treasury_change = -20 }
 			modify_treasury_effect = yes
 			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			add_tech_bonus = {
 				name = SOV_expand_kalashnikov_concern
 				uses = 1
-				bonus = 0.3
+				bonus = 1
 				category = Cat_INF_WEP
 			}
 		}
@@ -11799,7 +11803,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_expand_kalashnikov_concern
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_finish_1998_reforms }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -11807,10 +11811,10 @@ focus_tree = {
 			set_temp_variable = { treasury_change = -10 }
 			modify_treasury_effect = yes
 			652 = { # Moscow
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -11823,7 +11827,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_expand_kalashnikov_concern
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_finish_1998_reforms }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -11831,10 +11835,10 @@ focus_tree = {
 			set_temp_variable = { treasury_change = -10 }
 			modify_treasury_effect = yes
 			652 = { # Moscow
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -11847,7 +11851,7 @@ focus_tree = {
 		x = 2
 		y = 0
 		relative_position_id = SOV_expand_kalashnikov_concern
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_finish_1998_reforms }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -11855,17 +11859,17 @@ focus_tree = {
 			set_temp_variable = { treasury_change = -15 }
 			modify_treasury_effect = yes
 			655 = { # Ryazan
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			add_tech_bonus = {
 				name = SOV_kbp
 				uses = 1
-				bonus = 0.3
+				bonus = 1
 				technology = land_Drone_equipment2
 				technology = body_armor_2010
 				technology = camouflage2
@@ -11880,7 +11884,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SOV_expand_kalashnikov_concern
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = SOV_rostech
 			focus = SOV_rosoboronprom
@@ -11892,10 +11896,10 @@ focus_tree = {
 			set_temp_variable = { treasury_change = -7.5 }
 			modify_treasury_effect = yes
 			655 = { # Ryazan
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -11908,7 +11912,7 @@ focus_tree = {
 		x = 2
 		y = 2
 		relative_position_id = SOV_expand_kalashnikov_concern
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = SOV_kbp
 			focus = SOV_rosoboronprom
@@ -11921,10 +11925,10 @@ focus_tree = {
 			set_temp_variable = { treasury_change = -7.5 }
 			modify_treasury_effect = yes
 			652 = { # Moscow
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -11942,11 +11946,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_decree_no_585"
-			set_temp_variable = { treasury_change = -10 }
-			modify_treasury_effect = yes
-			one_random_infrastructure = yes
-			one_random_infrastructure = yes
-			one_random_infrastructure = yes
+			#set_temp_variable = { treasury_change = -10 }
+			#modify_treasury_effect = yes
+			two_random_infrastructure = yes
+			two_random_infrastructure = yes
+			two_random_infrastructure = yes
 		}
 		ai_will_do = { factor = 50 }
 	}
@@ -11956,7 +11960,7 @@ focus_tree = {
 		x = -8
 		y = 2
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_decree_no_585 }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -11974,7 +11978,7 @@ focus_tree = {
 					}
 					add_building_construction = {
 						type = infrastructure
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -11988,12 +11992,12 @@ focus_tree = {
 		x = -8
 		y = 3
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_sakhalin_railway }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_expand_the_trans_siberian_railroad"
-			set_temp_variable = { treasury_change = -45.50 }
+			set_temp_variable = { treasury_change = -20.50 }
 			modify_treasury_effect = yes
 			652 = { #Moscow
 				if = {
@@ -12006,7 +12010,7 @@ focus_tree = {
 					}
 					add_building_construction = {
 						type = infrastructure
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -12022,7 +12026,7 @@ focus_tree = {
 					}
 					add_building_construction = {
 						type = infrastructure
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -12038,7 +12042,7 @@ focus_tree = {
 					}
 					add_building_construction = {
 						type = infrastructure
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -12054,7 +12058,7 @@ focus_tree = {
 					}
 					add_building_construction = {
 						type = infrastructure
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -12070,7 +12074,7 @@ focus_tree = {
 					}
 					add_building_construction = {
 						type = infrastructure
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -12086,7 +12090,7 @@ focus_tree = {
 					}
 					add_building_construction = {
 						type = infrastructure
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -12102,7 +12106,7 @@ focus_tree = {
 					}
 					add_building_construction = {
 						type = infrastructure
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -12118,7 +12122,7 @@ focus_tree = {
 					}
 					add_building_construction = {
 						type = infrastructure
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -12134,7 +12138,7 @@ focus_tree = {
 					}
 					add_building_construction = {
 						type = infrastructure
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -12150,7 +12154,7 @@ focus_tree = {
 					}
 					add_building_construction = {
 						type = infrastructure
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -12166,7 +12170,7 @@ focus_tree = {
 					}
 					add_building_construction = {
 						type = infrastructure
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -12182,7 +12186,7 @@ focus_tree = {
 					}
 					add_building_construction = {
 						type = infrastructure
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -12198,7 +12202,7 @@ focus_tree = {
 					}
 					add_building_construction = {
 						type = infrastructure
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -12212,14 +12216,14 @@ focus_tree = {
 		x = -8
 		y = 4
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_expand_the_trans_siberian_railroad }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_high_speed_rail_construction"
 			set_temp_variable = { treasury_change = -15 }
 			modify_treasury_effect = yes
-			add_timed_idea = { idea = SOV_idea_high_speed_rails days = 365 }
+			add_timed_idea = { idea = SOV_idea_high_speed_rails days = 720 }
 		}
 		ai_will_do = { factor = 20 }
 	}
@@ -12229,7 +12233,7 @@ focus_tree = {
 		x = -5
 		y = 8
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_industrial_expansion_plan }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -12246,14 +12250,14 @@ focus_tree = {
 			688 = { # Yakutia
 				add_building_construction = {
 					type = air_base
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			674 = { # Cherkessia
 				add_building_construction = {
 					type = air_base
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -12266,7 +12270,7 @@ focus_tree = {
 		x = -11
 		y = 2
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = SOV_decree_no_585
 			focus = SOV_appease_the_moscow_oligarchs
@@ -12290,12 +12294,12 @@ focus_tree = {
 		x = -10
 		y = 3
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_expansionary_monetary_policy }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_economic_stimulus"
-			set_temp_variable = { treasury_change = -35 }
+			set_temp_variable = { treasury_change = -30 }
 			modify_treasury_effect = yes
 			increase_economic_growth = yes
 		}
@@ -12307,7 +12311,7 @@ focus_tree = {
 		x = -10
 		y = 4
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = SOV_economic_stimulus
 			focus = SOV_attract_foreign_investors
@@ -12359,15 +12363,15 @@ focus_tree = {
 		x = -10
 		y = 6
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_regulate_the_market }
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_INFLUENCE FOCUS_FILTER_INTERNAL_FACTION }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_nationalize_foreign_industry"
-			set_temp_variable = { temp_opinion = 10 }
+			set_temp_variable = { temp_opinion = 20 }
 			change_oligarchs_opinion = yes
 			custom_effect_tooltip = SOV_nationalize_foreign_industry_TT
-			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { percent_change = 10 }
 			change_domestic_influence_percentage = yes
 			hidden_effect = { three_random_industrial_complex = yes }
 			IF = {
@@ -12383,14 +12387,14 @@ focus_tree = {
 		x = -10
 		y = 7
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_nationalize_foreign_industry }
 		bypass = { not = { has_idea = oligarchs } }
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_INFLUENCE FOCUS_FILTER_INTERNAL_FACTION }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_root_out_oligarchs"
 			add_stability = 0.05
-			set_temp_variable = { percent_change = 5 }
+			set_temp_variable = { percent_change = 10 }
 			change_domestic_influence_percentage = yes
 		}
 		ai_will_do = { factor = 50 }
@@ -12401,7 +12405,7 @@ focus_tree = {
 		x = -11
 		y = 8
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = SOV_entice_oligarchic_investment
 			focus = SOV_root_out_oligarchs
@@ -12425,7 +12429,7 @@ focus_tree = {
 		x = -10
 		y = 9
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_expand_economic_policy }
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_EXPENDITURE }
 		completion_reward = {
@@ -12453,7 +12457,7 @@ focus_tree = {
 			modify_treasury_effect = yes
 			add_tech_bonus = {
 				name = SOV_uranium_one_sale
-				bonus = 0.10
+				bonus = 1
 				uses = 1
 				category = nuclear
 			}
@@ -12466,7 +12470,7 @@ focus_tree = {
 		x = -12
 		y = 9
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_expand_economic_policy }
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -12476,7 +12480,7 @@ focus_tree = {
 			modify_treasury_effect = yes
 			add_tech_bonus = {
 				name = SOV_jinr
-				bonus = 0.30
+				bonus = 1
 				uses = 2
 				category = Cat_nuclear_reactors
 			}
@@ -12497,7 +12501,7 @@ focus_tree = {
 			one_office_construction = yes
 			add_tech_bonus = {
 				name = SOV_expand_the_tech_industry
-				bonus = 0.30
+				bonus = 1
 				uses = 1
 				category = internet_tech
 			}
@@ -12519,7 +12523,7 @@ focus_tree = {
 			modify_treasury_effect = yes
 			add_tech_bonus = {
 				name = SOV_advanced_semiconductor_manufacturing
-				bonus = 0.20
+				bonus = 1
 				uses = 1
 				category = internet_tech
 			}
@@ -12532,7 +12536,7 @@ focus_tree = {
 		x = -6
 		y = 11
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_advanced_semiconductor_manufacturing }
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -12540,7 +12544,7 @@ focus_tree = {
 			remove_ideas = SOV_broken_economy_idea_3
 			add_tech_bonus = {
 				name = SOV_the_silicon_taiga
-				bonus = 0.50
+				bonus = 1
 				uses = 1
 				category = construction_tech
 			}
@@ -12553,7 +12557,7 @@ focus_tree = {
 		x = -11
 		y = 10
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_gamaleya_institute }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -12561,14 +12565,14 @@ focus_tree = {
 			set_temp_variable = { treasury_change = -12 }
 			modify_treasury_effect = yes
 			644 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = offices
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
-			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { percent_change = 5 }
 			change_domestic_influence_percentage = yes
 		}
 		ai_will_do = { factor = 20 }
@@ -12579,7 +12583,7 @@ focus_tree = {
 		x = -9
 		y = 10
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_gamaleya_institute }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -12587,14 +12591,14 @@ focus_tree = {
 			set_temp_variable = { treasury_change = -15 }
 			modify_treasury_effect = yes
 			652 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = offices
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
-			set_temp_variable = { percent_change = 4 }
+			set_temp_variable = { percent_change = 5 }
 			change_domestic_influence_percentage = yes
 		}
 		ai_will_do = { factor = 20 }
@@ -12605,7 +12609,7 @@ focus_tree = {
 		x = -10
 		y = 11
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = SOV_vkontakte
 			focus = SOV_yandex
@@ -12631,7 +12635,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_appease_the_moscow_oligarchs"
 			set_temp_variable = { treasury_change = -5 }
 			modify_treasury_effect = yes
-			set_temp_variable = { temp_opinion = 10 }
+			set_temp_variable = { temp_opinion = 20 }
 			change_oligarchs_opinion = yes
 			increase_exports = yes
 		}
@@ -12643,7 +12647,7 @@ focus_tree = {
 		x = -12
 		y = 3
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_expansionary_monetary_policy }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -12669,7 +12673,7 @@ focus_tree = {
 		x = -12
 		y = 4
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = SOV_attract_foreign_investors
 			focus = SOV_economic_stimulus
@@ -12687,7 +12691,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_rise_of_the_oligarchs"
-			set_temp_variable = { temp_opinion = 10 }
+			set_temp_variable = { temp_opinion = 20 }
 			change_oligarchs_opinion = yes
 			increase_corruption = yes
 		}
@@ -12699,13 +12703,13 @@ focus_tree = {
 		x = -12
 		y = 5
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_rise_of_the_oligarchs }
 		search_filters = { FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_deregulation"
 			add_political_power = 100
-			set_temp_variable = { temp_opinion = 10 }
+			set_temp_variable = { temp_opinion = 20 }
 			change_fossil_fuel_industry_opinion = yes
 		}
 		ai_will_do = { factor = 50 }
@@ -12716,13 +12720,13 @@ focus_tree = {
 		x = -12
 		y = 6
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_deregulation }
 		search_filters = { FOCUS_FILTER_CORRUPTION FOCUS_FILTER_INTERNAL_FACTION }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_ignore_oligarchic_corruption"
 			increase_corruption = yes
-			set_temp_variable = { temp_opinion = 10 }
+			set_temp_variable = { temp_opinion = 20 }
 			change_oligarchs_opinion = yes
 			add_stability = 0.05
 		}
@@ -12741,7 +12745,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_entice_oligarchic_investment"
 			set_temp_variable = { corp_change = -2 }
 			modify_corporate_tax_rate_effect = yes
-			set_temp_variable = { temp_opinion = 5 }
+			set_temp_variable = { temp_opinion = 10 }
 			change_oligarchs_opinion = yes
 		}
 		ai_will_do = { factor = 50 }
@@ -12759,7 +12763,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_russian_federation_stabilization_fund"
 			add_stability = 0.025
 			#decrease_oligarchs_opinion = yes
-			set_temp_variable = { treasury_change = 3 }
+			set_temp_variable = { treasury_change = 100 }
 			modify_treasury_effect = yes
 		}
 		ai_will_do = { factor = 20 }
@@ -12770,7 +12774,7 @@ focus_tree = {
 		x = -14
 		y = 3
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_russian_federation_stabilization_fund }
 		search_filters = { FOCUS_FILTER_RESOURCE }
 		completion_reward = {
@@ -12778,13 +12782,13 @@ focus_tree = {
 			random_owned_controlled_state = {
 				add_resource = {
 					type = oil
-					amount = 5
+					amount = 10
 				}
 			}
 			random_owned_controlled_state = {
 				add_resource = {
 					type = oil
-					amount = 5
+					amount = 10
 				}
 			}
 			set_temp_variable = { treasury_change = -10 }
@@ -12798,7 +12802,7 @@ focus_tree = {
 		x = -14
 		y = 4
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_intl_oil_price_agreements }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -12808,13 +12812,13 @@ focus_tree = {
 			643 = {
 				add_resource = {
 					type = oil
-					amount = 3
+					amount = 10
 				}
 			}
 			647 = {
 				add_resource = {
 					type = oil
-					amount = 6
+					amount = 10
 				}
 			}
 			648 = {
@@ -12826,7 +12830,7 @@ focus_tree = {
 			679 = {
 				add_resource = {
 					type = oil
-					amount = 6
+					amount = 10
 				}
 			}
 		}
@@ -12866,7 +12870,7 @@ focus_tree = {
 		x = 3
 		y = 2
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_resist_the_washington_consensus }
 		available = {
 			GER = { has_opinion = { target = SOV value > 19 } }
@@ -12896,7 +12900,7 @@ focus_tree = {
 		x = 3
 		y = 3
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		available = { GER = { has_opinion = { target = SOV value > 49 } } }
 		prerequisite = { focus = SOV_european_interaction_plan }
 		search_filters = { FOCUS_FILTER_RESOURCE }
@@ -12912,7 +12916,7 @@ focus_tree = {
 		x = 3
 		y = 4
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		available = { TUR = { has_opinion = { target = SOV value > 29 } } }
 		prerequisite = { focus = SOV_nord_stream }
 		search_filters = { FOCUS_FILTER_RESOURCE }
@@ -12928,7 +12932,7 @@ focus_tree = {
 		x = 3
 		y = 5
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		available = { CHI = { has_opinion = { target = SOV value > 19 } } }
 		prerequisite = { focus = SOV_south_stream }
 		search_filters = { FOCUS_FILTER_RESOURCE }
@@ -12944,7 +12948,7 @@ focus_tree = {
 		x = 4
 		y = 6
 		relative_position_id = SOV_economic_programs
-		cost = 13
+		cost = 5
 		prerequisite = { focus = SOV_east_stream }
 		prerequisite = { focus = SOV_revaluation_of_the_ruble }
 		search_filters = { FOCUS_FILTER_EXPENDITURE }
@@ -12952,7 +12956,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_return_to_the_gold_standard"
 			set_temp_variable = { percent_change = 10 }
 			change_domestic_influence_percentage = yes
-			set_temp_variable = { treasury_change = 5 }
+			set_temp_variable = { treasury_change = 300 }
 			modify_treasury_effect = yes
 		}
 		ai_will_do = { factor = 20 }
@@ -12963,7 +12967,7 @@ focus_tree = {
 		x = 5
 		y = 2
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_resist_the_washington_consensus }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_appease_foreign_powers"
@@ -12984,7 +12988,7 @@ focus_tree = {
 		x = 5
 		y = 3
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_appease_foreign_powers }
 		available = {
 			OR = {
@@ -13031,7 +13035,7 @@ focus_tree = {
 		x = 5
 		y = 4
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_discuss_lifting_sanctions }
 		available = { has_idea = SOV_encouraged_foreign_investments_idea }
 		search_filters = { FOCUS_FILTER_EXPENDITURE FOCUS_FILTER_INDUSTRY }
@@ -13040,9 +13044,9 @@ focus_tree = {
 			increase_economic_growth = yes
 			set_temp_variable = { treasury_change = -3 }
 			modify_treasury_effect = yes
-			random_owned_controlled_state = { add_extra_state_shared_building_slots = 1 }
-			random_owned_controlled_state = { add_extra_state_shared_building_slots = 1 }
-			random_owned_controlled_state = { add_extra_state_shared_building_slots = 1 }
+			random_owned_controlled_state = { add_extra_state_shared_building_slots = 3 }
+			random_owned_controlled_state = { add_extra_state_shared_building_slots = 3 }
+			random_owned_controlled_state = { add_extra_state_shared_building_slots = 3 }
 		}
 		ai_will_do = { factor = 20 }
 	}
@@ -13068,7 +13072,7 @@ focus_tree = {
 		x = 11
 		y = 1
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_economic_programs }
 		search_filters = { FOCUS_FILTER_TRADE }
 		completion_reward = {
@@ -13083,7 +13087,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_expand_trade_policy
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_expand_trade_policy }
 		search_filters = { FOCUS_FILTER_TRADE }
 		available = { has_war = no }
@@ -13113,7 +13117,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SOV_expand_trade_policy
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_join_wto }
 		available = {
 			NOT = {
@@ -13150,7 +13154,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = SOV_expand_trade_policy
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_trade_with_kazakhstan }
 		search_filters = { FOCUS_FILTER_TRADE }
 		available = {
@@ -13187,7 +13191,7 @@ focus_tree = {
 		x = 1
 		y = 4
 		relative_position_id = SOV_expand_trade_policy
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_trade_with_kazakhstan }
 		search_filters = { FOCUS_FILTER_TRADE }
 		available = {
@@ -13224,7 +13228,7 @@ focus_tree = {
 		x = -1
 		y = 4
 		relative_position_id = SOV_expand_trade_policy
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_trade_with_kazakhstan }
 		search_filters = { FOCUS_FILTER_TRADE }
 		available = {
@@ -13261,7 +13265,7 @@ focus_tree = {
 		x = 2
 		y = 2
 		relative_position_id = SOV_expand_trade_policy
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_join_wto }
 		search_filters = { FOCUS_FILTER_TRADE }
 		available = {
@@ -13298,7 +13302,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = SOV_expand_trade_policy
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_expand_trade_policy }
 		search_filters = { FOCUS_FILTER_TRADE }
 		available = {
@@ -13335,7 +13339,7 @@ focus_tree = {
 		x = 1
 		y = 5
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		available = { GER = { has_opinion = { target = SOV value > 59 } } }
 		prerequisite = { focus = SOV_nord_stream }
 		search_filters = { FOCUS_FILTER_RESOURCE }
@@ -13351,7 +13355,7 @@ focus_tree = {
 		x = 8
 		y = 2
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_expand_trade_policy }
 		available = {
 			NOT = { has_war_with = CHI }
@@ -13428,7 +13432,7 @@ focus_tree = {
 		x = 9
 		y = 4
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_trade_with_south_korea }
 		search_filters = { FOCUS_FILTER_INFLUENCE }
 		completion_reward = {
@@ -13495,7 +13499,7 @@ focus_tree = {
 		x = 7
 		y = 4
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_trade_with_north_korea }
 		search_filters = { FOCUS_FILTER_INFLUENCE }
 		completion_reward = {
@@ -13524,7 +13528,7 @@ focus_tree = {
 		x = 16
 		y = 2
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_expand_trade_policy }
 		search_filters = { FOCUS_FILTER_INFLUENCE }
 		completion_reward = {
@@ -13634,7 +13638,7 @@ focus_tree = {
 		x = 14
 		y = 4
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = SOV_trade_with_pakistan
 			focus = SOV_trade_with_azerbaijan
@@ -13652,7 +13656,7 @@ focus_tree = {
 		x = 17
 		y = 4
 		relative_position_id = SOV_economic_programs
-		cost = 10
+		cost = 5
 		prerequisite = { focus = SOV_trade_with_india }
 		available = {
 			NOT = { has_war_with = RAJ }

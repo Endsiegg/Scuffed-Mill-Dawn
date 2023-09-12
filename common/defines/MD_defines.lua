@@ -3,22 +3,25 @@
 	-- NGame ssection
 	NDefines.NGame.START_DATE = "2000.1.1.12"
 	NDefines.NGame.END_DATE = "2070.1.1.1"
-	NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 500
-	NDefines.NGame.LAG_DAYS_FOR_PAUSE = 100
+	NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 1000
+	NDefines.NGame.LAG_DAYS_FOR_PAUSE = 1000
 	NDefines.NGame.MAX_SCRIPTED_LOC_RECURSION = 40
+	NDefines.NGame.GAME_SPEED_SECONDS = { 100.0, 0.25, 0.1, 0.05, 0.0 }
+	NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 12
 
 	-- NDiplomacy Defines
+	NDefines.NDiplomacy.MIN_WARGOAL_JUSTIFY_COST = 7.0		-- It always takes atleast 10 days to justify a wargoal
 	NDefines.NDiplomacy.MAX_OPINION_VALUE = 250
 	NDefines.NDiplomacy.MIN_OPINION_VALUE = -250
-	NDefines.NDiplomacy.BASE_NEGATIVE_OPINION_AFTER_BEING_KICKED = 50
-	NDefines.NDiplomacy.DECAY_RATE_OF_NEGATIVE_OPINION_AFTER_BEING_KICKED = 0.5
+	NDefines.NDiplomacy.BASE_NEGATIVE_OPINION_AFTER_BEING_KICKED = 0
+	NDefines.NDiplomacy.DECAY_RATE_OF_NEGATIVE_OPINION_AFTER_BEING_KICKED = 1
 	NDefines.NDiplomacy.TRUCE_BREAK_COST_PP = 100
 	NDefines.NDiplomacy.BASE_PEACE_LIBERATE_FACTOR = 110
 	NDefines.NDiplomacy.BASE_PEACE_TAKE_UNCONTROLLED_STATE_FACTOR = 2
 	NDefines.NDiplomacy.BASE_PEACE_FORCE_GOVERNMENT_COST = 20
 	NDefines.NDiplomacy.BASE_IMPROVE_RELATION_SAME_IDEOLOGY_GROUP_MAINTAIN_COST = 0.25
 	NDefines.NDiplomacy.BASE_IMPROVE_RELATION_DIFFERENT_IDEOLOGY_GROUP_MAINTAIN_COST = 0.5
-	NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST = 80
+	NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST = 10
 	NDefines.NDiplomacy.BASE_SEND_ATTACHE_CP_COST = 40.0
 	NDefines.NDiplomacy.BASE_BOOST_PARTY_POPULARITY_DAILY_PP = 1
 	NDefines.NDiplomacy.BASE_BOOST_PARTY_POPULARITY_DAILY_DRIFT = 0.1
@@ -46,7 +49,7 @@
 	NDefines.NDiplomacy.TENSION_PEACE_FACTOR = 0.10					-- scale of the amount of tension (from war declaration) reduced when peace is completed.
 	NDefines.NDiplomacy.TENSION_CAPITULATE = 0
 	NDefines.NDiplomacy.GUARANTEE_COST = 50
-	NDefines.NDiplomacy.REVOKE_GUARANTEE_COST = 30
+	NDefines.NDiplomacy.REVOKE_GUARANTEE_COST = 5
 	NDefines.NDiplomacy.OPINION_PER_VOLUNTEER = 15
 	NDefines.NDiplomacy.MAX_OPINION_FROM_VOLUNTEERS = 45
 	NDefines.NDiplomacy.LICENSE_ACCEPTANCE_TECH_DIFFERENCE = 2
@@ -60,8 +63,8 @@
 
 	-- Faction related stuff
 	NDefines.NDiplomacy.TRUCE_PERIOD_AFTER_KICKING_FROM_FACTION = 30				-- Truce period after kicking someone from faction in days.
-	NDefines.NDiplomacy.NUM_DAYS_TO_ENABLE_KICKING_NEW_MEMBERS_OF_FACTION = 90			-- Number of days before being able to kick a new member of faction
-	NDefines.NDiplomacy.NUM_DAYS_TO_ENABLE_REINVITE_KICKED_NATIONS = 90			-- Number of days before being able to re invite a kicked nation to your faction
+	NDefines.NDiplomacy.NUM_DAYS_TO_ENABLE_KICKING_NEW_MEMBERS_OF_FACTION = 1			-- Number of days before being able to kick a new member of faction
+	NDefines.NDiplomacy.NUM_DAYS_TO_ENABLE_REINVITE_KICKED_NATIONS = 1			-- Number of days before being able to re invite a kicked nation to your faction
 	NDefines.NDiplomacy.IDEOLOGY_JOIN_FACTION_MIN_LEVEL = 0.2  --0.3 in Vanilla 	-- ideology limit required to join faction
 	NDefines.NDiplomacy.JOIN_FACTION_LIMIT_CHANGE_AT_WAR = 1 --0.5 in Vanilla, value of 1 should mean defensive war gives no reduction to tension limit	-- if in defensive war this or your modifier is counted as limit to join factions (so if you have 80% join limit this now means you can join at 50%)
 	NDefines.NDiplomacy.ASSUME_FACTION_LEADERSHIP_PP_COST = 200				-- Political power cost to assume faction leadership
@@ -83,16 +86,19 @@
 	NDefines.NDiplomacy.BASE_PEACE_LIBERATE_FACTOR = 100						-- (100 in vanilla) Base factor for liberate in %.
 	NDefines.NDiplomacy.BASE_PEACE_TAKE_UNCONTROLLED_STATE_FACTOR = 10.0		-- (10.0 in vanilla) Base factor for taking state you do not control
 	NDefines.NDiplomacy.BASE_PEACE_TAKE_FACTION_CONTROLLED_STATE_FACTOR = 0.5	-- (0.5 in vanilla) Base factor for taking state you do not control, but someone in faction does
-	NDefines.NDiplomacy.BASE_PEACE_FORCE_GOVERNMENT_COST = 100 				-- (100 in vanilla) Base cost for forcing a country to change government.
+	NDefines.NDiplomacy.BASE_PEACE_FORCE_GOVERNMENT_COST = 100 					-- (100 in vanilla) Base cost for forcing a country to change government.
+	NDefines.NDiplomacy.PEACE_SCORE_PER_PASS = 500.0
+
 	-- In peace conference, cost is factored based on how many times the state has been contested and for how long it has been uncontested (for everyone else)
+	
 	NDefines.NDiplomacy.PEACE_COST_FACTOR_CONTESTED_MAX = 10										-- (15 in vanilla) To prevent overflows due to the exponential increase, cap the contested factor to this
 	NDefines.NDiplomacy.PEACE_COST_FACTOR_UNCONTESTED_MAX = 10										-- (15 in vanilla) To prevent overflows due to the exponential increase, cap the uncontested factor to this
 	NDefines.NDiplomacy.PEACE_COST_FACTOR_CONTESTED_BID = 1.20										-- (1.20 in vanilla) Cost factor for each contested bid on the state.
 	NDefines.NDiplomacy.PEACE_COST_FACTOR_UNCONTESTED_BID_MIN = 1.15								-- (1.15 in vanilla) Minimum cost factor for each turn a bid has been uncontested on the state.
 	NDefines.NDiplomacy.PEACE_COST_FACTOR_UNCONTESTED_BID_MAX = 1.60								-- (1.60 in vanilla) Maximum cost factor for each turn a bid has been uncontested on the state.
 	NDefines.NDiplomacy.PEACE_COST_FACTOR_UNCONTESTED_BID_STEP = 0.15								-- (0.15 in vanilla) Uncontested cost factor will increase by this much each turn.
-	NDefines.NDiplomacy.PEACE_COST_FACTOR_CAPITAL_SHIP_IC = 0.005									-- (0.005 in vanilla) In peace conference, cost for taking one capital ship per IC
-	NDefines.NDiplomacy.PEACE_COST_FACTOR_SCREENING_SHIP_IC = 0.005								-- (0.005 in vanilla) In peace conference, cost for taking a part of the screening ships per IC
+	NDefines.NDiplomacy.PEACE_COST_FACTOR_CAPITAL_SHIP_IC = 0.00005									-- (0.005 in vanilla) In peace conference, cost for taking one capital ship per IC
+	NDefines.NDiplomacy.PEACE_COST_FACTOR_SCREENING_SHIP_IC = 0.00005								-- (0.005 in vanilla) In peace conference, cost for taking a part of the screening ships per IC
 	NDefines.NDiplomacy.PEACE_INCREASE_COST_FACTOR_PER_MISSING_PERCENT_FOR_CAPITULATION = 0.002	-- (0.002 in vanilla) increase factor if loser has not capitulated, for every percent between surrender level and BASE_SURRENDER_LEVEL
 	-- peace action taker has a discount if they occupy the state depending on compliance
 	-- it's a table where first value is the compliance level, and the second the factor
@@ -137,7 +143,7 @@
 
 
 	-- NCountry Releated Defines
-	NDefines.NCountry.BASE_RESEARCH_SLOTS = 2 -- Maintains Vanilla's 2 RS default. RSs are handled via the dynamic system
+	NDefines.NCountry.BASE_RESEARCH_SLOTS = 3 -- Maintains Vanilla's 2 RS default. RSs are handled via the dynamic system
 	NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0.01 --0.01
 	NDefines.NCountry.RESISTANCE_STRENGTH_FROM_VP = 0.001
 	NDefines.NCountry.RESISTANCE_STRENGTH_FROM_UNIT = 0.002
@@ -160,8 +166,8 @@
 	NDefines.NCountry.MAX_INTELLIGENCE_INDUSTRY_DATA_DEVIATION = 0.2
 	NDefines.NCountry.MAX_INTELLIGENCE_MANPOWER_DATA_DEVIATION = 0.3
 	NDefines.NCountry.STATE_VALUE_BUILDING_SLOTS_MULT = 3.0 -- value of each building slot in a state
-	NDefines.NCountry.SPECIAL_FORCES_CAP_BASE = 0.075
-	NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 6
+	NDefines.NCountry.SPECIAL_FORCES_CAP_BASE = 0.2
+	NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 40
 	NDefines.NCountry.DAYS_OF_WAR_BEFORE_SURRENDER = 7
 	NDefines.NCountry.BASE_MOBILIZATION_SPEED = 0.01 --0.01
 	NDefines.NCountry.SCORCHED_EARTH_STATE_COST = 25                        -- pp cost to scorch a state -- 5 in vanilla
@@ -188,19 +194,21 @@
 	NDefines.NProduction.LICENSE_EQUIPMENT_BASE_SPEED = -0.2 -- -0.2 exp
 	NDefines.NProduction.LICENSE_EQUIPMENT_TECH_SPEED_PER_YEAR = -0.01
 	NDefines.NProduction.LICENSE_EQUIPMENT_TECH_SPEED_MAX_YEARS = 40
-	NDefines.NProduction.EQUIPMENT_MODULE_ADD_XP_COST = 5.0					-- XP cost for adding a new equipment module in an empty slot when creating an equipment variant.
-	NDefines.NProduction.EQUIPMENT_MODULE_REPLACE_XP_COST = 6.0				-- XP cost for replacing one equipment module with an unrelated module when creating an equipment variant.
-	NDefines.NProduction.EQUIPMENT_MODULE_CONVERT_XP_COST = 3.0				-- XP cost for converting one equipment module to a related module when creating an equipment variant.
-	NDefines.NProduction.BASE_NAVAL_EQUIPMENT_CONVERSION_IC_COST_FACTOR  = 0.01
-	NDefines.NProduction.DEFAULT_MAX_NAV_FACTORIES_PER_LINE = 5
-	NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 15
-	NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 5
+	NDefines.NProduction.EQUIPMENT_MODULE_ADD_XP_COST = 0				-- XP cost for adding a new equipment module in an empty slot when creating an equipment variant.
+	NDefines.NProduction.EQUIPMENT_MODULE_REPLACE_XP_COST = 0			-- XP cost for replacing one equipment module with an unrelated module when creating an equipment variant.
+	NDefines.NProduction.EQUIPMENT_MODULE_CONVERT_XP_COST = 0			-- XP cost for converting one equipment module to a related module when creating an equipment variant.
+	NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0			-- XP cost for converting one equipment module to a related module when creating an equipment variant.
+	NDefines.NProduction.BASE_NAVAL_EQUIPMENT_CONVERSION_IC_COST_FACTOR  = 0.001
+	NDefines.NProduction.DEFAULT_MAX_NAV_FACTORIES_PER_LINE = 30
+	NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 50
+	NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 30
 
 	NDefines.NTechnology.MAX_SUBTECHS = 5
-	NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 1.0
-	NDefines.NTechnology.BASE_TECH_COST = 250 -- 100 is vanilla --300 was the old MD cost
-	NDefines.NTechnology.MIN_RESEARCH_SPEED = 0.01 -- 0.10 in vanilla
+	NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 2.0
+	NDefines.NTechnology.BASE_TECH_COST = 100 -- 100 is vanilla --300 was the old MD cost
+	NDefines.NTechnology.MIN_RESEARCH_SPEED = 0.1 -- 0.10 in vanilla
 	NDefines.NTechnology.MAX_TECH_SHARING_BONUS = 0.25 -- Nerfed to 0.25 from Tech Sharing
+	NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 50.0		-- Base amount of research points a country can save per slot.
 
 	NDefines.NBuildings.MAX_BUILDING_LEVELS = 50
 	NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100
@@ -212,17 +220,19 @@
 	NDefines.NBuildings.MAX_SHARED_SLOTS = 56
 	NDefines.NBuildings.OWNER_CHANGE_EXTRA_SHARED_SLOTS_FACTOR = 0.5
 	NDefines.NBuildings.INFRASTRUCTURE_RESOURCE_BONUS = 0.05	--upped from 0.02, vanilla 0.2
-	NDefines.NBuildings.ANTI_AIR_SUPERIORITY_MULT = 1.0 -- was 4.0 --Fucked with this to see
+	NDefines.NBuildings.ANTI_AIR_SUPERIORITY_MULT = 2.0 -- was 4.0 --Fucked with this to see
 
-	NDefines.NMilitary.MAX_DIVISION_BRIGADE_WIDTH = 4 -- 5
+	NDefines.NMilitary.MAX_DIVISION_BRIGADE_WIDTH = 5 -- 5
 	NDefines.NMilitary.HOURLY_ORG_MOVEMENT_IMPACT = -0.1 -- -0.2
 	NDefines.NMilitary.ZERO_ORG_MOVEMENT_MODIFIER = -0.2 -- -0.8
 	NDefines.NMilitary.INFRASTRUCTURE_MOVEMENT_SPEED_IMPACT = -0.02 -- -0.05
 
-	NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 18 -- Vanilla 24
-	NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 15 --24
-	NDefines.NMilitary.FIELD_MARSHAL_ARMIES_CAP = 4 -- Vanilla 5
-	NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 5 -- 10
+	NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 50 -- Vanilla 24
+	NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 50 --24
+	NDefines.NMilitary.FIELD_MARSHAL_ARMIES_CAP = 5 -- Vanilla 5
+	NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0
+	NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0
+	NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 0 -- 10
 	NDefines.NMilitary.COMBAT_MINIMUM_TIME = 8 -- 4
 	NDefines.NMilitary.LAND_COMBAT_ORG_DICE_SIZE = 2 -- 4
 	NDefines.NMilitary.LAND_COMBAT_STR_DICE_SIZE = 6 -- 2
@@ -307,25 +317,25 @@
 	NDefines.NMilitary.XP_GAIN_FOR_SHATTERING = 10.0 -- 30.0
 	NDefines.NMilitary.ARMY_IDLE_FUEL_MULT = 0.05 -- 0.0
 	NDefines.NMilitary.OUT_OF_FUEL_SPEED_MULT = 0.7 -- 0.4
-	NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.02 -- 0.07
+	NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.05 -- 0.07
 	NDefines.NMilitary.ANTI_AIR_ATTACK_TO_AMOUNT = 0.005 -- 0.005
 	NDefines.NMilitary.UNIT_EXPERIENCE_PER_COMBAT_HOUR = 0.0003 -- 0.0001
 	NDefines.NMilitary.UNIT_EXPERIENCE_SCALE = 0.25 -- 1.0
 	NDefines.NMilitary.UNIT_EXPERIENCE_PER_TRAINING_DAY = 0.0035 -- 0.0015
 	NDefines.NMilitary.TRAINING_EXPERIENCE_SCALE = 92.0 -- 62.0
 	NDefines.NMilitary.UNIT_EXP_LEVELS = { 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9 }
-	NDefines.NMilitary.ARMY_EXP_BASE_LEVEL = 3
-	NDefines.NMilitary.TRAINING_MAX_LEVEL = 5
-	NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 2
-	NDefines.NMilitary.FIELD_EXPERIENCE_SCALE = 0.001 -- 0.0015
+	NDefines.NMilitary.ARMY_EXP_BASE_LEVEL = 5
+	NDefines.NMilitary.TRAINING_MAX_LEVEL = 10
+	NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 5
+	NDefines.NMilitary.FIELD_EXPERIENCE_SCALE = 0.0015 -- 0.0015
 	NDefines.NMilitary.FIELD_EXPERIENCE_MAX_PER_DAY = 2 -- 1.2
 	NDefines.NMilitary.LEADER_EXPERIENCE_SCALE = 1.25 -- 1.0
 	NDefines.NMilitary.BASE_LEADER_TRAIT_GAIN_XP = 0.55 -- 0.45
 	NDefines.NMilitary.ARMY_LEADER_XP_GAIN_PER_UNIT_IN_COMBAT = 0.175 -- 0.1
 	NDefines.NMilitary.TRAINING_ATTRITION = 0.05 -- 0.05
-	NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 1000 --500 --Increased Max Experience cuz reasons
-	NDefines.NMilitary.MAX_AIR_EXPERIENCE = 1000 --500
-	NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 1000 --500
+	NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 2000 --500 --Increased Max Experience cuz reasons
+	NDefines.NMilitary.MAX_AIR_EXPERIENCE = 2000 --500
+	NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 2000 --500
 	NDefines.NMilitary.SHIP_MORALE_TO_ORG_REGAIN_BASE = 0.5 -- buffed from 0.2 -- Handles the Hourly Reorganization
 	NDefines.NMilitary.ENGAGEMENT_WIDTH_PER_WIDTH = 3.0			-- how much enemy combat width we are allowed to engage per width of our own -- vanilla is 2.0
 	NDefines.NMilitary.DAMAGE_SPLIT_ON_FIRST_TARGET = 0.29 -- increased by 0.03 by cnc tech, 1995 is vanilla level, vanilla 0.35
@@ -397,7 +407,7 @@
 	NDefines.NAir.AIR_COMBAT_FINAL_DAMAGE_PLANES = 25 -- 50
 	NDefines.NAir.AIR_COMBAT_FINAL_DAMAGE_PLANES_FACTOR = 0.04 -- 0.1
 	NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.06 -- -0.12
-	NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_FACTOR = 0.01 -- 0.8
+	NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_FACTOR = 0.04 -- 0.8
 	NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_CHANCE = 0.04 -- 0.1
 	NDefines.NAir.AIR_DEPLOYMENT_DAYS = 1 -- 2
 	NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 4 -- 1.0
@@ -428,7 +438,11 @@
 	NDefines.NAir.CARRIER_SIZE_STAT_INCREMENT = 10 -- 10
 	NDefines.NAir.MIN_PLANE_COUNT_PARADROP = 20 -- 50 is vanilla
 
-	NDefines.NNavy.MAX_SUBMARINES_PER_AUTO_TASK_FORCE = 4 -- 30
+
+	NDefines.NNavy.SUPPLY_NEED_FACTOR = 0	
+	NDefines.NNavy.PRIDE_OF_THE_FLEET_UNASSIGN_COST = 0							-- cost to unassign/replace pride of the fleet
+	NDefines.NNavy.PRIDE_OF_THE_FLEET_LOST_TEMP_MODIFIER_DURATION = 180	
+	NDefines.NNavy.MAX_SUBMARINES_PER_AUTO_TASK_FORCE = 15 -- 30
 	NDefines.NNavy.BEST_CAPITALS_TO_CARRIER_RATIO = 4 -- 1
 	NDefines.NNavy.BEST_CAPITALS_TO_SCREENS_RATIO = 0.5 -- 0.25
 	NDefines.NNavy.DETECTION_CHANCE_BALANCE = 1.5 -- 2.5
@@ -466,7 +480,7 @@
 	NDefines.NNavy.SHIP_TO_FLEET_ANTI_AIR_RATIO = 0.1 -- 0.2
 	NDefines.NNavy.ANTI_AIR_POW_ON_INCOMING_AIR_DAMAGE = 0.2 -- 0.2
 	NDefines.NNavy.ANTI_AIR_MULT_ON_INCOMING_AIR_DAMAGE = 0.25 -- 0.15
-	NDefines.NNavy.MAX_ANTI_AIR_REDUCTION_EFFECT_ON_INCOMING_AIR_DAMAGE = 0.99 -- 0.75
+	NDefines.NNavy.MAX_ANTI_AIR_REDUCTION_EFFECT_ON_INCOMING_AIR_DAMAGE = 0.75 -- 0.75
 	NDefines.NNavy.ENEMY_AIR_SUPERIORITY_IMPACT = -1.25
 
 	NDefines.NNavy.MISSION_FUEL_COSTS = {
@@ -642,6 +656,7 @@
 	NDefines.NAI.DIPLOMACY_IMPROVE_RELATION_COST_FACTOR = 10.0 -- 5
 	NDefines.NAI.DIPLOMACY_ACCEPT_VOLUNTEERS_BASE = 75 -- 50
 	NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_BASE = 75 -- 50
+	NDefines.NDiplomacy.DIPLOMACY_REQUEST_EXPIRY_DAYS = 30
 	NDefines.NAI.RESEARCH_DAYS_BETWEEN_WEIGHT_UPDATE = 40 -- 7
 	NDefines.NAI.RESEARCH_NEW_WEIGHT_FACTOR = 0.5 -- 0.3
 	NDefines.NAI.MAX_AHEAD_RESEARCH_PENALTY = 4 -- 2 --Buffing to double so it penalizes more
@@ -716,6 +731,7 @@
 	NDefines.NAI.NAVAL_TRANSFER_AIR_IMPORTANCE = 1.0				-- 0
 	NDefines.NAI.NAVAL_STRIKE_PLANES_PER_SHIP = 30 					--20 reduced by 50% to reduce the AI spamming planes over naval battles
 	NDefines.NAI.FOCUS_TREE_CONTINUE_FACTOR = 1		-- Factor for score of how likely the AI is to keep going down a focus tree rather than starting a new path.
+	NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 30
 
 	NDefines.NAI.NAVY_PREFERED_MAX_SIZE = 999						-- 20 #Now AI like big fleet
 	NDefines.NAI.MAX_DISTANCE_NALAV_INVASION = 400.0				-- 200.0
