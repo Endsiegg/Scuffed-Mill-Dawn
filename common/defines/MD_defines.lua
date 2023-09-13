@@ -6,8 +6,6 @@
 	NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 1000
 	NDefines.NGame.LAG_DAYS_FOR_PAUSE = 1000
 	NDefines.NGame.MAX_SCRIPTED_LOC_RECURSION = 40
-	NDefines.NGame.GAME_SPEED_SECONDS = { 100.0, 0.25, 0.1, 0.05, 0.0 }
-	NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 12
 
 	-- NDiplomacy Defines
 	NDefines.NDiplomacy.MIN_WARGOAL_JUSTIFY_COST = 7.0		-- It always takes atleast 10 days to justify a wargoal
@@ -21,7 +19,7 @@
 	NDefines.NDiplomacy.BASE_PEACE_FORCE_GOVERNMENT_COST = 20
 	NDefines.NDiplomacy.BASE_IMPROVE_RELATION_SAME_IDEOLOGY_GROUP_MAINTAIN_COST = 0.25
 	NDefines.NDiplomacy.BASE_IMPROVE_RELATION_DIFFERENT_IDEOLOGY_GROUP_MAINTAIN_COST = 0.5
-	NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST = 10
+	NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST = 5
 	NDefines.NDiplomacy.BASE_SEND_ATTACHE_CP_COST = 40.0
 	NDefines.NDiplomacy.BASE_BOOST_PARTY_POPULARITY_DAILY_PP = 1
 	NDefines.NDiplomacy.BASE_BOOST_PARTY_POPULARITY_DAILY_DRIFT = 0.1
@@ -87,10 +85,8 @@
 	NDefines.NDiplomacy.BASE_PEACE_TAKE_UNCONTROLLED_STATE_FACTOR = 10.0		-- (10.0 in vanilla) Base factor for taking state you do not control
 	NDefines.NDiplomacy.BASE_PEACE_TAKE_FACTION_CONTROLLED_STATE_FACTOR = 0.5	-- (0.5 in vanilla) Base factor for taking state you do not control, but someone in faction does
 	NDefines.NDiplomacy.BASE_PEACE_FORCE_GOVERNMENT_COST = 100 					-- (100 in vanilla) Base cost for forcing a country to change government.
-	NDefines.NDiplomacy.PEACE_SCORE_PER_PASS = 500.0
 
 	-- In peace conference, cost is factored based on how many times the state has been contested and for how long it has been uncontested (for everyone else)
-	
 	NDefines.NDiplomacy.PEACE_COST_FACTOR_CONTESTED_MAX = 10										-- (15 in vanilla) To prevent overflows due to the exponential increase, cap the contested factor to this
 	NDefines.NDiplomacy.PEACE_COST_FACTOR_UNCONTESTED_MAX = 10										-- (15 in vanilla) To prevent overflows due to the exponential increase, cap the uncontested factor to this
 	NDefines.NDiplomacy.PEACE_COST_FACTOR_CONTESTED_BID = 1.20										-- (1.20 in vanilla) Cost factor for each contested bid on the state.
@@ -143,7 +139,7 @@
 
 
 	-- NCountry Releated Defines
-	NDefines.NCountry.BASE_RESEARCH_SLOTS = 3 -- Maintains Vanilla's 2 RS default. RSs are handled via the dynamic system
+	NDefines.NCountry.BASE_RESEARCH_SLOTS = 2 -- Maintains Vanilla's 2 RS default. RSs are handled via the dynamic system
 	NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0.01 --0.01
 	NDefines.NCountry.RESISTANCE_STRENGTH_FROM_VP = 0.001
 	NDefines.NCountry.RESISTANCE_STRENGTH_FROM_UNIT = 0.002
@@ -205,8 +201,8 @@
 
 	NDefines.NTechnology.MAX_SUBTECHS = 5
 	NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 2.0
-	NDefines.NTechnology.BASE_TECH_COST = 100 -- 100 is vanilla --300 was the old MD cost
-	NDefines.NTechnology.MIN_RESEARCH_SPEED = 0.1 -- 0.10 in vanilla
+	NDefines.NTechnology.BASE_TECH_COST = 150 -- 100 is vanilla --300 was the old MD cost
+	NDefines.NTechnology.MIN_RESEARCH_SPEED = 0.10 -- 0.10 in vanilla
 	NDefines.NTechnology.MAX_TECH_SHARING_BONUS = 0.25 -- Nerfed to 0.25 from Tech Sharing
 	NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 50.0		-- Base amount of research points a country can save per slot.
 
@@ -219,13 +215,13 @@
 	NDefines.NBuildings.BASE_FACTORY_REPAIR = 0.25
 	NDefines.NBuildings.MAX_SHARED_SLOTS = 56
 	NDefines.NBuildings.OWNER_CHANGE_EXTRA_SHARED_SLOTS_FACTOR = 0.5
-	NDefines.NBuildings.INFRASTRUCTURE_RESOURCE_BONUS = 0.05	--upped from 0.02, vanilla 0.2
+	NDefines.NBuildings.INFRASTRUCTURE_RESOURCE_BONUS = 0.2	--upped from 0.02, vanilla 0.2
 	NDefines.NBuildings.ANTI_AIR_SUPERIORITY_MULT = 2.0 -- was 4.0 --Fucked with this to see
 
 	NDefines.NMilitary.MAX_DIVISION_BRIGADE_WIDTH = 5 -- 5
-	NDefines.NMilitary.HOURLY_ORG_MOVEMENT_IMPACT = -0.1 -- -0.2
-	NDefines.NMilitary.ZERO_ORG_MOVEMENT_MODIFIER = -0.2 -- -0.8
-	NDefines.NMilitary.INFRASTRUCTURE_MOVEMENT_SPEED_IMPACT = -0.02 -- -0.05
+	NDefines.NMilitary.HOURLY_ORG_MOVEMENT_IMPACT = -0.2 -- -0.2
+	NDefines.NMilitary.ZERO_ORG_MOVEMENT_MODIFIER = -0.8 -- -0.8
+	NDefines.NMilitary.INFRASTRUCTURE_MOVEMENT_SPEED_IMPACT = -0.05 -- -0.05
 
 	NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 50 -- Vanilla 24
 	NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 50 --24
@@ -324,10 +320,10 @@
 	NDefines.NMilitary.UNIT_EXPERIENCE_PER_TRAINING_DAY = 0.0035 -- 0.0015
 	NDefines.NMilitary.TRAINING_EXPERIENCE_SCALE = 92.0 -- 62.0
 	NDefines.NMilitary.UNIT_EXP_LEVELS = { 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9 }
-	NDefines.NMilitary.ARMY_EXP_BASE_LEVEL = 5
-	NDefines.NMilitary.TRAINING_MAX_LEVEL = 10
-	NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 5
-	NDefines.NMilitary.FIELD_EXPERIENCE_SCALE = 0.0015 -- 0.0015
+	NDefines.NMilitary.ARMY_EXP_BASE_LEVEL = 3
+	NDefines.NMilitary.TRAINING_MAX_LEVEL = 5
+	NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 2
+	NDefines.NMilitary.FIELD_EXPERIENCE_SCALE = 0.001 -- 0.0015
 	NDefines.NMilitary.FIELD_EXPERIENCE_MAX_PER_DAY = 2 -- 1.2
 	NDefines.NMilitary.LEADER_EXPERIENCE_SCALE = 1.25 -- 1.0
 	NDefines.NMilitary.BASE_LEADER_TRAIT_GAIN_XP = 0.55 -- 0.45
@@ -439,10 +435,8 @@
 	NDefines.NAir.MIN_PLANE_COUNT_PARADROP = 20 -- 50 is vanilla
 
 
-	NDefines.NNavy.SUPPLY_NEED_FACTOR = 0	
-	NDefines.NNavy.PRIDE_OF_THE_FLEET_UNASSIGN_COST = 0							-- cost to unassign/replace pride of the fleet
-	NDefines.NNavy.PRIDE_OF_THE_FLEET_LOST_TEMP_MODIFIER_DURATION = 180	
-	NDefines.NNavy.MAX_SUBMARINES_PER_AUTO_TASK_FORCE = 15 -- 30
+
+	NDefines.NNavy.MAX_SUBMARINES_PER_AUTO_TASK_FORCE = 4 -- 30
 	NDefines.NNavy.BEST_CAPITALS_TO_CARRIER_RATIO = 4 -- 1
 	NDefines.NNavy.BEST_CAPITALS_TO_SCREENS_RATIO = 0.5 -- 0.25
 	NDefines.NNavy.DETECTION_CHANCE_BALANCE = 1.5 -- 2.5
@@ -656,7 +650,6 @@
 	NDefines.NAI.DIPLOMACY_IMPROVE_RELATION_COST_FACTOR = 10.0 -- 5
 	NDefines.NAI.DIPLOMACY_ACCEPT_VOLUNTEERS_BASE = 75 -- 50
 	NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_BASE = 75 -- 50
-	NDefines.NDiplomacy.DIPLOMACY_REQUEST_EXPIRY_DAYS = 30
 	NDefines.NAI.RESEARCH_DAYS_BETWEEN_WEIGHT_UPDATE = 40 -- 7
 	NDefines.NAI.RESEARCH_NEW_WEIGHT_FACTOR = 0.5 -- 0.3
 	NDefines.NAI.MAX_AHEAD_RESEARCH_PENALTY = 4 -- 2 --Buffing to double so it penalizes more
