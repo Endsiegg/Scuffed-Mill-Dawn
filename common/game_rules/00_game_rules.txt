@@ -56,26 +56,26 @@ rule_enable_ai_debt_war = {
 		desc = "RULE_DISABLE_AI_DEBT_WAR_DESC"
 	}
 }
-#
 
-# PEACE DEAL RULES
-allow_auto_annex = {
-	name = "RULE_ALLOW_AUTO_ANNEX"
+rule_disable_AI_using_freedom_cont_focus = {
+	name = "RULE_ENABLE_AI_FIGHTING_AUTONOMY_FOCUS"
 	group = "MD_RULES"
-	icon = "GFX_release_nations"
+	icon = "GFX_production_licenses"
 
 	default = {
 		name = yes
-		text = "RULE_OPTION_ALLOWED"
-		desc = "RULE_ALLOW_ANNEX_DESC"
+		text = "RULE_ENABLE_FIGHTING_AUTONOMY_FOCUS"
+		desc = "RULE_ENABLE_FIGHTING_AUTONOMY_FOCUS_DESC"
 	}
-	
 	option = {
 		name = no
-		text = "RULE_OPTION_BLOCKED"
-		desc = "RULE_BLOCKED_ANNEX_DESC"
+		text = "RULE_DISABLE_FIGHTING_AUTONOMY_FOCUS"
+		desc = "RULE_DISABLE_FIGHTING_AUTONOMY_FOCUS_DESC"
 	}
 }
+#
+
+# PEACE DEAL RULES
 allow_chaotic_PC = {
 	name = "RULE_ALLOW_CHAOTIC_PEACE_CONFERENCE"
 	group = "MD_PEACE_DEALS"
@@ -152,6 +152,21 @@ LIC_HRE_Alaska = {
 		name = no
 		text = "RULE_OPTION_NO"
 		desc = "RULE_LIC_HRE_Alaska_BLOCKED_DESC"
+	}
+}
+SOO_Scythia = {
+	name = "RULE_SOO_Scythia"
+	group = "MD_FOCUS_TREE_RULES"
+	icon = "GFX_kick_from_faction"
+	option = {
+		name = yes
+		text = "RULE_OPTION_YES"
+		desc = "RULE_SOO_Scythia_ALLOWED_DESC"
+	}
+	default = {
+		name = no
+		text = "RULE_OPTION_NO"
+		desc = "RULE_SOO_Scythia_BLOCKED_DESC"
 	}
 }
 #
@@ -464,6 +479,92 @@ historic_nine_eleven = {
 		name = yes
 		text = "RULE_OPTION_YES"
 		desc = "RULE_HISTORIC_NINE_ELEVEN_YES"
+	}
+}
+
+rule_player_energy_difficulty = {
+	name = "RULE_ENERGY_DIFFICULTY_PLAYER"
+	group = "MD_RULES"
+	icon = "GFX_production_licenses"
+	option = {
+		name = very_easy
+		text = "RULE_OPTION_VERY_EASY"
+		desc = "RULE_ENERGY_DIFFICULTY_VERY_EASY_DESC"
+	}
+	option = {
+		name = easy
+		text = "RULE_OPTION_EASY"
+		desc = "RULE_ENERGY_DIFFICULTY_EASY_DESC"
+	}
+	default = {
+		name = normal
+		text = "RULE_OPTION_NORMAL"
+		desc = "RULE_ENERGY_DIFFICULTY_NORMAL_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = hard
+		text = "RULE_OPTION_HARD"
+		desc = "RULE_ENERGY_DIFFICULTY_HARD_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = very_hard
+		text = "RULE_OPTION_VERY_HARD"
+		desc = "RULE_ENERGY_DIFFICULTY_VERY_HARD_DESC"
+		allow_achievements = yes
+	}
+}
+
+rule_AI_energy_difficulty = {
+	name = "RULE_ENERGY_DIFFICULTY_AI"
+	group = "MD_RULES"
+	icon = "GFX_production_licenses"
+	option = {
+		name = very_easy
+		text = "RULE_OPTION_VERY_EASY"
+		desc = "RULE_ENERGY_DIFFICULTY_VERY_EASY_DESC"
+	}
+	option = {
+		name = easy
+		text = "RULE_OPTION_EASY"
+		desc = "RULE_ENERGY_DIFFICULTY_EASY_DESC"
+	}
+	default = {
+		name = normal
+		text = "RULE_OPTION_NORMAL"
+		desc = "RULE_ENERGY_DIFFICULTY_NORMAL_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = hard
+		text = "RULE_OPTION_HARD"
+		desc = "RULE_ENERGY_DIFFICULTY_HARD_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = very_hard
+		text = "RULE_OPTION_VERY_HARD"
+		desc = "RULE_ENERGY_DIFFICULTY_VERY_HARD_DESC"
+		allow_achievements = yes
+	}
+}
+
+allow_enable_help_gui = {
+	name = "RULE_ALLOW_HELP_GUI"
+	group = "MD_RULES"
+	icon = "GFX_production_licenses"
+	option = {
+		name = yes
+		text = "RULE_OPTION_YES"
+		desc = "RULE_ALLOW_HELP_GUI_YES"
+		allow_achievements = yes
+	}
+	default = {
+		name = no
+		text = "RULE_OPTION_NO"
+		desc = "RULE_ALLOW_HELP_GUI_NO"
+		allow_achievements = yes
 	}
 }
 #
@@ -973,6 +1074,31 @@ USA_ai_behavior = {
 	}
 }
 
+FIJ_ai_behavior = {
+	name = "FIJ_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	option = {
+		name = EARLY_COUP_ESCALATION
+		text = "RULE_OPTION_EARLY_COUP_ESCALATION"
+		desc = "RULE_OPTION_EARLY_COUP_ESCALATION_AI_DESC"
+	}
+	option = {
+		name = BREAKING_HISTORY
+		text = "RULE_OPTION_BREAKING_HISTORY"
+		desc = "RULE_OPTION_BREAKING_HISTORY_AI_DESC"
+	}
+	option = {
+		name = RANDOM
+		text = "RULE_OPTION_RANDOM"
+		desc = "RULE_OPTION_RANDOM_DESC"
+	}
+}
+
 RUS_ai_behavior = {
 	name = "RUS_AI_BEHAVIOR"
 	group = "RULE_GROUP_AI_BEHAVIOR"
@@ -1002,9 +1128,117 @@ RUS_ai_behavior = {
 		desc = "RULE_OPTION_RISE_OF_RUSSIA_AI_DESC"
 	}
 	option = {
+		name = NAZBOL_RUSSIA
+		text = "RULE_OPTION_NAZBOL_RUSSIA"
+		desc = "RULE_OPTION_NAZBOL_RUSSIA_AI_DESC"
+	}
+	option = {
+		name = IRON_DIMON_RUSSIA
+		text = "RULE_OPTION_IRON_DIMON_RUSSIA"
+		desc = "RULE_OPTION_IRON_DIMON_RUSSIA_AI_DESC"
+	}
+	option = {
+		name = LIBERAL_DIMON_RUSSIA
+		text = "RULE_OPTION_LIBERAL_DIMON_RUSSIA"
+		desc = "RULE_OPTION_LIBERAL_DIMON_RUSSIA_AI_DESC"
+	}
+	option = {
+		name = OLIGARCHS_RUSSIA
+		text = "RULE_OPTION_OLIGARCHS_RUSSIA"
+		desc = "RULE_OPTION_OLIGARCHS_RUSSIA_AI_DESC"
+	}
+	option = {
+		name = CONFEDERATION_RUSSIA
+		text = "RULE_OPTION_CONFEDERATION_RUSSIA"
+		desc = "RULE_OPTION_CONFEDERATION_RUSSIA_AI_DESC"
+	}
+	option = {
 		name = RANDOM
 		text = "RULE_OPTION_RANDOM"
 		desc = "RULE_OPTION_RANDOM_DESC"
+	}
+}
+RUS_AI_PUTIN_BEHAVIOR = {
+	name = "RUS_AI_PUTIN_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = RULE_SUPPORT_ARMY
+		text = "RULE_SUPPORT_ARMY"
+		desc = "RULE_SUPPORT_ARMY_DESC"
+	}
+	option = {
+		name = RULE_SUPPORT_WAGNER
+		text = "RULE_SUPPORT_WAGNER"
+		desc = "RULE_SUPPORT_WAGNER_DESC"
+	}
+	option = {
+		name = RULE_SUPPORT_SAHEL
+		text = "RULE_SUPPORT_SAHEL"
+		desc = "RULE_SUPPORT_SAHEL_DESC"
+	}
+	option = {
+		name = RULE_SUPPORT_TURKEY
+		text = "RULE_SUPPORT_TURKEY"
+		desc = "RULE_SUPPORT_TURKEY_DESC"
+	}
+	option = {
+		name = RULE_SUPPORT_ARMENIA
+		text = "RULE_SUPPORT_ARMENIA"
+		desc = "RULE_SUPPORT_ARMENIA_DESC"
+	}
+	option = {
+		name = RULE_SUPPORT_SSG
+		text = "RULE_SUPPORT_SSG"
+		desc = "RULE_SUPPORT_SSG_DESC"
+	}
+	option = {
+		name = RULE_SUPPORT_USSR
+		text = "RULE_SUPPORT_USSR"
+		desc = "RULE_SUPPORT_USSR_DESC"
+	}
+}
+ARM_ai_behavior = {
+	name = "ARM_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	option = {
+		name = KOCHARYAN
+		text = "RULE_OPTION_KOCHARYAN"
+		desc = "RULE_OPTION_KOCHARYAN_AI_DESC"
+	}
+	option = {
+		name = TSARUKYAN
+		text = "RULE_OPTION_TSARUKYAN"
+		desc = "RULE_OPTION_TSARUKYAN_AI_DESC"
+	}
+	option = {
+		name = NATIONALISTS
+		text = "RULE_OPTION_NATIONALISTS"
+		desc = "RULE_OPTION_NATIONALISTS_AI_DESC"
+	}
+	option = {
+		name = DEMOCRATS
+		text = "RULE_OPTION_DEMOCRATS"
+		desc = "RULE_OPTION_DEMOCRATS_AI_DESC"
+	}
+	option = {
+		name = DEM_NATS
+		text = "RULE_OPTION_DEM_NATS"
+		desc = "RULE_OPTION_DEM_NATS_AI_DESC"
+	}
+	option = {
+		name = COMMIES
+		text = "RULE_OPTION_COMMIES"
+		desc = "RULE_OPTION_COMMIES_AI_DESC"
+	}
+	option = {
+		name = NEUTRALS
+		text = "RULE_OPTION_NEUTRALS"
+		desc = "RULE_OPTION_NEUTRALS_AI_DESC"
 	}
 }
 PRC_ai_behavior = {
@@ -1623,6 +1857,11 @@ PER_ai_behavior = {
 		desc = "PER_FIRE_HAS_NO_FRIENDS_IRAN_DESC"
 	}
 	option = {
+		name = PER_NO_REVOULT_IRAN
+		text = "PER_NO_REVOULT_IRAN"
+		desc = "PER_NO_REVOULT_IRAN_DESC"
+	}
+	option = {
 		name = RANDOM
 		text = "RULE_OPTION_RANDOM"
 		desc = "RULE_OPTION_RANDOM_DESC"
@@ -1757,10 +1996,10 @@ GEO_2013_behavior = {
 BLR_ai_behavior = {
 	name = "BLR_ai_behavior"
 	group = "RULE_GROUP_AI_BEHAVIOR"
-	default = {
-		name = BLR_DEFAULT
-		text = "RULE_OPTION_DEFAULT"
-		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+		default = {
+		name = BLR_POST_LUKA_DEFAULT
+		text = "BLR_POST_LUKA_DEFAULT"
+		desc = "BLR_POST_LUKA_DEFAULT_DESC"
 	}
 	option = {
 		name = BLR_NATIONALIST
@@ -1773,23 +2012,19 @@ BLR_ai_behavior = {
 		desc = "BLR_COMMUNISM_DESC"
 	}
 	option = {
-		name = RANDOM
-		text = "RULE_OPTION_RANDOM"
-		desc = "RULE_OPTION_RANDOM_DESC"
-	}
-}
-BLR_post_luka_ai_behavior = {
-	name = "BLR_post_luka_ai_behavior"
-	group = "RULE_GROUP_AI_BEHAVIOR"
-	default = {
-		name = BLR_POST_LUKA_DEFAULT
-		text = "BLR_POST_LUKA_DEFAULT"
-		desc = "BLR_POST_LUKA_DEFAULT_DESC"
+		name = BLR_RUS_NATIONALIST
+		text = "BLR_RUS_NATIONALIST"
+		desc = "BLR_RUS_NATIONALIST_DESC"
 	}
 	option = {
-		name = BLR_WESTERN_LUKA_LOL
-		text = "BLR_WESTERN_LUKA_LOL"
-		desc = "BLR_WESTERN_LUKA_LOL_DESC"
+		name = BLR_DEMOCRATIC
+		text = "BLR_DEMOCRATIC"
+		desc = "BLR_DEMOCRATIC_DESC"
+	}
+	option = {
+		name = BLR_NEUTRALITY
+		text = "BLR_NEUTRALITY"
+		desc = "BLR_NEUTRALITY_DESC"
 	}
 	option = {
 		name = BLR_MOMMY
@@ -1814,6 +2049,25 @@ BLR_union_state_ai_behavior = {
 		name = BLR_WILL_FOLLOW_UNION_STATE
 		text = "BLR_WILL_FOLLOW_UNION_STATE"
 		desc = "BLR_WILL_FOLLOW_UNION_STATE_DESC"
+	}
+	option = {
+		name = RANDOM
+		text = "RULE_OPTION_RANDOM"
+		desc = "RULE_OPTION_RANDOM_DESC"
+	}
+}
+BLR_arms_police_behavior = {
+	name = "BLR_arms_police_behavior"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = BLR_POLICE_PRIORITY
+		text = "BLR_POLICE_PRIORITY"
+		desc = "BLR_POLICE_PRIORITY_DESC"
+	}
+	option = {
+		name = BLR_ARMY_PRIORITY
+		text = "BLR_ARMY_PRIORITY"
+		desc = "BLR_ARMY_PRIORITY_DESC"
 	}
 	option = {
 		name = RANDOM

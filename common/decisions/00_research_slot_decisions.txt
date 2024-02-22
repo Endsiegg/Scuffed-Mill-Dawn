@@ -3,7 +3,7 @@ research_slots_decisions = {
 		icon = generic_research
 		fire_only_once = no
 		days_remove = 90
-		days_re_enable = 150 # lets have some balancing checks, should re-enable 5 months after complete
+		days_re_enable = 150 # Let's have some balancing checks, should re-enable 5 months after complete
 
 		visible = {
 			check_variable = { next_slot_from_gdp < 9 }
@@ -12,7 +12,7 @@ research_slots_decisions = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = gdp_gain_slot.tt
-				check_variable = { gdp_total_display > GLOBAL.gdp_slot^next_slot_from_gdp }
+				check_variable = { gdp_total > GLOBAL.gdp_slot^next_slot_from_gdp }
 			}
 		}
 
@@ -29,10 +29,10 @@ research_slots_decisions = {
 		icon = generic_research
 		fire_only_once = no
 		days_remove = 90
-		days_re_enable = 150 # lets have some balancing checks, should re-enable 5 months after complete
+		days_re_enable = 150 # Let's have some balancing checks, should re-enable 5 months after complete
 
 		visible = {
-			check_variable = { next_slot_from_gdp_c < 5 }
+			check_variable = { next_slot_from_gdp_c < 6 }
 		}
 
 		available = {
@@ -60,12 +60,12 @@ research_slots_decisions = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = gdp_lose_slot.tt
-				check_variable = { gdp_total_display > GLOBAL.gdp_slot^research_slots_from_gdp }
+				check_variable = { gdp_total > GLOBAL.gdp_slot^research_slots_from_gdp }
 			}
 		}
 
 		activation = {
-			check_variable = { gdp_total_display < GLOBAL.gdp_slot^research_slots_from_gdp }
+			check_variable = { gdp_total < GLOBAL.gdp_slot^research_slots_from_gdp }
 		}
 
 		is_good = no
@@ -85,9 +85,7 @@ research_slots_decisions = {
 		days_remove = 1
 		#days_re_enable = 1
 
-		visible = {
-			always = yes
-		}
+		visible = { always = yes }
 
 		available = {
 			custom_trigger_tooltip = {

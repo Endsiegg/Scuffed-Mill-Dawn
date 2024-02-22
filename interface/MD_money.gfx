@@ -74,8 +74,20 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_protests_button"
+		texturefile = "gfx/interface/scripted_gui/expected_spending/chart.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+
+	spriteType = {
 		name = "GFX_economy_button_main"
 		texturefile = "gfx/interface/scripted_gui/economy/economy_button_main.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+
+	spriteType = {
+		name = "GFX_market_prices"
+		texturefile = "gfx/interface/scripted_gui/economy/im_market_prices.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 
