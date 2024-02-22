@@ -11,6 +11,13 @@ equipments = {
 
 		interface_category = interface_category_land
 
+		upgrades = {
+			Inf_eq_gadjets
+			Inf_eq_mortars
+			Inf_eq_heavy_weapons
+			Inf_eq_cutting_corners
+		}
+
 		#Misc Abilities
 		reliability = 0.9
 		maximum_speed = 4
@@ -48,7 +55,7 @@ equipments = {
 
 		#Offensive Abilities
 		soft_attack = 2
-		hard_attack = 1
+		hard_attack = 0.5
 		ap_attack = 0
 		air_attack = 0
 
@@ -80,13 +87,13 @@ equipments = {
 		reliability = 0.85
 
 		#Offensive Abilities
-		soft_attack = 4 #+1
-		hard_attack = 2
+		soft_attack = 4.25 #+1
+		hard_attack = 0.75
 		ap_attack = 0
 		air_attack = 0
 		#Defensive Abilities
 		defense = 4
-		breakthrough = 2
+		breakthrough = 1.75
 		hardness = 0
 		armor_value = 0
 
@@ -111,13 +118,13 @@ equipments = {
 		reliability = 0.875
 
 		#Offensive Abilities
-		soft_attack = 6 #+1
-		hard_attack = 3
+		soft_attack = 6.5 #+1
+		hard_attack = 1
 		ap_attack = 0
 		air_attack = 0
 		#Defensive Abilities
-		defense = 6
-		breakthrough = 3
+		defense = 6.25
+		breakthrough = 2.5
 		hardness = 0
 		armor_value = 0
 
@@ -142,13 +149,13 @@ equipments = {
 		reliability = 0.9
 
 		#Offensive Abilities
-		soft_attack = 8 #+1
-		hard_attack = 4
+		soft_attack = 8.75 #+1
+		hard_attack = 1.25
 		ap_attack = 0
 		air_attack = 0
 		#Defensive Abilities
-		defense = 8
-		breakthrough = 4
+		defense = 8.5
+		breakthrough = 3.25
 		hardness = 0
 		armor_value = 0
 
@@ -170,13 +177,13 @@ equipments = {
 		reliability = 0.9
 
 		#Offensive Abilities
-		soft_attack = 10 #+1
-		hard_attack = 5
+		soft_attack = 11 #+1
+		hard_attack = 1.5
 		ap_attack = 0
 		air_attack = 0
 		#Defensive Abilities
-		defense = 10
-		breakthrough = 5
+		defense = 10.75
+		breakthrough = 4
 		hardness = 0
 		armor_value = 0
 
@@ -198,13 +205,13 @@ equipments = {
 		reliability = 0.925
 
 		#Offensive Abilities
-		soft_attack = 12 #+1
-		hard_attack = 6
+		soft_attack = 13.25 #+1
+		hard_attack = 1.75
 		ap_attack = 0
 		air_attack = 0
 		#Defensive Abilities
-		defense = 12
-		breakthrough = 6
+		defense = 13
+		breakthrough = 4.75
 		hardness = 0
 		armor_value = 0
 
@@ -226,13 +233,13 @@ equipments = {
 		reliability = 0.925
 
 		#Offensive Abilities
-		soft_attack = 14 #+1
-		hard_attack = 7
+		soft_attack = 15.5 #+1
+		hard_attack = 2
 		ap_attack = 0
 		air_attack = 0
 		#Defensive Abilities
-		defense = 14
-		breakthrough = 7
+		defense = 15.25
+		breakthrough = 5.5
 		hardness = 0
 		armor_value = 0
 
@@ -254,56 +261,17 @@ equipments = {
 		reliability = 0.925
 
 		#Offensive Abilities
-		soft_attack = 16 #+1
-		hard_attack = 8
+		soft_attack = 17.75 #+1
+		hard_attack = 2.25
 		ap_attack = 0
 		air_attack = 0
 		#Defensive Abilities
-		defense = 16
-		breakthrough = 8
+		defense = 17.5
+		breakthrough = 6.25
 		hardness = 0
 		armor_value = 0
 
 		build_cost_ic = 1.11
-		resources = {
-			steel = 1
-		}
-	}
-	##Engineering Equipment
-	Engi_equipment = {
-		is_archetype = yes
-		is_buildable = no
-		type = infantry
-		group_by = archetype
-
-		priority = 2
-
-		interface_category = interface_category_land
-
-		reliability = 0.8
-
-		#Space taken in convoy
-		lend_lease_cost = 1
-
-		build_cost_ic = 5.72
-		resources = {
-			steel = 1
-		}
-	}
-	#1965
-	Engi_equipment_0 = {
-		archetype = Engi_equipment
-
-		#priority = 5
-		visual_level = 0
-		is_buildable = no
-		reliability = 0.8
-		maximum_speed = 17
-
-		#Space taken in convoy
-		lend_lease_cost = 1
-
-		build_cost_ic = 5.72
 		resources = {
 			steel = 1
 		}

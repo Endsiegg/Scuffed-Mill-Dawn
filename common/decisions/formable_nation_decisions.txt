@@ -74,6 +74,8 @@ form_UAR_category = {
 					owns_state = 391
 					owns_state = 392
 					owns_state = 579
+					owns_state = 1100
+					owns_state = 1101
 				}
 			}
 		}
@@ -89,6 +91,8 @@ form_UAR_category = {
 			add_state_core = 391
 			add_state_core = 392
 			add_state_core = 579
+			add_state_core = 1100
+			add_state_core = 1101
 			annex_country = {
 				target = LBA
 				transfer_troops = yes
@@ -347,6 +351,7 @@ form_UAR_category = {
 					owns_state = 215
 					owns_state = 213
 					owns_state = 217
+					owns_state = 1102
 				}
 			}
 		}
@@ -361,6 +366,7 @@ form_UAR_category = {
 			add_state_core = 215
 			add_state_core = 213
 			add_state_core = 217
+			add_state_core = 1102
 			annex_country = {
 				target = EGY
 				transfer_troops = yes
@@ -799,6 +805,7 @@ form_UAR_category = {
 					owns_state = 178
 					owns_state = 932
 					owns_state = 933
+					owns_state = 1081
 				}
 			}
 		}
@@ -812,6 +819,7 @@ form_UAR_category = {
 			add_state_core = 178
 			add_state_core = 932
 			add_state_core = 933
+			add_state_core = 1081
 			annex_country = {
 				target = SAU
 				transfer_troops = yes
@@ -861,6 +869,7 @@ form_UAR_category = {
 					owns_state = 183
 					owns_state = 425
 					owns_state = 486
+					owns_state = 1082
 				}
 			}
 		}
@@ -870,6 +879,7 @@ form_UAR_category = {
 			add_state_core = 183
 			add_state_core = 425
 			add_state_core = 486
+			add_state_core = 1082
 			annex_country = {
 				target = OMA
 				transfer_troops = yes
@@ -1141,6 +1151,10 @@ form_UAR_category = {
 					owns_state = 200
 					owns_state = 951
 					owns_state = 952
+					owns_state = 1077
+					owns_state = 1103
+					owns_state = 1104
+					owns_state = 1105
 				}
 			}
 		}
@@ -1155,6 +1169,10 @@ form_UAR_category = {
 			add_state_core = 200
 			add_state_core = 951
 			add_state_core = 952
+			add_state_core = 1077
+			add_state_core = 1103
+			add_state_core = 1104
+			add_state_core = 1105
 			annex_country = {
 				target = YEM
 				transfer_troops = yes
@@ -2700,7 +2718,7 @@ form_GCL_category = {
 			}
 			set_country_flag = integrated_@ROOT
 			custom_effect_tooltip = GCL_start_integrate_tt
-			custom_effect_tooltip = general_integrate_tt
+			custom_effect_tooltip = is_GCL
 		}
 	}
 	### Integrate ###
@@ -3226,25 +3244,39 @@ form_SCA_category = {
 		visible = {
 			has_country_flag = is_SCA
 			NOT = { has_country_flag = integrated_FIN }
-			OR = {
-				FIN = {
-					is_subject_of = ROOT
-					has_war = no
-				}
-				AND = {
-					owns_state = 100
-					owns_state = 101
-					owns_state = 102
-					owns_state = 103
-					owns_state = 104
+		}
+		available = {
+			FIN = {
+				OR = {
+					AND = {
+						is_subject_of = ROOT
+						has_war = no
+					}
+					all_core_state = {
+						is_owned_and_controlled_by = ROOT
+					}
 				}
 			}
-			AND = {
-				check_variable = {
-					core_compliance@FIN > 50
+			if = {
+				limit = {
+					NOT = {
+						any_subject_country = {
+							FIN = {
+								all_core_state = {
+									is_owned_and_controlled_by = PREV.PREV
+								}
+							}
+						}
+					}
 				}
-				check_variable = {
-					core_resistance@FIN < 30
+				custom_trigger_tooltip = {
+					tooltip = general_integrate_tt
+					check_variable = {
+						core_compliance@FIN > 50
+					}
+					check_variable = {
+						core_resistance@FIN < 30
+					}
 				}
 			}
 		}
@@ -3399,6 +3431,9 @@ form_IBR_category = {
 					owns_state = 971
 					owns_state = 89
 					owns_state = 90
+					owns_state = 1040
+					owns_state = 1041
+					owns_state = 1042
 				}
 			}
 		}
@@ -3415,6 +3450,9 @@ form_IBR_category = {
 			add_state_core = 971
 			add_state_core = 89
 			add_state_core = 90
+			add_state_core = 1040
+			add_state_core = 1041
+			add_state_core = 1042
 			if = {
 				limit = { owns_state = 86 }
 				add_state_core = 86
@@ -6190,29 +6228,7 @@ form_UTS_category = {
 					}
 				}
 			}
-			TAJ = {
-				OR = {
-					AND = {
-						is_subject_of = ROOT
-						has_war = no
-					}
-					all_core_state = {
-						is_owned_and_controlled_by = ROOT
-					}
-				}
-			}
 			KYR = {
-				OR = {
-					AND = {
-						is_subject_of = ROOT
-						has_war = no
-					}
-					all_core_state = {
-						is_owned_and_controlled_by = ROOT
-					}
-				}
-			}
-			TUR = {
 				OR = {
 					AND = {
 						is_subject_of = ROOT
@@ -6427,69 +6443,6 @@ form_UTS_category = {
 			clr_country_flag = dynamic_flag
 			clr_country_flag = dynamic_rebel_flag
 			set_country_flag = integrated_TRK
-		}
-	}
-	#TAJ
-	UTS_integrate_TAJ = {
-		icon = GFX_decision_generic_form_nation
-		cost = 200
-		days_remove = 365
-		ai_will_do = { factor = 10 }
-		allowed = { NOT = { tag = TAJ } }
-		visible = {
-			has_country_flag = is_UTS
-			NOT = { has_country_flag = integrated_TAJ }
-		}
-		available = {
-			TAJ = {
-				OR = {
-					AND = {
-						is_subject_of = ROOT
-						has_war = no
-					}
-					all_core_state = {
-						is_owned_and_controlled_by = ROOT
-					}
-				}
-			}
-			if = {
-				limit = {
-					NOT = {
-						any_subject_country = {
-							TAJ = {
-								all_core_state = {
-									is_owned_and_controlled_by = PREV.PREV
-								}
-							}
-						}
-					}
-				}
-				custom_trigger_tooltip = {
-					tooltip = general_integrate_tt
-					check_variable = {
-						core_compliance@TAJ > 50
-					}
-					check_variable = {
-						core_resistance@TAJ < 30
-					}
-				}
-			}
-		}
-		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision UTS_integrate_TAJ"
-			add_state_core = 722
-			add_state_core = 723
-			add_state_core = 724
-			if = {
-				limit = { country_exists = TAJ }
-				annex_country = {
-					target = TAJ
-					transfer_troops = yes
-				}
-			}
-			clr_country_flag = dynamic_flag
-			clr_country_flag = dynamic_rebel_flag
-			set_country_flag = integrated_TAJ
 		}
 	}
 	#KYR
@@ -6864,6 +6817,8 @@ form_MAPHI_category = {
 			add_state_core = 639
 			add_state_core = 734
 			add_state_core = 936
+			add_state_core = 1113
+			add_state_core = 1114
 			if = {
 				limit = { country_exists = IND }
 				annex_country = {
@@ -7556,398 +7511,6 @@ form_INDOCHI_category = {
 					}
 				}
 				set_cosmetic_tag = INDOCHI_AUTH_SS
-			}
-		}
-	}
-}
-
-form_VISE_category = {
-	### Integrate (VISE) ###
-	# Start integrate
-	VISE_integrate_start = {
-		icon = GFX_decision_generic_form_nation
-		ai_will_do = { factor = 10 }
-		visible = {
-			NOT = { has_country_flag = is_VISE }
-		}
-		available = {
-			POL = {
-				OR = {
-					AND = {
-						is_subject_of = ROOT
-						has_war = no
-					}
-					all_core_state = {
-						is_owned_and_controlled_by = ROOT
-					}
-				}
-			}
-			CZE = {
-				OR = {
-					AND = {
-						is_subject_of = ROOT
-						has_war = no
-					}
-					all_core_state = {
-						is_owned_and_controlled_by = ROOT
-					}
-				}
-			}
-			OR = {
-				SLO = {
-					is_subject_of = ROOT
-					has_war = no
-				}
-				AND = {
-					owns_state = 119
-					owns_state = 120
-				}
-			}
-			HUN = {
-				OR = {
-					AND = {
-						is_subject_of = ROOT
-						has_war = no
-					}
-					all_core_state = {
-						is_owned_and_controlled_by = ROOT
-					}
-				}
-			}
-		}
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision VISE_integrate_start"
-			if = {
-				limit = { NOT = { has_country_flag = is_VISE } }
-				set_country_flag = is_VISE
-				set_global_flag = VISE_exists
-				clr_country_flag = dynamic_flag
-				clr_country_flag = dynamic_rebel_flag
-			}
-			set_country_flag = integrated_@ROOT
-			custom_effect_tooltip = VISE_start_integrate_tt
-			custom_effect_tooltip = general_integrate_tt
-		}
-	}
-	#POL
-	VISE_integrate_POL = {
-		icon = GFX_decision_generic_form_nation
-		cost = 600
-		days_remove = 365
-		ai_will_do = { factor = 10 }
-		allowed = { NOT = { tag = POL } }
-		visible = {
-			has_country_flag = is_VISE
-			NOT = { has_country_flag = integrated_POL }
-		}
-		available = {
-			POL = {
-				OR = {
-					AND = {
-						is_subject_of = ROOT
-						has_war = no
-					}
-					all_core_state = {
-						is_owned_and_controlled_by = ROOT
-					}
-				}
-			}
-			if = {
-				limit = {
-					NOT = {
-						any_subject_country = {
-							POL = {
-								all_core_state = {
-									is_owned_and_controlled_by = PREV.PREV
-								}
-							}
-						}
-					}
-				}
-				custom_trigger_tooltip = {
-					tooltip = general_integrate_tt
-					check_variable = {
-						core_compliance@POL > 50
-					}
-					check_variable = {
-						core_resistance@POL < 30
-					}
-				}
-			}
-		}
-		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision VISE_integrate_POL"
-			every_state = {
-				limit = { is_poland_state = yes }
-				add_core_of = ROOT
-			}
-			if = {
-				limit = { country_exists = POL }
-				annex_country = {
-					target = POL
-					transfer_troops = yes
-				}
-			}
-			clr_country_flag = dynamic_flag
-			clr_country_flag = dynamic_rebel_flag
-			set_country_flag = integrated_POL
-		}
-	}
-	#CZE
-	VISE_integrate_CZE = {
-		icon = GFX_decision_generic_form_nation
-		cost = 350
-		days_remove = 365
-		ai_will_do = { factor = 10 }
-		allowed = { NOT = { tag = CZE } }
-		visible = {
-			has_country_flag = is_VISE
-			NOT = { has_country_flag = integrated_CZE }
-		}
-		available = {
-			CZE = {
-				OR = {
-					AND = {
-						is_subject_of = ROOT
-						has_war = no
-					}
-					all_core_state = {
-						is_owned_and_controlled_by = ROOT
-					}
-				}
-			}
-			if = {
-				limit = {
-					NOT = {
-						any_subject_country = {
-							CZE = {
-								all_core_state = {
-									is_owned_and_controlled_by = PREV.PREV
-								}
-							}
-						}
-					}
-				}
-				custom_trigger_tooltip = {
-					tooltip = general_integrate_tt
-					check_variable = {
-						core_compliance@CZE > 50
-					}
-					check_variable = {
-						core_resistance@CZE < 30
-					}
-				}
-			}
-		}
-		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision VISE_integrate_CZE"
-			add_state_core = 117
-			add_state_core = 118
-			add_state_core = 1017
-			add_state_core = 1018
-			if = {
-				limit = {
-					country_exists = CZE
-					CZE = {
-						is_subject_of = ROOT
-						has_war = no
-					}
-				}
-				annex_country = {
-					target = CZE
-					transfer_troops = yes
-				}
-			}
-			clr_country_flag = dynamic_flag
-			clr_country_flag = dynamic_rebel_flag
-			set_country_flag = integrated_CZE
-		}
-	}
-	#SLO
-	VISE_integrate_SLO = {
-		icon = GFX_decision_generic_form_nation
-		cost = 250
-		days_remove = 365
-		ai_will_do = { factor = 10 }
-		allowed = { NOT = { tag = SLO } }
-		visible = {
-			has_country_flag = is_VISE
-			NOT = { has_country_flag = integrated_SLO }
-		}
-		available = {
-			OR = {
-				SLO = {
-					is_subject_of = ROOT
-					has_war = no
-				}
-				AND = {
-					owns_state = 119
-					owns_state = 120
-				}
-			}
-			if = {
-				limit = {
-					NOT = {
-						any_subject_country = {
-							SLO = {
-								all_core_state = {
-									is_owned_and_controlled_by = PREV.PREV
-								}
-							}
-						}
-					}
-				}
-				custom_trigger_tooltip = {
-					tooltip = general_integrate_tt
-					check_variable = {
-						core_compliance@SLO > 50
-					}
-					check_variable = {
-						core_resistance@SLO < 30
-					}
-				}
-			}
-		}
-		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision VISE_integrate_SLO"
-			add_state_core = 119
-			add_state_core = 120
-			if = {
-				limit = { country_exists = SLO }
-				annex_country = {
-					target = SLO
-					transfer_troops = yes
-				}
-			}
-			clr_country_flag = dynamic_flag
-			clr_country_flag = dynamic_rebel_flag
-			set_country_flag = integrated_SLO
-		}
-	}
-	#HUN
-	VISE_integrate_HUN = {
-		icon = GFX_decision_generic_form_nation
-		cost = 250
-		days_remove = 365
-		ai_will_do = { factor = 10 }
-		allowed = { NOT = { tag = HUN } }
-		visible = {
-			has_country_flag = is_VISE
-			NOT = { has_country_flag = integrated_HUN }
-		}
-		available = {
-			HUN = {
-				OR = {
-					AND = {
-						is_subject_of = ROOT
-						has_war = no
-					}
-					all_core_state = {
-						is_owned_and_controlled_by = ROOT
-					}
-				}
-			}
-			if = {
-				limit = {
-					NOT = {
-						any_subject_country = {
-							HUN = {
-								all_core_state = {
-									is_owned_and_controlled_by = PREV.PREV
-								}
-							}
-						}
-					}
-				}
-				custom_trigger_tooltip = {
-					tooltip = general_integrate_tt
-					check_variable = {
-						core_compliance@HUN > 50
-					}
-					check_variable = {
-						core_resistance@HUN < 30
-					}
-				}
-			}
-		}
-		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision VISE_integrate_HUN"
-			add_state_core = 111
-			add_state_core = 122
-			add_state_core = 123
-			add_state_core = 999
-			if = {
-				limit = { country_exists = HUN }
-				annex_country = {
-					target = HUN
-					transfer_troops = yes
-				}
-			}
-			clr_country_flag = dynamic_flag
-			clr_country_flag = dynamic_rebel_flag
-			set_country_flag = integrated_HUN
-		}
-	}
-	### Cosmetic ###
-	VISE_update_flag = {
-		icon = GFX_decision_generic_form_nation
-		cost = 0
-		ai_will_do = { factor = 1 }
-		visible = {
-			has_country_flag = is_VISE
-			has_country_flag = integrated_POL
-			has_country_flag = integrated_CZE
-			has_country_flag = integrated_SLO
-			has_country_flag = integrated_HUN
-			NOT = {
-				AND = {
-					has_global_flag = european_federation
-					has_idea = EU_member
-				}
-				has_cosmetic_tag = VISE
-			}
-		}
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision VISE_update_flag"
-			#VISE
-			if = {
-				limit = {
-					OR = {
-						is_in_array = { array = ruling_party  value = 0 }
-						is_in_array = { array = ruling_party  value = 1 }
-						is_in_array = { array = ruling_party  value = 2 }
-						is_in_array = { array = ruling_party  value = 3 }
-						is_in_array = { array = ruling_party  value = 6 }
-						is_in_array = { array = ruling_party  value = 7 }
-						is_in_array = { array = ruling_party  value = 8 }
-						is_in_array = { array = ruling_party  value = 9 }
-						is_in_array = { array = ruling_party  value = 10 }
-						is_in_array = { array = ruling_party  value = 11 }
-						is_in_array = { array = ruling_party  value = 12 }
-						is_in_array = { array = ruling_party  value = 13 }
-						is_in_array = { array = ruling_party  value = 14 }
-						is_in_array = { array = ruling_party  value = 15 }
-						is_in_array = { array = ruling_party  value = 16 }
-						is_in_array = { array = ruling_party  value = 17 }
-						is_in_array = { array = ruling_party  value = 18 }
-						is_in_array = { array = ruling_party  value = 19 }
-						is_in_array = { array = ruling_party  value = 20 }
-						is_in_array = { array = ruling_party  value = 21 }
-						is_in_array = { array = ruling_party  value = 22 }
-						is_in_array = { array = ruling_party  value = 23 }
-					}
-				}
- 				set_cosmetic_tag = VISE
-			}
-			#VISE1
-			else_if = {
-				limit = {
-					OR = {
-						is_in_array = { array = ruling_party  value = 4 }
-						is_in_array = { array = ruling_party  value = 5 }
-					}
-				}
-				set_cosmetic_tag = VISE1
 			}
 		}
 	}
@@ -9595,11 +9158,18 @@ form_NORDEM_category = {
 					has_war = no
 				}
 				AND = {
-					owns_state = 100
-					owns_state = 101
-					owns_state = 102
-					owns_state = 103
-					owns_state = 104
+					owns_state = 9
+					owns_state = 10
+					owns_state = 11
+					owns_state = 12
+					owns_state = 13
+					owns_state = 14
+					owns_state = 15
+					owns_state = 16
+					owns_state = 17
+					owns_state = 437
+					owns_state = 955
+					owns_state = 973
 				}
 			}
 		}
@@ -10293,6 +9863,8 @@ form_MAGHREB_category = {
 							owns_state = 918
 							owns_state = 919
 							owns_state = 920
+							owns_state = 1100
+							owns_state = 1101
 						}
 					}
 				}
@@ -11657,12 +11229,10 @@ form_AUSHUN_category = {
 					POL = {
 						is_subject_of = ROOT
 						has_war = no
-						owns_state = 112
-						owns_state = 628
+						owns_state = 1098
 					}
 					AND = {
-						owns_state = 112
-						owns_state = 628
+						owns_state = 1098
 					}
 				}
 				OR = {
@@ -12294,29 +11864,22 @@ form_AUSHUN_category = {
 				POL = {
 					is_subject_of = ROOT
 					has_war = no
-					owns_state = 112
-					owns_state = 628
+					owns_state = 1098
 				}
 				AND = {
-					owns_state = 112
-					owns_state = 628
+					owns_state = 1098
 				}
 			}
 			if = {
 				limit = {
 					NOT = {
 						any_subject_country = {
-							owns_state = 112
-							owns_state = 628
+							owns_state = 1098
 						}
 					}
 				}
 				AND = {
-					112 = {
-						compliance > 50
-						resistance < 30
-					}
-					628 = {
+					1098 = {
 						compliance > 50
 						resistance < 30
 					}
@@ -12325,20 +11888,17 @@ form_AUSHUN_category = {
 		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision AUSHUN_integrate_AUSPOL"
-			add_state_core = 112
-			add_state_core = 628
+			add_state_core = 1098
 			if = {
 				limit = {
 					POL = {
 						is_subject_of = ROOT
 						has_war = no
-						owns_state = 112
-						owns_state = 628
+						owns_state = 1098
 					}
 				}
 				ROOT = {
-					transfer_state = 112
-					transfer_state = 628
+					transfer_state = 1098
 				}
 			}
 			clr_country_flag = dynamic_flag

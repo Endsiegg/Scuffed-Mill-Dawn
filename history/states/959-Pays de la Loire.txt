@@ -4,6 +4,7 @@ state = {
 
 	resources = {
 		steel = 20
+		oil = 8
 	}
 	history = {
 		owner = FRA
@@ -20,12 +21,13 @@ state = {
 			infrastructure = 3
 			internet_station = 2
 			offices = 2
-			arms_factory = 1
 			dockyard = 1
 			air_base = 2
 			industrial_complex = 1
 
 		}
+		add_dynamic_modifier = { modifier = renewable_capacity_factor_dyn_mod }
+		set_variable = { state_renewable_capacity_factor_modifier_var = 0.22 }
 		add_core_of = FRA
 		2017.1.1 = {
 			add_manpower = 507000

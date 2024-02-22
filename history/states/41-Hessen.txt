@@ -1,7 +1,7 @@
 state = {
 	id = 41
 	name = "STATE_41"
-	manpower = 7117088
+	manpower = 6882642
 	state_category = state_07
 
 	resources = {
@@ -10,9 +10,6 @@ state = {
 	}
 	history = {
 		owner = GER
-		victory_points = {
-			6444 3
-		}
 		victory_points = {
 			6488 10
 		}
@@ -23,8 +20,8 @@ state = {
 			infrastructure = 3
 			internet_station = 2
 			arms_factory = 1
-			industrial_complex = 3
-			offices = 5
+			industrial_complex = 2
+			offices = 4
 			synthetic_refinery = 2
 			nuclear_reactor = 1
 		}
@@ -40,6 +37,6 @@ state = {
 	}
 
 	provinces = {
-		564 3397 3524 3574 6488 6549 9486 9524 11445 11533 529 6444
+		564 3397 3524 3574 6488 6549 9486 9524 11445 11533 
 	}
 }

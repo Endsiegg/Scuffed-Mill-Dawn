@@ -1,13 +1,1839 @@
 modify_wagner_support = {
 	add_to_variable = { wagner = modify_wagner }
-
 	custom_effect_tooltip = SOV_wagner_tt
-
 	clamp_variable = {
 		var = wagner
 		min = 0
 		max = 8000
 	}
-
-	
 }
+modify_natlegion_support = {
+	add_to_variable = { natlegion = modify_natlegion }
+	custom_effect_tooltip = SOV_natlegion_tt
+	clamp_variable = {
+		var = natlegion
+		min = 0
+		max = 30000
+	}
+}
+modify_wagnerarmy_support = {
+	add_to_variable = { wagnerarmy = modify_wagnerarmy }
+	custom_effect_tooltip = SOV_wagnerarmy_tt
+	clamp_variable = {
+		var = wagnerarmy
+		min = 0
+		max = 150
+	}
+}
+modify_wagnerbund_support = {
+	add_to_variable = { wagnerbund = modify_wagnerbund }
+	custom_effect_tooltip = SOV_wagnerbunt_tt
+	clamp_variable = {
+		var = wagnerbund
+		min = 0
+		max = 30
+	}
+}
+modify_moa_support = {
+	add_to_variable = { moa = modify_moa }
+	custom_effect_tooltip = SOV_moa_tt
+	clamp_variable = {
+		var = moa
+		min = 0
+		max = 8000
+	}
+}
+
+modify_geoza_support = {
+	add_to_variable = { geoza = modify_geoza }
+	custom_effect_tooltip = SOV_geoza_tt
+	clamp_variable = {
+		var = geoza
+		min = 0
+		max = 25
+	}
+}
+modify_geoprotiv_support = {
+	add_to_variable = { geoprotiv = modify_geoprotiv }
+	custom_effect_tooltip = SOV_geoprotiv_tt
+	clamp_variable = {
+		var = geoprotiv
+		min = 0
+		max = 25
+	}
+}
+
+modify_nkraze_support = {
+	add_to_variable = { nkraze = modify_nkraze }
+	custom_effect_tooltip = SOV_nkraze_tt
+	clamp_variable = {
+		var = nkraze
+		min = 0
+		max = 25
+	}
+}
+modify_nkrarm_support = {
+	add_to_variable = { nkrarm = modify_nkrarm }
+	custom_effect_tooltip = SOV_nkrarm_tt
+	clamp_variable = {
+		var = nkrarm
+		min = 0
+		max = 25
+	}
+}
+
+modify_zaukr_support = {
+	add_to_variable = { zaukr = modify_zaukr }
+	custom_effect_tooltip = SOV_zaukr_tt
+	clamp_variable = {
+		var = zaukr
+		min = 0
+		max = 25
+	}
+}
+modify_neukr_support = {
+	add_to_variable = { neukr = modify_neukr }
+	custom_effect_tooltip = SOV_neukr_tt
+	clamp_variable = {
+		var = neukr
+		min = 0
+		max = 25
+	}
+}
+modify_warsawexer_support = {
+	add_to_variable = { warsawexer  = modify_warsawexer }
+	custom_effect_tooltip = SOV_warsawexer_tt
+	clamp_variable = {
+		var = warsawexer
+		min = 0
+		max = 600
+	}
+}
+russian_referendum_federation = {
+	if = {
+		limit = { 
+			NOT = {
+				BSH = {
+					is_subject_of = SOV
+				}
+			country_exists = BSH
+			}
+		}
+		hidden_effect = {
+			BSH = {
+				transfer_state = 664 
+				country_event = { id = sov_other.32 }
+			}
+		}
+	}
+	if = {
+		limit = { 
+			NOT = {
+				BRY = {
+					is_subject_of = SOV
+				}
+			country_exists = BRY
+			}
+		}
+		hidden_effect = {
+			BRY = {
+				transfer_state = 686
+				transfer_state = 1070
+				country_event = { id = sov_other.32 }
+			}
+		}
+	}
+	if = {
+		limit = { 
+			NOT = {
+				CHE = {
+					is_subject_of = SOV
+				}
+			country_exists = CHE
+			}
+		}
+		hidden_effect = {
+			CHE = {
+				transfer_state = 672
+				country_event = { id = sov_other.32 }
+			}
+		}
+	}
+	if = {
+		limit = { 
+			NOT = {
+				KLM = {
+					is_subject_of = SOV
+				}
+			country_exists = KLM
+			}
+		}
+		hidden_effect = {
+			KLM = {
+				transfer_state = 1107
+				country_event = { id = sov_other.32 }
+			}
+		}
+	}
+	if = {
+		limit = { 
+			NOT = {
+				DAG = {
+					is_subject_of = SOV
+				}
+			country_exists = DAG
+			}
+		}
+		hidden_effect = {
+			DAG = {
+				transfer_state = 671
+				country_event = { id = sov_other.32 }
+			}
+		}
+	}
+	if = {
+		limit = { 
+			NOT = {
+				TUV = {
+					is_subject_of = SOV
+				}
+			country_exists = TUV
+			}
+		}
+		hidden_effect = {
+			TUV = {
+				transfer_state = 1011 
+				country_event = { id = sov_other.32 }
+			}
+		}
+	}
+	if = {
+		limit = { 
+			NOT = {
+				YAK = {
+					is_subject_of = SOV
+				}
+			country_exists = YAK
+			}
+		}
+		hidden_effect = {
+			YAK = {
+				transfer_state = 688
+				country_event = { id = sov_other.32 }
+			}
+		}
+	}
+	if = {
+		limit = { 
+			NOT = {
+				KOM = {
+					is_subject_of = SOV
+				}
+			country_exists = KOM
+			}
+		}
+		hidden_effect = {
+			KOM = {
+				transfer_state = 648
+				country_event = { id = sov_other.32 }
+			}
+		}
+	}
+	if = {
+		limit = { 
+			NOT = {
+				ALT = {
+					is_subject_of = SOV
+				}
+			country_exists = ALT
+			}
+		}
+		hidden_effect = {
+			ALT = {
+				transfer_state = 1064
+				transfer_state = 684
+				country_event = { id = sov_other.32 }
+			}
+		}
+	}
+	if = {
+		limit = { 
+			NOT = {
+				KHS = {
+					is_subject_of = SOV
+				}
+			country_exists = KHS
+			}
+		}
+		hidden_effect = {
+			KHS = {
+				transfer_state = 1065
+				country_event = { id = sov_other.32 }
+			}
+		}
+	}
+	if = {
+		limit = { 
+			NOT = {
+				KAE = {
+					is_subject_of = SOV
+				}
+			country_exists = KAE
+			}
+		}
+		hidden_effect = {
+			KAE = {
+				transfer_state = 643
+				country_event = { id = sov_other.32 }
+			}
+		}
+	}
+	if = {
+		limit = { 
+			NOT = {
+				CKK = {
+					is_subject_of = SOV
+				}
+			country_exists = CKK
+			}
+		}
+		hidden_effect = {
+			CKK = {
+				transfer_state = 689
+				country_event = { id = sov_other.32 }
+			}
+		}
+	}
+	if = {
+		limit = { 
+			NOT = {
+				KHM = {
+					is_subject_of = SOV
+				}
+			country_exists = KHM
+			}
+		}
+		hidden_effect = {
+			KHM = {
+				transfer_state = 678
+				country_event = { id = sov_other.32 }
+			}
+		}
+	}
+	if = {
+		limit = { 
+			NOT = {
+				YAM = {
+					is_subject_of = SOV
+				}
+			country_exists = YAM
+			}
+		}
+		hidden_effect = {
+			YAM = {
+				transfer_state = 679
+				country_event = { id = sov_other.32 }
+			}
+		}
+	}
+	if = {
+		limit = { 
+			NOT = {
+				NEE = {
+					is_subject_of = SOV
+				}
+			country_exists = NEE
+			}
+		}
+		hidden_effect = {
+			NEE = {
+				transfer_state = 647
+				country_event = { id = sov_other.32 }
+			}
+		}
+	}
+	if = {
+		limit = { 
+			NOT = {
+				TAT = {
+					is_subject_of = SOV
+				}
+			country_exists = TAT
+			}
+		}
+		hidden_effect = {
+			TAT = {
+				transfer_state = 661
+				country_event = { id = sov_other.32 }
+			}
+		}
+	}
+	if = {
+		limit = { 
+			NOT = {
+				KBK = {
+					is_subject_of = SOV
+				}
+			country_exists = KBK
+			}
+		}
+		hidden_effect = {
+			KBK = {
+				transfer_state = 674
+				country_event = { id = sov_other.32 }
+			}
+		}
+	}
+}
+	
+russian_subject_attack = {
+		if = {
+			limit = { 
+				NOT = {
+					 BSH = {
+						 is_subject_of = SOV
+					}
+				}
+				country_exists = BSH
+			}
+			hidden_effect = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = BSH
+				}
+			}
+		}
+		if = {
+		limit = { 
+			NOT = {
+				CHE = {
+					is_subject_of = SOV
+				}
+			}
+			country_exists = CHE
+		}
+		hidden_effect = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = CHE
+			}
+		}
+	}
+	if = {
+			limit = { 
+				NOT = {
+					 BRY = {
+						 is_subject_of = SOV
+					}
+				}
+				country_exists = BRY
+			}
+			hidden_effect = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = BRY
+				}
+			 }
+		}
+		if = {
+			limit = { 
+				NOT = {
+					 KLM = {
+						 is_subject_of = SOV
+					}
+				}
+				country_exists = KLM
+			}
+			hidden_effect = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = KLM
+				}
+			 }
+		}
+		if = {
+			limit = { 
+				NOT = {
+					 DAG = {
+						 is_subject_of = SOV
+					}
+				}
+				country_exists = DAG
+			}
+			hidden_effect = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = DAG
+				}
+			 }
+		}
+		if = {
+			limit = { 
+				NOT = {
+					TUV = {
+					is_subject_of = SOV
+					}
+				}
+				country_exists = TUV
+			}
+			hidden_effect = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = TUV
+				}
+			 }
+		}
+		if = {
+			limit = { 
+				NOT = {
+					YAK = {
+					is_subject_of = SOV
+					}
+				}
+				country_exists = YAK
+			}
+			hidden_effect = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = YAK
+				}
+			 }
+		}
+		if = {
+			limit = { 
+				NOT = {
+					KOM = {
+					is_subject_of = SOV
+					}
+				}
+				country_exists = KOM
+			}
+			hidden_effect = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = KOM
+				}
+			 }
+		}
+		if = {
+			limit = { 
+				NOT = {
+					ALT = {
+					is_subject_of = SOV
+					}
+				}
+				country_exists = ALT
+			}
+			hidden_effect = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = ALT
+				}
+			}
+		}
+		if = {
+			limit = { 
+				NOT = {
+					KHS = {
+					is_subject_of = SOV
+					}
+				}
+				country_exists = KHS
+			}
+			hidden_effect = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = KHS
+				}
+			 }
+		}
+		if = {
+			limit = { 
+				NOT = {
+					KAE = {
+					is_subject_of = SOV
+					}
+				}
+				country_exists = KAE
+			}
+			hidden_effect = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = KAE
+				}
+			 }
+		}
+		if = {
+			limit = { 
+				NOT = {
+					CKK = {
+					is_subject_of = SOV
+					 }
+				}
+				country_exists = CKK
+			}
+			hidden_effect = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = CKK
+				}
+			 }
+		}
+		if = {
+			limit = { 
+				NOT = {
+					KHM = {
+					is_subject_of = SOV
+					}
+				}
+				country_exists = KHM
+			}
+			hidden_effect = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = KHM
+				}
+			 }
+		}
+		if = {
+			limit = { 
+				NOT = {
+					YAM = {
+					is_subject_of = SOV
+					}
+				}
+				country_exists = YAM
+			}
+			hidden_effect = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = YAM
+				}
+			 }
+		}
+		if = {
+			limit = { 
+				NOT = {
+					NEE = {
+					is_subject_of = SOV
+					}
+				}
+				country_exists = NEE
+			}
+			hidden_effect = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = NEE
+				}
+			 }
+		}
+		if = {
+			limit = { 
+				NOT = {
+					TAT = {
+					is_subject_of = SOV
+					}
+				}
+				country_exists = TAT
+			}
+			hidden_effect = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = TAT
+				}
+			 }
+		}
+		if = {
+			limit = { 
+				NOT = {
+					KBK = {
+					is_subject_of = SOV
+					}
+				}
+				country_exists = KBK
+			}
+			hidden_effect = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = KBK
+				}
+			 }
+		}
+	}
+russian_subject_annex = {
+	if = {
+		limit = { 
+			BLR = {
+				is_subject_of = SOV
+			}
+			country_exists = BLR
+		}
+		add_political_power = -100
+		set_temp_variable = { treasury_change = -4 }
+		modify_treasury_effect = yes
+		set_party_index_to_ruling_party = yes
+		set_temp_variable = { party_popularity_increase = -0.08 }
+		set_temp_variable = { temp_outlook_increase = -0.08}
+		add_relative_party_popularity = yes
+		annex_country = { target = BLR transfer_troops = yes }
+		BLR = { every_core_state = { add_core_of = SOV } }
+		hidden_effect = {
+			add_to_variable = { treasury = BLR.treasury }
+			add_to_variable = { debt = BLR.debt }
+			add_to_variable = { int_investments = BLR.int_investments }
+		}
+	}
+	if = {
+		limit = { 
+			UKR = {
+				is_subject_of = SOV
+			}
+			country_exists = UKR
+		}
+		add_political_power = -400
+		set_temp_variable = { treasury_change = -4 }
+		modify_treasury_effect = yes
+		set_party_index_to_ruling_party = yes
+		set_temp_variable = { party_popularity_increase = -0.15 }
+		set_temp_variable = { temp_outlook_increase = -0.15}
+		add_relative_party_popularity = yes
+		annex_country = { target = UKR transfer_troops = yes }
+		UKR = { every_core_state = { add_core_of = SOV } }
+		hidden_effect = {
+			add_to_variable = { treasury = UKR.treasury }
+			add_to_variable = { debt = UKR.debt }
+			add_to_variable = { int_investments = UKR.int_investments }
+		}
+	}
+	if = {
+		limit = { 
+			HPR = {
+				is_subject_of = SOV
+			}
+			country_exists = HPR
+		}
+		add_political_power = -100
+		set_temp_variable = { treasury_change = -4 }
+		modify_treasury_effect = yes
+		set_party_index_to_ruling_party = yes
+		set_temp_variable = { party_popularity_increase = -0.08 }
+		set_temp_variable = { temp_outlook_increase = -0.08}
+		add_relative_party_popularity = yes
+		annex_country = { target = HPR transfer_troops = yes }
+		HPR = { every_core_state = { add_core_of = SOV } }
+		hidden_effect = {
+			add_to_variable = { treasury = HPR.treasury }
+			add_to_variable = { debt = HPR.debt }
+			add_to_variable = { int_investments = HPR.int_investments }
+		}
+	}
+	if = {
+		limit = { 
+			OPR = {
+				is_subject_of = SOV
+			}
+			country_exists = OPR
+		}
+		add_political_power = -100
+		set_temp_variable = { treasury_change = -4 }
+		modify_treasury_effect = yes
+		set_party_index_to_ruling_party = yes
+		set_temp_variable = { party_popularity_increase = -0.08 }
+		set_temp_variable = { temp_outlook_increase = -0.08}
+		add_relative_party_popularity = yes
+		annex_country = { target = OPR transfer_troops = yes }
+		OPR = { every_core_state = { add_core_of = SOV } }
+		hidden_effect = {
+			add_to_variable = { treasury = OPR.treasury }
+			add_to_variable = { debt = OPR.debt }
+			add_to_variable = { int_investments = OPR.int_investments }
+		}
+	}
+	if = {
+		limit = { 
+			LAT = {
+				is_subject_of = SOV
+			}
+			country_exists = LAT
+		}
+		add_political_power = -100
+		set_temp_variable = { treasury_change = -4 }
+		modify_treasury_effect = yes
+		set_party_index_to_ruling_party = yes
+		set_temp_variable = { party_popularity_increase = -0.08 }
+		set_temp_variable = { temp_outlook_increase = -0.08}
+		add_relative_party_popularity = yes
+		annex_country = { target = LAT transfer_troops = yes }
+		LAT = { every_core_state = { add_core_of = SOV } }
+		hidden_effect = {
+			add_to_variable = { treasury = LAT.treasury }
+			add_to_variable = { debt = LAT.debt }
+			add_to_variable = { int_investments = LAT.int_investments }
+		}
+	}
+	if = {
+		limit = { 
+			LIT = {
+				is_subject_of = SOV
+			}
+			country_exists = LIT
+		}
+		add_political_power = -100
+		set_temp_variable = { treasury_change = -4 }
+		modify_treasury_effect = yes
+		set_party_index_to_ruling_party = yes
+		set_temp_variable = { party_popularity_increase = -0.08 }
+		set_temp_variable = { temp_outlook_increase = -0.08}
+		add_relative_party_popularity = yes
+		annex_country = { target = LIT transfer_troops = yes }
+		LIT = { every_core_state = { add_core_of = SOV } }
+		hidden_effect = {
+			add_to_variable = { treasury = LIT.treasury }
+			add_to_variable = { debt = LIT.debt }
+			add_to_variable = { int_investments = LIT.int_investments }
+		}
+	}
+	if = {
+		limit = { 
+			EST = {
+				is_subject_of = SOV
+			}
+			country_exists = EST
+		}
+		add_political_power = -100
+		set_temp_variable = { treasury_change = -4 }
+		modify_treasury_effect = yes
+		set_party_index_to_ruling_party = yes
+		set_temp_variable = { party_popularity_increase = -0.08 }
+		set_temp_variable = { temp_outlook_increase = -0.08}
+		add_relative_party_popularity = yes
+		annex_country = { target = EST transfer_troops = yes }
+		EST = { every_core_state = { add_core_of = SOV } }
+		hidden_effect = {
+			add_to_variable = { treasury = EST.treasury }
+			add_to_variable = { debt = EST.debt }
+			add_to_variable = { int_investments = EST.int_investments }
+		}
+	}
+	if = {
+		limit = { 
+			GEO = {
+				is_subject_of = SOV
+			}
+			country_exists = GEO
+		}
+		custom_effect_tooltip = SOV_georgia_governorate_TT
+		hidden_effect = {
+			GEO = {
+				add_ideas = SOV_idea_governorate
+				set_cosmetic_tag = GOV_GEO
+				clr_country_flag = dynamic_flag
+			}
+			GEO = { every_core_state = { add_core_of = SOV } }
+			SOV = { country_event = { id = russia_governorate.10 days = 27  } }
+		add_political_power = -100
+		set_temp_variable = { treasury_change = -4 }
+		modify_treasury_effect = yes
+		set_party_index_to_ruling_party = yes
+		set_temp_variable = { party_popularity_increase = -0.08 }
+		set_temp_variable = { temp_outlook_increase = -0.08}
+		add_relative_party_popularity = yes
+		annex_country = { target = GEO transfer_troops = yes }
+		GEO = { every_core_state = { add_core_of = SOV } }
+		hidden_effect = {
+			add_to_variable = { treasury = GEO.treasury }
+			add_to_variable = { debt = GEO.debt }
+			add_to_variable = { int_investments = GEO.int_investments }
+		}
+	}
+}
+}
+
+russian_subject_guarantee = {
+	if = {
+		limit = { 
+			NOT = {
+				BSH = {
+					is_subject_of = SOV
+				}
+			}
+			country_exists = BSH
+		}
+		hidden_effect = {
+			give_guarantee = BSH
+		}
+	}
+	if = {
+		limit = { 
+			NOT = {
+				CHE = {
+					is_subject_of = SOV
+				}
+			}
+			country_exists = CHE
+		}
+		hidden_effect = {
+			give_guarantee = CHE
+		}
+	}
+	if = {
+		limit = { 
+			NOT = {
+				BRY = {
+					is_subject_of = SOV
+				}
+			}
+			country_exists = BRY
+		}
+		hidden_effect = {
+			give_guarantee = BRY
+		}
+	}
+	if = {
+		limit = { 
+			NOT = {
+				KLM = {
+					is_subject_of = SOV
+				}
+			}
+			country_exists = KLM
+		}
+		hidden_effect = {
+			give_guarantee = KLM
+		}
+	}
+	if = {
+		limit = { 
+			NOT = {
+				DAG = {
+					is_subject_of = SOV
+				}
+			}
+			country_exists = DAG
+		}
+		hidden_effect = {
+			give_guarantee = DAG
+		}
+	}
+	if = {
+		limit = { 
+			NOT = {
+				TUV = {
+					is_subject_of = SOV
+				}
+			}
+			country_exists = TUV
+		}
+		hidden_effect = {
+			give_guarantee = TUV
+		}
+	}
+	if = {
+		limit = { 
+			NOT = {
+				YAK = {
+					is_subject_of = SOV
+				}
+			}
+			country_exists = YAK
+		}
+		hidden_effect = {
+			give_guarantee = YAK
+		}
+	}
+	if = {
+		limit = { 
+			NOT = {
+				KOM = {
+				is_subject_of = SOV
+			}
+			}
+			country_exists = KOM
+		}
+		hidden_effect = {
+			give_guarantee = KOM
+		}
+	}
+	if = {
+		limit = { 
+			NOT = {
+				ALT = {
+					is_subject_of = SOV
+				}
+			}
+			country_exists = ALT
+		}
+		hidden_effect = {
+			give_guarantee = ALT
+		}
+	}
+	if = {
+		limit = { 
+			NOT = {
+				KHS = {
+					is_subject_of = SOV
+				}
+			}
+			country_exists = KHS
+		}
+		hidden_effect = {
+			give_guarantee = KHS
+		}
+	}
+	if = {
+		limit = { 
+			NOT = {
+				KAE = {
+					is_subject_of = SOV
+				}
+			}
+			country_exists = KAE
+		}
+		hidden_effect = {
+			give_guarantee = KAE
+		}
+	}
+	if = {
+		limit = { 
+			NOT = {
+				CKK = {
+					is_subject_of = SOV
+				}
+			}
+			country_exists = CKK
+		}
+		hidden_effect = {
+			give_guarantee = CKK
+		}
+	}
+	if = {
+		limit = { 
+			NOT = {
+				KHM = {
+					is_subject_of = SOV
+				}
+			}
+			country_exists = KHM
+		}
+		hidden_effect = {
+			give_guarantee = KHM
+		}
+	}
+	if = {
+		limit = { 
+			NOT = {
+				YAM = {
+					is_subject_of = SOV
+				}
+			}
+			country_exists = YAM
+		}
+		hidden_effect = {
+			give_guarantee = YAM
+		}
+	}
+	if = {
+		limit = { 
+			NOT = {
+				NEE = {
+					is_subject_of = SOV
+				}
+			}
+			country_exists = NEE
+		}
+		hidden_effect = {
+			give_guarantee = NEE
+		}
+	}
+	if = {
+		limit = { 
+			NOT = {
+				TAT = {
+					is_subject_of = SOV
+				}
+			}
+			country_exists = TAT
+		}
+		hidden_effect = {
+			give_guarantee = TAT
+		}
+	}
+	if = {
+		limit = { 
+			NOT = {
+				KBK = {
+					is_subject_of = SOV
+				}
+			}
+			country_exists = KBK
+		}
+		hidden_effect = {
+			give_guarantee = KBK
+		}
+	}
+}
+russian_new_states = {
+	if = {
+		limit = { 
+			owns_state = 664
+		}
+		hidden_effect = {
+			BSH = {
+				remove_state_core = 664
+			}
+		}
+	}
+	if = {
+		limit = { 
+			owns_state = 672
+		}
+		hidden_effect = {
+			CHE = {
+				remove_state_core = 672
+			}
+		}
+	}
+	if = {
+		limit = { 
+			owns_state = 1107
+		}
+		hidden_effect = {
+			KLM = {
+				remove_state_core = 1107
+			}
+		}
+	}
+	if = {
+		limit = { 
+			owns_state = 671
+		}
+		hidden_effect = {
+			DAG = {
+				remove_state_core = 671
+			}
+		 }
+	}
+	if = {
+		limit = { 
+			owns_state = 1011
+		}
+		hidden_effect = {
+			TUV = {
+				remove_state_core = 1011
+			}
+		}
+	}
+	if = {
+		limit = { 
+			OR = {
+				owns_state = 686
+				owns_state = 1070
+			}
+			
+		}
+		hidden_effect = {
+			BRY = {
+				remove_state_core = 686
+				remove_state_core = 1070
+			}
+		}
+	}
+	if = {
+		limit = { 
+			owns_state = 688
+		}
+		hidden_effect = {
+			YAK = {
+				remove_state_core = 688
+			}
+		 }
+	}
+	if = {
+		limit = { 
+			owns_state = 648
+		}
+		hidden_effect = {
+			KOM = {
+				remove_state_core = 648
+			}
+		}
+	}
+	if = {
+		limit = { 
+			owns_state = 684
+			owns_state = 1064
+		}
+		hidden_effect = {
+			ALT = {
+				remove_state_core = 684
+				remove_state_core = 1064
+			}
+		}
+	}
+	if = {
+		limit = { 
+			owns_state = 1065
+		}
+		hidden_effect = {
+			KHS = {
+				remove_state_core = 1065
+			}
+		}
+	}
+	if = {
+		limit = { 
+			owns_state = 643
+		}
+		hidden_effect = {
+			KAE = {
+				remove_state_core = 643
+			}
+		}
+	}
+	if = {
+		limit = { 
+			owns_state = 689
+		}
+		hidden_effect = {
+			CKK = {
+				remove_state_core = 689
+			}
+		}
+	}
+	if = {
+		limit = { 
+			owns_state = 678
+		}
+		hidden_effect = {
+			KHM = {
+				remove_state_core = 678
+			}
+		}
+	}
+	if = {
+		limit = { 
+			owns_state = 679
+		}
+		hidden_effect = {
+			YAM = {
+				remove_state_core = 679
+			}
+		}
+	}
+	if = {
+		limit = { 
+			owns_state = 647
+		}
+		hidden_effect = {
+			NEE = {
+				remove_state_core = 647
+			}
+		}
+	}
+	if = {
+		limit = { 
+			owns_state = 661
+		}
+		hidden_effect = {
+			TAT = {
+				remove_state_core = 661
+			}
+		}
+	}
+	if = {
+		limit = { 
+			owns_state = 674
+		}
+		hidden_effect = {
+			KBK = {
+				remove_state_core = 674
+			}
+			KCC = {
+				remove_state_core = 674
+			}
+		}
+	}
+	if = {
+		limit = { 
+			owns_state = 673
+		}
+		hidden_effect = {
+			SOO = {
+				remove_state_core = 673
+			}
+			ING = {
+				remove_state_core = 673
+			}
+		}
+	}
+}
+russian_new_states1 = {
+	if = {
+		limit = { 
+			OR = {
+			owns_state = 673
+			owns_state = 674
+			}
+		}
+		hidden_effect = {
+			set_autonomy = {
+				target = GOR
+				autonomy_state = autonomy_republic_rf
+			}
+			GOR = {
+				transfer_state = 673
+				transfer_state = 674
+				add_state_core = 673
+				add_state_core = 674
+			}
+		}
+	}
+	if = {
+		limit = { 
+			OR = {
+			owns_state = 668
+			}
+		}
+		hidden_effect = {
+			set_autonomy = {
+				target = KUB
+				autonomy_state = autonomy_republic_rf
+			}
+			KUB = {
+				transfer_state = 668
+				add_state_core = 668
+			}
+		}
+	}
+	if = {
+		limit = { 
+			OR = {
+			owns_state = 676
+			}
+		}
+		hidden_effect = {
+			set_autonomy = {
+				target = URA
+				autonomy_state = autonomy_republic_rf
+			}
+			URA = {
+				transfer_state = 676
+				add_state_core = 676
+			}
+		}
+	}
+	if = {
+		limit = { 
+			OR = {
+			owns_state = 689
+			owns_state = 687
+			owns_state = 692
+			owns_state = 691
+			owns_state = 1069
+			owns_state = 1070
+			owns_state = 690
+			owns_state = 1068
+			}
+		}
+		hidden_effect = {
+			set_autonomy = {
+				target = FAR
+				autonomy_state = autonomy_republic_rf
+			}
+			FAR = {
+				transfer_state = 689
+				transfer_state = 687
+				transfer_state = 691
+				transfer_state = 692
+				transfer_state = 1069
+				transfer_state = 1070
+				transfer_state = 690
+				transfer_state = 1068
+				add_state_core = 689
+				add_state_core = 687
+				add_state_core = 691
+				add_state_core = 692
+				add_state_core = 1069
+				add_state_core = 1070
+				add_state_core = 690
+				add_state_core = 1068
+			}
+	}
+	}
+	if = {
+		limit = { 
+			OR = {
+				owns_state = 688
+				owns_state = 686
+				owns_state = 685
+				owns_state = 1011
+			}
+		}
+		hidden_effect = {
+			set_autonomy = {
+				target = SIB
+				autonomy_state = autonomy_republic_rf
+			}
+			SIB = {
+				transfer_state = 688
+				transfer_state = 686
+				transfer_state = 685
+				transfer_state = 1011
+				add_state_core = 688
+				add_state_core = 686
+				add_state_core = 685
+				add_state_core = 1011
+				
+			}
+		}
+	}
+}
+
+russian_influence_post_soviet = {
+	custom_effect_tooltip = SOV_postsovok_TT
+	hidden_effect = {
+		if = {
+			limit = {
+				country_exists = KAZ
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = SOV }
+			set_temp_variable = { influence_target = KAZ }
+			change_influence_percentage = yes
+		}
+		if = {
+			limit = {
+				country_exists = UZB
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = SOV }
+			set_temp_variable = { influence_target = UZB }
+			change_influence_percentage = yes
+		}
+		if = {
+			limit = {
+				country_exists = TAJ
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = SOV }
+			set_temp_variable = { influence_target = TAJ }
+			change_influence_percentage = yes
+		}
+		if = {
+			limit = {
+				country_exists = KYR
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = SOV }
+			set_temp_variable = { influence_target = KYR }
+			change_influence_percentage = yes
+		}
+		if = {
+			limit = {
+				country_exists = TRK
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = SOV }
+			set_temp_variable = { influence_target = TRK }
+			change_influence_percentage = yes
+		}
+		if = {
+			limit = {
+				country_exists = UKR
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = SOV }
+			set_temp_variable = { influence_target = UKR }
+			change_influence_percentage = yes
+		}
+		if = {
+			limit = {
+				country_exists = BLR
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = SOV }
+			set_temp_variable = { influence_target = BLR }
+			change_influence_percentage = yes
+		}
+		if = {
+			limit = {
+				country_exists = MLV
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = SOV }
+			set_temp_variable = { influence_target = MLV }
+			change_influence_percentage = yes
+		}
+		if = {
+			limit = {
+				country_exists = PMR
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = SOV }
+			set_temp_variable = { influence_target = PMR }
+			change_influence_percentage = yes
+		}
+		if = {
+			limit = {
+				country_exists = AZE
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = SOV }
+			set_temp_variable = { influence_target = AZE }
+			change_influence_percentage = yes
+		}
+		if = {
+			limit = {
+				country_exists = ARM
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = SOV }
+			set_temp_variable = { influence_target = ARM }
+			change_influence_percentage = yes
+		}
+		if = {
+			limit = {
+				country_exists = NKR
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = SOV }
+			set_temp_variable = { influence_target = NKR }
+			change_influence_percentage = yes
+		}
+		if = {
+			limit = {
+				country_exists = GEO
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = SOV }
+			set_temp_variable = { influence_target = GEO }
+			change_influence_percentage = yes
+		}
+		if = {
+			limit = {
+				country_exists = ABK
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = SOV }
+			set_temp_variable = { influence_target = ABK }
+			change_influence_percentage = yes
+		}
+		if = {
+			limit = {
+				country_exists = SOO
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = SOV }
+			set_temp_variable = { influence_target = SOO }
+			change_influence_percentage = yes
+		}
+		if = {
+			limit = {
+				country_exists = LAT
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = SOV }
+			set_temp_variable = { influence_target = LAT }
+			change_influence_percentage = yes
+		}
+		if = {
+			limit = {
+				country_exists = LIT
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = SOV }
+			set_temp_variable = { influence_target = LIT }
+			change_influence_percentage = yes
+		}
+		if = {
+			limit = {
+				country_exists = EST
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = SOV }
+			set_temp_variable = { influence_target = EST }
+			change_influence_percentage = yes
+		}
+	}
+}
+
+russian_influence_post_federation = {
+	custom_effect_tooltip = SOV_postfederation_TT
+	hidden_effect = {
+		if = {
+			limit = {
+				country_exists = BSH
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = SOV }
+			set_temp_variable = { influence_target = BSH }
+			change_influence_percentage = yes
+		}
+		if = {
+			limit = {
+				country_exists = BRY
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = SOV }
+			set_temp_variable = { influence_target = BRY }
+			change_influence_percentage = yes
+		}
+		if = {
+			limit = {
+				country_exists = CHE
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = SOV }
+			set_temp_variable = { influence_target = CHE }
+			change_influence_percentage = yes
+		}
+		if = {
+			limit = {
+				country_exists = KLM
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = SOV }
+			set_temp_variable = { influence_target = KLM }
+			change_influence_percentage = yes
+		}
+		if = {
+			limit = {
+				country_exists = DAG
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = SOV }
+			set_temp_variable = { influence_target = DAG }
+			change_influence_percentage = yes
+		}
+		if = {
+			limit = {
+				country_exists = TUV
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = SOV }
+			set_temp_variable = { influence_target = TUV }
+			change_influence_percentage = yes
+		}
+		if = {
+			limit = {
+				country_exists = YAK
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = SOV }
+			set_temp_variable = { influence_target = YAK }
+			change_influence_percentage = yes
+		}
+		if = {
+			limit = {
+				country_exists = KOM
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = SOV }
+			set_temp_variable = { influence_target = KOM }
+			change_influence_percentage = yes
+		}
+		if = {
+			limit = {
+				country_exists = ALT
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = SOV }
+			set_temp_variable = { influence_target = ALT }
+			change_influence_percentage = yes
+		}
+		if = {
+			limit = {
+				country_exists = KHS
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = SOV }
+			set_temp_variable = { influence_target = KHS }
+			change_influence_percentage = yes
+		}
+		if = {
+			limit = {
+				country_exists = KAE
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = SOV }
+			set_temp_variable = { influence_target = KAE }
+			change_influence_percentage = yes
+		}
+		if = {
+			limit = {
+				country_exists = CKK
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = SOV }
+			set_temp_variable = { influence_target = CKK }
+			change_influence_percentage = yes
+		}
+		if = {
+			limit = {
+				country_exists = KHM
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = SOV }
+			set_temp_variable = { influence_target = KHM }
+			change_influence_percentage = yes
+		}
+		if = {
+			limit = {
+				country_exists = YAM
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = SOV }
+			set_temp_variable = { influence_target = YAM }
+			change_influence_percentage = yes
+		}
+		if = {
+			limit = {
+				country_exists = NEE
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = SOV }
+			set_temp_variable = { influence_target = NEE }
+			change_influence_percentage = yes
+		}
+		if = {
+			limit = {
+				country_exists = TAT
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = SOV }
+			set_temp_variable = { influence_target = TAT }
+			change_influence_percentage = yes
+		}
+		if = {
+			limit = {
+				country_exists = KBK
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = SOV }
+			set_temp_variable = { influence_target = KBK }
+			change_influence_percentage = yes
+		}
+		if = {
+			limit = {
+				country_exists = CRM
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = SOV }
+			set_temp_variable = { influence_target = CRM }
+			change_influence_percentage = yes
+		}
+		if = {
+			limit = {
+				country_exists = ING
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = SOV }
+			set_temp_variable = { influence_target = ING }
+			change_influence_percentage = yes
+		}
+		if = {
+			limit = {
+				country_exists = ADY
+			}
+			set_temp_variable = { percent_change = 2 }
+			set_temp_variable = { tag_index = SOV }
+			set_temp_variable = { influence_target = ADY }
+			change_influence_percentage = yes
+		}
+	}
+}
+
+wagner_bunt_check = {
+	if = {
+		limit = {
+			NOT = { 
+				has_country_flag = SOV_wagner_rebeliion_flag
+				nationalist_military_junta_are_in_power = yes
+				has_country_leader = {
+					name = "Yevgeny Prigozhin"
+					ruling_only = yes
+				}
+			}
+			has_country_flag = SOV_wagner_parties
+			has_country_flag = SOV_second_formed
+			check_variable = { SOV.wagnerbund > 20 }
+		}
+		country_event = {
+			id = russia_wagner.20
+			days = 15
+		}
+	}
+}
+
+malorossiya_revoult = {
+	hidden_effect = {
+		if = {
+			limit = {
+				UKR = { owns_state = 1088 }
+			}
+			1088 = { add_core_of = MLR }
+			MLR = {
+				transfer_state = 1088
+			}
+			declare_war_on = {
+				target = UKR
+				type = annex_everything
+			}
+		}
+		if = {
+			limit = {
+				UKR = { owns_state = 697 }
+			}
+			697 = { add_core_of = MLR }
+			MLR = {
+				transfer_state = 697
+			}
+		}
+		MLR = {
+			inherit_technology = UKR
+			country_event = { id = russia.57 }
+		}
+		declare_war_on = {
+			target = UKR
+			type = annex_everything
+		}		
+		SOV = {
+			country_event = { id = russia.60 }
+			set_autonomy = {
+				target = MLR
+				autonomy_state = autonomy_proxy_state
+				end_wars = no
+				end_civil_wars = no
+			}
+			delete_unit_template_and_units = {
+				division_template = "Malorossiya Liberation Army"
+				disband = yes
+			}
+		}
+	}
+}
+
+
+
+#USE ONLY IN SOME PLACES
+russia_leave_every_faction = {
+	custom_effect_tooltip = russia_leave_every_faction_tt
+	hidden_effect = {
+		if = {
+			limit = { has_idea = CSTO_member }
+			dismantle_faction = yes
+			CSTO_leave = yes
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_idea = faction_fifth_international_member
+					has_idea = S0V_russian_sphere_idea
+				}
+			}
+			dismantle_faction = yes
+			remove_ideas = { faction_fifth_international_member S0V_russian_sphere_idea }
+		}
+	}
+}
+
