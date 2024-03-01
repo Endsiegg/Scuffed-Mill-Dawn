@@ -1,4 +1,4 @@
-﻿capital = 706
+﻿#capital = 706
 2000.1.1 = {
 	489 = {	add_dynamic_modifier = { modifier = NEP_guerrilla_conflict } }
 	485 = {	add_dynamic_modifier = { modifier = NEP_guerrilla_conflict } }

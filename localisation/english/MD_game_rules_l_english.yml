@@ -610,3 +610,12 @@
  RULE_OPTION_COMMIES_AI_DESC: "Opposition Coalition under communist leadership will overthrow the Kocharyan's Government."
  RULE_OPTION_NEUTRALS: "Neutral Isolationist Coalition Path"
  RULE_OPTION_NEUTRALS_AI_DESC: "Opposition Coalition under neutral isolationist leadership will overthrow the Kocharyan's Government."
+
+ RULE_OPTION_ANNEX_ENABLED:0 "Enabled"
+ RULE_ENABLED_ANNEX_DESC:0 "Auto Annex enabled. This will auto annex AI after war completion, navy will be taken"
+ RULE_OPTION_ANNEX_DISABLED:0 "Disabled"
+ RULE_DISABLED_ANNEX_DESC:0 "Auto Annex Disabled"
+ RULE_GROUP_AUTO_ANNEX:0 "Auto Annex"
+ RULE_GROUP_AUTO_ANNEX_DESC:0 "Auto Annex"
+ RULE_ALLOW_AUTO_ANNEX:0 "AI Auto Annex"
+ RULE_ALLOW_AUTO_ANNEX_DESC:0 "AI Auto Annex"
