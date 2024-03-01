@@ -1,0 +1,18 @@
+# PEACE DEAL RULES
+allow_auto_annex = {
+		name = "RULE_ALLOW_AUTO_ANNEX"
+		group = "RULE_GROUP_AUTO_ANNEX"
+		icon = "GFX_release_nations"
+
+		default = {
+			name = yes
+			text = "RULE_OPTION_ANNEX_ENABLED"
+			desc = "RULE_ENABLED_ANNEX_DESC"
+		}
+		
+		option = {
+			name = no
+			text = "RULE_OPTION_ANNEX_DISABLED"
+			desc = "RULE_DISABLED_ANNEX_DESC"
+		}
+}
