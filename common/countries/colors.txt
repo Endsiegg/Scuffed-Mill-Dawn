@@ -1,5 +1,17 @@
 #reload countrycolors
 
+TRI = {
+	color = rgb { 114 74 91 }
+	color_ui = rgb { 114 74 91 }
+}
+FEZ = {
+	color = rgb { 224 221 186 }
+	color_ui = rgb { 224 221 186 }
+}
+CYR = {
+	color = rgb { 0 169 246 }
+	color_ui = rgb { 0 169 246 }
+}
 BLC = {
 	color = rgb { 18  85  30 }
 	color_ui = rgb { 18  85  30 }
@@ -302,6 +314,10 @@ VEN = {
 }
 USA = {
 	color = rgb { 67  123  237 }
+	color_ui = rgb { 87 160 255 }
+}
+USB = {
+	color = rgb { 100 107 179 }
 	color_ui = rgb { 87 160 255 }
 }
 MON = {
@@ -935,8 +951,8 @@ TRI = {
 	color_ui = rgb { 81  29  83 }
 }
 CSA = {
-	color = rgb { 206  17  38 }
-	color_ui = rgb { 206  17  38 }
+	color = rgb { 155 17 17 }
+	color_ui = rgb { 155 17 17 }
 }
 CAT = {
 	color = rgb { 225 85 5 }
@@ -1032,8 +1048,8 @@ NAV = {
 	color_ui = rgb { 242 199 97 }
 }
 NEN = {
-	color = rgb { 180 20 80 }
-	color_ui = rgb { 180 20 80 }
+	color = rgb { 35 84 41 }
+	color_ui = rgb { 35 84 41 }
 }
 NYK = {
 	color = rgb { 32 38 129 }
@@ -1223,6 +1239,10 @@ BRY = {
 	color = rgb { 200 100 31 }
 	color_ui = rgb { 245 123 38 }
 }
+TIE = {
+	color = rgb { 160  196  40 }
+	color_ui = rgb { 160  196  40 }
+}
 KHA = {
 	color = rgb { 255 204 0 }
 	color_ui = rgb { 255 204 0 }
@@ -1346,4 +1366,40 @@ NAU = {
 TON = {
 	color = rgb { 152 130 191 }
 	color_ui = rgb { 211 113 116 }
+}
+ESB = {
+	color = rgb { 34 228 56 }
+	color_ui = rgb { 34 228 56 }
+}
+CSB = {
+	color = rgb { 5 80 220 }
+	color_ui = rgb { 5 80 220 }
+}
+DON = {
+	color = rgb { 222 160 40 }
+	color_ui = rgb { 222 160 40 }
+}
+CHU = {
+	color = rgb { 191 128 64 }
+	color_ui = rgb { 87 32 45 }
+}
+UDM = {
+	color = rgb { 64 64 64 }
+	color_ui = rgb { 87 11 121 }
+}
+MEL = {
+	color = rgb { 255 230 230 }
+	color_ui = rgb { 87 78 142 }
+}
+MOV = {
+	color = rgb { 89 89 89 }
+	color_ui = rgb { 90 32 112 }
+}
+RYU = {
+	color = rgb { 214 240 240 }
+	color_ui = rgb { 145 87 182 }
+}
+CAB = {
+	color = rgb { 255 172 2 }
+	color_ui = rgb { 18 102 10 }
 }

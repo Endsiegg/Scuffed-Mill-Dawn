@@ -1,5 +1,6 @@
-#Fiji
+
+
 graphical_culture = asian_gfx
 graphical_culture_2d = asian_2d
 
-color = { 90 170 210 } #random
+color = { 214 240 240 }
