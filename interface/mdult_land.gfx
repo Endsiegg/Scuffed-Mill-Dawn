@@ -566,6 +566,16 @@ spriteTypes = {
 		name = "GFX_USA_IFV_8_medium"
 		texturefile = "gfx/interface/technologies/USA/LAND/IFV8.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_USA_IFV_9_medium"
+		texturefile = "gfx/interface/technologies/USA/LAND/IFV9.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_USA_IFV_10_medium"
+		texturefile = "gfx/interface/technologies/USA/LAND/IFV10.dds"
+	}
 
 	### USA APC ###
 
@@ -725,15 +735,15 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_USA_artillery_0_medium"
-		texturefile = "gfx/interface/technologies/USA/LAND/M102.dds"
+		texturefile = "gfx/interface/technologies/USA/LAND/ART1.dds"
 	}
 	spriteType = {
 		name = "GFX_USA_artillery_1_medium"
-		texturefile = "gfx/interface/technologies/USA/LAND/M119.dds"
+		texturefile = "gfx/interface/technologies/USA/LAND/ART2.dds"
 	}
 	spriteType = {
 		name = "GFX_USA_artillery_2_medium"
-		texturefile = "gfx/interface/technologies/USA/LAND/M777.dds"
+		texturefile = "gfx/interface/technologies/USA/LAND/ART3.dds"
 	}
 	spriteType = {
 		name = "GFX_USA_artillery_3_medium"
@@ -971,6 +981,26 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/SOV/LAND/MBT7.dds"
 	}
 	spriteType = {
+		name = "GFX_SOV_MBT_9_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/MBT8.dds"
+	}
+	spriteType = {
+		name = "GFX_SOV_MBT_12_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/T80U.dds"
+	}
+	spriteType = {
+		name = "GFX_SOV_MBT_14_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/T72B.dds"
+	}
+	spriteType = {
+		name = "GFX_SOV_MBT_15_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/T72B3.dds"
+	}
+	spriteType = {
+		name = "GFX_SOV_MBT_16_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/T72B3M.dds"
+	}
+	spriteType = {
 		name = "GFX_SOV_ENGI_MBT_1_medium"
 		texturefile = "gfx/interface/technologies/SOV/LAND/ENGIN.dds"
 	}
@@ -1184,7 +1214,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_SOV_artillery_2_medium"
-		texturefile = "gfx/interface/technologies/SOV/LAND/D30M.dds"
+		texturefile = "gfx/interface/technologies/SOV/LAND/2A65.dds"
 	}
 	spriteType = {
 		name = "GFX_SOV_artillery_3_medium"
@@ -1597,6 +1627,11 @@ spriteTypes = {
 		name = "GFX_SOV_util_vehicle_7_medium"
 		texturefile = "gfx/interface/technologies/SOV/LAND/U8.dds"
 	}
+	###UKR###
+	spriteType = {
+		name = "GFX_UKR_util_vehicle_3_medium"
+		texturefile = "gfx/interface/technologies/UKR/LAND/U4.dds"
+	}
 
 	### SOV Infantry Weapons ###
 
@@ -1658,6 +1693,27 @@ spriteTypes = {
 		name = "GFX_SOV_artillery_4_medium"
 		texturefile = "gfx/interface/technologies/SOV/LAND/D30M3.dds"
 	}
+	spriteType = {
+		name = "GFX_SOV_nsb_artillery_0_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/D30.dds"
+	}
+	spriteType = {
+		name = "GFX_SOV_nsb_artillery_1_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/2A65.dds"
+	}
+	spriteType = {
+		name = "GFX_SOV_nsb_artillery_2_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/D30M.dds"
+	}
+	spriteType = {
+		name = "GFX_SOV_nsb_artillery_3_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/D30M2.dds"
+	}
+	spriteType = {
+		name = "GFX_SOV_nsb_artillery_4_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/D30M3.dds"
+	}
+	
 	#### SOV MLRS Artillery ####
 
 	spriteType = {
@@ -1984,19 +2040,19 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_GER_util_vehicle_0_medium"
-		texturefile = "gfx/interface/technologies/USA/LAND/U1.dds"
+		texturefile = "gfx/interface/technologies/GER/LAND/U1.dds"
 	}
 	spriteType = {
 		name = "GFX_GER_util_vehicle_1_medium"
-		texturefile = "gfx/interface/technologies/GER/LAND/U2.dds"
+		texturefile = "gfx/interface/technologies/GER/LAND/munga.dds"
 	}
 	spriteType = {
 		name = "GFX_GER_util_vehicle_2_medium"
-		texturefile = "gfx/interface/technologies/GER/LAND/U2.dds"
+		texturefile = "gfx/interface/technologies/GER/LAND/U0.dds"
 	}
 	spriteType = {
 		name = "GFX_GER_util_vehicle_3_medium"
-		texturefile = "gfx/interface/technologies/GER/LAND/U3.dds"
+		texturefile = "gfx/interface/technologies/GER/LAND/U2.dds"
 	}
 	spriteType = {
 		name = "GFX_GER_util_vehicle_4_medium"
@@ -2166,7 +2222,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_GER_Anti_tank_0_medium"
-		texturefile = "gfx/interface/technologies/GER/INF/PZ2.dds"
+		texturefile = "gfx/interface/technologies/GER/INF/PZ1.dds"
 	}
 	spriteType = {
 		name = "GFX_GER_Anti_tank_1_medium"
@@ -2174,7 +2230,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_GER_Anti_tank_2_medium"
-		texturefile = "gfx/interface/technologies/FRA/INF/MILAN2.dds"
+		texturefile = "gfx/interface/technologies/ISR/INF/SPIKE.dds"
 	}
 	spriteType = {
 		name = "GFX_GER_Anti_tank_3_medium"
@@ -2182,7 +2238,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_GER_Anti_tank_4_medium"
-		texturefile = "gfx/interface/technologies/ISR/INF/SPIKE.dds"
+		texturefile = "gfx/interface/technologies/FRA/INF/MAC2.dds"
 	}
 	### GER Heavy AGTM/Heavy Anti Tank Weapons ###
 
@@ -3557,7 +3613,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_ENG_util_vehicle_0_medium"
-		texturefile = "gfx/interface/technologies/USA/LAND/U1.dds"
+		texturefile = "gfx/interface/technologies/ENG/LAND/U1.dds"
 	}
 	spriteType = {
 		name = "GFX_ENG_util_vehicle_1_medium"
@@ -3577,7 +3633,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_ENG_util_vehicle_5_medium"
-		texturefile = "gfx/interface/technologies/USA/LAND/U6.dds"
+		texturefile = "gfx/interface/technologies/ENG/LAND/U6.dds"
 	}
 	spriteType = {
 		name = "GFX_ENG_util_vehicle_6_medium"
@@ -3596,7 +3652,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_ENG_infantry_weapons1_medium"
-		texturefile = "gfx/interface/technologies/ENG/INF/L64.dds"
+		texturefile = "gfx/interface/technologies/ENG/INF/L1A1SUIT.dds"
 	}
 	spriteType = {
 		name = "GFX_ENG_infantry_weapons2_medium"
@@ -3604,19 +3660,19 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_ENG_infantry_weapons3_medium"
-		texturefile = "gfx/interface/technologies/ENG/INF/L85A2.dds"
+		texturefile = "gfx/interface/technologies/ENG/INF/L85A1.dds"
 	}
 	spriteType = {
 		name = "GFX_ENG_infantry_weapons4_medium"
-		texturefile = "gfx/interface/technologies/ENG/INF/L85A3.dds"
+		texturefile = "gfx/interface/technologies/ENG/INF/L85A2.dds"
 	}
 	spriteType = {
 		name = "GFX_ENG_infantry_weapons5_medium"
-		texturefile = "gfx/interface/technologies/ENG/INF/L87A1.dds"
+		texturefile = "gfx/interface/technologies/ENG/INF/L85A3.dds"
 	}
 	spriteType = {
 		name = "GFX_ENG_infantry_weapons6_medium"
-		texturefile = "gfx/interface/technologies/ENG/INF/L87A2.dds"
+		texturefile = "gfx/interface/technologies/ENG/INF/L87A1.dds"
 	}
 	spriteType = {
 		name = "GFX_ENG_infantry_weapons7_medium"
@@ -3632,7 +3688,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_ENG_artillery_1_medium"
-		texturefile = "gfx/interface/technologies/USA/LAND/M119.dds"
+		texturefile = "gfx/interface/technologies/ENG/LAND/M119.dds"
 	}
 	spriteType = {
 		name = "GFX_ENG_artillery_2_medium"
@@ -3645,6 +3701,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ENG_artillery_4_medium"
 		texturefile = "gfx/interface/technologies/USA/LAND/M667.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_nsb_artillery_1_medium"
+		texturefile = "gfx/interface/technologies/ENG/LAND/M119.dds"
 	}
 	#### ENG MLRS Artillery ####
 
@@ -3745,7 +3805,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_ENG_Anti_tank_1_medium"
-		texturefile = "gfx/interface/technologies/USA/INF/M47.dds"
+		texturefile = "gfx/interface/technologies/FRA/INF/MILAN.dds"
 	}
 	spriteType = {
 		name = "GFX_ENG_Anti_tank_2_medium"
@@ -6978,15 +7038,15 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_USA_artillery_0_medium"
-		texturefile = "gfx/interface/technologies/USA/LAND/M102.dds"
+		texturefile = "gfx/interface/technologies/USA/LAND/ART1.dds"
 	}
 	spriteType = {
 		name = "GFX_USA_artillery_1_medium"
-		texturefile = "gfx/interface/technologies/USA/LAND/M119.dds"
+		texturefile = "gfx/interface/technologies/USA/LAND/ART2.dds"
 	}
 	spriteType = {
 		name = "GFX_USA_artillery_2_medium"
-		texturefile = "gfx/interface/technologies/USA/LAND/M777.dds"
+		texturefile = "gfx/interface/technologies/USA/LAND/ART3.dds"
 	}
 	spriteType = {
 		name = "GFX_USA_artillery_3_medium"
@@ -6994,6 +7054,26 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_USA_artillery_4_medium"
+		texturefile = "gfx/interface/technologies/USA/LAND/M667.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_nsb_artillery_0_medium"
+		texturefile = "gfx/interface/technologies/USA/LAND/ART1.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_nsb_artillery_1_medium"
+		texturefile = "gfx/interface/technologies/USA/LAND/ART2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_nsb_artillery_2_medium"
+		texturefile = "gfx/interface/technologies/USA/LAND/ART3.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_nsb_artillery_3_medium"
+		texturefile = "gfx/interface/technologies/USA/LAND/M585.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_nsb_artillery_4_medium"
 		texturefile = "gfx/interface/technologies/USA/LAND/M667.dds"
 	}
 	#### USA MLRS Artillery ####
@@ -7092,6 +7172,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_USA_Anti_tank_0_medium"
 		texturefile = "gfx/interface/technologies/USA/INF/M72.dds"
+	}
+	spriteType = {
+		name = "GFX_SWE_Anti_tank_0_medium"
+		texturefile = "gfx/interface/technologies/SWE/INF/M136.dds"
 	}
 	spriteType = {
 		name = "GFX_USA_Anti_tank_1_medium"
@@ -7351,7 +7435,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_FRA_infantry_weapons5_medium"
-		texturefile = "gfx/interface/technologies/GER/INF/INF6.dds"
+		texturefile = "gfx/interface/technologies/FRA/INF/INF6.dds"
 	}
 	spriteType = {
 		name = "GFX_FRA_infantry_weapons6_medium"
@@ -8662,5 +8746,557 @@ spriteType = {
 	spriteType = {
 		name = "GFX_KHM_Heavy_Anti_tank_4_medium"
 		texturefile = "gfx/interface/technologies/SOV/LAND/HAT5.dds"
+	}
+	 ### PMR Artillery Tree ###
+
+	 spriteType = {
+		name = "GFX_PMR_artillery_0_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/D30.dds"
+	}
+	spriteType = {
+		name = "GFX_PMR_artillery_1_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/2A65.dds"
+	}
+	spriteType = {
+		name = "GFX_PMR_artillery_2_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/D30M.dds"
+	}
+	spriteType = {
+		name = "GFX_PMR_artillery_3_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/D30M2.dds"
+	}
+	spriteType = {
+		name = "GFX_PMR_artillery_4_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/D30M3.dds"
+	}
+	#### PMR MLRS Artillery ####
+
+	spriteType = {
+		name = "GFX_PMR_SP_R_arty_0_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/SPR1.dds"
+	}
+	spriteType = {
+		name = "GFX_PMR_SP_R_arty_1_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/SPR2.dds"
+	}
+	spriteType = {
+		name = "GFX_PMR_SP_R_arty_2_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/SPR3.dds"
+	}
+	spriteType = {
+		name = "GFX_PMR_SP_R_arty_3_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/SPR4.dds"
+	}
+	spriteType = {
+		name = "GFX_PMR_SP_R_arty_4_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/SPR5.dds"
+	}
+
+	#### PMR Self Propelled Artillery ####
+
+	spriteType = {
+		name = "GFX_PMR_SP_arty_0_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/SPG1.dds"
+	}
+	spriteType = {
+		name = "GFX_PMR_SP_arty_1_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/SPG2.dds"
+	}
+	spriteType = {
+		name = "GFX_PMR_SP_arty_2_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/SPG3.dds"
+	}
+	spriteType = {
+		name = "GFX_PMR_SP_arty_3_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/SPG4.dds"
+	}
+	spriteType = {
+		name = "GFX_PMR_SP_arty_4_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/SPG5.dds"
+	}
+
+	#### PMR Self Propelled Anti Air ####
+
+	spriteType = {
+		name = "GFX_PMR_SP_Anti_Air_0_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/SPA1.dds"
+	}
+	spriteType = {
+		name = "GFX_PMR_SP_Anti_Air_1_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/SPA2.dds"
+	}
+	spriteType = {
+		name = "GFX_PMR_SP_Anti_Air_2_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/SPA3.dds"
+	}
+	spriteType = {
+		name = "GFX_PMR_SP_Anti_Air_3_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/SPA4.dds"
+	}
+	spriteType = {
+		name = "GFX_PMR_SP_Anti_Air_4_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/SPA5.dds"
+	}
+	### PMR MANPADS ###
+	spriteType = {
+		name = "GFX_PMR_Anti_Air_0_medium"
+		texturefile = "gfx/interface/technologies/SOV/INF/MANPADS1.dds"
+	}
+	spriteType = {
+		name = "GFX_PMR_Anti_Air_1_medium"
+		texturefile = "gfx/interface/technologies/SOV/INF/MANPADS2.dds"
+	}
+	spriteType = {
+		name = "GFX_PMR_Anti_Air_2_medium"
+		texturefile = "gfx/interface/technologies/SOV/INF/MANPADS3.dds"
+	}
+	spriteType = {
+		name = "GFX_PMR_Anti_Air_3_medium"
+		texturefile = "gfx/interface/technologies/SOV/INF/MANPADS4.dds"
+	}
+	spriteType = {
+		name = "GFX_PMR_Anti_Air_4_medium"
+		texturefile = "gfx/interface/technologies/SOV/INF/MANPADS5.dds"
+	}
+	### PMR AGTM/Light Anti Tank Weapons ###
+
+	spriteType = {
+		name = "GFX_PMR_Anti_tank_0_medium"
+		texturefile = "gfx/interface/technologies/SOV/INF/AT1.dds"
+	}
+	spriteType = {
+		name = "GFX_PMR_Anti_tank_1_medium"
+		texturefile = "gfx/interface/technologies/SOV/INF/AT2.dds"
+	}
+	spriteType = {
+		name = "GFX_PMR_Anti_tank_2_medium"
+		texturefile = "gfx/interface/technologies/SOV/INF/AT3.dds"
+	}
+	spriteType = {
+		name = "GFX_PMR_Anti_tank_3_medium"
+		texturefile = "gfx/interface/technologies/SOV/INF/AT4.dds"
+	}
+	spriteType = {
+		name = "GFX_PMR_Anti_tank_4_medium"
+		texturefile = "gfx/interface/technologies/SOV/INF/AT5.dds"
+	}
+	### PMR Heavy AGTM/Heavy Anti Tank Weapons ###
+
+	spriteType = {
+		name = "GFX_PMR_Heavy_Anti_tank_0_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/HAT1.dds"
+	}
+	spriteType = {
+		name = "GFX_PMR_Heavy_Anti_tank_1_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/HAT2.dds"
+	}
+	spriteType = {
+		name = "GFX_PMR_Heavy_Anti_tank_2_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/HAT3.dds"
+	}
+	spriteType = {
+		name = "GFX_PMR_Heavy_Anti_tank_3_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/HAT4.dds"
+	}
+	spriteType = {
+		name = "GFX_PMR_Heavy_Anti_tank_4_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/HAT5.dds"
+	}
+	### DEN ###
+
+	### DEN Infantry Weapons ###
+
+	spriteType = {
+	    name = "GFX_DEN_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/GER/INF/INF2.dds"
+	}
+	spriteType = {
+	    name = "GFX_DEN_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/GER/INF/INF2.dds"
+	}
+	spriteType = {
+	    name = "GFX_DEN_infantry_weapons3_medium"
+		texturefile = "gfx/interface/technologies/CAN/INF/INF4.dds"
+	}
+	spriteType = {
+	    name = "GFX_DEN_infantry_weapons4_medium"
+		texturefile = "gfx/interface/technologies/CAN/INF/INF6.dds"
+	}
+	spriteType = {
+	    name = "GFX_DEN_infantry_weapons5_medium"
+		texturefile = "gfx/interface/technologies/FRA/INF/INF6.dds"
+	}
+	spriteType = {
+	    name = "GFX_DEN_infantry_weapons6_medium"
+		texturefile = "gfx/interface/technologies/FRA/INF/INF7.dds"
+	}
+	spriteType = {
+	    name = "GFX_DEN_infantry_weapons7_medium"
+		texturefile = "gfx/interface/technologies/FRA/INF/INF8.dds"
+	}
+
+	### NOR Infantry Weapons ###
+
+	spriteType = {
+	    name = "GFX_NOR_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/GER/INF/INF2.dds"
+	}
+	spriteType = {
+	    name = "GFX_NOR_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/NOR/INF/INF3.dds"
+	}
+	spriteType = {
+	    name = "GFX_NOR_infantry_weapons3_medium"
+		texturefile = "gfx/interface/technologies/NOR/INF/INF4.dds"
+	}
+	spriteType = {
+	    name = "GFX_NOR_infantry_weapons4_medium"
+		texturefile = "gfx/interface/technologies/NOR/INF/INF5.dds"
+	}
+	spriteType = {
+	    name = "GFX_NOR_infantry_weapons5_medium"
+		texturefile = "gfx/interface/technologies/NOR/INF/INF6.dds"
+	}
+	spriteType = {
+	    name = "GFX_NOR_infantry_weapons6_medium"
+		texturefile = "gfx/interface/technologies/FRA/INF/INF7.dds"
+	}
+	spriteType = {
+	    name = "GFX_NOR_infantry_weapons7_medium"
+		texturefile = "gfx/interface/technologies/FRA/INF/INF8.dds"
+	}
+######## CAN Tech Tree #######
+
+	### CAN MBT ###
+
+	spriteType = {
+		name = "GFX_CAN_MBT_1_medium"
+		texturefile = "gfx/interface/technologies/ENG/LAND/MBT1.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_MBT_2_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/MBT1.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_MBT_3_medium"
+		texturefile = "gfx/interface/technologies/CAN/LAND/MBT4.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_MBT_5_medium"
+		texturefile = "gfx/interface/technologies/CAN/LAND/MBT5.dds"
+	}
+
+
+	spriteType = {
+		name = "GFX_CAN_ENGI_MBT_1_medium"
+		texturefile = "gfx/interface/technologies/CAN/LAND/ENGIN.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_ENGI_MBT_2_medium"
+		texturefile = "gfx/interface/technologies/CAN/LAND/ENGIN.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_ENGI_MBT_3_medium"
+		texturefile = "gfx/interface/technologies/CAN/LAND/ENGIN.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_ENGI_MBT_4_medium"
+		texturefile = "gfx/interface/technologies/CAN/LAND/ENGIN.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_ENGI_MBT_5_medium"
+		texturefile = "gfx/interface/technologies/CAN/LAND/ENGIN.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_ENGI_MBT_6_medium"
+		texturefile = "gfx/interface/technologies/CAN/LAND/ENGIN.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_ENGI_MBT_7_medium"
+		texturefile = "gfx/interface/technologies/CAN/LAND/ENGIN.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_ENGI_MBT_8_medium"
+		texturefile = "gfx/interface/technologies/CAN/LAND/ENGIN.dds"
+	}
+	### CAN IFV ###
+
+	spriteType = {
+		name = "GFX_CAN_IFV_1_medium"
+		texturefile = "gfx/interface/technologies/CAN/LAND/AFV1.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_IFV_2_medium"
+		texturefile = "gfx/interface/technologies/CAN/LAND/APC2.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_IFV_3_medium"
+		texturefile = "gfx/interface/technologies/CAN/LAND/AFV3.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_IFV_4_medium"
+		texturefile = "gfx/interface/technologies/CAN/LAND/IFV5.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_IFV_5_medium"
+		texturefile = "gfx/interface/technologies/CAN/LAND/AFV5.dds"
+	}
+	
+
+	### CAN APC ###
+
+	spriteType = {
+		name = "GFX_CAN_APC_1_medium"
+		texturefile = "gfx/interface/technologies/CAN/LAND/AFV1.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_APC_2_medium"
+		texturefile = "gfx/interface/technologies/CAN/LAND/APC2.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_APC_3_medium"
+		texturefile = "gfx/interface/technologies/CAN/LAND/APC3.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_APC_4_medium"
+		texturefile = "gfx/interface/technologies/USA/LAND/APC4.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_APC_5_medium"
+		texturefile = "gfx/interface/technologies/USA/LAND/APC5.dds"
+	}
+	
+
+	SpriteType = {
+		name = "GFX_CAN_apc_hull_0_medium"
+		texturefile = "gfx/interface/technologies/CAN/LAND/AFV1.dds"
+	}
+	SpriteType = {
+		name = "GFX_CAN_apc_hull_1_medium"
+		texturefile = "gfx/interface/technologies/CAN/LAND/APC2.dds"
+	}
+	SpriteType = {
+		name = "GFX_CAN_apc_hull_2_medium"
+		texturefile = "gfx/interface/technologies/CAN/LAND/APC3.dds"
+	}
+	SpriteType = {
+		name = "GFX_CAN_apc_hull_3_medium"
+		texturefile = "gfx/interface/technologies/USA/LAND/APC5.dds"
+	}
+	SpriteType = {
+		name = "GFX_CAN_apc_hull_4_medium"
+		texturefile = "gfx/interface/technologies/USA/LAND/APC5.dds"
+	}
+
+	### CAN Recon ###
+
+		spriteType = {
+		name = "GFX_CAN_Rec_tank_0_medium"
+		texturefile = "gfx/interface/technologies/CAN/LAND/REC1.dds"
+	}
+		spriteType = {
+		name = "GFX_CAN_Rec_tank_1_medium"
+		texturefile = "gfx/interface/technologies/CAN/LAND/REC2.dds"
+	}	
+		spriteType = {
+		name = "GFX_CAN_Rec_tank_2_medium"
+		texturefile = "gfx/interface/technologies/CAN/LAND/REC3.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_light_tank_tech_medium"
+		texturefile = "gfx/interface/technologies/CAN/LAND/REC1.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_light_tank_tech_1_medium"
+		texturefile = "gfx/interface/technologies/CAN/LAND/REC2.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_light_tank_tech_2_medium"
+		texturefile = "gfx/interface/technologies/CAN/LAND/REC3.dds"
+	}
+
+	#### CAN Utility Vehicles ####
+
+	spriteType = {
+		name = "GFX_CAN_util_vehicle_0_medium"
+		texturefile = "gfx/interface/technologies/CAN/LAND/U1.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_util_vehicle_1_medium"
+		texturefile = "gfx/interface/technologies/CAN/LAND/U2.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_util_vehicle_2_medium"
+		texturefile = "gfx/interface/technologies/CAN/LAND/U3.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_util_vehicle_3_medium"
+		texturefile = "gfx/interface/technologies/CAN/LAND/U4.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_util_vehicle_4_medium"
+		texturefile = "gfx/interface/technologies/CAN/LAND/U5.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_util_vehicle_5_medium"
+		texturefile = "gfx/interface/technologies/CAN/LAND/U6.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_util_vehicle_6_medium"
+		texturefile = "gfx/interface/technologies/CAN/LAND/U7.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_util_vehicle_7_medium"
+		texturefile = "gfx/interface/technologies/CAN/LAND/U8.dds"
+	}
+
+	### CAN Infantry Weapons ###
+
+	spriteType = {
+		name = "GFX_CAN_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/CAN/INF/INF1.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/CAN/INF/INF2.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/CAN/INF/INF3.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_infantry_weapons3_medium"
+		texturefile = "gfx/interface/technologies/CAN/INF/INF4.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_infantry_weapons4_medium"
+		texturefile = "gfx/interface/technologies/CAN/INF/INF5.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_infantry_weapons5_medium"
+		texturefile = "gfx/interface/technologies/CAN/INF/INF6.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_infantry_weapons6_medium"
+		texturefile = "gfx/interface/technologies/CAN/INF/INF7.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_infantry_weapons7_medium"
+		texturefile = "gfx/interface/technologies/CAN/INF/INF8.dds"
+	}
+	#### CAN Artillery ####
+
+	### Generic Artillery Tree ###
+
+	spriteType = {
+		name = "GFX_CAN_artillery_0_medium"
+		texturefile = "gfx/interface/technologies/CAN/LAND/ART1.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_artillery_1_medium"
+		texturefile = "gfx/interface/technologies/CAN/LAND/ART2.dds"
+	}
+	
+	
+
+	#### CAN Self Propelled Anti Air ####
+
+
+	spriteType = {
+		name = "GFX_CAN_SP_Anti_Air_1_medium"
+		texturefile = "gfx/interface/technologies/CAN/LAND/SPA2.dds"
+	}
+	
+	### CAN MANPADS/Light AA Weapons ###
+
+	spriteType = {
+		name = "GFX_CAN_Anti_Air_0_medium"
+		texturefile = "gfx/interface/technologies/USA/INF/FIM43.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_Anti_Air_1_medium"
+		texturefile = "gfx/interface/technologies/USA/INF/FIM92.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_Anti_Air_2_medium"
+		texturefile = "gfx/interface/technologies/USA/INF/FIM92E.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_Anti_Air_3_medium"
+		texturefile = "gfx/interface/technologies/USA/INF/FIM194.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_Anti_Air_4_medium"
+		texturefile = "gfx/interface/technologies/USA/INF/FIM245.dds"
+	}
+	### CAN AGTM/Light Anti Tank Weapons ###
+
+	spriteType = {
+		name = "GFX_CAN_Anti_tank_0_medium"
+		texturefile = "gfx/interface/technologies/ENG/INF/AT1.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_Anti_tank_1_medium"
+		texturefile = "gfx/interface/technologies/FRA/INF/MAC2.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_Anti_tank_2_medium"
+		texturefile = "gfx/interface/technologies/USA/INF/FGM148.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_Anti_tank_3_medium"
+		texturefile = "gfx/interface/technologies/USA/INF/FGM246.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_Anti_tank_4_medium"
+		texturefile = "gfx/interface/technologies/USA/INF/HEL414.dds"
+	}
+	### CAN Heavy AGTM/Heavy Anti Tank Weapons ###
+
+	spriteType = {
+		name = "GFX_CAN_Heavy_Anti_tank_0_medium"
+		texturefile = "gfx/interface/technologies/USA/LAND/HAT1.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_Heavy_Anti_tank_1_medium"
+		texturefile = "gfx/interface/technologies/USA/LAND/HAT1.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_Heavy_Anti_tank_2_medium"
+		texturefile = "gfx/interface/technologies/USA/LAND/HAT3.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_Heavy_Anti_tank_3_medium"
+		texturefile = "gfx/interface/technologies/USA/LAND/HAT5.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_Heavy_Anti_tank_4_medium"
+		texturefile = "gfx/interface/technologies/USA/LAND/HAT5.dds"
+ }
+### CHL Infantry Weapons ###
+
+	spriteType = {
+		name = "GFX_CHL_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/CHL/INF/INF1.dds"
+	}
+	spriteType = {
+		name = "GFX_CHL_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/CHL/INF/INF2.dds"
+	}
+	spriteType = {
+		name = "GFX_CHL_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/CHL/INF/INF3.dds"
+	}
+	spriteType = {
+		name = "GFX_CHL_infantry_weapons3_medium"
+		texturefile = "gfx/interface/technologies/CHL/INF/INF4.dds"
+	}
+	spriteType = {
+		name = "GFX_CHL_infantry_weapons4_medium"
+		texturefile = "gfx/interface/technologies/CHL/INF/INF5.dds"
+	}
+	spriteType = {
+		name = "GFX_CHL_infantry_weapons5_medium"
+		texturefile = "gfx/interface/technologies/CHL/INF/INF6.dds"
 	}
 }
