@@ -6,7 +6,7 @@ ideas = {
 			allowed = { always = no }
 			rule = { can_create_factions = yes }
 			modifier = {
-				political_power_gain = 0.6
+				#political_power_gain = 0.6
 				political_power_factor = 0.6
 				migration_rate_value_factor = 0.20
 				foreign_influence_modifier = 0.50
@@ -45,7 +45,7 @@ ideas = {
 			allowed = { always = no }
 			rule = { can_create_factions = yes }
 			modifier = {
-				political_power_gain = 0.50
+				#political_power_gain = 0.50
 				political_power_factor = 0.50
 				join_faction_tension = 0.05
 				migration_rate_value_factor = 0.15
@@ -85,7 +85,7 @@ ideas = {
 			picture = GFX_idea_major_power
 			allowed = { always = no }
 			modifier = {
-				political_power_gain = 0.4
+			#	political_power_gain = 0.4
 				political_power_factor = 0.4
 				join_faction_tension = 0.10
 				migration_rate_value_factor = 0.10
@@ -124,7 +124,7 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea regional_power" }
 			allowed = { always = no }
 			modifier = {
-				political_power_gain = 0.2
+				#political_power_gain = 0.2
 				political_power_factor = 0.2
 				join_faction_tension = 0.15
 				migration_rate_value_factor = 0.05
@@ -164,6 +164,7 @@ ideas = {
 			picture = GFX_idea_minor_power
 			allowed = { always = no }
 			modifier = {
+				political_power_factor = 0.1
 				join_faction_tension = 0.20
 				foreign_influence_modifier = 0.10
 				foreign_influence_defense_modifier = 0.10
@@ -183,26 +184,26 @@ ideas = {
 				foreign_influence_continent_modifier = -0.25
 				custom_modifier_tooltip = non_power_tt
 				hidden_modifier = {
-					corruption_cost_factor = -0.2
-					economic_cycles_cost_factor = -0.2
-					internal_factions_cost_factor = -0.2
-					bureaucracy_cost_factor = -0.2
-					Military_Spending_cost_factor = -0.2
-					crime_fighting_cost_factor = -0.2
-					education_budget_cost_factor = -0.2
-					health_budget_cost_factor = -0.2
-					social_budget_cost_factor = -0.2
-					trade_laws_cost_factor = -0.2
-					Conscription_Law_cost_factor = -0.2
-					Military_Status_Women_cost_factor = -0.2
-					Foreign_Intervention_Law_cost_factor = -0.2
-					Officer_Training_Law_cost_factor = -0.2
-					materiel_manufacturer_cost_factor = -0.2
-					tank_manufacturer_cost_factor = -0.2
-					aircraft_manufacturer_cost_factor = -0.2
-					naval_manufacturer_cost_factor = -0.2
-					tax_rate_change_multiplier_modifier = -0.2
-					migration_laws_cost_factor = -0.2
+					corruption_cost_factor = -0.5
+					economic_cycles_cost_factor = -0.5
+					internal_factions_cost_factor = -0.5
+					bureaucracy_cost_factor = -0.5
+					Military_Spending_cost_factor = -0.5
+					crime_fighting_cost_factor = -0.5
+					education_budget_cost_factor = -0.5
+					health_budget_cost_factor = -0.5
+					social_budget_cost_factor = -0.5
+					trade_laws_cost_factor = -0.5
+					Conscription_Law_cost_factor = -0.5
+					Military_Status_Women_cost_factor = -0.5
+					Foreign_Intervention_Law_cost_factor = -0.5
+					Officer_Training_Law_cost_factor = -0.5
+					materiel_manufacturer_cost_factor = -0.5
+					tank_manufacturer_cost_factor = -0.5
+					aircraft_manufacturer_cost_factor = -0.5
+					naval_manufacturer_cost_factor = -0.5
+					tax_rate_change_multiplier_modifier = -0.5
+					migration_laws_cost_factor = -0.5
 				}
 			}
 		}

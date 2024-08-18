@@ -1881,6 +1881,7 @@ ideas = {
 			equipment_bonus = {
 				util_vehicle_equipment = {
 					build_cost_ic = -0.15
+					instant = yes
 				}
 			}
 		}
@@ -2238,10 +2239,10 @@ ideas = {
 			picture = ukr_our_airindustry
 			equipment_bonus = {
 				strategic_bomber_equipment = {
-					build_cost_ic = -0.10 instant = yes
+					build_cost_ic = -0.25 instant = yes
 				}
 				fighter = {
-					build_cost_ic = -0.10 instant = yes
+					build_cost_ic = -0.25 instant = yes
 				}
 			}
 		}
@@ -2276,7 +2277,7 @@ ideas = {
 				util_vehicle_equipment = {
 					instant = yes
 					reliability = 0.05
-					build_cost_ic = -0.04
+					build_cost_ic = -0.1
 				}
 				mbt_hull = {
 					build_cost_ic = -0.10
@@ -2308,7 +2309,7 @@ ideas = {
 				util_vehicle_equipment = {
 					instant = yes
 					reliability = 0.05
-					build_cost_ic = -0.04
+					build_cost_ic = -0.10
 				}
 				mbt_hull = {
 					build_cost_ic = -0.10
@@ -2349,31 +2350,31 @@ ideas = {
 			}
 			equipment_bonus = {
 				convoy = {
-					build_cost_ic = -0.05
+					build_cost_ic = -0.10
 					instant = yes
 				}
 				attack_submarine = {
-					build_cost_ic = -0.05
+					build_cost_ic = -0.10
 					instant = yes
 				}
 				missile_submarine = {
-					build_cost_ic = -0.05
+					build_cost_ic = -0.10
 					instant = yes
 				}
 				corvette = {
-					build_cost_ic = -0.05
+					build_cost_ic = -0.10
 					instant = yes
 				}
 				frigate = {
-					build_cost_ic = -0.05
+					build_cost_ic = -0.15
 					instant = yes
 				}
 				destroyer = {
-					build_cost_ic = -0.05
+					build_cost_ic = -0.15
 					instant = yes
 				}
 				cruiser = {
-					build_cost_ic = -0.05
+					build_cost_ic = -0.20
 					instant = yes
 				}
 			}
@@ -3734,6 +3735,7 @@ ideas = {
 			equipment_bonus = {
 				mbt_hull = {
 					build_cost_ic = -0.12
+					instant = yes
 				}
 			}
 		}
@@ -3745,6 +3747,7 @@ ideas = {
 			equipment_bonus = {
 				mbt_hull = {
 					build_cost_ic = -0.16
+					instant = yes
 				}
 			}
 		}
@@ -3766,15 +3769,15 @@ ideas = {
 			picture = ukr_motorsich_idea
 			equipment_bonus = {
 				attack_helicopter_equipment = {
-					build_cost_ic = -0.08
+					build_cost_ic = -0.10
 					instant = yes
 				}
 				transport_helicopter_equipment = {
-					build_cost_ic = -0.08
+					build_cost_ic = -0.10
 					instant = yes
 				}
 				strategic_bomber_equipment = {
-					build_cost_ic = -0.07
+					build_cost_ic = -0.10
 					instant = yes
 				}
 			}
@@ -3806,9 +3809,11 @@ ideas = {
 			equipment_bonus = {
 				mbt_hull = {
 					build_cost_ic = -0.10
+					intant = yes
 				}
 				apc_hull = {
-					build_cost_ic = -0.07
+					build_cost_ic = -0.10
+					instant = yes
 				}
 			}
 		}
@@ -3848,13 +3853,17 @@ ideas = {
 					build_cost_ic = -0.25
 				}
 				util_vehicle_equipment = {
-					build_cost_ic = -0.16
+					build_cost_ic = -0.25
 				}
 				apc_hull = {
-					build_cost_ic = -0.10
+					build_cost_ic = -0.25
 				}
 				strategic_bomber_equipment = {
-					build_cost_ic = -0.10
+					build_cost_ic = -0.20
+					instant = yes
+				}
+				fighter = {
+					build_cost_ic = -0.25 
 					instant = yes
 				}
 			}
@@ -3883,7 +3892,7 @@ ideas = {
 			}
 			equipment_bonus = {
 				Kamikaze_drone_equipment = {
-					build_cost_ic = -0.21
+					build_cost_ic = -0.25
 					instant = yes
 				}
 			}
