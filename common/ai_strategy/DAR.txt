@@ -1,9 +1,9 @@
-#Libya befriendeed Qatar
-QAT_befriend_libya = {
-	allowed = { original_tag = QAT }
+#Libya befriended Darfur
+DAR_befriend_libya = {
+	allowed = { original_tag = DAR }
 
 	enable = {
-		LBA = { has_completed_focus = LBA_contact_qatar }
+		LBA = { has_completed_focus = LBA_support_darfur }
 		NOT = { has_war_with = LBA }
 	}
 
