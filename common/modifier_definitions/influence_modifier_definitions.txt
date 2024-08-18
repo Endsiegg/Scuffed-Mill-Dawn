@@ -25,3 +25,31 @@ influence_coup_modifier = {
 	precision = 1
 	category = country
 }
+
+foreign_influence_continent_modifier = {
+	color_type = good
+	value_type = percentage
+	precision = 2
+	category = country
+}
+
+foreign_influence_home_continent_modifier = {
+	color_type = good
+	value_type = percentage
+	precision = 2
+	category = country
+}
+
+foreign_influence_monthly_domestic_independence_gain_modifier = {
+	color_type = good
+	value_type = number
+	precision = 3
+	category = country
+}
+
+foreign_influence_monthly_domestic_independence_gain_factor = {
+	color_type = good
+	value_type = percentage
+	precision = 3
+	category = country
+}
