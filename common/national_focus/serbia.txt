@@ -28,7 +28,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SER_the_high_castle"
-			add_political_power = 50
+			add_political_power = 200
 			country_event = ser_reading.1
 			hidden_effect = {
 				if = {
@@ -64,7 +64,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SER_the_high_castle
 
-		cost = 5
+		cost = 3
 
 		prerequisite = { focus = SER_the_high_castle }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -75,7 +75,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SER_begin_repairing_works1"
-			add_political_power = 50
+			add_political_power = 100
 			set_temp_variable = { treasury_change = -5 }
 			modify_treasury_effect = yes
 			swap_ideas = {
@@ -105,7 +105,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = SER_the_high_castle
 
-		cost = 5
+		cost = 3
 
 		prerequisite = { focus = SER_begin_repairing_works1 }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -137,7 +137,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = SER_the_high_castle
-		cost = 5
+		cost = 3
 
 		prerequisite = { focus = SER_the_high_castle }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -149,7 +149,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SER_deals_with_criminal_world"
 			add_political_power = -50
-			set_temp_variable = { treasury_change = 3 }
+			set_temp_variable = { treasury_change = 10 }
 			modify_treasury_effect = yes
 			IF = {
 				limit = {
@@ -174,7 +174,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = SER_the_high_castle
 
-		cost = 5
+		cost = 3
 
 		prerequisite = { focus = SER_deals_with_criminal_world }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -226,7 +226,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus SER_anti_opposition_measures"
 			add_popularity = { ideology = democratic popularity = -0.10 }
 			recalculate_party = yes
-			add_stability = 0.02
+			add_stability = 0.05
 			add_timed_idea = {
 				idea = SER_antiopposition_activity_idea
 				days = 200
@@ -1466,7 +1466,7 @@ focus_tree = {
 			}
 			add_popularity = {
 				ideology = communism
-				popularity = 0.3
+				popularity = 0.50
 			}
 			add_to_variable = { party_pop_array^4 = 0.3 }
 			recalculate_party = yes
