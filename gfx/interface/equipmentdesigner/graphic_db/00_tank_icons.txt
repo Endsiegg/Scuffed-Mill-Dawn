@@ -2,256 +2,100 @@ default = {
 	mbt_hull_0 = {
 		pool = {
 			icons = {
-				GFX_GER_MBT_2
-				GFX_mbt_hull_0_a
-				GFX_mbt_hull_0_b
-				GFX_mbt_hull_0_c
-				GFX_mbt_hull_0_d
-				GFX_mbt_hull_0_e
-				GFX_mbt_hull_0_f
-				GFX_mbt_hull_0_g
-				GFX_mbt_hull_0_h
-				GFX_mbt_hull_0_i
-				GFX_mbt_hull_0_j
+				"gfx/interface/technologies/FRA/LAND/MBT1.dds"
+				"gfx/interface/technologies/USA/LAND/M48A5.dds"
+				"gfx/interface/technologies/USA/LAND/MBT1.dds"
+				"gfx/interface/technologies/GER/LAND/MBT2.dds"
+				"gfx/interface/technologies/SOV/LAND/T62.dds"
+				"gfx/interface/technologies/SOV/LAND/T55.dds"
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"CHI_MD4_medium_armor_entity"
-				"CZE_MD4_medium_armor_1_entity"
-				"CZE_MD4_medium_armor_entity"
-				"CZE_MD4_medium_armor_04_entity"
-				"SLO_MD4_medium_armor_04_entity"
-				"FRA_MD4_medium_armor_entity"
-				"FRA_MD4_medium_armor_entity_2"
-				"GER_MD4_medium_armor_entity_2"
-				"FRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"GER_MD4_medium_armor_entity"
-				"GER_MD4_medium_armor_entity_2"
-				"IRQ_MD4_medium_armor_entity"
-				"IRQ_MD4_medium_armor_entity_2"
-				"IRQ_MD4_medium_armor_entity_3"
-				"KOR_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity_2"
-				"SOV_MD4_medium_armor_entity_6"
-				"SOV_MD4_medium_armor_entity"
-				"USA_MD4_medium_armor_entity"
-				"USA_MD4_medium_armor_entity_2"
-				"PER_MD4_medium_armor_entity"
-				"RAJ_MD4_medium_armor_entity"
-				"commonwealth_gfx_MD4_medium_armor_entity"
+				"FRA_armor_Bat_1_entity"
+				"USA_M48A5_entity"
+				"M60A1_entity"
+				"GER_MD4_medium_armor_entity_2" #leopard 1
+				"SOV_T62_entity"
+				"SOV_T55A_entity"
 			}
 		}
 	}
 	mbt_hull_1 = {
 		pool = {
 			icons = {
-				"gfx/interface/technologies/Generic/NSB_AFV/MBT2.dds"
-				GFX_FRA_MBT_3
-				GFX_GER_MBT_3
-				GFX_USA_MBT_3
-				GFX_mbt_hull_1_e
-				GFX_mbt_hull_1_f
-				GFX_mbt_hull_1_g
-				GFX_mbt_hull_1_h
-				GFX_mbt_hull_1_i
-				GFX_mbt_hull_1_j
+				"gfx/interface/technologies/USA/LAND/M1A1.dds"
+				"gfx/interface/technologies/SOV/LAND/MBT2.dds"
+				"gfx/interface/technologies/KOR/LAND/MBT3.dds"
+				"gfx/interface/technologies/GER/LAND/MBT4.dds"
+				"gfx/interface/technologies/SOV/LAND/MBT8.dds"
 			}
 			models = {
-				"CHI_MD4_medium_armor_entity"
-				"CHI_MD4_medium_armor_entity_2"
-				"CZE_MD4_medium_armor_1_entity"
-				"CZE_MD4_medium_armor_entity"
-				"CZE_MD4_medium_armor_04_entity"
-				"SLO_MD4_medium_armor_04_entity"
-				"commonwealth_gfx_MD4_medium_armor_entity"
-				"FRA_MD4_medium_armor_entity_2"
-				"FRA_MD4_medium_armor_entity"
-				"FRA_MD4_light_armor_entity"
-				"GER_MD4_medium_armor_entity_4"
-				"GER_MD4_medium_armor_entity_2"
-				"GER_MD4_medium_armor_entity_3"
-				"IRQ_MD4_medium_armor_entity"
-				"IRQ_MD4_medium_armor_entity_2"
-				"IRQ_MD4_medium_armor_entity_3"
-				"ITA_MD4_medium_armor_entity"
-				"JAP_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity_2"							 
-				"SOV_MD4_medium_armor_entity"
-				"SOV_MD4_medium_armor_entity_2"
-				"SOV_MD4_medium_armor_entity_5"
-				"SOV_MD4_medium_armor_entity_6"
-				"SOV_MD4_light_armor_entity_5"
-				"RAJ_MD4_medium_armor_entity"
 				"USA_MD4_medium_armor_entity"
-				"USA_MD4_medium_armor_entity_2"
-				"USA_MD4_light_armor_entity_2"
-				"BRA_MD4_medium_armor_entity"
-				"UKR_MD4_medium_armor_entity"
-				"PER_MD4_medium_armor_entity"
+				"SOV_MD4_medium_armor_entity" #T-72B
+				"KOR_armor_Bat_1_entity"
+				"GEN_Leopard2A4green_entity"
+				"SOV_T72A_entity"
 			}
 		}
 	}
 	mbt_hull_2 = {
 		pool = {
 			icons = {
-				"gfx/interface/technologies/Generic/NSB_AFV/MBT4.dds"
-				GFX_ENG_MBT_5
-				GFX_FRA_MBT_1
-				GFX_FRA_MBT_4
-				GFX_GER_MBT_4
-				GFX_ITA_MBT_3
-				GFX_SOV_MBT_4
-				GFX_SPR_MBT_4
-				GFX_SWE_MBT_4
-				GFX_UKR_MBT_4
-				GFX_USA_MBT_4
+				"gfx/interface/technologies/KOR/LAND/MBT3.dds"
+				"gfx/interface/technologies/ENG/LAND/MBT4.dds"
+				"gfx/interface/technologies/FRA/LAND/MBT4.dds"
+				"gfx/interface/technologies/USA/LAND/MBT3.dds"
+				"gfx/interface/technologies/SOV/LAND/T90MS.dds"
+				"gfx/interface/technologies/SOV/LAND/MBT4.dds"
+				"gfx/interface/technologies/GER/LAND/MBT4.dds"
 			}
 			models = {
-				"CHI_MD4_medium_armor_entity"
-				"CHI_MD4_medium_armor_entity_2"
-				"CZE_MD4_medium_armor_1_entity"
-				"CZE_MD4_medium_armor_entity"
-				"CZE_MD4_medium_armor_04_entity"
-				"SLO_MD4_medium_armor_04_entity"
-				"commonwealth_gfx_MD4_medium_armor_entity"
-				"FRA_MD4_medium_armor_entity_2"
+				"KOR_armor_Bat_1_entity"
+				"ENG_challenger2_entity"
 				"FRA_MD4_medium_armor_entity"
-				"FRA_MD4_light_armor_entity"
-				"GER_MD4_medium_armor_entity_4"
-				"GER_MD4_medium_armor_entity_2"
-				"GER_MD4_medium_armor_entity_3"
-				"IRQ_MD4_medium_armor_entity"
-				"IRQ_MD4_medium_armor_entity_2"
-				"IRQ_MD4_medium_armor_entity_3"
-				"ITA_MD4_medium_armor_entity"
-				"JAP_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity_2"
-				"SOV_MD4_medium_armor_entity"
-				"SOV_MD4_medium_armor_entity_2"
-				"SOV_MD4_medium_armor_entity_5"
-				"SOV_MD4_medium_armor_entity_6"
-				"SOV_MD4_light_armor_entity_5"
-				"RAJ_MD4_medium_armor_entity"
-				"USA_MD4_medium_armor_entity"
 				"USA_MD4_medium_armor_entity_2"
-				"USA_MD4_light_armor_entity_2"
-				"BRA_MD4_medium_armor_entity"
-				"UKR_MD4_medium_armor_entity"
-				"PER_MD4_medium_armor_entity"
+				"SOV_T90M_entity"
+				"SOV_T90early_entity"
+				"GEN_Leopard2A5_entity"
 			}
 		}
 	}
 	mbt_hull_3 = {
 		pool = {
 			icons = {
-				"gfx/interface/technologies/Generic/NSB_AFV/MBT5.dds"
-				GFX_FRA_MBT_5
-				GFX_GER_MBT_5
-				GFX_ISR_MBT_5
-				GFX_ISR_MBT_6
-				GFX_ITA_MBT_4
-				GFX_JAP_MBT_5
-				GFX_JAP_MBT_6
-				GFX_SOV_MBT_5
-				GFX_SOV_MBT_6
-				GFX_SPR_MBT_6
-				GFX_SWE_MBT_5
-				GFX_UKR_MBT_4
-				GFX_USA_MBT_5
+				"gfx/interface/technologies/FRA/LAND/MBT6.dds"
+				"gfx/interface/technologies/SOV/LAND/MBT6.dds"
+				"gfx/interface/technologies/USA/LAND/MBT5.dds"
+				"gfx/interface/technologies/JAP/LAND/MBT5.dds"
+				"gfx/interface/technologies/GER/LAND/MBT6.dds"
+				"gfx/interface/technologies/KOR/LAND/MBT7.dds"
 			}
 			models = {
-				"CHI_MD4_medium_armor_entity"
-				"CHI_MD4_medium_armor_entity_2"
-				"CZE_MD4_medium_armor_1_entity"
-				"CZE_MD4_medium_armor_entity"
-				"CZE_MD4_medium_armor_04_entity"
-				"SLO_MD4_medium_armor_04_entity"
-				"commonwealth_gfx_MD4_medium_armor_entity"
-				"FRA_MD4_medium_armor_entity_2"
 				"FRA_MD4_medium_armor_entity"
-				"FRA_MD4_light_armor_entity"
-				"GER_MD4_medium_armor_entity_4"
-				"GER_MD4_medium_armor_entity_2"
+				"SOV_armor_Bat_3_entity"
+				"USA_armor_Bat_3_entity"
+				"GEN_Type10_entity"
 				"GER_MD4_medium_armor_entity_3"
-				"IRQ_MD4_medium_armor_entity"
-				"IRQ_MD4_medium_armor_entity_2"
-				"IRQ_MD4_medium_armor_entity_3"
-				"ITA_MD4_medium_armor_entity"
-				"JAP_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity_2"
-				"SOV_MD4_medium_armor_entity"
-				"SOV_MD4_medium_armor_entity_2"
-				"SOV_MD4_medium_armor_entity_5"
-				"SOV_MD4_medium_armor_entity_6"
-				"SOV_MD4_light_armor_entity_5"
-				"RAJ_MD4_medium_armor_entity"
-				"USA_MD4_medium_armor_entity"
-				"USA_MD4_medium_armor_entity_2"
-				"USA_MD4_light_armor_entity_2"
-				"BRA_MD4_medium_armor_entity"
-				"UKR_MD4_medium_armor_entity"
-				"PER_MD4_medium_armor_entity"
+				"KOR_armor_Bat_3_entity"
 			}
 		}
 	}
 	mbt_hull_4 = {
 		pool = {
 			icons = {
-				"gfx/interface/technologies/Generic/NSB_AFV/MBT7.dds"
-				GFX_ENG_MBT_7
-				GFX_FRA_MBT_7
-				GFX_GER_MBT_7
-				GFX_GER_MBT_5
-				GFX_ISR_MBT_7
-				GFX_ISR_MBT_6
-				GFX_ITA_MBT_5
-				GFX_JAP_MBT_5
-				GFX_JAP_MBT_6
-				GFX_SOV_MBT_5
-				GFX_SOV_MBT_6
-				GFX_SPR_MBT_6
-				GFX_SPR_MBT_7
-				GFX_SWE_MBT_6
-				GFX_USA_MBT_5
-				GFX_USA_MBT_6
+				"gfx/interface/technologies/FRA/LAND/MBT7.dds"
+				"gfx/interface/technologies/SOV/LAND/MBT6.dds"
+				"gfx/interface/technologies/USA/LAND/MBT5.dds"
+				"gfx/interface/technologies/JAP/LAND/MBT5.dds"
+				"gfx/interface/technologies/GER/LAND/MBT6.dds"
+				"gfx/interface/technologies/KOR/LAND/MBT7.dds"
 			}
 			models = {
-				"CHI_MD4_medium_armor_entity"
-				"CHI_MD4_medium_armor_entity_2"
-				"CZE_MD4_medium_armor_1_entity"
-				"CZE_MD4_medium_armor_entity"
-				"CZE_MD4_medium_armor_04_entity"
-				"SLO_MD4_medium_armor_04_entity"
-				"commonwealth_gfx_MD4_medium_armor_entity"
-				"FRA_MD4_medium_armor_entity_2"
 				"FRA_MD4_medium_armor_entity"
-				"FRA_MD4_light_armor_entity"
-				"GER_MD4_medium_armor_entity_4"
-				"GER_MD4_medium_armor_entity_2"
+				"SOV_armor_Bat_3_entity"
+				"USA_armor_Bat_3_entity"
+				"GEN_Type10_entity"
 				"GER_MD4_medium_armor_entity_3"
-				"IRQ_MD4_medium_armor_entity"
-				"IRQ_MD4_medium_armor_entity_2"
-				"IRQ_MD4_medium_armor_entity_3"
-				"ITA_MD4_medium_armor_entity"
-				"JAP_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity_2"
-				"SOV_MD4_medium_armor_entity"
-				"SOV_MD4_medium_armor_entity_2"
-				"SOV_MD4_medium_armor_entity_5"
-				"SOV_MD4_medium_armor_entity_6"
-				"SOV_MD4_light_armor_entity_5"
-				"RAJ_MD4_medium_armor_entity"
-				"USA_MD4_medium_armor_entity"
-				"USA_MD4_medium_armor_entity_2"
-				"USA_MD4_light_armor_entity_2"
-				"BRA_MD4_medium_armor_entity"
-				"UKR_MD4_medium_armor_entity"
-				"PER_MD4_medium_armor_entity"
+				"KOR_armor_Bat_3_entity"
 			}
 		}
 	}
@@ -278,11 +122,11 @@ default = {
 			}
 			models = {
 				"ITA_MD4_medium_armor_entity"
-				"JAP_MD4_light_armor_entity"
+				"JAP_Type89_entity"
 				"commonwealth_gfx_MD4_light_armor_entity_2"
 				"FRA_MD4_light_armor_entity"
 				"SOV_MD4_light_armor_entity_5"
-				"USA_MD4_light_armor_entity_2"
+				"USA_M2A2bradley_entity"
 			}
 		}
 	}
@@ -308,11 +152,11 @@ default = {
 			}
 			models = {
 				"ITA_MD4_medium_armor_entity"
-				"JAP_MD4_light_armor_entity"
+				"JAP_Type89_entity"
 				"commonwealth_gfx_MD4_light_armor_entity_2"
 				"FRA_MD4_light_armor_entity"
 				"SOV_MD4_light_armor_entity_5"
-				"USA_MD4_light_armor_entity_2"
+				"USA_M2A2bradley_entity"
 			}
 		}
 	}
@@ -338,11 +182,11 @@ default = {
 			}
 			models = {
 				"ITA_MD4_medium_armor_entity"
-				"JAP_MD4_light_armor_entity"
+				"JAP_Type89_entity"
 				"commonwealth_gfx_MD4_light_armor_entity_2"
 				"FRA_MD4_light_armor_entity"
 				"SOV_MD4_light_armor_entity_5"
-				"USA_MD4_light_armor_entity_2"
+				"USA_M2A3bradley_entity"
 			}
 		}
 	}
@@ -368,11 +212,11 @@ default = {
 			}
 			models = {
 				"ITA_MD4_medium_armor_entity"
-				"JAP_MD4_light_armor_entity"
+				"JAP_Type89_entity"
 				"commonwealth_gfx_MD4_light_armor_entity_2"
 				"FRA_MD4_light_armor_entity"
 				"SOV_MD4_light_armor_entity_5"
-				"USA_MD4_light_armor_entity_2"
+				"USA_M2A3bradley_entity"
 			}
 		}
 	}
@@ -400,11 +244,11 @@ default = {
 			}
 			models = {
 				"ITA_MD4_medium_armor_entity"
-				"JAP_MD4_light_armor_entity"
+				"JAP_Type89_entity"
 				"commonwealth_gfx_MD4_light_armor_entity_2"
 				"FRA_MD4_light_armor_entity"
 				"SOV_MD4_light_armor_entity_5"
-				"USA_MD4_light_armor_entity_2"
+				"USA_M2A3bradley_entity"
 			}
 		}
 	}
@@ -421,7 +265,8 @@ default = {
 				GFX_PER_SP_Anti_Air_0_medium
 			}
 			models = {
-				"MD4_medium_armor_entity"
+				"USA_Avenger_entity"
+				"USA_SP_AA_Bat_entity"
 			}
 		}
 	}
@@ -439,7 +284,8 @@ default = {
 				GFX_PER_SP_Anti_Air_1_medium
 			}
 			models = {
-				"MD4_medium_armor_entity"
+				"USA_Avenger_entity"
+				"USA_SP_AA_Bat_entity"
 			}
 		}
 	}
@@ -460,7 +306,8 @@ default = {
 				GFX_PER_SP_Anti_Air_2_medium
 			}
 			models = {
-				"MD4_medium_armor_entity"
+				"USA_Avenger_entity"
+				"USA_SP_AA_Bat_entity"
 			}
 		}
 	}
@@ -481,7 +328,8 @@ default = {
 				
 			}
 			models = {
-				"MD4_medium_armor_entity"
+				"USA_Avenger_entity"
+				"USA_SP_AA_Bat_entity"
 			}
 		}
 	}
@@ -501,7 +349,8 @@ default = {
 				GFX_PER_SP_Anti_Air_3_medium
 			}
 			models = {
-				"MD4_medium_armor_entity"
+				"USA_Avenger_entity"
+				"USA_SP_AA_Bat_entity"
 			}
 		}
 	}
@@ -511,51 +360,39 @@ CHI = {
 	mbt_hull_0 = {
 		pool = {
 			icons = {
-				GFX_CHI_MBT_0
-				GFX_CHI_MBT_1
+				"gfx/interface/technologies/CHI/LAND/MBT1.dds"
+				"gfx/interface/technologies/CHI/LAND/ZTZ59IIA.dds"
+				"gfx/interface/technologies/CHI/LAND/ZTZ69III.dds"
+				"gfx/interface/technologies/CHI/LAND/MBT2.dds" #Type 79
+				"gfx/interface/technologies/CHI/LAND/ZTZ88A.dds"
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
-				"CZE_MD4_medium_armor_entity"
-				"SLO_MD4_medium_armor_entity"
-				"SOV_MD4_medium_armor_entity"
 				"CHI_MD4_medium_armor_entity"
+				"CHI_ZTZ59I_entity"
+				"CHI_ZTZ88_entity"
 			}
 		}
 	}
 	mbt_hull_1 = {
 		pool = {
 			icons = {
-				GFX_CHI_MBT_1
-				GFX_CHI_MBT_2
+				"gfx/interface/technologies/CHI/LAND/MBT3.dds"
+				"gfx/interface/technologies/CHI/LAND/ZTZ96A.dds"
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
-				"CZE_MD4_medium_armor_entity"
-				"SLO_MD4_medium_armor_entity"
-				"SOV_MD4_medium_armor_entity"
-				"CHI_MD4_medium_armor_entity"
+				"CHI_ZTZ96_entity"
+				"CHI_ZTZ99_entity"
 			}
 		}
 	}
 	mbt_hull_2 = {
 		pool = {
 			icons = {
-				GFX_CHI_MBT_4
-				GFX_CHI_MBT_2
+				"gfx/interface/technologies/CHI/LAND/MBT5.dds"
+				"gfx/interface/technologies/CHI/LAND/MBT4.dds"
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
-				"CZE_MD4_medium_armor_entity"
-				"SLO_MD4_medium_armor_entity"
-				"SOV_MD4_medium_armor_entity"
-				"CHI_MD4_medium_armor_entity"
+				"CHI_ZTZ99_entity"
 			}
 		}
 	}
@@ -566,13 +403,7 @@ CHI = {
 				GFX_CHI_MBT_5
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
-				"CZE_MD4_medium_armor_entity"
-				"SLO_MD4_medium_armor_entity"
-				"SOV_MD4_medium_armor_entity"
-				"CHI_MD4_medium_armor_entity"
+				"CHI_ZTZ99_entity"
 			}
 		}
 	}
@@ -584,13 +415,7 @@ CHI = {
 				GFX_CHI_MBT_5
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
-				"CZE_MD4_medium_armor_entity"
-				"SLO_MD4_medium_armor_entity"
-				"SOV_MD4_medium_armor_entity"
-				"CHI_MD4_medium_armor_entity"
+				"CHI_ZTZ99_entity"
 			}
 		}
 	}
@@ -723,7 +548,7 @@ ENG = {
 				"MD4_medium_armor_entity"
 				"GER_MD4_medium_armor_entity"
 				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
+				"KOR_armor_Bat_1_entity"
 			}
 		}
 	}
@@ -734,12 +559,6 @@ ENG = {
 				GFX_ENG_MBT_3
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"FRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"GER_MD4_medium_armor_entity"
-				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
 				"commonwealth_gfx_MD4_medium_armor_entity"
 			}
 		}
@@ -751,12 +570,6 @@ ENG = {
 				GFX_ENG_MBT_5
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"FRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"GER_MD4_medium_armor_entity"
-				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
 				"commonwealth_gfx_MD4_medium_armor_entity"
 			}
 		}
@@ -768,12 +581,6 @@ ENG = {
 				GFX_ENG_MBT_6
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"FRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"GER_MD4_medium_armor_entity"
-				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
 				"commonwealth_gfx_MD4_medium_armor_entity"
 			}
 		}
@@ -785,12 +592,6 @@ ENG = {
 				GFX_ENG_MBT_6
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"FRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"GER_MD4_medium_armor_entity"
-				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
 				"commonwealth_gfx_MD4_medium_armor_entity"
 			}
 		}
@@ -919,12 +720,6 @@ BRA = {
 			}
 			models = {
 				"BRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
-				"CZE_MD4_medium_armor_entity"
-				"SLO_MD4_medium_armor_entity"
-				"SOV_MD4_medium_armor_entity"
-				"CHI_MD4_medium_armor_entity"
 			}
 		}
 	}
@@ -936,12 +731,6 @@ BRA = {
 			}
 			models = {
 				"BRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
-				"CZE_MD4_medium_armor_entity"
-				"SLO_MD4_medium_armor_entity"
-				"SOV_MD4_medium_armor_entity"
-				"CHI_MD4_medium_armor_entity"
 			}
 		}
 	}
@@ -953,12 +742,6 @@ BRA = {
 			}
 			models = {
 				"BRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
-				"CZE_MD4_medium_armor_entity"
-				"SLO_MD4_medium_armor_entity"
-				"SOV_MD4_medium_armor_entity"
-				"CHI_MD4_medium_armor_entity"
 			}
 		}
 	}
@@ -969,12 +752,6 @@ BRA = {
 			}
 			models = {
 				"BRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
-				"CZE_MD4_medium_armor_entity"
-				"SLO_MD4_medium_armor_entity"
-				"SOV_MD4_medium_armor_entity"
-				"CHI_MD4_medium_armor_entity"
 			}
 		}
 	}
@@ -985,12 +762,6 @@ BRA = {
 			}
 			models = {
 				"BRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
-				"CZE_MD4_medium_armor_entity"
-				"SLO_MD4_medium_armor_entity"
-				"SOV_MD4_medium_armor_entity"
-				"CHI_MD4_medium_armor_entity"
 			}
 		}
 	}
@@ -1179,90 +950,62 @@ GER = {
 	mbt_hull_0 = {
 		pool = {
 			icons = {
-				GFX_GER_MBT_1
-				GFX_GER_MBT_2
+				"gfx/interface/technologies/GER/LAND/MBT1.dds"
+				"gfx/interface/technologies/GER/LAND/MBT2.dds"
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"commonwealth_gfx_MD4_medium_armor_entity"
-				"FRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
-				"GER_MD4_medium_armor_entity"
+				GER_MD4_medium_armor_entity_2
 			}
 		}
 	}
 	mbt_hull_1 = {
 		pool = {
 			icons = {
-				GFX_GER_MBT_3
+				"gfx/interface/technologies/GER/LAND/MBT3.dds"
+				"gfx/interface/technologies/GER/LAND/MBT4.dds"
+				"gfx/interface/technologies/GER/LAND/MBT5.dds"
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"commonwealth_gfx_MD4_medium_armor_entity"
-				"FRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
 				"GER_MD4_medium_armor_entity"
+				"GER_MD4_medium_armor_3_entity"
 			}
 		}
 	}
 	mbt_hull_2 = {
 		pool = {
 			icons = {
-				GFX_GER_MBT_4
+				"gfx/interface/technologies/GER/LAND/MBT5.dds"
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"commonwealth_gfx_MD4_medium_armor_entity"
-				"FRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
-				"GER_MD4_medium_armor_entity"
+				"GER_MD4_medium_armor_entity_4"
 			}
 		}
 	}
 	mbt_hull_3 = {
 		pool = {
 			icons = {
-				GFX_GER_MBT_5
+				"gfx/interface/technologies/GER/LAND/MBT6.dds"
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"commonwealth_gfx_MD4_medium_armor_entity"
-				"FRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
-				"GER_MD4_medium_armor_entity"
+				"GER_MD4_medium_armor_entity_3"
 			}
 		}
 	}
 	mbt_hull_4 = {
 		pool = {
 			icons = {
-				GFX_GER_MBT_7
-				GFX_GER_MBT_5
+				"gfx/interface/technologies/GER/LAND/MBT6.dds"
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"commonwealth_gfx_MD4_medium_armor_entity"
-				"FRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
-				"GER_MD4_medium_armor_entity"
+				"GER_MD4_medium_armor_entity_3"
 			}
 		}
 	}
 	spaa_hull_0 = {
 		pool = {
 			icons = {
-				GFX_GER_SP_Anti_Air_0_medium
-				GFX_GER_SP_Anti_Air_1_medium
+				"gfx/interface/technologies/GER/LAND/SPA1.dds"
+				"gfx/interface/technologies/GER/LAND/SPA2.dds"
 			}
 			models = {
 				"GER_MD4_medium_armor_entity"
@@ -1272,8 +1015,8 @@ GER = {
 	spaa_hull_1 = {
 		pool = {
 			icons = {
-				GFX_GER_SP_Anti_Air_1_medium
-				GFX_GER_SP_Anti_Air_2_medium
+				"gfx/interface/technologies/GER/LAND/SPA1.dds"
+				"gfx/interface/technologies/GER/LAND/SPA2.dds"
 			}
 			models = {
 				"GER_MD4_medium_armor_entity"
@@ -1283,8 +1026,9 @@ GER = {
 	spaa_hull_2 = {
 		pool = {
 			icons = {
-				GFX_GER_SP_Anti_Air_2_medium
-				GFX_GER_SP_Anti_Air_3_medium
+				"gfx/interface/technologies/GER/LAND/SPA1.dds"
+				"gfx/interface/technologies/GER/LAND/SPA2.dds"
+				"gfx/interface/technologies/GER/LAND/SPA3.dds"
 			}
 			models = {
 				"GER_MD4_medium_armor_entity"
@@ -1294,8 +1038,8 @@ GER = {
 	spaa_hull_3 = {
 		pool = {
 			icons = {
-				GFX_GER_SP_Anti_Air_3_medium
-				GFX_GER_SP_Anti_Air_4_medium
+				"gfx/interface/technologies/GER/LAND/SPA3.dds"
+				"gfx/interface/technologies/GER/LAND/SPA4.dds"
 			}
 			models = {
 				"GER_MD4_medium_armor_entity"
@@ -1305,8 +1049,8 @@ GER = {
 	spaa_hull_4 = {
 		pool = {
 			icons = {
-				GFX_GER_SP_Anti_Air_4_medium
-				GFX_GER_SP_Anti_Air_3_medium
+				"gfx/interface/technologies/GER/LAND/SPA3.dds"
+				"gfx/interface/technologies/GER/LAND/SPA4.dds"
 			}
 			models = {
 				"GER_MD4_medium_armor_entity"
@@ -1315,9 +1059,9 @@ GER = {
 	}
 	light_tank_hull_0 = {
 		pool = {
-			icons = {		
-				GFX_GER_Rec_tank_0_medium
-				GFX_GER_Rec_tank_1_medium
+			icons = {
+				"gfx/interface/technologies/GER/LAND/IFV1.dds"
+				"gfx/interface/technologies/GER/LAND/GER_Luchs.dds"
 			}
 			models = {
 				"GER_MD4_medium_armor_entity"
@@ -1328,8 +1072,8 @@ GER = {
 	light_tank_hull_1 = {
 		pool = {
 			icons = {
-				GFX_GER_Rec_tank_1_medium
-				GFX_GER_Rec_tank_2_medium
+				"gfx/interface/technologies/GER/LAND/IFV4.dds"
+				"gfx/interface/technologies/GER/LAND/GER_Luchs.dds"
 			}
 			models = {
 				"GER_MD4_medium_armor_entity"
@@ -1340,8 +1084,9 @@ GER = {
 	light_tank_hull_2 = {
 		pool = {
 			icons = {
-				GFX_GER_Rec_tank_3_medium
-				GFX_GER_Rec_tank_2_medium
+				"gfx/interface/technologies/GER/LAND/IFV4.dds"
+				"gfx/interface/technologies/GER/LAND/GER_Luchs.dds"
+				"gfx/interface/technologies/GER/LAND/U3.dds"
 			}
 			models = {
 				"GER_MD4_medium_armor_entity"
@@ -1352,8 +1097,9 @@ GER = {
 	light_tank_hull_3 = {
 		pool = {
 			icons = {
-				GFX_GER_Rec_tank_4_medium
-				GFX_GER_Rec_tank_3_medium
+				"gfx/interface/technologies/GER/LAND/U3.dds"
+				"gfx/interface/technologies/GER/LAND/APC6.dds"
+				"gfx/interface/technologies/GER/LAND/IFV6.dds"
 			}
 			models = {
 				"GER_MD4_medium_armor_entity"
@@ -1364,8 +1110,8 @@ GER = {
 	light_tank_hull_4 = {
 		pool = {
 			icons = {
-				GFX_GER_Rec_tank_5_medium
-				GFX_GER_Rec_tank_4_medium
+				"gfx/interface/technologies/GER/LAND/APC7.dds"
+				"gfx/interface/technologies/GER/LAND/IFV6.dds"
 			}
 			models = {
 				"GER_MD4_medium_armor_entity"
@@ -1373,7 +1119,50 @@ GER = {
 		}
 	}
 }
-
+NOR = {
+	mbt_hull_0 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/GER/LAND/MBT2NOR.dds"
+			}
+			models = {
+				GER_MD4_medium_armor_entity_2
+			}
+		}
+	}
+	mbt_hull_1 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/GER/LAND/MBT3DEN.dds"
+			}
+			models = {
+				GEN_Leopard2A4green_entity
+			}
+		}
+	}
+}
+DEN = {
+	mbt_hull_0 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/GER/LAND/MBT2NOR.dds"
+			}
+			models = {
+				GER_MD4_medium_armor_entity_2
+			}
+		}
+	}
+	mbt_hull_1 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/GER/LAND/MBT3DEN.dds"
+			}
+			models = {
+				GEN_Leopard2A4green_entity
+			}
+		}
+	}
+}
 GRE = {
 	mbt_hull_0 = {
 		pool = {
@@ -1382,12 +1171,6 @@ GRE = {
 				GFX_GRE_MBT_2
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"commonwealth_gfx_MD4_medium_armor_entity"
-				"FRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
 				"GER_MD4_medium_armor_entity"
 			}
 		}
@@ -1398,12 +1181,6 @@ GRE = {
 				GFX_GRE_MBT_3
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"commonwealth_gfx_MD4_medium_armor_entity"
-				"FRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
 				"GER_MD4_medium_armor_entity"
 			}
 		}
@@ -1414,12 +1191,6 @@ GRE = {
 				GFX_GRE_MBT_4
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"commonwealth_gfx_MD4_medium_armor_entity"
-				"FRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
 				"GER_MD4_medium_armor_entity"
 			}
 		}
@@ -1544,103 +1315,56 @@ ISR = {
 	mbt_hull_0 = {
 		pool = {
 			icons = {
-				GFX_ISR_MBT_1
-				GFX_ISR_MBT_2
+				"gfx/interface/technologies/ISR/LAND/MBT2.dds"
+				"gfx/interface/technologies/ISR/LAND/Galbatash.dds"
+				"gfx/interface/technologies/ISR/LAND/magach7a.dds"
+				"gfx/interface/technologies/ISR/LAND/magach7c.dds"
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"CHI_MD4_medium_armor_entity"
-				"commonwealth_gfx_MD4_medium_armor_entity"
-				"FRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"GER_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
-				"CZE_MD4_medium_armor_entity"
-				"SLO_MD4_medium_armor_entity"
-				"SOV_MD4_medium_armor_entity"
-				"USA_MD4_medium_armor_entity"
+				"ISR_MD4_medium_armor_entity"
 			}
 		}
 	}
 	mbt_hull_1 = {
 		pool = {
 			icons = {
-				GFX_ISR_MBT_3
+				"gfx/interface/technologies/ISR/LAND/MBT3.dds"
+				"gfx/interface/technologies/ISR/LAND/Merkava2D.dds"
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"CHI_MD4_medium_armor_entity"
-				"commonwealth_gfx_MD4_medium_armor_entity"
-				"FRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"GER_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
-				"CZE_MD4_medium_armor_entity"
-				"SLO_MD4_medium_armor_entity"
-				"SOV_MD4_medium_armor_entity"
-				"USA_MD4_medium_armor_entity"
+				"ISR_MD4_medium_armor_entity"
 			}
 		}
 	}
 	mbt_hull_2 = {
 		pool = {
 			icons = {
-				GFX_ISR_MBT_4
+				"gfx/interface/technologies/ISR/LAND/MBT4.dds"
+				"gfx/interface/technologies/ISR/LAND/Merkava3D.dds"
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"CHI_MD4_medium_armor_entity"
-				"commonwealth_gfx_MD4_medium_armor_entity"
-				"FRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"GER_MD4_medium_armor_entity"
-				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
-				"CZE_MD4_medium_armor_entity"
-				"SLO_MD4_medium_armor_entity"
-				"SOV_MD4_medium_armor_entity"
+				"ISR_MD4_medium_armor_entity"
 			}
 		}
 	}
 	mbt_hull_3 = {
 		pool = {
 			icons = {
-				GFX_ISR_MBT_5
-				GFX_ISR_MBT_6
+				"gfx/interface/technologies/ISR/LAND/MBT5.dds"
+				"gfx/interface/technologies/ISR/LAND/MBT6.dds"
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"CHI_MD4_medium_armor_entity"
-				"commonwealth_gfx_MD4_medium_armor_entity"
-				"FRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"GER_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
-				"CZE_MD4_medium_armor_entity"
-				"SLO_MD4_medium_armor_entity"
-				"SOV_MD4_medium_armor_entity"
-				"USA_MD4_medium_armor_entity"
+				"ISR_MD4_medium_armor_entity"
 			}
 		}
 	}
 	mbt_hull_4 = {
 		pool = {
 			icons = {
-				GFX_ISR_MBT_7
-				GFX_ISR_MBT_6
+				"gfx/interface/technologies/ISR/LAND/MBT7.dds"
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"CHI_MD4_medium_armor_entity"
-				"commonwealth_gfx_MD4_medium_armor_entity"
-				"FRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"GER_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
-				"CZE_MD4_medium_armor_entity"
-				"SLO_MD4_medium_armor_entity"
-				"SOV_MD4_medium_armor_entity"
-				"USA_MD4_medium_armor_entity"
+				"ISR_MD4_medium_armor_entity"
 			}
 		}
 	}
@@ -1712,16 +1436,6 @@ ITA = {
 				GFX_ITA_MBT_0
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"CHI_MD4_medium_armor_entity"
-				"commonwealth_gfx_MD4_medium_armor_entity"
-				"FRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
-				"CZE_MD4_medium_armor_entity"
-				"SLO_MD4_medium_armor_entity"
-				"SOV_MD4_medium_armor_entity"
 				"GER_MD4_medium_armor_entity"
 			}
 		}
@@ -1732,16 +1446,6 @@ ITA = {
 				GFX_ITA_MBT_1
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"CHI_MD4_medium_armor_entity"
-				"commonwealth_gfx_MD4_medium_armor_entity"
-				"FRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
-				"CZE_MD4_medium_armor_entity"
-				"SLO_MD4_medium_armor_entity"
-				"SOV_MD4_medium_armor_entity"
 				"GER_MD4_medium_armor_entity"
 			}
 		}
@@ -1752,16 +1456,6 @@ ITA = {
 				GFX_ITA_MBT_3
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"CHI_MD4_medium_armor_entity"
-				"commonwealth_gfx_MD4_medium_armor_entity"
-				"FRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
-				"CZE_MD4_medium_armor_entity"
-				"SLO_MD4_medium_armor_entity"
-				"SOV_MD4_medium_armor_entity"
 				"GER_MD4_medium_armor_entity"
 			}
 		}
@@ -1772,16 +1466,6 @@ ITA = {
 				GFX_ITA_MBT_4
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"CHI_MD4_medium_armor_entity"
-				"commonwealth_gfx_MD4_medium_armor_entity"
-				"FRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
-				"CZE_MD4_medium_armor_entity"
-				"SLO_MD4_medium_armor_entity"
-				"SOV_MD4_medium_armor_entity"
 				"GER_MD4_medium_armor_entity"
 			}
 		}
@@ -1793,16 +1477,6 @@ ITA = {
 				GFX_ITA_MBT_6
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"CHI_MD4_medium_armor_entity"
-				"commonwealth_gfx_MD4_medium_armor_entity"
-				"FRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
-				"CZE_MD4_medium_armor_entity"
-				"SLO_MD4_medium_armor_entity"
-				"SOV_MD4_medium_armor_entity"
 				"GER_MD4_medium_armor_entity"
 			}
 		}
@@ -1929,104 +1603,54 @@ JAP = {
 	mbt_hull_0 = {
 		pool = {
 			icons = {
-				GFX_JAP_MBT_1
+				"gfx/interface/technologies/JAP/LAND/MBT1.dds"
+				"gfx/interface/technologies/JAP/LAND/MBT2.dds"
+				"gfx/interface/technologies/JAP/LAND/MBT3.dds"
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"CHI_MD4_medium_armor_entity"
-				"commonwealth_gfx_MD4_medium_armor_entity"
-				"FRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"GER_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
-				"CZE_MD4_medium_armor_entity"
-				"SLO_MD4_medium_armor_entity"
-				"SOV_MD4_medium_armor_entity"
-				"USA_MD4_medium_armor_entity"
+				"JAP_Type74_entity"
 			}
 		}
 	}
 	mbt_hull_1 = {
 		pool = {
 			icons = {
-				GFX_JAP_MBT_2
-				GFX_JAP_MBT_3
+				"gfx/interface/technologies/JAP/LAND/MBT4.dds"
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"CHI_MD4_medium_armor_entity"
-				"commonwealth_gfx_MD4_medium_armor_entity"
-				"FRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"GER_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
-				"CZE_MD4_medium_armor_entity"
-				"SLO_MD4_medium_armor_entity"
-				"SOV_MD4_medium_armor_entity"
-				"USA_MD4_medium_armor_entity"
+				"JAP_MD4_medium_armor_entity" #Type 90
 			}
 		}
 	}
 	mbt_hull_2 = {
 		pool = {
 			icons = {
-				GFX_JAP_MBT_4
-				GFX_JAP_MBT_5
+				"gfx/interface/technologies/JAP/LAND/MBT4.dds"
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"CHI_MD4_medium_armor_entity"
-				"commonwealth_gfx_MD4_medium_armor_entity"
-				"FRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"GER_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
-				"CZE_MD4_medium_armor_entity"
-				"SLO_MD4_medium_armor_entity"
-				"SOV_MD4_medium_armor_entity"
-				"USA_MD4_medium_armor_entity"
+				"JAP_MD4_medium_armor_entity" #Type 90
 			}
 		}
 	}
 	mbt_hull_3 = {
 		pool = {
 			icons = {
-				GFX_JAP_MBT_5
-				GFX_JAP_MBT_6
+				"gfx/interface/technologies/JAP/LAND/MBT6.dds"
+				"gfx/interface/technologies/JAP/LAND/MBT5.dds"
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"CHI_MD4_medium_armor_entity"
-				"commonwealth_gfx_MD4_medium_armor_entity"
-				"FRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"GER_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
-				"CZE_MD4_medium_armor_entity"
-				"SLO_MD4_medium_armor_entity"
-				"SOV_MD4_medium_armor_entity"
-				"USA_MD4_medium_armor_entity"
+				"JAP_Type10_entity"
 			}
 		}
 	}
 	mbt_hull_4 = {
 		pool = {
 			icons = {
-				GFX_JAP_MBT_7
-				GFX_JAP_MBT_6
+				"gfx/interface/technologies/JAP/LAND/MBT7.dds"
+				"gfx/interface/technologies/JAP/LAND/MBT6.dds"
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"CHI_MD4_medium_armor_entity"
-				"commonwealth_gfx_MD4_medium_armor_entity"
-				"FRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"GER_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
-				"CZE_MD4_medium_armor_entity"
-				"SLO_MD4_medium_armor_entity"
-				"SOV_MD4_medium_armor_entity"
-				"USA_MD4_medium_armor_entity"
+				"JAP_Type10_entity"
 			}
 		}
 	}
@@ -2037,7 +1661,7 @@ JAP = {
 				GFX_JAP_SP_Anti_Air_1_medium
 			}
 			models = {
-				"JAP_MD4_light_armor_entity"
+				"JAP_Type89_entity"
 			}
 		}
 	}
@@ -2048,7 +1672,7 @@ JAP = {
 				GFX_JAP_SP_Anti_Air_2_medium
 			}
 			models = {
-				"JAP_MD4_light_armor_entity"
+				"JAP_Type89_entity"
 			}
 		}
 	}
@@ -2059,7 +1683,7 @@ JAP = {
 				GFX_JAP_SP_Anti_Air_3_medium
 			}
 			models = {
-				"JAP_MD4_light_armor_entity"
+				"JAP_Type89_entity"
 			}
 		}
 	}
@@ -2071,7 +1695,7 @@ JAP = {
 				GFX_JAP_SP_Anti_Air_2_medium
 			}
 			models = {
-				"JAP_MD4_light_armor_entity"
+				"JAP_Type89_entity"
 			}
 		}
 	}
@@ -2083,18 +1707,17 @@ JAP = {
 				GFX_JAP_SP_Anti_Air_2_medium
 			}
 			models = {
-				"JAP_MD4_light_armor_entity"
+				"JAP_Type89_entity"
 			}
 		}
 	}
 	light_tank_hull_0 = {
 		pool = {
 			icons = {		
-				GFX_JAP_Rec_tank_0_medium
-				GFX_JAP_Rec_tank_1_medium
+				"gfx/interface/technologies/JAP/LAND/REC1.dds"
 			}
 			models = {
-				"JAP_MD4_light_armor_entity"
+				"JAP_Type89_entity"
 			}
 		}
 	}
@@ -2102,11 +1725,10 @@ JAP = {
 	light_tank_hull_1 = {
 		pool = {
 			icons = {
-				GFX_JAP_Rec_tank_1_medium
-				GFX_JAP_Rec_tank_2_medium
+				"gfx/interface/technologies/JAP/LAND/REC3.dds"
 			}
 			models = {
-				"JAP_MD4_light_armor_entity"
+				"JAP_Type89_entity"
 			}
 		}
 	}
@@ -2114,11 +1736,10 @@ JAP = {
 	light_tank_hull_2 = {
 		pool = {
 			icons = {
-				GFX_JAP_Rec_tank_3_medium
-				GFX_JAP_Rec_tank_2_medium
+				"gfx/interface/technologies/JAP/LAND/REC4.dds"
 			}
 			models = {
-				"JAP_MD4_light_armor_entity"
+				"JAP_Type89_entity"
 			}
 		}
 	}
@@ -2126,11 +1747,11 @@ JAP = {
 	light_tank_hull_3 = {
 		pool = {
 			icons = {
-				GFX_JAP_Rec_tank_4_medium
-				GFX_JAP_Rec_tank_3_medium
+				"gfx/interface/technologies/JAP/LAND/REC4.dds"
+				"gfx/interface/technologies/JAP/LAND/REC5.dds"
 			}
 			models = {
-				"JAP_MD4_light_armor_entity"
+				"JAP_Type89_entity"
 			}
 		}
 	}
@@ -2138,11 +1759,10 @@ JAP = {
 	light_tank_hull_4 = {
 		pool = {
 			icons = {
-				GFX_JAP_Rec_tank_5_medium
-				GFX_JAP_Rec_tank_4_medium
+				"gfx/interface/technologies/JAP/LAND/REC6.dds"
 			}
 			models = {
-				"JAP_MD4_light_armor_entity"
+				"JAP_Type89_entity"
 			}
 		}
 	}
@@ -2152,104 +1772,52 @@ KOR = {
 	mbt_hull_0 = {
 		pool = {
 			icons = {
-				GFX_KOR_MBT_1
-				GFX_KOR_MBT_2
+				"gfx/interface/technologies/KOR/LAND/MBT0.dds"
+				"gfx/interface/technologies/KOR/LAND/MBT1.dds"
+				"gfx/interface/technologies/KOR/LAND/MBT2.dds"
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"CHI_MD4_medium_armor_entity"
-				"commonwealth_gfx_MD4_medium_armor_entity"
-				"FRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"GER_MD4_medium_armor_entity"
-				"CZE_MD4_medium_armor_entity"
-				"SLO_MD4_medium_armor_entity"
-				"SOV_MD4_medium_armor_entity"
-				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
+				"KOR_armor_Bat_entity" #M48A5
 			}
 		}
 	}
 	mbt_hull_1 = {
 		pool = {
 			icons = {
-				GFX_KOR_MBT_3
+				"gfx/interface/technologies/KOR/LAND/MBT3.dds"
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"CHI_MD4_medium_armor_entity"
-				"commonwealth_gfx_MD4_medium_armor_entity"
-				"FRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"GER_MD4_medium_armor_entity"
-				"CZE_MD4_medium_armor_entity"
-				"SLO_MD4_medium_armor_entity"
-				"SOV_MD4_medium_armor_entity"
-				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
+				"KOR_armor_Bat_1_entity" #K1
 			}
 		}
 	}
 	mbt_hull_2 = {
 		pool = {
 			icons = {
-				GFX_KOR_MBT_4
-				GFX_KOR_MBT_5
+				"gfx/interface/technologies/KOR/LAND/MBT4.dds"
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"CHI_MD4_medium_armor_entity"
-				"commonwealth_gfx_MD4_medium_armor_entity"
-				"FRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"GER_MD4_medium_armor_entity"
-				"CZE_MD4_medium_armor_entity"
-				"SLO_MD4_medium_armor_entity"
-				"SOV_MD4_medium_armor_entity"
-				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
+				"KOR_armor_Bat_1_entity" #K1A1
 			}
 		}
 	}
 	mbt_hull_3 = {
 		pool = {
 			icons = {
-				GFX_KOR_MBT_5
-				GFX_KOR_MBT_6
+				"gfx/interface/technologies/KOR/LAND/MBT5.dds"
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"CHI_MD4_medium_armor_entity"
-				"commonwealth_gfx_MD4_medium_armor_entity"
-				"FRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"GER_MD4_medium_armor_entity"
-				"CZE_MD4_medium_armor_entity"
-				"SLO_MD4_medium_armor_entity"
-				"SOV_MD4_medium_armor_entity"
-				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
+				"KOR_armor_Bat_3_entity" #K2
 			}
 		}
 	}
 	mbt_hull_4 = {
 		pool = {
 			icons = {
-				GFX_KOR_MBT_7
-				GFX_KOR_MBT_6
+				"gfx/interface/technologies/KOR/LAND/MBT7.dds"
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"CHI_MD4_medium_armor_entity"
-				"commonwealth_gfx_MD4_medium_armor_entity"
-				"FRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"GER_MD4_medium_armor_entity"
-				"CZE_MD4_medium_armor_entity"
-				"SLO_MD4_medium_armor_entity"
-				"SOV_MD4_medium_armor_entity"
-				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
+				"KOR_armor_Bat_3_entity" #K2
 			}
 		}
 	}
@@ -2368,7 +1936,30 @@ KOR = {
 		}
 	}
 }
-
+KOR = {
+	mbt_hull_0 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/TAI/LAND/MBT1.dds"
+			}
+			models = {
+				"TAI_armor_Bat_entity" #M48A5
+			}
+		}
+	}
+}
+TAI = {
+	mbt_hull_0 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/TAI/LAND/MBT1.dds"
+			}
+			models = {
+				"TAI_armor_Bat_entity"
+			}
+		}
+	}
+}
 NKO = {
 	mbt_hull_0 = {
 		pool = {
@@ -2377,16 +1968,6 @@ NKO = {
 				GFX_NKO_MBT_2
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"commonwealth_gfx_MD4_medium_armor_entity"
-				"FRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"GER_MD4_medium_armor_entity"
-				"CZE_MD4_medium_armor_entity"
-				"SLO_MD4_medium_armor_entity"
-				"SOV_MD4_medium_armor_entity"
-				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
 				"CHI_MD4_medium_armor_entity"
 			}
 		}
@@ -2397,16 +1978,6 @@ NKO = {
 				GFX_NKO_MBT_3
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"commonwealth_gfx_MD4_medium_armor_entity"
-				"FRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"GER_MD4_medium_armor_entity"
-				"CZE_MD4_medium_armor_entity"
-				"SLO_MD4_medium_armor_entity"
-				"SOV_MD4_medium_armor_entity"
-				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
 				"CHI_MD4_medium_armor_entity"
 			}
 		}
@@ -2418,16 +1989,6 @@ NKO = {
 				GFX_NKO_MBT_6
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"commonwealth_gfx_MD4_medium_armor_entity"
-				"FRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"GER_MD4_medium_armor_entity"
-				"CZE_MD4_medium_armor_entity"
-				"SLO_MD4_medium_armor_entity"
-				"SOV_MD4_medium_armor_entity"
-				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
 				"CHI_MD4_medium_armor_entity"
 			}
 		}
@@ -2439,16 +2000,6 @@ NKO = {
 				GFX_NKO_MBT_5
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"commonwealth_gfx_MD4_medium_armor_entity"
-				"FRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"GER_MD4_medium_armor_entity"
-				"CZE_MD4_medium_armor_entity"
-				"SLO_MD4_medium_armor_entity"
-				"SOV_MD4_medium_armor_entity"
-				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
 				"CHI_MD4_medium_armor_entity"
 			}
 		}
@@ -2584,7 +2135,7 @@ PER = {
 				"CZE_MD4_medium_armor_entity"
 				"SLO_MD4_medium_armor_entity"
 				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
+				"KOR_armor_Bat_1_entity"
 				"CHI_MD4_medium_armor_entity"
 				"SOV_MD4_medium_armor_entity"
 			}
@@ -2604,7 +2155,7 @@ PER = {
 				"CZE_MD4_medium_armor_entity"
 				"SLO_MD4_medium_armor_entity"
 				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
+				"KOR_armor_Bat_1_entity"
 				"CHI_MD4_medium_armor_entity"
 				"SOV_MD4_medium_armor_entity"
 			}
@@ -2625,7 +2176,7 @@ PER = {
 				"CZE_MD4_medium_armor_entity"
 				"SLO_MD4_medium_armor_entity"
 				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
+				"KOR_armor_Bat_1_entity"
 				"CHI_MD4_medium_armor_entity"
 				"SOV_MD4_medium_armor_entity"
 			}
@@ -2646,7 +2197,7 @@ PER = {
 				"CZE_MD4_medium_armor_entity"
 				"SLO_MD4_medium_armor_entity"
 				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
+				"KOR_armor_Bat_1_entity"
 				"CHI_MD4_medium_armor_entity"
 				"SOV_MD4_medium_armor_entity"
 			}
@@ -2782,7 +2333,7 @@ RAJ = {
 				"CZE_MD4_medium_armor_entity"
 				"SLO_MD4_medium_armor_entity"
 				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
+				"KOR_armor_Bat_1_entity"
 				"CHI_MD4_medium_armor_entity"
 				"SOV_MD4_medium_armor_entity"
 			}
@@ -2802,7 +2353,7 @@ RAJ = {
 				"CZE_MD4_medium_armor_entity"
 				"SLO_MD4_medium_armor_entity"
 				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
+				"KOR_armor_Bat_1_entity"
 				"CHI_MD4_medium_armor_entity"
 				"SOV_MD4_medium_armor_entity"
 			}
@@ -2823,7 +2374,7 @@ RAJ = {
 				"CZE_MD4_medium_armor_entity"
 				"SLO_MD4_medium_armor_entity"
 				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
+				"KOR_armor_Bat_1_entity"
 				"CHI_MD4_medium_armor_entity"
 				"SOV_MD4_medium_armor_entity"
 			}
@@ -2844,7 +2395,7 @@ RAJ = {
 				"CZE_MD4_medium_armor_entity"
 				"SLO_MD4_medium_armor_entity"
 				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
+				"KOR_armor_Bat_1_entity"
 				"CHI_MD4_medium_armor_entity"
 				"SOV_MD4_medium_armor_entity"
 			}
@@ -2865,7 +2416,7 @@ SAF = {
 				"MD4_medium_armor_entity"
 				"GER_MD4_medium_armor_entity"
 				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
+				"KOR_armor_Bat_1_entity"
 			}
 		}
 	}
@@ -2880,7 +2431,7 @@ SAF = {
 				"MD4_medium_armor_entity"
 				"GER_MD4_medium_armor_entity"
 				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
+				"KOR_armor_Bat_1_entity"
 				"commonwealth_gfx_MD4_medium_armor_entity"
 			}
 		}
@@ -2896,7 +2447,7 @@ SAF = {
 				"MD4_medium_armor_entity"
 				"GER_MD4_medium_armor_entity"
 				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
+				"KOR_armor_Bat_1_entity"
 				"commonwealth_gfx_MD4_medium_armor_entity"
 			}
 		}
@@ -2907,29 +2458,31 @@ SOV = {
 	mbt_hull_0 = {
 		pool = {
 			icons = {
-				GFX_SOV_MBT_1
-				GFX_mbt_hull_0_a
+				"gfx/interface/technologies/SOV/LAND/T55.dds"
+				"gfx/interface/technologies/SOV/LAND/MBT1.dds"
+				"gfx/interface/technologies/SOV/LAND/T62.dds"
+				"gfx/interface/technologies/SOV/LAND/T62M.dds"
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"CZE_MD4_medium_armor_entity"
-				"SLO_MD4_medium_armor_entity"
-				"SOV_MD4_medium_armor_entity"
+				"SOV_T62_entity"
 			}
 		}
 	}
 	mbt_hull_1 = {
 		pool = {
 			icons = {
-				GFX_SOV_MBT_2
-				GFX_SOV_MBT_3
+				"gfx/interface/technologies/SOV/LAND/T80B.dds"
+				"gfx/interface/technologies/SOV/LAND/T80BV.dds"
+				"gfx/interface/technologies/SOV/LAND/T80U.dds"
+				"gfx/interface/technologies/SOV/LAND/T80BVM.dds"
+				"gfx/interface/technologies/SOV/LAND/T72A.dds"
+				"gfx/interface/technologies/SOV/LAND/T72B.dds"
+				"gfx/interface/technologies/SOV/LAND/T72B3.dds"
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"CZE_MD4_medium_armor_entity"
-				"SLO_MD4_medium_armor_entity"
+				"T80bv_entity"
+				"T80u_entity"
+				"SOV_T72A_entity"
 				"SOV_MD4_medium_armor_entity"
 			}
 		}
@@ -2937,30 +2490,22 @@ SOV = {
 	mbt_hull_2 = {
 		pool = {
 			icons = {
-				GFX_SOV_MBT_4
-				GFX_SOV_MBT_3
+				"gfx/interface/technologies/SOV/LAND/MBT4.dds"
+				"gfx/interface/technologies/SOV/LAND/T90MS.dds"
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"CZE_MD4_medium_armor_entity"
-				"SLO_MD4_medium_armor_entity"
-				"SOV_MD4_medium_armor_entity"
+				"SOV_T90early_entity"
+				"SOV_T90M_entity"
 			}
 		}
 	}
 	mbt_hull_3 = {
 		pool = {
 			icons = {
-				GFX_SOV_MBT_5
-				GFX_SOV_MBT_6
+				"gfx/interface/technologies/SOV/LAND/MBT5.dds"
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"CZE_MD4_medium_armor_entity"
-				"SLO_MD4_medium_armor_entity"
-				"SOV_MD4_medium_armor_entity"
+				"SOV_armor_Bat_3_entity"
 			}
 		}
 	}
@@ -2972,7 +2517,25 @@ SOV = {
 				GFX_SOV_MBT_6
 			}
 			models = {
-				"SOV_MD4_medium_armor_entity"
+				"SOV_armor_Bat_3_entity"
+			}
+		}
+	}
+	spaa_hull = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/SOV/LAND/SPA1.dds"
+				"gfx/interface/technologies/SOV/LAND/SPA2.dds"
+				"gfx/interface/technologies/SOV/LAND/Strela1.dds"
+				"gfx/interface/technologies/SOV/LAND/KUB.dds"
+				"gfx/interface/technologies/SOV/LAND/OSA.dds"
+				"gfx/interface/technologies/SOV/LAND/SPA3.dds"
+				"gfx/interface/technologies/SOV/LAND/BUK.dds"
+				"gfx/interface/technologies/SOV/LAND/TOR.dds"
+				"gfx/interface/technologies/SOV/LAND/SPA4.dds"
+			}
+			models = {
+				"SOV_MD4_light_armor_entity_5"
 			}
 		}
 	}
@@ -3037,9 +2600,12 @@ SOV = {
 			icons = {		
 				GFX_SOV_Rec_tank_0_medium
 				GFX_SOV_Rec_tank_1_medium
+				GFX_SOV_IFV_1
+				"gfx/interface/technologies/SOV/LAND/BRDM.dds"
+				"gfx/interface/technologies/SOV/LAND/BRM1K.dds"
 			}
 			models = {
-				"SOV_MD4_light_armor_entity_5"
+				"SOV_BMP1_entity"
 			}
 		}
 	}
@@ -3052,6 +2618,7 @@ SOV = {
 			}
 			models = {
 				"SOV_MD4_light_armor_entity_5"
+				"SOV_BMP2_entity"
 			}
 		}
 	}
@@ -3061,10 +2628,12 @@ SOV = {
 			icons = {
 				GFX_SOV_Rec_tank_2_medium
 				GFX_SOV_Rec_tank_1_medium
-				GFX_SOV_Rec_tank_3_medium
+				GFX_SOV_IFV_4
+				"gfx/interface/technologies/SOV/LAND/BMP3.dds"
 			}
 			models = {
 				"SOV_MD4_light_armor_entity_5"
+				"SOV_BMP3_entity"
 			}
 		}
 	}
@@ -3084,7 +2653,6 @@ SOV = {
 	light_tank_hull_4 = {
 		pool = {
 			icons = {
-				GFX_SOV_Rec_tank_4_medium
 				GFX_SOV_Rec_tank_5_medium
 			}
 			models = {
@@ -3108,7 +2676,7 @@ SPR = {
 				"FRA_MD4_medium_armor_entity"
 				"MD4_medium_armor_entity"
 				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
+				"KOR_armor_Bat_1_entity"
 				"CZE_MD4_medium_armor_entity"
 				"SLO_MD4_medium_armor_entity"
 				"SOV_MD4_medium_armor_entity"
@@ -3129,7 +2697,7 @@ SPR = {
 				"FRA_MD4_medium_armor_entity"
 				"MD4_medium_armor_entity"
 				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
+				"KOR_armor_Bat_1_entity"
 				"CZE_MD4_medium_armor_entity"
 				"SLO_MD4_medium_armor_entity"
 				"SOV_MD4_medium_armor_entity"
@@ -3150,7 +2718,7 @@ SPR = {
 				"FRA_MD4_medium_armor_entity"
 				"MD4_medium_armor_entity"
 				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
+				"KOR_armor_Bat_1_entity"
 				"CZE_MD4_medium_armor_entity"
 				"SLO_MD4_medium_armor_entity"
 				"SOV_MD4_medium_armor_entity"
@@ -3171,7 +2739,7 @@ SPR = {
 				"FRA_MD4_medium_armor_entity"
 				"MD4_medium_armor_entity"
 				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
+				"KOR_armor_Bat_1_entity"
 				"CZE_MD4_medium_armor_entity"
 				"SLO_MD4_medium_armor_entity"
 				"SOV_MD4_medium_armor_entity"
@@ -3192,7 +2760,7 @@ SPR = {
 				"FRA_MD4_medium_armor_entity"
 				"MD4_medium_armor_entity"
 				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
+				"KOR_armor_Bat_1_entity"
 				"CZE_MD4_medium_armor_entity"
 				"SLO_MD4_medium_armor_entity"
 				"SOV_MD4_medium_armor_entity"
@@ -3214,7 +2782,7 @@ SWE = {
 				"FRA_MD4_medium_armor_entity"
 				"MD4_medium_armor_entity"
 				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
+				"KOR_armor_Bat_1_entity"
 				"GER_MD4_medium_armor_entity"
 			}
 		}
@@ -3231,7 +2799,7 @@ SWE = {
 				"FRA_MD4_medium_armor_entity"
 				"MD4_medium_armor_entity"
 				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
+				"KOR_armor_Bat_1_entity"
 				"GER_MD4_medium_armor_entity"
 			}
 		}
@@ -3247,7 +2815,7 @@ SWE = {
 				"FRA_MD4_medium_armor_entity"
 				"MD4_medium_armor_entity"
 				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
+				"KOR_armor_Bat_1_entity"
 				"GER_MD4_medium_armor_entity"
 			}
 		}
@@ -3263,7 +2831,7 @@ SWE = {
 				"FRA_MD4_medium_armor_entity"
 				"MD4_medium_armor_entity"
 				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
+				"KOR_armor_Bat_1_entity"
 				"GER_MD4_medium_armor_entity"
 			}
 		}
@@ -3280,7 +2848,7 @@ SWE = {
 				"FRA_MD4_medium_armor_entity"
 				"MD4_medium_armor_entity"
 				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
+				"KOR_armor_Bat_1_entity"
 				"GER_MD4_medium_armor_entity"
 			}
 		}
@@ -3392,7 +2960,7 @@ TUR = {
 				"FRA_MD4_medium_armor_entity"
 				"MD4_medium_armor_entity"
 				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
+				"KOR_armor_Bat_1_entity"
 				"CZE_MD4_medium_armor_entity"
 				"SLO_MD4_medium_armor_entity"
 				"SOV_MD4_medium_armor_entity"
@@ -3412,7 +2980,7 @@ TUR = {
 				"FRA_MD4_medium_armor_entity"
 				"MD4_medium_armor_entity"
 				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
+				"KOR_armor_Bat_1_entity"
 				"CZE_MD4_medium_armor_entity"
 				"SLO_MD4_medium_armor_entity"
 				"SOV_MD4_medium_armor_entity"
@@ -3432,7 +3000,7 @@ TUR = {
 				"FRA_MD4_medium_armor_entity"
 				"MD4_medium_armor_entity"
 				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
+				"KOR_armor_Bat_1_entity"
 				"CZE_MD4_medium_armor_entity"
 				"SLO_MD4_medium_armor_entity"
 				"SOV_MD4_medium_armor_entity"
@@ -3453,7 +3021,7 @@ TUR = {
 				"FRA_MD4_medium_armor_entity"
 				"MD4_medium_armor_entity"
 				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
+				"KOR_armor_Bat_1_entity"
 				"CZE_MD4_medium_armor_entity"
 				"SLO_MD4_medium_armor_entity"
 				"SOV_MD4_medium_armor_entity"
@@ -3474,7 +3042,7 @@ TUR = {
 				"FRA_MD4_medium_armor_entity"
 				"MD4_medium_armor_entity"
 				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
+				"KOR_armor_Bat_1_entity"
 				"CZE_MD4_medium_armor_entity"
 				"SLO_MD4_medium_armor_entity"
 				"SOV_MD4_medium_armor_entity"
@@ -3602,29 +3170,21 @@ UKR = {
 	mbt_hull_0 = {
 		pool = {
 			icons = {
-				GFX_UKR_MBT_1
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"CZE_MD4_medium_armor_entity"
-				"SLO_MD4_medium_armor_entity"
-				"SOV_MD4_medium_armor_entity"
 			}
 		}
 	}
 	mbt_hull_1 = {
 		pool = {
 			icons = {
-				GFX_UKR_MBT_2
-				GFX_UKR_MBT_3
+				"gfx/interface/technologies/UKR/LAND/MBT3.dds"
+				"gfx/interface/technologies/UKR/LAND/T64BVUKR.dds"
+				"gfx/interface/technologies/UKR/LAND/T64BMUKR.dds"
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"CZE_MD4_medium_armor_entity"
-				"SLO_MD4_medium_armor_entity"
-				"SOV_MD4_medium_armor_entity"
+				"UKR_armor_Bat_1_entity"
+				"T64BM_entity"
 			}
 		}
 	}
@@ -3634,11 +3194,7 @@ UKR = {
 				GFX_UKR_MBT_4
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"CZE_MD4_medium_armor_entity"
-				"SLO_MD4_medium_armor_entity"
-				"SOV_MD4_medium_armor_entity"
+				"UKR_armor_Bat_2_entity"
 			}
 		}
 	}
@@ -3648,33 +3204,23 @@ USA = {
 	mbt_hull_0 = {
 		pool = {
 			icons = {
-				GFX_USA_MBT_1
-				GFX_USA_MBT_2
+				"gfx/interface/technologies/USA/LAND/M48.dds"
+				"gfx/interface/technologies/USA/LAND/M48A5.dds"
+				"gfx/interface/technologies/USA/LAND/MBT1.dds"
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"commonwealth_gfx_MD4_medium_armor_entity"
-				"FRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
-				"GER_MD4_medium_armor_entity"
-				"USA_MD4_medium_armor_entity"
+				"M60A1_entity"
 			}
 		}
 	}
 	mbt_hull_1 = {
 		pool = {
 			icons = {
-				GFX_USA_MBT_3
-				GFX_USA_MBT_4
+				"gfx/interface/technologies/USA/LAND/M1.dds"
+				"gfx/interface/technologies/USA/LAND/M1A1.dds"
+				"gfx/interface/technologies/USA/LAND/MBT2.dds"
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"commonwealth_gfx_MD4_medium_armor_entity"
-				"FRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
-				"GER_MD4_medium_armor_entity"
 				"USA_MD4_medium_armor_entity"
 			}
 		}
@@ -3682,17 +3228,12 @@ USA = {
 	mbt_hull_2 = {
 		pool = {
 			icons = {
-				GFX_USA_MBT_4
-				GFX_USA_MBT_5
+				"gfx/interface/technologies/USA/LAND/MBT3.dds"
+				"gfx/interface/technologies/USA/LAND/MBT4.dds"
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"commonwealth_gfx_MD4_medium_armor_entity"
-				"FRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
-				"GER_MD4_medium_armor_entity"
-				"USA_MD4_medium_armor_entity"
+				"USA_MD4_medium_armor_entity_2"
+				"USA_MD4_medium_armor_entity_3"
 			}
 		}
 	}
@@ -3702,13 +3243,7 @@ USA = {
 				GFX_USA_MBT_5
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"commonwealth_gfx_MD4_medium_armor_entity"
-				"FRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
-				"GER_MD4_medium_armor_entity"
-				"USA_MD4_medium_armor_entity"
+				"USA_armor_Bat_3_entity"
 			}
 		}
 	}
@@ -3720,13 +3255,7 @@ USA = {
 				GFX_USA_MBT_5
 			}
 			models = {
-				"BRA_MD4_medium_armor_entity"
-				"commonwealth_gfx_MD4_medium_armor_entity"
-				"FRA_MD4_medium_armor_entity"
-				"MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
-				"GER_MD4_medium_armor_entity"
-				"USA_MD4_medium_armor_entity"
+				"USA_armor_Bat_4_entity"
 			}
 		}
 	}
@@ -3736,7 +3265,7 @@ USA = {
 				GFX_USA_SP_Anti_Air_0_medium
 			}
 			models = {
-				"USA_MD4_light_armor_entity_2"
+				"USA_M2A2bradley_entity"
 			}
 		}
 	}
@@ -3747,7 +3276,7 @@ USA = {
 				GFX_USA_SP_Anti_Air_0_medium
 			}
 			models = {
-				"USA_MD4_light_armor_entity_2"
+				"USA_M2A2bradley_entity"
 			}
 		}
 	}
@@ -3758,7 +3287,7 @@ USA = {
 				GFX_USA_SP_Anti_Air_1_medium
 			}
 			models = {
-				"USA_MD4_light_armor_entity_2"
+				"USA_M2A2bradley_entity"
 			}
 		}
 	}
@@ -3770,7 +3299,7 @@ USA = {
 				GFX_USA_SP_Anti_Air_4_medium
 			}
 			models = {
-				"USA_MD4_light_armor_entity_2"
+				"USA_M2A2bradley_entity"
 			}
 		}
 	}
@@ -3781,7 +3310,7 @@ USA = {
 				GFX_USA_SP_Anti_Air_3_medium
 			}
 			models = {
-				"USA_MD4_light_armor_entity_2"
+				"USA_M2A2bradley_entity"
 			}
 		}
 	}
@@ -3792,7 +3321,7 @@ USA = {
 				GFX_USA_Rec_tank_1_medium
 			}
 			models = {
-				"USA_MD4_light_armor_entity_2"
+				"USA_M2A2bradley_entity"
 			}
 		}
 	}
@@ -3805,7 +3334,7 @@ USA = {
 				GFX_USA_Rec_tank_1_medium
 			}
 			models = {
-				"USA_MD4_light_armor_entity_2"
+				"USA_M2A2bradley_entity"
 			}
 		}
 	}
@@ -3815,11 +3344,14 @@ USA = {
 			icons = {
 				GFX_USA_Rec_tank_2_medium
 				GFX_USA_IFV_3_medium
+				GFX_USA_IFV_9_medium
+				GFX_USA_IFV_10_medium
 				GFX_USA_Rec_tank_1_medium
 				GFX_USA_Rec_tank_0_medium
 			}
 			models = {
-				"USA_MD4_light_armor_entity_2"
+				"USA_M2A2bradley_entity"
+				"USA_M2A3bradley_entity"
 			}
 		}
 	}
@@ -3831,7 +3363,7 @@ USA = {
 				GFX_USA_Rec_tank_5_medium
 			}
 			models = {
-				"USA_MD4_light_armor_entity_2"
+				"USA_M2A2bradley_entity"
 			}
 		}
 	}
@@ -3843,7 +3375,7 @@ USA = {
 				GFX_USA_Rec_tank_5_medium
 			}
 			models = {
-				"USA_MD4_light_armor_entity_2"
+				"USA_M2A2bradley_entity"
 			}
 		}
 	}
@@ -3893,7 +3425,7 @@ POL = {
 				"FRA_MD4_medium_armor_entity"
 				"MD4_medium_armor_entity"
 				"USA_MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
+				"KOR_armor_Bat_1_entity"
 				"GER_MD4_medium_armor_entity"
 			}
 		}
@@ -3908,7 +3440,7 @@ POL = {
 				"commonwealth_gfx_MD4_medium_armor_entity"
 				"FRA_MD4_medium_armor_entity"
 				"MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
+				"KOR_armor_Bat_1_entity"
 				"GER_MD4_medium_armor_entity"
 				"USA_MD4_medium_armor_entity"
 			}
@@ -3924,7 +3456,7 @@ POL = {
 				"commonwealth_gfx_MD4_medium_armor_entity"
 				"FRA_MD4_medium_armor_entity"
 				"MD4_medium_armor_entity"
-				"KOR_MD4_medium_armor_entity"
+				"KOR_armor_Bat_1_entity"
 				"GER_MD4_medium_armor_entity"
 				"USA_MD4_medium_armor_entity"
 			}
@@ -4036,3 +3568,196 @@ POL = {
 	}
 }
 
+CAN = {
+	mbt_hull_0 = {
+		pool = {
+			icons = {
+				GFX_CAN_MBT_1
+				GFX_CAN_MBT_2
+							}
+			models = {
+				"BRA_MD4_medium_armor_entity"
+				"commonwealth_gfx_MD4_medium_armor_entity"
+				"FRA_MD4_medium_armor_entity"
+				"MD4_medium_armor_entity"
+				"USA_MD4_medium_armor_entity"
+				"KOR_armor_Bat_1_entity"
+				"GER_MD4_medium_armor_entity"
+			}
+		}
+	}
+	mbt_hull_1 = {
+		pool = {
+			icons = {
+				GFX_CAN_MBT_3
+				GFX_CAN_MBT_4
+			}
+			models = {
+				"BRA_MD4_medium_armor_entity"
+				"commonwealth_gfx_MD4_medium_armor_entity"
+				"FRA_MD4_medium_armor_entity"
+				"MD4_medium_armor_entity"
+				"USA_MD4_medium_armor_entity"
+				"KOR_armor_Bat_1_entity"
+				"GER_MD4_medium_armor_entity"
+			}
+		}
+	}
+	mbt_hull_2 = {
+		pool = {
+			icons = {
+				GFX_CAN_MBT_5
+				GFX_CAN_MBT_6
+			}
+			models = {
+				"BRA_MD4_medium_armor_entity"
+				"commonwealth_gfx_MD4_medium_armor_entity"
+				"FRA_MD4_medium_armor_entity"
+				"MD4_medium_armor_entity"
+				"USA_MD4_medium_armor_entity"
+				"KOR_armor_Bat_1_entity"
+				"GER_MD4_medium_armor_entity"
+			}
+		}
+	}
+	mbt_hull_3 = {
+		pool = {
+			icons = {
+				GFX_CAN_MBT_7
+				GFX_CAN_MBT_8
+			}
+			models = {
+				"BRA_MD4_medium_armor_entity"
+				"commonwealth_gfx_MD4_medium_armor_entity"
+				"FRA_MD4_medium_armor_entity"
+				"MD4_medium_armor_entity"
+				"USA_MD4_medium_armor_entity"
+				"KOR_armor_Bat_1_entity"
+				"GER_MD4_medium_armor_entity"
+			}
+		}
+	}
+	mbt_hull_4 = {
+		pool = {
+			icons = {
+				GFX_CAN_MBT_9
+			}
+			models = {
+				"BRA_MD4_medium_armor_entity"
+				"commonwealth_gfx_MD4_medium_armor_entity"
+				"FRA_MD4_medium_armor_entity"
+				"MD4_medium_armor_entity"
+				"USA_MD4_medium_armor_entity"
+				"KOR_armor_Bat_1_entity"
+				"GER_MD4_medium_armor_entity"
+			}
+		}
+	}
+	spaa_hull_0 = {
+		pool = {
+			icons = {
+				GFX_GER_SP_Anti_Air_0_medium
+			}
+			models = {
+				"GER_MD4_medium_armor_entity"
+			}
+		}
+	}
+	spaa_hull_1 = {
+		pool = {
+			icons = {
+				GFX_CAN_SP_Anti_Air_1_medium
+			}
+			models = {
+				"GER_MD4_medium_armor_entity"
+			}
+		}
+	}
+	spaa_hull_2 = {
+		pool = {
+			icons = {
+				GFX_CAN_SP_Anti_Air_1_medium
+			}
+			models = {
+				"GER_MD4_medium_armor_entity"
+			}
+		}
+	}
+	spaa_hull_3 = {
+		pool = {
+			icons = {
+				GFX_USA_SP_Anti_Air_3_medium
+				GFX_CAN_SP_Anti_Air_1_medium
+			}
+			models = {
+				"USA_M2A2bradley_entity"
+			}
+		}
+	}
+	spaa_hull_4 = {
+		pool = {
+			icons = {
+				GFX_USA_SP_Anti_Air_3_medium
+				GFX_CAN_SP_Anti_Air_1_medium
+			}
+			models = {
+
+				"USA_M2A2bradley_entity"
+			}
+		}
+	}
+	light_tank_hull_0 = {
+		pool = {
+			icons = {		
+				GFX_CAN_Rec_tank_0_medium
+			}
+			models = {
+							}
+		}
+	}
+
+	light_tank_hull_1 = {
+		pool = {
+			icons = {
+				GFX_CAN_Rec_tank_1_medium
+			}
+			models = {
+			}
+		}
+	}
+
+	light_tank_hull_2 = {
+		pool = {
+			icons = {
+				GFX_CAN_Rec_tank_2_medium
+			}
+			models = {
+				"USA_M2A2bradley_entity"
+			}
+		}
+	}
+
+	light_tank_hull_3 = {
+		pool = {
+			icons = {
+				GFX_USA_Rec_tank_4_medium
+				GFX_USA_Rec_tank_3_medium
+			}
+			models = {
+				"USA_M2A2bradley_entity"
+			}
+		}
+	}
+
+	light_tank_hull_4 = {
+		pool = {
+			icons = {
+				GFX_USA_Rec_tank_5_medium
+				GFX_USA_Rec_tank_4_medium
+			}
+			models = {
+				"USA_M2A2bradley_entity"
+			}
+		}
+	}
+}
