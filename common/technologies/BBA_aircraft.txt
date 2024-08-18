@@ -1,6 +1,4 @@
-#TODO: Change all module unlocks to enable_equipment_modules
-#currently, theyre set to enable_equipment in order to make the tech tree
-#visible in the editor for development
+# Author(s): Kanthier, Doolittle
 technologies = {
 	@1955 = -1
 	@1960 = 2
@@ -122,8 +120,7 @@ technologies = {
 		}
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_ENG
+			CAT_air_eqp
 		}
 	}
 	############################
@@ -169,12 +166,12 @@ technologies = {
 		}
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_SPC
-			Cat_S_FIGHTER
-			Cat_L_S_FIGHTER
-			Cat_CV_L_S_FIGHTER
-			Cat_Small_Plane
+			CAT_air_eqp
+			CAT_air_spc
+			CAT_s_fighter
+			CAT_l_s_fighter
+			CAT_cv_l_s_fighter
+			CAT_small_plane
 		}
 	}
 	gen_3_medium = {
@@ -216,12 +213,12 @@ technologies = {
 		}
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_FIGHTER
-			Cat_MR_FIGHTER
+			CAT_air_eqp
+			CAT_fighter
+			CAT_mr_fighter
 			CAT_as_fighter
-			Cat_CV_MR_FIGHTER
-			Cat_Medium_Plane
+			CAT_cv_mr_fighter
+			CAT_medium_plane
 		}
 	}
 	gen_3_large = {
@@ -262,12 +259,12 @@ technologies = {
 		}
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_H_AIR
-			Cat_TRANS_PLANE
-			Cat_NAVAL_PLANE
-			Cat_STR_BOMBER
-			Cat_Large_Plane
+			CAT_air_eqp
+			CAT_h_air
+			CAT_trans_plane
+			CAT_naval_plane
+			CAT_str_bomber
+			CAT_large_plane
 		}
 	}
 	gen_4_light = {
@@ -309,12 +306,12 @@ technologies = {
 		}
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_SPC
-			Cat_S_FIGHTER
-			Cat_L_S_FIGHTER
-			Cat_CV_L_S_FIGHTER
-			Cat_Small_Plane
+			CAT_air_eqp
+			CAT_air_spc
+			CAT_s_fighter
+			CAT_l_s_fighter
+			CAT_cv_l_s_fighter
+			CAT_small_plane
 		}
 	}
 	gen_4_medium = {
@@ -363,12 +360,12 @@ technologies = {
 		}
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_FIGHTER
-			Cat_MR_FIGHTER
+			CAT_air_eqp
+			CAT_fighter
+			CAT_mr_fighter
 			CAT_as_fighter
-			Cat_CV_MR_FIGHTER
-			Cat_Medium_Plane
+			CAT_cv_mr_fighter
+			CAT_medium_plane
 		}
 	}
 	gen_4_large = {
@@ -405,11 +402,10 @@ technologies = {
 		}
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_H_AIR
-			Cat_TRANS_PLANE
-			Cat_NAVAL_PLANE
-			Cat_Large_Plane
+			CAT_h_air
+			CAT_trans_plane
+			CAT_naval_plane
+			CAT_large_plane
 		}
 	}
 	gen_5_light = {
@@ -459,12 +455,12 @@ technologies = {
 		}
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_SPC
-			Cat_S_FIGHTER
-			Cat_L_S_FIGHTER
-			Cat_CV_L_S_FIGHTER
-			Cat_Small_Plane
+			CAT_air_eqp
+			CAT_air_spc
+			CAT_s_fighter
+			CAT_l_s_fighter
+			CAT_cv_l_s_fighter
+			CAT_small_plane
 		}
 	}
 	gen_5_medium = {
@@ -514,12 +510,12 @@ technologies = {
 		}
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_FIGHTER
-			Cat_MR_FIGHTER
+			CAT_air_eqp
+			CAT_fighter
+			CAT_mr_fighter
 			CAT_as_fighter
-			Cat_CV_MR_FIGHTER
-			Cat_Medium_Plane
+			CAT_cv_mr_fighter
+			CAT_medium_plane
 		}
 	}
 	gen_5_large = {
@@ -564,11 +560,10 @@ technologies = {
 		}
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_H_AIR
-			Cat_TRANS_PLANE
-			Cat_NAVAL_PLANE
-			Cat_Large_Plane
+			CAT_h_air
+			CAT_trans_plane
+			CAT_naval_plane
+			CAT_large_plane
 		}
 	}
 	gen_6_light = {
@@ -617,12 +612,12 @@ technologies = {
 		}
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_SPC
-			Cat_S_FIGHTER
-			Cat_L_S_FIGHTER
-			Cat_CV_L_S_FIGHTER
-			Cat_Small_Plane
+			CAT_air_eqp
+			CAT_air_spc
+			CAT_s_fighter
+			CAT_l_s_fighter
+			CAT_cv_l_s_fighter
+			CAT_small_plane
 		}
 	}
 	gen_6_medium = {
@@ -671,12 +666,12 @@ technologies = {
 		}
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_FIGHTER
-			Cat_MR_FIGHTER
+			CAT_air_eqp
+			CAT_fighter
+			CAT_mr_fighter
 			CAT_as_fighter
-			Cat_CV_MR_FIGHTER
-			Cat_Medium_Plane
+			CAT_cv_mr_fighter
+			CAT_medium_plane
 		}
 	}
 	gen_6_large = {
@@ -720,11 +715,10 @@ technologies = {
 		}
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_H_AIR
-			Cat_TRANS_PLANE
-			Cat_NAVAL_PLANE
-			Cat_Large_Plane
+			CAT_h_air
+			CAT_trans_plane
+			CAT_naval_plane
+			CAT_large_plane
 		}
 	}
 	############################
@@ -763,7 +757,8 @@ technologies = {
 		ai_will_do = { factor = 3 }
 
 		categories = {
-			Cat_AIR_EQP
+			CAT_air_eqp
+			CAT_avionics
 		}
 	}
 	avionics_2 = {
@@ -799,7 +794,8 @@ technologies = {
 		ai_will_do = { factor = 3 }
 
 		categories = {
-			Cat_AIR_EQP
+			CAT_air_eqp
+			CAT_avionics
 		}
 	}
 	avionics_3 = {
@@ -830,7 +826,8 @@ technologies = {
 		ai_will_do = { factor = 3 }
 
 		categories = {
-			Cat_AIR_EQP
+			CAT_air_eqp
+			CAT_avionics
 		}
 	}
 	awacs_1 = {
@@ -850,7 +847,8 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_AIR_EQP
+			CAT_air_eqp
+			CAT_awacs
 		}
 	}
 	awacs_2 = {
@@ -870,7 +868,8 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_AIR_EQP
+			CAT_air_eqp
+			CAT_awacs
 		}
 	}
 	awacs_3 = {
@@ -890,7 +889,8 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_AIR_EQP
+			CAT_air_eqp
+			CAT_awacs
 		}
 	}
 	drone_1 = {
@@ -898,6 +898,10 @@ technologies = {
 
 		enable_equipment_modules = {
 			avionics_drone_1
+			avionics_drone_quadcopter
+			weap_drone_hand_grenade
+			wing_quadcopter
+			engine_light_quadcopter
 		}
 
 		path = {
@@ -915,7 +919,8 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_AIR_EQP
+			CAT_air_eqp
+			CAT_drones
 		}
 	}
 	suicide_drone_1 = {
@@ -935,7 +940,8 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_AIR_EQP
+			CAT_air_eqp
+			CAT_drones
 		}
 	}
 	drone_2 = {
@@ -960,7 +966,7 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_AIR_EQP
+			CAT_air_eqp
 		}
 	}
 	suicide_drone_2 = {
@@ -980,7 +986,8 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_AIR_EQP
+			CAT_air_eqp
+			CAT_drones
 		}
 	}
 	drone_3 = {
@@ -1005,7 +1012,8 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_AIR_EQP
+			CAT_air_eqp
+			CAT_drones
 		}
 	}
 	suicide_drone_3 = {
@@ -1030,7 +1038,8 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_AIR_EQP
+			CAT_air_eqp
+			CAT_drones
 		}
 	}
 	drone_4 = {
@@ -1055,7 +1064,8 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_AIR_EQP
+			CAT_air_eqp
+			CAT_drones
 		}
 	}
 	suicide_drone_4 = {
@@ -1075,7 +1085,8 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_AIR_EQP
+			CAT_air_eqp
+			CAT_drones
 		}
 	}
 	############################
@@ -1123,8 +1134,9 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_SPC
+			CAT_air_eqp
+			CAT_air_spc
+			CAT_wings
 		}
 	}
 	redundant_1 = {
@@ -1150,8 +1162,8 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_SPC
+			CAT_air_eqp
+			CAT_air_spc
 		}
 	}
 	redundant_2 = {
@@ -1172,8 +1184,8 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_SPC
+			CAT_air_eqp
+			CAT_air_spc
 		}
 	}
 	variable_wing_design = {
@@ -1198,8 +1210,9 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_SPC
+			CAT_air_eqp
+			CAT_air_spc
+			CAT_wings
 		}
 	}
 	delta_wing_design = {
@@ -1224,8 +1237,9 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_SPC
+			CAT_air_eqp
+			CAT_air_spc
+			CAT_wings
 		}
 	}
 	fwdswept_wing_design = {
@@ -1250,8 +1264,9 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_SPC
+			CAT_air_eqp
+			CAT_air_spc
+			CAT_wings
 		}
 	}
 	diamond_wing_design = {
@@ -1276,8 +1291,9 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_SPC
+			CAT_air_eqp
+			CAT_air_spc
+			CAT_wings
 		}
 	}
 	stealth_tech_1 = {
@@ -1304,8 +1320,9 @@ technologies = {
 		ai_will_do = { factor = 3 }
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_SPC
+			CAT_air_eqp
+			CAT_air_spc
+			CAT_air_stealth
 		}
 	}
 	stealth_tech_2 = {
@@ -1327,15 +1344,26 @@ technologies = {
 		ai_will_do = { factor = 3 }
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_SPC
+			CAT_air_eqp
+			CAT_air_spc
+			CAT_air_stealth
 		}
 	}
 	internal_weapons_1 = {
 		on_research_complete = { log = "[GetDateText]: [Root.GetName]: add tech internal_weapons_1" }
 
 		enable_equipment_modules = {
-			spec_internal_1
+			weap_int_a2a_hardpoint_1
+			weap_int_ag_cas_hardpoint_2
+			weap_int_mp_med_hardpoint_2
+			weap_int_mp_light_hardpoint_2
+			weap_int_ag_strat_2
+		}
+
+		dependencies = {
+			stealth_tech_1 = 1
+			air_weapons_2 = 1
+			ag_weapons_2 = 1
 		}
 
 		path = {
@@ -1353,29 +1381,72 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_SPC
+			CAT_air_eqp
+			CAT_air_spc
 		}
 	}
 	internal_weapons_2 = {
 		on_research_complete = { log = "[GetDateText]: [Root.GetName]: add tech internal_weapons_2" }
 
 		enable_equipment_modules = {
-			spec_internal_2
+			weap_int_a2a_hardpoint_2
+			weap_int_ag_cas_hardpoint_3
+			weap_int_mp_med_hardpoint_3
+			weap_int_mp_light_hardpoint_3
+		}
+
+		dependencies = {
+			stealth_tech_2 = 1
+			air_weapons_3 = 1
+			ag_weapons_3 = 1
+		}
+
+		path = {
+			leads_to_tech = internal_weapons_3
+			research_cost_coeff = 1
 		}
 
 		research_cost = 3
-		start_year = 2020
+		start_year = 2025
 		folder = {
 			name = bba_aircraft_folder
-			position = { x = @row14 y = @2020 }
+			position = { x = @row14 y = @2025 }
 		}
 
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_SPC
+			CAT_air_eqp
+			CAT_air_spc
+		}
+	}
+	internal_weapons_3 = {
+		on_research_complete = { log = "[GetDateText]: [Root.GetName]: add tech internal_weapons_2" }
+
+		enable_equipment_modules = {
+			weap_int_a2a_hardpoint_3
+			weap_int_ag_cas_hardpoint_4
+			weap_int_mp_med_hardpoint_4
+			weap_int_mp_light_hardpoint_4
+		}
+
+		dependencies = {
+			air_weapons_4 = 1
+			ag_weapons_4 = 1
+		}
+
+		research_cost = 3
+		start_year = 2045
+		folder = {
+			name = bba_aircraft_folder
+			position = { x = @row14 y = @2045 }
+		}
+
+		ai_will_do = { factor = 1 }
+
+		categories = {
+			CAT_air_eqp
+			CAT_air_spc
 		}
 	}
 	future_wingform_designs = {
@@ -1399,8 +1470,9 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_SPC
+			CAT_air_eqp
+			CAT_air_spc
+			CAT_wings
 		}
 	}
 	############################
@@ -1445,8 +1517,8 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_ENG
+			CAT_air_eqp
+			CAT_air_engine
 		}
 	}
 	refueling_1 = {
@@ -1471,8 +1543,8 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_SPC
+			CAT_air_eqp
+			CAT_air_spc
 		}
 	}
 	refueling_2 = {
@@ -1492,8 +1564,8 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_SPC
+			CAT_air_eqp
+			CAT_air_spc
 		}
 	}
 	nuclear_engines = {
@@ -1517,8 +1589,9 @@ technologies = {
 		ai_will_do = { factor = 0.01 }
 
 		categories = {
-			Cat_AIR_EQP
-			nuclear
+			CAT_air_eqp
+			CAT_air_engine
+			CAT_nuclear
 		}
 	}
 	engines_3 = {
@@ -1560,8 +1633,8 @@ technologies = {
 		ai_will_do = { factor = 0.01 }
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_ENG
+			CAT_air_eqp
+			CAT_air_engine
 		}
 	}
 	solar_engines_1 = {
@@ -1586,9 +1659,9 @@ technologies = {
 		ai_will_do = { factor = 0 }
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_ENG
-			Cat_FUEL_OIL
+			CAT_air_eqp
+			CAT_air_engine
+			CAT_fuel_oil
 		}
 	}
 	solar_engines_2 = {
@@ -1608,9 +1681,9 @@ technologies = {
 		ai_will_do = { factor = 0 }
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_ENG
-			Cat_FUEL_OIL
+			CAT_air_eqp
+			CAT_air_engine
+			CAT_fuel_oil
 		}
 	}
 	engines_4 = {
@@ -1642,8 +1715,8 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_ENG
+			CAT_air_eqp
+			CAT_air_engine
 		}
 	}
 	engines_5 = {
@@ -1674,8 +1747,8 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_ENG
+			CAT_air_eqp
+			CAT_air_engine
 		}
 	}
 	############################
@@ -1714,8 +1787,8 @@ technologies = {
 		ai_will_do = { factor = 2 }
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_WPN
+			CAT_air_eqp
+			CAT_air_wpn
 		}
 	}
 	air_weapons_1 = {
@@ -1747,8 +1820,9 @@ technologies = {
 		ai_will_do = { factor = 2 }
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_WPN
+			CAT_air_eqp
+			CAT_air_wpn
+			CAT_air_to_air_weapons
 		}
 	}
 	air_weapons_2 = {
@@ -1780,8 +1854,9 @@ technologies = {
 		ai_will_do = { factor = 2 }
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_WPN
+			CAT_air_eqp
+			CAT_air_wpn
+			CAT_air_to_air_weapons
 		}
 	}
 	air_weapons_3 = {
@@ -1812,8 +1887,9 @@ technologies = {
 		ai_will_do = { factor = 2 }
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_WPN
+			CAT_air_eqp
+			CAT_air_wpn
+			CAT_air_to_air_weapons
 		}
 	}
 	air_weapons_4 = {
@@ -1839,8 +1915,9 @@ technologies = {
 		ai_will_do = { factor = 2 }
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_WPN
+			CAT_air_eqp
+			CAT_air_wpn
+			CAT_air_to_air_weapons
 		}
 	}
 	countermeasures_1 = {
@@ -1861,8 +1938,9 @@ technologies = {
 		ai_will_do = { factor = 2 }
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_SPC
+			CAT_air_eqp
+			CAT_air_spc
+			CAT_air_countermeasures
 		}
 	}
 	countermeasures_2 = {
@@ -1882,8 +1960,9 @@ technologies = {
 		ai_will_do = { factor = 2 }
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_SPC
+			CAT_air_eqp
+			CAT_air_spc
+			CAT_air_countermeasures
 		}
 	}
 	countermeasures_3 = {
@@ -1903,8 +1982,9 @@ technologies = {
 		ai_will_do = { factor = 2 }
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_SPC
+			CAT_air_eqp
+			CAT_air_spc
+			CAT_air_countermeasures
 		}
 	}
 	countermeasures_4 = {
@@ -1924,8 +2004,9 @@ technologies = {
 		ai_will_do = { factor = 2 }
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_SPC
+			CAT_air_eqp
+			CAT_air_spc
+			CAT_air_countermeasures
 		}
 	}
 	naval_weapons_1 = {
@@ -1956,8 +2037,9 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_WPN
+			CAT_air_eqp
+			CAT_air_wpn
+			CAT_air_naval_weapons
 		}
 	}
 	naval_weapons_2 = {
@@ -1983,8 +2065,9 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_WPN
+			CAT_air_eqp
+			CAT_air_wpn
+			CAT_air_naval_weapons
 		}
 	}
 	naval_weapons_3 = {
@@ -2010,8 +2093,9 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_WPN
+			CAT_air_eqp
+			CAT_air_wpn
+			CAT_air_naval_weapons
 		}
 	}
 	naval_weapons_4 = {
@@ -2032,8 +2116,9 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_WPN
+			CAT_air_eqp
+			CAT_air_wpn
+			CAT_air_naval_weapons
 		}
 	}
 	special_mad_1 = {
@@ -2058,8 +2143,9 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_SPC
+			CAT_air_eqp
+			CAT_air_spc
+			CAT_air_naval_weapons
 		}
 	}
 	special_mad_2 = {
@@ -2084,8 +2170,9 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_SPC
+			CAT_air_eqp
+			CAT_air_spc
+			CAT_air_naval_weapons
 		}
 	}
 	special_mad_3 = {
@@ -2105,8 +2192,9 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_SPC
+			CAT_air_eqp
+			CAT_air_spc
+			CAT_air_naval_weapons
 		}
 	}
 
@@ -2145,8 +2233,9 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_WPN
+			CAT_air_eqp
+			CAT_air_wpn
+			CAT_air_ground_weapons
 		}
 	}
 	ag_weapons_2 = {
@@ -2173,8 +2262,9 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_WPN
+			CAT_air_eqp
+			CAT_air_wpn
+			CAT_air_ground_weapons
 		}
 	}
 	ag_weapons_3 = {
@@ -2201,8 +2291,9 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_WPN
+			CAT_air_eqp
+			CAT_air_wpn
+			CAT_air_ground_weapons
 		}
 	}
 	ag_weapons_4 = {
@@ -2224,8 +2315,9 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_WPN
+			CAT_air_eqp
+			CAT_air_wpn
+			CAT_air_ground_weapons
 		}
 	}
 	gunship_1 = {
@@ -2250,8 +2342,9 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_WPN
+			CAT_air_eqp
+			CAT_air_wpn
+			CAT_air_ground_weapons
 		}
 	}
 	gunship_2 = {
@@ -2276,8 +2369,9 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_WPN
+			CAT_air_eqp
+			CAT_air_wpn
+			CAT_air_ground_weapons
 		}
 	}
 	rapid_dragon = {
@@ -2301,8 +2395,8 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_WPN
+			CAT_air_eqp
+			CAT_air_wpn
 		}
 	}
 	tgp_recon_1 = {
@@ -2328,8 +2422,9 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_WPN
+			CAT_air_eqp
+			CAT_air_wpn
+			CAT_air_camera
 		}
 	}
 	tgp_recon_2 = {
@@ -2355,8 +2450,9 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_WPN
+			CAT_air_eqp
+			CAT_air_wpn
+			CAT_air_camera
 		}
 	}
 	tgp_recon_3 = {
@@ -2377,8 +2473,9 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_AIR_EQP
-			Cat_AIR_WPN
+			CAT_air_eqp
+			CAT_air_wpn
+			CAT_air_camera
 		}
 	}
 }

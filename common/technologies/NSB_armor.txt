@@ -68,12 +68,12 @@ technologies = {
 			position = { x = @1965 y = @row1 }
 		}
 
-		ai_will_do = { factor = 1 }
+		ai_will_do = { factor = 5 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
 		}
 	}
 
@@ -104,12 +104,12 @@ technologies = {
 			position = { x = @1975 y = @row1 }
 		}
 
-		ai_will_do = { factor = 1 }
+		ai_will_do = { factor = 5 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
 		}
 	}
 
@@ -139,12 +139,12 @@ technologies = {
 			position = { x = @1995 y = @row1 }
 		}
 
-		ai_will_do = { factor = 1 }
+		ai_will_do = { factor = 5 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
 		}
 	}
 
@@ -175,12 +175,12 @@ technologies = {
 			position = { x = @2015 y = @row1 }
 		}
 
-		ai_will_do = { factor = 1 }
+		ai_will_do = { factor = 5 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
 		}
 	}
 
@@ -202,12 +202,12 @@ technologies = {
 			position = { x = @2035 y = @row1 }
 		}
 
-		ai_will_do = { factor = 1 }
+		ai_will_do = { factor = 5 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
 		}
 	}
 
@@ -235,9 +235,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
+			CAT_computer_systems
 		}
 	}
 
@@ -263,9 +264,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
+			CAT_computer_systems
 		}
 	}
 
@@ -274,6 +276,7 @@ technologies = {
 			tank_battlestation_3
 			afv_battlestation_3
 			smoke_launchers_2
+			smoke_launchers_3
 			art_battlestation_gen3
 		}
 
@@ -292,9 +295,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
+			CAT_computer_systems
 		}
 	}
 
@@ -321,9 +325,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
+			CAT_computer_systems
 		}
 	}
 
@@ -342,9 +347,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
+			CAT_computer_systems
 		}
 	}
 
@@ -368,9 +374,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
+			CAT_armour
 		}
 	}
 
@@ -394,9 +401,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
+			CAT_armour
 		}
 	}
 
@@ -420,9 +428,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
+			CAT_armour
 		}
 	}
 
@@ -441,9 +450,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
+			CAT_armour
 		}
 	}
 
@@ -474,9 +484,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
+			CAT_armour
 		}
 	}
 
@@ -502,9 +513,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
+			CAT_armour
 		}
 	}
 
@@ -530,9 +542,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
+			CAT_armour
 		}
 	}
 
@@ -552,9 +565,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
+			CAT_armour
 		}
 	}
 
@@ -587,9 +601,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
+			CAT_armor_engines
 		}
 	}
 
@@ -614,9 +629,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
+			CAT_armor_engines
 		}
 	}
 
@@ -641,9 +657,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
+			CAT_armor_engines
 		}
 	}
 
@@ -667,9 +684,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
+			CAT_armor_engines
 		}
 	}
 
@@ -693,9 +711,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
+			CAT_armor_engines
 		}
 	}
 
@@ -719,9 +738,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
+			CAT_armor_engines
 		}
 	}
 
@@ -740,9 +760,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
+			CAT_armor_engines
 		}
 	}
 
@@ -766,9 +787,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
+			CAT_armor_engines
 		}
 	}
 
@@ -792,9 +814,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
+			CAT_armor_engines
 		}
 	}
 
@@ -818,9 +841,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
+			CAT_armor_engines
 		}
 	}
 
@@ -844,9 +868,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
+			CAT_armor_engines
 		}
 	}
 
@@ -870,9 +895,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
+			CAT_armor_engines
 		}
 	}
 
@@ -891,9 +917,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
+			CAT_armor_engines
 		}
 	}
 
@@ -917,9 +944,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
+			CAT_armor_engines
 		}
 	}
 
@@ -943,9 +971,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
+			CAT_armor_engines
 		}
 	}
 
@@ -969,9 +998,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
+			CAT_armor_engines
 		}
 	}
 
@@ -990,9 +1020,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
+			CAT_armor_engines
 		}
 	}
 
@@ -1023,9 +1054,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
+			CAT_armor_weapons
 		}
 	}
 
@@ -1052,9 +1084,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
+			CAT_armor_weapons
 		}
 	}
 
@@ -1081,9 +1114,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
+			CAT_armor_weapons
 		}
 	}
 
@@ -1105,9 +1139,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
+			CAT_armor_weapons
 		}
 	}
 
@@ -1132,9 +1167,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
+			CAT_armor_weapons
 		}
 	}
 
@@ -1162,9 +1198,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
+			CAT_armor_weapons
 		}
 	}
 
@@ -1188,9 +1225,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
+			CAT_armor_weapons
 		}
 	}
 
@@ -1209,9 +1247,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
+			CAT_armor_weapons
 		}
 	}
 
@@ -1239,9 +1278,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
+			CAT_armor_weapons
 		}
 	}
 
@@ -1265,9 +1305,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
+			CAT_armor_weapons
 		}
 	}
 
@@ -1291,9 +1332,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
+			CAT_armor_weapons
 		}
 	}
 
@@ -1312,9 +1354,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
+			CAT_armor_weapons
 		}
 	}
 
@@ -1338,9 +1381,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
+			CAT_armor_weapons
 		}
 	}
 
@@ -1359,9 +1403,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_TANKS
-			Cat_MBT
+			CAT_armor
+			CAT_tanks
+			CAT_mbt
+			CAT_armor_weapons
 		}
 	}
 
@@ -1420,13 +1465,13 @@ technologies = {
 			position = { x = @1965 y = @row12 }
 		}
 
-		ai_will_do = { factor = 1 }
+		ai_will_do = { factor = 5 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_AFV
-			Cat_APC
-			Cat_IFV
+			CAT_armor
+			CAT_afv
+			CAT_apc
+			CAT_ifv
 		}
 	}
 
@@ -1458,13 +1503,13 @@ technologies = {
 			position = { x = @1975 y = @row12 }
 		}
 
-		ai_will_do = { factor = 1 }
+		ai_will_do = { factor = 5 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_AFV
-			Cat_APC
-			Cat_IFV
+			CAT_armor
+			CAT_afv
+			CAT_apc
+			CAT_ifv
 		}
 	}
 
@@ -1497,13 +1542,13 @@ technologies = {
 			position = { x = @1995 y = @row12 }
 		}
 
-		ai_will_do = { factor = 1 }
+		ai_will_do = { factor = 5 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_AFV
-			Cat_APC
-			Cat_IFV
+			CAT_armor
+			CAT_afv
+			CAT_apc
+			CAT_ifv
 		}
 	}
 
@@ -1536,13 +1581,13 @@ technologies = {
 			position = { x = @2015 y = @row12 }
 		}
 
-		ai_will_do = { factor = 1 }
+		ai_will_do = { factor = 5 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_AFV
-			Cat_APC
-			Cat_IFV
+			CAT_armor
+			CAT_afv
+			CAT_apc
+			CAT_ifv
 		}
 	}
 
@@ -1568,13 +1613,13 @@ technologies = {
 			position = { x = @2035 y = @row12 }
 		}
 
-		ai_will_do = { factor = 1 }
+		ai_will_do = { factor = 5 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_AFV
-			Cat_APC
-			Cat_IFV
+			CAT_armor
+			CAT_afv
+			CAT_apc
+			CAT_ifv
 		}
 	}
 
@@ -1610,7 +1655,7 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
+			CAT_armor
 		}
 	}
 
@@ -1641,7 +1686,7 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
+			CAT_armor
 		}
 	}
 
@@ -1672,7 +1717,7 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
+			CAT_armor
 		}
 	}
 
@@ -1703,7 +1748,7 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
+			CAT_armor
 		}
 	}
 
@@ -1729,7 +1774,7 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
+			CAT_armor
 		}
 	}
 
@@ -1755,9 +1800,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_AFV
-			Cat_IFV
+			CAT_armor
+			CAT_afv
+			CAT_ifv
+			CAT_afv_weapons
 		}
 	}
 
@@ -1783,9 +1829,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_AFV
-			Cat_IFV
+			CAT_armor
+			CAT_afv
+			CAT_ifv
+			CAT_afv_weapons
 		}
 	}
 
@@ -1810,9 +1857,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_AFV
-			Cat_IFV
+			CAT_armor
+			CAT_afv
+			CAT_ifv
+			CAT_afv_weapons
 		}
 	}
 
@@ -1833,9 +1881,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_AFV
-			Cat_IFV
+			CAT_armor
+			CAT_afv
+			CAT_ifv
+			CAT_afv_weapons
 		}
 	}
 
@@ -1859,9 +1908,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_AFV
-			Cat_IFV
+			CAT_armor
+			CAT_afv
+			CAT_ifv
+			CAT_afv_weapons
 		}
 	}
 
@@ -1885,9 +1935,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_AFV
-			Cat_IFV
+			CAT_armor
+			CAT_afv
+			CAT_ifv
+			CAT_afv_weapons
 		}
 	}
 
@@ -1910,9 +1961,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_AFV
-			Cat_IFV
+			CAT_armor
+			CAT_afv
+			CAT_ifv
+			CAT_afv_weapons
 		}
 	}
 
@@ -1931,9 +1983,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_AFV
-			Cat_IFV
+			CAT_armor
+			CAT_afv
+			CAT_ifv
+			CAT_afv_weapons
 		}
 	}
 
@@ -1957,9 +2010,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_AFV
-			Cat_IFV
+			CAT_armor
+			CAT_afv
+			CAT_ifv
+			CAT_afv_weapons
 		}
 	}
 
@@ -1983,9 +2037,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_AFV
-			Cat_IFV
+			CAT_armor
+			CAT_afv
+			CAT_ifv
+			CAT_afv_weapons
 		}
 	}
 
@@ -2008,9 +2063,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_AFV
-			Cat_IFV
+			CAT_armor
+			CAT_afv
+			CAT_ifv
+			CAT_afv_weapons
 		}
 	}
 
@@ -2029,9 +2085,10 @@ technologies = {
 		ai_will_do = { factor = 1 }
 
 		categories = {
-			Cat_ARMOR
-			Cat_AFV
-			Cat_IFV
+			CAT_armor
+			CAT_afv
+			CAT_ifv
+			CAT_afv_weapons
 		}
 	}
 }
