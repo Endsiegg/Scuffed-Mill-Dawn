@@ -22,27 +22,38 @@
 # }
 
 # AI RULES
-# rule_enable_hard_economic_ai = {
-# 	name = "RULE_HARD_AI_ECONOMIC"
-# 	group = "MD_AI_RULES"
-# 	icon = "GFX_production_licenses"
+rule_ai_starting_political_power = {
+	name = "RULE_AI_STARTING_POLITICAL_POWER"
+	group = "MD_AI_RULES"
+	icon = "GFX_production_licenses"
 
-# 	default = {
-# 		name = no
-# 		text = "RULE_DISABLE_HARD_AI_ECONOMIC"
-# 		desc = "RULE_DISABLE_HARD_AI_ECONOMIC_DESC"
-# 	}
-
-# 	option = {
-# 		name = yes
-# 		text = "RULE_ENABLE_HARD_AI_ECONOMIC"
-# 		desc = "RULE_ENABLE_HARD_AI_ECONOMIC_DESC"
-# 		allow_achievements = yes
-# 	}
-# }
+	default = {
+		name = no
+		text = "RULE_AI_STARTING_POLITICAL_POWER_NO"
+		desc = "RULE_AI_STARTING_POLITICAL_POWER_NO_DESC"
+	}
+	option = {
+		name = one
+		text = "RULE_AI_STARTING_POLITICAL_POWER_250"
+		desc = "RULE_AI_STARTING_POLITICAL_POWER_250_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = two
+		text = "RULE_AI_STARTING_POLITICAL_POWER_500"
+		desc = "RULE_AI_STARTING_POLITICAL_POWER_500_DESC"
+		allow_achievements = no
+	}
+	option = {
+		name = three
+		text = "RULE_AI_STARTING_POLITICAL_POWER_1000"
+		desc = "RULE_AI_STARTING_POLITICAL_POWER_1000_DESC"
+		allow_achievements = no
+	}
+}
 rule_enable_ai_debt_war = {
 	name = "RULE_DISABLE_AI_DEBT_WAR_TITLE"
-	group = "MD_RULES"
+	group = "MD_AI_RULES"
 	icon = "GFX_production_licenses"
 
 	default = {
@@ -59,7 +70,7 @@ rule_enable_ai_debt_war = {
 
 rule_disable_AI_using_freedom_cont_focus = {
 	name = "RULE_ENABLE_AI_FIGHTING_AUTONOMY_FOCUS"
-	group = "MD_RULES"
+	group = "MD_AI_RULES"
 	icon = "GFX_production_licenses"
 
 	default = {
@@ -71,6 +82,32 @@ rule_disable_AI_using_freedom_cont_focus = {
 		name = no
 		text = "RULE_DISABLE_FIGHTING_AUTONOMY_FOCUS"
 		desc = "RULE_DISABLE_FIGHTING_AUTONOMY_FOCUS_DESC"
+	}
+}
+rule_starting_debt_rule = {
+	name = "RULE_STARTING_DEBT_RULE"
+	group = "MD_RULES"
+	icon = "GFX_production_licenses"
+
+	default = {
+		name = normal
+		text = "RULE_OPTION_NORMAL_DEBT"
+		desc = "RULE_STARTING_DEBT_NORMAL_RULE_DESC"
+	}
+	option = {
+		name = player_only
+		text = "RULE_OPTION_PLAYER_DEBT_ONLY"
+		desc = "RULE_STARTING_DEBT_PLAYER_ONLY_RULE_DESC"
+	}
+	option = {
+		name = ai_only
+		text = "RULE_OPTION_AI_DEBT_ONLY"
+		desc = "RULE_STARTING_DEBT_AI_ONLY_RULE_DESC"
+	}
+	option = {
+		name = everyone
+		text = "RULE_OPTION_EVERYONE_DEBT"
+		desc = "RULE_STARTING_DEBT_EVERYONE_RULE_DESC"
 	}
 }
 #
@@ -169,6 +206,38 @@ SOO_Scythia = {
 		desc = "RULE_SOO_Scythia_BLOCKED_DESC"
 	}
 }
+
+CUB_Tesak = {
+	name = "RULE_CUB_Tesak"
+	group = "MD_FOCUS_TREE_RULES"
+	icon = "GFX_kick_from_faction"
+	option = {
+		name = yes
+		text = "RULE_OPTION_YES"
+		desc = "RULE_CUB_Tesak_ALLOWED_DESC"
+	}
+	default = {
+		name = no
+		text = "RULE_OPTION_NO"
+		desc = "RULE_CUB_Tesak_BLOCKED_DESC"
+	}
+}
+
+PER_Zoroastrian_state = {
+	name = "RULE_PER_ZOROASTRIAN_STATE"
+	group = "MD_FOCUS_TREE_RULES"
+	icon = "GFX_kick_from_faction"
+	option = {
+		name = yes
+		text = "RULE_OPTION_YES"
+		desc = "RULE_PER_ZOROASTRIAN_STATE_ALLOWED_DESC"
+	}
+	default = {
+		name = no
+		text = "RULE_OPTION_NO"
+		desc = "RULE_PER_ZOROASTRIAN_STATE_BLOCKED_DESC"
+	}
+}
 #
 
 # FLAGS & FORMABLES
@@ -236,6 +305,33 @@ rule_disable_eu = {
 		desc = "RULE_NO_DISABLE_EU_DESC"
 	}
 }
+
+rule_european_union_voting_limits = {
+	name = "RULE_EUROPEAN_VOTING_COOLDOWN_LIMIT"
+	group = "MD_ORGANISATION_RULES"
+	icon = "GFX_production_licenses"
+	option = {
+		name = sixty
+		text = "RULE_OPTION_EU_SIXTY"
+		desc = "RULE_OPTION_EU_SIXTY_DESC"
+	}
+	option = {
+		name = ninety
+		text = "RULE_OPTION_EU_NINETY"
+		desc = "RULE_OPTION_EU_NINETY_DESC"
+	}
+	default = {
+		name = one_hundred_eighty
+		text = "RULE_OPTION_EU_ONE_HUNDRED_EIGHTY"
+		desc = "RULE_OPTION_EU_ONE_HUNDRED_EIGHTY_DESC"
+	}
+	option = {
+		name = two_hundred_ten
+		text = "RULE_OPTION_EU_TWO_HUNDRED_TEN"
+		desc = "RULE_OPTION_EU_TWO_HUNDRED_TEN_DESC"
+	}
+}
+
 rule_disable_nato = {
 	name = "RULE_DISABLE_NATO"
 	group = "MD_ORGANISATION_RULES"
@@ -263,15 +359,26 @@ rule_spread_influence_amount_gain = {
 		text = "RULE_SPREAD_INFLUENCE_GAIN_0_5"
 		desc = "RULE_SPREAD_INFLUENCE_GAIN_0_5_DESC"
 	}
+	option = {
+		name = gain_1_percent_spread
+		text = "RULE_SPREAD_INFLUENCE_GAIN_1"
+		desc = "RULE_SPREAD_INFLUENCE_GAIN_1_DESC"
+	}
 	default = {
+		name = gain_1_5_percent_spread
+		text = "RULE_SPREAD_INFLUENCE_GAIN_1_5"
+		desc = "RULE_SPREAD_INFLUENCE_GAIN_1_5_DESC"
+		allow_achievements = yes
+	}
+	option = {
 		name = gain_2_percent_spread
 		text = "RULE_SPREAD_INFLUENCE_GAIN_2"
 		desc = "RULE_SPREAD_INFLUENCE_GAIN_2_DESC"
 	}
 	option = {
 		name = gain_3_percent_spread
-		text = "RULE_SPREAD_INFLUENCE_DEFAULT_GAIN_3"
-		desc = "RULE_SPREAD_INFLUENCE_DEFAULT_GAIN_3_DESC"
+		text = "RULE_SPREAD_INFLUENCE_GAIN_3"
+		desc = "RULE_SPREAD_INFLUENCE_GAIN_3_DESC"
 	}
 	option = {
 		name = gain_4_percent_spread
@@ -297,6 +404,7 @@ rule_spread_influence_cooldown_limits = {
 		name = spread_influence_30_days
 		text = "RULE_SPREAD_INFLUENCE_30_COOLDOWN"
 		desc = "RULE_SPREAD_INFLUENCE_30_COOLDOWN_DESC"
+		allow_achievements = yes
 	}
 	option = {
 		name = spread_influence_60_days
@@ -345,6 +453,45 @@ rule_influence_cooldown_limits = {
 	}
 }
 
+rule_monthly_domestic_independence_tick = {
+	name = "RULE_MONTHLY_DOMESTIC_INFLUENCE_TICK"
+	group = "MD_INFLUENCE_RULES"
+	icon = "GFX_production_licenses"
+	option = {
+		name = no
+		text = "RULE_OPTION_NO"
+		desc = "RULE_MONTHLY_DOMESTIC_INFLUENCE_TICK_NO_DESC"
+	}
+	default = {
+		name = yes
+		text = "RULE_OPTION_YES"
+		desc = "RULE_MONTHLY_DOMESTIC_INFLUENCE_TICK_YES_DESC"
+		allow_achievements = yes
+	}
+}
+
+rule_monthly_domestic_independence_gain_amount = {
+	name = "RULE_MONTHLY_DOMESTIC_INFLUENCE_GAIN_AMOUNT"
+	group = "MD_INFLUENCE_RULES"
+	icon = "GFX_production_licenses"
+	option = {
+		name = amount_05_gain
+		text = "RULE_MONTHLY_DOMESTIC_INFLUENCE_GAIN_AMOUNT_05"
+		desc = "RULE_MONTHLY_DOMESTIC_INFLUENCE_GAIN_AMOUNT_05_DESC"
+	}
+	default = {
+		name = amount_10_gain
+		text = "RULE_MONTHLY_DOMESTIC_INFLUENCE_GAIN_AMOUNT_10"
+		desc = "RULE_MONTHLY_DOMESTIC_INFLUENCE_GAIN_AMOUNT_10_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = amount_15_gain
+		text = "RULE_MONTHLY_DOMESTIC_INFLUENCE_GAIN_AMOUNT_15"
+		desc = "RULE_MONTHLY_DOMESTIC_INFLUENCE_GAIN_AMOUNT_15_DESC"
+	}
+}
+
 # OPTIMISATION AND PERFORMANCE
 allow_division_limiter = {
 	name = "RULE_ENABLE_DIVISION_LIMITER"
@@ -383,22 +530,22 @@ remove_micro_states = {
 		desc = "RULE_NO_RULE_REMOVE_MICRO_STATES_DESC"
 	}
 }
-rule_disable_missile_alert_ai = {
-	name = "RULE_DISABLE_ALERT_AI"
-	group = "MD_OPTIMISATION_RULES"
-	icon = "GFX_production_licenses"
+# rule_disable_missile_alert_ai = {
+# 	name = "RULE_DISABLE_ALERT_AI"
+# 	group = "MD_OPTIMISATION_RULES"
+# 	icon = "GFX_production_licenses"
 
-	default = {
-		name = no
-		text = "RULE_OPTION_NO"
-		desc = "RULE_DISABLE_ALERT_AI_DESC"
-	}
-	option = {
-		name = yes
-		text = "RULE_OPTION_YES"
-		desc = "RULE_DISABLE_ALERT_YES_AI_DESC"
-	}
-}
+# 	default = {
+# 		name = no
+# 		text = "RULE_OPTION_NO"
+# 		desc = "RULE_DISABLE_ALERT_AI_DESC"
+# 	}
+# 	option = {
+# 		name = yes
+# 		text = "RULE_OPTION_YES"
+# 		desc = "RULE_DISABLE_ALERT_YES_AI_DESC"
+# 	}
+# }
 #
 
 # NUCLEAR RULES
@@ -466,6 +613,22 @@ allow_enable_ledger = {
 	}
 }
 
+allow_colored_puppets = {
+	name = "RULE_ALLOW_PLAYER_COLORED_PUPPETS"
+	group = "MD_RULES"
+	icon = "GFX_production_licenses"
+	default = {
+		name = no
+		text = "RULE_OPTION_NO"
+		desc = "RULE_OPTION_MD_COLORED_PUPPETS_NO_DESC"
+	}
+	option = {
+		name = yes
+		text = "RULE_OPTION_YES"
+		desc = "RULE_OPTION_MD_COLORED_PUPPETS_YES_DESC"
+	}
+}
+
 historic_nine_eleven = {
 	name = "RULE_HISTORIC_NINE_ELEVEN"
 	group = "MD_RULES"
@@ -523,29 +686,29 @@ rule_AI_energy_difficulty = {
 	option = {
 		name = very_easy
 		text = "RULE_OPTION_VERY_EASY"
-		desc = "RULE_ENERGY_DIFFICULTY_VERY_EASY_DESC"
+		desc = "RULE_ENERGY_DIFFICULTY_VERY_EASY_DESC_AI"
 	}
 	option = {
 		name = easy
 		text = "RULE_OPTION_EASY"
-		desc = "RULE_ENERGY_DIFFICULTY_EASY_DESC"
+		desc = "RULE_ENERGY_DIFFICULTY_EASY_DESC_AI"
 	}
 	default = {
 		name = normal
 		text = "RULE_OPTION_NORMAL"
-		desc = "RULE_ENERGY_DIFFICULTY_NORMAL_DESC"
+		desc = "RULE_ENERGY_DIFFICULTY_NORMAL_DESC_AI"
 		allow_achievements = yes
 	}
 	option = {
 		name = hard
 		text = "RULE_OPTION_HARD"
-		desc = "RULE_ENERGY_DIFFICULTY_HARD_DESC"
+		desc = "RULE_ENERGY_DIFFICULTY_HARD_DESC_AI"
 		allow_achievements = yes
 	}
 	option = {
 		name = very_hard
 		text = "RULE_OPTION_VERY_HARD"
-		desc = "RULE_ENERGY_DIFFICULTY_VERY_HARD_DESC"
+		desc = "RULE_ENERGY_DIFFICULTY_VERY_HARD_DESC_AI"
 		allow_achievements = yes
 	}
 }
@@ -699,7 +862,6 @@ allow_release_nations = {
 allow_licensing = {
 	name = "RULE_ALLOW_LICENSING"
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
-	required_dlc = "Death or Dishonor"
 	icon = "GFX_production_licenses"
 	option = {
 		name = "FREE"
@@ -1158,6 +1320,7 @@ RUS_ai_behavior = {
 		desc = "RULE_OPTION_RANDOM_DESC"
 	}
 }
+
 RUS_AI_PUTIN_BEHAVIOR = {
 	name = "RUS_AI_PUTIN_BEHAVIOR"
 	group = "RULE_GROUP_AI_BEHAVIOR"
@@ -1196,7 +1359,68 @@ RUS_AI_PUTIN_BEHAVIOR = {
 		text = "RULE_SUPPORT_USSR"
 		desc = "RULE_SUPPORT_USSR_DESC"
 	}
+	option = {
+		name = RULE_SUPPORT_UNION_STATE
+		text = "RULE_SUPPORT_UNION_STATE"
+		desc = "RULE_SUPPORT_UNION_STATE_DESC"
+	}
 }
+
+GER_ai_behavior = {
+	name = "GER_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	option = {
+		name = GER_CONSERVATIVE
+		text = "RULE_OPTION_GER_CONSERVATIVE"
+		desc = "RULE_OPTION_GER_CONSERVATIVE_DESC"
+	}
+	option = {
+		name = GER_SOCIAL_DEMOCRATIC
+		text = "RULE_OPTION_GER_SOCIAL_DEMOCRATIC"
+		desc = "RULE_OPTION_GER_SOCIAL_DEMOCRATIC_DESC"
+	}
+	option = {
+		name = GER_LIBERALISM
+		text = "RULE_OPTION_GER_LIBERALISM"
+		desc = "RULE_OPTION_GER_LIBERALISM_DESC"
+	}
+	option = {
+		name = GER_POPULISM
+		text = "RULE_OPTION_GER_POPULISM"
+		desc = "RULE_OPTION_GER_POPULISM_DESC"
+	}
+	option = {
+		name = GER_GREEN
+		text = "RULE_OPTION_GER_GREEN"
+		desc = "RULE_OPTION_GER_GREEN_DESC"
+	}
+	option = {
+		name = GER_NATIONALIST
+		text = "RULE_OPTION_GER_NATIONALIST"
+		desc = "RULE_OPTION_GER_NATIONALIST_DESC"
+	}
+	option = {
+		name = GER_SOCIALIST
+		text = "RULE_OPTION_GER_SOCIALIST"
+		desc = "RULE_OPTION_GER_SOCIALIST_DESC"
+	}
+	option = {
+		name = GER_MONARCHIST
+		text = "RULE_OPTION_GER_MONARCHIST"
+		desc = "RULE_OPTION_GER_MONARCHIST_DESC"
+	}
+	option = {
+		name = RANDOM
+		text = "RULE_OPTION_RANDOM"
+		desc = "RULE_OPTION_RANDOM_DESC"
+	}
+}
+
 ARM_ai_behavior = {
 	name = "ARM_AI_BEHAVIOR"
 	group = "RULE_GROUP_AI_BEHAVIOR"
@@ -1241,8 +1465,8 @@ ARM_ai_behavior = {
 		desc = "RULE_OPTION_NEUTRALS_AI_DESC"
 	}
 }
-PRC_ai_behavior = {
-	name = "PRC_AI_BEHAVIOR"
+CHI_ai_behavior = {
+	name = "CHI_AI_BEHAVIOR"
 	group = "RULE_GROUP_AI_BEHAVIOR"
 	default = {
 		name = DEFAULT
@@ -1251,18 +1475,18 @@ PRC_ai_behavior = {
 	}
 	option = {
 		name = CHINESE_HEGEMONY
-		text = "RULE_OPTION_CHINESE_HEGEMONY"
-		desc = "RULE_OPTION_CHINESE_HEGEMONY_AI_DESC"
+		text = "RULE_OPTION_CHI_CHINESE_HEGEMONY"
+		desc = "RULE_OPTION_CHI_CHINESE_HEGEMONY_AI_DESC"
 	}
 	option = {
 		name = A_LONG_PEACE
-		text = "RULE_OPTION_A_LONG_PEACE"
-		desc = "RULE_OPTION_A_LONG_PEACE_AI_DESC"
+		text = "RULE_OPTION_CHI_A_LONG_PEACE"
+		desc = "RULE_OPTION_CHI_A_LONG_PEACE_AI_DESC"
 	}
 	option = {
 		name = RED_DAWN
-		text = "RULE_OPTION_RED_DAWN"
-		desc = "RULE_OPTION_RED_DAWN_AI_DESC"
+		text = "RULE_OPTION_CHI_RED_DAWN"
+		desc = "RULE_OPTION_CHI_RED_DAWN_AI_DESC"
 	}
 	option = {
 		name = RANDOM
@@ -1760,6 +1984,45 @@ SWI_ai_behavior = {
 		desc = "RULE_OPTION_RANDOM_DESC"
 	}
 }
+SER_ai_behavior = {
+	name = "SER_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	option = {
+		name = MILOCEVIC_COMMI
+		text = "RULE_OPTION_MILOCEVIC_COMMI"
+		desc = "RULE_OPTION_MILOCEVIC_COMMI_AI_DESC"
+	}
+	option = {
+		name = MILOCEVIC_NATI
+		text = "RULE_OPTION_MILOCEVIC_NATI"
+		desc = "RULE_OPTION_MILOCEVIC_NATI_AI_DESC"
+	}
+	option = {
+		name = MILOCEVIC_FEDERATION
+		text = "RULE_OPTION_MILOCEVIC_FEDERATION"
+		desc = "RULE_OPTION_MILOCEVIC_FEDERATION_AI_DESC"
+	}
+	option = {
+		name = SERBIAN_KINGDOM
+		text = "RULE_OPTION_SERBIAN_KINGDOM"
+		desc = "RULE_OPTION_SERBIAN_KINGDOM_AI_DESC"
+	}
+	option = {
+		name = SERBIAN_LIBERALS
+		text = "RULE_OPTION_SERBIAN_LIBERALS"
+		desc = "RULE_OPTION_SERBIAN_LIBERALS_AI_DESC"
+	}
+	option = {
+		name = RANDOM
+		text = "RULE_OPTION_RANDOM"
+		desc = "RULE_OPTION_RANDOM_DESC"
+	}
+}
 UKR_ai_behavior = {
 	name = "UKR_AI_BEHAVIOR"
 	group = "RULE_GROUP_AI_BEHAVIOR"
@@ -1769,19 +2032,39 @@ UKR_ai_behavior = {
 		desc = "RULE_OPTION_DEFAULT_AI_DESC"
 	}
 	option = {
-		name = UKR_PRO_RUSSIAN
-		text = "UKR_PRO_RUSSIAN"
-		desc = "UKR_PRO_RUSSIAN_DESC"
+		name = UKR_VINTRENKO
+		text = "UKR_VINTRENKO"
+		desc = "UKR_VINTRENKO_DESC"
 	}
 	option = {
-		name = UKR_SLAVA_UKRAINE
-		text = "UKR_SLAVA_UKRAINE"
-		desc = "UKR_SLAVA_UKRAINE_DESC"
+		name = UKR_NATIONALISTS
+		text = "UKR_NATIONALISTS"
+		desc = "UKR_NATIONALISTS_DESC"
 	}
 	option = {
-		name = UKR_NATIONAL_FRONT
-		text = "UKR_NATIONAL_FRONT"
-		desc = "UKR_NATIONAL_FRONT_DESC"
+		name = UKR_DEMOCRATIC
+		text = "UKR_DEMOCRATIC"
+		desc = "UKR_DEMOCRATIC_DESC"
+	}
+	option = {
+		name = UKR_COMMUNISM
+		text = "UKR_COMMUNISM"
+		desc = "UKR_COMMUNISM_DESC"
+	}
+	option = {
+		name = UKR_SOCIALISM
+		text = "UKR_SOCIALISM"
+		desc = "UKR_SOCIALISM_DESC"
+	}
+	option = {
+		name = UKR_YUSHENKO
+		text = "UKR_YUSHENKO"
+		desc = "UKR_YUSHENKO_DESC"
+	}
+	option = {
+		name = UKR_YANUK
+		text = "UKR_YANUK"
+		desc = "UKR_YANUK_DESC"
 	}
 	option = {
 		name = RANDOM
@@ -2056,18 +2339,154 @@ BLR_union_state_ai_behavior = {
 		desc = "RULE_OPTION_RANDOM_DESC"
 	}
 }
-BLR_arms_police_behavior = {
-	name = "BLR_arms_police_behavior"
+PMR_ai_behavior = {
+	name = "PMR_ai_behavior"
 	group = "RULE_GROUP_AI_BEHAVIOR"
-	default = {
-		name = BLR_POLICE_PRIORITY
-		text = "BLR_POLICE_PRIORITY"
-		desc = "BLR_POLICE_PRIORITY_DESC"
+		default = {
+		name = PMR_HISTORIC_DEFAULT
+		text = "PMR_HISTORIC_DEFAULT"
+		desc = "PMR_HISTORIC_DEFAULT_DESC"
 	}
 	option = {
-		name = BLR_ARMY_PRIORITY
-		text = "BLR_ARMY_PRIORITY"
-		desc = "BLR_ARMY_PRIORITY_DESC"
+		name = PMR_LIBERAL
+		text = "PMR_LIBERAL"
+		desc = "PMR_LIBERAL_DESC"
+	}
+	option = {
+		name = PMR_PATRIOTIC
+		text = "PMR_PATRIOTIC"
+		desc = "PMR_PATRIOTIC_DESC"
+	}
+	option = {
+		name = PMR_COMMUNISM
+		text = "PMR_COMMUNISM"
+		desc = "PMR_COMMUNISM_DESC"
+	}
+	option = {
+		name = PMR_UKRAINE
+		text = "PMR_UKRAINE"
+		desc = "PMR_UKRAINE_DESC"
+	}
+}
+PMR_sub_behavior = {
+	name = "PMR_sub_behavior"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+		default = {
+		name = PMR_PASSIVE_DEFAULT
+		text = "PMR_PASSIVE_DEFAULT"
+		desc = "PMR_PASSIVE_DEFAULT_DESC"
+	}
+	option = {
+		name = PMR_LEBED
+		text = "PMR_LEBED"
+		desc = "PMR_LEBED_DESC"
+	}
+	option = {
+		name = PMR_SHERIFF
+		text = "PMR_SHERIFF"
+		desc = "PMR_SHERIFF_DESC"
+	}
+}
+CUB_ai_behavior = {
+	name = "CUB_ai_behavior"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+		default = {
+		name = CUB_HISTORIC_DEFAULT
+		text = "CUB_HISTORIC_DEFAULT"
+		desc = "CUB_HISTORIC_DEFAULT_DESC"
+	}
+	option = {
+		name = CUB_LIBERAL
+		text = "CUB_LIBERAL"
+		desc = "CUB_LIBERAL_DESC"
+	}
+	option = {
+		name = CUB_COMMUNISM
+		text = "CUB_COMMUNISM"
+		desc = "CUB_COMMUNISM_DESC"
+	}
+	option = {
+		name = CUB_NATIONALIST
+		text = "CUB_NATIONALIST"
+		desc = "CUB_NATIONALIST_DESC"
+	}
+	option = {
+		name = CUB_DEMOCRATS
+		text = "CUB_DEMOCRATS"
+		desc = "CUB_DEMOCRATS_DESC"
+	}
+}
+POL_ai_behavior = {
+	name = "POL_AI_BEHAVIOR_MD"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	option = {
+		name = HISTORICAL
+		text = "POL_HISTORICAL"
+		desc = "POL_HISTORICAL_DESC"
+	}
+	option = {
+		name = COMMUNISM
+		text = "POL_COMMUNISM"
+		desc = "POL_COMMUNISM_DESC"
+	}
+	option = {
+		name = KORWIN_AG
+		text = "POL_KORWIN_AG"
+		desc = "POL_KORWIN_AG_DESC"
+	}
+	option = {
+		name = KORWIN_PE
+		text = "POL_KORWIN_PE"
+		desc = "POL_KORWIN_PE_DESC"
+	}
+	option = {
+		name = WALESA
+		text = "POL_WALESA"
+		desc = "POL_WALESA_DESC"
+	}
+}
+LBA_ai_behavior = {
+	name = "LBA_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	option = {
+		name = LIBYAN_ISLAMIC_FIGHTING_GROUP
+		text = "RULE_OPTION_LBA_ISLAMIC_FIGHTING_GROUP"
+		desc = "RULE_OPTION_LBA_ISLAMIC_FIGHTING_GROUP_DESC"
+	}
+	option = {
+		name = LIBYAN_GRAND_MUFTI
+		text = "RULE_OPTION_LBA_GRAND_MUFTI"
+		desc = "RULE_OPTION_LBA_GRAND_MUFTI_DESC"
+	}
+	option = {
+		name = DEMOCRATIC_REFORM
+		text = "RULE_OPTION_LBA_DEMOCRACY"
+		desc = "RULE_OPTION_LBA_DEMOCRACY_DESC"
+	}
+	option = {
+		name = RISE_OF_MONARCHY
+		text = "RULE_OPTION_LBA_KINGDOM"
+		desc = "RULE_OPTION_LBA_KINGDOM_DESC"
+	}
+	option = {
+		name = GADDAFI_ANTI_COLONIAL_UNION
+		text = "RULE_OPTION_LBA_GADDAFI_ANTI_COLONIAL_UNION"
+		desc = "RULE_OPTION_LBA_GADDAFI_ANTI_COLONIAL_UNION_DESC"
+	}
+	option = {
+		name = GADDAFI_UAR
+		text = "RULE_OPTION_LBA_GADDAFI_UAR"
+		desc = "RULE_OPTION_LBA_GADDAFI_UAR_DESC"
+	}
+	option = {
+		name = GADDAFI_AFRICA
+		text = "RULE_OPTION_LBA_GADDAFI_AFRICA"
+		desc = "RULE_OPTION_LBA_GADDAFI_AFRICA_DESC"
 	}
 	option = {
 		name = RANDOM

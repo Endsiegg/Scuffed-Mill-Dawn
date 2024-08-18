@@ -19,18 +19,17 @@ central_asian_narcotraffic = {
 	allowed = {
 		OR = {
 			original_tag = UZB
-			original_tag = TAJ
 			original_tag = KYR
 			original_tag = KAZ
 		}
 	}
 	priority = 151
-	picture = GFX_decis_drug_smuggling
-	icon = GFX_decis_category_opium
+	picture = GFX_decision_drug_smuggling
+	icon = GFX_decision_opium
 }
 TRK_uzbek_category = {
 	icon = GFX_decision_antiuzbek
-	picture = GFX_uzbek_turkmen_conflict
+	picture = GFX_decision_uzbek_turkmen_conflict
 	priority = 150
 	allowed = {
 		original_tag = UZB
@@ -41,9 +40,9 @@ TRK_uzbek_category = {
 		country_exists = UZB
 	}
 }
-UZB_karapalkstan_category = {
-	icon = GFX_karalp_decis
-	picture = GFX_decis_karalpak
+UZB_karakalpakstan_category = {
+	icon = GFX_decision_karakalpak_decis
+	picture = GFX_decision_decis_karakalpaks
 	priority = 200
 	allowed = {
 		original_tag = UZB
@@ -52,6 +51,9 @@ UZB_karapalkstan_category = {
 	visible = {
 		UZB = {
 			owns_state = 727
+			NOT = {
+				has_country_flag = Karakalpaks_rebelled_yes
+			}
 		}
 		country_exists = UZB
 	}

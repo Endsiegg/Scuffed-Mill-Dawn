@@ -4,14 +4,26 @@ CHE_nationalise_caucas_category = {
  	allowed = { original_tag = CHE }
 }
 CHE_caucasian_revol_category = {
-	icon = GFX_kavkaz_revol
+	icon = GFX_decision_kavkaz_revol
 
-	picture = GFX_kavkazrevol_econplakat
+	picture = GFX_decision_kavkazrevol_econplakat
 
 	allowed = {
 		original_tag = CHE
 	}
 	visible = {
 		has_completed_focus = CHE_KSSR
+	}
+}
+CHE_caucasians_revol_category = {
+	icon = GFX_decision_kavkaz_revol
+
+	picture = GFX_decision_kavkazrevol_econplakat
+
+	allowed = {
+		original_tag = CHE
+	}
+	visible = {
+		has_completed_focus = CHE_caucas_commies_federation
 	}
 }

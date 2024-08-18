@@ -2,6 +2,10 @@
 on_actions = {
 	on_weekly = {
 		effect = {
+			# Random Energy On Weekly
+			random_renewable_variable_calculation = yes
+			worker_requirements_variable_gdpc_converging = yes
+
 			#Update money system right before adjusting weekly value
 			ingame_update_setup = yes
 			#Remove weekly rate from treasury
@@ -16,6 +20,9 @@ on_actions = {
 			recalculate_influence = yes
 			force_update_map_mode = { mapmode = influence_map_mode }
 
+
+
+			# Initialize the Investment Pulse for this Week
 			if = {
 				limit = {
 					is_ai = yes
@@ -39,6 +46,31 @@ on_actions = {
 				# Check whether the larger nation has an investment target in scope 0
 				if = { limit = { NOT = { check_variable = { investment_targets^0 = 0 } } }
 					country_event = AC_event.500
+				}
+			}
+
+			# European Union Checks
+			if = { limit = { NOT = { has_global_flag = GAME_RULE_eu_disabled } }
+				if = { limit = { has_country_flag = EU_potential }
+					if = { limit = { is_debug = yes }
+						log = "[GetDateText]: [ROOT.GetName]: on_weekly check_breach_of_EU_value"
+					}
+					check_breach_of_EU_value = yes
+				}
+				### POTEF election polls
+
+				if = {
+					limit = {
+						has_idea = EUU_monitor
+						any_of_scopes = {
+							array = global.EU_potential
+							has_active_mission = EU_POTEF_election_campaign
+						}
+					}
+					if = { limit = { is_debug = yes }
+						log = "[GetDateText]: [ROOT.GetName]: on_weekly POTEF_election"
+					}
+					POTEF_election = yes
 				}
 			}
 
@@ -230,12 +262,8 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-					ROOT = {
-						original_tag = ARM
-					}
-					FROM = {
-						original_tag = GEO
-					}
+					ROOT = { original_tag = ARM }
+					FROM = { original_tag = GEO }
 				}
 				ROOT = {
 					add_ideas = ARM_GEO_religion_problem
@@ -244,15 +272,80 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					ROOT = {
-						original_tag = ARM
-					}
-					FROM = {
-						original_tag = AZE
-					}
+					ROOT = { original_tag = ARM }
+					FROM = { original_tag = AZE }
 				}
 				ROOT = {
 					add_ideas = ARM_AZE_small_people
+				}
+			}
+			if = {
+				limit = {
+					ROOT = { original_tag = CAN }
+					FROM = { original_tag = QUE }
+				}
+				# return cores to CAN
+				760 = { add_core_of = CAN }
+				761 = { add_core_of = CAN }
+				762 = { add_core_of = CAN }
+				1159 = { add_core_of = CAN }
+				1160 = { add_core_of = CAN }
+			}
+			if = {
+				limit = { NOT = { has_global_flag = GAME_RULE_eu_disabled } }
+				if = { limit = { FROM = { has_idea = EU_member } }
+					log = "[GetDateText]: [ROOT.GetName]: on_annex leaving_EU"
+					FROM = {
+						clr_country_flag = EU_voted
+						clr_country_flag = gov_strong_resist
+						clr_country_flag = gov_resist
+						clr_country_flag = gov_support
+						clr_country_flag = gov_strong_support
+						clr_country_flag = EU_voted_yes
+						clr_country_flag = EU_voted_no
+
+						leaving_EU = yes
+					}
+				}
+				if = { limit = { FROM = { has_idea = EUU_monitor } }
+					log = "[GetDateText]: [ROOT.GetName]: on_annex EUU_monitor change"
+					random_country = {
+						limit = {
+							has_country_flag = EU_potential
+							is_ai = yes
+						}
+						add_ideas = EUU_monitor
+						activate_mission = EU_update_vars_mission
+						activate_mission = EU_clear_voting_mission
+					}
+				}
+			}
+
+			EDU_learn_to_annex_your_neighbours = yes # LITERACY RATE STUFF
+
+			# Grab your Nuclear Reactor Enrichment Facilities
+			add_to_variable = { ROOT.enrichment_facilities = FROM.enrichment_facilities }
+
+			# Cleanup Auto-Influence Arrays
+			if = { limit = { ROOT = { is_ai = no } }
+				ROOT = {
+					for_each_loop = {
+						array = auto_influence_array
+						index = i
+						value = v
+
+						# Clears Auto Influencer Who No Longer Exists
+						if = { limit = { var:auto_influence_array^i = { exists = no } }
+							log = "[GetDateText]: [ROOT.GetName]: [?var:auto_influence_array^i.GetName] var:auto_influence_array^i auto influencer removal request"
+							var:auto_influence_array^i = {
+								ROOT = {
+									remove_auto_influencer_request = yes
+									update_auto_influence_array = yes
+									update_dirty_influence_var = yes
+								}
+							}
+						}
+					}
 				}
 			}
 		}
@@ -273,6 +366,55 @@ on_actions = {
 					add_ideas = ARM_turkish_peasants
 				}
 			}
+			if = {
+				limit = {
+					ROOT = { original_tag = USA }
+					FROM = {
+						original_tag = IRQ
+						is_subject_of = USA
+					}
+				}
+				set_global_flag = success_of_operation_iraqi_freedom
+			}
+			if = {
+				limit = {
+					IRQ = { has_completed_focus = IRQ_king_of_the_animal_kingdom }
+					ROOT = { original_tag = SAU }
+				}
+				SAU = {
+					release = ARA
+					if = {
+						limit = { has_global_flag = GAME_RULE_allow_colored_puppets }
+						set_autonomy = {
+							target = ARA
+							autonomy_state = autonomy_puppet_state_colored
+						}
+					}
+					else = {
+						set_autonomy = {
+							target = ARA
+							autonomy_state = autonomy_puppet_state
+						}
+					}
+				}
+
+
+				# Achievements
+				if = {
+					limit = {
+						ROOT = { original_tag = LBA }
+						FROM = { original_tag = EGY }
+					}
+					ROOT = { set_country_flag = ribbon_libya_victory_over_egypt }
+				}
+				if = {
+					limit = {
+						ROOT = { original_tag = LBA }
+						FROM = { original_tag = CHA }
+					}
+					ROOT = { set_country_flag = ribbon_libya_victory_over_chad }
+				}
+			}
 		}
 	}
 
@@ -287,15 +429,26 @@ on_actions = {
 				else = {
 					set_variable = { global.month = 1 }
 				}
+
+				if = {
+					limit = { NOT = { has_global_flag = GAME_RULE_eu_disabled } }
+					random_country = {
+						limit = { has_idea = EU_member NOT = { has_global_flag = EU_gdp_updated } }
+						set_EU_gdp = yes
+						set_global_flag = { flag = EU_gdp_updated value = 1 }
+					}
+				}
+
 				calculate_average_world_productivity = yes
 
 				# National Updates:
 				set_power_ranking_ideas_for_every_country = yes
 
 				# Trigger Events for this year
-				if = {
-					limit = { check_variable = { global.month = 1 } }
-					log = "[GetDateText]: [THIS.GetName]: Run the On Yearly Monthly Check"
+				if = { limit = { check_variable = { global.month = 1 } }
+					if = { limit = { is_debug = yes }
+						log = "[GetDateText]: [THIS.GetName]: Run the On Yearly Monthly Check"
+					}
 
 					every_country = {
 						if = {
@@ -307,9 +460,6 @@ on_actions = {
 									has_idea = great_power
 									has_idea = superpower
 								}
-
-								# wait for apc-ifv stuff to merge
-								#NOT = { has_idea = mp_optimization_idea }
 							}
 
 							yearly_investment_targets_routine = yes
@@ -320,7 +470,10 @@ on_actions = {
 						}
 					}
 
-					log = "[GetDateText]: [THIS.GetName]: Triggering [?global.year] events"
+					# Execute and Start the Yearly ETD Events
+					if = { limit = { is_debug = yes }
+						log = "[GetDateText]: [THIS.GetName]: Triggering [?global.year] events"
+					}
 					meta_effect = {
 						text = {
 							trigger_year_[year]_events = yes
@@ -454,98 +607,134 @@ on_actions = {
 						}
 						country_event = { id = terror.13 random_days = 50 }
 					}
-
+					update_international_system_gui = yes
 				}
 
-				#killrabbit stuff
+				# Calculate the Migrant Trigger
+				if = {
+					limit = { NOT = { has_global_flag = EUU_migrant_crisis_triggered } }
+					set_temp_variable = { total_population_refugees = 0 }
+					every_country = {
+						limit = {
+							OR = {
+								is_african_nation = yes
+								is_middle_eastern_nation = yes
+							}
+							OR = {
+								has_war = yes
+								has_civil_war = yes
+								salafist_caliphate_are_in_power = yes
+							}
+						}
+						set_temp_variable = { population_refugees = population_total }
+						multiply_temp_variable = { population_refugees = 0.04 }
+						add_to_temp_variable = { PREV.total_population_refugees = population_refugees }
+					}
+
+					if = { limit = { check_variable = { total_population_refugees > 50 } }
+						set_global_flag = EUU_migrant_crisis_triggered
+						if = {
+							limit = {
+								any_of_scopes = {
+									array = global.EU_member
+									is_ai = no
+								}
+							}
+							random_scope_in_array = {
+								array = global.EU_member
+								limit = { is_ai = no }
+
+								country_event = { id = EUevent.22 }
+							}
+						}
+						else = {
+							random_scope_in_array = {
+								array = global.EU_member
+								country_event = { id = EUevent.22 }
+							}
+						}
+					}
+				}
+
+				# Monthly Single Fire Check
 				every_country = {
 					recalculate_party = yes
-
-					# Middle East Counter Terror
-					if = {
-						limit = {
-							any_of_scopes = {
-								array = global.middle_east_ct_states
-								no_jihadist_government = yes
-								is_top5_influencer_PREV = yes
-							}
-							NOT = { has_country_flag = middle_east_influencer }
-						}
-						set_country_flag = middle_east_influencer
-					}
-					else_if = {
-						limit = {
-							NOT = {
-								any_of = {
-									array = global.middle_east_ct_states
-									no_jihadist_government = yes
-									is_top5_influencer = yes
-								}
-							}
-							has_country_flag = middle_east_influencer
-						}
-						clr_country_flag = middle_east_influencer
-					}
-
-					# Africa Counter Terror
-					if = {
-						limit = {
-							any_of_scopes = {
-								array = global.africa_ct_states
-								no_jihadist_government = yes
-								is_top5_influencer_PREV = yes
-							}
-							NOT = { has_country_flag = africa_influencer }
-						}
-						set_country_flag = africa_influencer
-					}
-					else_if = {
-						limit = {
-							NOT = {
-								any_of_scopes = {
-									array = global.africa_ct_states
-									no_jihadist_government = yes
-									is_top5_influencer_PREV = yes
-								}
-							}
-							has_country_flag = africa_influencer
-						}
-						clr_country_flag = africa_influencer
-					}
-
-					# Asia Counter Terror
-					if = {
-						limit = {
-							any_of_scopes = {
-								array = global.asia_ct_states
-								no_jihadist_government = yes
-								is_top5_influencer_PREV = yes
-							}
-							NOT = { has_country_flag = asia_influencer }
-						}
-						set_country_flag = asia_influencer
-					}
-					else_if = {
-						limit = {
-							NOT = {
-								any_of_scopes = {
-									array = global.asia_ct_states
-									no_jihadist_government = yes
-									is_top5_influencer_PREV = yes
-								}
-							}
-							has_country_flag = asia_influencer
-						}
-						clr_country_flag = asia_influencer
-					}
+					set_counter_terror_influencer = yes
 				}
 
 				# On Monthly Flag:
 				# Set this to 27 days to time out so that way February isn't missed
 				set_global_flag = { flag = on_monthly_done value = 1 days = 27 }
-				log = "[GetDateText]: [THIS.GetName]: MD Monthly On_Action Triggered Month: [?global.month] Year: [?global.year]"
+				if = { limit = { is_debug = yes }
+					log = "[GetDateText]: [THIS.GetName]: MD Monthly On_Action Triggered Month: [?global.month] Year: [?global.year]"
+				}
 			}
 			productivity_growth_effect = yes
+
+			# Research Configuration for AI
+			if = { limit = { is_ai = yes }
+				if = {
+					limit = { check_variable = { gdp_total > GLOBAL.gdp_slot^9 } }
+					set_temp_variable = { temp_research_slot = 9 }
+				}
+				else_if = {
+					limit = { check_variable = { gdp_total > GLOBAL.gdp_slot^8 } }
+					set_temp_variable = { temp_research_slot = 8 }
+				}
+				else_if = {
+					limit = { check_variable = { gdp_total > GLOBAL.gdp_slot^7 } }
+					set_temp_variable = { temp_research_slot = 7 }
+				}
+				else_if = {
+					limit = { check_variable = { gdp_total > GLOBAL.gdp_slot^6 } }
+					set_temp_variable = { temp_research_slot = 6 }
+				}
+				else_if = {
+					limit = { check_variable = { gdp_total > GLOBAL.gdp_slot^5 } }
+					set_temp_variable = { temp_research_slot = 5 }
+				}
+				else_if = {
+					limit = { check_variable = { gdp_total > GLOBAL.gdp_slot^4 } }
+					set_temp_variable = { temp_research_slot = 4 }
+				}
+				else_if = {
+					limit = { check_variable = { gdp_total > GLOBAL.gdp_slot^3 } }
+					set_temp_variable = { temp_research_slot = 3 }
+				}
+				else_if = {
+					limit = { check_variable = { gdp_total > GLOBAL.gdp_slot^2 } }
+					set_temp_variable = { temp_research_slot = 2 }
+				}
+				else = {
+					set_temp_variable = { temp_research_slot = 1 }
+				}
+
+				if = {
+					limit = { check_variable = { gdp_per_capita > GLOBAL.gdp_c_slot^6 } }
+					add_to_temp_variable = { temp_research_slot = 6 }
+				}
+				else_if = {
+					limit = { check_variable = { gdp_per_capita > GLOBAL.gdp_c_slot^5 } }
+					add_to_temp_variable = { temp_research_slot = 5 }
+				}
+				else_if = {
+					limit = { check_variable = { gdp_per_capita > GLOBAL.gdp_c_slot^4 } }
+					add_to_temp_variable = { temp_research_slot = 4 }
+				}
+				else_if = {
+					limit = { check_variable = { gdp_per_capita > GLOBAL.gdp_c_slot^3 } }
+					add_to_temp_variable = { temp_research_slot = 3 }
+				}
+				else_if = {
+					limit = { check_variable = { gdp_per_capita > GLOBAL.gdp_c_slot^2 } }
+					add_to_temp_variable = { temp_research_slot = 2 }
+				}
+				else = {
+					add_to_temp_variable = { temp_research_slot = 1 }
+				}
+
+				set_research_slots = temp_research_slot
+			}
 		}
 	}
 }

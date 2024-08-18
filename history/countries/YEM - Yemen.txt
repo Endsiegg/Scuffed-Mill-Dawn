@@ -107,7 +107,7 @@
 		}
 	}
 	add_ideas = {
-		crippling_corruption
+		rampant_corruption
 		youth_radicalization
 		LoAS_member
 		defence_05
@@ -135,6 +135,8 @@
 	set_country_flag = relaxed_dress_code
 	#GCC
 	add_to_array = { global.possible_gcc_members = THIS }
+	#UAR
+	add_to_array = { global.arabic_countries = THIS }	#From is_arabic_nation trigger
 
 	set_variable = { var = debt value = 14.695 }
 	set_variable = { var = treasury value = 3 }
@@ -236,6 +238,7 @@
 	add_ideas = {
 		saudi_aid
 		recession
+		paralyzing_corruption
 		officer_baptism_by_fire
 	}
 

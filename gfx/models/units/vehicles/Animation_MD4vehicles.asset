@@ -1,0 +1,9 @@
+animation = {
+	name = "bmp2_idle_animation"
+	file = "bmp2_idle_v2.anim"
+}
+
+animation = {
+	name = "bmp2_move_animation"
+	file = "bmp2_move_v2.anim"
+}

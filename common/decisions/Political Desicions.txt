@@ -1,15 +1,17 @@
 #### Other Generic Politics ########
 generic_coalition_politics_desicions = {
 	retire_current_leader = {
-		icon = eng_trade_unions_support
+		icon = GFX_decision_retireleader_button
 
 		cost = 100
-		days_remove = 0
-		days_re_enable = 0
-
 		fixed_random_seed = no
 
 		visible = {
+			if = {
+				limit = { tag = IRQ	}
+				NOT = { has_country_leader = { name = "Saddam Hussein" ruling_only = yes } }
+				NOT = { has_country_leader = { name = "Jay Garner" ruling_only = yes } }
+			}
 			if = {
 				limit = { tag = SAU }
 				NOT = { is_in_array = { ruling_party = 10 } }
@@ -46,6 +48,15 @@ generic_coalition_politics_desicions = {
 				NOT = {
 					emerging_moderate_shiite_are_in_power = yes
 					emerging_hardline_shiite_are_in_power = yes
+				}
+			}
+			if = {
+				limit = { tag = SER }
+				NOT = {
+					has_country_leader = {
+						name = "Slobodan Milošević"
+						ruling_only = yes
+					}
 				}
 			}
 			NOT = { tag = ITA }
@@ -100,11 +111,21 @@ generic_coalition_politics_desicions = {
 					}
 				}
 			}
+			if = {
+				limit = {
+					original_tag = LBA
+					is_ruled_by_a_gaddafi = yes
+					has_elections = no
+				}
+				custom_effect_tooltip = LBA_gaddafi_dictator_retirement_tt
+				set_temp_variable = { family_instability_change = 100 }
+				libya_gaddafi_family_modify_instability = yes
+			}
 		}
 	}
 
 	hold_reelections = {
-		icon = eng_trade_unions_support
+		icon = GFX_decision_elections_button
 		visible = {
 			if = {
 				limit = { tag = CHI }
@@ -166,8 +187,7 @@ generic_coalition_politics_desicions = {
 		}
 
 		cost = 90
-		days_remove = 0
-		days_re_enable = 730
+		days_re_enable = 365
 
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision hold_reelections"
@@ -178,7 +198,7 @@ generic_coalition_politics_desicions = {
 	## Change election laws ##
 
 	permanently_suspend_elections = {
-		icon = oppression
+		icon = GFX_decision_electionban_button
 
 		cost = 125
 		days_remove = 0
@@ -304,7 +324,7 @@ generic_coalition_politics_desicions = {
 	}
 
 	return_democracy = {
-		icon = eng_puppet_usa
+		icon = GFX_decision_electionreturn_button
 
 		cost = 85
 		days_remove = 0
@@ -312,6 +332,13 @@ generic_coalition_politics_desicions = {
 		fixed_random_seed = no
 
 		visible = {
+			if = {
+				limit = { tag = IRQ	}
+				OR = {
+					NOT = { has_country_leader = { name = "Saddam Hussein" ruling_only = yes } }
+					NOT = { has_country_leader = { name = "Jay Garner" ruling_only = yes } }
+				}
+			}
 			has_elections = no
 			if = {
 				limit = { tag = CHI }
@@ -356,6 +383,27 @@ generic_coalition_politics_desicions = {
 						emerging_hardline_shiite_are_in_power = yes
 						emerging_moderate_shiite_are_in_power = yes
 					}
+				}
+			}
+			if = {
+				limit = { tag = CUB }
+				OR = {
+					has_completed_focus = CUB_allow_elections
+					has_completed_focus = CUB_republic_alive
+				}
+			}
+		}
+
+		available = {
+			if = {
+				limit = { original_tag = LBA }
+				OR = {
+					custom_trigger_tooltip = {
+						NOT = { is_ruled_by_a_gaddafi = yes }
+						tooltip = LBA_not_ruled_by_gaddafi_tt
+					}
+					has_completed_focus = LBA_presidential_republic
+					has_completed_focus = LBA_constitutional_monarch
 				}
 			}
 		}
@@ -473,7 +521,7 @@ generic_coalition_politics_desicions = {
 			}
 		}
 		days_mission_timeout = 180
-
+		icon = GFX_decision_demobilisation_button
 		selectable_mission = yes
 
 		cancel_trigger = {
@@ -519,6 +567,34 @@ generic_coalition_politics_desicions = {
 		}
 	}
 
+	# Auto-Decline corruption events
+	auto_decline_corruption_offers = {
+		icon = GFX_decision_generic_political_discourse
+
+		visible = {
+			NOT = {
+				has_country_flag = auto_decline_corruption
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision auto_decline_corruption_offers"
+			set_country_flag = auto_decline_corruption
+		}
+	}
+
+	lift_auto_decline_corruption_events = {
+		icon = GFX_decision_generic_political_discourse
+
+		visible = {
+			has_country_flag = auto_decline_corruption
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision lift_auto_decline_corruption_events"
+			clr_country_flag = auto_decline_corruption
+		}
+	}
 
 	### Extremist Civil Wars
 
@@ -554,46 +630,31 @@ generic_coalition_politics_desicions = {
 			hidden_effect = {
 				#Release copy of existing
 				set_country_flag = no_leader_change
-				if = {
-					limit = {
-						has_government = nationalist
-					}
+				if = { limit = { has_government = nationalist }
 					start_civil_war = {
 						ideology = nationalist
 						size = 0.5
 					}
 				}
-				else_if = {
-					limit = {
-						has_government = communism
-					}
+				else_if = { limit = { has_government = communism }
 					start_civil_war = {
 						ideology = communism
 						size = 0.5
 					}
 				}
-				else_if = {
-					limit = {
-						has_government = democratic
-					}
+				else_if = { limit = { has_government = democratic }
 					start_civil_war = {
 						ideology = democratic
 						size = 0.5
 					}
 				}
-				else_if = {
-					limit = {
-						has_government = neutrality
-					}
+				else_if = { limit = { has_government = neutrality }
 					start_civil_war = {
 						ideology = neutrality
 						size = 0.5
 					}
 				}
-				else_if = {
-					limit = {
-						has_government = fascism
-					}
+				else_if = { limit = { has_government = fascism }
 					start_civil_war = {
 						ideology = fascism
 						size = 0.5
@@ -685,23 +746,22 @@ generic_coalition_politics_desicions = {
 					set_variable = { gdp_per_capita = PREV.gdp_per_capita }
 					update_budget_laws_for_new_nation = yes
 
-					set_variable = { economic_cycles = PREV.economic_cycles }
-					if = { limit = { check_variable = { economic_cycles = 6 } }
+					if = { limit = { PREV = { has_idea = depression } }
 						add_ideas = depression
 					}
-					else_if = { limit = { check_variable = { economic_cycles = 5 } }
+					else_if = { limit = { PREV = { has_idea = recession } }
 						add_ideas = recession
 					}
-					else_if = { limit = { check_variable = { economic_cycles = 4 } }
+					else_if = { limit = { PREV = { has_idea = stagnation } }
 						add_ideas = stagnation
 					}
-					else_if = { limit = { check_variable = { economic_cycles = 3 } }
+					else_if = { limit = { PREV = { has_idea = stable_growth } }
 						add_ideas = stable_growth
 					}
-					else_if = { limit = { check_variable = { economic_cycles = 2 } }
+					else_if = { limit = { PREV = { has_idea = fast_growth } }
 						add_ideas = fast_growth
 					}
-					else_if = { limit = { check_variable = { economic_cycles = 1 } }
+					else_if = { limit = { PREV = { has_idea = economic_boom } }
 						add_ideas = economic_boom
 					}
 
@@ -946,9 +1006,6 @@ generic_coalition_politics_desicions = {
 						}
 						add_ideas = foreign_jihadis
 					}
-					if = { limit = { PREV = { has_idea = isi_pakistan } }
-						add_ideas = isi_pakistan
-					}
 					if = { limit = { PREV = { has_idea = wall_street } }
 						add_ideas = wall_street
 					}
@@ -991,7 +1048,6 @@ generic_coalition_politics_desicions = {
 					economic_cycle_drift_popularity = yes #drift from neighbor
 
 					country_event = { id = brotherhood.0 } #Sets muslim_brotherhood relations
-					country_event = { id = brotherhood.2 }
 				}
 
 				#For player:
@@ -1183,23 +1239,22 @@ generic_coalition_politics_desicions = {
 					set_variable = { gdp_per_capita = PREV.gdp_per_capita }
 					update_budget_laws_for_new_nation = yes
 
-					set_variable = { economic_cycles = PREV.economic_cycles }
-					if = { limit = { check_variable = { economic_cycles = 6 } }
+					if = { limit = { PREV = { has_idea = depression } }
 						add_ideas = depression
 					}
-					else_if = { limit = { check_variable = { economic_cycles = 5 } }
+					else_if = { limit = { PREV = { has_idea = recession } }
 						add_ideas = recession
 					}
-					else_if = { limit = { check_variable = { economic_cycles = 4 } }
+					else_if = { limit = { PREV = { has_idea = stagnation } }
 						add_ideas = stagnation
 					}
-					else_if = { limit = { check_variable = { economic_cycles = 3 } }
+					else_if = { limit = { PREV = { has_idea = stable_growth } }
 						add_ideas = stable_growth
 					}
-					else_if = { limit = { check_variable = { economic_cycles = 2 } }
+					else_if = { limit = { PREV = { has_idea = fast_growth } }
 						add_ideas = fast_growth
 					}
-					else_if = { limit = { check_variable = { economic_cycles = 1 } }
+					else_if = { limit = { PREV = { has_idea = economic_boom } }
 						add_ideas = economic_boom
 					}
 
@@ -1444,9 +1499,6 @@ generic_coalition_politics_desicions = {
 						}
 						add_ideas = foreign_jihadis
 					}
-					if = { limit = { PREV = { has_idea = isi_pakistan } }
-						add_ideas = isi_pakistan
-					}
 					if = { limit = { PREV = { has_idea = wall_street } }
 						add_ideas = wall_street
 					}
@@ -1489,9 +1541,6 @@ generic_coalition_politics_desicions = {
 					economic_cycle_drift_popularity = yes #drift from neighbor
 
 					country_event = { id = brotherhood.0 } #Sets muslim_brotherhood relations
-					country_event = { id = brotherhood.2 }
-
-
 				}
 
 				#For player:
@@ -1683,23 +1732,22 @@ generic_coalition_politics_desicions = {
 					set_variable = { gdp_per_capita = PREV.gdp_per_capita }
 					update_budget_laws_for_new_nation = yes
 
-					set_variable = { economic_cycles = PREV.economic_cycles }
-					if = { limit = { check_variable = { economic_cycles = 6 } }
+					if = { limit = { PREV = { has_idea = depression } }
 						add_ideas = depression
 					}
-					else_if = { limit = { check_variable = { economic_cycles = 5 } }
+					else_if = { limit = { PREV = { has_idea = recession } }
 						add_ideas = recession
 					}
-					else_if = { limit = { check_variable = { economic_cycles = 4 } }
+					else_if = { limit = { PREV = { has_idea = stagnation } }
 						add_ideas = stagnation
 					}
-					else_if = { limit = { check_variable = { economic_cycles = 3 } }
+					else_if = { limit = { PREV = { has_idea = stable_growth } }
 						add_ideas = stable_growth
 					}
-					else_if = { limit = { check_variable = { economic_cycles = 2 } }
+					else_if = { limit = { PREV = { has_idea = fast_growth } }
 						add_ideas = fast_growth
 					}
-					else_if = { limit = { check_variable = { economic_cycles = 1 } }
+					else_if = { limit = { PREV = { has_idea = economic_boom } }
 						add_ideas = economic_boom
 					}
 
@@ -1944,9 +1992,6 @@ generic_coalition_politics_desicions = {
 						}
 						add_ideas = foreign_jihadis
 					}
-					if = { limit = { PREV = { has_idea = isi_pakistan } }
-						add_ideas = isi_pakistan
-					}
 					if = { limit = { PREV = { has_idea = wall_street } }
 						add_ideas = wall_street
 					}
@@ -1990,7 +2035,6 @@ generic_coalition_politics_desicions = {
 					economic_cycle_drift_popularity = yes #drift from neighbor
 
 					country_event = { id = brotherhood.0 } #Sets muslim_brotherhood relations
-					country_event = { id = brotherhood.2 }
 				}
 
 				#For player:
@@ -2188,23 +2232,22 @@ generic_coalition_politics_desicions = {
 					set_variable = { gdp_per_capita = PREV.gdp_per_capita }
 					update_budget_laws_for_new_nation = yes
 
-					set_variable = { economic_cycles = PREV.economic_cycles }
-					if = { limit = { check_variable = { economic_cycles = 6 } }
+					if = { limit = { PREV = { has_idea = depression } }
 						add_ideas = depression
 					}
-					else_if = { limit = { check_variable = { economic_cycles = 5 } }
+					else_if = { limit = { PREV = { has_idea = recession } }
 						add_ideas = recession
 					}
-					else_if = { limit = { check_variable = { economic_cycles = 4 } }
+					else_if = { limit = { PREV = { has_idea = stagnation } }
 						add_ideas = stagnation
 					}
-					else_if = { limit = { check_variable = { economic_cycles = 3 } }
+					else_if = { limit = { PREV = { has_idea = stable_growth } }
 						add_ideas = stable_growth
 					}
-					else_if = { limit = { check_variable = { economic_cycles = 2 } }
+					else_if = { limit = { PREV = { has_idea = fast_growth } }
 						add_ideas = fast_growth
 					}
-					else_if = { limit = { check_variable = { economic_cycles = 1 } }
+					else_if = { limit = { PREV = { has_idea = economic_boom } }
 						add_ideas = economic_boom
 					}
 
@@ -2449,9 +2492,6 @@ generic_coalition_politics_desicions = {
 						}
 						add_ideas = foreign_jihadis
 					}
-					if = { limit = { PREV = { has_idea = isi_pakistan } }
-						add_ideas = isi_pakistan
-					}
 					if = { limit = { PREV = { has_idea = wall_street } }
 						add_ideas = wall_street
 					}
@@ -2495,7 +2535,6 @@ generic_coalition_politics_desicions = {
 					economic_cycle_drift_popularity = yes #drift from neighbor
 
 					country_event = { id = brotherhood.0 } #Sets muslim_brotherhood relations
-					country_event = { id = brotherhood.2 }
 				}
 
 				#For player:
@@ -2692,23 +2731,22 @@ generic_coalition_politics_desicions = {
 					set_variable = { gdp_per_capita = PREV.gdp_per_capita }
 					update_budget_laws_for_new_nation = yes
 
-					set_variable = { economic_cycles = PREV.economic_cycles }
-					if = { limit = { check_variable = { economic_cycles = 6 } }
+					if = { limit = { PREV = { has_idea = depression } }
 						add_ideas = depression
 					}
-					else_if = { limit = { check_variable = { economic_cycles = 5 } }
+					else_if = { limit = { PREV = { has_idea = recession } }
 						add_ideas = recession
 					}
-					else_if = { limit = { check_variable = { economic_cycles = 4 } }
+					else_if = { limit = { PREV = { has_idea = stagnation } }
 						add_ideas = stagnation
 					}
-					else_if = { limit = { check_variable = { economic_cycles = 3 } }
+					else_if = { limit = { PREV = { has_idea = stable_growth } }
 						add_ideas = stable_growth
 					}
-					else_if = { limit = { check_variable = { economic_cycles = 2 } }
+					else_if = { limit = { PREV = { has_idea = fast_growth } }
 						add_ideas = fast_growth
 					}
-					else_if = { limit = { check_variable = { economic_cycles = 1 } }
+					else_if = { limit = { PREV = { has_idea = economic_boom } }
 						add_ideas = economic_boom
 					}
 
@@ -2953,9 +2991,6 @@ generic_coalition_politics_desicions = {
 						}
 						add_ideas = foreign_jihadis
 					}
-					if = { limit = { PREV = { has_idea = isi_pakistan } }
-						add_ideas = isi_pakistan
-					}
 					if = { limit = { PREV = { has_idea = wall_street } }
 						add_ideas = wall_street
 					}
@@ -2970,7 +3005,6 @@ generic_coalition_politics_desicions = {
 					economic_cycle_drift_popularity = yes #drift from neighbor
 
 					country_event = { id = brotherhood.0 } #Sets muslim_brotherhood relations
-					country_event = { id = brotherhood.2 }
 				}
 
 				#copy leader throughput
@@ -3028,7 +3062,7 @@ generic_coalition_politics_desicions = {
 	}
 
 	JAP_spirit_of_the_warrior = {
-		icon = japan
+		icon = GFX_decision_japan_dec
 
 		cost = 100
 
@@ -3223,23 +3257,22 @@ generic_coalition_politics_desicions = {
 					set_variable = { gdp_per_capita = PREV.gdp_per_capita }
 					update_budget_laws_for_new_nation = yes
 
-					set_variable = { economic_cycles = PREV.economic_cycles }
-					if = { limit = { check_variable = { economic_cycles = 6 } }
+					if = { limit = { PREV = { has_idea = depression } }
 						add_ideas = depression
 					}
-					else_if = { limit = { check_variable = { economic_cycles = 5 } }
+					else_if = { limit = { PREV = { has_idea = recession } }
 						add_ideas = recession
 					}
-					else_if = { limit = { check_variable = { economic_cycles = 4 } }
+					else_if = { limit = { PREV = { has_idea = stagnation } }
 						add_ideas = stagnation
 					}
-					else_if = { limit = { check_variable = { economic_cycles = 3 } }
+					else_if = { limit = { PREV = { has_idea = stable_growth } }
 						add_ideas = stable_growth
 					}
-					else_if = { limit = { check_variable = { economic_cycles = 2 } }
+					else_if = { limit = { PREV = { has_idea = fast_growth } }
 						add_ideas = fast_growth
 					}
-					else_if = { limit = { check_variable = { economic_cycles = 1 } }
+					else_if = { limit = { PREV = { has_idea = economic_boom } }
 						add_ideas = economic_boom
 					}
 
@@ -3483,9 +3516,6 @@ generic_coalition_politics_desicions = {
 							}
 						}
 						add_ideas = foreign_jihadis
-					}
-					if = { limit = { PREV = { has_idea = isi_pakistan } }
-						add_ideas = isi_pakistan
 					}
 					if = { limit = { PREV = { has_idea = wall_street } }
 						add_ideas = wall_street
@@ -3739,23 +3769,22 @@ generic_coalition_politics_desicions = {
 					set_variable = { gdp_per_capita = PREV.gdp_per_capita }
 					update_budget_laws_for_new_nation = yes
 
-					set_variable = { economic_cycles = PREV.economic_cycles }
-					if = { limit = { check_variable = { economic_cycles = 6 } }
+					if = { limit = { PREV = { has_idea = depression } }
 						add_ideas = depression
 					}
-					else_if = { limit = { check_variable = { economic_cycles = 5 } }
+					else_if = { limit = { PREV = { has_idea = recession } }
 						add_ideas = recession
 					}
-					else_if = { limit = { check_variable = { economic_cycles = 4 } }
+					else_if = { limit = { PREV = { has_idea = stagnation } }
 						add_ideas = stagnation
 					}
-					else_if = { limit = { check_variable = { economic_cycles = 3 } }
+					else_if = { limit = { PREV = { has_idea = stable_growth } }
 						add_ideas = stable_growth
 					}
-					else_if = { limit = { check_variable = { economic_cycles = 2 } }
+					else_if = { limit = { PREV = { has_idea = fast_growth } }
 						add_ideas = fast_growth
 					}
-					else_if = { limit = { check_variable = { economic_cycles = 1 } }
+					else_if = { limit = { PREV = { has_idea = economic_boom } }
 						add_ideas = economic_boom
 					}
 
@@ -3998,9 +4027,6 @@ generic_coalition_politics_desicions = {
 						}
 						add_ideas = foreign_jihadis
 					}
-					if = { limit = { PREV = { has_idea = isi_pakistan } }
-						add_ideas = isi_pakistan
-					}
 					if = { limit = { PREV = { has_idea = wall_street } }
 						add_ideas = wall_street
 					}
@@ -4133,7 +4159,7 @@ generic_coalition_politics_desicions = {
 	### France ###
 
 	FRA_nationalist_claims_BEL = {
-		icon = decision
+		icon = GFX_decision_generic_decision
 
 		cost = 200
 		days_remove = 120
@@ -4174,7 +4200,7 @@ generic_coalition_politics_desicions = {
 	}
 
 	FRA_nationalist_claims_SWI = {
-		icon = decision
+		icon = GFX_decision_generic_decision
 
 		cost = 200
 		days_remove = 120
@@ -4217,7 +4243,7 @@ generic_coalition_politics_desicions = {
 	### Norway ###
 
 	NOR_nationalist_claims_DEN = {
-		icon = decision
+		icon = GFX_decision_generic_decision
 
 		cost = 200
 		days_remove = 120
@@ -4259,7 +4285,7 @@ generic_coalition_politics_desicions = {
 	}
 
 	NOR_nationalist_claims_ICE = {
-		icon = decision
+		icon = GFX_decision_generic_decision
 
 		cost = 200
 		days_remove = 120
@@ -4300,7 +4326,7 @@ generic_coalition_politics_desicions = {
 	}
 
 	NOR_nationalist_claims_ENG = {
-		icon = decision
+		icon = GFX_decision_generic_decision
 
 		cost = 200
 		days_remove = 120
@@ -4344,7 +4370,7 @@ generic_coalition_politics_desicions = {
 	}
 
 	NOR_nationalist_claims_SCO = {
-		icon = decision
+		icon = GFX_decision_generic_decision
 
 		cost = 200
 		days_remove = 120
@@ -4391,7 +4417,7 @@ generic_coalition_politics_desicions = {
 	### Sweden ###
 
 	SWE_nationalist_claims_FIN = {
-		icon = decision
+		icon = GFX_decision_generic_decision
 
 		cost = 200
 		days_remove = 120
@@ -4434,7 +4460,7 @@ generic_coalition_politics_desicions = {
 	### Denmark ###
 
 	DEN_nationalist_claims_SWE = {
-		icon = decision
+		icon = GFX_decision_generic_decision
 
 		cost = 200
 		days_remove = 120
@@ -4475,7 +4501,7 @@ generic_coalition_politics_desicions = {
 	}
 
 	DEN_nationalist_claims_GER = {
-		icon = decision
+		icon = GFX_decision_generic_decision
 
 		cost = 200
 		days_remove = 120
@@ -4518,7 +4544,7 @@ generic_coalition_politics_desicions = {
 	### Netherlands ###
 
 	HOL_nationalist_claims_BEL = {
-		icon = decision
+		icon = GFX_decision_generic_decision
 
 		cost = 200
 		days_remove = 120
@@ -4562,7 +4588,7 @@ generic_coalition_politics_desicions = {
 	### Hungary ###
 
 	HUN_nationalist_claims_UKR = {
-		icon = decision
+		icon = GFX_decision_generic_decision
 
 		cost = 200
 		days_remove = 120
@@ -4603,7 +4629,7 @@ generic_coalition_politics_desicions = {
 	}
 
 	HUN_nationalist_claims_ROM = {
-		icon = decision
+		icon = GFX_decision_generic_decision
 
 		cost = 200
 		days_remove = 120
@@ -4646,7 +4672,7 @@ generic_coalition_politics_desicions = {
 	### Austria ##
 
 	AUS_nationalist_claims_ITA = {
-		icon = decision
+		icon = GFX_decision_generic_decision
 
 		cost = 200
 		days_remove = 120
@@ -4689,7 +4715,7 @@ generic_coalition_politics_desicions = {
 	### Albania ##
 
 	ALB_nationalist_claims_KOS = {
-		icon = decision
+		icon = GFX_decision_generic_decision
 
 		cost = 200
 		days_remove = 120
@@ -4732,7 +4758,7 @@ generic_coalition_politics_desicions = {
 		}
 	}
 	ALB_nationalist_claims_SER = {
-		icon = decision
+		icon = GFX_decision_generic_decision
 
 		cost = 200
 		days_remove = 120
@@ -4775,7 +4801,7 @@ generic_coalition_politics_desicions = {
 		}
 	}
 	ALB_nationalist_claims_FYR = {
-		icon = decision
+		icon = GFX_decision_generic_decision
 
 		cost = 200
 		days_remove = 120
@@ -4818,7 +4844,7 @@ generic_coalition_politics_desicions = {
 		}
 	}
 	BRA_nationalist_claims_URG = {
-		icon = decision
+		icon = GFX_decision_generic_decision
 
 		cost = 150
 		days_remove = 120
@@ -4862,7 +4888,7 @@ generic_coalition_politics_desicions = {
 	# Japan
 	JAP_revoke_article_nine = {
 		allowed = { original_tag = JAP }
-		icon = decision
+		icon = GFX_decision_generic_decision
 		cost = 150
 		visible = {
 			has_idea = article_nine_jap
@@ -4893,7 +4919,7 @@ generic_coalition_politics_desicions = {
 	# They run for 4 months then cool down for a month
 
 	promote_outlook_decision_support_pro_western_parties = {
-		icon = eng_propaganda_campaigns
+		icon = GFX_decision_democratic_button
 		days_remove = 120
 		days_re_enable = 30
 		fire_only_once = no
@@ -4937,7 +4963,7 @@ generic_coalition_politics_desicions = {
 	}
 
 	promote_outlook_decision_support_emerging_parties = {
-		icon = eng_propaganda_campaigns
+		icon = GFX_decision_emerging_button
 		days_remove = 120
 		days_re_enable = 30
 		fire_only_once = no
@@ -4981,7 +5007,7 @@ generic_coalition_politics_desicions = {
 	}
 
 	promote_outlook_decision_support_the_non_aligned_parties = {
-		icon = eng_propaganda_campaigns
+		icon = GFX_decision_neutrality_button
 		days_remove = 120
 		days_re_enable = 30
 		fire_only_once = no
@@ -5025,7 +5051,7 @@ generic_coalition_politics_desicions = {
 	}
 
 	promote_outlook_decision_support_the_nationalists = {
-		icon = eng_propaganda_campaigns
+		icon = GFX_decision_nationalist_button
 		days_remove = 120
 		days_re_enable = 30
 		fire_only_once = no
@@ -5069,7 +5095,7 @@ generic_coalition_politics_desicions = {
 	}
 
 	promote_outlook_decision_support_the_salafists = {
-		icon = eng_propaganda_campaigns
+		icon = GFX_decision_fascism_button
 		days_remove = 120
 		days_re_enable = 30
 		fire_only_once = no
@@ -5169,6 +5195,56 @@ generic_coalition_politics_desicions = {
 		}
 	}
 
+	# Propaganda to Reduce Spending
+	promote_reduced_spending_campaigns = {
+		cost = 50
+		days_remove = 160
+		days_re_enable = 30
+		fire_only_once = no
+		fixed_random_seed = no
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision promote_outlook_decision_support_the_salafists"
+			ingame_update_setup = yes
+			random_list = {
+				25 = {
+					increase_corruption = yes
+				}
+				75 = { }
+			}
+		}
+		remove_effect = {
+			ingame_update_setup = yes
+		}
+		modifier = {
+			foreign_influence_defense_modifier = -0.15
+			expected_adm_modifier = -1
+			expected_police_modifier = -1
+			expected_education_modifier = -1
+			expected_healthcare_modifier = -1
+			expected_welfare_modifier = -1
+			expected_mil_modifier = -1
+		}
+	}
+
+	# Discourage Population Growth
+	discourage_population_growth_decision = {
+		icon = GFX_decision_generic_political_discourse
+		days_remove = 180
+		days_re_enable = 60
+
+		cost = 100
+
+		modifier = {
+			monthly_population = -0.40
+			stability_factor = -0.05
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision discourage_population_growth_decision"
+		}
+	}
+
 	rebuild_bosphorus_strait = {
 
 		icon = GFX_decision_generic_special_project
@@ -5213,7 +5289,7 @@ generic_coalition_politics_desicions = {
 
 	##Generic Political Decisiosn
 	remove_usaid = {
-		icon = generic
+		icon = GFX_decision_usaidban_button
 
 		visible = {
 			has_idea = USA_usaid
@@ -5269,7 +5345,7 @@ generic_coalition_politics_desicions = {
 
 	GEN_crack_down_on_muslim_broterhood = {
 
-		icon = oppression
+		icon = GFX_decision_oppression
 
 		available = {
 			has_idea = al_jazeera_banned
@@ -5351,7 +5427,7 @@ generic_coalition_politics_desicions = {
 
 	GEN_ban_al_jazeera = {
 
-		icon = oppression
+		icon = GFX_decision_oppression
 
 		available = {
 			has_idea = al_jazeera_allowed
@@ -5444,6 +5520,81 @@ generic_coalition_politics_desicions = {
 
 		ai_will_do = {
 			factor = 50
+		}
+	}
+
+	# Generic Country Unique
+	AFRICA_remove_the_cfa_franc = {
+		allowed = { is_french_africa_nation = yes }
+		icon = generic_civil_support
+
+		visible = {
+			OR = {
+				has_idea = cfa_franc
+				has_idea = cfa_franc_2
+			}
+		}
+
+		available = {
+			OR = {
+				has_war_with = FRA
+				has_government = nationalist
+				FRA = {
+					NOT = {
+						influence_higher_15 = yes
+					}
+				}
+			}
+		}
+
+		cost = 50
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision AFRICA_remove_the_cfa_franc"
+			if = {
+				limit = { has_idea = CFA_franc }
+				remove_ideas = CFA_franc
+			}
+			else = {
+				remove_ideas = CFA_franc_2
+			}
+		}
+
+		ai_will_do = {
+			base = 25
+			modifier = {
+				factor = 2.5
+				has_government = nationalist
+			}
+			modifier = {
+				factor = 0.65
+				is_subject_of = FRA
+			}
+			modifier = {
+				factor = 2
+				has_war_with = FRA
+			}
+			modifier = {
+				factor = 1.25
+				check_variable = { domestic_influence_amount < 30 }
+			}
+			modifier = {
+				factor = 1.5
+				OR = {
+					AND = {
+						FRA = { has_government = democratic }
+						NOT = { has_government = democratic }
+					}
+					AND = {
+						FRA = { has_government = neutrality }
+						NOT = { has_government = neutrality }
+					}
+					AND = {
+						FRA = { has_government = communism }
+						NOT = { has_government = communism }
+					}
+				}
+			}
 		}
 	}
 }

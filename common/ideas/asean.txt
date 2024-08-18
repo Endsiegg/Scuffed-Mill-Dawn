@@ -4,12 +4,15 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ASEAN_Member" }
 			picture = ASEAN_Member
 			modifier = {
-				political_power_gain = 0.1
-				consumer_goods_factor = -0.02
-				stability_factor = 0.02
-				war_support_factor = -0.02
-				trade_opinion_factor = 0.03
-				ai_get_ally_desire_factor = -1000
+				political_power_gain = 0.15
+				consumer_goods_factor = -0.08
+				interest_rate_multiplier_modifier = -0.75
+				stability_factor = 0.05
+				war_support_factor = -0.05
+				trade_opinion_factor = 0.10
+				hidden_modifier = {
+					ai_get_ally_desire_factor = -1000
+				}
 			}
 		}
 
@@ -28,6 +31,59 @@ ideas = {
 				production_speed_buildings_factor = -0.15
 				trade_opinion_factor = -0.30
 				min_export = -0.1
+			}
+		}
+
+		socialist_vietnam = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea socialist_vietnam" }
+
+			allowed = {
+				original_tag = VIE
+			}
+
+			picture = vietnam_emblem
+
+			cancel = {
+				NOT = { neutrality_neutral_communism_are_in_power = yes }
+			}
+
+			modifier = {
+				drift_defence_factor = 0.2
+				political_power_gain = 0.05
+				neutrality_drift = 0.1
+				stability_factor = 0.05
+			}
+		}
+
+		lao_vietnan_treaty = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea lao_vietnan_treaty" }
+
+			allowed = {
+				OR = { original_tag = VIE
+					   original_tag = LAO }
+			}
+
+			picture = vl_treaty
+
+			cancel = {
+				NOT = { OR = { neutrality_neutral_communism_are_in_power = yes
+							   emerging_communist_state_are_in_power = yes }
+					}
+			}
+
+			modifier = {
+				trade_opinion_factor = 0.25
+			}
+		}
+
+		VIE_VPA_Business_Ventures = {
+			picture = army_problems
+			modifier = {
+				political_power_factor = 0.2
+				consumer_goods_factor = -0.1
+				army_attack_factor = -0.1
+				army_defence_factor = -0.3
+				max_planning = -0.3
 			}
 		}
 

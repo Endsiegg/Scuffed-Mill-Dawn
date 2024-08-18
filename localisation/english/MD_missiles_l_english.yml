@@ -30,6 +30,7 @@
  missile_type_prod_1_selected_unique_loc: "[missile_type_prod_1_selected_unique_loc]"
  missile_type_prod_1_selected_generic_loc: "[missile_type_prod_1_selected_generic_loc]"
  missile_type_prod_1_selected_USA_loc: "[missile_type_prod_1_selected_USA_loc]"
+ missile_type_prod_1_selected_GER_loc: "[missile_type_prod_1_selected_GER_loc]"
  missile_type_prod_1_selected_SOV_loc: "[missile_type_prod_1_selected_SOV_loc]"
  missile_type_prod_1_selected_CHI_loc: "[missile_type_prod_1_selected_CHI_loc]"
  missile_type_prod_1_selected_ENG_loc: "[missile_type_prod_1_selected_ENG_loc]"
@@ -42,6 +43,7 @@
  missile_type_prod_2_selected_unique_loc: "[missile_type_prod_2_selected_unique_loc]"
  missile_type_prod_2_selected_generic_loc: "[missile_type_prod_2_selected_generic_loc]"
  missile_type_prod_2_selected_USA_loc: "[missile_type_prod_2_selected_USA_loc]"
+ missile_type_prod_2_selected_GER_loc: "[missile_type_prod_2_selected_GER_loc]"
  missile_type_prod_2_selected_SOV_loc: "[missile_type_prod_2_selected_SOV_loc]"
  missile_type_prod_2_selected_CHI_loc: "[missile_type_prod_2_selected_CHI_loc]"
  missile_type_prod_2_selected_ENG_loc: "[missile_type_prod_2_selected_ENG_loc]"
@@ -54,6 +56,7 @@
  missile_type_prod_3_selected_unique_loc: "[missile_type_prod_3_selected_unique_loc]"
  missile_type_prod_3_selected_generic_loc: "[missile_type_prod_3_selected_generic_loc]"
  missile_type_prod_3_selected_USA_loc: "[missile_type_prod_3_selected_USA_loc]"
+ missile_type_prod_3_selected_GER_loc: "[missile_type_prod_3_selected_GER_loc]"
  missile_type_prod_3_selected_SOV_loc: "[missile_type_prod_3_selected_SOV_loc]"
  missile_type_prod_3_selected_CHI_loc: "[missile_type_prod_3_selected_CHI_loc]"
  missile_type_prod_3_selected_ENG_loc: "[missile_type_prod_3_selected_ENG_loc]"
@@ -66,6 +69,7 @@
  missile_type_prod_4_selected_unique_loc: "[missile_type_prod_4_selected_unique_loc]"
  missile_type_prod_4_selected_generic_loc: "[missile_type_prod_4_selected_generic_loc]"
  missile_type_prod_4_selected_USA_loc: "[missile_type_prod_4_selected_USA_loc]"
+ missile_type_prod_4_selected_GER_loc: "[missile_type_prod_4_selected_GER_loc]"
  missile_type_prod_4_selected_SOV_loc: "[missile_type_prod_4_selected_SOV_loc]"
  missile_type_prod_4_selected_CHI_loc: "[missile_type_prod_4_selected_CHI_loc]"
  missile_type_prod_4_selected_ENG_loc: "[missile_type_prod_4_selected_ENG_loc]"
@@ -78,6 +82,7 @@
  missile_type_prod_5_selected_unique_loc: "[missile_type_prod_5_selected_unique_loc]"
  missile_type_prod_5_selected_generic_loc: "[missile_type_prod_5_selected_generic_loc]"
  missile_type_prod_5_selected_USA_loc: "[missile_type_prod_5_selected_USA_loc]"
+ missile_type_prod_5_selected_GER_loc: "[missile_type_prod_5_selected_GER_loc]"
  missile_type_prod_5_selected_SOV_loc: "[missile_type_prod_5_selected_SOV_loc]"
  missile_type_prod_5_selected_CHI_loc: "[missile_type_prod_5_selected_CHI_loc]"
  missile_type_prod_5_selected_ENG_loc: "[missile_type_prod_5_selected_ENG_loc]"
@@ -90,6 +95,7 @@
  missile_type_prod_6_selected_unique_loc: "[missile_type_prod_6_selected_unique_loc]"
  missile_type_prod_6_selected_generic_loc: "[missile_type_prod_6_selected_generic_loc]"
  missile_type_prod_6_selected_USA_loc: "[missile_type_prod_6_selected_USA_loc]"
+ missile_type_prod_6_selected_GER_loc: "[missile_type_prod_6_selected_GER_loc]"
  missile_type_prod_6_selected_SOV_loc: "[missile_type_prod_6_selected_SOV_loc]"
  missile_type_prod_6_selected_CHI_loc: "[missile_type_prod_6_selected_CHI_loc]"
  missile_type_prod_6_selected_ENG_loc: "[missile_type_prod_6_selected_ENG_loc]"
@@ -102,6 +108,7 @@
  missile_type_prod_7_selected_unique_loc: "[missile_type_prod_7_selected_unique_loc]"
  missile_type_prod_7_selected_generic_loc: "[missile_type_prod_7_selected_generic_loc]"
  missile_type_prod_7_selected_USA_loc: "[missile_type_prod_7_selected_USA_loc]"
+ missile_type_prod_7_selected_GER_loc: "[missile_type_prod_7_selected_GER_loc]"
  missile_type_prod_7_selected_SOV_loc: "[missile_type_prod_7_selected_SOV_loc]"
  missile_type_prod_7_selected_CHI_loc: "[missile_type_prod_7_selected_CHI_loc]"
  missile_type_prod_7_selected_ENG_loc: "[missile_type_prod_7_selected_ENG_loc]"
@@ -114,6 +121,7 @@
  missile_type_prod_8_selected_unique_loc: "[missile_type_prod_8_selected_unique_loc]"
  missile_type_prod_8_selected_generic_loc: "[missile_type_prod_8_selected_generic_loc]"
  missile_type_prod_8_selected_USA_loc: "[missile_type_prod_8_selected_USA_loc]"
+ missile_type_prod_8_selected_GER_loc: "[missile_type_prod_8_selected_GER_loc]"
  missile_type_prod_8_selected_SOV_loc: "[missile_type_prod_8_selected_SOV_loc]"
  missile_type_prod_8_selected_CHI_loc: "[missile_type_prod_8_selected_CHI_loc]"
  missile_type_prod_8_selected_ENG_loc: "[missile_type_prod_8_selected_ENG_loc]"
@@ -126,6 +134,7 @@
  missile_type_prod_9_selected_unique_loc: "[missile_type_prod_9_selected_unique_loc]"
  missile_type_prod_9_selected_generic_loc: "[missile_type_prod_9_selected_generic_loc]"
  missile_type_prod_9_selected_USA_loc: "[missile_type_prod_9_selected_USA_loc]"
+ missile_type_prod_9_selected_GER_loc: "[missile_type_prod_9_selected_GER_loc]"
  missile_type_prod_9_selected_SOV_loc: "[missile_type_prod_9_selected_SOV_loc]"
  missile_type_prod_9_selected_CHI_loc: "[missile_type_prod_9_selected_CHI_loc]"
  missile_type_prod_9_selected_ENG_loc: "[missile_type_prod_9_selected_ENG_loc]"
@@ -138,6 +147,7 @@
  missile_type_prod_10_selected_unique_loc: "[missile_type_prod_10_selected_unique_loc]"
  missile_type_prod_10_selected_generic_loc: "[missile_type_prod_10_selected_generic_loc]"
  missile_type_prod_10_selected_USA_loc: "[missile_type_prod_10_selected_USA_loc]"
+ missile_type_prod_10_selected_GER_loc: "[missile_type_prod_10_selected_GER_loc]"
  missile_type_prod_10_selected_SOV_loc: "[missile_type_prod_10_selected_SOV_loc]"
  missile_type_prod_10_selected_CHI_loc: "[missile_type_prod_10_selected_CHI_loc]"
  missile_type_prod_10_selected_ENG_loc: "[missile_type_prod_10_selected_ENG_loc]"
@@ -150,6 +160,7 @@
  missile_type_prod_11_selected_unique_loc: "[missile_type_prod_11_selected_unique_loc]"
  missile_type_prod_11_selected_generic_loc: "[missile_type_prod_11_selected_generic_loc]"
  missile_type_prod_11_selected_USA_loc: "[missile_type_prod_11_selected_USA_loc]"
+ missile_type_prod_11_selected_GER_loc: "[missile_type_prod_11_selected_GER_loc]"
  missile_type_prod_11_selected_SOV_loc: "[missile_type_prod_11_selected_SOV_loc]"
  missile_type_prod_11_selected_CHI_loc: "[missile_type_prod_11_selected_CHI_loc]"
  missile_type_prod_11_selected_ENG_loc: "[missile_type_prod_11_selected_ENG_loc]"
@@ -162,6 +173,7 @@
  missile_type_prod_12_selected_unique_loc: "[missile_type_prod_12_selected_unique_loc]"
  missile_type_prod_12_selected_generic_loc: "[missile_type_prod_12_selected_generic_loc]"
  missile_type_prod_12_selected_USA_loc: "[missile_type_prod_12_selected_USA_loc]"
+ missile_type_prod_12_selected_GER_loc: "[missile_type_prod_12_selected_GER_loc]"
  missile_type_prod_12_selected_SOV_loc: "[missile_type_prod_12_selected_SOV_loc]"
  missile_type_prod_12_selected_CHI_loc: "[missile_type_prod_12_selected_CHI_loc]"
  missile_type_prod_12_selected_ENG_loc: "[missile_type_prod_12_selected_ENG_loc]"
@@ -174,6 +186,7 @@
  missile_type_prod_13_selected_unique_loc: "[missile_type_prod_13_selected_unique_loc]"
  missile_type_prod_13_selected_generic_loc: "[missile_type_prod_13_selected_generic_loc]"
  missile_type_prod_13_selected_USA_loc: "[missile_type_prod_13_selected_USA_loc]"
+ missile_type_prod_13_selected_GER_loc: "[missile_type_prod_13_selected_GER_loc]"
  missile_type_prod_13_selected_SOV_loc: "[missile_type_prod_13_selected_SOV_loc]"
  missile_type_prod_13_selected_CHI_loc: "[missile_type_prod_13_selected_CHI_loc]"
  missile_type_prod_13_selected_ENG_loc: "[missile_type_prod_13_selected_ENG_loc]"
@@ -186,6 +199,7 @@
  missile_type_prod_14_selected_unique_loc: "[missile_type_prod_14_selected_unique_loc]"
  missile_type_prod_14_selected_generic_loc: "[missile_type_prod_14_selected_generic_loc]"
  missile_type_prod_14_selected_USA_loc: "[missile_type_prod_14_selected_USA_loc]"
+ missile_type_prod_14_selected_GER_loc: "[missile_type_prod_14_selected_GER_loc]"
  missile_type_prod_14_selected_SOV_loc: "[missile_type_prod_14_selected_SOV_loc]"
  missile_type_prod_14_selected_CHI_loc: "[missile_type_prod_14_selected_CHI_loc]"
  missile_type_prod_14_selected_ENG_loc: "[missile_type_prod_14_selected_ENG_loc]"
@@ -198,6 +212,7 @@
  missile_type_prod_15_selected_unique_loc: "[missile_type_prod_15_selected_unique_loc]"
  missile_type_prod_15_selected_generic_loc: "[missile_type_prod_15_selected_generic_loc]"
  missile_type_prod_15_selected_USA_loc: "[missile_type_prod_15_selected_USA_loc]"
+ missile_type_prod_15_selected_GER_loc: "[missile_type_prod_15_selected_GER_loc]"
  missile_type_prod_15_selected_SOV_loc: "[missile_type_prod_15_selected_SOV_loc]"
  missile_type_prod_15_selected_CHI_loc: "[missile_type_prod_15_selected_CHI_loc]"
  missile_type_prod_15_selected_ENG_loc: "[missile_type_prod_15_selected_ENG_loc]"
@@ -213,7 +228,7 @@
  ### new testing
  00_missile_decisions: "Missile Decisions"
  #00_missile_decisions_desc: "Decisions regarding the Missiles System."
- 00_missile_decisions_desc: "Decisions regarding the Missiles System."
+ 00_missile_decisions_desc: "\n\n\n\n\n\n£MAIN_desctext_missile\n\n\n\n\n\n\n\n\n Decisions regarding the Missiles System."
 #"TESTING...\norbit_array^0 [?orbit_array^0]\norbit_selected_TAG: TAG = [?orbit_selected_TAG.GetTag] ID = [?orbit_selected_TAG.GetID]\n\n\n?ROOT.orbit_selected_TAG.orbit_array^0 [?ROOT.orbit_selected_TAG.orbit_array^0]\n?USA.orbit_array^0 [?USA.orbit_array^0]\nTHIS Test_selected_TAG_loc: [Test_selected_TAG_loc]\n[?ROOT.orbit_selected_TAG.GetFlag]\n\n\nsat_1_array^0 [?sat_1_array^0]\norbit_selected_TAG.sat_1_array^0 [?orbit_selected_TAG.sat_1_array^0]\n\n\n\n\n[GNSS1_model_sat_gui_loc]\n[USA.GNSS1_model_sat_gui_loc]\n[SOV.GNSS1_model_sat_gui_loc]\n[var:orbit_selected_TAG.GNSS1_model_sat_gui_loc]"
 
  ### spy_sat_mission_decision
@@ -300,11 +315,11 @@
  air_defense_modifiers_system_desc: "An Integrated Air Defense System is the structure, equipment, personnel, procedures, and weapons used to counter the enemy’s airborne penetration of one’s own claimed territory. Rather than a single weapon or person, it is an amalgamation of elements, organized to minimize threats in the air domain.\nYou can managed the systems in the §YAir & Missile Defense§! tab of the missiles interface."
  ### satellite system ###
  GNSS_system: "Global Navigation Satellite System"
- GNSS_system_desc: "Global Navigation Satellite System:\nThese modifiers are determined and managed by the Military and Civilian Global Navigation Satellite System and by the access to Global Navigation Satellite Systems of other countries.\nYou can managed the systems in the §YSatellite Systems§! tab of the missiles interface. With diplomatic actions you can get access to the systems of other countries and you can give other countries access to your systems."
+ GNSS_system_desc: "Global Navigation Satellite System:\nThese modifiers are determined and managed by the Military and Civilian Global Navigation Satellite System and by the access to Global Navigation Satellite Systems of other countries.\nYou can manage the systems in the §YSatellite Systems§! tab of the missiles interface. With diplomatic actions you can get access to the systems of other countries and you can give other countries access to your systems."
  COMSAT_system: "Satellite Communication System"
- COMSAT_system_desc: "Satellite Communication System\nThese modifiers are determined and managed by the Military and Civilian Satellite Communication System and by the access to Satellite Communication System of other countries.\nYou can managed the systems in the §YSatellite Systems§! tab of the missiles interface. With diplomatic actions you can get access to the systems of other countries and you can give other countries access to your systems."
+ COMSAT_system_desc: "Satellite Communication System\nThese modifiers are determined and managed by the Military and Civilian Satellite Communication System and by the access to Satellite Communication System of other countries.\nYou can manage the systems in the §YSatellite Systems§! tab of the missiles interface. With diplomatic actions you can get access to the systems of other countries and you can give other countries access to your systems."
  SPYSAT_system: "Reconnaissance Satellite System"
- SPYSAT_system_desc: "Reconnaissance Satellite System:\nThese modifiers are determined and managed by the Military and Civilian Reconnaissance Satellite System (Spy Satellites) and by the access to Reconnaissance Satellite System of other countries.\nYou can managed the systems in the §YSatellite Systems§! tab of the missiles interface. With diplomatic actions you can get access to the systems of other countries and you can give other countries access to your systems."
+ SPYSAT_system_desc: "Reconnaissance Satellite System:\nThese modifiers are determined and managed by the Military and Civilian Reconnaissance Satellite System (Spy Satellites) and by the access to Reconnaissance Satellite System of other countries.\nYou can manage the systems in the §YSatellite Systems§! tab of the missiles interface. With diplomatic actions you can get access to the systems of other countries and you can give other countries access to your systems."
  ### nuclear state ###
  nuclear_state_modifier: "Nuclear State"
  nuclear_state_modifier_desc: "A Nuclear State is a country that posseses §Y$nuclear_technology$§! (§Y$nuclear_reactor$§! or §YNuclear Warheads§!).\nThese modifiers are determined and managed by the countries §Ynuclear status§!, §Ynuclear doctrines§!, §Ynuclear production§! and £GFX_nuclear_deterrence §GNuclear Deterrence§!.\nYou can managed the modifiers in the §YNuclear Policy§! tab of the missiles interface."
@@ -414,276 +429,6 @@
  missile_type_tech_generic_71: "HSCM 2025"
  missile_type_tech_generic_72: "HSCM 2035"
 
- ### USA ###
-
-#  missile_type_tech_USA_loc: "[missile_type_tech_USA_loc]"
-#  missile_type_selected_USA_loc: "[missile_type_selected_USA_loc]"
-#  missile_type_stat_USA_loc: "[missile_type_stat_USA_loc]"
-
-#  missile_type_tech_USA_11: "CGM-16  Atlas"
-#  missile_type_tech_USA_12: "HGM-25A  Titan I"
-#  missile_type_tech_USA_13: "LGM-25C  Titan II"
-#  missile_type_tech_USA_14: "LGM-30A  Minuteman I"
-#  missile_type_tech_USA_15: "LGM-30F  Minuteman II"
-#  missile_type_tech_USA_16: "LGM-30G  Minuteman III"
-#  missile_type_tech_USA_17: "LGM-118A  Peacekeeper"
-#  missile_type_tech_USA_18: "LGM-182 GBSD"
-#  missile_type_tech_USA_21: "PGM-17  Thor"
-#  missile_type_tech_USA_22: "PGM-19 Jupiter"
-#  missile_type_tech_USA_23: "MGM-31A  Pershing I"
-#  missile_type_tech_USA_24: "MGM-31B  Pershing II"
-#  missile_type_tech_USA_25: "MGM-134 Midgetman"
-#  missile_type_tech_USA_26: "MGM-185 IR CPGS"
-#  missile_type_tech_USA_27: "MGM-187A Pershing III"
-#  missile_type_tech_USA_28: "MGM-187B Pershing III"
-#  missile_type_tech_USA_31: "UGM-27 Polaris"
-#  missile_type_tech_USA_32: "UGM-73 Poseidon"
-#  missile_type_tech_USA_33: "UGM-96 Trident I (C4)"
-#  missile_type_tech_USA_34: "UGM-133A Trident II (D5)"
-#  missile_type_tech_USA_35: "UGM-133A Trident II (D5LE)"
-#  missile_type_tech_USA_36: "UGM-133A Trident II (D5LE2)"
-#  missile_type_tech_USA_37: "UGM-186A Trident III"
-#  missile_type_tech_USA_38: "UGM-186B Trident III"
-#  missile_type_tech_USA_41: "AGM-28 Hound Dog"
-#  missile_type_tech_USA_42: "AGM-86 ALCM"
-#  missile_type_tech_USA_43: "AGM-84E SLAM"
-#  missile_type_tech_USA_44: "AGM-84H SLAM-ER"
-#  missile_type_tech_USA_45: "AGM-129 ACM"
-#  missile_type_tech_USA_46: "AGM-158B JASSM-ER"
-#  missile_type_tech_USA_47: "AGM-158D JASSM-XR"
-#  missile_type_tech_USA_48: "AGM-180A LRSO"
-#  missile_type_tech_USA_51: "MGM-1 Matador"
-#  missile_type_tech_USA_52: "MGM-13 Mace"
-#  missile_type_tech_USA_53: "BGM-109G Gryphon"
-#  missile_type_tech_USA_54: "GLCM 1995 (INF Treaty)"
-#  missile_type_tech_USA_55: "GLCM 2005 (INF Treaty)"
-#  missile_type_tech_USA_56: "GLCM 2015 (INF Treaty)"
-#  missile_type_tech_USA_57: "BGM-109H MRC"
-#  missile_type_tech_USA_58: "BGM-109L Gryphon II"
-#  missile_type_tech_USA_61: "RGM-6 Regulus I"
-#  missile_type_tech_USA_62: "RGM-15 Regulus II"
-#  missile_type_tech_USA_63: "BGM-109A Tomahawk TLAM-A"
-#  missile_type_tech_USA_64: "BGM-109C Tomahawk TLAM-C"
-#  missile_type_tech_USA_65: "BGM-109D Tomahawk TLAM-D"
-#  missile_type_tech_USA_66: "RGM-109E Tomahawk TLAM-E"
-#  missile_type_tech_USA_67: "RGM-109F Tomahawk TLAM-F"
-#  missile_type_tech_USA_68: "RGM-109K Tomahawk TLAM-K"
-#  missile_type_tech_USA_71: "AGM-183A ARRW"
-#  missile_type_tech_USA_72: "AGM-183B Mayhem"
-
- ##################################
- ### missile diplomatic actions ###
- ##################################
-
-
- base_desire: "Base Desire"
- opinion_condition: "Opinion"
- military_cooperation_condition: "Military Cooperation"
- NATO_condition: "NATO"
- EU_condition: "European Union"
- faction_condition: "Faction"
- friends_condition: "Friends"
- foes_condition: "Foes"
- war_condition: "War"
- wargoal_condition: "Wargoals"
-
- ############
- ### GNSS ###
- ############
-
- ### GNSS MIL ###
- ### Request ###
- REQUEST_MIL_GNSS_ACCESS_TITLE: "Military GNSS Access"
- REQUEST_MIL_GNSS_ACCESS_ACTION_DESC: "Request access to their military GNSS network."
- REQUEST_MIL_GNSS_ACCESS_LOC: "Send Military GNSS Access Request"
- REQUEST_MIL_GNSS_ACCESS_RECIEVER_LOC: "They are asking for access to our military GNSS network."
- REQUEST_MIL_GNSS_ACCESS_ACCEPTED_TITLE: "Access granted!"
- REQUEST_MIL_GNSS_ACCESS_ACCEPTED_DESC: "We will benefit from their military GNSS network."
- REQUEST_MIL_GNSS_ACCESS_REJECTED_TITLE: "Access denied!"
- REQUEST_MIL_GNSS_ACCESS_REJECTED_DESC: "They denied us access to their military GNSS network."
- REQUEST_MIL_GNSS_ACCESS_SELECTABLE_TT: "§YMilitary GNSS System level§! of [PREV.GetNameWithFlag] must be greater zero and at least greater or equal the level of [ROOT.GetNameWithFlag]."
-
- ### Offer ###
- OFFER_MIL_GNSS_ACCESS_TITLE: "Offer Military GNSS Access"
- OFFER_MIL_GNSS_ACCESS_ACTION_DESC: "Offer access to our military GNSS network."
- OFFER_MIL_GNSS_ACCESS_LOC: "Send Military GNSS Access Offer"
- OFFER_MIL_GNSS_ACCESS_RECIEVER_LOC: "They are offering access to their military GNSS network."
- OFFER_MIL_GNSS_ACCESS_ACCEPTED_TITLE: "Offer accepted!"
- OFFER_MIL_GNSS_ACCESS_ACCEPTED_DESC: "They will benefit from our military GNSS network."
- OFFER_MIL_GNSS_ACCESS_REJECTED_TITLE: "Offer rejected"
- OFFER_MIL_GNSS_ACCESS_REJECTED_DESC: "They rejected our offer for access to our military GNSS network."
- OFFER_MIL_GNSS_ACCESS_SELECTABLE_TT: "§YMilitary GNSS System level§! of [ROOT.GetNameWithFlag] must be greater zero and at least greater or equal the level of [PREV.GetNameWithFlag]."
-
- ### Revoke ###
- REVOKE_MIL_GNSS_ACCESS_TITLE: "Revoke Military GNSS Access"
- REVOKE_MIL_GNSS_ACCESS_ACTION_DESC: "Revoke access to our military GNSS network."
- REVOKE_MIL_GNSS_ACCESS_LOC: "Send Military GNSS Access Revoke"
- REVOKE_MIL_GNSS_ACCESS_RECIEVER_LOC: "They are revoking the access to their military GNSS network."
- REVOKE_MIL_GNSS_ACCESS_ACCEPTED_TITLE: "Revoke Military GNSS Access"
- REVOKE_MIL_GNSS_ACCESS_ACCEPTED_DESC: "They are revoking the access to their military GNSS network."
-
- ### GNSS CIV ###
- ### Request ###
- REQUEST_CIV_GNSS_ACCESS_TITLE: "Civilian GNSS Access"
- REQUEST_CIV_GNSS_ACCESS_ACTION_DESC: "Request access to their civilian GNSS network."
- REQUEST_CIV_GNSS_ACCESS_LOC: "Send Civilian GNSS Access Request"
- REQUEST_CIV_GNSS_ACCESS_RECIEVER_LOC: "They are asking for access to our civilian GNSS network."
- REQUEST_CIV_GNSS_ACCESS_ACCEPTED_TITLE: "Access granted!"
- REQUEST_CIV_GNSS_ACCESS_ACCEPTED_DESC: "We will benefit from their civilian GNSS network."
- REQUEST_CIV_GNSS_ACCESS_REJECTED_TITLE: "Access denied!"
- REQUEST_CIV_GNSS_ACCESS_REJECTED_DESC: "They denied us access to their civilian GNSS network."
- REQUEST_CIV_GNSS_ACCESS_SELECTABLE_TT: "§YCivilian GNSS System level§! of [PREV.GetNameWithFlag] must be greater zero and at least greater or equal the level of [ROOT.GetNameWithFlag]."
-
- ### Offer ###
- OFFER_CIV_GNSS_ACCESS_TITLE: "Offer Civilian GNSS Access"
- OFFER_CIV_GNSS_ACCESS_ACTION_DESC: "Offer access to our civilian GNSS network."
- OFFER_CIV_GNSS_ACCESS_LOC: "Send Civilian GNSS Access Offer"
- OFFER_CIV_GNSS_ACCESS_RECIEVER_LOC: "They are offering access to their civilian GNSS network."
- OFFER_CIV_GNSS_ACCESS_ACCEPTED_TITLE: "Offer accepted!"
- OFFER_CIV_GNSS_ACCESS_ACCEPTED_DESC: "They will benefit from our civilian GNSS network."
- OFFER_CIV_GNSS_ACCESS_REJECTED_TITLE: "Offer rejected"
- OFFER_CIV_GNSS_ACCESS_REJECTED_DESC: "They rejected our offer for access to our civilian GNSS network."
- OFFER_CIV_GNSS_ACCESS_SELECTABLE_TT: "§YCivilian GNSS System level§! of [ROOT.GetNameWithFlag] must be greater zero and at least greater or equal the level of [PREV.GetNameWithFlag]."
-
- ### Revoke ###
- REVOKE_CIV_GNSS_ACCESS_TITLE: "Revoke Civilian GNSS Access"
- REVOKE_CIV_GNSS_ACCESS_ACTION_DESC: "Revoke access to our civilian GNSS network."
- REVOKE_CIV_GNSS_ACCESS_LOC: "Send Civilian GNSS Access Revoke"
- REVOKE_CIV_GNSS_ACCESS_RECIEVER_LOC: "They are revoking the access to their civilian GNSS network."
- REVOKE_CIV_GNSS_ACCESS_ACCEPTED_TITLE: "Revoke Civilian GNSS Access"
- REVOKE_CIV_GNSS_ACCESS_ACCEPTED_DESC: "They are revoking the access to their civilian GNSS network."
-
- ###########
- ### COM ###
- ###########
-
- ### COM MIL ###
- ### Request ###
- REQUEST_MIL_COM_ACCESS_TITLE: "Military COMSAT Access"
- REQUEST_MIL_COM_ACCESS_ACTION_DESC: "Request access to their military Satellite Communication System."
- REQUEST_MIL_COM_ACCESS_LOC: "Send Military COMSAT Access Request"
- REQUEST_MIL_COM_ACCESS_RECIEVER_LOC: "They are asking for access to our military Satellite Communication System."
- REQUEST_MIL_COM_ACCESS_ACCEPTED_TITLE: "Access granted!"
- REQUEST_MIL_COM_ACCESS_ACCEPTED_DESC: "We will benefit from their military Satellite Communication System."
- REQUEST_MIL_COM_ACCESS_REJECTED_TITLE: "Access denied!"
- REQUEST_MIL_COM_ACCESS_REJECTED_DESC: "They denied us access to their military Satellite Communication System."
- REQUEST_MIL_COM_ACCESS_SELECTABLE_TT: "§YMilitary COMSAT System level§! of [PREV.GetNameWithFlag] must be greater zero and at least greater or equal the level of [ROOT.GetNameWithFlag]."
-
- ### Offer ###
- OFFER_MIL_COM_ACCESS_TITLE: "Offer Military COMSAT Access"
- OFFER_MIL_COM_ACCESS_ACTION_DESC: "Offer access to our military Satellite Communication System."
- OFFER_MIL_COM_ACCESS_LOC: "Send Military COMSAT Access Offer"
- OFFER_MIL_COM_ACCESS_RECIEVER_LOC: "They are offering access to their military Satellite Communication System."
- OFFER_MIL_COM_ACCESS_ACCEPTED_TITLE: "Offer accepted!"
- OFFER_MIL_COM_ACCESS_ACCEPTED_DESC: "They will benefit from our military Satellite Communication System."
- OFFER_MIL_COM_ACCESS_REJECTED_TITLE: "Offer rejected"
- OFFER_MIL_COM_ACCESS_REJECTED_DESC: "They rejected our offer for access to our military Satellite Communication System."
- OFFER_MIL_COM_ACCESS_SELECTABLE_TT: "§YMilitary COMSAT System level§! of [ROOT.GetNameWithFlag] must be greater zero and at least greater or equal the level of [PREV.GetNameWithFlag]."
-
- ### Revoke ###
- REVOKE_MIL_COM_ACCESS_TITLE: "Revoke Military COMSAT Access"
- REVOKE_MIL_COM_ACCESS_ACTION_DESC: "Revoke access to our military Satellite Communication System."
- REVOKE_MIL_COM_ACCESS_LOC: "Send Military COMSAT Access Revoke"
- REVOKE_MIL_COM_ACCESS_RECIEVER_LOC: "They are revoking the access to their military Satellite Communication System."
- REVOKE_MIL_COM_ACCESS_ACCEPTED_TITLE: "Revoke Military COMSAT Access"
- REVOKE_MIL_COM_ACCESS_ACCEPTED_DESC: "They are revoking the access to their military Satellite Communication System."
-
- ### COM CIV ###
- ### Request ###
- REQUEST_CIV_COM_ACCESS_TITLE: "Civilian COMSAT Access"
- REQUEST_CIV_COM_ACCESS_ACTION_DESC: "Request access to their civilian Satellite Communication System."
- REQUEST_CIV_COM_ACCESS_LOC: "Send Civilian COMSAT Access Request"
- REQUEST_CIV_COM_ACCESS_RECIEVER_LOC: "They are asking for access to our civilian Satellite Communication System."
- REQUEST_CIV_COM_ACCESS_ACCEPTED_TITLE: "Access granted!"
- REQUEST_CIV_COM_ACCESS_ACCEPTED_DESC: "We will benefit from their civilian Satellite Communication System."
- REQUEST_CIV_COM_ACCESS_REJECTED_TITLE: "Access denied!"
- REQUEST_CIV_COM_ACCESS_REJECTED_DESC: "They denied us access to their civilian Satellite Communication System."
- REQUEST_CIV_COM_ACCESS_SELECTABLE_TT: "§YCivilian COMSAT System level§! of [PREV.GetNameWithFlag] must be greater zero and at least greater or equal the level of [ROOT.GetNameWithFlag]."
-
- ### Offer ###
- OFFER_CIV_COM_ACCESS_TITLE: "Offer Civilian COMSAT Access"
- OFFER_CIV_COM_ACCESS_ACTION_DESC: "Offer access to our civilian Satellite Communication System."
- OFFER_CIV_COM_ACCESS_LOC: "Send Civilian COMSAT Access Offer"
- OFFER_CIV_COM_ACCESS_RECIEVER_LOC: "They are offering access to their civilian Satellite Communication System."
- OFFER_CIV_COM_ACCESS_ACCEPTED_TITLE: "Offer accepted!"
- OFFER_CIV_COM_ACCESS_ACCEPTED_DESC: "They will benefit from our civilian Satellite Communication System."
- OFFER_CIV_COM_ACCESS_REJECTED_TITLE: "Offer rejected"
- OFFER_CIV_COM_ACCESS_REJECTED_DESC: "They rejected our offer for access to our civilian Satellite Communication System."
- OFFER_CIV_COM_ACCESS_SELECTABLE_TT: "§YCivilian COMSAT System level§! of [ROOT.GetNameWithFlag] must be greater zero and at least greater or equal the level of [PREV.GetNameWithFlag]."
-
- ### Revoke ###
- REVOKE_CIV_COM_ACCESS_TITLE: "Revoke Civilian COMSAT Access"
- REVOKE_CIV_COM_ACCESS_ACTION_DESC: "Revoke access to our civilian Satellite Communication System."
- REVOKE_CIV_COM_ACCESS_LOC: "Send Civilian COMSAT Access Revoke"
- REVOKE_CIV_COM_ACCESS_RECIEVER_LOC: "They are revoking the access to their civilian Satellite Communication System."
- REVOKE_CIV_COM_ACCESS_ACCEPTED_TITLE: "Revoke Civilian COMSAT Access"
- REVOKE_CIV_COM_ACCESS_ACCEPTED_DESC: "They are revoking the access to their civilian Satellite Communication System."
-
- ###########
- ### SPY ###
- ###########
-
- ### SPY MIL ###
- ### Request ###
- REQUEST_MIL_SPY_ACCESS_TITLE: "Military SPYSAT Access"
- REQUEST_MIL_SPY_ACCESS_ACTION_DESC: "Request access to their military Reconnaissance Satellite System."
- REQUEST_MIL_SPY_ACCESS_LOC: "Send Military SPYSAT Access Request"
- REQUEST_MIL_SPY_ACCESS_RECIEVER_LOC: "They are asking for access to our military Reconnaissance Satellite System."
- REQUEST_MIL_SPY_ACCESS_ACCEPTED_TITLE: "Access granted!"
- REQUEST_MIL_SPY_ACCESS_ACCEPTED_DESC: "We will benefit from their military Reconnaissance Satellite System."
- REQUEST_MIL_SPY_ACCESS_REJECTED_TITLE: "Access denied!"
- REQUEST_MIL_SPY_ACCESS_REJECTED_DESC: "They denied us access to their military Reconnaissance Satellite System."
- REQUEST_MIL_SPY_ACCESS_SELECTABLE_TT: "§YMilitary SPYSAT System level§! of [PREV.GetNameWithFlag] must be greater zero and at least greater or equal the level of [ROOT.GetNameWithFlag]."
-
- ### Offer ###
- OFFER_MIL_SPY_ACCESS_TITLE: "Offer Military SPYSAT Access"
- OFFER_MIL_SPY_ACCESS_ACTION_DESC: "Offer access to our military Reconnaissance Satellite System."
- OFFER_MIL_SPY_ACCESS_LOC: "Send Military SPYSAT Access Offer"
- OFFER_MIL_SPY_ACCESS_RECIEVER_LOC: "They are offering access to their military Reconnaissance Satellite System."
- OFFER_MIL_SPY_ACCESS_ACCEPTED_TITLE: "Offer accepted!"
- OFFER_MIL_SPY_ACCESS_ACCEPTED_DESC: "They will benefit from our military Reconnaissance Satellite System."
- OFFER_MIL_SPY_ACCESS_REJECTED_TITLE: "Offer rejected"
- OFFER_MIL_SPY_ACCESS_REJECTED_DESC: "They rejected our offer for access to our military Reconnaissance Satellite System."
- OFFER_MIL_SPY_ACCESS_SELECTABLE_TT: "§YMilitary SPYSAT System level§! of [ROOT.GetNameWithFlag] must be greater zero and at least greater or equal the level of [PREV.GetNameWithFlag]."
-
- ### Revoke ###
- REVOKE_MIL_SPY_ACCESS_TITLE: "Revoke Military SPYSAT Access"
- REVOKE_MIL_SPY_ACCESS_ACTION_DESC: "Revoke access to our military Reconnaissance Satellite System."
- REVOKE_MIL_SPY_ACCESS_LOC: "Send Military SPYSAT Access Revoke"
- REVOKE_MIL_SPY_ACCESS_RECIEVER_LOC: "They are revoking the access to their military Reconnaissance Satellite System."
- REVOKE_MIL_SPY_ACCESS_ACCEPTED_TITLE: "Revoke Military SPYSAT Access"
- REVOKE_MIL_SPY_ACCESS_ACCEPTED_DESC: "They are revoking the access to their military Reconnaissance Satellite System."
-
- ### SPY CIV ###
- ### Request ###
- REQUEST_CIV_SPY_ACCESS_TITLE: "Civilian SPYSAT Access"
- REQUEST_CIV_SPY_ACCESS_ACTION_DESC: "Request access to their civilian Reconnaissance Satellite System."
- REQUEST_CIV_SPY_ACCESS_LOC: "Send Civilian SPYSAT Access Request"
- REQUEST_CIV_SPY_ACCESS_RECIEVER_LOC: "They are asking for access to our civilian Reconnaissance Satellite System."
- REQUEST_CIV_SPY_ACCESS_ACCEPTED_TITLE: "Access granted!"
- REQUEST_CIV_SPY_ACCESS_ACCEPTED_DESC: "We will benefit from their civilian Reconnaissance Satellite System."
- REQUEST_CIV_SPY_ACCESS_REJECTED_TITLE: "Access denied!"
- REQUEST_CIV_SPY_ACCESS_REJECTED_DESC: "They denied us access to their civilian Reconnaissance Satellite System."
- REQUEST_CIV_SPY_ACCESS_SELECTABLE_TT: "§YCivilian SPYSAT System level§! of [PREV.GetNameWithFlag] must be greater zero and at least greater or equal the level of [ROOT.GetNameWithFlag]."
-
- ### Offer ###
- OFFER_CIV_SPY_ACCESS_TITLE: "Offer Civilian SPYSAT Access"
- OFFER_CIV_SPY_ACCESS_ACTION_DESC: "Offer access to our civilian Reconnaissance Satellite System."
- OFFER_CIV_SPY_ACCESS_LOC: "Send Civilian SPYSAT Access Offer"
- OFFER_CIV_SPY_ACCESS_RECIEVER_LOC: "They are offering access to their civilian Reconnaissance Satellite System."
- OFFER_CIV_SPY_ACCESS_ACCEPTED_TITLE: "Offer accepted!"
- OFFER_CIV_SPY_ACCESS_ACCEPTED_DESC: "They will benefit from our civilian Reconnaissance Satellite System."
- OFFER_CIV_SPY_ACCESS_REJECTED_TITLE: "Offer rejected"
- OFFER_CIV_SPY_ACCESS_REJECTED_DESC: "They rejected our offer for access to our civilian Reconnaissance Satellite System."
- OFFER_CIV_SPY_ACCESS_SELECTABLE_TT: "§YCivilian SPYSAT System level§! of [ROOT.GetNameWithFlag] must be greater zero and at least greater or equal the level of [PREV.GetNameWithFlag]."
-
- ### Revoke ###
- REVOKE_CIV_SPY_ACCESS_TITLE: "Revoke Civilian SPYSAT Access"
- REVOKE_CIV_SPY_ACCESS_ACTION_DESC: "Revoke access to our civilian Reconnaissance Satellite System."
- REVOKE_CIV_SPY_ACCESS_LOC: "Send Civilian SPYSAT Access Revoke"
- REVOKE_CIV_SPY_ACCESS_RECIEVER_LOC: "They are revoking the access to their civilian Reconnaissance Satellite System."
- REVOKE_CIV_SPY_ACCESS_ACCEPTED_TITLE: "Revoke Civilian SPYSAT Access"
- REVOKE_CIV_SPY_ACCESS_ACCEPTED_DESC: "They are revoking the access to their civilian Reconnaissance Satellite System."
 
 ###################
 ### news events ###
@@ -750,7 +495,7 @@
 
  nukes.4.t: "[FROM.GetAdjective] Nuclear Test"
  nukes.4.d: "[FROM.GetName] has tested a nuclear warhead."
- nukes.4.a: "Okay!"
+ nukes.4.a: "Okay"
  nukes.4.b: "Don't inform me on nuclear tests again!"
 
  nukes.5.t: "Set Missiles on alert"
@@ -759,11 +504,11 @@
 
  nukes.6.t: "[FROM.GetName] sets nuclear forces on alert"
  nukes.6.d: "[FROM.GetName] has set its nuclear forces on alert. The [FROM.GetAdjective] missiles are now targeted at the strategic targets of its enemies and the nuclear warheads are armed."
- nukes.6.a: "Okay!"
+ nukes.6.a: "Okay"
 
  nukes.7.t: "[FROM.GetName] sets nuclear forces on alert"
  nukes.7.d: "[FROM.GetName] has set its nuclear forces on alert. The [FROM.GetAdjective] missiles are now targeted at the strategic targets of its enemies and the nuclear warheads are armed."
- nukes.7.a: "Okay!"
+ nukes.7.a: "Okay"
 
 #########################
 ### MISSILE MAP MODES ###
@@ -970,8 +715,6 @@ missile_defense_ships_desc_loc: "[missile_defense_ships_desc_loc]"
 SLBM_subs_desc_loc: "[SLBM_subs_desc_loc]"
 SLCM_subs_desc_loc: "[SLCM_subs_desc_loc]"
 
-
-
 missile_ships_no_DLC: "$frigate$, $destroyer$, $cruiser$"
 missile_ships_MTG: "$frigate$, $destroyer$, $stealth_destroyer$, $cruiser$, $battle_cruiser$"
 missile_defense_ships_no_DLC: "$frigate$, $destroyer$, $cruiser$"
@@ -980,6 +723,3 @@ SLBM_subs_no_DLC: "$missile_submarine$"
 SLBM_subs_MTG: "$missile_submarine$"
 SLCM_subs_no_DLC: "$attack_submarine$, $diesel_attack_submarine$, $missile_submarine$"
 SLCM_subs_MTG: "$attack_submarine$, $missile_submarine$"
-
-
-

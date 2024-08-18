@@ -10,13 +10,13 @@ ideas = {
 
 			available = {
 				if = {
-					limit = { original_tag = PER }
+					limit = { original_tag = UKR }
 					custom_trigger_tooltip = {
-						tooltip = PER_majlis_block_tt
+						tooltip = UKR_parliament_block_tt
 					}
 					NOT = {
 						hidden_trigger = {
-							has_country_flag = PER_majlis_block
+							has_country_flag = UKR_parliament_block
 						}
 					}
 				}
@@ -36,6 +36,11 @@ ideas = {
 					NOT = { has_idea = DEN_special_municipal_districts_idea }
 					NOT = { has_idea = DEN_direct_governance_idea }
 				}
+				if = { limit = { original_tag = FRA }
+					NOT = { has_idea = FRA_administrative_reforms_1 }
+					NOT = { has_idea = FRA_administrative_reforms_2 }
+					NOT = { has_idea = FRA_idea_central }
+				}
 			}
 			on_add = {
 				custom_effect_tooltip = bureau_01_TT
@@ -49,6 +54,18 @@ ideas = {
 				log = "[GetDateText]: [Root.GetName]: add idea bureau_01"
 
 				bureau_law_desire_logger = yes
+				PER_centralized_change = yes
+			}
+			on_remove = {
+				if = {
+					limit = {
+						original_tag = PER
+						NOT = {
+							has_country_flag = PER_buru_cool_down
+						}
+					}
+					set_country_flag = PER_removed_bureau_01
+				}
 			}
 
 			ai_will_do = {
@@ -102,13 +119,13 @@ ideas = {
 			level = 2
 			available = {
 				if = {
-					limit = { original_tag = PER }
+					limit = { original_tag = UKR }
 					custom_trigger_tooltip = {
-						tooltip = PER_majlis_block_tt
+						tooltip = UKR_parliament_block_tt
 					}
 					NOT = {
 						hidden_trigger = {
-							has_country_flag = PER_majlis_block
+							has_country_flag = UKR_parliament_block
 						}
 					}
 				}
@@ -125,15 +142,17 @@ ideas = {
 				}
 				if = {
 					limit = {
-						OR = {
-							has_idea = bureau_01
-						}
+						has_idea = bureau_01
 						bureau_increase_blocked = yes
 					}
 					bureau_increase_blocked = no
 				}
 				if = { limit = { original_tag = DEN }
 					NOT = { has_idea = DEN_direct_governance_idea }
+				}
+				if = { limit = { original_tag = FRA }
+					NOT = { has_idea = FRA_administrative_reforms_2 }
+					NOT = { has_idea = FRA_idea_central }
 				}
 			}
 			on_add = {
@@ -148,6 +167,18 @@ ideas = {
 				log = "[GetDateText]: [Root.GetName]: add idea bureau_02"
 
 				bureau_law_desire_logger = yes
+				PER_centralized_change = yes
+			}
+			on_remove = {
+				if = {
+					limit = {
+						original_tag = PER
+						NOT = {
+							has_country_flag = PER_buru_cool_down
+						}
+					}
+					set_country_flag = PER_removed_bureau_02
+				}
 			}
 
 			modifier = {
@@ -267,13 +298,13 @@ ideas = {
 
 			available = {
 				if = {
-					limit = { original_tag = PER }
+					limit = { original_tag = UKR }
 					custom_trigger_tooltip = {
-						tooltip = PER_majlis_block_tt
+						tooltip = UKR_parliament_block_tt
 					}
 					NOT = {
 						hidden_trigger = {
-							has_country_flag = PER_majlis_block
+							has_country_flag = UKR_parliament_block
 						}
 					}
 				}
@@ -313,6 +344,18 @@ ideas = {
 				log = "[GetDateText]: [Root.GetName]: add idea bureau_03"
 
 				bureau_law_desire_logger = yes
+				PER_centralized_change = yes
+			}
+			on_remove = {
+				if = {
+					limit = {
+						original_tag = PER
+						NOT = {
+							has_country_flag = PER_buru_cool_down
+						}
+					}
+					set_country_flag = PER_removed_bureau_03
+				}
 			}
 			modifier = {
 				political_power_gain = 0.50
@@ -421,21 +464,30 @@ ideas = {
 
 			available = {
 				if = {
-					limit = { original_tag = PER }
+					limit = { original_tag = UKR }
 					custom_trigger_tooltip = {
-						tooltip = PER_majlis_block_tt
+						tooltip = UKR_parliament_block_tt
 					}
 					NOT = {
 						hidden_trigger = {
-							has_country_flag = PER_majlis_block
+							has_country_flag = UKR_parliament_block
+						}
+					}
+				}
+				if = {
+					limit = { original_tag = GER }
+					custom_trigger_tooltip = {
+						tooltip = GER_Grundgesetz_tt
+					}
+					NOT = {
+						hidden_trigger = {
+						has_country_flag = GER_Grundgesetz
 						}
 					}
 				}
 				if = {
 					limit = {
-						OR = {
-							has_idea = bureau_05
-						}
+						has_idea = bureau_05
 						bureau_decrease_blocked = yes
 					}
 					bureau_decrease_blocked = no
@@ -461,6 +513,10 @@ ideas = {
 						NOT = { has_idea = SIN_decentralize_the_government_idea }
 					}
 				}
+				if = {
+					limit = { original_tag = FRA }
+					NOT = { has_idea = FRA_idea_decentral }
+				}
 			}
 			on_add = {
 				custom_effect_tooltip = bureau_04_TT
@@ -473,6 +529,18 @@ ideas = {
 				set_law_vars = yes
 
 				bureau_law_desire_logger = yes
+				PER_centralized_change = yes
+			}
+			on_remove = {
+				if = {
+					limit = {
+						original_tag = PER
+						NOT = {
+							has_country_flag = PER_buru_cool_down
+						}
+					}
+					set_country_flag = PER_removed_bureau_04
+				}
 			}
 
 			modifier = {
@@ -582,13 +650,24 @@ ideas = {
 
 			available = {
 				if = {
-					limit = { original_tag = PER }
+					limit = { original_tag = UKR }
 					custom_trigger_tooltip = {
-						tooltip = PER_majlis_block_tt
+						tooltip = UKR_parliament_block_tt
 					}
 					NOT = {
 						hidden_trigger = {
-							has_country_flag = PER_majlis_block
+							has_country_flag = UKR_parliament_block
+						}
+					}
+				}
+				if = {
+					limit = { original_tag = GER }
+					custom_trigger_tooltip = {
+						tooltip = GER_Grundgesetz_tt
+					}
+					NOT = {
+						hidden_trigger = {
+							has_country_flag = GER_Grundgesetz
 						}
 					}
 				}
@@ -614,6 +693,10 @@ ideas = {
 						NOT = { has_idea = SIN_decentralize_the_government_idea }
 					}
 				}
+				if = {
+					limit = { original_tag = FRA }
+					NOT = { has_idea = FRA_idea_decentral }
+				}
 			}
 			on_add = {
 				custom_effect_tooltip = bureau_05_TT
@@ -626,6 +709,18 @@ ideas = {
 				set_law_vars = yes
 
 				bureau_law_desire_logger = yes
+				PER_centralized_change = yes
+			}
+			on_remove = {
+				if = {
+					limit = {
+						original_tag = PER
+						NOT = {
+							has_country_flag = PER_buru_cool_down
+						}
+					}
+					set_country_flag = PER_removed_bureau_05
+				}
 			}
 
 			modifier = {
@@ -684,13 +779,24 @@ ideas = {
 			level = 1
 			available = {
 				if = {
-					limit = { original_tag = PER }
+					limit = { original_tag = UKR }
 					custom_trigger_tooltip = {
-						tooltip = PER_majlis_block_tt
+						tooltip = UKR_parliament_block_tt
 					}
 					NOT = {
 						hidden_trigger = {
-							has_country_flag = PER_majlis_block
+							has_country_flag = UKR_parliament_block
+						}
+					}
+				}
+				if = {
+					limit = { original_tag = GER }
+					custom_trigger_tooltip = {
+						tooltip = GER_Grundgesetz_tt
+					}
+					NOT = {
+						hidden_trigger = {
+						has_country_flag = GER_Grundgesetz
 						}
 					}
 				}
@@ -718,6 +824,22 @@ ideas = {
 				set_law_vars = yes
 				log = "[GetDateText]: [Root.GetName]: add idea police_01"
 				police_law_desire_logger = yes
+				PER_police_change = yes
+				if = {
+					limit = { original_tag = BOT }
+					BOT_update_anti_poaching = yes
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						original_tag = PER
+						NOT = {
+							has_country_flag = PER_police_cool_down
+						}
+					}
+					set_country_flag = PER_removed_police_01
+				}
 			}
 
 			modifier = {
@@ -776,13 +898,13 @@ ideas = {
 			level = 2
 			available = {
 				if = {
-					limit = { original_tag = PER }
+					limit = { original_tag = UKR }
 					custom_trigger_tooltip = {
-						tooltip = PER_majlis_block_tt
+						tooltip = UKR_parliament_block_tt
 					}
 					NOT = {
 						hidden_trigger = {
-							has_country_flag = PER_majlis_block
+							has_country_flag = UKR_parliament_block
 						}
 					}
 				}
@@ -818,6 +940,22 @@ ideas = {
 				set_law_vars = yes
 				log = "[GetDateText]: [Root.GetName]: add idea police_02"
 				police_law_desire_logger = yes
+				PER_police_change = yes
+				if = {
+					limit = { original_tag = BOT }
+					BOT_update_anti_poaching = yes
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						original_tag = PER
+						NOT = {
+							has_country_flag = PER_police_cool_down
+						}
+					}
+					set_country_flag = PER_removed_police_02
+				}
 			}
 			modifier = {
 				command_power_gain = 0.25
@@ -905,13 +1043,13 @@ ideas = {
 			level = 3
 			available = {
 				if = {
-					limit = { original_tag = PER }
+					limit = { original_tag = UKR }
 					custom_trigger_tooltip = {
-						tooltip = PER_majlis_block_tt
+						tooltip = UKR_parliament_block_tt
 					}
 					NOT = {
 						hidden_trigger = {
-							has_country_flag = PER_majlis_block
+							has_country_flag = UKR_parliament_block
 						}
 					}
 				}
@@ -947,6 +1085,22 @@ ideas = {
 				set_law_vars = yes
 				log = "[GetDateText]: [Root.GetName]: add idea police_03"
 				police_law_desire_logger = yes
+				PER_police_change = yes
+				if = {
+					limit = { original_tag = BOT }
+					BOT_update_anti_poaching = yes
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						original_tag = PER
+						NOT = {
+							has_country_flag = PER_police_cool_down
+						}
+					}
+					set_country_flag = PER_removed_police_03
+				}
 			}
 
 			modifier = {
@@ -1038,13 +1192,13 @@ ideas = {
 			level = 4
 			available = {
 				if = {
-					limit = { original_tag = PER }
+					limit = { original_tag = UKR }
 					custom_trigger_tooltip = {
-						tooltip = PER_majlis_block_tt
+						tooltip = UKR_parliament_block_tt
 					}
 					NOT = {
 						hidden_trigger = {
-							has_country_flag = PER_majlis_block
+							has_country_flag = UKR_parliament_block
 						}
 					}
 				}
@@ -1080,6 +1234,22 @@ ideas = {
 				set_law_vars = yes
 				log = "[GetDateText]: [Root.GetName]: add idea police_04"
 				police_law_desire_logger = yes
+				PER_police_change = yes
+				if = {
+					limit = { original_tag = BOT }
+					BOT_update_anti_poaching = yes
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						original_tag = PER
+						NOT = {
+							has_country_flag = PER_police_cool_down
+						}
+					}
+					set_country_flag = PER_removed_police_04
+				}
 			}
 
 			modifier = {
@@ -1172,13 +1342,13 @@ ideas = {
 			level = 5
 			available = {
 				if = {
-					limit = { original_tag = PER }
+					limit = { original_tag = UKR }
 					custom_trigger_tooltip = {
-						tooltip = PER_majlis_block_tt
+						tooltip = UKR_parliament_block_tt
 					}
 					NOT = {
 						hidden_trigger = {
-							has_country_flag = PER_majlis_block
+							has_country_flag = UKR_parliament_block
 						}
 					}
 				}
@@ -1206,6 +1376,22 @@ ideas = {
 				set_law_vars = yes
 				log = "[GetDateText]: [Root.GetName]: add idea police_05"
 				police_law_desire_logger = yes
+				PER_police_change = yes
+				if = {
+					limit = { original_tag = BOT }
+					BOT_update_anti_poaching = yes
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						original_tag = PER
+						NOT = {
+							has_country_flag = PER_police_cool_down
+						}
+					}
+					set_country_flag = PER_removed_police_05
+				}
 			}
 			modifier = {
 				command_power_gain = 1
@@ -1295,13 +1481,13 @@ ideas = {
 			level = 1
 			available = {
 				if = {
-					limit = { original_tag = PER }
+					limit = { original_tag = UKR }
 					custom_trigger_tooltip = {
-						tooltip = PER_majlis_block_tt
+						tooltip = UKR_parliament_block_tt
 					}
 					NOT = {
 						hidden_trigger = {
-							has_country_flag = PER_majlis_block
+							has_country_flag = UKR_parliament_block
 						}
 					}
 				}
@@ -1339,6 +1525,18 @@ ideas = {
 				set_law_vars = yes
 				log = "[GetDateText]: [Root.GetName]: add idea edu_01"
 				education_law_desire_logger = yes
+				PER_education_change = yes
+			}
+			on_remove = {
+				if = {
+					limit = {
+						original_tag = PER
+						NOT = {
+							has_country_flag = PER_edu_cool_down
+						}
+					}
+					set_country_flag = PER_removed_edu_01
+				}
 			}
 
 			ai_will_do = {
@@ -1403,13 +1601,13 @@ ideas = {
 			level = 2
 			available = {
 				if = {
-					limit = { original_tag = PER }
+					limit = { original_tag = UKR }
 					custom_trigger_tooltip = {
-						tooltip = PER_majlis_block_tt
+						tooltip = UKR_parliament_block_tt
 					}
 					NOT = {
 						hidden_trigger = {
-							has_country_flag = PER_majlis_block
+							has_country_flag = UKR_parliament_block
 						}
 					}
 				}
@@ -1455,6 +1653,18 @@ ideas = {
 				set_law_vars = yes
 				log = "[GetDateText]: [Root.GetName]: add idea edu_02"
 				education_law_desire_logger = yes
+				PER_education_change = yes
+			}
+			on_remove = {
+				if = {
+					limit = {
+						original_tag = PER
+						NOT = {
+							has_country_flag = PER_edu_cool_down
+						}
+					}
+					set_country_flag = PER_removed_edu_02
+				}
 			}
 
 			ai_will_do = {
@@ -1564,13 +1774,13 @@ ideas = {
 			level = 3
 			available = {
 				if = {
-					limit = { original_tag = PER }
+					limit = { original_tag = UKR }
 					custom_trigger_tooltip = {
-						tooltip = PER_majlis_block_tt
+						tooltip = UKR_parliament_block_tt
 					}
 					NOT = {
 						hidden_trigger = {
-							has_country_flag = PER_majlis_block
+							has_country_flag = UKR_parliament_block
 						}
 					}
 				}
@@ -1606,6 +1816,18 @@ ideas = {
 				set_law_vars = yes
 				log = "[GetDateText]: [Root.GetName]: add idea edu_03"
 				education_law_desire_logger = yes
+				PER_education_change = yes
+			}
+			on_remove = {
+				if = {
+					limit = {
+						original_tag = PER
+						NOT = {
+							has_country_flag = PER_edu_cool_down
+						}
+					}
+					set_country_flag = PER_removed_edu_03
+				}
 			}
 
 			ai_will_do = {
@@ -1716,13 +1938,13 @@ ideas = {
 			level = 4
 			available = {
 				if = {
-					limit = { original_tag = PER }
+					limit = { original_tag = UKR }
 					custom_trigger_tooltip = {
-						tooltip = PER_majlis_block_tt
+						tooltip = UKR_parliament_block_tt
 					}
 					NOT = {
 						hidden_trigger = {
-							has_country_flag = PER_majlis_block
+							has_country_flag = UKR_parliament_block
 						}
 					}
 				}
@@ -1758,6 +1980,18 @@ ideas = {
 				set_law_vars = yes
 				log = "[GetDateText]: [Root.GetName]: add idea edu_04"
 				education_law_desire_logger = yes
+				PER_education_change = yes
+			}
+			on_remove = {
+				if = {
+					limit = {
+						original_tag = PER
+						NOT = {
+							has_country_flag = PER_edu_cool_down
+						}
+					}
+					set_country_flag = PER_removed_edu_04
+				}
 			}
 
 			ai_will_do = {
@@ -1868,13 +2102,13 @@ ideas = {
 			level = 5
 			available = {
 				if = {
-					limit = { original_tag = PER }
+					limit = { original_tag = UKR }
 					custom_trigger_tooltip = {
-						tooltip = PER_majlis_block_tt
+						tooltip = UKR_parliament_block_tt
 					}
 					NOT = {
 						hidden_trigger = {
-							has_country_flag = PER_majlis_block
+							has_country_flag = UKR_parliament_block
 						}
 					}
 				}
@@ -1902,6 +2136,18 @@ ideas = {
 				set_law_vars = yes
 				log = "[GetDateText]: [Root.GetName]: add idea edu_05"
 				education_law_desire_logger = yes
+				PER_education_change = yes
+			}
+			on_remove = {
+				if = {
+					limit = {
+						original_tag = PER
+						NOT = {
+							has_country_flag = PER_edu_cool_down
+						}
+					}
+					set_country_flag = PER_removed_edu_05
+				}
 			}
 
 			ai_will_do = {
@@ -1973,13 +2219,13 @@ ideas = {
 			level = 1
 			available = {
 				if = {
-					limit = { original_tag = PER }
+					limit = { original_tag = UKR }
 					custom_trigger_tooltip = {
-						tooltip = PER_majlis_block_tt
+						tooltip = UKR_parliament_block_tt
 					}
 					NOT = {
 						hidden_trigger = {
-							has_country_flag = PER_majlis_block
+							has_country_flag = UKR_parliament_block
 						}
 					}
 				}
@@ -2008,6 +2254,18 @@ ideas = {
 				set_law_vars = yes
 				log = "[GetDateText]: [Root.GetName]: add idea health_01 [health_budget idea_law]"
 				health_law_desire_trigger = yes
+				PER_health_change = yes
+			}
+			on_remove = {
+				if = {
+					limit = {
+						original_tag = PER
+						NOT = {
+							has_country_flag = PER_health_cool_down
+						}
+					}
+					set_country_flag = PER_removed_health_01
+				}
 			}
 
 			ai_will_do = {
@@ -2085,13 +2343,13 @@ ideas = {
 			level = 2
 			available = {
 				if = {
-					limit = { original_tag = PER }
+					limit = { original_tag = UKR }
 					custom_trigger_tooltip = {
-						tooltip = PER_majlis_block_tt
+						tooltip = UKR_parliament_block_tt
 					}
 					NOT = {
 						hidden_trigger = {
-							has_country_flag = PER_majlis_block
+							has_country_flag = UKR_parliament_block
 						}
 					}
 				}
@@ -2128,6 +2386,18 @@ ideas = {
 				set_law_vars = yes
 				log = "[GetDateText]: [Root.GetName]: add idea health_02 [health_budget idea_law]"
 				health_law_desire_trigger = yes
+				PER_health_change = yes
+			}
+			on_remove = {
+				if = {
+					limit = {
+						original_tag = PER
+						NOT = {
+							has_country_flag = PER_health_cool_down
+						}
+					}
+					set_country_flag = PER_removed_health_02
+				}
 			}
 
 			ai_will_do = {
@@ -2240,13 +2510,13 @@ ideas = {
 			level = 3
 			available = {
 				if = {
-					limit = { original_tag = PER }
+					limit = { original_tag = UKR }
 					custom_trigger_tooltip = {
-						tooltip = PER_majlis_block_tt
+						tooltip = UKR_parliament_block_tt
 					}
 					NOT = {
 						hidden_trigger = {
-							has_country_flag = PER_majlis_block
+							has_country_flag = UKR_parliament_block
 						}
 					}
 				}
@@ -2283,6 +2553,18 @@ ideas = {
 				set_law_vars = yes
 				log = "[GetDateText]: [Root.GetName]: add idea health_03 [health_budget idea_law]"
 				health_law_desire_trigger = yes
+				PER_health_change = yes
+			}
+			on_remove = {
+				if = {
+					limit = {
+						original_tag = PER
+						NOT = {
+							has_country_flag = PER_health_cool_down
+						}
+					}
+					set_country_flag = PER_removed_health_03
+				}
 			}
 
 			ai_will_do = {
@@ -2394,13 +2676,13 @@ ideas = {
 			level = 4
 			available = {
 				if = {
-					limit = { original_tag = PER }
+					limit = { original_tag = UKR }
 					custom_trigger_tooltip = {
-						tooltip = PER_majlis_block_tt
+						tooltip = UKR_parliament_block_tt
 					}
 					NOT = {
 						hidden_trigger = {
-							has_country_flag = PER_majlis_block
+							has_country_flag = UKR_parliament_block
 						}
 					}
 				}
@@ -2437,6 +2719,18 @@ ideas = {
 				set_law_vars = yes
 				log = "[GetDateText]: [Root.GetName]: add idea health_04 [health_budget idea_law]"
 				health_law_desire_trigger = yes
+				PER_health_change = yes
+			}
+			on_remove = {
+				if = {
+					limit = {
+						original_tag = PER
+						NOT = {
+							has_country_flag = PER_health_cool_down
+						}
+					}
+					set_country_flag = PER_removed_health_04
+				}
 			}
 
 			ai_will_do = {
@@ -2547,13 +2841,13 @@ ideas = {
 			level = 5
 			available = {
 				if = {
-					limit = { original_tag = PER }
+					limit = { original_tag = UKR }
 					custom_trigger_tooltip = {
-						tooltip = PER_majlis_block_tt
+						tooltip = UKR_parliament_block_tt
 					}
 					NOT = {
 						hidden_trigger = {
-							has_country_flag = PER_majlis_block
+							has_country_flag = UKR_parliament_block
 						}
 					}
 				}
@@ -2594,6 +2888,18 @@ ideas = {
 				set_law_vars = yes
 				log = "[GetDateText]: [Root.GetName]: add idea health_05 [health_budget idea_law]"
 				health_law_desire_trigger = yes
+				PER_health_change = yes
+			}
+			on_remove = {
+				if = {
+					limit = {
+						original_tag = PER
+						NOT = {
+							has_country_flag = PER_health_cool_down
+						}
+					}
+					set_country_flag = PER_removed_health_05
+				}
 			}
 
 			ai_will_do = {
@@ -2703,13 +3009,13 @@ ideas = {
 			level = 6
 			available = {
 				if = {
-					limit = { original_tag = PER }
+					limit = { original_tag = UKR }
 					custom_trigger_tooltip = {
-						tooltip = PER_majlis_block_tt
+						tooltip = UKR_parliament_block_tt
 					}
 					NOT = {
 						hidden_trigger = {
-							has_country_flag = PER_majlis_block
+							has_country_flag = UKR_parliament_block
 						}
 					}
 				}
@@ -2742,6 +3048,18 @@ ideas = {
 				set_law_vars = yes
 				log = "[GetDateText]: [Root.GetName]: add idea health_06 [health_budget idea_law]"
 				health_law_desire_trigger = yes
+				PER_health_change = yes
+			}
+			on_remove = {
+				if = {
+					limit = {
+						original_tag = PER
+						NOT = {
+							has_country_flag = PER_health_cool_down
+						}
+					}
+					set_country_flag = PER_removed_health_06
+				}
 			}
 
 			ai_will_do = {
@@ -2819,13 +3137,13 @@ ideas = {
 			level = 1
 			available = {
 				if = {
-					limit = { original_tag = PER }
+					limit = { original_tag = UKR }
 					custom_trigger_tooltip = {
-						tooltip = PER_majlis_block_tt
+						tooltip = UKR_parliament_block_tt
 					}
 					NOT = {
 						hidden_trigger = {
-							has_country_flag = PER_majlis_block
+							has_country_flag = UKR_parliament_block
 						}
 					}
 				}
@@ -2864,6 +3182,18 @@ ideas = {
 				set_law_vars = yes
 				log = "[GetDateText]: [Root.GetName]: add idea social_01 [social_budget idea_law]"
 				social_law_desire_trigger = yes
+				PER_social_change = yes
+			}
+			on_remove = {
+				if = {
+					limit = {
+						original_tag = PER
+						NOT = {
+							has_country_flag = PER_social_cool_down
+						}
+					}
+					set_country_flag = PER_removed_social_01
+				}
 			}
 
 			cancel_if_invalid = no
@@ -2932,13 +3262,13 @@ ideas = {
 			level = 2
 			available = {
 				if = {
-					limit = { original_tag = PER }
+					limit = { original_tag = UKR }
 					custom_trigger_tooltip = {
-						tooltip = PER_majlis_block_tt
+						tooltip = UKR_parliament_block_tt
 					}
 					NOT = {
 						hidden_trigger = {
-							has_country_flag = PER_majlis_block
+							has_country_flag = UKR_parliament_block
 						}
 					}
 				}
@@ -2976,6 +3306,18 @@ ideas = {
 				set_law_vars = yes
 				log = "[GetDateText]: [Root.GetName]: add idea social_02 [social_budget idea_law]"
 				social_law_desire_trigger = yes
+				PER_social_change = yes
+			}
+			on_remove = {
+				if = {
+					limit = {
+						original_tag = PER
+						NOT = {
+							has_country_flag = PER_social_cool_down
+						}
+					}
+					set_country_flag = PER_removed_social_02
+				}
 			}
 
 			modifier = {
@@ -3092,13 +3434,13 @@ ideas = {
 			level = 3
 			available = {
 				if = {
-					limit = { original_tag = PER }
+					limit = { original_tag = UKR }
 					custom_trigger_tooltip = {
-						tooltip = PER_majlis_block_tt
+						tooltip = UKR_parliament_block_tt
 					}
 					NOT = {
 						hidden_trigger = {
-							has_country_flag = PER_majlis_block
+							has_country_flag = UKR_parliament_block
 						}
 					}
 				}
@@ -3136,6 +3478,18 @@ ideas = {
 				set_law_vars = yes
 				log = "[GetDateText]: [Root.GetName]: add idea social_03 [social_budget idea_law]"
 				social_law_desire_trigger = yes
+				PER_social_change = yes
+			}
+			on_remove = {
+				if = {
+					limit = {
+						original_tag = PER
+						NOT = {
+							has_country_flag = PER_social_cool_down
+						}
+					}
+					set_country_flag = PER_removed_social_03
+				}
 			}
 
 			modifier = {
@@ -3253,13 +3607,13 @@ ideas = {
 			level = 4
 			available = {
 				if = {
-					limit = { original_tag = PER }
+					limit = { original_tag = UKR }
 					custom_trigger_tooltip = {
-						tooltip = PER_majlis_block_tt
+						tooltip = UKR_parliament_block_tt
 					}
 					NOT = {
 						hidden_trigger = {
-							has_country_flag = PER_majlis_block
+							has_country_flag = UKR_parliament_block
 						}
 					}
 				}
@@ -3297,11 +3651,24 @@ ideas = {
 				set_law_vars = yes
 				log = "[GetDateText]: [Root.GetName]: add idea social_04 [social_budget idea_law]"
 				social_law_desire_trigger = yes
+				PER_social_change = yes
+			}
+			on_remove = {
+				if = {
+					limit = {
+						original_tag = PER
+						NOT = {
+							has_country_flag = PER_social_cool_down
+						}
+					}
+					set_country_flag = PER_removed_social_04
+				}
 			}
 
 			modifier = {
 				political_power_gain = 0.20
 				political_power_factor = 0.20
+				monthly_population = 0.05
 				stability_factor = 0.09
 				high_unemployment_threshold_modifier = 0.03
 			}
@@ -3414,13 +3781,13 @@ ideas = {
 			level = 5
 			available = {
 				if = {
-					limit = { original_tag = PER }
+					limit = { original_tag = UKR }
 					custom_trigger_tooltip = {
-						tooltip = PER_majlis_block_tt
+						tooltip = UKR_parliament_block_tt
 					}
 					NOT = {
 						hidden_trigger = {
-							has_country_flag = PER_majlis_block
+							has_country_flag = UKR_parliament_block
 						}
 					}
 				}
@@ -3458,12 +3825,24 @@ ideas = {
 				set_law_vars = yes
 				log = "[GetDateText]: [Root.GetName]: add idea social_05 [social_budget idea_law]"
 				social_law_desire_trigger = yes
+				PER_social_change = yes
+			}
+			on_remove = {
+				if = {
+					limit = {
+						original_tag = PER
+						NOT = {
+							has_country_flag = PER_social_cool_down
+						}
+					}
+					set_country_flag = PER_removed_social_05
+				}
 			}
 
 			modifier = {
 				political_power_gain = 0.24
 				political_power_factor = 0.24
-				monthly_population = 0.40
+				monthly_population = 0.15
 				stability_factor = 0.12
 				high_unemployment_threshold_modifier = 0.04
 			}
@@ -3576,13 +3955,13 @@ ideas = {
 			level = 6
 			available = {
 				if = {
-					limit = { original_tag = PER }
+					limit = { original_tag = UKR }
 					custom_trigger_tooltip = {
-						tooltip = PER_majlis_block_tt
+						tooltip = UKR_parliament_block_tt
 					}
 					NOT = {
 						hidden_trigger = {
-							has_country_flag = PER_majlis_block
+							has_country_flag = UKR_parliament_block
 						}
 					}
 				}
@@ -3612,12 +3991,24 @@ ideas = {
 				set_law_vars = yes
 				log = "[GetDateText]: [Root.GetName]: add idea social_06 [social_budget idea_law]"
 				social_law_desire_trigger = yes
+				PER_social_change = yes
+			}
+			on_remove = {
+				if = {
+					limit = {
+						original_tag = PER
+						NOT = {
+							has_country_flag = PER_social_cool_down
+						}
+					}
+					set_country_flag = PER_removed_social_06
+				}
 			}
 
 			modifier = {
 				political_power_gain = 0.3
 				political_power_factor = 0.3
-				monthly_population = 0.80
+				monthly_population = 0.30
 				stability_factor = 0.15
 				high_unemployment_threshold_modifier = 0.05
 			}

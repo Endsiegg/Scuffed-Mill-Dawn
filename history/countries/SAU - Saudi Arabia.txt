@@ -35,7 +35,7 @@
 
 	add_ideas = {
 		sunni
-		unrestrained_corruption
+		systematic_corruption
 		LoAS_member
 		idea_gcc_member_state
 		birthplace_of_wahhabism
@@ -224,6 +224,8 @@
 	set_variable = { global.gcc_unity = 50 }
 	set_country_flag = gcc_dominant_member
 	add_to_array = { global.gcc_members = THIS }
+	#UAR
+	add_to_array = { global.arabic_countries = THIS }	#From is_arabic_nation trigger
 
 	#Influence system
 	init_influence = yes
@@ -493,7 +495,7 @@
 
 	add_ideas = {
 		sunni
-		unrestrained_corruption
+		systematic_corruption
 
 		LoAS_member
 		idea_gcc_member_state

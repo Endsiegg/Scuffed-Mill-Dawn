@@ -1,5 +1,5 @@
 ﻿capital = 131
-
+set_research_slots = 3
 2000.1.1 = {
 	set_country_flag = country_has_mbt_0_templates
 	set_country_flag = country_has_afv_0_templates
@@ -29,14 +29,15 @@
 			set_air_oob = "SER_2000_nonbba"
 		}
 	}
-
+	# Variables
+	set_variable = { SER_milosevic_strength = 40 }
 	set_variable = { gdp_per_capita = 8.901 }
-
+	set_variable = { SER_Montenegro_separatism = 40 }
 	add_ideas = {
 		#Economic Cycle
-		stable_growth
+		stagnation
 		#Corruption
-		unrestrained_corruption
+		crippling_corruption
 		#Faction 1
 		small_medium_business_owners
 		#Faction 2
@@ -64,15 +65,133 @@
 		#Women in the military
 		volunteer_women
 		#Foreign Intervention Law
-
+		intervention_limited_interventionism
 		#Officer Training
 		officer_military_school
 
 		#Other
 		orthodox_christian
 		medium_far_right_movement
-		multi_ethnic_state_idea
+		SER_The_kleptocratic
+		SER_International_Isolation
+		SER_nato_bombings_scars_idea
+		SER_brain_drain_idea_1
+		SER_avia
+		SER_special_unit_idea
 	}
+	#flags for protests
+	set_country_flag = {  flag = SER_Workers_strike_over days = 100 value = 1 }
+	set_country_flag = {  flag = SER_Student_Protest_over days = 16 value = 1 }
+	set_country_flag = {  flag = SER_Marchs_on_the_streets_over days = 175 value = 1 }
+	#Puppet
+	if = {
+		limit = {
+			has_global_flag = GAME_RULE_allow_colored_puppets
+		}
+		set_autonomy = {
+			target = KOS
+			autonomy_state = autonomy_autonomous_state_colored
+			end_wars = yes
+			end_civil_wars = yes
+		}
+		else = {
+			set_autonomy = {
+				target = KOS
+				autonomy_state = autonomy_autonomous_state
+				end_wars = yes
+				end_civil_wars = yes
+			}
+		}
+	}
+
+	KOS = {
+		set_popularities = {
+			democratic = 67.0
+			communism = 2.0
+			fascism = 0.0
+			neutrality = 31.0
+			nationalist = 0.0
+		}
+		set_politics = {
+			ruling_party = democratic
+			last_election = "1997.11.17"
+			election_frequency = 48
+			elections_allowed = yes
+		}
+
+		start_politics_input = yes
+
+		### Party Popularities
+		set_variable = { party_pop_array^0 = 0 } #Western_Autocracy
+		set_variable = { party_pop_array^1 = 0.47 } #conservatism
+		set_variable = { party_pop_array^2 = 0.2 } #liberalism
+		set_variable = { party_pop_array^3 = 0 } #socialism
+		set_variable = { party_pop_array^4 = 0.01 } #Communist-State
+		set_variable = { party_pop_array^5 = 0 } #anarchist_communism
+		set_variable = { party_pop_array^6 = 0 } #Conservative
+		set_variable = { party_pop_array^7 = 0 } #Autocracy
+		set_variable = { party_pop_array^8 = 0 } #Mod_Vilayat_e_Faqih
+		set_variable = { party_pop_array^9 = 0 } #Vilayat_e_Faqih
+		set_variable = { party_pop_array^10 = 0 } #Kingdom
+		set_variable = { party_pop_array^11 = 0 } #Caliphate
+		set_variable = { party_pop_array^12 = 0 } #Neutral_Muslim_Brotherhood
+		set_variable = { party_pop_array^13 = 0 } #Neutral_Autocracy
+		set_variable = { party_pop_array^14 = 0.31 } #Neutral_conservatism
+		set_variable = { party_pop_array^15 = 0 } #oligarchism
+		set_variable = { party_pop_array^16 = 0 } #Neutral_Libertarian
+		set_variable = { party_pop_array^17 = 0 } #Neutral_green
+		set_variable = { party_pop_array^18 = 0 } #neutral_Social
+		set_variable = { party_pop_array^19 = 0.01 } #Neutral_Communism
+		set_variable = { party_pop_array^20 = 0 } #Nat_Populism
+		set_variable = { party_pop_array^21 = 0 } #Nat_Fascism
+		set_variable = { party_pop_array^22 = 0 } #Nat_Autocracy
+		set_variable = { party_pop_array^23 = 0 } #Monarchist
+
+		### Ruling Party
+		add_to_array = { ruling_party = 1 }
+
+		startup_politics = yes
+
+		create_country_leader = {
+			name = "Ibrahim Rugova"
+			picture = "ibrahim_rugova.dds"
+			ideology = conservatism
+			traits = {
+				western_conservatism
+			}
+		}
+	}
+
+	# Opinion Modules
+	reverse_add_opinion_modifier = { target = ALB modifier = oppress_the_muslim_population }
+	reverse_add_opinion_modifier = { target = BOS modifier = oppress_the_muslim_population }
+	reverse_add_opinion_modifier = { target = KOS modifier = oppress_the_muslim_population }
+	add_opinion_modifier = { target = SOV modifier = historic_friends }
+	reverse_add_opinion_modifier = { target = SOV modifier = historic_friends }
+	add_opinion_modifier = { target = CHI modifier = large_commercial_relations }
+	reverse_add_opinion_modifier = { target = CHI modifier = large_commercial_relations }
+	add_opinion_modifier = { target = ALB modifier = oppress_the_serbian_population }
+	add_opinion_modifier = { target = BOS modifier = oppress_the_serbian_population }
+	add_opinion_modifier = { target = KOS modifier = oppress_the_serbian_population }
+	add_opinion_modifier = { target = ALB modifier = strategic_rivals }
+	reverse_add_opinion_modifier = { target = ALB modifier = strategic_rivals }
+	add_opinion_modifier = { target = USA modifier = bombed_us_in_the_nineties }
+	add_opinion_modifier = { target = CAN modifier = bombed_us_in_the_nineties }
+	add_opinion_modifier = { target = SPR modifier = bombed_us_in_the_nineties }
+	add_opinion_modifier = { target = BEL modifier = bombed_us_in_the_nineties }
+	add_opinion_modifier = { target = DEN modifier = bombed_us_in_the_nineties }
+	add_opinion_modifier = { target = TUR modifier = bombed_us_in_the_nineties }
+	add_opinion_modifier = { target = HOL modifier = bombed_us_in_the_nineties }
+	add_opinion_modifier = { target = NOR modifier = bombed_us_in_the_nineties }
+	add_opinion_modifier = { target = POR modifier = bombed_us_in_the_nineties }
+	add_opinion_modifier = { target = FRA modifier = bombed_us_in_the_nineties }
+	add_opinion_modifier = { target = GER modifier = bombed_us_in_the_nineties }
+	add_opinion_modifier = { target = ITA modifier = bombed_us_in_the_nineties }
+	add_opinion_modifier = { target = ENG modifier = bombed_us_in_the_nineties }
+	reverse_add_opinion_modifier = { target = KOS modifier = ethnic_cleansing }
+	reverse_add_opinion_modifier = { target = BOS modifier = ethnic_cleansing }
+	add_opinion_modifier = { target = ALB modifier = kla_attacks }
+	add_opinion_modifier = { target = KOS modifier = kla_attacks }
 
 	#Influence system
 	init_influence = yes
@@ -100,6 +219,8 @@
 	set_cosmetic_tag = SER_FRY
 
 	set_technology = {
+		reactor1 = 1
+		reactor2 = 1
 		integrated_transportation_system = 1
 		post_conventional_rail = 1
 		early_freight_locomotive = 1
@@ -114,6 +235,7 @@
 		support_weapons2 = 1
 		tandem_charge_warheads = 1
 		squad_automatic_weapon = 1
+		special_forces = 1
 
 		command_control_equipment = 1
 
@@ -121,12 +243,15 @@
 
 		Anti_tank_0 = 1
 		Heavy_Anti_tank_0 = 1
+		AT_upgrade_1 = 1
+		Anti_tank_1 = 1
 
 		combat_eng_equipment = 1
 
 		util_vehicle_0 = 1
 		util_vehicle_1 = 1
 		util_vehicle_2 = 1
+		util_vehicle_3 = 1
 
 		early_helicopter = 1
 		transport_helicopter1 = 1
@@ -135,12 +260,16 @@
 		night_vision_2 = 1
 
 		body_armor_1980 = 1
+		camouflage = 1
+		camouflage2 = 1
 
 		basic_computing = 1
 		integrated_circuit = 1
 		computing1 = 1
 		decryption1 = 1
 		encryption1 = 1
+		microprocessors = 1
+		computing2 = 1
 
 		radar = 1
 		internet1 = 1
@@ -165,17 +294,40 @@
 		set_technology = {
 			mbt_tech = 1
 			mbt_tech_1 = 1
+			mbt_tech_2 = 1
+
 			tank_components_tech = 1
 			tank_components_tech_2 = 1
-			small_medium_gun_tech = 1
-			medium_gun_tech = 1
-			armor_tech = 1
+
 			era_tech = 1
+			era_tech_2 = 1
+
+			armor_tech = 1
+			armor_tech_2 = 1
+
 			diesel_engine_tech = 1
 			diesel_engine_tech_2 = 1
+			diesel_engine_tech_3 = 1
+			diesel_engine_tech_4 = 1
+
+			small_medium_gun_tech = 1
+			small_medium_gun_tech_2 = 1
+
+			medium_gun_tech = 1
+			medium_gun_tech_2 = 1
+
+			large_gun_tech = 1
+
 			afv_tech = 1
 			afv_tech_1 = 1
+			afv_tech_2 = 1
 			small_autocannon_tech = 1
+			small_autocannon_tech_2 = 1
+			big_autocannon_tech = 1
+			big_autocannon_tech_2 = 1
+			assault_gun_tech = 1
+			assault_gun_tech_2 = 1
+
 			nsb_artillery_0 = 1
 			nsb_artillery_1 = 1 #M-84 Nora
 			nsb_Arty_upgrade_1 = 1
@@ -183,8 +335,45 @@
 			nsb_SP_arty_2 = 1
 			nsb_Anti_Air_0 = 1
 			nsb_SP_Anti_Air_0 = 1
+			nsb_AA_upgrade_1 = 1
+			nsb_Anti_Air_1 = 1
+			nsb_SP_Anti_Air_1 = 1
+			nsb_AA_upgrade_2 = 1
+			nsb_AA_upgrade_3 = 1
+			nsb_Anti_Air_2 = 1
+			nsb_SP_Anti_Air_2 = 1
 		}
 
+		create_equipment_variant = {
+			name = "M-91-A Vihor" # domestic M-84 Upgrade
+			type = mbt_hull_2
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_medium_cannon_2
+				turret_type_slot = tank_soviet_turret
+				suspension_type_slot = tank_torsion_bar_suspension
+				armor_type_slot = tank_composite_armor_gen2
+				engine_type_slot = tank_diesel_engine_gen4
+				reload_type_slot = automatic_loading
+				special_type_slot_1 = smoke_launchers
+				special_type_slot_2 = additional_machine_guns
+				special_type_slot_3 = reactive_armor_gen2
+				special_type_slot_4 = tank_battlestation_3
+				special_type_slot_5 = empty
+			}
+			upgrades = {
+				tank_nsb_armor_upgrade = 5
+			}
+			obsolete = no
+			icon = "GFX_SOV_MBT_2"
+		}
+
+		add_equipment_to_stockpile = {
+			type = mbt_hull_2
+			producer = SER
+			variant_name = "M-91-A Vihor"
+			amount = 200
+		}
 		create_equipment_variant = {
 			name = "M-84" # domestic T-72
 			type = mbt_hull_1
@@ -450,14 +639,23 @@
 
 			early_airframe_designs = 1
 			gen_3_light = 1
+			gen_4_light = 1
+			gen_3_medium = 1
+			gen_4_medium = 1
+			gen_3_large = 1
 
 			flying_wing_design = 1
+			variable_wing_design = 1
+			delta_wing_design = 1
+			fwdswept_wing_design = 1
 
 			engines_2 = 1
+			engines_3 = 1
 
 			refueling_1 = 1
 
 			avionics_1 = 1
+			avionics_2 = 1
 
 			drone_1 = 1
 			suicide_drone_1 = 1
@@ -468,9 +666,17 @@
 
 			early_weapons = 1
 			air_weapons_1 = 1
+			air_weapons_2 = 1
 			countermeasures_1 = 1
 
 			ag_weapons_1 = 1
+
+			naval_weapons_1 = 1
+			naval_weapons_2 = 1
+			special_mad_1 = 1
+			special_mad_2 = 1
+
+			tgp_recon_1 = 1
 		}
 
 		#Variants
@@ -485,7 +691,8 @@
 				engine_type_slot = engine_light_double_1
 				avionics_type_slot = avionics_manned_1
 				wingform_type_slot = wing_swept
-				special_slot_type_1 = spec_tgp_1
+				special_slot_type_1 = spec_countermeasures_1
+				special_slot_type_2 = spec_tgp_1
 			}
 			obsolete = yes
 		}
@@ -500,7 +707,8 @@
 				engine_type_slot = engine_light_single_2
 				avionics_type_slot = avionics_manned_1
 				wingform_type_slot = wing_swept
-				special_slot_type_1 = spec_tgp_1
+				special_slot_type_1 = spec_countermeasures_1
+				special_slot_type_2 = spec_tgp_1
 			}
 			obsolete = yes
 		}
@@ -526,7 +734,7 @@
 	}
 	set_politics = {
 		ruling_party = nationalist
-		last_election = "1997.9.21"
+		last_election = "2000.9.21"
 		election_frequency = 48
 		elections_allowed = yes
 	}
@@ -568,9 +776,9 @@
 	startup_politics = yes
 
 	create_country_leader = {
-		name = "Slobodan Miloševic"
+		name = "Slobodan Milošević"
 		picture = "slobodan_milosevic.dds"
-		expire = "2006.3.26"
+		expire = "2006.3.11"
 		ideology = Nat_Populism
 		traits = {
 			career_politician
@@ -588,9 +796,10 @@
 	recruit_character = SER_branko_krga
 	recruit_character = SER_dragan_paskas
 	recruit_character = SER_ljubisa_jokic
+	recruit_character = SER_zeljko_raznatovic
 }
 
-2006.1.1 = {
+2006.3.11 = {
 	kill_country_leader = yes #Slobodan Milosevic
 }
 
@@ -756,9 +965,9 @@
 		defence_02
 		health_04
 		social_04
+		unrestrained_corruption
 	}
 
-	#set_country_flag =
 	set_variable = { small_medium_business_owners = 75 }
 	set_variable = { landowners_opinion = 60 }
 

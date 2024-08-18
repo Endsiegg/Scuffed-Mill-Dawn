@@ -5,15 +5,32 @@
 	x = 32
 	y = 9
 	offset = {
-		x = -25
-		y = -2
+		x = 0
+		y = 5
 		trigger = {
 			OR = {
 				tag = JOR
-				tag = IRQ
 				tag = YEM
 				tag = MOR
+			}
+		}
+	}
+	offset = {
+		x = -38
+		y = -2
+		trigger = {
+			OR = {
 				tag = EGY
+			}
+		}
+	}
+
+	offset = {
+		x = -18
+		y = 2
+		trigger = {
+			OR = {
+				tag = IRQ
 			}
 		}
 	}
@@ -65,7 +82,7 @@
 
 shared_focus = {
 	id = GCC_economic_union
-	icon = money
+	icon = BRA_economic_liberalization
 
 	x = -4
 	y = 1
@@ -74,6 +91,8 @@ shared_focus = {
 	cost = 7.9
 
 	prerequisite = { focus = GCC_the_gcc }
+
+	search_filters = { FOCUS_FILTER_FOREIGN_POLICY FOCUS_FILTER_EXPENDITURE }
 
 	available = {
 		has_idea = idea_gcc_member_state
@@ -183,7 +202,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GCC_intra_gcc_trade
-	icon = trade
+	icon = goal_JAP_valueup
 
 	x = -6
 	y = 2
@@ -357,7 +376,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GCC_common_market
-	icon = consumer_goods
+	icon = BRA_commodities_boom
 
 	x = -4
 	y = 2
@@ -494,7 +513,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GCC_monetary_union
-	icon = generic_banks
+	icon = GENERIC_austerity_measures
 
 	x = -4
 	y = 3
@@ -554,7 +573,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GCC_cross_border_transit_systems
-	icon = infrastructure
+	icon = Payment_on_roads
 
 	x = -2
 	y = 2
@@ -643,7 +662,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GCC_military_union
-	icon = military_mission
+	icon = infantry_allies
 
 	x = 0
 	y = 1
@@ -688,13 +707,15 @@ shared_focus = {
 
 shared_focus = {
 	id = GCC_joint_defense_agreement
-	icon = military_sphere
+	icon = soldier
 
 	x = 0
 	y = 2
 	relative_position_id = GCC_the_gcc
 
 	cost = 10
+
+	search_filters = { FOCUS_FILTER_MILITARY FOCUS_FILTER_FOREIGN_POLICY }
 
 	prerequisite = { focus = GCC_military_union }
 
@@ -785,7 +806,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GCC_gulf_academy
-	icon = military_academy
+	icon = army_general_stuff3
 
 	x = -1
 	y = 3
@@ -864,7 +885,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GCC_limited_unified_command
-	icon = gentleman_officers
+	icon = immigration_kommission
 
 	x = 1
 	y = 3
@@ -919,7 +940,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GCC_joint_military_ventures
-	icon = small_arms3
+	icon = army_moto
 
 	x = -1
 	y = 4
@@ -1065,7 +1086,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GCC_political_union
-	icon = aristocratic_funding
+	icon = focus_NOR_approach_kretsen
 
 	x = 4
 	y = 1
@@ -1116,7 +1137,7 @@ shared_focus = {
 	cost = 8.58
 
 	prerequisite = { focus = GCC_political_union }
-	search_filters = { FOCUS_FILTER_INTERNAL_FACTION }
+	search_filters = { FOCUS_FILTER_FOREIGN_POLICY }
 
 	available = {
 		has_idea = idea_gcc_member_state
@@ -1158,7 +1179,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GCC_increase_autonomy
-	icon = demand_territory
+	icon = align_to_gcc
 
 	x = 4
 	y = 2
@@ -1168,7 +1189,7 @@ shared_focus = {
 
 	prerequisite = { focus = GCC_political_union }
 
-	search_filters = { FOCUS_FILTER_INFLUENCE }
+	search_filters = { FOCUS_FILTER_FOREIGN_POLICY }
 
 	available = {
 		has_idea = idea_gcc_member_state
@@ -1278,7 +1299,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GCC_exploit_authority
-	icon = become_puppet
+	icon = new_leader
 
 	x = 3
 	y = 4
@@ -1417,7 +1438,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GCC_benign_dominance
-	icon = monarchism
+	icon = focus_ETH_an_arabic_base
 
 	x = 5
 	y = 4
@@ -1427,6 +1448,8 @@ shared_focus = {
 
 	prerequisite = { focus = GCC_pursue_hegemony }
 	mutually_exclusive = { focus = GCC_exploit_authority }
+
+	search_filters = { FOCUS_FILTER_FOREIGN_POLICY }
 
 	available = {
 		has_idea = idea_gcc_member_state
@@ -1531,7 +1554,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GCC_new_partners
-	icon = dangerous_deal2
+	icon = arabunion
 
 	x = 6
 	y = 2
@@ -1540,6 +1563,8 @@ shared_focus = {
 	cost = 7.2
 
 	prerequisite = { focus = GCC_political_union }
+
+	search_filters = { FOCUS_FILTER_FOREIGN_POLICY }
 
 	available = {
 		has_idea = idea_gcc_member_state

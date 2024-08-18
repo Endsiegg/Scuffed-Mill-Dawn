@@ -49,7 +49,15 @@ ideas = {
 			}
 
 			cancel = {
-				is_in_faction = no
+				OR = {
+					is_in_faction = no
+					NOT = {
+						is_in_faction_with = SOV
+					}
+					SOV = {
+						is_subject = yes
+					}
+				}
 			}
 
 			modifier = {
@@ -93,7 +101,15 @@ ideas = {
 			}
 
 			cancel = {
-				is_in_faction = no
+				OR = {
+					is_in_faction = no
+					NOT = {
+						is_in_faction_with = UKR
+					}
+					UKR = {
+						is_subject = yes
+					}
+				}
 			}
 
 			modifier = {
@@ -269,7 +285,7 @@ ideas = {
 		#CENTO Member
 		faction_cento_alliance = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea faction_cento_alliance" }
-			picture = cento_member
+			picture = CENTO_faction
 
 			allowed = {
 				tag = PER
@@ -282,6 +298,7 @@ ideas = {
 				custom_modifier_tooltip = faction_cento_TT
 			}
 		}
+
 		#IMPERIAL BLOC MEMBER
 		faction_imperial_bloc_alliance = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea faction_imperial_bloc_alliance" }
@@ -298,6 +315,7 @@ ideas = {
 				custom_modifier_tooltip = faction_imperial_bloc_TT
 			}
 		}
+
 		#BRICS Member
 		faction_brics_alliance = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea faction_brics_alliance" }
@@ -314,11 +332,19 @@ ideas = {
 				custom_modifier_tooltip = faction_brics_TT
 			}
 		}
+
 		#MTO Member
 		faction_mto_alliance = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea faction_mto_alliance" }
 			picture = mto_idea
 		}
+
+		#FAO Member
+		faction_fao_alliance = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea faction_fao_alliance" }
+			picture = mto_idea
+		}
+
 		#Warsaw Pact Member
 		faction_warsaw_pact_member = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea faction_warsaw_pact_member" }
@@ -348,7 +374,7 @@ ideas = {
 		#GCA Member
 		faction_gca_alliance = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea faction_gca_alliance" }
-			picture = political_support # TODO: Make a GCA icon
+			picture = GCA_faction
 
 			allowed = {
 				tag = VEN
@@ -365,16 +391,52 @@ ideas = {
 		#FIA Member
 		faction_fia_alliance = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea faction_fia_alliance" }
-			picture = political_support # TODO: Make a FIA icon
+			picture = FIA_faction
 
-			allowed = {
-			}
 			cancel = {
 				is_in_faction = no
 			}
 
 			modifier = {
 				custom_modifier_tooltip = fia_member_tooltip
+			}
+		}
+
+		#Red Europe Pact Member
+		REP_member = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea REP_member" }
+
+			picture = communism5 # TODO: Add a faction icon
+
+			allowed = {
+				has_government = communism
+			}
+			cancel = {
+				OR = {
+					is_in_faction = no
+					NOT = {
+						is_in_faction_with = POL
+					}
+					POL = {
+						is_subject = yes
+					}
+				}
+			}
+
+			modifier = {
+				political_power_gain = 0.15
+				communism_drift = 0.5
+				hidden_modifier = {
+					ai_badass_factor = 0.35
+					ai_focus_peaceful_factor = -0.15
+					ai_get_ally_desire_factor = 1
+				}
+				faction_trade_opinion_factor = 0.15
+				enemy_justify_war_goal_time = 0.15
+			}
+
+			rule = {
+				can_boost_other_ideologies = no
 			}
 		}
 	}

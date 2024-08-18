@@ -37,7 +37,7 @@
 
 	add_ideas = {
 		ibadi
-		unrestrained_corruption
+		widespread_corruption
 		LoAS_member
 		idea_gcc_member_state
 		omani_neutrality
@@ -157,6 +157,8 @@
 	set_variable = { shia_population = 10 }
 	#GCC
 	add_to_array = { global.gcc_members = THIS }
+	#UAR
+	add_to_array = { global.arabic_countries = THIS }	#From is_arabic_nation trigger
 
 	add_opinion_modifier = { target = USA modifier = supports_us }
 	add_opinion_modifier = { target = USA modifier = Arabian_Peninsula_West_Economical_Relations }
@@ -422,7 +424,7 @@
 
 	add_ideas = {
 		ibadi
-		unrestrained_corruption
+		systematic_corruption
 		LoAS_member
 		idea_gcc_member_state
 		rentier_state

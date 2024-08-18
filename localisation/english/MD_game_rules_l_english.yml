@@ -14,14 +14,25 @@
  # AI RULES
  RULE_HARD_AI_ECONOMIC: "Economic AI"
  RULE_DISABLE_HARD_AI_ECONOMIC: "Standard restriction"
- RULE_DISABLE_HARD_AI_ECONOMIC_DESC: "A standard restriction for AI, which does not allow it to strengthen his economy. For a historical game"
+ RULE_DISABLE_HARD_AI_ECONOMIC_DESC: "A standard restriction for AI, which does not allow it to strengthen its economy. For a historical game"
  RULE_ENABLE_HARD_AI_ECONOMIC: "No restrictions"
- RULE_ENABLE_HARD_AI_ECONOMIC_DESC: "If you are bored that every game of AI does not get out of the economic crisis - this is for you. AI is no longer limited in making decisions about its economy. Be ready that many countries will become richer than yours. Only for those who are not afraid of a challenge. Greetings from the Battle AI;)"
+ RULE_ENABLE_HARD_AI_ECONOMIC_DESC: "If you are bored that every game of AI does not get out of the economic crisis - this is for you. AI is no longer limited in making decisions about its economy. Be ready for many countries will become richer than yours. Only for those who are not afraid of a challenge. Greetings from the Battle AI;)"
+
+ # Starting AI Political Power
+ RULE_AI_STARTING_POLITICAL_POWER: "AI Starting Political Power"
+ RULE_AI_STARTING_POLITICAL_POWER_NO: "No Starting Political Power"
+ RULE_AI_STARTING_POLITICAL_POWER_NO_DESC: "The AI will not start with any political power."
+ RULE_AI_STARTING_POLITICAL_POWER_250: "250 Political Power"
+ RULE_AI_STARTING_POLITICAL_POWER_250_DESC: "Add 250 Political Power to all AI nations."
+ RULE_AI_STARTING_POLITICAL_POWER_500: "500 Political Power"
+ RULE_AI_STARTING_POLITICAL_POWER_500_DESC: "Add 500 Political Power to all AI nations."
+ RULE_AI_STARTING_POLITICAL_POWER_1000: "1000 Political Power"
+ RULE_AI_STARTING_POLITICAL_POWER_1000_DESC: "Add 1000 Political Power to all AI nations."
 
  # DISABLE AI DEBT WARS
  RULE_DISABLE_AI_DEBT_WAR_TITLE: "Debt Wars for AI"
  RULE_DISABLE_AI_DEBT_WAR: "Disable"
- RULE_DISABLE_AI_DEBT_WAR_DESC: "This disables the debt war feature for the AI. The AI will no longer take the option to invade a nation who defaults on their debt."
+ RULE_DISABLE_AI_DEBT_WAR_DESC: "This disables the debt war feature for the AI. The AI will no longer take the option to invade a nation that defaults on its debt."
  RULE_ENABLE_AI_DEBT_WAR: "Enable"
  RULE_ENABLE_AI_DEBT_WAR_DESC: "This setup will make AI more likely to declare debt wars if you default on your debt to them."
 
@@ -62,6 +73,12 @@
  RULE_SOO_Scythia_ALLOWED_DESC: "Open South Ossetia's access to the opportunity to get an ancient state - Scythia"
  RULE_SOO_Scythia_BLOCKED_DESC: "Will not allow South Ossetia to create a state of Scythia."
 
+ #Cuba
+ CUB_AI_BEHAVIOR: "@CUB Cuba"
+ RULE_CUB_Tesak: "The Power of the Tesak"
+ RULE_CUB_Tesak_ALLOWED_DESC: "The Famous Russian Nationalist \"Tesak\" will come to power in Cuba"
+ RULE_CUB_Tesak_BLOCKED_DESC: "\"Tesak\" will not come to power in Cuba."
+
  #Russia
  RUS_AI_BEHAVIOR: "@SOV Russian Federation"
  RULE_OPTION_PUTIN: "United Russia"
@@ -99,7 +116,8 @@
  RULE_SUPPORT_SSG_DESC: "Russia will try to revive the project of the Union of Sovereign States, which was not implemented in 1991"
  RULE_SUPPORT_USSR: "Revive The USSR (Communists)"
  RULE_SUPPORT_USSR_DESC: "Russia will revive the Soviet Union"
-
+ RULE_SUPPORT_UNION_STATE: "Form Union State"
+ RULE_SUPPORT_UNION_STATE_DESC: "Russia will try to form Union State"
 
  #United States Of America
  USA_AI_BEHAVIOR: "@USA United States Of America"
@@ -109,8 +127,8 @@
  RULE_OPTION_REPUBLICAN_AI_DESC: "The United States will seek to elect Republican Party leadership and keep the nation, in a modern sense, towards a center-right consensus of ruling the nation."
  RULE_OPTION_REFORMED_REPUBLIC: "Reformed Republic"
  RULE_OPTION_REFORMED_REPUBLIC_AI_DESC: "The people's will has been heard. The political pressure and public outcry has resulted in key political and economic reforms to allow the better representation and visibility of third parties. Now it is up to the people to elect a party which represents them."
- RULE_OPTION_POST_UNITED: "Post United"
- RULE_OPTION_POST_UNITED_AI_DESC: "PAX AMERICANA FOREVER!!!"
+ RULE_OPTION_POST_UNITED: "Post United Era"
+ RULE_OPTION_POST_UNITED_AI_DESC: "The Eagle falls far more than from grace. §RDo Not Enable Historical AI§!"
 
  #Fiji
  FIJ_AI_BEHAVIOR: "@FIJ Republic of Fiji"
@@ -161,14 +179,14 @@
  RULE_OPTION_ITA_NONCOM_DESC: ""
 
  #China
- PRC_AI_BEHAVIOR: "@CHI People's Republic of China"
- RULE_OPTION_CHINESE_HEGEMONY: "Chinese Hegemony"
- RULE_OPTION_CHINESE_HEGEMONY_AI_DESC: "China will pursue dominance in its sphere of influence and in the world at large, seeking to usurp America's position as the sole global hegemon. It will refuse to bow to external pressure to drop its unique social and political values in favour of those that conform to the Western-dominated liberal international order. While China will rarely pursue war directly and instead seek to gain influence by other means, it will not shrink away from war if it feels compelled to use force."
- RULE_OPTION_A_LONG_PEACE: "Peaceful Rise"
- RULE_OPTION_A_LONG_PEACE_AI_DESC: "China will prefer diplomacy and cooperation over confrontation, seeking to develop while constantly conforming to the existing rules of the international order instead of attempting to overthrow it. It will also make moves towards liberalization both politically and economically."
- RULE_OPTION_RED_DAWN: "Red Dawn"
- RULE_OPTION_RED_DAWN_AI_DESC: "China will seek to return to its Maoist roots, rolling back Deng Xiaoping's economic reforms and making foreign policy choices on the basis of ideology rather than strategy. War is unavoidable as China seeks to revolutionize the international order in its own image, an image driven by universalist communism rather than specific Chinese values."
- 
+ CHI_AI_BEHAVIOR: "@CHI People's Republic of China"
+ RULE_OPTION_CHI_CHINESE_HEGEMONY: "Chinese Hegemony"
+ RULE_OPTION_CHI_CHINESE_HEGEMONY_AI_DESC: "China will pursue dominance in its sphere of influence and in the world at large, seeking to usurp America's position as the sole global hegemon. It will refuse to bow to external pressure to drop its unique social and political values in favour of those that conform to the Western-dominated liberal international order. While China will rarely pursue war directly and instead seek to gain influence by other means, it will not shrink away from war if it feels compelled to use force."
+ RULE_OPTION_CHI_A_LONG_PEACE: "Peaceful Rise"
+ RULE_OPTION_CHI_A_LONG_PEACE_AI_DESC: "China will prefer diplomacy and cooperation over confrontation, seeking to develop while constantly conforming to the existing rules of the international order instead of attempting to overthrow it. It will also make moves towards liberalization both politically and economically."
+ RULE_OPTION_CHI_RED_DAWN: "Red Dawn"
+ RULE_OPTION_CHI_RED_DAWN_AI_DESC: "China will seek to return to its Maoist roots, rolling back Deng Xiaoping's economic reforms and making foreign policy choices on the basis of ideology rather than strategy. War is unavoidable as China seeks to revolutionize the international order in its own image, an image driven by universalist communism rather than specific Chinese values."
+
  #Taiwan
  ROC_AI_BEHAVIOR: "@TAI Republic of China"
  RULE_OPTION_TAI_PROJECT_NATIONAL_GLORY: "Project National Glory"
@@ -242,7 +260,7 @@
  #Greece
  GRE_AI_BEHAVIOR: "@GRE Greece"
  RULE_HELLENIC_REPUBLIC: "Historical"
- RULE_HELLENIC_REPUBLIC_DESC: "Greece will mantain Democracy and will attempt to solve the Greek debt crisis by means of austerity measures."
+ RULE_HELLENIC_REPUBLIC_DESC: "Greece will maintain Democracy and will attempt to solve the Greek debt crisis by means of austerity measures."
  RULE_OPTION_KKE: "KKE"
  RULE_OPTION_KKE_DESC: "After discontent at the government grows due to the problems caused by the debt crisis the people will strengthen the Communist Party Of Greece and will attempt to create a Communist state."
  RULE_OPTION_GOLDEN_DAWN: "Golden Dawn"
@@ -279,7 +297,7 @@
  RULE_NKO_Yo_jong_BLOCKED_DESC: "Do not allow Kim Yo-jong to take power."
 
  #Singapore
- SIN_AI_BEHAVIOR: "@SIN Sinagpore"
+ SIN_AI_BEHAVIOR: "@SIN Singapore"
  SIN_GLOBAL_DIPLOMACY: "Global Diplomacy"
  SIN_GLOBAL_DIPLOMACY_DESC: "Singapore's goal in the world is to establish a new order of Global Diplomacy."
  SIN_SINGAPORE_ALONE: "Singapore Alone"
@@ -296,14 +314,35 @@
  SWI_SWISS_PROTECTION_LEAGUE: "Swiss Protection League"
  SWI_SWISS_PROTECTION_LEAGUE_DESC: "Switzerland will work towards a new faction with Austria and Liechtenstein"
 
+ #Serbia
+ SER_AI_BEHAVIOR: "@SER Yugoslavia"
+ RULE_OPTION_MILOCEVIC_COMMI: "Milosevic Is A Communist"
+ RULE_OPTION_MILOCEVIC_COMMI_AI_DESC: "After Milosevic is able to stay in power, he will lead the country back to communism and try to revive Yugoslavia.."
+ RULE_OPTION_MILOCEVIC_NATI: "Milosevic's Great Serbia"
+ RULE_OPTION_MILOCEVIC_NATI_AI_DESC: "Milosevic will follow the path of the revival of Greater Serbia and will try to return all the lands where the Serbian population lives."
+ RULE_OPTION_MILOCEVIC_FEDERATION: "Milosevic's Balkan Federation"
+ RULE_OPTION_MILOCEVIC_FEDERATION_AI_DESC: "Milosevic will follow the path of a grandiose, unrealized project - the Balkan Federation.."
+ RULE_OPTION_SERBIAN_KINGDOM: "Kingdom of Serbia"
+ RULE_OPTION_SERBIAN_KINGDOM_AI_DESC: "After the overthrow of Milosevic, supporters of nationalism and Monarchy will take power and try to restore the former greatness of the Serbian people."
+ RULE_OPTION_SERBIAN_LIBERALS: "Liberal Serbia"
+ RULE_OPTION_SERBIAN_LIBERALS_AI_DESC: "Serbian politics will take the path of liberalism and democracy."
+
  #Ukraine
  UKR_AI_BEHAVIOR: "@UKR Ukraine"
- UKR_PRO_RUSSIAN: "Pro-Russian Government"
- UKR_PRO_RUSSIAN_DESC: "Kyiv will take a pro-Russian path throughout its tree."
- UKR_SLAVA_UKRAINE: "Slava Ukraini"
- UKR_SLAVA_UKRAINE_DESC: "Kyiv will take a pro-Ukrainian path throughout its tree."
- UKR_NATIONAL_FRONT: "National Front"
- UKR_NATIONAL_FRONT_DESC: "Kyiv will take a nationalist path throughout its tree."
+ UKR_VINTRENKO: "Vitrenko"
+ UKR_VINTRENKO_DESC: "Ukraine will follow the path of Orthodox National Bolshevik feminism"
+ UKR_NATIONALISTS: "Ukrainian Nationalism"
+ UKR_NATIONALISTS_DESC: "Ukraine will follow the path of Ukrainian nationalists, heirs of the UPA"
+ UKR_DEMOCRATIC: "Democratic Ukraine"
+ UKR_DEMOCRATIC_DESC: "Ukraine will follow a pro-Western path, will strive to become part of the European Community"
+ UKR_COMMUNISM: "Communist Ukraine"
+ UKR_COMMUNISM_DESC: "Ukraine will follow the communist path and possibly revive the USSR"
+ UKR_SOCIALISM: "Socialist Ukraine"
+ UKR_SOCIALISM_DESC: "Ukraine will follow the socialist path and try to create a socially equal state"
+ UKR_YUSHENKO: "Yushchenko"
+ UKR_YUSHENKO_DESC: "Ukraine will follow the path of Yushchenko's Presidency"
+ UKR_YANUK: "Yanukovych"
+ UKR_YANUK_DESC: "Ukraine will follow the path of Yanukovych's Presidency"
 
  #Spain
  SPR_AI_BEHAVIOR: "@SPR Spain"
@@ -319,6 +358,7 @@
  SPR_COMMUNIST_REVISIONISM_DESC: "Spain will try to push towards the communist parties."
  SPR_THE_OLD_WAYS: "The Old Ways"
  SPR_THE_OLD_WAYS_DESC: "Spain will seek to revive the Spanish Empire."
+
  #Iran
  PER_AI_BEHAVIOR: "@PER Iran"
  PER_REVOLUTIONARY_PERSIA: "The Return of Pahlavi"
@@ -329,6 +369,10 @@
  PER_FIRE_HAS_NO_FRIENDS_IRAN_DESC: "The MEK will cease power in Iran in an attempt to create a peoples republic."
  PER_NO_REVOULT_IRAN: "No Revolutions"
  PER_NO_REVOULT_IRAN_DESC: "Iran will develop peacefully and without revolutions."
+ RULE_PER_ZOROASTRIAN_STATE: "Zoroastrian Resurgence"
+ RULE_PER_ZOROASTRIAN_STATE_ALLOWED_DESC: "During the Zoroastrians could be a playable faction"
+ RULE_PER_ZOROASTRIAN_STATE_BLOCKED_DESC: "The Zoroastrians will not spawn"
+
  #Georgia
  GEO_AI_BEHAVIOR: "@GEO General Georgian Behavior"
  GEO_NATIONALIST_behavior: "@GEO Nationalist's behavior"
@@ -337,18 +381,18 @@
  GEO_2013_behavior: "@GEO Behavior in 2013"
 
  GEO_SAAKASHVILI: "Pro-Western (Mikheil Saakashvili)"
- GEO_SAAKASHVILI_DESC: "Eduard Shevardnadze will be re-elected, but Rose Revolution will be happened and Mikheil Saakashvili will be in power."
+ GEO_SAAKASHVILI_DESC: "Eduard Shevardnadze will be re-elected, but Rose Revolution will happen and Mikheil Saakashvili will be in power."
  GEO_PRO_WEST_SHEVA: "Pro-Western (Eduard Shevardnadze)"
- GEO_PRO_WEST_SHEVA_DESC: "Eduard Shevardnadze will be re-elected and will follow Pro-Western path without Rose Revolution."
+ GEO_PRO_WEST_SHEVA_DESC: "Eduard Shevardnadze will be re-elected and will follow the Pro-Western path without the Rose Revolution."
  GEO_PRO_RUS: "Pro-Russian Behavior"
- GEO_PRO_RUS_DESC: "Eduard Shevardnadze will follow Pro-Russian path."
+ GEO_PRO_RUS_DESC: "Eduard Shevardnadze will follow the Pro-Russian path."
  GEO_NATIONALIST: "Nationalist Behavior"
- GEO_NATIONALIST_DESC: "Georgia will follow Nationalist path. They won't give a fuck about the West and the East. They will proclaim Greater Georgia in the end."
+ GEO_NATIONALIST_DESC: "Georgia will follow the Nationalist path. They won't give a fuck about the West and the East. They will proclaim Greater Georgia in the end."
  GEO_COMMUNISM: "Communist Behavior"
- GEO_COMMUNISM_DESC: "Georgia will follow Communist path. They will restore the Soviet Republic and depends on Communist Behavior in game rules they will either accept ZSFSR or will follow own path."
+ GEO_COMMUNISM_DESC: "Georgia will follow the Communist path. They will restore the Soviet Republic and depend on Communist Behavior in game rules they will either accept ZSFSR or will follow own path."
 
  GEO_WILL_FOLLOW_OWN_WAY: "Own Path"
- GEO_WILL_FOLLOW_OWN_WAY_DESC: "Nationalist Georgia will follow own path and will crush Armenia and Azerbaijan"
+ GEO_WILL_FOLLOW_OWN_WAY_DESC: "Nationalist Georgia will follow its own path and will crush Armenia and Azerbaijan"
  GEO_WILL_BE_PRO_ARMENIA: "Pro-Armenian"
  GEO_WILL_BE_PRO_ARMENIA_DESC: "Nationalist Georgia will help Armenia to crush Azerbaijan"
  GEO_WILL_BE_PRO_AZERI: "Pro-Azerbaijanian"
@@ -360,7 +404,7 @@
  GEO_WONT_HELP_DESC: "Georgia won't help Chechens in war with Russia. They will be hostile to Georgia."
 
  GEO_ATTACK_RUS: "Preparing for War"
- GEO_ATTACK_RUS_DESC: "Georgia will be prepared for 2008 war and will try to win in the war."
+ GEO_ATTACK_RUS_DESC: "Georgia will be prepared for the 2008 war and will try to win in the war."
  GEO_WEAKBOY: "Compromise with Russia"
  GEO_WEAKBOY_DESC: "Georgia will seek a compromise with Russia to avoid battle actions."
 
@@ -381,7 +425,7 @@
  BLR_DEFAULT: "Alexander Lukashenko"
  BLR_DEFAULT_DESC: "Default path. Lukashenko will suppress opposition, will follow Russia and help them, and also will cooperate with East."
  BLR_NATIONALIST: "Nationalist Path"
- BLR_NATIONALIST_DESC: "Belarus will follow nationalist path, will reduce Russian influence, will claim some territories in Europe and will finish off the Russian bear."
+ BLR_NATIONALIST_DESC: "Belarus will follow the nationalist path, will reduce Russian influence, will claim some territories in Europe and will finish off the Russian bear."
  BLR_RUS_NATIONALIST: "Pro-Russian Nationalists"
  BLR_RUS_NATIONALIST_DESC: "Nationalists can be not only pro-Western, but also pro-Russian National Bolsheviks and the Military Junta promote a pro-Russian line."
  BLR_COMMUNISM: "Communist Path"
@@ -400,23 +444,85 @@
  BLR_WILL_FOLLOW_UNION_STATE: "Form Union State"
  BLR_WILL_FOLLOW_UNION_STATE_DESC: "Belarus will try to form Union State. At first they will become a Russian puppet, but later..."
 
- BLR_POLICE_PRIORITY: "Emphasis On Police Funding"
- BLR_POLICE_PRIORITY_DESC: "We must initially provide funding for the police."
- BLR_ARMY_PRIORITY: "Emphasis On Army Funding"
- BLR_ARMY_PRIORITY_DESC: "We must initially provide funding for the army."
+ #Transnistria
+ PMR_ai_behavior: "@PMR Transnistria Behavior"
+ PMR_HISTORIC_DEFAULT: "Historical Path"
+ PMR_HISTORIC_DEFAULT_DESC: "Transnistria will try to follow the historical path of rapprochement with Russia."
+ PMR_LIBERAL: "Democratic Transnistria"
+ PMR_LIBERAL_DESC: "Transnistria will follow a democratic Path, and will also strive for integration with Moldova."
+ PMR_PATRIOTIC: "National Patriotic Transnistria"
+ PMR_PATRIOTIC_DESC: "National patriots will come to power in Transnistria."
+ PMR_COMMUNISM: "Return To Communism"
+ PMR_COMMUNISM_DESC: "Communists will come to power in Transnistria again."
+ PMR_UKRAINE: "On The Way To Ukraine"
+ PMR_UKRAINE_DESC: "Transnistria will strive to become part of Ukraine."
+
+ PMR_sub_behavior: "@PMR Transnistria Sub-Behavior"
+ PMR_PASSIVE_DEFAULT: "Economic Priority"
+ PMR_PASSIVE_DEFAULT_DESC: "Transnistria will focus its attention on the economic branch."
+ PMR_LEBED: "Aggressive Transnistria"
+ PMR_LEBED_DESC: "Transnistria will be able to launch an aggressive campaign to conquer Romania and Ukraine."
+ PMR_SHERIFF: "Fighting The "Sheriff""
+ PMR_SHERIFF_DESC: "Transnistria will focus on fighting the influence of the "Sheriff" Corporation."
+
+ #Cuba
+ CUB_ai_behavior: "@CUB Cuba Behavior"
+ CUB_HISTORIC_DEFAULT: "Historical Path"
+ CUB_HISTORIC_DEFAULT_DESC: "Cuba will try to follow the historical path."
+ CUB_LIBERAL: "Miguel Mario Diaz Path"
+ CUB_LIBERAL_DESC: "Cuba will follow the path of electing Miguel Mario Diaz."
+ CUB_COMMUNISM: "Communist Cuba"
+ CUB_COMMUNISM_DESC: "Cuba will continue on its communist path."
+ CUB_NATIONALIST: "Nationalism in Cuba"
+ CUB_NATIONALIST_DESC: "Phalanx Nationalists to take power in Cuba."
+ CUB_DEMOCRATS: "Democratic Cuba"
+ CUB_DEMOCRATS_DESC: "Cuba will choose the path of Democratic reforms."
+
 
  #Bosnia
  BOSNIAN_AI_BEHAVIOR: "@BOS Bosnia and Herzegovina"
  RULE_OPTION_PRO_BOSNIAN_LEADERSHIP_PEACEFUL: "Bosniak's Lead The Way"
  RULE_OPTION_PRO_BOSNIAN_LEADERSHIP_PEACEFUL_AI_DESC: "Bosniaks will dominate the elections leading to a pro bosnian government. That will begin cooperation with the other factions. with a goal of a nation of peace. Bosnia will also begin Collaboration with NATO powers "
  RULE_OPTION_PRO_BOSNIAN_LEADERSHIP_COMMIE: "Workers Frontier"
- RULE_OPTION_PRO_BOSNIAN_LEADERSHIP_COMMIE_AI_DESC: "Bosnia will head down the path of Unions and workers to overthrow the government and install a commuist government for the people"
+ RULE_OPTION_PRO_BOSNIAN_LEADERSHIP_COMMIE_AI_DESC: "Bosnia will head down the path of Unions and workers to overthrow the government and install a communist government for the people"
  RULE_OPTION_PRO_BOSNIAN_LEADERSHIP_MUSLIM_NATION: "Bosniak Revanchism"
  RULE_OPTION_PRO_BOSNIAN_LEADERSHIP_MUSLIM_NATION_AI_DESC: "Bonsia will attempt to follow the true path of islam and restore the greatness it once had "
  RULE_OPTION_PRO_LEADERSHIP_TO_SRPSKA: "Srpska Cooperation"
  RULE_OPTION_PRO_LEADERSHIP_TO_SRPSKA_AI_DESC: "A Pro Srpska Government will be placed into power focusing on the people of Bosnia and rival factions with large amounts of cooperation. Bosnia will start Leaning towards the @SOV Russian guardian."
  RULE_OPTION_PRO_LEADERSHIP_TO_SRPSKA_SRPSKA_FIRST: "Srpska First"
  RULE_OPTION_PRO_LEADERSHIP_TO_SRPSKA_SRPSKA_FIRST_AI_DESC: "Srpska will attempt to take full control over bosnia in a effort to reunite with @SER Yugoslavia"
+
+ #Poland
+ POL_AI_BEHAVIOR_MD: "@POL Poland"
+ POL_HISTORICAL: "Default"
+ POL_HISTORICAL_DESC: "Poland will stay on democratic path and try to join the EU. Dominating party will be PO with anti-russian politics."
+ POL_COMMUNISM: "Red Dream"
+ POL_COMMUNISM_DESC: "Poland will turn communist again and start spreading the Red Revolution in Europe."
+ POL_KORWIN_AG: "Korwin Joins CSTO"
+ POL_KORWIN_AG_DESC: "Poland will support UPR party, win as Korwin, invade Ukraine and join CSTO."
+ POL_KORWIN_PE: "Korwin Stays In NATO"
+ POL_KORWIN_PE_DESC: "Poland will support UPR party, win as Korwin, join Ukraine to NATO and reform Polish-Lithuanian Commonwealth."
+ POL_WALESA: "Wałęsa President Again"
+ POL_WALESA_DESC: "Poland will support ChDRP party, win as Wałęsa and choose its future."
+
+ #Germany
+ GER_AI_BEHAVIOR: "@GER Federal Republic of Germany"
+ RULE_OPTION_GER_CONSERVATIVE: "Conservative"
+ RULE_OPTION_GER_CONSERVATIVE_DESC: "Germany will try to follow the Conservative path."
+ RULE_OPTION_GER_SOCIAL_DEMOCRATIC: "Social Democratic"
+ RULE_OPTION_GER_SOCIAL_DEMOCRATIC_DESC: "Germany will try to follow the Social Democratice path."
+ RULE_OPTION_GER_LIBERALISM: "Liberalism"
+ RULE_OPTION_GER_LIBERALISM_DESC: "Germany will try to follow the Liberalism path."
+ RULE_OPTION_GER_POPULISM: "Populism"
+ RULE_OPTION_GER_POPULISM_DESC: "Germany will try to follow the Populism path."
+ RULE_OPTION_GER_GREEN: "Green"
+ RULE_OPTION_GER_GREEN_DESC: "Germany will try to follow the Green path."
+ RULE_OPTION_GER_NATIONALIST: "Nationalist"
+ RULE_OPTION_GER_NATIONALIST_DESC: "Germany will try to follow the Nationalist path."
+ RULE_OPTION_GER_SOCIALIST: "Socialist"
+ RULE_OPTION_GER_SOCIALIST_DESC: "Germany will try to follow the Socialist path."
+ RULE_OPTION_GER_MONARCHIST: "Monarchist"
+ RULE_OPTION_GER_MONARCHIST_DESC: "Germany will try to follow the Monarchist path."
 
  # FLAGS & FORMABLES
  RULE_DISABLE_FORMABLE_NATIONS: "Disable Formable Nations"
@@ -436,6 +542,16 @@
  RULE_YES_DISABLE_EU_DESC: "All countries will be removed from the European Union."
  RULE_NO_DISABLE_EU_DESC: "The European Union will exist as is."
 
+ RULE_EUROPEAN_VOTING_COOLDOWN_LIMIT: "European Union Voting Cooldown"
+ RULE_OPTION_EU_SIXTY: "60 Days"
+ RULE_OPTION_EU_SIXTY_DESC: "The European Parliament and European Council voting cooldown will be set to sixty days instead of the default one hundred and eighty days."
+ RULE_OPTION_EU_NINETY: "90 Days"
+ RULE_OPTION_EU_NINETY_DESC: "The European Parliament and European Council voting cooldown will be set to ninety days instead of the default one hundred and eighty days."
+ RULE_OPTION_EU_ONE_HUNDRED_EIGHTY: "180 Days"
+ RULE_OPTION_EU_ONE_HUNDRED_EIGHTY_DESC: "The European Parliament and European Council voting cooldown will be set to the default one hundred and eighty days."
+ RULE_OPTION_EU_TWO_HUNDRED_TEN: "210 Days"
+ RULE_OPTION_EU_TWO_HUNDRED_TEN_DESC: "The European Parliament and European Council voting cooldown will be set to two hundred and ten days instead of the default one hundred and eighty days."
+
  RULE_DISABLE_NATO: "Disable NATO"
  RULE_YES_DISABLE_NATO_DESC: "NATO will be disabled upon loading into the game."
  RULE_NO_DISABLE_NATO_DESC: "NATO will remain a faction."
@@ -443,12 +559,16 @@
  # INFLUENCE OPTIONS
  RULE_SPREAD_INFLUENCE_AMOUNT_GAIN: "Spread Influence Amount Gain"
  RULE_SPREAD_INFLUENCE_AMOUNT_GAIN_DESC: "Change the influence gained from spreading influence."
- RULE_SPREAD_INFLUENCE_DEFAULT_GAIN_3: "3%"
- RULE_SPREAD_INFLUENCE_DEFAULT_GAIN_3_DESC: "3% influence gained per spread action. For if you want to ramp up influence gain."
+ RULE_SPREAD_INFLUENCE_GAIN_3: "3%"
+ RULE_SPREAD_INFLUENCE_GAIN_3_DESC: "3% influence gained per spread action. For if you want to ramp up influence gain."
  RULE_SPREAD_INFLUENCE_GAIN_0_5: "0.5%"
  RULE_SPREAD_INFLUENCE_GAIN_0_5_DESC: "0.5% influence gained per spread action. For if you really want to slow down influence gain."
+ RULE_SPREAD_INFLUENCE_GAIN_1_5: "1.5%"
+ RULE_SPREAD_INFLUENCE_GAIN_1_5_DESC: "1% influence gained per spread action. The default influence gain per spread influence action."
+ RULE_SPREAD_INFLUENCE_GAIN_1: "1%"
+ RULE_SPREAD_INFLUENCE_GAIN_1_DESC: "1% influence gained per spread action. For if you really want to slow down influence gain."
  RULE_SPREAD_INFLUENCE_GAIN_2: "2%"
- RULE_SPREAD_INFLUENCE_GAIN_2_DESC: "The standard influence gained per spread influence action."
+ RULE_SPREAD_INFLUENCE_GAIN_2_DESC: "2% influence gained per spread action. For if you really want to ramp influence gain."
  RULE_SPREAD_INFLUENCE_GAIN_4: "4%"
  RULE_SPREAD_INFLUENCE_GAIN_4_DESC: "4% influence gained per spread action. For if you really want to ramp up influence gain."
 
@@ -474,23 +594,35 @@
  RULE_14_DAY_INFLUENCE: "14 Day Cooldown"
  RULE_14_DAY_INFLUENCE_DESC: "The default option. The cooldown for influence gained from investing is 14 days or 2 weeks. This applies to the nation for all possible investment opportunities. Though you can still invest, you will not gain any influence in this timeframe."
  RULE_0_DAY_INFLUENCE: "No Cooldown"
- RULE_0_DAY_INFLUENCE_DESC: "Old school MD influence gained from investment time limit. You can invest as often as you like whilst still gaining influence, not recommended for those who enjoy balance!"
+ RULE_0_DAY_INFLUENCE_DESC: "Old school MD influence gained from the investment time limit. You can invest as often as you like whilst still gaining influence, not recommended for those who enjoy balance!"
  RULE_30_DAY_INFLUENCE: "30 Day Cooldown"
  RULE_30_DAY_INFLUENCE_DESC: "The suggested multiplayer option. The cooldown for influence gained from investing is 30 days or roughly 1 month. This applies to the nation for all possible investment opportunities. Though you can still invest, you will not gain any influence in this timeframe."
+
+ RULE_MONTHLY_DOMESTIC_INFLUENCE_TICK: "Enable Monthly §YDomestic Independence§! Growth Tick"
+ RULE_MONTHLY_DOMESTIC_INFLUENCE_TICK_NO_DESC: "Disables the Monthly §YDomestic Independence§! Growth Tick."
+ RULE_MONTHLY_DOMESTIC_INFLUENCE_TICK_YES_DESC: "Enables the Monthly §YDomestic Independence§! Growth Tick. Every month §YDomestic Independence§! will grow by the value set in the game rule \"Monthly §YDomestic Independence§! Growth Tick\" which is set to default to 0.10% per month."
+
+ RULE_MONTHLY_DOMESTIC_INFLUENCE_GAIN_AMOUNT: "Monthly §YDomestic Independence§! Growth Tick Amount"
+ RULE_MONTHLY_DOMESTIC_INFLUENCE_GAIN_AMOUNT_05: "0.05%"
+ RULE_MONTHLY_DOMESTIC_INFLUENCE_GAIN_AMOUNT_05_DESC: "Each month §YDomestic Independence§! increases by 0.05% as long as the Monthly §YDomestic Independence§! Growth Tick is enabled."
+ RULE_MONTHLY_DOMESTIC_INFLUENCE_GAIN_AMOUNT_10: "0.10%"
+ RULE_MONTHLY_DOMESTIC_INFLUENCE_GAIN_AMOUNT_10_DESC: "Each month §YDomestic Independence§! increases by 0.10% as long as the Monthly §YDomestic Independence§! Growth Tick is enabled."
+ RULE_MONTHLY_DOMESTIC_INFLUENCE_GAIN_AMOUNT_15: "0.15%"
+ RULE_MONTHLY_DOMESTIC_INFLUENCE_GAIN_AMOUNT_15_DESC: "Each month §YDomestic Independence§! increases by 0.15% as long as the Monthly §YDomestic Independence§! Growth Tick is enabled."
 
  # OPTIMISATION AND PERFORMANCE
  RULE_ENABLE_DIVISION_LIMITER: "Enable AI Division Limiter"
  RULE_NO_ENABLE_DIVISION_LIMITER_DESC: "Disabled AI Division Limiter\n\nBy default the AI will not be limited in the number of units it can produce. If you wish to limit the divisions for performance reasons please enable me!"
- RULE_YES_ENABLE_DIVISION_LIMITER_DESC: "Enabled AI Division Limiter\n\nWhen I am enabled the AI will be less likely to produce units allowing for more of a streamline experienced to allow you the player to play with relative peace!"
+ RULE_YES_ENABLE_DIVISION_LIMITER_DESC: "Enabled AI Division Limiter\n\nWhen I am enabled the AI will be less likely to produce units allowing for more of a streamlined experience to allow you the player to play with relative peace!"
  RULE_OPTION_POTATO_EDITION: "Potato Edition"
  RULE_POTATO_EDITION_DIVISION_LIMITER_DESC: "Enabled Potato Edition AI Division Limiter\n\nEven further limits the AI for performance reasons.\n"
 
  RULE_REMOVE_MICRO_STATES: "Remove Microstates"
- RULE_YES_RULE_REMOVE_MICRO_STATES_DESC: "Removing microstates should help performance for lower end machines.\nThe majority of Caribbean nations are annexed either into the UK, Bahamas to the USA, Trinidad to Venezeula, and all other microstates in Europe to their closest benefactor."
+ RULE_YES_RULE_REMOVE_MICRO_STATES_DESC: "Removing microstates should help performance for lower-end machines.\nThe majority of Caribbean nations are annexed either into the UK, Bahamas to the USA, Trinidad to Venezuela, and all other microstates in Europe to their closest benefactor."
  RULE_NO_RULE_REMOVE_MICRO_STATES_DESC: "Removing microstates should help performance for lower end machines.\n"
 
  RULE_DISABLE_ALERT_AI: "Disable Alert AI"
- RULE_DISABLE_ALERT_AI_DESC: "All nuclear powers such as the United States, North Korea, China and Russia will set nucelar forces on alert to counter nuke if a player nukes them. Enabling this will cause some slowdown for performance but results in a more dynamic AI."
+ RULE_DISABLE_ALERT_AI_DESC: "All nuclear powers such as the United States, North Korea, China and Russia will set nuclear forces on alert to counter nuke if a player nukes them. Enabling this will cause some slowdown for performance but results in a more dynamic AI."
  RULE_DISABLE_ALERT_YES_AI_DESC: "You can nuke the AI and it won't do anything back. It is only for saving performance for lower-end PCs"
 
  # NUCLEAR RULES
@@ -512,6 +644,10 @@
  RULE_ALLOW_HELP_GUI: "Enable MD Help GUI"
  RULE_ALLOW_HELP_GUI_YES: "This enables the MD Help GUI."
  RULE_ALLOW_HELP_GUI_NO: "This disables the MD Help GUI."
+
+ RULE_ALLOW_PLAYER_COLORED_PUPPETS: "Enable MD Colored Puppets"
+ RULE_OPTION_MD_COLORED_PUPPETS_YES_DESC: "Since this game has been enabled, any country that becomes a puppet will automatically shift to the color that their overlord is. (For example, if China puppeted India, then India will become Red like China)."
+ RULE_OPTION_MD_COLORED_PUPPETS_NO_DESC: "Since this game rule has been disabled, countries will not change their color upon being puppeted, and their color will remain static."
 
  # CHEAT DECISIONS
  RULE_ALLOW_CHEAT_DECISIONS: "Allow Cheat Decisions"
@@ -578,10 +714,16 @@
  # SPECIFIC
  RULE_ALLOW_RELEASE_NATIONS_PEACE_ONLY_TOOLTIP: "§Y[ROOT.GetNameDefCap]§! can release these country when met some condition."
  RULE_ALLOW_RELEASE_NATIONS_RUSSIA_CHE_TOOLTIP: "§Y[ROOT.GetNameDefCap]§! may not release this country unless first completing the §Y$SOV_referendum_in_chechnya$§! or §Y$SOV_question_of_chechnya$§! focus."
+ RULE_ALLOW_RELEASE_NATIONS_RUSSIA_BSH_TOOLTIP: "§Y[ROOT.GetNameDefCap]§! may not release this country unless first completing the §Y$SOV_referendum_in_bashkiria$§! focus."
+ RULE_ALLOW_RELEASE_NATIONS_RUSSIA_TAT_TOOLTIP: "§Y[ROOT.GetNameDefCap]§! may not release this country unless first completing the §Y$SOV_referendum_in_tatarstan$§! focus."
+ RULE_ALLOW_RELEASE_NATIONS_RUSSIA_KHM_TOOLTIP: "§Y[ROOT.GetNameDefCap]§! may not release this country unless first completing the §Y$SOV_referendum_in_khmao$§! focus."
+ RULE_ALLOW_RELEASE_NATIONS_RUSSIA_CRM_TOOLTIP: "§Y[ROOT.GetNameDefCap]§! may not release this country unless first completing the §Y$SOV_referendum_in_crimea$§! focus."
+ RULE_ALLOW_RELEASE_NATIONS_RUSSIA_SUBJECT_RF_TOOLTIP: "§RUNAVAILABLE§!"
  RULE_ALLOW_RELEASE_NATIONS_CHINA_TIB_TOOLTIP: "§Y[ROOT.GetNameDefCap]§! may not release this country unless first completing the §Y$CHI_Tibet_SAR$§! focus."
  RULE_ALLOW_RELEASE_NATIONS_CHINA_ETK_TOOLTIP: "§Y[ROOT.GetNameDefCap]§! may not release this country unless first completing the §Y$CHI_Xinjiang_SAR$§! focus."
  RULE_ALLOW_RELEASE_NATIONS_CHINA_MON_TOOLTIP: "§Y[ROOT.GetNameDefCap]§! may not release this country unless first completing the §Y$CHI_Outer_Mongolia_SAR$§! focus."
  RULE_ALLOW_RELEASE_NATIONS_CHINA_TAI_TOOLTIP: "§Y[ROOT.GetNameDefCap]§! may not release this country unless first completing the §Y$CHI_Establish_Taiwan_SAR$§! focus."
+ RULE_ALLOW_RELEASE_NATIONS_UKRAINE_FEDERALIZE_TOOLTIP: "§Y[ROOT.GetNameDefCap]§! may not release this country unless until you §Yfederalize§! Ukraine"
 
  # MP OPTIMIZATIONS
  RULE_ALLOW_MP_OPTIMIZATIONS: "Allow Multiplayer Optimizations"
@@ -611,11 +753,30 @@
  RULE_OPTION_NEUTRALS: "Neutral Isolationist Coalition Path"
  RULE_OPTION_NEUTRALS_AI_DESC: "Opposition Coalition under neutral isolationist leadership will overthrow the Kocharyan's Government."
 
- RULE_OPTION_ANNEX_ENABLED:0 "Enabled"
- RULE_ENABLED_ANNEX_DESC:0 "Auto Annex enabled. This will auto annex AI after war completion, navy will be taken"
- RULE_OPTION_ANNEX_DISABLED:0 "Disabled"
- RULE_DISABLED_ANNEX_DESC:0 "Auto Annex Disabled"
- RULE_GROUP_AUTO_ANNEX:0 "Auto Annex"
- RULE_GROUP_AUTO_ANNEX_DESC:0 "Auto Annex"
- RULE_ALLOW_AUTO_ANNEX:0 "AI Auto Annex"
- RULE_ALLOW_AUTO_ANNEX_DESC:0 "AI Auto Annex"
+ # Debt Rule
+ RULE_STARTING_DEBT_RULE: "Starting National Debt"
+ RULE_OPTION_NORMAL_DEBT: "Historical National Debt"
+ RULE_STARTING_DEBT_NORMAL_RULE_DESC: "This game rule leaves everything as the typical historical default."
+ RULE_OPTION_PLAYER_DEBT_ONLY: "Remove Player Debt"
+ RULE_STARTING_DEBT_PLAYER_ONLY_RULE_DESC: "Removes the starting national debt from player-led nations only."
+ RULE_OPTION_AI_DEBT_ONLY: "Remove AI Debt"
+ RULE_STARTING_DEBT_AI_ONLY_RULE_DESC: "Removes the starting national debt from ai-led nations only."
+ RULE_OPTION_EVERYONE_DEBT: "Remove Everyone's Debt"
+ RULE_STARTING_DEBT_EVERYONE_RULE_DESC: "Remove the starting national debt from every country."
+
+ #Libya rules
+ LBA_AI_BEHAVIOR: "@LBA Libya"
+ RULE_OPTION_LBA_ISLAMIC_FIGHTING_GROUP: "Insurgency In The Sahel"
+ RULE_OPTION_LBA_ISLAMIC_FIGHTING_GROUP_DESC: "The Libyan Islamic Fighting Group will assassinate Gaddafi and try to conquer the Sahel."
+ RULE_OPTION_LBA_GRAND_MUFTI: "The Libyan Grand Mufti"
+ RULE_OPTION_LBA_GRAND_MUFTI_DESC: "A Grand Mufti will be nominated in Libya, who will then take over of the country."
+ RULE_OPTION_LBA_DEMOCRACY: "Libyan Republic"
+ RULE_OPTION_LBA_DEMOCRACY_DESC: "Muammar Gaddafi will embrace democratic reform in Libya."
+ RULE_OPTION_LBA_KINGDOM: "Kingdom Of Libya"
+ RULE_OPTION_LBA_KINGDOM_DESC: "Muammar Gaddafi will restore the Kingdom of Libya and return power to the Senussis."
+ RULE_OPTION_LBA_GADDAFI_ANTI_COLONIAL_UNION: "Gaddafi - Anti-Colonial Union"
+ RULE_OPTION_LBA_GADDAFI_ANTI_COLONIAL_UNION_DESC: "Gaddafi will form the Anti-Colonial Union and cause havoc across the world."
+ RULE_OPTION_LBA_GADDAFI_UAR: "Gaddafi - United Arab Republic"
+ RULE_OPTION_LBA_GADDAFI_UAR_DESC: "Gaddafi will work together with the Ba'athists and try to form the United Arab Republic."
+ RULE_OPTION_LBA_GADDAFI_AFRICA: "Gaddafi - United States Of Africa"
+ RULE_OPTION_LBA_GADDAFI_AFRICA_DESC: "Gaddafi will try to form the United States of Africa."

@@ -2,6 +2,8 @@
 division_template = {
 	name = "Mekaniseret Brigade"
 
+	division_names_group = DEN_MECH
+
 	regiments = {
 		armor_Bat = { x = 0 y = 0 }
 		Mech_Inf_Bat = { x = 1 y = 0 }
@@ -11,13 +13,17 @@ division_template = {
 		Mot_Inf_Bat = { x = 3 y = 0 }
 	}
 	support = {
-		H_Engi_Comp = { x = 0 y = 0 }
-		SP_AA_Battery = { x = 0 y = 1 }
+		Mot_Recce_Comp = { x = 0 y = 0 }
+		H_Engi_Comp = { x = 0 y = 1 }
+		SP_AA_Battery = { x = 0 y = 2 }
+		combat_service_support_company = { x = 0 y = 3 }
 	}
 }
 
 division_template = {
 	name = "International Brigade"
+
+	division_names_group = DEN_MECH
 
 	regiments = {
 		armor_Bat = { x = 0 y = 0 }
@@ -29,38 +35,92 @@ division_template = {
 		H_Engi_Comp = { x = 0 y = 0 }
 		Mech_Recce_Comp = { x = 0 y = 1 }
 		SP_AA_Battery = { x = 0 y = 2 }
+		combat_service_support_company = { x = 0 y = 3 }
 	}
+}
+division_template = {
+	name = "Special Operations"
+	regiments = {
+		Special_Forces = { x = 0 y = 0 }
+	}
+		support = {
+		L_Recce_Comp = { x = 0 y = 0 }
+		combat_service_support_company = { x = 0 y = 1 }
+	}
+	priority = 2
 }
 
 
 #Ground Forces
 units = {
 	division = {
-		name = "1. Jydske Brigade"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		officer = {
+			name = "Jørgen Andreassen"
+
+	}
 		location = 399		#Fredericia
 		division_template = "Mekaniseret Brigade"
 		start_experience_factor = 0.4
 		start_equipment_factor = 0.01
 	}
 	division = {
-		name = "3. Jydske Brigade"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+	}
+		officer = {
+			name = "Per Ludvigsen"
+
+	}
 		location = 394		#Haderslev
 		division_template = "Mekaniseret Brigade"
 		start_experience_factor = 0.4
 		start_equipment_factor = 0.01
 	}
 	division = {
-		name = "1. Sjællandske Brigade"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		officer = {
+			name = "Niels Kjeldsen"
+	}
 		location = 6287		#Ringsted
 		division_template = "Mekaniseret Brigade"
 		start_experience_factor = 0.4
 		start_equipment_factor = 0.01
 	}
 	division = {
-		name = "Den Danske Internationale Brigade"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		officer = {
+			name = "Jørgen Hansen-Nord"
+
+	}
 		location = 3325		#Vordingborg
 		division_template = "International Brigade"
 		start_experience_factor = 0.6
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "Jægerkorpset"
+		location = 6287
+		division_template = "Special Operations"
+		start_experience_factor = 0.75
+		start_equipment_factor = 0.01
+	}
+	division = {
+		name = "Frømandskorpset"
+		location = 3325
+		division_template = "Special Operations"
+		start_experience_factor = 0.75
 		start_equipment_factor = 0.01
 	}
 
@@ -72,8 +132,15 @@ units = {
 
 instant_effect = {
 	add_equipment_to_stockpile = {
-		type = infantry_weapons2 	#Colt C7
-		producer = CAN
+		type = infantry_weapons1 	#M/66
+		amount = 3500
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_weapons2 	#M/75
+		amount = 20000 #70'000 thousand in service in 1985, not sure how many scrapped by 2000
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_weapons3 	#Colt C7
 		amount = 3500
 	}
 
@@ -102,21 +169,7 @@ instant_effect = {
 	}
 
 	add_equipment_to_stockpile = {
-		type = mbt_hull_0
-		variant_name = "Leopard 1A5"
-		producer = GER
-		amount = 180
-	}
-
-	add_equipment_to_stockpile = {
-		type = mbt_hull_1
-		variant_name = "Leopard 2A5"
-		producer = GER
-		amount = 51
-	}
-
-	add_equipment_to_stockpile = {
-		type = apc_hull_0
+		type = apc_hull_1
 		variant_name = "M113"
 		producer = USA
 		amount = 657
@@ -155,7 +208,7 @@ instant_effect = {
 	}
 
 	add_equipment_to_stockpile = {
-		type = spart_hull_0
+		type = spart_hull_1
 		variant_name = "M109A3"
 		producer = USA
 		amount = 76
@@ -173,3 +226,5 @@ instant_effect = {
 		amount = 19
 	}
 }
+
+#https://marinehist.dk/FOF/FaktaOmFSV-Jan2000.pdf useful

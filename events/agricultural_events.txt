@@ -1724,9 +1724,11 @@ add_namespace = AGRI_famine
 						}
 						40 = { # RISKS EMBARGO
 							set_country_flag = AGRI_mini_drought_neighbour_failure
-							country_event = {
-								id = AGRI_random.2000
-								days = 5
+							random_neighbor_country = {
+								country_event = {
+									id = AGRI_random.2000
+									days = 5
+								}
 							}
 						}
 						7 = { # CAUSED A MINI DROUGHT
@@ -2105,7 +2107,7 @@ add_namespace = AGRI_famine
 					target = FROM
 				}
 			}
-			}
+		}
 	# DUMBASS FARMER RUINS NEIGHBOURS' FARM # IF UNSETTLED, PISSES OFF FARMERS | # 3-30 |
 		country_event = { # FARMERS HAVING LAND DISPUTES, REQUIRES GOVERNMENT INTERVENTION | # 3
 			id = AGRI_random.3

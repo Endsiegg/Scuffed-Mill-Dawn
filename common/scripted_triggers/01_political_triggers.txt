@@ -1197,6 +1197,7 @@ has_socialist_in_coalition = {
 		}
 	}
 }
+
 has_communist_in_coalition = {
 	custom_trigger_tooltip = {
 		tooltip = has_communist_in_coalition_TT
@@ -1217,6 +1218,7 @@ has_environmentalist_in_coalition = {
 		}
 	}
 }
+
 has_liberal_in_coalition = {
 	custom_trigger_tooltip = {
 		tooltip = has_liberal_in_coalition_TT
@@ -1227,6 +1229,7 @@ has_liberal_in_coalition = {
 		}
 	}
 }
+
 has_conservative_in_coalition = {
 	custom_trigger_tooltip = {
 		tooltip = has_conservative_in_coalition_TT
@@ -1248,6 +1251,7 @@ has_conservative_in_coalition = {
 		}
 	}
 }
+
 has_reactionary_in_coalition = {
 	custom_trigger_tooltip = {
 		tooltip = has_reactionary_in_coalition_TT
@@ -1268,6 +1272,7 @@ has_reactionary_in_coalition = {
 		}
 	}
 }
+
 has_autocratic_in_coalition = {
 	custom_trigger_tooltip = {
 		tooltip = has_autocratic_in_coalition_TT
@@ -1286,6 +1291,7 @@ has_autocratic_in_coalition = {
 		}
 	}
 }
+
 has_totalitarian_in_coalition = {
 	custom_trigger_tooltip = {
 		tooltip = has_totalitarian_in_coalition_TT
@@ -1336,6 +1342,19 @@ has_environmentalist_government_or_in_coalition = {
 		}
 	}
 }
+
+has_not_environmentalist_government_or_in_coalition = {
+	custom_trigger_tooltip = {
+		tooltip = has_not_environmentalist_government_or_in_coalition_TT
+		NOT = {
+			OR = {
+				is_in_array = { ruling_party = 17 } #Neutral_green
+				is_in_array = { gov_coalition_array = 17 } #Neutral_green
+			}
+		}
+	}
+}
+
 has_liberal_government_or_in_coalition = {
 	custom_trigger_tooltip = {
 		tooltip = has_liberal_government_or_in_coalition_TT
@@ -1535,6 +1554,20 @@ has_western_aligned_government = {
 	}
 }
 
+not_has_western_aligned_government = {
+	custom_trigger_tooltip = {
+		tooltip = not_has_western_aligned_government_TT
+		NOT = {
+			OR = {
+				is_in_array = { ruling_party = 0 } #Western_Autocracy
+				is_in_array = { ruling_party = 1 } #Conservatism
+				is_in_array = { ruling_party = 2 } #Liberalism
+				is_in_array = { ruling_party = 3 } #socialism
+			}
+		}
+	}
+}
+
 has_emerging_aligned_goverment = {
 	custom_trigger_tooltip = {
 		tooltip = has_emerging_aligned_government_TT
@@ -1545,6 +1578,22 @@ has_emerging_aligned_goverment = {
 			is_in_array = { ruling_party = 7 } #Autocracy
 			is_in_array = { ruling_party = 8 } #Mod_Vilayat_e_Faqih
 			is_in_array = { ruling_party = 9 } #Vilayat_e_Faqih
+		}
+	}
+}
+
+not_has_emerging_aligned_goverment = {
+	custom_trigger_tooltip = {
+		tooltip = not_has_emerging_aligned_government_TT
+		NOT = {
+			OR = {
+				is_in_array = { ruling_party = 4  } #Communist-State
+				is_in_array = { ruling_party = 5  } #anarchist_communism
+				is_in_array = { ruling_party = 6  } #Conservative
+				is_in_array = { ruling_party = 7  } #Autocracy
+				is_in_array = { ruling_party = 8  } #Mod_Vilayat_e_Faqih
+				is_in_array = { ruling_party = 9  } #Vilayat_e_Faqih
+			}
 		}
 	}
 }

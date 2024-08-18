@@ -1,6 +1,8 @@
 ﻿division_template = {
 	name = "Motoatici Briqadasi (ÖÖA)"		#Motor Rifle Brigade with SPART (after Soviet Motor Rifle Regiment model)
 
+	division_names_group = AZE_MECHANIZED_DIVISIONS
+
 	regiments = {
 		Mech_Inf_Bat = { x = 0 y = 0 }
 
@@ -18,6 +20,8 @@
 
 division_template = {
 	name = "Motoatici Briqadasi (A)"		#Motor Rifle Brigade with ART (after Soviet Motor Rifle Regiment model)
+
+	division_names_group = AZE_MECHANIZED_DIVISIONS
 
 	regiments = {
 		Mot_Inf_Bat = { x = 0 y = 0 }
@@ -252,7 +256,7 @@ instant_effect = {
 
 	add_equipment_to_stockpile = {
 		type = SP_Anti_Air_1			#SA-13 Strela 10
-		#version_name = "SA-13 Strela-10"
+		#version_name = "9K35 Strela-10"
 		amount = 54
 		producer = SOV
 	}
