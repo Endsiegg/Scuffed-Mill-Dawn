@@ -24,7 +24,7 @@ is_north_american_union_state = {
 		state = 760 #Nova Scotia
 		state = 761 #New Brunswick
 		state = 762 #Quebec
-		state = 763 #Ontario
+		state = 763 #Eastern Quebec
 		state = 764 #Maine
 		state = 765 #New Hampshire
 		state = 766 #Vermont
@@ -95,6 +95,9 @@ is_north_american_union_state = {
 		state = 1010 #Attu Island
 		state = 1083 #Delaware
 		state = 1084 #Rhode Island
+		state = 1159 #Western Quebec
+		state = 1160 #Ungava
+		state = 1182 #Washington-DC
 	}
 }
 
@@ -157,6 +160,7 @@ is_usa_state = {
 		state = 1010 #Attu Island
 		state = 1083 #Delaware
 		state = 1084 #Rhode Island
+		state = 1182 #Washington-DC
 	}
 }
 
@@ -171,8 +175,10 @@ is_canada_state = {
 		state = 759 #Newfoundland
 		state = 760 #Nova Scotia
 		state = 761 #New Brunswick
-		state = 762 #Quebec
+		state = 762 #Easstern Quebec
 		state = 763 #Ontario
+		state = 1159 #Western Quebec
+		state = 1160 #Ungava
 	}
 }
 
@@ -234,13 +240,13 @@ is_soviet_union_state = {
 		state = 665 #Volgograd
 		state = 666 #Astrakhan
 		state = 667 #Rostov
-		state = 668 #Krasnodar
+		state = 668 #North Krasnodar
 		state = 669 #Crimea
 		state = 670 #Stavropol
 		state = 671 #Dagestan
 		state = 672 #Chechnya
-		state = 673 #Ingush-Ossetia
-		state = 674 #Cherkessia-Balkaria
+		state = 673 #North Ossetia-Alania
+		state = 674 #Kabardino-Balkaria
 		state = 675 #Chelyabinsk
 		state = 676 #Sverdlovsk
 		state = 677 #Tyumen
@@ -249,14 +255,14 @@ is_soviet_union_state = {
 		state = 680 #Novosibirsk
 		state = 681 #Tomsk
 		state = 682 #Krasnoyarsk
-		state = 683 #Norilsk
+		state = 683 #Nenets
 		state = 684 #Altai
 		state = 685 #Irkutsk
 		state = 686 #Buryatia
 		state = 687 #Khabarovsk
 		state = 688 #Yakutia
-		state = 689 #Magadan-Kamchatsk
-		state = 690 #Kuril Islands
+		state = 689 #Chukotka
+		state = 690 #North Kuril Islands
 		state = 691 #Sakhalin
 		state = 692 #Primorye
 		state = 693 #Donetsk
@@ -336,6 +342,31 @@ is_soviet_union_state = {
 		state = 1111 #North Bessarabia
 		state = 1112 #Sevastopol Bay
 		state = 1118 #Orenburg
+		state = 1125 #Karachay-Cherkessia
+		state = 1126 #Ingushetia
+		state = 1127 #Adygea
+		state = 1128 #Karelia
+		state = 1129 #Pskov
+		state = 1130 #Saratov
+		state = 1131 #Ulyanovsk
+		state = 1132 #Mordovia
+		state = 1133 #Udmurtia
+		state = 1134 #Mari El
+		state = 1135 #Chuvashia
+		state = 1136 #Magadan
+		state = 1137 #Kamchatka
+		state = 1140 #South Krasnodar
+		state = 1168 #South Kuril Islands
+		state = 1170 #Batken
+		state = 1172 #Belgorod
+		state = 1173 #Oryol
+		state = 1174 #Bryansk
+		state = 1180 #Tambov
+		state = 1181 #Kaluga
+		state = 1186 #Ivanovo
+		state = 1187 #Vladimir
+		state = 1188 #Tula
+		state = 1189 #Moscow Oblast
 	}
 }
 
@@ -367,13 +398,13 @@ is_russia_state = {
 		state = 665 #Volgograd
 		state = 666 #Astrakhan
 		state = 667 #Rostov
-		state = 668 #Krasnodar
+		state = 668 #North Krasnodar
 		state = 669 #Crimea
 		state = 670 #Stavropol
 		state = 671 #Dagestan
 		state = 672 #Chechnya
-		state = 673 #Ingush-Ossetia
-		state = 674 #Cherkessia-Balkaria
+		state = 673 #North Ossetia-Alania
+		state = 674 #Kabardino-Balkaria
 		state = 675 #Chelyabinsk
 		state = 676 #Sverdlovsk
 		state = 677 #Tyumen
@@ -382,14 +413,14 @@ is_russia_state = {
 		state = 680 #Novosibirsk
 		state = 681 #Tomsk
 		state = 682 #Krasnoyarsk
-		state = 683 #Norilsk
+		state = 683 #Nenets
 		state = 684 #Altai
 		state = 685 #Irkutsk
 		state = 686 #Buryatia
 		state = 687 #Khabarovsk
 		state = 688 #Yakutia
-		state = 689 #Magadan-Kamchatsk
-		state = 690 #Kuril Islands
+		state = 689 #Chukotka
+		state = 690 #North Kuril Islands
 		state = 691 #Sakhalin
 		state = 692 #Primorye
 		state = 1011 #Tuva
@@ -403,6 +434,30 @@ is_russia_state = {
 		state = 1071 #Kurgan
 		state = 1107 #Kalmykia
 		state = 1118 #Orenburg
+		state = 1125 #Karachay-Cherkessia
+		state = 1126 #Ingushetia
+		state = 1127 #Adygea
+		state = 1128 #Karelia
+		state = 1129 #Pskov
+		state = 1130 #Saratov
+		state = 1131 #Ulyanovsk
+		state = 1132 #Mordovia
+		state = 1133 #Udmurtia
+		state = 1134 #Mari El
+		state = 1135 #Chuvashia
+		state = 1136 #Magadan
+		state = 1137 #Kamchatka
+		state = 1140 #South Krasnodar
+		state = 1168 #South Kuril Islands
+		state = 1172 #Belgorod
+		state = 1173 #Oryol
+		state = 1174 #Bryansk
+		state = 1180 #Tambov
+		state = 1181 #Kaluga
+		state = 1186 #Ivanovo
+		state = 1187 #Vladimir
+		state = 1188 #Tula
+		state = 1189 #Moscow Oblast
 	}
 }
 
@@ -493,6 +548,7 @@ is_center_asia_state = {
 		state = 727 #Karakalpakstan
 		state = 728 #Eastern Turkmenistan
 		state = 729 #Western Turkmenistan
+		state = 1170 #Batken
 	}
 }
 
@@ -559,12 +615,13 @@ is_mainland_china_state = {
 		state = 578 #Yunnan
 		state = 582 #Guizhou
 		state = 583 #Chongqing
-		state = 585 #Kham
+		state = 585 #Western Sichuan
 		state = 586 #Sichuan
 		state = 588 #Qinghai
 		state = 589 #U-Tsang
 		state = 591 #Aksai Chin
 		state = 592 #Xinjiang
+		state = 595 #Hongkong
 		state = 813 #Paracel
 		state = 1072 #Ningxia
 		state = 1095 #Liaoxi
@@ -610,7 +667,7 @@ is_greater_china_state = {
 		state = 578 #Yunnan
 		state = 582 #Guizhou
 		state = 583 #Chongqing
-		state = 585 #Kham
+		state = 585 #Western Sichuan
 		state = 586 #Sichuan
 		state = 588 #Qinghai
 		state = 589 #U-Tsang
@@ -637,6 +694,10 @@ is_greater_china_state = {
 		state = 1097 #Hulunbuir
 		state = 1106 #Macau
 		state = 1109 #Lienchiang
+		state = 1155 #Hsinchu
+		state = 1156 #Taichung
+		state = 1157 #Tainan
+		state = 1158 #Penghu
 	}
 }
 
@@ -647,6 +708,10 @@ is_taiwan_area_state = {
 		state = 599 #Kaohsiung
 		state = 600 #Hualian
 		state = 1109 #Lienchiang
+		state = 1155 #Hsinchu
+		state = 1156 #Taichung
+		state = 1157 #Tainan
+		state = 1158 #Penghu
 	}
 }
 
@@ -1423,6 +1488,9 @@ is_great_hindustan_state = {
 		state = 492 #Chittagong
 		state = 493 #Barisal-Khulna
 		state = 494 #Northern Bangladesh
+		state = 563 #Central Punjab
+		state = 573 #Southern Punjab
+		state = 594 #Tribal Areas
 		state = 591 #Aksai Chin
 		state = 980 #Meghalya
 		state = 981 #Tripura
@@ -1438,6 +1506,7 @@ is_great_hindustan_state = {
 		state = 991 #North Chhattisgarh
 		state = 993 #Ladakh
 		state = 1063 #Uttaranchal
+		state = 1171 #Malakand
 	}
 }
 
@@ -1503,6 +1572,7 @@ is_pakistan_state = {
 		state = 563 #Central Punjab
 		state = 573 #Southern Punjab
 		state = 594 #Tribal Areas
+		state = 1171 #Malakand
 	}
 }
 
@@ -1545,27 +1615,40 @@ is_afghanistan_state = {
 		state = 412 #Hazarajat
 		state = 414 #Hindu Kush
 		state = 415 #Sistan
+		state = 1152 #Rigestan
+		state = 1153 #Nuristan
+		state = 1154 #Kunar
 	}
 }
 
 is_iran_state = {
 	OR = {
 		state = 399 #Khuzestan
-		state = 400 #Persia
+		state = 400 #Fars
 		state = 401 #Sistan and Baluchestan
-		state = 402 #Khorasan
+		state = 402 #Razavi Khorasan
 		state = 403 #Mazandaran
-		state = 404 #Qom-Markazi
+		state = 404 #Markazi
 		state = 405 #Tehran
-		state = 406 #Greater Luristan
-		state = 407 #Iranian Azerbaijan
+		state = 406 #Luristan
+		state = 407 #East Azerbaijan
 		state = 408 #Kordestan
 		state = 976 #Isfahan
-		state = 977 #Kavir
+		state = 977 #Kerman
 		state = 978 #Hormuzgan
 		state = 979 #West Azerbaijan
 		state = 1039 #Khoy
 		state = 1073 #Gilan
+		state = 1138 #Ilam
+		state = 1139 #Kermanshah
+		state = 1144 #Qom
+		state = 1145 #Golestan
+		state = 1146 #Bushehr
+		state = 1147 #Yazd
+		state = 1148 #Hamadan
+		state = 1149 #Semnan
+		state = 1150 #North Khorasan
+		state = 1151 #South Khorasan
 	}
 }
 
@@ -1584,6 +1667,8 @@ is_kurdistan_state = {
 		state = 935 #Van
 		state = 979 #West Azerbaijan
 		state = 1039 #Khoy
+		state = 1138 #Ilam
+		state = 1139 #Kermanshah
 	}
 }
 
@@ -1614,6 +1699,8 @@ is_libya_state = {
 		state = 918 #Ghat
 		state = 919 #Sirte
 		state = 920 #Murqub
+		state = 1100 #Al Kufrah
+		state = 1101 #Jebel Uweinat
 	}
 }
 
@@ -1652,5 +1739,172 @@ is_austria_hungary_state = {
 		state = 1053 #Brcko
 		state = 1054 #West Srpska
 		state = 1098 #Western Galicia
+	}
+}
+
+is_syria_state = {
+	OR = {
+		state = 184 #Daraa
+		state = 185 #Suwayda
+		state = 186 #Damascus
+		state = 188 #Homs
+		state = 189 #Latakia
+		state = 190 #Idlib
+		state = 191 #North Raqqa
+		state = 192 #Deir ez-Zor
+		state = 193 #Hasakah
+		state = 561 #Central Desert
+		state = 566 #Aleppo
+		state = 571 #North Aleppo
+		state = 575 #Afrin
+		state = 994 #South Raqqa
+		state = 995 #Al-Suwar
+	}
+}
+
+is_egypt_state = {
+	OR = {
+		state = 213 #Sinai
+		state = 214 #Suez
+		state = 215 #Cairo
+		state = 216 #Alexandria
+		state = 217 #Nile Valley
+		state = 218 #Western Desert
+		state = 219 #Red Sea Coast
+		state = 577 #Egyptian Desert
+		state = 590 #Halaib Triangle
+		state = 1102 #New Cairo
+		state = 1103 #'Ibb
+	}
+}
+
+is_lebanese_state = {
+	OR = {
+		state = 201 #South Lebanon
+		state = 202 #Mount Lebanon
+		state = 203 #North Lebanon
+		state = 553 #Bekaa
+	}
+}
+
+is_iraq_state = {
+	OR = {
+		state = 164 #Erbil
+		state = 165 #Kirkuk
+		state = 166 #Nineveh
+		state = 167 #Salahuddin
+		state = 168 #Anbar
+		state = 169 #Najaf
+		state = 170 #Diyala
+		state = 171 #Basrah
+		state = 557 #Babylon
+		state = 630 #Sulaymaniyah
+		state = 633 #Dohuk
+		state = 641 #Sinjar
+		state = 1122 #Muthanna
+		state = 1123 #Dhi Qar
+		state = 1124 #Maysan
+		state = 1141 #Wasit
+		state = 1142 #Qadisiyah
+		state = 1143 #Karbala
+	}
+}
+
+is_mauritania_state = {
+	OR = {
+		state = 369 #Coastal Mauritania
+		state = 370 #Mauritanian Sahel
+		state = 371 #Adrar
+		state = 413 #Mauritanian Sahara
+	}
+}
+
+is_saudi_state = {
+	OR = {
+		state = 173 #Ha'il
+		state = 174 #Haasa
+		state = 175 #Rub' Al Khali
+		state = 176 #Najd
+		state = 177 #Hejaz
+		state = 178 #Jizan-Asir
+		state = 932 #North Hejaz
+		state = 933 #Jawf
+		state = 1081 #Najran
+	}
+}
+
+is_oman_state = {
+	OR = {
+		state = 182 #Muscat
+		state = 183 #Al Wusta
+		state = 425 #Musandam
+		state = 486 #Masirah Island
+		state = 1082 #Dhofar
+	}
+}
+
+is_uae_state = {
+	OR = {
+		state = 179 #Dubai
+		state = 180 #Abu Dhabi
+	}
+}
+
+is_sahrawi_state = {
+	OR = {
+		state = 372 #Tifariti
+		state = 373 #West-Sahara
+	}
+}
+
+is_tunis_state = {
+	OR = {
+		state = 388 #Tunis
+		state = 389 #Gabes
+		state = 390 #Tunisian Desert
+	}
+}
+
+is_somali_state_no_sml = {
+	OR = {
+		state = 239 #Puntland
+		state = 240 #Central Somalia
+		state = 581 #Jubaland
+		state = 584 #South West State
+		state = 593 #Mogadishu
+		state = 928 #Bari
+		state = 975 #Galmudug
+	}
+}
+
+is_central_african_states = {
+	OR = {
+		state = 324 #Bangui
+		state = 325 #Bangassou
+		state = 921 #Logone
+		state = 922 #Bossangoa
+	}
+}
+
+is_malian_states = {
+	OR = {
+		state = 187 #Malian Sahara
+		state = 366 #Tombouctou
+		state = 367 #Sikasso
+		state = 368 #Koulikoro
+		state = 1163 #Kidal
+		state = 1164 #Gao
+		state = 1165 #Menaka
+		state = 1166 #Kayes
+		state = 1167 #Ansongo
+	}
+}
+
+is_senegal_states = {
+	OR = {
+		state = 362 #Casamance
+		state = 363 #Senegal-Nord
+		state = 364 #Senegal-Central
+		state = 1001 #Tambacounda
 	}
 }
