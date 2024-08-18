@@ -1914,9 +1914,11 @@ gov_pop_calculation = {
 
 	set_variable = { gov_pop_stability_factor = add_t }
 	set_variable = { gov_pop_political_power_factor = add_t }
+	set_variable = { gov_pop_drift_defence_factor = add_t }
 
 	multiply_variable = { gov_pop_stability_factor = 0.002 }
 	multiply_variable = { gov_pop_political_power_factor = 0.002 }
+	multiply_variable = { gov_pop_drift_defence_factor = 0.002 }
 
 	force_update_dynamic_modifier = yes
 }
@@ -2389,7 +2391,7 @@ AI_setup_government = {
 		}
 		reforme_expectance_government_change_update = yes
 		calculate_abandon_coalition_threshold = yes
-		remove_gov_crisis_ai_flags	= yes
+		remove_gov_crisis_ai_flags = yes
 	}
 
 	if = {
