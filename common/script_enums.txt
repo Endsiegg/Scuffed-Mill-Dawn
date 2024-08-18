@@ -246,7 +246,6 @@ script_enum_equipment_bonus_type = {
 	LHA_3
 	LHA_4
 	LPD_0
-	LPD
 	LPD_1
 	LPD_2
 	LPD_3
@@ -552,6 +551,8 @@ script_enum_equipment_bonus_type = {
 	cruiser_1
 	cruiser_2
 	missile_cruiser_1
+	missile_cruiser_2
+	missile_cruiser_3
 	missile_cruiser_4
 	missile_cruiser_5
 	missile_cruiser_6
