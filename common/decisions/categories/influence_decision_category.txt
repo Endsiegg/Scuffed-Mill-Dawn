@@ -5,10 +5,13 @@
 
 influence_desicions = {
 
-	icon = generic_independence
+	icon = GFX_decisions_category_influence
 
 	allowed = {
 		always = yes
+	}
+	visible = {
+		ERI_is_transitional_government_DIPLO = yes
 	}
 	priority = 20
 }
