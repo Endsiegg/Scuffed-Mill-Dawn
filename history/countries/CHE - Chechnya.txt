@@ -19,27 +19,52 @@
 	}
 
 	add_ideas = {
-		CHE_narcos_idea
-		unrestrained_corruption
-		sufi_islam
-		Non_State_Actor
+		#Economic Cycle
 		stagnation
-		defence_09
-		edu_01
-		health_01
-		social_01
-		bureau_03
-		police_03
-		draft_army
-		drafted_women
-		officer_basic_training
-		CHE_disorg_idea
-                shia_conservative_society
-                youth_radicalization
+		#Corruption
+		unrestrained_corruption
+		#Faction 1
 		farmers
+		#Faction 2
 		intelligence_community
+		#Faction 3
 		foreign_jihadis
-                child_soldiers
+
+		#Bureacracy
+		bureau_03
+		#Military Spending
+		defence_09
+		#Internal Security
+		police_03
+		#Education budget
+		edu_01
+		#Health budget
+		health_02
+		#Social spending
+		social_01
+
+		#Trade Law
+		export_economy
+		#Conscription Law
+		draft_army
+		#Women in the military
+		drafted_women
+		#Foreign Intervention Law
+		
+
+		#Officer Training
+		officer_basic_training
+
+		#Other
+		Non_State_Actor
+		sufi_islam
+		western_country
+		medium_far_right_movement
+		CHE_narcos_idea
+		CHE_disorg_idea
+		shia_conservative_society
+		youth_radicalization
+		child_soldiers
 	}
 
 	init_influence = yes
@@ -48,14 +73,26 @@
 	add_to_array = { influence_array_val = 5 }
 	add_to_array = { influence_array = GEO.id }
 	add_to_array = { influence_array_val = 5 }
+	add_to_array = { influence_array = AFG.id }
+	add_to_array = { influence_array_val = 2 }
+
 	startup_influence = yes
+	set_variable = { subjectinped = 35 }
+
+	#Islamism
+	set_variable = { social_conservatism_government = 50 }
+	set_variable = { social_conservatism_society = 50 }
 
 	# Starting tech
 	set_technology = {
 		legacy_doctrines = 1
 		infantry_mass_assault = 1
 		early_guerilla_warfare = 1
-		Guerilla_Warfare = 1
+		insurgent_command = 1
+		urban_insurgencies = 1
+		ied_employment = 1
+		scavengers = 1
+		ambush_operations = 1
 
 		#Templtaes
 		infantry_weapons = 1
@@ -150,7 +187,7 @@
 	set_variable = { party_pop_array^23 = 0 } #Monarchist
 	add_to_array = { ruling_party = 22 }
 	startup_politics = yes
-        create_country_leader = {
+		create_country_leader = {
 		name = "Ahmat Kadyrov"
 		picture = "Ahmat_Kadyrov.dds"
 		expire = "2004.1.1"
@@ -160,7 +197,7 @@
 			sly
 		}
 	}
-    create_country_leader = {
+	create_country_leader = {
 		name = "Ramzan Kadyrov"
 		picture = "CHE_Ramzan_Kadyrov.dds"
 		expire = "2050.1.1"
@@ -169,7 +206,7 @@
 			emerging_Conservative
 			sly
 	}
-    }
+	}
 	recruit_character = CHE_aslan_maskhadov
 	recruit_character = CHE_abdul_halim_sadulayev
 	recruit_character = CHE_ruslan_gelayev
@@ -178,7 +215,7 @@
 	recruit_character = CHE_ibn_al_khattab
 	recruit_character = CHE_akhmed_zakayev
 	recruit_character = CHE_air_chief
-	
+
 	every_controlled_state = {
 		set_variable = { productivity_state_var = 221 }
 	}

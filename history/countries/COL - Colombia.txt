@@ -8,7 +8,7 @@
 		#Economic Cycle
 		stable_growth
 		#Corruption
-		unrestrained_corruption
+		rampant_corruption
 		#Faction 1
 		small_medium_business_owners
 		#Faction 2
@@ -239,6 +239,13 @@
 			tech_torpedoes = 1
 
 			tech_mtg_landing_craft = 1
+		}
+		else = {
+			set_technology = {
+				corvette_1 = 1
+				submarine_1 = 1
+				attack_submarine_1 = 1
+			}
 		}
 	}
 

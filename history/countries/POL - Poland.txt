@@ -1,4 +1,4 @@
-﻿capital = 114
+capital = 114
 2000.1.1 = {
 	set_cosmetic_tag = POL
 	set_country_flag = dynamic_flag
@@ -37,7 +37,7 @@
 		#Economic Cycle
 		stable_growth
 		#Corruption
-		medium_corruption
+		unrestrained_corruption
 		#Faction 1
 		international_bankers
 		#Faction 2
@@ -61,7 +61,7 @@
 		#Trade Law
 		semi_consumption_economy
 		#Conscription Law
-		volunteer_army
+		partial_draft_army
 		#Women in the military
 		volunteer_women
 		#Foreign Intervention Law
@@ -78,6 +78,8 @@
 		POL_soviet_era_air_idea
 		POL_token_fleet_idea
 		POL_fixed_brain_drain2
+		POL_intolerance_of_communism_idea
+		POL_country_of_peace1_idea
 	}
 
 	#2000 NATO Relations
@@ -185,6 +187,7 @@
 	recruit_character = POL_franczisek_gagor
 	recruit_character = POL_roman_polko
 	recruit_character = POL_janusz_adamczak
+	recruit_character = POL_edward_pietrzyk
 
 	start_politics_input = yes
 	set_variable = { party_pop_elect_array^3 = 0.47 }
@@ -233,7 +236,6 @@
 
 		command_control_equipment = 1
 		command_control_equipment1 = 1
-		command_control_equipment2 = 1
 
 		land_Drone_equipment = 1
 		land_Drone_equipment1 = 1
@@ -242,7 +244,8 @@
 
 		util_vehicle_0 = 1
 		util_vehicle_1 = 1
-		util_vehicle_2 = 1 #Tarpan Honker
+		util_vehicle_2 = 1
+		util_vehicle_3 = 1 #Tarpan Honker
 
 		early_helicopter = 1
 
@@ -475,6 +478,7 @@
 				MBT_1 = 1
 				MBT_2 = 1
 				MBT_3 = 1
+				MBT_4 = 1
 				Early_APC = 1
 				APC_1 = 1
 				APC_2 = 1
@@ -482,6 +486,7 @@
 				IFV_1 = 1
 				IFV_2 = 1
 				IFV_3 = 1
+				IFV_4 = 1
 				artillery_0 = 1
 				artillery_1 = 1
 				Arty_upgrade_1 = 1
@@ -642,7 +647,8 @@
 				engine_type_slot = engine_light_single_1
 				avionics_type_slot = avionics_manned_1
 				wingform_type_slot = wing_straight
-				special_slot_type_1 = spec_redundant_1
+				special_slot_type_1 = spec_countermeasures_1
+				special_slot_type_2 = spec_redundant_1
 			}
 		}
 
@@ -676,7 +682,7 @@
 
 		#Project 620
 		create_equipment_variant = {
-			name = "Project 620 Class"
+			name = "ORP Kaszub"
 			type = corvette_hull_2
 			#name_group = POL_DD_HISTORICAL
 			parent_version = 0
@@ -692,7 +698,7 @@
 		}
 		#Orkan
 		create_equipment_variant = {
-			name = "Orkan Class"
+			name = "ORP Grom"
 			type = corvette_hull_3
 			#name_group = POL_DD_HISTORICAL
 			parent_version = 0
@@ -815,7 +821,7 @@
 
 	add_ideas = {
 		christian
-		medium_corruption
+		widespread_corruption
 		EU_member
 		stable_growth
 		defence_02
@@ -1012,9 +1018,6 @@
 			tech_light_guns = 1
 			tech_light_guns_1 = 1
 			tech_light_guns_2 = 1
-			tech_127mm_guns = 1
-			tech_127mm_guns_1 = 1
-			tech_127mm_guns_2 = 1
 
 			tech_point_defense_system = 1
 			tech_point_defense_system_1 = 1

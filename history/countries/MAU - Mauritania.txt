@@ -22,11 +22,11 @@
 	}
 
 	add_ideas = {
-		unrestrained_corruption
+		rampant_corruption
 		sufi_islam
 		LoAS_member
 		stagnation
-		AU_member
+		OAU_member
 		defence_03
 		edu_02
 		health_01
@@ -94,6 +94,9 @@
 	set_variable = { threat_level = 10 }
 	set_variable = { radicalization = 5 }
 	add_to_array = { global.ct_states = THIS }
+
+	#UAR
+	add_to_array = { global.arabic_countries = THIS }	#From is_arabic_nation trigger
 
 	#Influence system
 	init_influence = yes
@@ -224,7 +227,7 @@
 	}
 
 	add_ideas = {
-		unrestrained_corruption
+		rampant_corruption
 		sufi_islam
 		LoAS_member
 		stagnation

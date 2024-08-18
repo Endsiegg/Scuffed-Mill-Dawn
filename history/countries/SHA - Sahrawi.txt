@@ -21,7 +21,7 @@
 		health_01
 		social_01
 		bureau_04
-		AU_member
+		OAU_member
 		police_03
 		volunteer_army
 		volunteer_women
@@ -29,6 +29,8 @@
 		small_medium_business_owners
 		farmers
 		officer_basic_training
+
+		SHA_libyan_education
 	}
 
 	set_variable = { var = int_investments value = 0 }
@@ -102,6 +104,8 @@
 		var = SHA.Granted_Recognition
 		value = 55
 	}
+	#UAR
+	add_to_array = { global.arabic_countries = THIS }	#From is_arabic_nation trigger
 
 	#Influence system
 	init_influence = yes

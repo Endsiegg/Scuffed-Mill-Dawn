@@ -37,6 +37,8 @@
 	add_to_array = { influence_array_val = 12 }
 	startup_influence = yes
 
+	set_variable = { subjectinped = 9 }
+
 	set_popularities = {
 		democratic = 100.0
 		communism = 0.0
@@ -80,16 +82,16 @@
 	set_variable = { party_pop_array^23 = 0 } #Monarchist
 
 	### Ruling Party
-	add_to_array = { ruling_party = 4 }
+	add_to_array = { ruling_party = 6 }
 
 	startup_politics = yes
 
 	create_country_leader = {
-		name = "Baykonur Vanaturov"
-		picture = "gfx/leaders/SOV/vanilin_yakuti.dds"
-		ideology = Communist-State
+		name = "Vyacheslav Shtyrov"
+		picture = "gfx/leaders/SOV/SUB/YAK_vyacheslav_shtyrov.dds"
+		ideology = Conservative
 		traits = {
-			western_socialism
+			emerging_Conservative
 		}
 	}
 }

@@ -62,6 +62,8 @@
 	set_country_flag = relaxed_dress_code
 	#GCC
 	add_to_array = { global.possible_gcc_members = THIS }
+	#UAR
+	add_to_array = { global.arabic_countries = THIS }	#From is_arabic_nation trigger
 
 	#Influence system
 	init_influence = yes
@@ -252,7 +254,7 @@
 	set_variable = { landowners_opinion = 60 }
 
 	add_ideas = {
-		unrestrained_corruption
+		systematic_corruption
 		sunni
 		saudi_aid
 		LoAS_member
