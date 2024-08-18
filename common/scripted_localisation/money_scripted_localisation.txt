@@ -17,6 +17,25 @@ defined_text = {
 
 # Energy Section
 defined_text = {
+	name = energy_total_net_energy_balance
+	text = {
+		trigger = {
+			check_variable = { energy_balance_value_display > 1 }
+		}
+		localization_key = "[?energy_balance_value_display|%G]"
+	}
+	text = {
+		trigger = {
+			check_variable = { energy_balance_value_display < 1 }
+		}
+		localization_key = "[?energy_balance_value_display|%R]"
+	}
+	text = {
+		localization_key = "[?energy_balance_value_display|%Y]"
+	}
+}
+
+defined_text = {
 	name = heavy_power_restrictions_button
 	text = {
 		trigger = { has_idea = heavy_power_restrictions_spirit }
@@ -31,7 +50,7 @@ defined_text = {
 	name = some_power_restrictions_button
 	text = {
 		trigger = { has_idea = some_power_restrictions_spirit }
-		localization_key = GFX_double_negative_ON
+		localization_key = GFX_negative_ON
 	}
 	text = {
 		localization_key = GFX_negative_power
@@ -837,6 +856,51 @@ defined_text = {
 		localization_key = "[?THIS.bureaucracy_gain]"
 	}
 }
+defined_text = {
+	name = migration_laws_rate_01
+	text = { trigger = { ROOT = { is_ai = no } }
+		localization_key = "[?THIS.array_border_control_spend^0]"
+	}
+	text = { ##AI Cost
+		localization_key = "[?THIS.border_control_gain]"
+	}
+}
+defined_text = {
+	name = migration_laws_rate_02
+	text = { trigger = { ROOT = { is_ai = no } }
+		localization_key = "[?THIS.array_border_control_spend^1]"
+	}
+	text = { ##AI Cost
+		localization_key = "[?THIS.border_control_gain]"
+	}
+}
+defined_text = {
+	name = migration_laws_rate_03
+	text = { trigger = { ROOT = { is_ai = no } }
+		localization_key = "[?THIS.array_border_control_spend^2]"
+	}
+	text = { ##AI Cost
+		localization_key = "[?THIS.border_control_gain]"
+	}
+}
+defined_text = {
+	name = migration_laws_rate_04
+	text = { trigger = { ROOT = { is_ai = no } }
+		localization_key = "[?THIS.array_border_control_spend^3]"
+	}
+	text = { ##AI Cost
+		localization_key = "[?THIS.border_control_gain]"
+	}
+}
+defined_text = {
+	name = migration_laws_rate_05
+	text = { trigger = { ROOT = { is_ai = no } }
+		localization_key = "[?THIS.array_border_control_spend^4]"
+	}
+	text = { ##AI Cost
+		localization_key = "[?THIS.border_control_gain]"
+	}
+}
 
 defined_text = {
 	name = military_spending_rate_loc
@@ -1212,7 +1276,68 @@ defined_text = {
 		localization_key = "GFX_daily_expense"
 	}
 }
+#########Egypt
 
+defined_text = {
+	name = additional_income_mubarak_money
+	text = {
+		trigger = { has_idea = EGY_mubarak_money }
+		localization_key = alaa_income_tt
+	}
+	text = {
+		trigger = { NOT = { has_idea = EGY_mubarak_money } }
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = additional_income_us_helps_egy
+	text = {
+		trigger = { has_idea = EGY_us_helps }
+		localization_key = us_helps_income_tt
+	}
+	text = {
+		trigger = { NOT = { has_idea = EGY_us_helps } }
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = additional_income_suez_deal_new
+	text = {
+		trigger = { has_idea = EGY_suez_deal_idea }
+		localization_key = suez_deal_income_tt
+	}
+	text = {
+		trigger = { NOT = { has_idea = EGY_suez_deal_idea } }
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = additional_income_al_azhar_uni
+	text = {
+		trigger = { has_idea = EGY_al_azhar_uni_idea }
+		localization_key = azhar_income_tt
+	}
+	text = {
+		trigger = { NOT = { has_idea = EGY_al_azhar_uni_idea } }
+		localization_key = ""
+	}
+}
+
+#########MNT
+defined_text = {
+	name = additional_income_mnt_yacht
+	text = {
+		trigger = { has_idea = MNT_yacht }
+		localization_key = mnt_yacht_income_tt
+	}
+	text = {
+		trigger = { NOT = { has_idea = MNT_yacht } }
+		localization_key = ""
+	}
+}
 
 #Tooltip summary for additional incomes and expense
 defined_text = {
@@ -1248,6 +1373,14 @@ defined_text = {
 	text = {
 		trigger = { NOT = { has_idea = partial_control_of_suez } }
 		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = additional_income_summary_full_control_of_hormuz
+	text = {
+		trigger = { has_idea = full_control_of_hormuz }
+		localization_key = "full_control_of_hormuz_TT"
 	}
 }
 
@@ -1357,6 +1490,34 @@ defined_text = {
 }
 
 defined_text = {
+	name = additional_expense_egy_broken_economy
+	text = {
+		trigger = {
+			OR = {
+				has_idea = EGY_broken_economy_idea
+				has_idea = EGY_broken_economy_idea_1
+				has_idea = EGY_broken_economy_idea_2
+				has_idea = EGY_broken_economy_idea_3
+			}
+		}
+		localization_key = egyptian_broken_econ_TT
+	}
+	text = {
+		trigger = {
+			NOT = {
+				OR = {
+					has_idea = EGY_broken_economy_idea
+					has_idea = EGY_broken_economy_idea_1
+					has_idea = EGY_broken_economy_idea_2
+					has_idea = EGY_broken_economy_idea_3
+				}
+			}
+		}
+		localization_key = ""
+	}
+}
+
+defined_text = {
 	name = additional_expense_summary_iraq_war_compensation_half_billion
 	text = {
 		trigger = { has_country_flag = IRQ_iraq_accepted_to_pay_half_billion_weekly }
@@ -1415,6 +1576,7 @@ defined_text = {
 		localization_key = ""
 	}
 }
+
 
 defined_text = {
 	name = additional_expense_summary_tiba_car
@@ -2136,12 +2298,30 @@ defined_text = {
 	}
 	text = { localization_key = "" }
 }
+# Iraq
+# defined_text = {
+# 	name = additional_income_IRQ_summary_mosque_income
+# 	text = {
+# 		trigger = { has_idea = IRQ_mosque_income_idea }
+# 		localization_key = additional_income_IRQ_mosque_income_TT
+# 	}
+# 	text = { localization_key = "" }
+#}
 #
 defined_text = {
 	name = additional_income_GER_russian_buddies
 	text = {
 		trigger = { has_idea = GER_russian_buddies }
 		localization_key = GER_russian_buddies_income_tt
+	}
+	text = { localization_key = "" }
+}
+#
+defined_text = {
+	name = additional_income_DEN_consume_tax
+	text = {
+		trigger = { original_tag = DEN }
+		localization_key = additional_income_DEN_consume_tax_tt
 	}
 	text = { localization_key = "" }
 }
@@ -2220,6 +2400,31 @@ defined_text = {
 }
 
 defined_text = {
+	name = additional_income_UKR_russian_gas_sov
+	text = {
+		trigger = { has_idea = UKR_russian_gas_sov }
+		localization_key = UKR_russian_gas_sov_income_loc
+	}
+	text = { localization_key = "" }
+}
+defined_text = {
+	name = additional_income_UKR_russian_gas_cheap_sov
+	text = {
+		trigger = { has_idea = UKR_russian_gas_cheap_sov }
+		localization_key = UKR_russian_gas_cheap_sov_income_loc
+	}
+	text = { localization_key = "" }
+}
+defined_text = {
+	name = additional_income_UKR_russian_gas_cheaper_sov
+	text = {
+		trigger = { has_idea = UKR_russian_gas_cheaper }
+		localization_key = UKR_russian_gas_cheaper_sov_income_loc
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = {
 	name = BLR_Kommunarka_invest_gain
 	text = {
 		trigger = { has_idea = BLR_Kommunarka_invest }
@@ -2257,6 +2462,62 @@ defined_text = {
 	text = {
 		trigger = { has_idea = BLR_tourism }
 		localization_key = BLR_tourism_income_loc
+	}
+	text = { localization_key = "" }
+}
+defined_text = {
+	name = additional_income_BLR_oil_sov
+	text = {
+		trigger = { has_idea = BLR_oil_sov }
+		localization_key = BLR_oil_sov_income_loc
+	}
+	text = { localization_key = "" }
+}
+defined_text = {
+	name = additional_income_BLR_oil_sov_positive
+	text = {
+		trigger = { has_idea = BLR_oil_sov_positive }
+		localization_key = BLR_oil_sov_positive_income_loc
+	}
+	text = { localization_key = "" }
+}
+defined_text = {
+	name = additional_expense_BLR_oil_russian
+	text = {
+		trigger = { has_idea = BLR_oil_russian }
+		localization_key = BLR_oil_russian_expense_loc
+	}
+	text = { localization_key = "" }
+}
+defined_text = {
+	name = additional_expense_BLR_oil_russian_positive
+	text = {
+		trigger = { has_idea = BLR_oil_russian_positive }
+		localization_key = BLR_oil_russian_positive_expense_loc
+	}
+	text = { localization_key = "" }
+}
+defined_text = {
+	name = additional_income_BLR_kal_with
+	text = {
+		trigger = { has_idea = BLR_kal_with }
+		localization_key = BLR_kal_with_income_loc
+	}
+	text = { localization_key = "" }
+}
+defined_text = {
+	name = additional_income_SOV_kal_with
+	text = {
+		trigger = { has_idea = SOV_kal_with }
+		localization_key = SOV_kal_with_income_loc
+	}
+	text = { localization_key = "" }
+}
+defined_text = {
+	name = additional_income_BLR_kal_without
+	text = {
+		trigger = { has_idea = BLR_kal_without }
+		localization_key = BLR_kal_without_income_loc
 	}
 	text = { localization_key = "" }
 }
@@ -2306,10 +2567,91 @@ defined_text = {
 }
 
 defined_text = {
+	name = SMA_increased_tourism_gain
+	text = {
+		trigger = { has_idea = SMA_increased_tourism }
+		localization_key = SMA_increased_tourism_gain_loc
+	}
+	text = { localization_key = "" }
+}
+defined_text = {
+	name = SMA_balance_tourism_ii_gain
+	text = {
+		trigger = { has_idea = SMA_balance_tourism_ii }
+		localization_key = SMA_balance_tourism_ii_gain_loc
+	}
+	text = { localization_key = "" }
+}
+defined_text = {
+	name = SMA_balance_tourism_i_gain
+	text = {
+		trigger = { has_idea = SMA_balance_tourism_i }
+		localization_key = SMA_balance_tourism_i_gain_loc
+	}
+	text = { localization_key = "" }
+}
+defined_text = {
+	name = SMA_balance_balance_gain
+	text = {
+		trigger = { has_idea = SMA_balance_balance }
+		localization_key = SMA_balance_balance_gain_loc
+	}
+	text = { localization_key = "" }
+}
+defined_text = {
+	name = SMA_balance_economy_i_gain
+	text = {
+		trigger = { has_idea = SMA_balance_economy_i }
+		localization_key = SMA_balance_economy_i_gain_loc
+	}
+	text = { localization_key = "" }
+}
+defined_text = {
+	name = SMA_balance_economy_ii_gain
+	text = {
+		trigger = { has_idea = SMA_balance_economy_ii }
+		localization_key = SMA_balance_economy_ii_gain_loc
+	}
+	text = { localization_key = "" }
+}
+defined_text = {
+	name = SMA_increased_economy_gain
+	text = {
+		trigger = { has_idea = SMA_increased_economy }
+		localization_key = SMA_increased_economy_gain_loc
+	}
+}
+
+defined_text = {
 	name = additional_income_DPR_rf_money
 	text = {
 		trigger = { has_idea = DPR_rf_money }
 		localization_key = DPR_rf_money_income_loc
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = {
+	name = additional_expense_UKR_russian_gas
+	text = {
+		trigger = { has_idea = UKR_russian_gas }
+		localization_key = UKR_russian_gas_expense_loc
+	}
+	text = { localization_key = "" }
+}
+defined_text = {
+	name = additional_expense_UKR_russian_gas_cheap
+	text = {
+		trigger = { has_idea = UKR_russian_gas_cheap }
+		localization_key = UKR_russian_gas_cheap_expense_loc
+	}
+	text = { localization_key = "" }
+}
+defined_text = {
+	name = additional_expense_UKR_russian_gas_cheaper
+	text = {
+		trigger = { has_idea = UKR_russian_gas_cheaper }
+		localization_key = UKR_russian_gas_cheaper_expense_loc
 	}
 	text = { localization_key = "" }
 }
@@ -2329,6 +2671,22 @@ defined_text = {
 	text = {
 		trigger = { has_idea = china_travel_ban }
 		localization_key = china_travel_ban_additional_expenses
+	}
+	text = { localization_key = "" }
+}
+defined_text = {
+	name = additional_expenses_BLR_oil_russian
+	text = {
+		trigger = { has_idea = BLR_oil_russian }
+		localization_key = BLR_oil_russian_expense_loc
+	}
+	text = { localization_key = "" }
+}
+defined_text = {
+	name = additional_expenses_BLR_oil_russian_positive
+	text = {
+		trigger = { has_idea = BLR_oil_russian_positive }
+		localization_key = BLR_oil_russian_positive_expense_loc
 	}
 	text = { localization_key = "" }
 }
@@ -2474,6 +2832,14 @@ defined_text = {
 	text = { localization_key = "" }
 }
 defined_text = {
+	name = additional_expense_USA_war_cost
+	text = {
+		trigger = { has_idea = USA_iraq_war_cost }
+		localization_key = USA_iraq_war_cost_TT
+	}
+	text = { localization_key = "" }
+}
+defined_text = {
 	name = SYR_syrian_bakadash
 	text = {
 		trigger = { has_idea = syria_bakdash }
@@ -2481,3 +2847,98 @@ defined_text = {
 	}
 	text = { localization_key = "" }
 }
+defined_text = {
+	name = additional_income_summary_FRA_idea_Light_for_Europe
+	text = {
+		trigger = { has_idea = FRA_idea_Light_for_Europe }
+		localization_key = FRA_idea_Light_for_Europe_TT
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = {
+	name = additional_income_summary_FRA_cfa_franc_custodian
+	text = {
+		trigger = { has_idea = FRA_cfa_franc_custodian }
+		localization_key = FRA_cfa_franc_custodian_TT
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = {
+	name = additional_income_summary_FRA_space_program
+	text = {
+		trigger = {
+			has_country_flag = FRA_new_frontiers
+			has_completed_focus = FRA_the_space_program
+			is_subject = no
+			has_capitulated = no
+		}
+		localization_key = FRA_the_space_program_TT
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = {
+	name = additional_expense_summary_FRA_nepad_monetary_cost
+	text = {
+		trigger = {
+			has_dynamic_modifier = {
+				modifier = FRA_idea_nepad_modifier
+			}
+		}
+		localization_key = FRA_idea_nepad_modifier_expense_tt
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = {
+	name = additional_expense_defence_industry_subsidies
+	text = {
+		trigger = { has_country_flag = defence_industry_subsidies }
+		localization_key = defence_industry_subsidies
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = {
+	name = additional_income_LBA_oil_nationalisation
+	text = {
+		trigger = {
+			OR = {
+				original_tag = LBA
+				original_tag = FEZ
+				original_tag = CYR
+				original_tag = TRP
+			}
+		}
+		localization_key = LBA_oil_nationalisation_additional_income_tt
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = {
+	name = additional_income_overlord_subsidies
+	text = {
+		trigger = {
+			is_subject = yes
+			has_country_flag = overlord_subsidies
+		}
+		localization_key = additional_income_overlord_subsidies_tt
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = {
+	name = additional_expense_overlord_total_subsidies
+	text = {
+		trigger = {
+			NOT = { check_variable = { subjects^0 = 0 } }
+			NOT = { check_variable = { subject_subsidization^0 = 0 } }
+		}
+		localization_key = additional_income_overlord_total_subsidies_tt
+	}
+	text = { localization_key = "" }
+}
+
+
