@@ -1,18 +1,3 @@
-### search_filters = { FOCUS_FILTER_POLITICAL }
-### search_filters = { FOCUS_FILTER_RESEARCH }
-### search_filters = { FOCUS_FILTER_INDUSTRY }
-### search_filters = { FOCUS_FILTER_STABILITY }
-### search_filters = { FOCUS_FILTER_WAR_SUPPORT }
-### search_filters = { FOCUS_FILTER_MANPOWER }
-### search_filters = { FOCUS_FILTER_ANNEXATION }
-### search_filters = { FOCUS_FILTER_INTERNAL_FACTION }
-### search_filters = { FOCUS_FILTER_INFLUENCE }
-### search_filters = { FOCUS_FILTER_EXPENDITURE }
-### search_filters = { FOCUS_FILTER_MILITARY_LAWS }
-### search_filters = { FOCUS_FILTER_CORRUPTION }
-### search_filters = { FOCUS_FILTER_CHI_AGGRESSION }
-### search_filters = { FOCUS_FILTER_INSURGENCY }
-
 focus_tree = {
 	id = china_focus
 	country = {
@@ -29,7 +14,7 @@ focus_tree = {
 		id = CHI_Chairman_Jiang_Reign
 		icon = focus_jiang_zemin
 
-		x = 5
+		x = 2
 		y = 0
 
 		cost = 5
@@ -44,11 +29,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 100
 			log = "[GetDateText]: [This.GetName]: focus CHI_Chairman_Jiang_Reign executed"
+			add_political_power = 100
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -74,6 +61,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_End_PLA_Business_Ventures executed"
 			add_stability = 0.02
 			remove_ideas = CHI_PLA_Business_Ventures
 			add_timed_idea = {
@@ -82,10 +70,11 @@ focus_tree = {
 			}
 			set_temp_variable = { temp_opinion = -3 }
 			change_the_military_opinion = yes
-			log = "[GetDateText]: [This.GetName]: focus CHI_End_PLA_Business_Ventures executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -105,8 +94,8 @@ focus_tree = {
 		available = { has_government = communism }
 
 		completion_reward = {
-			add_political_power = 50
 			log = "[GetDateText]: [This.GetName]: focus CHI_Future_of_the_CPC executed"
+			add_political_power = 125
 		}
 
 		ai_will_do = {
@@ -134,8 +123,7 @@ focus_tree = {
 
 		available = {
 			has_country_leader = { name = "Jiang Zemin" ruling_only = yes }
-			if = {
-				limit = { has_idea = the_military has_idea = communist_cadres }
+			if = { limit = { has_idea = the_military has_idea = communist_cadres }
 				OR = {
 					military_at_least_positive_opinion = yes
 					communist_cadres_at_least_positive_opinion = yes
@@ -152,12 +140,14 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_Three_Represents_Thought executed"
 			add_political_power = 50
 			add_ideas = three_represents
-			log = "[GetDateText]: [This.GetName]: focus CHI_Three_Represents_Thought executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -172,7 +162,7 @@ focus_tree = {
 
 		prerequisite = { focus = CHI_Three_Represents_Thought }
 
-		search_filters = { FOCUS_FILTER_INTERNAL_FACTION }
+		search_filters = { FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_POLITICAL }
 
 		available = {
 			has_country_leader = {
@@ -183,16 +173,16 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_popularity = {
-				ideology = communism
-				popularity = 0.05
-			}
-			set_temp_variable = { temp_opinion = 5 }
-			change_industrial_conglomerates_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Permit_Entrepreneurs_to_Join_the_CPC executed"
+			add_popularity = { ideology = communism popularity = 0.05 }
+			recalculate_party = yes
+			set_temp_variable = { temp_opinion = 10 }
+			change_industrial_conglomerates_opinion = yes
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -217,13 +207,15 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_Invigorate_Country_Through_STE executed"
 			unlock_decision_category_tooltip = invigorate_country_through_STE_category
 			activate_decision = strategy_of_invigorating_through_STE
 			add_ideas = CHI_Invigorate_Country_Through_STE1
-			log = "[GetDateText]: [This.GetName]: focus CHI_Invigorate_Country_Through_STE executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -245,15 +237,17 @@ focus_tree = {
 		available = { has_government = communism }
 
 		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_Youth_League_Dominance executed"
 			add_political_power = 100
 			swap_ideas = {
 				remove_idea = factional_politics_elitist
 				add_idea = factional_politics_populist
 			}
-			log = "[GetDateText]: [This.GetName]: focus CHI_Youth_League_Dominance executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -275,16 +269,18 @@ focus_tree = {
 		available = { has_government = communism }
 
 		completion_reward = {
-			set_temp_variable = { temp_opinion = 5 }
+			log = "[GetDateText]: [This.GetName]: focus CHI_Preserve_CPC_Unity executed"
+			set_temp_variable = { temp_opinion = 20 }
 			change_communist_cadres_opinion = yes
 			swap_ideas = {
 				remove_idea = factional_politics_elitist
 				add_idea = factional_politics_balanced
 			}
-			log = "[GetDateText]: [This.GetName]: focus CHI_Preserve_CPC_Unity executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -306,8 +302,8 @@ focus_tree = {
 		available = { has_government = communism }
 
 		completion_reward = {
-			add_political_power = 100
 			log = "[GetDateText]: [This.GetName]: focus CHI_Shanghai_Clique_Dominance executed"
+			add_political_power = 150
 		}
 
 		ai_will_do = {
@@ -337,6 +333,7 @@ focus_tree = {
 		available = { has_government = communism }
 
 		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_Hu_Jintao_Agenda executed"
 			create_country_leader = {
 				name = "Hu Jintao"
 				desc = HU_JINTAO_LEADER_DESC
@@ -345,7 +342,7 @@ focus_tree = {
 				ideology = Communist-State
 				traits = {
 					emerging_Communist-State
-					engineer
+					ex_engineer
 				}
 			}
 			add_political_power = 100
@@ -353,10 +350,11 @@ focus_tree = {
 				limit = { has_idea = three_represents }
 				remove_ideas = three_represents
 			}
-			log = "[GetDateText]: [This.GetName]: focus CHI_Hu_Jintao_Agenda executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -386,7 +384,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_8_Honours_8_Shames executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -413,6 +413,7 @@ focus_tree = {
 		prerequisite = { focus = CHI_Hu_Jintao_Agenda }
 
 		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_Peaceful_Rise executed"
 			set_temp_variable = { modify_chinese_aggression = -1 }
 			CHI_modify_chinese_aggression = yes
 			every_other_country = {
@@ -427,10 +428,11 @@ focus_tree = {
 					id = china.2
 				}
 			}
-			log = "[GetDateText]: [This.GetName]: focus CHI_Peaceful_Rise executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -446,10 +448,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH }
 
 		available = {
-			has_country_leader = {
-				name = "Hu Jintao"
-				ruling_only = yes
-			}
+			has_country_leader = { name = "Hu Jintao" ruling_only = yes }
 			OR = {
 				military_at_least_positive_opinion = yes
 				communist_cadres_at_least_positive_opinion = yes
@@ -460,11 +459,13 @@ focus_tree = {
 		prerequisite = { focus = CHI_8_Honours_8_Shames }
 
 		completion_reward = {
-			add_ideas = scientific_outlook_on_development
 			log = "[GetDateText]: [This.GetName]: focus CHI_Scientific_Outlook_on_Development executed"
+			add_ideas = scientific_outlook_on_development
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -489,11 +490,13 @@ focus_tree = {
 		prerequisite = { focus = CHI_Scientific_Outlook_on_Development }
 
 		completion_reward = {
-			add_stability = 0.02
 			log = "[GetDateText]: [This.GetName]: focus CHI_Harmonious_Society executed"
+			add_stability = 0.05
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -506,7 +509,7 @@ focus_tree = {
 
 		cost = 7
 
-		search_filters = { FOCUS_FILTER_STABILITY }
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_RENEWABLE_ENERGY_INFRASTRUCTURE }
 
 		available = {
 			has_country_leader = {
@@ -522,13 +525,16 @@ focus_tree = {
 		prerequisite = { focus = CHI_Harmonious_Society }
 
 		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_Green_GDP executed"
 			add_stability = 0.05
 			set_temp_variable = { temp_opinion = -5 }
 			change_industrial_conglomerates_opinion = yes
-			log = "[GetDateText]: [This.GetName]: focus CHI_Green_GDP executed"
+			one_random_synthetic_refinery = yes
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -567,7 +573,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Set_up_Confucius_Institutes executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -605,7 +613,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Global_Chinese_Culture executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -625,7 +635,7 @@ focus_tree = {
 		available = { has_war = no }
 
 		completion_reward = {
-			set_temp_variable = { treasury_change = -15 }
+			set_temp_variable = { treasury_change = -5 }
 			modify_treasury_effect = yes
 			every_other_country = {
 				limit = {
@@ -640,10 +650,13 @@ focus_tree = {
 				set_temp_variable = { influence_target = THIS }
 				change_influence_percentage = yes
 			}
+			news_event = china_news.39
 			log = "[GetDateText]: [This.GetName]: focus CHI_Develop_Chinese_Cinema executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -664,6 +677,7 @@ focus_tree = {
 		available = { has_government = communism }
 
 		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_Zeng_Qinghong_Agenda executed"
 			create_country_leader = {
 				name = "Zeng Qinghong"
 				picture = "Zeng_Qinghong.dds"
@@ -679,7 +693,6 @@ focus_tree = {
 				limit = { has_idea = three_represents }
 				remove_ideas = three_represents
 			}
-			log = "[GetDateText]: [This.GetName]: focus CHI_Zeng_Qinghong_Agenda executed"
 		}
 
 		ai_will_do = {
@@ -719,7 +732,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Elitist_Politics executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 
@@ -745,14 +760,16 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_Affirm_Ties_to_the_Military executed"
 			add_political_power = 50
 			add_war_support = 0.05
-			set_temp_variable = { temp_opinion = 5 }
+			set_temp_variable = { temp_opinion = 20 }
 			change_the_military_opinion = yes
-			log = "[GetDateText]: [This.GetName]: focus CHI_Affirm_Ties_to_the_Military executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -794,7 +811,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Zeng_Qinghong_Thought executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -835,14 +854,16 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_Intra_Party_Democracy executed"
 			add_political_power = 50
-			add_stability = 0.02
+			add_stability = 0.03
 			set_temp_variable = { temp_opinion = -5 }
 			change_communist_cadres_opinion = yes
-			log = "[GetDateText]: [This.GetName]: focus CHI_Intra_Party_Democracy executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -867,12 +888,14 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.02
 			log = "[GetDateText]: [This.GetName]: focus CHI_Increase_Local_Autonomy executed"
+			add_political_power = 50
+			add_stability = 0.04
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -906,7 +929,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Public_Examinations executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -924,8 +949,8 @@ focus_tree = {
 		available = { has_government = communism }
 
 		completion_reward = {
-			add_stability = -0.05
 			log = "[GetDateText]: [This.GetName]: focus CHI_Succession_Question executed"
+			add_stability = -0.05
 		}
 
 		ai_will_do = {
@@ -939,7 +964,7 @@ focus_tree = {
 
 	focus = {
 		id = CHI_Promote_Youth_League_Members
-		icon = aristocratic_funding
+		icon = china_youth_league
 
 		x = -1
 		y = 5
@@ -976,7 +1001,13 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Promote_Youth_League_Members executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+			modifier = {
+				add = 1
+				is_historical_focus_on = yes
+			}
+		}
 	}
 
 	focus = {
@@ -994,15 +1025,21 @@ focus_tree = {
 		available = { has_government = communism }
 
 		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_Wang_Lijun_Incident executed"
 			add_stability = -0.02
 			if = {
 				limit = { has_start_date < 2016.01.01 }
 				news_event = china_news.3
 			}
-			log = "[GetDateText]: [This.GetName]: focus CHI_Wang_Lijun_Incident executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+			modifier = {
+				add = 1
+				is_historical_focus_on = yes
+			}
+		}
 	}
 
 	focus = {
@@ -1029,7 +1066,7 @@ focus_tree = {
 				expire = "2030.1.1"
 				ideology = Communist-State
 				traits = {
-					engineer
+					ex_engineer
 					emerging_Communist-State
 					rational
 					polished
@@ -1051,7 +1088,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Xi_Jinping_Agenda executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -1095,7 +1134,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Xi_Jinping_Thought executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -1127,7 +1168,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_China_Dream executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -1162,7 +1205,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Flowing_Spring executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -1197,7 +1242,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Xiaokang_Society executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -1226,7 +1273,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Four_Pronged_Comprehensive_Strategy executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -1250,7 +1299,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Third_Plenum executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -1270,11 +1321,17 @@ focus_tree = {
 		available = { has_government = communism }
 
 		completion_reward = {
-			remove_ideas = { one_child_policy }
+			remove_ideas = one_child_policy
+			add_timed_idea = {
+				idea = two_child_policy
+				days = 2920
+			}
 			log = "[GetDateText]: [This.GetName]: focus CHI_2_Child_Policy executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -1300,7 +1357,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Restructure_the_Penal_System executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -1320,11 +1379,16 @@ focus_tree = {
 		available = { has_government = communism }
 
 		completion_reward = {
-			add_stability = 0.01
 			log = "[GetDateText]: [This.GetName]: focus CHI_Establish_the_National_Security_Commission executed"
+			add_stability = 0.02
+			set_temp_variable = { temp_opinion = 5 }
+			change_communist_cadres_opinion = yes
+			change_the_military_opinion = yes
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -1363,6 +1427,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_Anti_Corruption_Campaigns executed"
 			decrease_corruption = yes
 			add_stability = -0.05
 			set_temp_variable = { temp_opinion = -5 }
@@ -1371,10 +1436,11 @@ focus_tree = {
 				limit = { has_start_date < 2016.01.01 }
 				news_event = china_news.4
 			}
-			log = "[GetDateText]: [This.GetName]: focus CHI_Anti_Corruption_Campaigns executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -1411,13 +1477,18 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			army_experience = 20
-			navy_experience = 20
-			air_experience = 20
 			log = "[GetDateText]: [This.GetName]: focus CHI_Establish_the_Central_Group_for_Military_Reform executed"
+			army_experience = 50
+			navy_experience = 50
+			air_experience = 50
+			set_temp_variable = { temp_opinion = 5 }
+			change_communist_cadres_opinion = yes
+			change_the_military_opinion = yes
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -1439,7 +1510,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Scrap_Military_Commands executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -1461,7 +1534,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Cut_Ground_Troop_Numbers executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -1485,7 +1560,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Stamp_Out_Corruption executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -1507,12 +1584,14 @@ focus_tree = {
 				name = CHI_Naval_Capability_Enhancements
 				bonus = 0.2
 				uses = 3
-				category = Cat_NAVAL_EQP
+				category = CAT_naval_eqp
 			}
 			log = "[GetDateText]: [This.GetName]: focus CHI_Naval_Capability_Enhancements executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -1532,14 +1611,16 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = CHI_Aerial_Capability_Enhancements
-				category = air_doctrine
+				category = CAT_air_doctrine
 				uses = 3
 				cost_reduction = 0.2
 			}
 			log = "[GetDateText]: [This.GetName]: focus CHI_Aerial_Capability_Enhancements executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -1562,12 +1643,14 @@ focus_tree = {
 				name = CHI_Network_Centric_Warfare_bonus
 				bonus = 0.2
 				uses = 5
-				category = Cat_NETWORK_CENTRIC_WARFARE
+				category = CAT_land_doctrine
 			}
 			log = "[GetDateText]: [This.GetName]: focus CHI_Network_Centric_Warfare executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -1647,7 +1730,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Weaken_the_Youth_League executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -1680,7 +1765,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Take_Down_the_Big_Tigers executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -1725,7 +1812,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Centralize_Power executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -1766,7 +1855,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Amend_the_Constitution executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -1810,7 +1901,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Remove_Term_Limits executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -1838,7 +1931,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Cult_of_Personality executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -1908,7 +2003,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Promote_Princelings executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -1956,7 +2053,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Bo_Xilai_Agenda executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -1997,7 +2096,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_The_Chongqing_Model executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -2028,7 +2129,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_War_on_Crime executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -2053,11 +2156,15 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_stability = 0.02
 			log = "[GetDateText]: [This.GetName]: focus CHI_JASIC_Labor_Reforms executed"
+			add_stability = 0.04
+			set_temp_variable = { temp_opinion = 5 }
+			change_communist_cadres_opinion = yes
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -2126,7 +2233,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Expand_Welfare executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -2151,15 +2260,16 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_popularity = {
-				ideology = communism
-				popularity = 0.05
-			}
-			recalculate_party = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Red_Culture_Movement executed"
+			add_popularity = { ideology = communism popularity = 0.05 }
+			recalculate_party = yes
+			set_temp_variable = { temp_opinion = 5 }
+			change_communist_cadres_opinion = yes
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -2188,7 +2298,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Humanist_Marxism executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -2239,7 +2351,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Nanjie_Model executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	##INTERNAL SECURITY TREE##
@@ -2261,14 +2375,16 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Preserve_the_Revolution executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
 		id = CHI_Internet_Crackdown
 		icon = cryptography
 
-		x = -5
+		x = -9
 		y = 1
 		relative_position_id = CHI_Preserve_the_Revolution
 
@@ -2282,11 +2398,13 @@ focus_tree = {
 		available = { has_elections = no }
 
 		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_Internet_Crackdown executed"
 			swap_ideas = {
 				remove_idea = censored_nation_01
 				add_idea = closed_nation
 			}
-			log = "[GetDateText]: [This.GetName]: focus CHI_Internet_Crackdown executed"
+			set_temp_variable = { temp_opinion = 5 }
+			change_intelligence_community_opinion = yes
 		}
 
 		ai_will_do = {
@@ -2302,7 +2420,7 @@ focus_tree = {
 		id = CHI_Netizen_Nation
 		icon = global_community
 
-		x = -3
+		x = -5
 		y = 1
 		relative_position_id = CHI_Preserve_the_Revolution
 
@@ -2317,14 +2435,16 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Netizen_Nation executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
 		id = CHI_An_Open_Window
 		icon = concessions
 
-		x = -7
+		x = -10
 		y = 2
 		relative_position_id = CHI_Preserve_the_Revolution
 
@@ -2368,7 +2488,7 @@ focus_tree = {
 		id = CHI_Allow_Foreign_Social_Media
 		icon = social_media
 
-		x = -7
+		x = -9
 		y = 3
 		relative_position_id = CHI_Preserve_the_Revolution
 
@@ -2396,14 +2516,16 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Allow_Foreign_Social_Media executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
 		id = CHI_Liberalize_the_Media
 		icon = liberal_press
 
-		x = -7
+		x = -9
 		y = 4
 		relative_position_id = CHI_Preserve_the_Revolution
 
@@ -2431,14 +2553,16 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Liberalize_the_Media executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
 		id = CHI_Let_a_Hundred_Flowers_Bloom
 		icon = national_unity
 
-		x = -9
+		x = -11
 		y = 3
 		relative_position_id = CHI_Preserve_the_Revolution
 
@@ -2464,14 +2588,16 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Let_a_Hundred_Flowers_Bloom executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
 		id = CHI_Freedom_of_Speech
 		icon = union_negotiations
 
-		x = -9
+		x = -11
 		y = 4
 		relative_position_id = CHI_Preserve_the_Revolution
 
@@ -2499,14 +2625,16 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Freedom_of_Speech executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
 		id = CHI_Question_the_Four_Cardinal_Principles
 		icon = communist_slums
 
-		x = -8
+		x = -10
 		y = 5
 		relative_position_id = CHI_Preserve_the_Revolution
 
@@ -2535,14 +2663,16 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Question_the_Four_Cardinal_Principles executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
 		id = CHI_Unchain_the_8_Democratic_Parties
 		icon = break_free
 
-		x = -9
+		x = -11
 		y = 6
 		relative_position_id = CHI_Preserve_the_Revolution
 
@@ -2579,14 +2709,16 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Unchain_the_8_Democratic_Parties executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
 		id = CHI_De_Politicize_the_Military
 		icon = Fabianist
 
-		x = -7
+		x = -9
 		y = 6
 		relative_position_id = CHI_Preserve_the_Revolution
 
@@ -2626,7 +2758,7 @@ focus_tree = {
 		id = CHI_Free_and_Fair_Elections
 		icon = Election
 
-		x = -8
+		x = -10
 		y = 7
 		relative_position_id = CHI_Preserve_the_Revolution
 
@@ -2694,14 +2826,16 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Free_and_Fair_Elections executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
 		id = CHI_Support_the_Communists
 		icon = communism9
 
-		x = -10
+		x = -12
 		y = 8
 		relative_position_id = CHI_Preserve_the_Revolution
 
@@ -2721,14 +2855,16 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Support_the_Communists executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
 		id = CHI_Support_the_Pro_Western_Coalition
 		icon = chinese_nationalism
 
-		x = -6
+		x = -8
 		y = 8
 		relative_position_id = CHI_Preserve_the_Revolution
 
@@ -2752,14 +2888,16 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Support_the_Pro_Western_Coalition executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
 		id = CHI_Support_the_Non_Aligned_Coalition
 		icon = neutrality
 
-		x = -8
+		x = -10
 		y = 8
 		relative_position_id = CHI_Preserve_the_Revolution
 
@@ -2783,7 +2921,101 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Support_the_Non_Aligned_Coalition executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	focus = {
+		id = CHI_QQ
+		icon = qq
+
+		x = -7
+		y = 3
+		relative_position_id = CHI_Preserve_the_Revolution
+
+		prerequisite = { focus = CHI_An_Open_Window focus = CHI_Golden_Shield_Project }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		cost = 5
+		completion_reward = {
+			CHI_censored_nation_level_up = yes
+			set_temp_variable = { percent_change = 5 }
+			change_domestic_influence_percentage = yes
+			log = "[GetDateText]: [This.GetName]: focus CHI_QQ executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	focus = {
+		id = CHI_WeChat
+		icon = wechat
+
+		x = -7
+		y = 4
+		relative_position_id = CHI_Preserve_the_Revolution
+
+		prerequisite = { focus = CHI_QQ }
+
+		available = { has_tech = internet4 }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		cost = 5
+		completion_reward = {
+			add_political_power = 150
+			set_temp_variable = { percent_change = 5 }
+			change_domestic_influence_percentage = yes
+			log = "[GetDateText]: [This.GetName]: focus CHI_WeChat executed"
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				date > 2011.1.21
+			}
+		}
+	}
+
+	focus = {
+		id = CHI_Study_and_Strengthen_Nation
+		icon = xuexi_qiangguo
+
+		x = -7
+		y = 5
+		relative_position_id = CHI_Preserve_the_Revolution
+
+		prerequisite = { focus = CHI_WeChat }
+
+		available = {
+			has_tech = internet4
+			has_country_leader = {
+				name = "Xi Jinping"
+				ruling_only = yes
+			}
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		cost = 5
+		completion_reward = {
+			add_ideas = CHI_studyding_strengthen
+			set_temp_variable = { percent_change = 5 }
+			change_domestic_influence_percentage = yes
+			log = "[GetDateText]: [This.GetName]: focus CHI_Study_and_Strengthen_Nation executed"
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				date > 2019.1.1
+			}
+		}
 	}
 
 	focus = {
@@ -2796,9 +3028,16 @@ focus_tree = {
 
 		prerequisite = { focus = CHI_An_Open_Window focus = CHI_Golden_Shield_Project }
 
+		available = {
+			OR = {
+				has_tech = internet3
+				has_tech = computing3
+			}
+		}
+
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		cost = 8.58
+		cost = 1
 		completion_reward = {
 			add_political_power = 100
 			set_temp_variable = { percent_change = 3 }
@@ -2806,12 +3045,18 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Sina_Weibo executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				date > 2009.8.14
+			}
+		}
 	}
 
 	focus = {
-		id = CHI_WeChat
-		icon = Wechat
+		id = CHI_Bilibili
+		icon = bilibili
 
 		x = -5
 		y = 4
@@ -2819,17 +3064,114 @@ focus_tree = {
 
 		prerequisite = { focus = CHI_Sina_Weibo }
 
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		cost = 8.58
-		completion_reward = {
-			add_political_power = 150
-			set_temp_variable = { percent_change = 5 }
-			change_domestic_influence_percentage = yes
-			log = "[GetDateText]: [This.GetName]: focus CHI_WeChat executed"
+		available = {
+			OR = {
+				has_tech = internet4
+				has_tech = computing4
+			}
 		}
 
-		ai_will_do = { base = 1 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		cost = 5
+		completion_reward = {
+			set_temp_variable = { percent_change = 5 }
+			change_domestic_influence_percentage = yes
+			country_event = china.57
+			log = "[GetDateText]: [This.GetName]: focus CHI_Bilibili executed"
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				date > 2011.6.25
+			}
+		}
+	}
+
+
+	focus = {
+		id = CHI_Mihoyo
+		icon = mihoyo
+
+		x = -5
+		y = 5
+		relative_position_id = CHI_Preserve_the_Revolution
+
+		prerequisite = { focus = CHI_Bilibili }
+
+		available = {
+			OR = {
+				has_tech = internet4
+				has_tech = computing4
+			}
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		cost = 5
+		completion_reward = {
+			set_temp_variable = { treasury_change = 15 }
+			modify_treasury_effect = yes
+			every_other_country = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = CHI }
+				set_temp_variable = { influence_target = THIS }
+				change_influence_percentage = yes
+			}
+			news_event = china_news.38
+			log = "[GetDateText]: [This.GetName]: focus CHI_Mihoyo executed"
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				date > 2016.2.13
+			}
+		}
+	}
+
+	focus = {
+		id = CHI_Tik_Tok
+		icon = tik_tok
+
+		x = -5
+		y = 6
+		relative_position_id = CHI_Preserve_the_Revolution
+
+		prerequisite = { focus = CHI_Mihoyo }
+
+		available = {
+			OR = {
+				has_tech = internet4
+				has_tech = computing4
+			}
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		cost = 5
+		completion_reward = {
+			set_temp_variable = { treasury_change = 15 }
+			modify_treasury_effect = yes
+			every_other_country = {
+				set_temp_variable = { percent_change = 2 }
+				set_temp_variable = { tag_index = CHI }
+				set_temp_variable = { influence_target = THIS }
+				change_influence_percentage = yes
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Tik_Tok executed"
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				date > 2016.9.20
+			}
+		}
 	}
 
 	focus = {
@@ -2847,11 +3189,13 @@ focus_tree = {
 
 		cost = 10
 		completion_reward = {
-			CHI_censored_nation_level_up = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Golden_Shield_Project executed"
+			CHI_censored_nation_level_up = yes
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -2868,6 +3212,7 @@ focus_tree = {
 
 		cost = 7
 		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_50_Cent_Army executed"
 			set_temp_variable = { treasury_change = -1 }
 			modify_treasury_effect = yes
 			every_other_country = {
@@ -2883,10 +3228,11 @@ focus_tree = {
 				set_temp_variable = { influence_target = THIS }
 				change_influence_percentage = yes
 			}
-			log = "[GetDateText]: [This.GetName]: focus CHI_50_Cent_Army executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -2909,7 +3255,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_The_Great_Firewall_of_China executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -2934,7 +3282,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Facial_Recognition_Surveillance executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -2955,7 +3305,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Social_Credit_Scheme executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -2980,7 +3332,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Skynet executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -2997,8 +3351,9 @@ focus_tree = {
 
 		cost = 7
 		completion_reward = {
-			set_temp_variable = { temp_opinion = 5 }
+			set_temp_variable = { temp_opinion = 8 }
 			change_the_military_opinion = yes
+			change_communist_cadres_opinion = yes
 			if = { limit = { NOT = { has_dlc = "La Resistance" } }
 				custom_effect_tooltip = CHI_technology_inferior_tt
 			}
@@ -3006,7 +3361,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_PLA_Cyber_Army executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -3036,7 +3393,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Industrial_Espionage executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -3066,7 +3425,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Global_Propaganda_Network executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -3092,12 +3453,14 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Business_First executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
 		id = CHI_Mandate_Backdoors
-		icon = political_pressure
+		icon = mozilla_thunderbird
 
 		x = -1
 		y = 5
@@ -3119,7 +3482,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Mandate_Backdoors executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -3137,11 +3502,13 @@ focus_tree = {
 
 		cost = 7
 		completion_reward = {
-			add_stability = 0.05
 			log = "[GetDateText]: [This.GetName]: focus CHI_Proper_State_Atheism executed"
+			add_stability = 0.05
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -3158,13 +3525,15 @@ focus_tree = {
 
 		cost = 10
 		completion_reward = {
-			add_political_power = 50
-			set_temp_variable = { temp_opinion = 5 }
+			add_political_power = 75
+			set_temp_variable = { temp_opinion = 10 }
 			change_communist_cadres_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Crush_the_Falun_Gong executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -3188,12 +3557,14 @@ focus_tree = {
 			change_communist_cadres_opinion = yes
 			set_temp_variable = { modify_uighur_threat = -10 }
 			CHI_modify_uighur_threat = yes
-			set_temp_variable = { modify_uighur_opinion = -10 }
+			set_temp_variable = { modify_uighur_opinion = -5 }
 			CHI_modify_uighur_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Combat_Islamism executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -3217,17 +3588,19 @@ focus_tree = {
 			change_communist_cadres_opinion = yes
 			set_temp_variable = { modify_uighur_threat = -20 }
 			CHI_modify_uighur_threat = yes
-			set_temp_variable = { modify_uighur_opinion = -20 }
+			set_temp_variable = { modify_uighur_opinion = -10 }
 			CHI_modify_uighur_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Crush_the_Turkistan_Islamic_Party executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
 		id = CHI_Xinjiang_Reeducation_Camps
-		icon = anti_immigration2
+		icon = self_management
 
 		x = 3
 		y = 4
@@ -3246,7 +3619,7 @@ focus_tree = {
 			change_communist_cadres_opinion = yes
 			set_temp_variable = { modify_uighur_threat = -40 }
 			CHI_modify_uighur_threat = yes
-			set_temp_variable = { modify_uighur_opinion = -40 }
+			set_temp_variable = { modify_uighur_opinion = -15 }
 			CHI_modify_uighur_opinion = yes
 			every_other_country = {
 				country_event = {
@@ -3256,7 +3629,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Xinjiang_Reeducation_Camps executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -3319,7 +3694,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Release_the_Falun_Gong executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -3346,7 +3723,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Return_of_the_Dalai_Lama executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -3363,7 +3742,10 @@ focus_tree = {
 
 		cost = 6
 
-		available = { controls_state = 592 }
+		available = {
+			controls_state = 591
+			controls_state = 592
+		}
 
 		completion_reward = {
 			set_temp_variable = { temp_opinion = -10 }
@@ -3379,7 +3761,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Declassify_the_Turkistan_Islamic_Party executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -3396,8 +3780,11 @@ focus_tree = {
 
 		cost = 6
 
-		available = { controls_state = 592 
-					  has_completed_focus = CHI_Extend_Interpretation_of_the_Systems }
+		available = {
+			controls_state = 591
+			controls_state = 592
+			has_completed_focus = CHI_Extend_Interpretation_of_the_Systems
+		}
 
 		completion_reward = {
 			set_temp_variable = { temp_opinion = -5 }
@@ -3409,7 +3796,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Deescalate_the_Xinjiang_Conflict executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -3426,11 +3815,16 @@ focus_tree = {
 
 		cost = 7.9
 
-		available = { controls_state = 592 }
+		available = {
+			controls_state = 591
+			controls_state = 592
+			has_completed_focus = CHI_Extend_Interpretation_of_the_Systems
+		}
 
 		completion_reward = {
 			add_stability = -0.1
 			custom_effect_tooltip = CHI_ETK_RAJ_tt
+			custom_effect_tooltip = CHI_ETK_SAR_tt
 			hidden_effect = {
 				set_variable = {
 					var = uighur_threat
@@ -3439,239 +3833,6 @@ focus_tree = {
 				set_variable = {
 					var = uighur_opinion
 					value = 20
-				}
-			}
-			release_autonomy = {
-				target = ETK
-				autonomy_state = autonomy_special_administrative_region_ETK
-			}
-			ETK = {
-				set_cosmetic_tag = ETK_autonomy_special_administrative_region
-				clr_country_flag = dynamic_flag
-				add_ideas = { Non_State_Actor }
-			}
-			hidden_effect = {
-				if = {
-					limit = { has_government = communism }
-					ETK = {
-						set_popularities = {
-							democratic = 0.0
-							communism = 51.0
-							fascism = 8.0
-							neutrality = 41.0
-							nationalist = 0.0
-						}
-						set_variable = { party_pop_array^4 = 0.40 } #Communist
-						set_variable = { party_pop_array^5 = 0.04 } #Socialist
-						set_variable = { party_pop_array^6 = 0.07 } #Reactionary
-						set_variable = { party_pop_array^10 = 0.05 } #Kingdom
-						set_variable = { party_pop_array^11 = 0.03 } #Caliphate
-						set_variable = { party_pop_array^12 = 0.33 } #Neutral_Muslim_Brotherhood
-						set_variable = { party_pop_array^19 = 0.08 } #Maoist
-						clear_array = ruling_party
-						clear_array = gov_coalition_array
-						add_to_array = { ruling_party = 4 }
-						if = {
-							limit = { CHI = { has_elections = no } }
-							set_politics = {
-								ruling_party = communism
-								elections_allowed = no
-							}
-						}
-						else = {
-							set_politics = {
-								ruling_party = communism
-								elections_allowed = yes
-							}
-						}
-						update_government_coalition_strength = yes
-						update_party_name = yes
-						set_coalition_drift = yes
-						recalculate_party = yes
-						set_variable = { var = debt value = 0 }
-						set_variable = { var = int_investments value = 0 }
-						set_variable = { var = treasury value = 12 }
-						set_variable = { var = corporate_tax_rate value = 13 }
-						set_variable = { var = population_tax_rate value = 15 }
-						set_variable = { military_factory_employment_var = 1 }
-						set_variable = { civilian_factory_employment_var = 1 }
-						set_variable = { naval_factory_employment_var = 1 }
-						set_variable = { office_employment_var = 1 }
-						add_ideas = {
-							widespread_corruption
-							sunni
-							stable_growth
-							defence_00
-							edu_04
-							health_05
-							social_03
-							bureau_03
-							police_03
-							no_military
-							no_women_in_military
-							communist_cadres
-							international_bankers
-							the_ulema
-						}
-					}
-				}
-				else_if = {
-					limit = { has_government = democratic }
-					ETK = {
-						set_popularities = {
-							democratic = 51.0
-							communism = 0.0
-							fascism = 8.0
-							neutrality = 41.0
-							nationalist = 0.0
-						}
-						set_variable = { party_pop_array^1 = 0.40 } #conservatism
-						set_variable = { party_pop_array^3 = 0.11 } #socialism
-						set_variable = { party_pop_array^10 = 0.05 } #Kingdom
-						set_variable = { party_pop_array^11 = 0.03 } #Caliphate
-						set_variable = { party_pop_array^12 = 0.33 } #Neutral_Muslim_Brotherhood
-						set_variable = { party_pop_array^19 = 0.08 } #Maoist
-						clear_array = ruling_party
-						clear_array = gov_coalition_array
-						add_to_array = { ruling_party = 1 }
-						set_politics = {
-							ruling_party = democratic
-							elections_allowed = yes
-						}
-						update_government_coalition_strength = yes
-						update_party_name = yes
-						set_coalition_drift = yes
-						recalculate_party = yes
-						set_variable = { var = debt value = 0 }
-						set_variable = { var = int_investments value = 0 }
-						set_variable = { var = treasury value = 12 }
-						set_variable = { var = corporate_tax_rate value = 13 }
-						set_variable = { var = population_tax_rate value = 15 }
-						add_ideas = {
-							widespread_corruption
-							sunni
-							stable_growth
-							defence_00
-							edu_04
-							health_05
-							social_03
-							bureau_03
-							police_03
-							no_military
-							no_women_in_military
-							international_bankers
-							farmers
-							the_ulema
-						}
-					}
-				}
-				else_if = {
-					limit = { has_government = neutrality }
-					ETK = {
-						set_variable = { party_pop_array^10 = 0.05 } #Kingdom
-						set_variable = { party_pop_array^11 = 0.03 } #Caliphate
-						set_variable = { party_pop_array^12 = 0.31 } #Neutral_Muslim_Brotherhood
-						set_variable = { party_pop_array^14 = 0.33 } #Neutral_conservatism
-						set_variable = { party_pop_array^18 = 0.10 } #social
-						set_variable = { party_pop_array^19 = 0.18 } #Maoist
-						clear_array = ruling_party
-						clear_array = gov_coalition_array
-						add_to_array = { ruling_party = 14 }
-						set_politics = {
-							ruling_party = neutrality
-							elections_allowed = yes
-						}
-						set_popularities = {
-							democratic = 0.0
-							communism = 0.0
-							fascism = 8.0
-							neutrality = 92.0
-							nationalist = 0.0
-						}
-						update_government_coalition_strength = yes
-						update_party_name = yes
-						set_coalition_drift = yes
-						recalculate_party = yes
-						set_variable = { var = debt value = 0 }
-						set_variable = { var = int_investments value = 0 }
-						set_variable = { var = treasury value = 12 }
-						set_variable = { var = corporate_tax_rate value = 13 }
-						set_variable = { var = population_tax_rate value = 15 }
-						add_ideas = {
-							widespread_corruption
-							sunni
-							stable_growth
-							defence_00
-							edu_04
-							health_05
-							social_03
-							bureau_03
-							police_03
-							no_military
-							no_women_in_military
-							international_bankers
-							farmers
-							the_ulema
-						}
-					}
-				}
-				else_if = {
-					limit = { has_government = nationalist }
-					ETK = {
-						set_variable = { party_pop_array^10 = 0.05 } #Kingdom
-						set_variable = { party_pop_array^11 = 0.03 } #Caliphate
-						set_variable = { party_pop_array^12 = 0.33 } #Neutral_Muslim_Brotherhood
-						set_variable = { party_pop_array^19 = 0.08 } #Maoist
-						set_variable = { party_pop_array^22 = 0.51 } #Nat_Autocracy
-						clear_array = ruling_party
-						clear_array = gov_coalition_array
-						add_to_array = { ruling_party = 22 }
-						if = {
-							limit = { CHI = { has_elections = no } }
-							set_politics = {
-								ruling_party = nationalist
-								elections_allowed = no
-							}
-						}
-						else = {
-							set_politics = {
-								ruling_party = nationalist
-								elections_allowed = yes
-							}
-						}
-						set_popularities = {
-							democratic = 0.0
-							communism = 0.0
-							fascism = 8.0
-							neutrality = 41.0
-							nationalist = 51.0
-						}
-						update_government_coalition_strength = yes
-						update_party_name = yes
-						set_coalition_drift = yes
-						recalculate_party = yes
-						set_variable = { var = debt value = 0 }
-						set_variable = { var = int_investments value = 0 }
-						set_variable = { var = treasury value = 12 }
-						set_variable = { var = corporate_tax_rate value = 13 }
-						set_variable = { var = population_tax_rate value = 15 }
-						add_ideas = {
-							widespread_corruption
-							sunni
-							stable_growth
-							defence_00
-							edu_04
-							health_05
-							social_03
-							bureau_03
-							police_03
-							no_military
-							no_women_in_military
-							international_bankers
-							farmers
-							the_ulema
-						}
-					}
 				}
 			}
 			set_temp_variable = { temp_opinion = -5 }
@@ -3686,7 +3847,7 @@ focus_tree = {
 			base = 1
 			modifier = {
 				factor = 0
-				has_global_flag = PRC_RED_DAWN_FOCUS_PATH
+				has_global_flag = CHI_RED_DAWN_FOCUS_PATH
 			}
 		}
 	}
@@ -3694,7 +3855,7 @@ focus_tree = {
 	##ONE CHINA TREE ##
 	focus = {
 		id = CHI_One_China_Policy
-		icon = one_china_policy_ext
+		icon = one_china_policy_prc
 
 		x = 13
 		y = 0
@@ -3707,7 +3868,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_One_China_Policy executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -3735,9 +3898,10 @@ focus_tree = {
 			base = 1
 			modifier = {
 				factor = 0
-				OR = { has_global_flag = PRC_CHINESE_HEGEMONY_FOCUS_PATH
-					   has_global_flag = PRC_RED_DAWN_FOCUS_PATH
-					  }
+				OR = {
+					has_global_flag = CHI_CHINESE_HEGEMONY_FOCUS_PATH
+					has_global_flag = CHI_RED_DAWN_FOCUS_PATH
+				}
 			}
 		}
 	}
@@ -3760,7 +3924,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Extend_Interpretation_of_the_Systems executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -3808,14 +3974,16 @@ focus_tree = {
 		available = { HKG = { is_subject_of = CHI } }
 
 		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_The_NPCSC_Decision_on_Hong_Kong executed"
 			if = {
 				limit = { has_start_date < 2016.01.01 }
 				country_event = { id = china.28 }
 			}
-			log = "[GetDateText]: [This.GetName]: focus CHI_The_NPCSC_Decision_on_Hong_Kong executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -3833,10 +4001,8 @@ focus_tree = {
 		available = { HKG = { is_subject_of = CHI } }
 
 		completion_reward = {
-			country_event = {
-				id = china.29
-			}
 			log = "[GetDateText]: [This.GetName]: focus CHI_Hong_Kong_Future executed"
+			country_event = china.29
 		}
 
 		ai_will_do = {
@@ -3862,23 +4028,25 @@ focus_tree = {
 
 		cost = 5
 
-		available = { controls_state = 589
-					  has_completed_focus = CHI_Greater_Freedom_of_Religion }
+		available = {
+			controls_state = 589
+			has_completed_focus = CHI_Greater_Freedom_of_Religion
+		}
 
 		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_Greater_Tibetan_Autonomy executed"
 			add_stability = 0.02
 			set_temp_variable = { temp_opinion = -5 }
 			change_communist_cadres_opinion = yes
 			585 = { add_core_of = TIB }
 			588 = { add_core_of = TIB }
-			log = "[GetDateText]: [This.GetName]: focus CHI_Greater_Tibetan_Autonomy executed"
 		}
 
 		ai_will_do = {
 			base = 1
 			modifier = {
 				factor = 0
-				has_global_flag = PRC_RED_DAWN_FOCUS_PATH
+				has_global_flag = CHI_RED_DAWN_FOCUS_PATH
 			}
 		}
 	}
@@ -3896,245 +4064,18 @@ focus_tree = {
 
 		cost = 7.9
 
-		available = { controls_state = 589 }
-
-		bypass = { TIB = { is_subject = yes } }
+		available = {
+			controls_state = 589
+			has_completed_focus = CHI_Extend_Interpretation_of_the_Systems
+		}
+		bypass = {
+			TIB = { is_subject = yes }
+		}
 
 		completion_reward = {
 			add_stability = -0.1
 			custom_effect_tooltip = CHI_TIB_RAJ_tt
-			release_autonomy = {
-				target = TIB
-				autonomy_state = autonomy_special_administrative_region_TIB
-			}
-			TIB = {
-				set_cosmetic_tag = TIB_autonomy_special_administrative_region
-				clr_country_flag = dynamic_flag
-				add_ideas = { Non_State_Actor }
-			}
-			hidden_effect = {
-				585 = { remove_claim_by = TIB }
-				588 = { remove_claim_by = TIB }
-
-				if = {
-					limit = { has_government = communism }
-					TIB = {
-						set_popularities = {
-							democratic = 0.0
-							communism = 51.0
-							fascism = 0.0
-							neutrality = 8.0
-							nationalist = 41.0
-						}
-						set_variable = { party_pop_array^4 = 0.40 } #Communist
-						set_variable = { party_pop_array^5 = 0.04 } #Socialist
-						set_variable = { party_pop_array^6 = 0.06 } #Reactionary
-						set_variable = { party_pop_array^19 = 0.08 } #Maoist
-						set_variable = { party_pop_array^20 = 0.03 } #Populist
-						set_variable = { party_pop_array^23 = 0.39 } #Monarchist
-						clear_array = ruling_party
-						clear_array = gov_coalition_array
-						add_to_array = { ruling_party = 4 }
-						if = {
-							limit = { CHI = { has_elections = no } }
-							set_politics = {
-								ruling_party = communism
-								elections_allowed = no
-							}
-						}
-						else = {
-							set_politics = {
-								ruling_party = communism
-								elections_allowed = yes
-							}
-						}
-						update_government_coalition_strength = yes
-						update_party_name = yes
-						set_coalition_drift = yes
-						recalculate_party = yes
-						set_variable = { var = debt value = 0 }
-						set_variable = { var = int_investments value = 0 }
-						set_variable = { var = treasury value = 12 }
-						set_variable = { var = corporate_tax_rate value = 13 }
-						set_variable = { var = population_tax_rate value = 15 }
-						set_variable = { military_factory_employment_var = 1 }
-						set_variable = { civilian_factory_employment_var = 1 }
-						set_variable = { naval_factory_employment_var = 1 }
-						set_variable = { office_employment_var = 1 }
-						add_ideas = {
-							widespread_corruption
-							buddism
-							stable_growth
-							defence_00
-							edu_04
-							health_05
-							social_03
-							bureau_03
-							police_03
-							no_military
-							no_women_in_military
-							communist_cadres
-							farmers
-							the_priesthood
-						}
-					}
-				}
-				else_if = {
-					limit = { has_government = democratic }
-					TIB = {
-						set_popularities = {
-							democratic = 44.0
-							communism = 0.0
-							fascism = 0.0
-							neutrality = 15.0
-							nationalist = 41.0
-						}
-						set_variable = { party_pop_array^1 = 0.34 } #conservatism
-						set_variable = { party_pop_array^3 = 0.10 } #social
-						set_variable = { party_pop_array^19 = 0.15 } #Maoist
-						set_variable = { party_pop_array^20 = 0.02 } #Populist
-						set_variable = { party_pop_array^23 = 0.39 } #Monarchist
-						clear_array = ruling_party
-						clear_array = gov_coalition_array
-						add_to_array = { ruling_party = 1 }
-						set_politics = {
-							ruling_party = democratic
-							elections_allowed = yes
-						}
-						update_government_coalition_strength = yes
-						update_party_name = yes
-						set_coalition_drift = yes
-						recalculate_party = yes
-						set_variable = { var = debt value = 0 }
-						set_variable = { var = int_investments value = 0 }
-						set_variable = { var = treasury value = 12 }
-						set_variable = { var = corporate_tax_rate value = 13 }
-						set_variable = { var = population_tax_rate value = 15 }
-						add_ideas = {
-							widespread_corruption
-							buddism
-							stable_growth
-							defence_00
-							edu_04
-							health_05
-							social_03
-							bureau_03
-							police_03
-							no_military
-							no_women_in_military
-							landowners
-							farmers
-							the_priesthood
-						}
-					}
-				}
-				else_if = {
-					limit = { has_government = neutrality }
-					TIB = {
-						set_popularities = {
-							democratic = 0.0
-							communism = 0.0
-							fascism = 0.0
-							neutrality = 59.0
-							nationalist = 41.0
-						}
-						set_variable = { party_pop_array^14 = 0.31 } #Neutral_conservatism
-						set_variable = { party_pop_array^18 = 0.10 } #social
-						set_variable = { party_pop_array^19 = 0.18 } #Maoist
-						set_variable = { party_pop_array^20 = 0.02 } #Populist
-						set_variable = { party_pop_array^23 = 0.39 } #Monarchist
-						clear_array = ruling_party
-						clear_array = gov_coalition_array
-						add_to_array = { ruling_party = 14 }
-						set_politics = {
-							ruling_party = neutrality
-							elections_allowed = yes
-						}
-						update_government_coalition_strength = yes
-						update_party_name = yes
-						set_coalition_drift = yes
-						recalculate_party = yes
-						set_variable = { var = debt value = 0 }
-						set_variable = { var = int_investments value = 0 }
-						set_variable = { var = treasury value = 12 }
-						set_variable = { var = corporate_tax_rate value = 13 }
-						set_variable = { var = population_tax_rate value = 15 }
-						add_ideas = {
-							widespread_corruption
-							buddism
-							stable_growth
-							defence_00
-							edu_04
-							health_05
-							social_03
-							bureau_03
-							police_03
-							no_military
-							no_women_in_military
-							landowners
-							farmers
-							the_priesthood
-						}
-					}
-				}
-				else_if = {
-					limit = { has_government = nationalist }
-					TIB = {
-						set_popularities = {
-							democratic = 0.0
-							communism = 0.0
-							fascism = 0.0
-							neutrality = 24.0
-							nationalist = 76.0
-						}
-						set_variable = { party_pop_array^18 = 0.06 } #social
-						set_variable = { party_pop_array^19 = 0.18 } #Maoist
-						set_variable = { party_pop_array^22 = 0.37 } #Nat_Autocracy
-						set_variable = { party_pop_array^23 = 0.39 } #Monarchist
-						clear_array = ruling_party
-						clear_array = gov_coalition_array
-						add_to_array = { ruling_party = 22 }
-						if = {
-							limit = { CHI = { has_elections = no } }
-							set_politics = {
-								ruling_party = nationalist
-								elections_allowed = no
-							}
-						}
-						else = {
-							set_politics = {
-								ruling_party = nationalist
-								elections_allowed = yes
-							}
-						}
-						update_government_coalition_strength = yes
-						update_party_name = yes
-						set_coalition_drift = yes
-						recalculate_party = yes
-						set_variable = { var = debt value = 0 }
-						set_variable = { var = int_investments value = 0 }
-						set_variable = { var = treasury value = 12 }
-						set_variable = { var = corporate_tax_rate value = 13 }
-						set_variable = { var = population_tax_rate value = 15 }
-						add_ideas = {
-							widespread_corruption
-							buddism
-							stable_growth
-							defence_00
-							edu_04
-							health_05
-							social_03
-							bureau_03
-							police_03
-							no_military
-							no_women_in_military
-							landowners
-							labour_unions
-							the_priesthood
-						}
-					}
-				}
-			}
+			custom_effect_tooltip = CHI_TIB_SAR_tt
 			set_temp_variable = { temp_opinion = -5 }
 			change_communist_cadres_opinion = yes
 			country_event = {
@@ -4143,7 +4084,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Tibet_SAR executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -4164,6 +4107,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_Dialogue_with_the_Taiwan_Self_Government executed"
 			TAI = {
 				add_opinion_modifier = {
 					target = CHI
@@ -4176,10 +4120,11 @@ focus_tree = {
 					modifier = political_outreach
 				}
 			}
-			log = "[GetDateText]: [This.GetName]: focus CHI_Dialogue_with_the_Taiwan_Self_Government executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -4207,15 +4152,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_opinion_modifier = {
-				target = TAI
-				modifier = three_links
-			}
+			add_opinion_modifier = { target = TAI modifier = three_links }
 			TAI = {
-				add_opinion_modifier = {
-					target = CHI
-					modifier = three_links
-				}
+				add_opinion_modifier = { target = CHI modifier = three_links }
 				set_temp_variable = { party_index = 1 }
 				set_temp_variable = { party_popularity_increase = 0.02 }
 				add_relative_party_popularity = yes
@@ -4229,7 +4168,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Three_Links executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -4265,11 +4206,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_Cross_Strait_Service_Trade_Agreement executed"
 			TAI = {
 				if = { limit = { has_start_date < 2016.01.01 }
-					country_event = {
-						id = china.23
-					}
+					country_event = china.23
 				}
 				set_temp_variable = { party_index = 1 }
 				set_temp_variable = { party_popularity_increase = 0.02 }
@@ -4277,10 +4217,11 @@ focus_tree = {
 				set_temp_variable = { party_index = 2 }
 				add_relative_party_popularity = yes
 			}
-			log = "[GetDateText]: [This.GetName]: focus CHI_Cross_Strait_Service_Trade_Agreement executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -4320,15 +4261,15 @@ focus_tree = {
 			news_event = china_news.21
 			hidden_effect = {
 				TAI = {
-					country_event = {
-						id = taiwan.8
-					}
+					country_event = taiwan.8
 				}
 			}
 			log = "[GetDateText]: [This.GetName]: focus CHI_Propose_Roadmap_to_Reunification executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -4357,23 +4298,11 @@ focus_tree = {
 			set_temp_variable = { modify_uighur_threat = 10 }
 			CHI_modify_uighur_threat = yes
 			add_stability = -0.05
-			remove_opinion_modifier = {
-				modifier = one_china_policy
-				target = TAI
-			}
-			add_opinion_modifier = {
-				modifier = reduced_tensions
-				target = TAI
-			}
+			remove_opinion_modifier = { modifier = one_china_policy target = TAI }
+			add_opinion_modifier = { modifier = reduced_tensions target = TAI }
 			TAI = {
-				remove_opinion_modifier = {
-					modifier = one_china_policy
-					target = CHI
-				}
-				add_opinion_modifier = {
-					modifier = reduced_tensions
-					target = CHI
-				}
+				remove_opinion_modifier = { modifier = one_china_policy target = CHI }
+				add_opinion_modifier = { modifier = reduced_tensions target = CHI }
 				set_temp_variable = { party_index = 1 }
 				set_temp_variable = { party_popularity_increase = -0.1 }
 				add_relative_party_popularity = yes
@@ -4437,7 +4366,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Peaceful_Co_Existence executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -4482,7 +4413,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Free_Trade_Zone executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -4519,7 +4452,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Technology_Sharing executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -4561,6 +4496,8 @@ focus_tree = {
 				}
 				remove_claim_by = TAI
 				}
+				496 = { remove_claim_by = TAI }
+				722 = { remove_claim_by = TAI }
 				1011 = { remove_claim_by = TAI }
 				every_state = { #add core for current own
 				limit = {
@@ -4575,11 +4512,19 @@ focus_tree = {
 					remove_state_core = 598
 					remove_state_core = 599
 					remove_state_core = 600
-					remove_state_core = 430
-					remove_state_core = 1109
+					remove_state_core = 1155
+					remove_state_core = 1156
+					remove_state_core = 1157
+					remove_state_core = 1158
+					transfer_state = 430
 					transfer_state = 491
 					transfer_state = 1015
+					transfer_state = 1109
+					add_state_core = 491
+					430 = { remove_core_of = TAI }
+					491 = { remove_core_of = TAI }
 					1015 = { remove_core_of = TAI }
+					1109 = { remove_core_of = TAI }
 				}
 			}
 			set_temp_variable = { modify_chinese_aggression = -2 }
@@ -4587,7 +4532,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Settle_Territorial_Disputes executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -4636,7 +4583,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Sign_an_Armistice executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -4680,7 +4629,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Military_Cooperation executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -4720,7 +4671,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Establish_Joint_Control_Zones executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -4736,7 +4689,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_CHI_AGGRESSION }
 
-		cost = 7
+		cost = 1
 
 		available = {
 			NOT = { has_war_with = TAI }
@@ -4771,7 +4724,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Recognize_an_Independent_Taiwan executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -4784,7 +4739,7 @@ focus_tree = {
 
 		prerequisite = { focus = CHI_Recognize_an_Independent_Taiwan focus = CHI_Establish_Taiwan_SAR }
 
-		cost = 7
+		cost = 1
 
 		available = {
 			AND = { NOT = { is_in_faction = yes }
@@ -4857,12 +4812,14 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_A_New_United_Front executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
 		id = CHI_Anti_Japanese_Communique
-		icon = japanese_imperialism
+		icon = japanese_kamikaze
 
 		x = -2
 		y = 12
@@ -4872,7 +4829,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 
-		cost = 10
+		cost = 2
 
 		available = {
 			OR = { NOT = { has_war_with = TAI }
@@ -4974,7 +4931,7 @@ focus_tree = {
 
 		prerequisite = { focus = CHI_A_New_United_Front focus = CHI_Gateway_To_Pacific }
 
-		cost = 10
+		cost = 2
 
 
 		available = {
@@ -5044,7 +5001,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Back_a_Coup executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -5076,7 +5035,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Gain_Support_of_Military_Elements executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 
 	}
 
@@ -5112,7 +5073,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_The_Fifth_Column executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -5125,15 +5088,17 @@ focus_tree = {
 
 		bypass = { TAI = { is_subject_of = CHI } }
 
-		prerequisite = { focus = CHI_The_Fifth_Column focus = CHI_Sign_an_Armistice focus = CHI_Resume_the_Civil_War }
+		prerequisite = { focus = CHI_The_Fifth_Column focus = CHI_Sign_an_Armistice }
 		mutually_exclusive = { focus = CHI_Recognize_an_Independent_Taiwan focus = CHI_End_of_ROC }
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
-		cost = 7
+		cost = 1
 
 		available = {
 			country_exists = TAI
+			has_completed_focus = CHI_Extend_Interpretation_of_the_Systems
+			NOT = { has_country_flag = CHI_taiwan_strait_war }
 			OR = { AND = { NOT = { has_war_with = TAI }
 				   if = {
 				   limit = { TAI = { NOT = { has_country_flag = TAI_coup_success } } }
@@ -5171,156 +5136,20 @@ focus_tree = {
 				}
 			}
 			}
-			AND = { has_war_with = TAI
-					TAI = { has_capitulated = yes }
-				}
 			}
 		}
 
 		completion_reward = {
 			set_temp_variable = { temp_opinion = 5 }
 			change_communist_cadres_opinion = yes
-			set_autonomy = {
-				target = TAI
-				autonomy_state = autonomy_special_administrative_region_TAI
-			}
-			if = {
-				limit = {
-					has_government = communism
-					OR = {
-						TAI = { has_country_flag = TAI_coup_success }
-						has_completed_focus = CHI_Resume_the_Civil_War
-					}
-				}
-				hidden_effect = {
-					TAI = {
-						set_politics = {
-							ruling_party = communism
-							elections_allowed = no
-						}
-						set_popularities = {
-							democratic = 59.0
-							communism = 37.0
-							fascism = 0.0
-							neutrality = 4.0
-							nationalist = 0.0
-						}
-						set_variable = { party_pop_array^1 = 0.320 } #conservatism
-						set_variable = { party_pop_array^2 = 0.270 } #liberalism
-						set_variable = { party_pop_array^6 = 0.370 } #Reactionary
-						set_variable = { party_pop_array^14 = 0.03 } #Neutral_conservatism
-						set_variable = { party_pop_array^18 = 0.01 } #neutral_Social
-						clear_array = ruling_party
-						clear_array = gov_coalition_array
-						add_to_array = { ruling_party = 6 }
-						update_government_coalition_strength = yes
-						update_party_name = yes
-						set_coalition_drift = yes
-						recalculate_party = yes
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					OR = {
-						AND = {
-							TAI = { NOT = { has_country_flag = TAI_coup_success } }
-							CHI = { NOT = { has_completed_focus = CHI_Resume_the_Civil_War } }
-						}
-						NOT = { has_government = communism }
-					}
-				}
-				hidden_effect = {
-					TAI = {
-						set_politics = {
-							ruling_party = democratic
-							elections_allowed = yes
-						}
-						set_popularities = {
-							democratic = 68.0
-							communism = 0.5
-							fascism = 0.0
-							neutrality = 31.5
-							nationalist = 0.0
-						}
-						set_variable = { party_pop_array^1 = 0.390 } #conservatism
-						set_variable = { party_pop_array^2 = 0.290 } #liberalism
-						set_variable = { party_pop_array^6 = 0.005 } #conservatism
-						set_variable = { party_pop_array^14 = 0.3 } #Neutral_conservatism
-						set_variable = { party_pop_array^18 = 0.015 } #neutral_Social
-						clear_array = ruling_party
-						clear_array = gov_coalition_array
-						add_to_array = { ruling_party = 1 }
-						add_to_array = { gov_coalition_array = 6 }
-						add_to_array = { gov_coalition_array = 14 }
-						update_government_coalition_strength = yes
-						update_party_name = yes
-						set_coalition_drift = yes
-						recalculate_party = yes
-						recalculate_party = yes
-					}
-				}
-			}
-			TAI = {
-				set_cosmetic_tag = TAI_autonomy_special_administrative_region
-				clr_country_flag = dynamic_flag
-				add_ideas = Non_State_Actor
-				add_ideas = One_Country_Two_Systems
-				if = {
-					limit = { has_idea = legacy_of_1949 }
-					remove_ideas = legacy_of_1949
-				}
-				else_if = {
-					limit = { has_idea = legacy_of_1949_1 }
-					remove_ideas = legacy_of_1949_1
-				}
-			}
-			if = {
-				limit = { NOT = { has_completed_focus = CHI_Settle_Territorial_Disputes } }
-				custom_effect_tooltip = TAI_loses_cores_tt
-				hidden_effect = {
-					every_state = { #remove core for former Mainland states
-						limit = {
-							is_greater_china_state = yes
-						}
-						remove_core_of = TAI
-					}
-					every_state = { #remove claim for former Mainland states
-						limit = {
-							is_greater_china_state = yes
-						}
-						remove_claim_by = TAI
-					}
-					1011 = { remove_claim_by = TAI }
-					every_state = { #add core for current own
-						limit = {
-							is_taiwan_area_state = yes
-						}
-						add_core_of = TAI
-					}
-				}
-				custom_effect_tooltip = CHI_loses_cores_tt
-				hidden_effect = {
-					CHI = {
-						remove_state_core = 598
-						remove_state_core = 599
-						remove_state_core = 600
-						transfer_state = 430
-						transfer_state = 491
-						transfer_state = 1015
-						transfer_state = 1109
-						430 = { remove_core_of = TAI }
-						491 = { remove_core_of = TAI }
-						1015 = { remove_core_of = TAI }
-						1109 = { remove_core_of = TAI }
-					}
-				}
-			}
+			custom_effect_tooltip = CHI_TAI_SAR_tt
 			country_event = { id = china.25 }
 			log = "[GetDateText]: [This.GetName]: focus CHI_Establish_Taiwan_SAR executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -5348,8 +5177,8 @@ focus_tree = {
 			base = 0
 			modifier = {
 				factor = 1
-				OR = { has_global_flag = PRC_CHINESE_HEGEMONY_FOCUS_PATH
-					   has_global_flag = PRC_RED_DAWN_FOCUS_PATH
+				OR = { has_global_flag = CHI_CHINESE_HEGEMONY_FOCUS_PATH
+					   has_global_flag = CHI_RED_DAWN_FOCUS_PATH
 					  }
 			}
 		}
@@ -5408,7 +5237,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Pressure_the_SARs executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -5468,7 +5299,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Formal_Annexation executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -5502,7 +5335,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_One_System executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -5536,7 +5371,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Fight_ROC_Recognition executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -5579,7 +5416,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Blockade_Taiwan_Island_Territories executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -5620,7 +5459,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Demand_an_End_to_the_Taiwan_Relations_Act executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -5647,9 +5488,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_Road_to_War executed"
 			set_temp_variable = { treasury_change = -5 }
 			modify_treasury_effect = yes
-			set_temp_variable = { temp_opinion = 5 }
+			set_temp_variable = { temp_opinion = 10 }
 			change_the_military_opinion = yes
 			add_war_support = 0.05
 			add_timed_idea = {
@@ -5665,7 +5507,6 @@ focus_tree = {
 			}
 			set_temp_variable = { modify_chinese_aggression = 2 }
 			CHI_modify_chinese_aggression = yes
-			log = "[GetDateText]: [This.GetName]: focus CHI_Road_to_War executed"
 		}
 
 		ai_will_do = {
@@ -5687,7 +5528,7 @@ focus_tree = {
 
 		prerequisite = { focus = CHI_Road_to_War }
 
-		cost = 10
+		cost = 2
 
 		available = { NOT = { has_war_with = TAI } }
 
@@ -5755,7 +5596,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_Shell_Kinmen_and_Matsu executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -5770,7 +5613,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
-		cost = 10
+		cost = 1
 		bypass = { has_war_with = TAI }
 
 		will_lead_to_war_with = TAI
@@ -5783,10 +5626,13 @@ focus_tree = {
 			}
 			set_temp_variable = { modify_chinese_aggression = 5 }
 			CHI_modify_chinese_aggression = yes
+			set_country_flag = CHI_third_civil_war
 			log = "[GetDateText]: [This.GetName]: focus CHI_Resume_the_Civil_War executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -5803,7 +5649,8 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
 		available = { NOT = { country_exists = TAI } }
-		cost = 10
+
+		cost = 1
 		bypass = {
 
 		}
@@ -5844,6 +5691,9 @@ focus_tree = {
 				}
 				remove_claim_by = TAI
 				}
+				491 = { add_core_of = CHI }
+				496 = { remove_claim_by = TAI }
+				722 = { remove_claim_by = TAI }
 				1011 = { remove_claim_by = TAI }
 				}
 			set_temp_variable = { modify_chinese_aggression = 2 }
@@ -5851,7 +5701,9 @@ focus_tree = {
 			log = "[GetDateText]: [This.GetName]: focus CHI_End_of_ROC executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -5874,13 +5726,14 @@ focus_tree = {
 		cost = 10
 
 		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_Gateway_To_Pacific executed"
 			set_temp_variable = { treasury_change = -5 }
 			modify_treasury_effect = yes
 			600 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = naval_base
-					level = 3
+					level = 4
 					instant_build = yes
 					province = 9955
 				}
@@ -5890,14 +5743,30 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			537 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = naval_base
+					level = 4
+					instant_build = yes
+					province = 14607
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
 			set_temp_variable = { modify_chinese_aggression = 1 }
 			CHI_modify_chinese_aggression = yes
-			set_temp_variable = { temp_opinion = 3 }
+			set_temp_variable = { temp_opinion = 10 }
 			change_the_military_opinion = yes
-			log = "[GetDateText]: [This.GetName]: focus CHI_Gateway_To_Pacific executed"
+			change_maritime_industry_opinion = yes
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	##ECONOMY TREE##
@@ -5915,15 +5784,15 @@ focus_tree = {
 		available = { has_war = no }
 
 		completion_reward = {
-			add_political_power = 25
 			log = "[GetDateText]: [This.GetName]: focus CHI_The_Untapped_Market executed"
+			add_political_power = 100
 		}
 
 		ai_will_do = { base = 5 }
 	}
 
 	focus = {
-		id = CHI_Break_the_Iron_Rice_Bowl
+		id = CHI_Smash_the_Iron_Rice_Bowl
 		icon = iron_rice_bowl
 
 		x = -3
@@ -5933,7 +5802,7 @@ focus_tree = {
 		cost = 5
 
 		prerequisite = { focus = CHI_The_Untapped_Market }
-		mutually_exclusive = { focus = CHI_Socialism_with_Chinese_Characteristics }
+		mutually_exclusive = { focus = CHI_Socialist_Reconstruction }
 
 		search_filters = { FOCUS_FILTER_EXPENDITURE }
 
@@ -5948,7 +5817,7 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_idea = communist_cadres }
-communist_cadres_at_least_positive_opinion = yes
+			communist_cadres_at_least_positive_opinion = yes
 			}
 		}
 
@@ -5957,10 +5826,12 @@ communist_cadres_at_least_positive_opinion = yes
 				limit = { has_start_date < 2016.01.01 }
 				decrease_social_spending = yes
 			}
-			log = "[GetDateText]: [This.GetName]: focus CHI_Break_the_Iron_Rice_Bowl executed"
+			log = "[GetDateText]: [This.GetName]: focus CHI_Smash_the_Iron_Rice_Bowl executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -5973,7 +5844,7 @@ communist_cadres_at_least_positive_opinion = yes
 
 		cost = 5
 
-		prerequisite = { focus = CHI_Break_the_Iron_Rice_Bowl }
+		prerequisite = { focus = CHI_Smash_the_Iron_Rice_Bowl }
 
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
 
@@ -6004,7 +5875,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Ratification_of_WTO executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -6042,7 +5915,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Encourage_Foreign_Investment executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -6065,7 +5940,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Protect_State_Owned_Businesses executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -6107,7 +5984,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Adopt_Western_Patent_Laws executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -6161,7 +6040,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_SOE_Privatization_Initiative executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -6207,7 +6088,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Free_Direct_Investment executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -6272,7 +6155,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Expand_the_Special_Economic_Zones executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -6305,7 +6190,9 @@ communist_cadres_at_least_positive_opinion = yes
 			add_ideas = CHI_promoting_innovation
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -6349,11 +6236,13 @@ communist_cadres_at_least_positive_opinion = yes
 				remove_idea = Socialist_Market_Economy_free_2
 				add_idea = Free_Market_Economy
 			}
-			news_event = china_news.7 
+			news_event = china_news.7
 			log = "[GetDateText]: [This.GetName]: focus CHI_Liberalize_the_Market executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -6376,7 +6265,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Chinese_Model_of_Manufacturing executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -6417,7 +6308,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Korean_Joint_Ventures executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -6458,7 +6351,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_German_Joint_Ventures executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -6499,7 +6394,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_American_Joint_Ventures executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -6540,7 +6437,12 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Japanese_Joint_Ventures executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 100
+			}
+		}
 	}
 
 	focus = {
@@ -6560,7 +6462,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Export_Driven_Economy executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -6584,11 +6488,13 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Factory_of_the_World executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
-		id = CHI_Socialism_with_Chinese_Characteristics
+		id = CHI_Socialist_Reconstruction
 		icon = communist_party_of_china
 
 		x = 3
@@ -6598,7 +6504,7 @@ communist_cadres_at_least_positive_opinion = yes
 		cost = 5
 
 		prerequisite = { focus = CHI_The_Untapped_Market }
-		mutually_exclusive = { focus = CHI_Break_the_Iron_Rice_Bowl }
+		mutually_exclusive = { focus = CHI_Smash_the_Iron_Rice_Bowl }
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -6650,7 +6556,7 @@ communist_cadres_at_least_positive_opinion = yes
 
 		cost = 10
 
-		prerequisite = { focus = CHI_Socialism_with_Chinese_Characteristics }
+		prerequisite = { focus = CHI_Socialist_Reconstruction }
 
 		available = {
 			has_government = communism
@@ -6677,7 +6583,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Denounce_Deng_Xiaoping executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -6711,7 +6619,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Mao_Zedong_Thought executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -6724,7 +6634,7 @@ communist_cadres_at_least_positive_opinion = yes
 
 		cost = 10
 
-		prerequisite = { focus = CHI_Socialism_with_Chinese_Characteristics }
+		prerequisite = { focus = CHI_Socialist_Reconstruction }
 		mutually_exclusive = { focus = CHI_Privatize_Agricultural_Products }
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_CORRUPTION FOCUS_FILTER_INDUSTRY }
@@ -6762,7 +6672,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Collectivize_Agriculture executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -6815,7 +6727,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Close_Window_to_the_West executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -6847,7 +6761,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Purge_the_Capitalists executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -6880,7 +6796,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Purge_the_Communist_Party executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -6901,24 +6819,24 @@ communist_cadres_at_least_positive_opinion = yes
 
 		available = {
 			has_government = communism
-			communism > 0.8
+			communism > 0.65
 			NOT = {
 				has_idea = factional_politics_elitist
 				has_idea = three_represents
 				has_idea = zeng_qinghong_thought
-				has_idea = industrial_conglomerates
 			}
 			if = {
 				limit = { has_idea = the_military }
-				military_at_least_enthusiastic_opinion = yes
+				military_at_least_positive_opinion = yes
 			}
 			if = {
 				limit = { has_idea = communist_cadres }
-				communist_cadres_at_least_enthusiastic_opinion = yes
+				communist_cadres_at_least_positive_opinion = yes
 			}
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_Revolution_in_One_Country executed"
 			add_stability = 0.05
 			set_temp_variable = { party_index = 4 }
 			set_temp_variable = { party_popularity_increase = 0.15 }
@@ -6929,10 +6847,11 @@ communist_cadres_at_least_positive_opinion = yes
 				add_idea = Planned_Economy
 			}
 			increase_centralization = yes
-			log = "[GetDateText]: [This.GetName]: focus CHI_Revolution_in_One_Country executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -6953,7 +6872,7 @@ communist_cadres_at_least_positive_opinion = yes
 
 		available = {
 			has_government = communism
-			communism > 0.8
+			communism > 0.9
 			NOT = {
 				has_idea = factional_politics_elitist
 				has_idea = three_represents
@@ -6996,7 +6915,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Form_the_Fifth_International executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -7009,7 +6930,7 @@ communist_cadres_at_least_positive_opinion = yes
 
 		cost = 6.8
 
-		prerequisite = { focus = CHI_Socialism_with_Chinese_Characteristics }
+		prerequisite = { focus = CHI_Socialist_Reconstruction }
 		mutually_exclusive = { focus = CHI_Collectivize_Agriculture }
 
 		search_filters = { FOCUS_FILTER_STABILITY }
@@ -7018,7 +6939,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Privatize_Agricultural_Products executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -7045,7 +6968,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_State_Run_Corporatism executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -7090,12 +7015,14 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Proper_State_Nationalization executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
 		id = CHI_Chinese_Industrial_Explosion
-		icon = industry_civilian
+		icon = communism16
 
 		x = 3
 		y = 7
@@ -7114,12 +7041,14 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Chinese_Industrial_Explosion executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
 		id = CHI_Chinese_Megaprojects
-		icon = construction2
+		icon = communism19
 
 		x = -3
 		y = 8
@@ -7145,7 +7074,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Chinese_Megaprojects executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -7166,7 +7097,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Chinese_High_Speed_Rail_System executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -7216,7 +7149,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Korail executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -7266,7 +7201,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Deutsche_Bahn executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -7316,7 +7253,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Union_Pacific executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -7366,12 +7305,17 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Japan_Railway_Group executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 100
+			}
+		}
 	}
 
 	focus = {
 		id = CHI_Belt_and_Road_Initiative
-		icon = align_to_china
+		icon = china_bri
 
 		x = 0
 		y = 3
@@ -7392,7 +7336,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Belt_and_Road_Initiative executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -7460,7 +7406,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_African_Railway_Projects executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -7538,7 +7486,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_African_Railway_Projects executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -7606,7 +7556,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_African_Railway_Projects executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -7674,7 +7626,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_African_Railway_Projects executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -7742,7 +7696,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_African_Railway_Projects executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -7830,7 +7786,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_African_Railway_Projects executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -7908,7 +7866,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_African_Railway_Projects executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -7938,7 +7898,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_African_Railway_Projects executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -8042,7 +8004,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Addis_Ababa_Djibouti_Railway executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -8121,7 +8085,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Mombasa_Nairobi_Standard_Gauge_Railway executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -8209,7 +8175,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Abuja_Kaduna_Railway_Line executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -8378,7 +8346,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Gwadar_Port_Expansion executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -8437,7 +8407,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Hambantota_Port_Expansion executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -8487,13 +8459,15 @@ communist_cadres_at_least_positive_opinion = yes
 					relation = military_access
 				}
 			}
-			news_event = china_news.10 
+			news_event = china_news.10
 			set_temp_variable = { modify_chinese_aggression = 1 }
 			CHI_modify_chinese_aggression = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_The_Hambantota_Port_Lease executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -8552,7 +8526,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Piraeus_Port_Expansion executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -8582,7 +8558,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_The_Pan_Asia_Railway_Network executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -8686,7 +8664,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Western_Route executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -8764,7 +8744,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Central_Route executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -8862,7 +8844,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Central_Route_Thailand executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -8946,7 +8930,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Central_Route_Malaysia executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -9075,7 +9061,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Eastern_Route executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -9099,16 +9087,18 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_North_South_Water_Transfer executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
 		id = CHI_Ecological_Preservation_Movement
 		icon = sustainable_development
 
-		x = -7
-		y = 2
-		relative_position_id = CHI_Chinese_Megaprojects
+		x = -1
+		y = 1
+		relative_position_id = CHI_North_South_Water_Transfer
 
 		cost = 10
 
@@ -9123,16 +9113,18 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Ecological_Preservation_Movement executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
 		id = CHI_Yarlung_Tsangpo_Diversion_Project
 		icon = construction3
 
-		x = -5
-		y = 2
-		relative_position_id = CHI_Chinese_Megaprojects
+		x = 1
+		y = 1
+		relative_position_id = CHI_North_South_Water_Transfer
 
 		cost = 10
 
@@ -9167,16 +9159,18 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Yarlung_Tsangpo_Diversion_Project executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
 		id = CHI_Water_Conservation_Projects
 		icon = water_conservation
 
-		x = -6
-		y = 3
-		relative_position_id = CHI_Chinese_Megaprojects
+		x = 0
+		y = 2
+		relative_position_id = CHI_North_South_Water_Transfer
 
 		cost = 10
 
@@ -9191,7 +9185,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Water_Conservation_Projects executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -9215,16 +9211,18 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Renewable_Strategy executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
 		id = CHI_Golden_Sun_Initiative
 		icon = generic_solar
 
-		x = -13
-		y = 2
-		relative_position_id = CHI_Chinese_Megaprojects
+		x = -2
+		y = 1
+		relative_position_id = CHI_Renewable_Strategy
 
 		cost = 10
 
@@ -9244,16 +9242,18 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Golden_Sun_Initiative executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
 		id = CHI_Export_Photovoltaic_Systems
 		icon = money
 
-		x = -13
-		y = 3
-		relative_position_id = CHI_Chinese_Megaprojects
+		x = -2
+		y = 2
+		relative_position_id = CHI_Renewable_Strategy
 
 		cost = 10
 
@@ -9263,7 +9263,10 @@ communist_cadres_at_least_positive_opinion = yes
 
 		available = {
 			has_war = no
-			has_idea = export_economy
+			OR = {
+				has_idea = export_economy
+				has_idea = globalized_trade_economy
+			}
 			NOT = { has_idea = closed_nation }
 		}
 
@@ -9287,16 +9290,18 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Global_South_Photovoltaic_Aid executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
 		id = CHI_Nuclear_Boom
 		icon = nuclear_science
 
-		x = -11
-		y = 2
-		relative_position_id = CHI_Chinese_Megaprojects
+		x = 0
+		y = 1
+		relative_position_id = CHI_Renewable_Strategy
 
 		cost = 10
 
@@ -9315,16 +9320,18 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Nuclear_Boom executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
 		id = CHI_Construct_Nuclear_Waste_Repository
 		icon = prc_electricity
 
-		x = -11
-		y = 3
-		relative_position_id = CHI_Chinese_Megaprojects
+		x = 0
+		y = 2
+		relative_position_id = CHI_Renewable_Strategy
 
 		cost = 10
 
@@ -9338,16 +9345,18 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Radiation_Translation executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
 		id = CHI_Cheap_Coal_Supremacy
 		icon = prc_coal
 
-		x = -9
-		y = 2
-		relative_position_id = CHI_Chinese_Megaprojects
+		x = 2
+		y = 1
+		relative_position_id = CHI_Renewable_Strategy
 
 		cost = 10
 
@@ -9362,16 +9371,18 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Cheap_Coal_Supremacy executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
 		id = CHI_Mass_Coal_Oil_Conversion_Project
 		icon = oil_trade
 
-		x = -9
-		y = 3
-		relative_position_id = CHI_Chinese_Megaprojects
+		x = 2
+		y = 2
+		relative_position_id = CHI_Renewable_Strategy
 
 		cost = 10
 
@@ -9429,14 +9440,16 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Mass_Coal_Oil_Conversion_Project executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
 		id = CHI_First_Tier_Megacity_Development
 		icon = production
 
-		x = -15
+		x = -17
 		y = 1
 		relative_position_id = CHI_Chinese_Megaprojects
 
@@ -9453,69 +9466,33 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_First_Tier_Megacity_Development executed"
 		}
 
-		ai_will_do = { base = 1 }
-	}
-
-	focus = {
-		id = CHI_Pearl_River_Megalopolis
-		icon = industry
-
-		x = -15
-		y = 2
-		relative_position_id = CHI_Chinese_Megaprojects
-
-		cost = 7.9
-
-		prerequisite = { focus = CHI_First_Tier_Megacity_Development }
-
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_EXPENDITURE }
-
-		available = { controls_state = 532 }
-
-		completion_reward = {
-			set_temp_variable = { treasury_change = -27 }
-			modify_treasury_effect = yes
-			532 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = offices
-					level = 1
-					instant_build = yes
-				}
-			}
-			log = "[GetDateText]: [This.GetName]: focus CHI_Pearl_River_Megalopolis executed"
+		ai_will_do = {
+			base = 1
 		}
-
-		ai_will_do = { base = 1 }
 	}
 
 	focus = {
 		id = CHI_Jing_Jin_Ji_Megacity
 		icon = industry3
 
-		x = -15
-		y = 3
-		relative_position_id = CHI_Chinese_Megaprojects
+		x = -2
+		y = 1
+		relative_position_id = CHI_First_Tier_Megacity_Development
 
 		cost = 10
 
-		prerequisite = { focus = CHI_Pearl_River_Megalopolis }
+		prerequisite = { focus = CHI_First_Tier_Megacity_Development }
 
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_EXPENDITURE }
 
 		available = {
+			controls_state = 434
 			controls_state = 547
 			controls_state = 548
-			controls_state = 549
 		}
 
 		completion_reward = {
-			set_temp_variable = { treasury_change = -60 }
+			set_temp_variable = { treasury_change = -50 }
 			modify_treasury_effect = yes
 			434 = {
 				add_extra_state_shared_building_slots = 2
@@ -9556,7 +9533,322 @@ communist_cadres_at_least_positive_opinion = yes
 					instant_build = yes
 				}
 			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Jing_Jin_Ji_Megacity executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	focus = {
+		id = CHI_Pearl_River_Megalopolis
+		icon = industry
+
+		x = -2
+		y = 2
+		relative_position_id = CHI_First_Tier_Megacity_Development
+
+		cost = 7.9
+
+		prerequisite = { focus = CHI_Jing_Jin_Ji_Megacity }
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_EXPENDITURE }
+
+		available = {
+			controls_state = 532
+			controls_state = 534
+			OR = { AND = { controls_state = 595
+						   controls_state = 1106 }
+				   AND = { HKG = { is_subject_of = CHI }
+						   MAC = { is_subject_of = CHI }
+						 }
+				}
+		}
+
+		completion_reward = {
+			set_temp_variable = { treasury_change = -55 }
+			modify_treasury_effect = yes
+			532 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			534 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			595 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			1106 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Pearl_River_Megalopolis executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	focus = {
+		id = CHI_Four_Provinces_of_Mountains_and_Rivers
+		icon = factory_complex
+
+		x = 0
+		y = 1
+		relative_position_id = CHI_First_Tier_Megacity_Development
+
+		cost = 10
+
+		prerequisite = { focus = CHI_First_Tier_Megacity_Development }
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_EXPENDITURE }
+
+		available = {
+			controls_state = 558
+			controls_state = 567
+			controls_state = 544
+			controls_state = 435
+			controls_state = 549
+		}
+
+		completion_reward = {
+			set_temp_variable = { treasury_change = -70 }
+			modify_treasury_effect = yes
+			558 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			567 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			544 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			435 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
 			549 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Four_Provinces_of_Mountains_and_Rivers executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	focus = {
+		id = CHI_Northeast_Industry_Base
+		icon = industry_military
+
+		x = 0
+		y = 2
+		relative_position_id = CHI_First_Tier_Megacity_Development
+
+		cost = 10
+
+		prerequisite = { focus = CHI_Four_Provinces_of_Mountains_and_Rivers }
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_EXPENDITURE }
+
+		available = {
+			controls_state = 552
+			controls_state = 554
+			controls_state = 555
+			controls_state = 1095
+			controls_state = 1096
+		}
+
+		completion_reward = {
+			set_temp_variable = { treasury_change = -60 }
+			modify_treasury_effect = yes
+			552 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			554 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			555 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			1095 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			1096 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Northeast_Industry_Base executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	focus = {
+		id = CHI_Yangtze_River_Midreaches_Megacity
+		icon = industry2
+
+		x = 2
+		y = 1
+		relative_position_id = CHI_First_Tier_Megacity_Development
+
+		cost = 10
+
+		prerequisite = { focus = CHI_First_Tier_Megacity_Development }
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_EXPENDITURE }
+
+		available = {
+			controls_state = 562
+			controls_state = 570
+			controls_state = 572
+		}
+
+		completion_reward = {
+			set_temp_variable = { treasury_change = -50 }
+			modify_treasury_effect = yes
+			562 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -9569,23 +9861,51 @@ communist_cadres_at_least_positive_opinion = yes
 					instant_build = yes
 				}
 			}
-			log = "[GetDateText]: [This.GetName]: focus CHI_Jing_Jin_Ji_Megacity executed"
+			570 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			572 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Yangtze_River_Midreaches_Megacity executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
-		id = CHI_Yangtze_River_Megacity
+		id = CHI_Yangtze_River_Delta_Megacity
 		icon = industry_civilian
 
-		x = -15
-		y = 4
-		relative_position_id = CHI_Chinese_Megaprojects
+		x = 2
+		y = 2
+		relative_position_id = CHI_First_Tier_Megacity_Development
 
 		cost = 10
 
-		prerequisite = { focus = CHI_Jing_Jin_Ji_Megacity }
+		prerequisite = { focus = CHI_Yangtze_River_Midreaches_Megacity }
 
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_EXPENDITURE }
 
@@ -9651,17 +9971,202 @@ communist_cadres_at_least_positive_opinion = yes
 					instant_build = yes
 				}
 			}
-			log = "[GetDateText]: [This.GetName]: focus CHI_Yangtze_River_Megacity executed"
+			log = "[GetDateText]: [This.GetName]: focus CHI_Yangtze_River_Delta_Megacity executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+
+	focus = {
+		id = CHI_zhejiang_megacity
+		icon = pearl_river_megacity
+		x = 0
+		y = 3
+		relative_position_id = CHI_First_Tier_Megacity_Development
+		cost = 10
+
+		available = {
+			date > 2010.1.1
+			controls_state = 538
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = { focus = CHI_Pearl_River_Megalopolis }
+		prerequisite = { focus = CHI_Yangtze_River_Delta_Megacity }
+		prerequisite = { focus = CHI_Northeast_Industry_Base }
+		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_zhejiang_megacity executed"
+			set_temp_variable = { treasury_change = -100 }
+			modify_treasury_effect = yes
+
+			538 = {
+				add_extra_state_shared_building_slots = 10
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = internet_station
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = fuel_silo
+					level = 2
+					instant_build = yes
+				}
+			}
+			set_temp_variable = { arg_popularity = 0.03 }
+			add_ruling_outlook_popularity = yes
+		}
+
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
-		id = CHI_Go_West_Strategy
+		id = CHI_Taiwan_Megalopolis
+		icon = centralization
+
+		x = 0
+		y = 4
+		relative_position_id = CHI_First_Tier_Megacity_Development
+
+		cost = 7.9
+
+		prerequisite = { focus = CHI_zhejiang_megacity }
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_EXPENDITURE }
+
+		available = {
+			OR = {
+				is_taiwan_area_state_owned = yes
+				has_country_flag = TAI_sar_exec
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_Taiwan_Megalopolis executed"
+			set_temp_variable = { treasury_change = -45 }
+			modify_treasury_effect = yes
+			598 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			599 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			600 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			1155 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			1156 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			1157 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			1158 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	focus = {
+		id = CHI_Western_Development_Strategy
 		icon = wheat_field
 
-		x = -18
+		x = -23
 		y = 1
 		relative_position_id = CHI_Chinese_Megaprojects
 
@@ -9673,35 +10178,39 @@ communist_cadres_at_least_positive_opinion = yes
 		completion_reward = {
 			add_timed_idea = {
 				idea = CHI_western_development
-				days = 90
+				days = 180
 			}
 			set_temp_variable = { modify_uighur_opinion = 10 }
 			CHI_modify_uighur_opinion = yes
-			log = "[GetDateText]: [This.GetName]: focus CHI_Go_West_Strategy executed"
+			log = "[GetDateText]: [This.GetName]: focus CHI_Western_Development_Strategy executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
 		id = CHI_Qinghai_Tibet_Railway
 		icon = prc_railroad
 
-		x = -17
-		y = 2
-		relative_position_id = CHI_Chinese_Megaprojects
+		x = 2
+		y = 1
+		relative_position_id = CHI_Western_Development_Strategy
 
 		cost = 10
 
-		prerequisite = { focus = CHI_Go_West_Strategy }
+		prerequisite = { focus = CHI_Western_Development_Strategy }
 
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_EXPENDITURE }
 
 		available = {
-			controls_state = 588
 			OR = {
-				controls_state = 589
-				TIB = { is_subject_of = CHI }
+				AND = {
+					owns_state = 588
+					owns_state = 589
+				}
+				has_country_flag = TIB_sar_exec
 			}
 		}
 
@@ -9725,21 +10234,134 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Qinghai_Tibet_Railway executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	focus = {
+		id = CHI_New_Eurasian_Land_Bridge_Railway
+		icon = prc_railroad
+
+		x = -2
+		y = 1
+		relative_position_id = CHI_Western_Development_Strategy
+
+		cost = 10
+
+		prerequisite = { focus = CHI_Western_Development_Strategy }
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_EXPENDITURE }
+
+		available = {
+			OR = {
+				AND = {
+					owns_state = 560
+					owns_state = 591
+					owns_state = 592
+					owns_state = 1072
+				}
+				has_country_flag = ETK_sar_exec
+			}
+		}
+
+		completion_reward = {
+			set_temp_variable = { treasury_change = -25 }
+			modify_treasury_effect = yes
+			560 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			592 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			1072 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_New_Eurasian_Land_Bridge_Railway executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	focus = {
+		id = CHI_Southwest_Railway
+		icon = prc_railroad
+
+		x = 0
+		y = 1
+		relative_position_id = CHI_Western_Development_Strategy
+
+		cost = 10
+
+		prerequisite = { focus = CHI_Western_Development_Strategy }
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_EXPENDITURE }
+
+		available = {
+			controls_state = 574
+			controls_state = 578
+			controls_state = 582
+		}
+
+		completion_reward = {
+			set_temp_variable = { treasury_change = -22 }
+			modify_treasury_effect = yes
+			574 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			578 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			582 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Southwest_Railway executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
 		id = CHI_West_Triangle_Economic_Zone
 		icon = money
 
-		x = -18
-		y = 3
-		relative_position_id = CHI_Chinese_Megaprojects
+		x = 0
+		y = 2
+		relative_position_id = CHI_Western_Development_Strategy
 
 		cost = 10
 
 		prerequisite = { focus = CHI_Qinghai_Tibet_Railway }
 		prerequisite = { focus = CHI_New_Eurasian_Land_Bridge_Railway }
+		prerequisite = { focus = CHI_Southwest_Railway }
 
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_EXPENDITURE }
 
@@ -9788,16 +10410,18 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_West_Triangle_Economic_Zone executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
 		id = CHI_Qinghai_Tibet_Development_Plan
 		icon = smiling_buddha
 
-		x = -17
-		y = 4
-		relative_position_id = CHI_Chinese_Megaprojects
+		x = 2
+		y = 3
+		relative_position_id = CHI_Western_Development_Strategy
 
 		cost = 10
 
@@ -9806,8 +10430,13 @@ communist_cadres_at_least_positive_opinion = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_INSURGENCY FOCUS_FILTER_EXPENDITURE }
 
 		available = {
-			controls_state = 588
-			controls_state = 589
+			OR = {
+				AND = {
+					owns_state = 588
+					owns_state = 589
+				}
+				has_country_flag = TIB_sar_exec
+			}
 		}
 
 		completion_reward = {
@@ -9842,69 +10471,18 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Qinghai_Tibet_Development_Plan executed"
 		}
 
-		ai_will_do = { base = 1 }
-	}
-
-	focus = {
-		id = CHI_New_Eurasian_Land_Bridge_Railway
-		icon = prc_railroad
-
-		x = -19
-		y = 2
-		relative_position_id = CHI_Chinese_Megaprojects
-
-		cost = 10
-
-		prerequisite = { focus = CHI_Go_West_Strategy }
-
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_EXPENDITURE }
-
-		available = {
-			controls_state = 560
-			controls_state = 1072
-			OR = {
-				controls_state = 592
-				ETK = { is_subject_of = CHI }
-			}
+		ai_will_do = {
+			base = 1
 		}
-
-		completion_reward = {
-			set_temp_variable = { treasury_change = -25 }
-			modify_treasury_effect = yes
-			560 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-			}
-			592 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-			}
-			1072 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-			}
-			log = "[GetDateText]: [This.GetName]: focus CHI_New_Eurasian_Land_Bridge_Railway executed"
-		}
-
-		ai_will_do = { base = 1 }
 	}
 
 	focus = {
 		id = CHI_Xinjiang_Development_Plan
 		icon = sunni_government
 
-		x = -19
-		y = 4
-		relative_position_id = CHI_Chinese_Megaprojects
+		x = -2
+		y = 3
+		relative_position_id = CHI_Western_Development_Strategy
 
 		cost = 10
 
@@ -9913,11 +10491,12 @@ communist_cadres_at_least_positive_opinion = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_INSURGENCY FOCUS_FILTER_EXPENDITURE }
 
 		available = {
-			controls_state = 591
-			controls_state = 592
-			custom_trigger_tooltip = {
-				tooltip = CHI_uighur_threat_less_50_tt
-				check_variable = { uighur_threat < 50 }
+			OR = {
+				AND = {
+					owns_state = 591
+					owns_state = 592
+				}
+				has_country_flag = ETK_sar_exec
 			}
 		}
 
@@ -9950,14 +10529,86 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Xinjiang_Development_Plan executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
-		id = CHI_Northern_New_Boundary
-		icon = construction2
+		id = CHI_Southwest_Development_Plan
+		icon = allow_pagans
 
-		x = -21
+		x = 0
+		y = 3
+		relative_position_id = CHI_Western_Development_Strategy
+
+		cost = 10
+
+		prerequisite = { focus = CHI_West_Triangle_Economic_Zone }
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_INSURGENCY FOCUS_FILTER_EXPENDITURE }
+
+		available = {
+			controls_state = 574
+			controls_state = 578
+			controls_state = 582
+		}
+
+		completion_reward = {
+			set_temp_variable = { treasury_change = -60 }
+			modify_treasury_effect = yes
+			574 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			578 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			582 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			log = "[GetDateText]: [This.GetName]: focus CHI_Southwest_Development_Plan executed"
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	focus = {
+		id = CHI_A_Complete_Prairie
+		icon = focus_generic_horse_studs
+
+		x = -27
 		y = 1
 		relative_position_id = CHI_Chinese_Megaprojects
 
@@ -9966,37 +10617,41 @@ communist_cadres_at_least_positive_opinion = yes
 		prerequisite = { focus = CHI_Chinese_Megaprojects }
 
 		available = {
-			owns_state = 556
-			owns_state = 1097
 			OR = {
-				is_outer_mongolia_state_owned = yes
-				MON = { is_subject_of = CHI }
+				AND = {
+					owns_state = 556
+					owns_state = 596
+					owns_state = 597
+					owns_state = 1097
+				}
+				has_country_flag = MON_sar_exec
 			}
-			has_completed_focus = CHI_Outer_Mongolia_Return
 		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_timed_idea = {
 				idea = CHI_new_boundary
-				days = 180
+				days = 240
 			}
-			log = "[GetDateText]: [This.GetName]: focus CHI_Northern_New_Boundary executed"
+			log = "[GetDateText]: [This.GetName]: focus CHI_A_Complete_Prairie executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
 		id = CHI_Northern_New_Artery
 		icon = prc_railroad
 
-		x = -21
-		y = 2
+		x = 0
+		y = 1
 
-		relative_position_id = CHI_Chinese_Megaprojects
+		relative_position_id = CHI_A_Complete_Prairie
 
-		prerequisite = { focus = CHI_Northern_New_Boundary }
+		prerequisite = { focus = CHI_A_Complete_Prairie }
 
 		cost = 10
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_EXPENDITURE }
@@ -10005,11 +10660,14 @@ communist_cadres_at_least_positive_opinion = yes
 
 
 		available = {
-			owns_state = 556
-			owns_state = 1097
 			OR = {
-				is_outer_mongolia_state_owned = yes
-				MON = { is_subject_of = CHI }
+				AND = {
+					owns_state = 556
+					owns_state = 596
+					owns_state = 597
+					owns_state = 1097
+				}
+				has_country_flag = MON_sar_exec
 			}
 		}
 
@@ -10036,15 +10694,17 @@ communist_cadres_at_least_positive_opinion = yes
 			}
 			log = "[GetDateText]: [This.GetName]: focus CHI_Northern_New_Artery executed"
 		}
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
 		id = CHI_Mongolia_Ore_Production
 		icon = coal_mining
-		x = -21
-		y = 3
-		relative_position_id = CHI_Chinese_Megaprojects
+		x = 0
+		y = 2
+		relative_position_id = CHI_A_Complete_Prairie
 		cost = 10
 
 		prerequisite = { focus = CHI_Northern_New_Artery }
@@ -10052,11 +10712,14 @@ communist_cadres_at_least_positive_opinion = yes
 		search_filters = { FOCUS_FILTER_RESOURCE FOCUS_FILTER_EXPENDITURE }
 
 		available = {
-			owns_state = 556
-			owns_state = 1097
 			OR = {
-				is_outer_mongolia_state_owned = yes
-				MON = { is_subject_of = CHI }
+				AND = {
+					owns_state = 556
+					owns_state = 596
+					owns_state = 597
+					owns_state = 1097
+				}
+				has_country_flag = MON_sar_exec
 			}
 		}
 
@@ -10070,16 +10733,18 @@ communist_cadres_at_least_positive_opinion = yes
 			modify_treasury_effect = yes
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
 		id = CHI_Mongolia_Development_Plan
 		icon = buddhism
 
-		x = -21
-		y = 4
-		relative_position_id = CHI_Chinese_Megaprojects
+		x = 0
+		y = 3
+		relative_position_id = CHI_A_Complete_Prairie
 
 		cost = 10
 
@@ -10088,11 +10753,14 @@ communist_cadres_at_least_positive_opinion = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_EXPENDITURE }
 
 		available = {
-			owns_state = 556
-			owns_state = 1097
 			OR = {
-				is_outer_mongolia_state_owned = yes
-				MON = { is_subject_of = CHI }
+				AND = {
+					owns_state = 556
+					owns_state = 596
+					owns_state = 597
+					owns_state = 1097
+				}
+				has_country_flag = MON_sar_exec
 			}
 		}
 
@@ -10135,26 +10803,32 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Mongolia_Development_Plan executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
 		id = CHI_Prosperous_Borderland
-		icon = one_china_policy_ext
+		icon = one_china_policy_prc
 
-		x = -19
-		y = 5
-		relative_position_id = CHI_Chinese_Megaprojects
+		x = -1
+		y = 4
+		relative_position_id = CHI_Western_Development_Strategy
 
 		cost = 10
 
 		prerequisite = { focus = CHI_Mongolia_Development_Plan }
 		prerequisite = { focus = CHI_Xinjiang_Development_Plan }
 		prerequisite = { focus = CHI_Qinghai_Tibet_Development_Plan }
+		prerequisite = { focus = CHI_Southwest_Development_Plan }
 
 		search_filters = { FOCUS_FILTER_EXPENDITURE }
 
 		available = {
+			owns_state = 574
+			owns_state = 578
+			owns_state = 582
 			owns_state = 556
 			owns_state = 588
 			owns_state = 589
@@ -10169,17 +10843,28 @@ communist_cadres_at_least_positive_opinion = yes
 		completion_reward = {
 			add_political_power = 120
 			CHI_water_shortages_decrease = yes
+			if = {
+				limit = { has_idea = chinese_khalkha }
+				swap_ideas = {
+				remove_idea = chinese_khalkha
+				add_idea = prosperity_of_borderland
+			}
+			}
+			else = {
 			add_ideas = prosperity_of_borderland
+			}
 			country_event = china.53
 			log = "[GetDateText]: [This.GetName]: focus CHI_Prosperous_Borderland executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
 		id = CHI_Strategic_Industries
-		icon = army_logistics
+		icon = communism18
 
 		x = 3
 		y = 8
@@ -10205,7 +10890,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Strategic_Industries executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -10222,6 +10909,7 @@ communist_cadres_at_least_positive_opinion = yes
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_Norinco_Projects executed"
 			set_temp_variable = { treasury_change = -3 }
 			modify_treasury_effect = yes
 			if = {
@@ -10248,10 +10936,12 @@ communist_cadres_at_least_positive_opinion = yes
 			}
 			set_temp_variable = { temp_opinion = 5 }
 			change_defense_industry_opinion = yes
-			log = "[GetDateText]: [This.GetName]: focus CHI_Norinco_Projects executed"
+			change_the_military_opinion = yes
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -10274,12 +10964,17 @@ communist_cadres_at_least_positive_opinion = yes
 				name = CHI_Small_Arms_Development
 				bonus = 0.25
 				uses = 2
-				category = Cat_Inf_WEP
+				category = CAT_inf_wep
 			}
+			set_temp_variable = { temp_opinion = 5 }
+			change_defense_industry_opinion = yes
+			change_the_military_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Small_Arms_Development executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -10304,6 +10999,7 @@ communist_cadres_at_least_positive_opinion = yes
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_Air_Burst_Weapons executed"
 			set_temp_variable = { treasury_change = -4 }
 			modify_treasury_effect = yes
 			add_tech_bonus = {
@@ -10312,10 +11008,14 @@ communist_cadres_at_least_positive_opinion = yes
 				uses = 1
 				technology = infantry_weapons5
 			}
-			log = "[GetDateText]: [This.GetName]: focus CHI_Air_Burst_Weapons executed"
+			set_temp_variable = { temp_opinion = 5 }
+			change_defense_industry_opinion = yes
+			change_the_military_opinion = yes
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -10332,18 +11032,23 @@ communist_cadres_at_least_positive_opinion = yes
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_Armored_Vehicles executed"
 			set_temp_variable = { treasury_change = -4 }
 			modify_treasury_effect = yes
 			add_tech_bonus = {
 				name = CHI_Armored_Vehicles
 				bonus = 0.25
 				uses = 2
-				category = Cat_AFV
+				category = CAT_afv
 			}
-			log = "[GetDateText]: [This.GetName]: focus CHI_Armored_Vehicles executed"
+			set_temp_variable = { temp_opinion = 5 }
+			change_defense_industry_opinion = yes
+			change_the_military_opinion = yes
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -10368,18 +11073,23 @@ communist_cadres_at_least_positive_opinion = yes
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_Advanced_MBTs executed"
 			set_temp_variable = { treasury_change = -6 }
 			modify_treasury_effect = yes
 			add_tech_bonus = {
 				name = CHI_Advanced_MBTs
 				bonus = 0.5
 				uses = 1
-				category = Cat_MBT
+				category = CAT_mbt
 			}
-			log = "[GetDateText]: [This.GetName]: focus CHI_Advanced_MBTs executed"
+			set_temp_variable = { temp_opinion = 5 }
+			change_defense_industry_opinion = yes
+			change_the_military_opinion = yes
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -10402,12 +11112,14 @@ communist_cadres_at_least_positive_opinion = yes
 				name = CHI_Automotive_Industry
 				bonus = 0.2
 				uses = 1
-				category = Cat_UTIL
+				category = CAT_util
 			}
 			log = "[GetDateText]: [This.GetName]: focus CHI_Automotive_Industry executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -10434,7 +11146,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Domestic_Development executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -10457,7 +11171,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Improve_RD executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -10478,7 +11194,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Implement_Safety_Standards executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -10509,12 +11227,14 @@ communist_cadres_at_least_positive_opinion = yes
 				name = CHI_Develop_World_Class_Cars
 				bonus = 0.25
 				uses = 2
-				category = Cat_UTIL
+				category = CAT_util
 			}
 			log = "[GetDateText]: [This.GetName]: focus CHI_Develop_World_Class_Cars executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -10542,7 +11262,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Bid_for_Foreign_Investments executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -10587,7 +11309,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Volkswagen executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -10632,7 +11356,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Volkswagen executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -10677,7 +11403,12 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Toyota executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 100
+			}
+		}
 	}
 
 	focus = {
@@ -10722,7 +11453,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_General_Motors executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -10778,7 +11511,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Joint_Venture_Mass_Production executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -10806,12 +11541,14 @@ communist_cadres_at_least_positive_opinion = yes
 				name = CHI_Foreign_Tech_Acquisitions
 				bonus = 0.25
 				uses = 2
-				category = Cat_UTIL
+				category = CAT_util
 			}
 			log = "[GetDateText]: [This.GetName]: focus CHI_Foreign_Tech_Acquisitions executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -10838,12 +11575,21 @@ communist_cadres_at_least_positive_opinion = yes
 		completion_reward = {
 			set_temp_variable = { treasury_change = -50 }
 			modify_treasury_effect = yes
-			add_ideas = CHI_electric_car_project_idea
 			add_stability = 0.02
+			if = {
+				limit = { has_completed_focus = CHI_Xiaomi }
+				add_ideas = CHI_electric_car_project_idea_1
+			}
+			else_if = {
+				limit = { NOT = { has_completed_focus = CHI_Xiaomi } }
+				add_ideas = CHI_electric_car_project_idea
+			}
 			log = "[GetDateText]: [This.GetName]: focus CHI_Electric_Car_Project executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -10893,7 +11639,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Expand_Abroad executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -10928,11 +11676,13 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Expand_CSIC executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
-		id = CHI_Beijing_Drydocks
+		id = CHI_Tianjin_Drydocks
 		icon = navy2
 
 		x = 12
@@ -10958,10 +11708,12 @@ communist_cadres_at_least_positive_opinion = yes
 					instant_build = yes
 				}
 			}
-			log = "[GetDateText]: [This.GetName]: focus CHI_Beijing_Drydocks executed"
+			log = "[GetDateText]: [This.GetName]: focus CHI_Tianjin_Drydocks executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -10994,7 +11746,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Bohai_Shipyard executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -11007,7 +11761,7 @@ communist_cadres_at_least_positive_opinion = yes
 
 		cost = 10
 
-		prerequisite = { focus = CHI_Beijing_Drydocks }
+		prerequisite = { focus = CHI_Tianjin_Drydocks }
 		prerequisite = { focus = CHI_Bohai_Shipyard }
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -11028,7 +11782,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Qingdao_Dockyards executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -11041,7 +11797,7 @@ communist_cadres_at_least_positive_opinion = yes
 
 		cost = 10
 
-		prerequisite = { focus = CHI_Beijing_Drydocks }
+		prerequisite = { focus = CHI_Tianjin_Drydocks }
 		prerequisite = { focus = CHI_Bohai_Shipyard }
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -11062,7 +11818,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Dalian_Shipbuilding executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -11075,7 +11833,7 @@ communist_cadres_at_least_positive_opinion = yes
 
 		cost = 10
 
-		prerequisite = { focus = CHI_Beijing_Drydocks }
+		prerequisite = { focus = CHI_Tianjin_Drydocks }
 		prerequisite = { focus = CHI_Bohai_Shipyard }
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -11094,7 +11852,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Jiangnan_Shipbuilding executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -11115,7 +11875,10 @@ communist_cadres_at_least_positive_opinion = yes
 
 		available = {
 			has_war = no
-			has_idea = export_economy
+			OR = {
+				has_idea = export_economy
+				has_idea = globalized_trade_economy
+			}
 			NOT = { has_idea = closed_nation }
 			custom_trigger_tooltip = {
 				tooltip = 7_per_capita_or_more_tt
@@ -11143,7 +11906,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Global_Shipyard executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -11168,12 +11933,14 @@ communist_cadres_at_least_positive_opinion = yes
 				name = CHI_Expand_CSIC
 				bonus = 0.2
 				uses = 1
-				category = Cat_AIR_EQP
+				category = CAT_air_eqp
 			}
 			log = "[GetDateText]: [This.GetName]: focus CHI_Expand_CSIC executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -11195,7 +11962,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Mobile_Launcher_Platforms executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -11216,7 +11985,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Seaborne_Spaceflight executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -11262,7 +12033,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Bolster_the_CNSA executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -11310,7 +12083,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_State_Sponsored_Space_Endeavors executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -11359,7 +12134,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Private_Endeavors executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -11410,7 +12187,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Space_Outsourcing executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -11433,12 +12212,14 @@ communist_cadres_at_least_positive_opinion = yes
 				name = CHI_Invest_in_AVIC
 				bonus = 0.3
 				uses = 1
-				category = Cat_AIR_EQP
+				category = CAT_air_eqp
 			}
 			log = "[GetDateText]: [This.GetName]: focus CHI_Invest_in_AVIC executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -11461,12 +12242,14 @@ communist_cadres_at_least_positive_opinion = yes
 				name = CHI_Aircraft_Improvements
 				bonus = 0.25
 				uses = 2
-				category = CAT_FIXED_WING
+				category = CAT_fixed_wing
 			}
 			log = "[GetDateText]: [This.GetName]: focus CHI_Aircraft_Improvements executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -11492,6 +12275,7 @@ communist_cadres_at_least_positive_opinion = yes
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_Develop_Stealth_Fighters executed"
 			set_temp_variable = { treasury_change = -15 }
 			modify_treasury_effect = yes
 			if = {
@@ -11519,10 +12303,14 @@ communist_cadres_at_least_positive_opinion = yes
 					technology = AS_Fighter7
 				}
 			}
-			log = "[GetDateText]: [This.GetName]: focus CHI_Develop_Stealth_Fighters executed"
+			set_temp_variable = { temp_opinion = 10 }
+			change_the_military_opinion = yes
+			change_defense_industry_opinion = yes
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -11546,7 +12334,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Electronic_Industry executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -11572,12 +12362,14 @@ communist_cadres_at_least_positive_opinion = yes
 				name = CHI_Lenovo
 				bonus = 0.25
 				uses = 1
-				category = computing_tech
+				category = CAT_computing_tech
 			}
 			log = "[GetDateText]: [This.GetName]: focus CHI_Lenovo executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -11603,12 +12395,14 @@ communist_cadres_at_least_positive_opinion = yes
 				name = CHI_Huawei
 				bonus = 0.25
 				uses = 1
-				category = internet_tech
+				category = CAT_internet_tech
 			}
 			log = "[GetDateText]: [This.GetName]: focus CHI_Huawei executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -11634,12 +12428,27 @@ communist_cadres_at_least_positive_opinion = yes
 				name = CHI_Xiaomi
 				bonus = 0.25
 				uses = 1
-				category = computing_tech
+				category = CAT_computing_tech
+			}
+			add_tech_bonus = {
+				name = CHI_Xiaomi_Vehicle
+				bonus = 0.25
+				uses = 1
+				category = CAT_afv
+			}
+			if = {
+				limit = { has_idea = CHI_electric_car_project_idea }
+				swap_ideas = {
+					remove_idea = CHI_electric_car_project_idea
+					add_idea = CHI_electric_car_project_idea_1
+				}
 			}
 			log = "[GetDateText]: [This.GetName]: focus CHI_Xiaomi executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -11671,12 +12480,14 @@ communist_cadres_at_least_positive_opinion = yes
 				name = CHI_Chinese_Tech_Dominance
 				bonus = 0.2
 				uses = 2
-				category = electronics
+				category = CAT_computing_tech
 			}
 			add_ideas = CHI_dominant_tech_industry
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -11700,11 +12511,11 @@ communist_cadres_at_least_positive_opinion = yes
 				name = CHI_Cheaper_Production
 				bonus = 0.25
 				uses = 1
-				category = Cat_3D
+				category = CAT_3d
 			}
 			swap_ideas = {
-				add_idea = chabuduo_2
-				remove_idea = chabuduo
+				add_idea = CHI_low_end_manufacturing_2
+				remove_idea = CHI_low_end_manufacturing
 			}
 			log = "[GetDateText]: [This.GetName]: focus CHI_Cheaper_Production executed"
 		}
@@ -11738,12 +12549,14 @@ communist_cadres_at_least_positive_opinion = yes
 				name = CHI_Superior_Transistors
 				bonus = 0.1
 				uses = 3
-				category = computing_tech
+				category = CAT_computing_tech
 			}
 			log = "[GetDateText]: [This.GetName]: focus CHI_Superior_Transistors executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -11763,12 +12576,12 @@ communist_cadres_at_least_positive_opinion = yes
 		completion_reward = {
 			set_temp_variable = { treasury_change = -10 }
 			modify_treasury_effect = yes
-			remove_ideas = chabuduo
+			remove_ideas = CHI_low_end_manufacturing
 			add_tech_bonus = {
 				name = CHI_Quality_Engineering
 				bonus = 0.25
 				uses = 1
-				category = Cat_3D
+				category = CAT_3d
 			}
 			log = "[GetDateText]: [This.GetName]: focus CHI_Quality_Engineering executed"
 		}
@@ -11827,7 +12640,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_The_South_China_Sea executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -11843,6 +12658,7 @@ communist_cadres_at_least_positive_opinion = yes
 		prerequisite = { focus = CHI_The_South_China_Sea }
 		mutually_exclusive = { focus = CHI_Signal_Willingness_to_Negotiate }
 		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_Enforce_the_9_Dash_Line executed"
 			every_other_country = {
 				limit = { OR = { original_tag = MAY original_tag = PHI original_tag = VIE } }
 				add_opinion_modifier = {
@@ -11852,7 +12668,8 @@ communist_cadres_at_least_positive_opinion = yes
 			}
 			set_temp_variable = { modify_chinese_aggression = 1 }
 			CHI_modify_chinese_aggression = yes
-			log = "[GetDateText]: [This.GetName]: focus CHI_Enforce_the_9_Dash_Line executed"
+			set_temp_variable = { temp_opinion = 3 }
+			change_the_military_opinion = yes
 		}
 
 		ai_will_do = {
@@ -11879,15 +12696,22 @@ communist_cadres_at_least_positive_opinion = yes
 
 		prerequisite = { focus = CHI_Enforce_the_9_Dash_Line }
 		completion_reward = {
-			USA = {
-				country_event = { id = south_china_sea_clash.7 }
+			log = "[GetDateText]: [This.GetName]: focus CHI_Provocative_Fleet_Exercises executed"
+			if = {
+				limit = { country_exists = USA }
+				USA = {
+					country_event = { id = south_china_sea_clash.7 }
+				}
 			}
 			set_temp_variable = { modify_chinese_aggression = 1 }
 			CHI_modify_chinese_aggression = yes
-			log = "[GetDateText]: [This.GetName]: focus CHI_Provocative_Fleet_Exercises executed"
+			set_temp_variable = { temp_opinion = 3 }
+			change_the_military_opinion = yes
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -11929,7 +12753,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Island_Building executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -12026,7 +12852,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Demand_Vietnams_Submission executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -12052,12 +12880,15 @@ communist_cadres_at_least_positive_opinion = yes
 
 		completion_reward = {
 			IND = { country_event = { id = china.32 } }
-			set_temp_variable = { modify_chinese_aggression = 5 }
+			set_temp_variable = { modify_chinese_aggression = 1 }
 			CHI_modify_chinese_aggression = yes
+			hidden_effect = { add_state_core = 936 }
 			log = "[GetDateText]: [This.GetName]: focus CHI_Watch_on_Natuna executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -12140,7 +12971,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Joint_Development_Zones executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -12174,7 +13007,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Negotiate_Maritime_Boundaries executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -12190,6 +13025,7 @@ communist_cadres_at_least_positive_opinion = yes
 		prerequisite = { focus = CHI_Negotiate_Maritime_Boundaries }
 
 		available = {
+			country_exists = VIE
 			VIE = {
 				has_opinion = {
 					target = CHI
@@ -12199,11 +13035,13 @@ communist_cadres_at_least_positive_opinion = yes
 		}
 
 		completion_reward = {
-			country_event = { id = south_china_sea_clash.10 }
 			log = "[GetDateText]: [This.GetName]: focus CHI_The_Fate_of_the_Paracels executed"
+			country_event = { id = south_china_sea_clash.10 }
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 	focus = {
 		id = CHI_The_Fate_of_the_Macclesfield_Bank
@@ -12218,6 +13056,7 @@ communist_cadres_at_least_positive_opinion = yes
 		prerequisite = { focus = CHI_Negotiate_Maritime_Boundaries }
 
 		available = {
+			country_exists = PHI
 			PHI = {
 				has_opinion = {
 					target = CHI
@@ -12227,11 +13066,13 @@ communist_cadres_at_least_positive_opinion = yes
 		}
 
 		completion_reward = {
-			country_event = { id = south_china_sea_clash.11 }
 			log = "[GetDateText]: [This.GetName]: focus CHI_The_Fate_of_the_Macclesfield_Bank executed"
+			country_event = { id = south_china_sea_clash.11 }
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 	focus = {
 		id = CHI_Strengthen_ASEAN_Ties
@@ -12332,7 +13173,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Strengthen_ASEAN_Ties executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -12353,7 +13196,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_The_Korean_Peninsula executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -13066,7 +13911,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Gain_the_Support_of_the_KPA executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -13172,7 +14019,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_The_North_Korean_Coup executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -13192,9 +14041,24 @@ communist_cadres_at_least_positive_opinion = yes
 		available = { NKO = { has_government = nationalist } }
 
 		completion_reward = {
-			set_autonomy = {
-				target = NKO
-				autonomy_state = autonomy_associated_state
+			if = {
+				limit = {
+					has_global_flag = GAME_RULE_allow_colored_puppets
+				}
+				set_autonomy = {
+					target = NKO
+					autonomy_state = autonomy_associated_state_colored
+					end_wars = no
+					end_civil_wars = no
+				}
+			}
+			else = {
+				set_autonomy = {
+					target = NKO
+					autonomy_state = autonomy_associated_state
+					end_wars = no
+					end_civil_wars = no
+				}
 			}
 			hidden_effect = {
 				if = {
@@ -13307,7 +14171,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Establish_a_Puppet_Government executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -13328,7 +14194,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_The_Indian_Subcontinent executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -13368,7 +14236,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Support_Nepals_Maoists executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -13395,7 +14265,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Respect_Nepalese_Neutrality executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -13427,7 +14299,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Guarantee_Bangladesh executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -13509,7 +14383,7 @@ communist_cadres_at_least_positive_opinion = yes
 		}
 
 		completion_reward = {
-			BHU = { add_opinion_modifier = { target = CHI modifier = territorial_violation } }
+			BHU = { add_opinion_modifier = { target = CHI modifier = territorial_integrity_violation } }
 			if = {
 				limit = { RAJ = { has_guaranteed = BHU } }
 				every_other_country = {
@@ -13530,7 +14404,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Doklam_Road_Standoff executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 
@@ -13557,7 +14433,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Iron_Brothers executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -13582,7 +14460,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Joint_Military_Projects executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -13614,7 +14494,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Cooperate_on_Counterterrorism executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -13655,7 +14537,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Militarize_Gwadar_Port executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -13699,7 +14583,7 @@ communist_cadres_at_least_positive_opinion = yes
 					name = CHI_The_Quadrilateral_Cooperation_and_Coordination_Mechanism
 					bonus = 0.25
 					uses = 1
-					category = Cat_DECENTRALIZED_WARFARE
+					category = CAT_land_doctrine
 				}
 			}
 			every_country = {
@@ -13743,7 +14627,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_The_Quadrilateral_Cooperation_and_Coordination_Mechanism executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -13774,6 +14660,12 @@ communist_cadres_at_least_positive_opinion = yes
 					influence_higher_20 = yes
 				}
 			}
+			if = {
+				limit = { country_exists = TAL }
+				TAL = {
+					influence_higher_20 = yes
+				}
+			}
 			AFG = {
 				influence_higher_20 = yes
 			}
@@ -13781,9 +14673,6 @@ communist_cadres_at_least_positive_opinion = yes
 				influence_higher_20 = yes
 			}
 			TAJ = {
-				influence_higher_20 = yes
-			}
-			TAL = {
 				influence_higher_20 = yes
 			}
 		}
@@ -13799,7 +14688,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Support_Negotiations executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -13892,7 +14783,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Joint_Operations executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -13960,7 +14853,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Tackle_the_Root_Causes_of_Radicalization executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -14011,7 +14906,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_End_Joint_Military_Exercises executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -14047,7 +14944,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Strategic_Realignment executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -14151,7 +15050,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_A_New_Alliance executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -14253,7 +15154,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_String_of_Pearls executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -14290,6 +15193,7 @@ communist_cadres_at_least_positive_opinion = yes
 					add_core_of = CHI
 				}
 			475 = { add_core_of = CHI }
+			982 = { add_core_of = CHI }
 				}
 			if = {
 				limit = { BHU = { influence_higher_70 = yes } }
@@ -14306,7 +15210,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Annex_Bhutan executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -14341,9 +15247,24 @@ communist_cadres_at_least_positive_opinion = yes
 						influence_higher_60 = yes
 					}
 				}
-				set_autonomy = {
-					target = NEP
-					autonomy_state = autonomy_associated_state
+				if = {
+					limit = {
+						has_global_flag = GAME_RULE_allow_colored_puppets
+					}
+					set_autonomy = {
+						target = NEP
+						autonomy_state = autonomy_associated_state_colored
+						end_wars = no
+						end_civil_wars = no
+					}
+				}
+				else = {
+					set_autonomy = {
+						target = NEP
+						autonomy_state = autonomy_associated_state
+						end_wars = no
+						end_civil_wars = no
+					}
 				}
 			}
 			else_if = {
@@ -14371,7 +15292,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Puppet_Nepal executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -14402,7 +15325,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Bring_the_Tiger_to_Heel executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -14423,7 +15348,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_The_Land_of_the_Rising_Sun executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -14442,6 +15369,7 @@ communist_cadres_at_least_positive_opinion = yes
 		search_filters = { FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
 			add_war_support = 0.02
+			939 = { add_core_of = CHI }
 			set_temp_variable = { temp_opinion = 5 }
 			change_communist_cadres_opinion = yes
 			set_temp_variable = { modify_chinese_aggression = 1 }
@@ -14449,7 +15377,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Maintain_Historical_Enmity executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -14474,7 +15404,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Demand_the_Senkaku_Islands executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -14498,7 +15430,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Incite_Anti_Japanese_Sentiment executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -14519,7 +15453,7 @@ communist_cadres_at_least_positive_opinion = yes
 		available = {
 			JAP = { controls_state = 939 }
 		}
-		
+
 		Bypass = {
 			CHI = { owns_state = 939 }
 		}
@@ -14600,6 +15534,9 @@ communist_cadres_at_least_positive_opinion = yes
 					has_government = democratic
 				}
 			}
+			modifier = {
+				add = 10
+			}
 		}
 	}
 
@@ -14651,7 +15588,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Assuage_Japanese_Concerns executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -14694,7 +15633,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Encourage_Appreciation_of_Japanese_Culture executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -14735,12 +15676,14 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Sign_Strategic_Partnership_Agreement executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
 		id = CHI_Decouple_Japan
-		icon = usa
+		icon = remove_america
 
 		x = 0
 		y = 4
@@ -14790,12 +15733,14 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Decouple_Japan executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
-		id = CHI_The_Inland_Prairie
-		icon = focus_generic_horse_studs
+		id = CHI_The_Northern_Shield
+		icon = shield_of_china
 
 		x = -16
 		y = 1
@@ -14812,11 +15757,20 @@ communist_cadres_at_least_positive_opinion = yes
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_The_Northern_Shield executed"
 			add_political_power = 50
-			log = "[GetDateText]: [This.GetName]: focus CHI_The_Inland_Prairie executed"
+			if = {
+				limit = {
+					country_exists = TAI
+					NOT = { TAI = { is_subject_of = CHI } }
+				}
+				TAI = { add_ideas = fate_of_mongolian_area }
+			}
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -14825,11 +15779,11 @@ communist_cadres_at_least_positive_opinion = yes
 
 		x = -1
 		y = 1
-		relative_position_id = CHI_The_Inland_Prairie
+		relative_position_id = CHI_The_Northern_Shield
 
 		cost = 2
 
-		prerequisite = { focus = CHI_The_Inland_Prairie }
+		prerequisite = { focus = CHI_The_Northern_Shield }
 		mutually_exclusive = { focus = CHI_Sino_Mongol_Friendship_Treaty }
 
 		available = {
@@ -14839,6 +15793,7 @@ communist_cadres_at_least_positive_opinion = yes
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_Raid_The_Dragon_City executed"
 			add_war_support = 0.05
 			add_popularity = { ideology = communism popularity = 0.02 }
 			recalculate_party = yes
@@ -14867,7 +15822,6 @@ communist_cadres_at_least_positive_opinion = yes
 			}
 			set_temp_variable = { modify_chinese_aggression = 1 }
 			CHI_modify_chinese_aggression = yes
-			log = "[GetDateText]: [This.GetName]: focus CHI_Raid_The_Dragon_City executed"
 		}
 
 		ai_will_do = {
@@ -14881,7 +15835,7 @@ communist_cadres_at_least_positive_opinion = yes
 			}
 			modifier = {
 				factor = 0
-				has_global_flag = PRC_A_LONG_PEACE_FOCUS_PATH
+				has_global_flag = CHI_A_LONG_PEACE_FOCUS_PATH
 			}
 			modifier = {
 				add = 1
@@ -14898,21 +15852,21 @@ communist_cadres_at_least_positive_opinion = yes
 
 		x = -1
 		y = 2
-		relative_position_id = CHI_The_Inland_Prairie
+		relative_position_id = CHI_The_Northern_Shield
 
 		cost = 2
 
 		prerequisite = { focus = CHI_Raid_The_Dragon_City }
 
-		available = { AND = { country_exists = MON
-							NOT = { MON = { is_subject_of = CHI }
-							 }
-						}
-					}
+		available = {
+			country_exists = MON
+			NOT = { MON = { is_subject_of = CHI } }
+		}
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_Ceremony_in_Khentii_Mountains executed"
 			add_ideas = ceremony_in_khentii_1
 			add_popularity = { ideology = communism popularity = 0.02 }
 			recalculate_party = yes
@@ -14921,10 +15875,11 @@ communist_cadres_at_least_positive_opinion = yes
 			set_temp_variable = { modify_chinese_aggression = 1 }
 			CHI_modify_chinese_aggression = yes
 			news_event = china_news.18
-			log = "[GetDateText]: [This.GetName]: focus CHI_Ceremony_in_Khentii_Mountains executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -14933,7 +15888,7 @@ communist_cadres_at_least_positive_opinion = yes
 
 		x = -1
 		y = 3
-		relative_position_id = CHI_The_Inland_Prairie
+		relative_position_id = CHI_The_Northern_Shield
 
 		cost = 2
 
@@ -14951,12 +15906,7 @@ communist_cadres_at_least_positive_opinion = yes
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
-			CHI = {
-				create_wargoal = {
-					type = annex_everything
-					target = MON
-				}
-			}
+			country_event = china.63
 			set_temp_variable = { modify_chinese_aggression = 1 }
 			CHI_modify_chinese_aggression = yes
 			set_temp_variable = { temp_opinion = 5 }
@@ -14964,7 +15914,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Inscription_of_Yanran executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -14973,7 +15925,7 @@ communist_cadres_at_least_positive_opinion = yes
 
 		x = 0
 		y = 4
-		relative_position_id = CHI_The_Inland_Prairie
+		relative_position_id = CHI_The_Northern_Shield
 
 		cost = 10
 
@@ -14981,7 +15933,7 @@ communist_cadres_at_least_positive_opinion = yes
 
 		available = {
 			OR = {
-				NOT = { country_exists = MON }
+				is_outer_mongolia_state_owned = yes
 				MON = {
 					is_subject_of = CHI
 					influence_higher_90 = yes
@@ -14991,12 +15943,14 @@ communist_cadres_at_least_positive_opinion = yes
 
 		completion_reward = {
 			add_stability = 0.1
-			add_war_support	= 0.1
+			add_war_support = 0.1
+			add_ideas = chinese_khalkha
 			add_popularity = { ideology = communism popularity = 0.1 }
 			recalculate_party = yes
 			set_temp_variable = { temp_opinion = 10 }
 			change_communist_cadres_opinion = yes
-			country_event = { id = china.21 }
+			change_the_military_opinion = yes
+			country_event = china.21
 			swap_ideas = {
 				remove_idea = ceremony_in_khentii_1
 				add_idea = ceremony_in_khentii_2
@@ -15006,6 +15960,18 @@ communist_cadres_at_least_positive_opinion = yes
 					type = air_base
 					level = 1
 					instant_build = yes
+				}
+			}
+			if = {
+				limit = {
+					country_exists = TAI
+					NOT = { TAI = { is_subject_of = CHI } }
+				}
+				TAI = {
+					swap_ideas = {
+						remove_idea = fate_of_mongolian_area
+						add_idea = fate_of_mongolian_area_1
+					}
 				}
 			}
 			hidden_effect = {
@@ -15025,7 +15991,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Outer_Mongolia_Return executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -15034,11 +16002,11 @@ communist_cadres_at_least_positive_opinion = yes
 
 		x = 1
 		y = 1
-		relative_position_id = CHI_The_Inland_Prairie
+		relative_position_id = CHI_The_Northern_Shield
 
 		cost = 7
 
-		prerequisite = { focus = CHI_The_Inland_Prairie }
+		prerequisite = { focus = CHI_The_Northern_Shield }
 		mutually_exclusive = { focus = CHI_Raid_The_Dragon_City }
 
 		search_filters = { FOCUS_FILTER_CHI_AGGRESSION }
@@ -15053,21 +16021,15 @@ communist_cadres_at_least_positive_opinion = yes
 		}
 
 		completion_reward = {
+			log = "[GetDateText]: [This.GetName]: focus CHI_China_Mongol_Friendship_Treaty executed"
 			SOV = {
-				add_opinion_modifier = {
-					target = CHI
-					modifier = political_outreach
-				}
+				add_opinion_modifier = { target = CHI modifier = political_outreach }
 			}
 			MON = {
-				add_opinion_modifier = {
-					target = CHI
-					modifier = political_outreach
-				}
+				add_opinion_modifier = { target = CHI modifier = political_outreach }
 			}
 			set_temp_variable = { modify_chinese_aggression = -1 }
 			CHI_modify_chinese_aggression = yes
-			log = "[GetDateText]: [This.GetName]: focus CHI_China_Mongol_Friendship_Treaty executed"
 		}
 
 		ai_will_do = {
@@ -15085,7 +16047,7 @@ communist_cadres_at_least_positive_opinion = yes
 			}
 			modifier = {
 				factor = 0
-				has_global_flag = PRC_RED_DAWN_FOCUS_PATH
+				has_global_flag = CHI_RED_DAWN_FOCUS_PATH
 			}
 		}
 	}
@@ -15096,13 +16058,13 @@ communist_cadres_at_least_positive_opinion = yes
 
 		x = 1
 		y = 2
-		relative_position_id = CHI_The_Inland_Prairie
+		relative_position_id = CHI_The_Northern_Shield
 
 		prerequisite = { focus = CHI_Sino_Mongol_Friendship_Treaty }
 
 		cost = 10
 
-		search_filters = { FOCUS_FILTER_ANNEXATION }
+		search_filters = { FOCUS_FILTER_CHI_AGGRESSION }
 
 		available = {
 			  country_exists = MON
@@ -15118,8 +16080,10 @@ communist_cadres_at_least_positive_opinion = yes
 		bypass = { MON = { is_subject = yes } }
 
 		completion_reward = {
-			CHI = { set_temp_variable = { treasury_change = -10 }
-			modify_treasury_effect = yes }
+			CHI = { set_temp_variable = { treasury_change = -5 }
+			modify_treasury_effect = yes
+			set_temp_variable = { modify_chinese_aggression = -1 }
+			CHI_modify_chinese_aggression = yes }
 			MON = { set_temp_variable = { percent_change = 5 }
 			set_temp_variable = { tag_index = CHI }
 			set_temp_variable = { influence_target = MON }
@@ -15128,7 +16092,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Aid_Outer_Mongolia executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 
 	}
 
@@ -15138,7 +16104,7 @@ communist_cadres_at_least_positive_opinion = yes
 
 		x = 1
 		y = 3
-		relative_position_id = CHI_The_Inland_Prairie
+		relative_position_id = CHI_The_Northern_Shield
 
 		prerequisite = { focus = CHI_Aid_Outer_Mongolia }
 
@@ -15147,28 +16113,28 @@ communist_cadres_at_least_positive_opinion = yes
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
 		available = {
-			  country_exists = MON
+			   country_exists = MON
+			   has_country_flag = jebtsundamba_sat
 			   NOT = { has_war_with = MON }
-				MON = {
-					has_opinion = {
-						target = CHI
-						value > 74
-					}
-				}
-				MON = {
+			   MON = {
 					influence_higher_50 = yes
-				}
+			   }
 
 		}
 
-		bypass = { MON = { is_subject = yes } }
+		bypass = { MON = { is_subject_of = CHI } }
 
 		completion_reward = {
+			set_temp_variable = { temp_opinion = 10 }
+			change_communist_cadres_opinion = yes
+			custom_effect_tooltip = CHI_MON_SAR_tt
 			MON = { country_event = { id = china.19 days = 1 } }
 			log = "[GetDateText]: [This.GetName]: focus CHI_Outer_Mongolia_SAR executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 
 	}
 
@@ -15177,7 +16143,7 @@ communist_cadres_at_least_positive_opinion = yes
 		id = CHI_Global_Influence
 		icon = global_community
 
-		x = 55
+		x = 52
 		y = 8
 
 		cost = 5
@@ -15233,6 +16199,10 @@ communist_cadres_at_least_positive_opinion = yes
 				add = 1
 				date > 2021.01.01
 			}
+			modifier = {
+				add = 1
+				has_country_flag = CHI_SUPPORT_G4
+			}
 		}
 	}
 
@@ -15259,7 +16229,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Peacekeeping_Contributions executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -15296,7 +16268,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Support_Security_Council_Reform executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -15372,14 +16346,14 @@ communist_cadres_at_least_positive_opinion = yes
 					tooltip = USA_influence_lower_than_CHI_tt
 					NOT = {
 						any_country = {
+							NOT = {
+								has_idea = Non_State_Actor
+								has_idea = Lacks_International_Recognition
+								has_idea = rival_government
+							}
 							OR = {
 								is_african_nation = yes
 								is_asian_nation = yes
-								NOT = {
-									has_idea = Non_State_Actor
-									has_idea = Lacks_International_Recognition
-									has_idea = rival_government
-								}
 							}
 							OR = {
 								AND = {
@@ -15471,7 +16445,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_End_US_Hegemony executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -15580,7 +16556,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_The_Bears_Backyard executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -15630,7 +16608,7 @@ communist_cadres_at_least_positive_opinion = yes
 				}
 			}
 			if = {
-				limit = { MON = { influence_higher_70 = yes } }
+				limit = { MON = { is_subject_of = CHI } }
 				annex_country = { target = MON transfer_troops = yes }
 			}
 			else = {
@@ -15707,7 +16685,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_A_New_Imperium executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -15757,7 +16737,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Form_the_SCO executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -15796,7 +16778,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Emphasize_Economic_Cooperation executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -15819,7 +16803,7 @@ communist_cadres_at_least_positive_opinion = yes
 					name = CHI_Civilian_Technology_Sharing
 					bonus = 0.1
 					uses = 3
-					category = industry
+					category = CAT_industry
 				}
 			}
 			if = {
@@ -15829,14 +16813,16 @@ communist_cadres_at_least_positive_opinion = yes
 						name = CHI_Civilian_Technology_Sharing
 						bonus = 0.1
 						uses = 3
-						category = industry
+						category = CAT_industry
 					}
 				}
 			}
 			log = "[GetDateText]: [This.GetName]: focus CHI_Civilian_Technology_Sharing executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -15859,7 +16845,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Development_Assistance executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -15891,7 +16879,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Development_Assistance executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -15910,7 +16900,7 @@ communist_cadres_at_least_positive_opinion = yes
 
 		search_filters = { FOCUS_FILTER_CORRUPTION FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			set_temp_variable = { temp_opinion = 5 }
+			set_temp_variable = { temp_opinion = 10 }
 			change_communist_cadres_opinion = yes
 			every_country = {
 				limit = { has_idea = sco_member }
@@ -15928,7 +16918,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Emphasize_Political_Cooperation executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -15945,7 +16937,7 @@ communist_cadres_at_least_positive_opinion = yes
 
 		search_filters = { FOCUS_FILTER_INTERNAL_FACTION FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			set_temp_variable = { temp_opinion = 5 }
+			set_temp_variable = { temp_opinion = 10 }
 			change_communist_cadres_opinion = yes
 			every_country = {
 				limit = { OR = { has_idea = sco_member has_idea = sco_member_pol } }
@@ -15960,7 +16952,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Crack_Down_on_the_Three_Evils executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -16029,7 +17023,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Emphasize_Military_Cooperation executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -16080,19 +17076,19 @@ communist_cadres_at_least_positive_opinion = yes
 					name = CHI_Military_Technology_Sharing
 					bonus = 0.1
 					uses = 1
-					category = Cat_ARMOR
+					category = CAT_armor
 				}
 				add_tech_bonus = {
 					name = CHI_Military_Technology_Sharing
 					bonus = 0.1
 					uses = 1
-					category = Cat_AIR_EQP
+					category = CAT_air_eqp
 				}
 				add_tech_bonus = {
 					name = CHI_Military_Technology_Sharing
 					bonus = 0.1
 					uses = 1
-					category = Cat_INF
+					category = CAT_inf
 				}
 			}
 			if = {
@@ -16102,26 +17098,28 @@ communist_cadres_at_least_positive_opinion = yes
 						name = CHI_Military_Technology_Sharing
 						bonus = 0.1
 						uses = 1
-						category = Cat_ARMOR
+						category = CAT_armor
 					}
 					add_tech_bonus = {
 						name = CHI_Military_Technology_Sharing
 						bonus = 0.1
 						uses = 1
-						category = Cat_AIR_EQP
+						category = CAT_air_eqp
 					}
 					add_tech_bonus = {
 						name = CHI_Military_Technology_Sharing
 						bonus = 0.1
 						uses = 1
-						category = Cat_INF
+						category = CAT_inf
 					}
 				}
 			}
 			log = "[GetDateText]: [This.GetName]: focus CHI_Military_Technology_Sharing executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -16142,7 +17140,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Strengthen_Security_Framework executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -16158,7 +17158,7 @@ communist_cadres_at_least_positive_opinion = yes
 		prerequisite = { focus = CHI_Civilian_Technology_Sharing focus = CHI_Military_Technology_Sharing focus = CHI_Crack_Down_on_the_Three_Evils }
 		mutually_exclusive = { focus = CHI_Equal_Partners }
 		completion_reward = {
-			set_temp_variable = { temp_opinion = 5 }
+			set_temp_variable = { temp_opinion = 10 }
 			change_communist_cadres_opinion = yes
 			SOV = {
 				add_opinion_modifier = {
@@ -16219,7 +17219,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Equal_Partners executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -16256,7 +17258,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_ASEAN_Integration executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -16284,7 +17288,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Undermine_ASEAN executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -16313,7 +17319,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Exploit_Economic_Clout executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -16359,7 +17367,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Split_CSTO executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -16427,7 +17437,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_Merge_with_CSTO executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -16471,7 +17483,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_An_Alliance_to_Rival_NATO executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -16493,7 +17507,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: CHI_Forum_on_China_African_Cooperation executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -16531,7 +17547,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: CHI_China_Africa_Development_Fund executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -16577,7 +17595,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: CHI_Invest_in_Cheap_Energy executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -16661,7 +17681,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: CHI_Invest_in_Clean_Energy executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 
@@ -16693,7 +17715,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: CHI_Workers_Rights executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -16728,7 +17752,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: CHI_Workers_Rights executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -16766,7 +17792,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: CHI_Agriculture executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -16804,7 +17832,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: CHI_Develop_Hospitals executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -16843,7 +17873,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: CHI_Leverage_Influence executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -16897,7 +17929,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: CHI_Write_Off_Debts executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -16932,7 +17966,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: CHI_Friendship_Schools executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -16967,7 +18003,9 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: CHI_Joint_Research executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
@@ -17003,16 +18041,18 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: CHI_TV_and_Internet_Access executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	#############FUSION ENERGY############
 	focus = {
 		id = CHI_invest_fusion_reactor
 		icon = fusion_science
-		x = -11
-		y = 4
-		relative_position_id = CHI_Chinese_Megaprojects
+		x = 0
+		y = 3
+		relative_position_id = CHI_Renewable_Strategy
 		cost = 17.95
 		available = {
 			custom_trigger_tooltip = {
@@ -17039,15 +18079,17 @@ communist_cadres_at_least_positive_opinion = yes
 			log = "[GetDateText]: [This.GetName]: focus CHI_invest_fusion_reactor executed"
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 
 	focus = {
 		id = CHI_Construct_Tokamak_Reactor
 		icon = tokamak_reactor
-		relative_position_id = CHI_Chinese_Megaprojects
-		x = -10
-		y = 5
+		relative_position_id = CHI_Renewable_Strategy
+		x = -1
+		y = 4
 
 		cost = 17.95
 		mutually_exclusive = { focus = CHI_Construct_Stellarator_Reactor }
@@ -17080,9 +18122,9 @@ communist_cadres_at_least_positive_opinion = yes
 	focus = {
 		id = CHI_Construct_Stellarator_Reactor
 		icon = stellarator_reactor
-		relative_position_id = CHI_Chinese_Megaprojects
-		x = -12
-		y = 5
+		relative_position_id = CHI_Renewable_Strategy
+		x = 1
+		y = 4
 		cost = 25.85
 		mutually_exclusive = { focus = CHI_Construct_Tokamak_Reactor }
 		available = { date > 2015.6.1 }
@@ -17258,6 +18300,7 @@ communist_cadres_at_least_positive_opinion = yes
 			set_temp_variable = { treasury_change = -50 }
 			modify_treasury_effect = yes
 			custom_effect_tooltip = CHI_moonbase_chain_start_tt
+			custom_effect_tooltip = lunar_outpost_tt
 			hidden_effect = { country_event = chi_moon.1 }
 		}
 	}
@@ -17312,8 +18355,6 @@ communist_cadres_at_least_positive_opinion = yes
 			}
 			set_temp_variable = { treasury_change = -100 }
 			modify_treasury_effect = yes
-
-			custom_effect_tooltip = mars_colony_tt
 			set_temp_variable = { arg_popularity = 0.1 }
 			add_ruling_outlook_popularity = yes
 		}
@@ -17364,7 +18405,9 @@ communist_cadres_at_least_positive_opinion = yes
 			add_ruling_outlook_popularity = yes
 		}
 
-		ai_will_do = { base = 1 }
+		ai_will_do = {
+			base = 1
+		}
 	}
 	focus = {
 		id = CHI_circular_electron_positron_collider
@@ -17388,60 +18431,9 @@ communist_cadres_at_least_positive_opinion = yes
 			modify_treasury_effect = yes
 		}
 
-		ai_will_do = { base = 1 }
-	}
-	focus = {
-		id = CHI_zhejiang_megacity
-		icon = pearl_river_megacity
-		x = -15
-		y = 5
-		relative_position_id = CHI_Chinese_Megaprojects
-		cost = 10
-
-		available = {
-			date > 2010.1.1
-			controls_state = 538
+		ai_will_do = {
+			base = 1
 		}
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		prerequisite = { focus = CHI_Yangtze_River_Megacity }
-		completion_reward = {
-			log = "[GetDateText]: [This.GetName]: focus CHI_zhejiang_megacity executed"
-			set_temp_variable = { treasury_change = -100 }
-			modify_treasury_effect = yes
-
-			538 = {
-				add_extra_state_shared_building_slots = 10
-				add_building_construction = {
-					type = industrial_complex
-					level = 4
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = offices
-					level = 4
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 5
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = internet_station
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = fuel_silo
-					level = 2
-					instant_build = yes
-				}
-			}
-			set_temp_variable = { arg_popularity = 0.03 }
-			add_ruling_outlook_popularity = yes
-		}
-
-		ai_will_do = { base = 1 }
 	}
+
 }
