@@ -34,6 +34,7 @@ corporate_tax_consumer_goods_hit = {
 
 	consumer_goods_expected_value = consumer_goods_from_corporate_tax
 	receiving_investment_cost_modifier = receiving_investment_cost_form_corporate_tax
+	productivity_growth_modifier = productivity_growth_modifier_from_corporate_tax
 }
 
 resources_manpower_fulfillment_modifier = {
@@ -52,4 +53,5 @@ productivity_and_employment_modifier = {
 	industrial_capacity_factory = military_factories_output_var
 	industrial_capacity_dockyard = dockyards_output_var
 	production_speed_buildings_factor = construction_speed_output_var
+	production_speed_agriculture_district_factor = agriculture_district_output_var
 }
