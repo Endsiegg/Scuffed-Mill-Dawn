@@ -43,6 +43,7 @@ idea_categories = {
 		slot = Military_Status_Women
 		slot = Foreign_Intervention_Law
 		slot = Officer_Training_Law
+		slot = migration_laws
 		cost = 150
 		removal_cost = 0
 		ledger = civilian
@@ -154,6 +155,31 @@ idea_categories = {
 		slot = air_force_command_spirit
 	}
 
+	# Recursive Array Setup
+	array_element_renderers = {
+		hidden = yes
+		cost = 0
+		removal_cost = -1
+		ledger = hidden
+	}
+	array_infixes = {
+		hidden = yes
+		cost = 0
+		removal_cost = -1
+		ledger = hidden
+	}
+	array_last_infixes = {
+		hidden = yes
+		cost = 0
+		removal_cost = -1
+		ledger = hidden
+	}
+	array_cutoff_suffixes = {
+		hidden = yes
+		cost = 0
+		removal_cost = -1
+		ledger = hidden
+	}
 }
 
 slot_ledgers = {
