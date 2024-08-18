@@ -20,10 +20,6 @@ objectTypes = {
 		name = "CHI_missile_submarine_mesh"
 		file = "gfx/models/units/ships/CHI_missile_submarine.mesh"
 	}
-	pdxmesh = {
-		name = "SOV_missile_submarine_mesh"
-		file = "gfx/models/units/ships/typhoon-class.mesh"
-	}
 
 	####################
 	# missile submarine #
@@ -57,11 +53,17 @@ objectTypes = {
 
 	pdxmesh = {
 		name = "generic_Nuclear_carrier_mesh"
-		file = "gfx/models/units/ships/USA_carrier.mesh"
+		file = "gfx/models/units/ships/USA/Nimitz.mesh"
+		animation = { id = "idle"			type = "generic_carrier_idle_animation" }
+		animation = { id = "death"			type = "generic_carrier_death_animation" }
+		animation = { id = "death2"			type = "generic_carrier_death2_animation" }
 	}
 	pdxmesh = {
 		name = "USA_Nuclear_carrier_mesh"
-		file = "gfx/models/units/ships/USA_carrier.mesh"
+		file = "gfx/models/units/ships/USA/Nimitz.mesh"
+		animation = { id = "idle"			type = "generic_carrier_idle_animation" }
+		animation = { id = "death"			type = "generic_carrier_death_animation" }
+		animation = { id = "death2"			type = "generic_carrier_death2_animation" }
 	}
 
 	pdxmesh = {
@@ -79,11 +81,17 @@ objectTypes = {
 
 	pdxmesh = {
 		name = "generic_carrier_mesh"
-		file = "gfx/models/units/ships/USA_carrier.mesh"
+		file = "gfx/models/units/ships/USA/Nimitz.mesh"
+		animation = { id = "idle"			type = "generic_carrier_idle_animation" }
+		animation = { id = "death"			type = "generic_carrier_death_animation" }
+		animation = { id = "death2"			type = "generic_carrier_death2_animation" }
 	}
 	pdxmesh = {
 		name = "USA_carrier_mesh"
-		file = "gfx/models/units/ships/USA_carrier.mesh"
+		file = "gfx/models/units/ships/USA/Nimitz.mesh"
+		animation = { id = "idle"			type = "generic_carrier_idle_animation" }
+		animation = { id = "death"			type = "generic_carrier_death_animation" }
+		animation = { id = "death2"			type = "generic_carrier_death2_animation" }
 	}
 
 	pdxmesh = {
@@ -106,11 +114,11 @@ objectTypes = {
 
 	pdxmesh = {
 		name = "generic_LHA_mesh"
-		file = "gfx/models/units/ships/USA_carrier.mesh"
+		file = "gfx/models/units/ships/USA/LHD.mesh"
 	}
 	pdxmesh = {
 		name = "USA_LHA_mesh"
-		file = "gfx/models/units/ships/USA_carrier.mesh"
+		file = "gfx/models/units/ships/USA/LHD.mesh"
 	}
 
 	pdxmesh = {
@@ -128,11 +136,11 @@ objectTypes = {
 
 	pdxmesh = {
 		name = "generic_LPD_mesh"
-		file = "gfx/models/units/ships/USA_carrier.mesh"
+		file = "gfx/models/units/ships/USA/Sanantonio.mesh"
 	}
 	pdxmesh = {
 		name = "USA_LPD_mesh"
-		file = "gfx/models/units/ships/USA_carrier.mesh"
+		file = "gfx/models/units/ships/USA/Sanantonio.mesh"
 	}
 
 	pdxmesh = {
@@ -167,11 +175,23 @@ objectTypes = {
 
 	pdxmesh = {
 		name = "generic_nuclear_cruiser_mesh"
-		file = "gfx/models/units/ships/USA_light_cruiser.mesh"
+		file = "gfx/models/units/ships/USA/Ticonderoga.mesh"
+		animation = { id = "idle"			type = "generic_heavy_cruiser_idle_animation" }
+		animation = { id = "attack"			type = "generic_heavy_cruiser_attack_animation" }
+		animation = { id = "defend"			type = "generic_heavy_cruiser_defend_animation" }
+		animation = { id = "damaged_attack"	type = "generic_heavy_cruiser_attack_animation" }
+		animation = { id = "damaged_defend"	type = "generic_heavy_cruiser_defend_animation" }
+		animation = { id = "death"			type = "generic_heavy_cruiser_death_animation" }
 	}
 	pdxmesh = {
 		name = "USA_nuclear_cruiser_mesh"
-		file = "gfx/models/units/ships/USA_light_cruiser.mesh"
+		file = "gfx/models/units/ships/USA/Ticonderoga.mesh"
+		animation = { id = "idle"			type = "generic_heavy_cruiser_idle_animation" }
+		animation = { id = "attack"			type = "generic_heavy_cruiser_attack_animation" }
+		animation = { id = "defend"			type = "generic_heavy_cruiser_defend_animation" }
+		animation = { id = "damaged_attack"	type = "generic_heavy_cruiser_attack_animation" }
+		animation = { id = "damaged_defend"	type = "generic_heavy_cruiser_defend_animation" }
+		animation = { id = "death"			type = "generic_heavy_cruiser_death_animation" }
 	}
 
 	pdxmesh = {
@@ -201,11 +221,13 @@ objectTypes = {
 
 	pdxmesh = {
 		name = "generic_cruiser_mesh"
-		file = "gfx/models/units/ships/USA_light_cruiser.mesh"
-	}
-	pdxmesh = {
-		name = "USA_cruiser_mesh"
-		file = "gfx/models/units/ships/USA_light_cruiser.mesh"
+		file = "gfx/models/units/ships/USA/Ticonderoga.mesh"
+		animation = { id = "idle"			type = "generic_heavy_cruiser_idle_animation" }
+		animation = { id = "attack"			type = "generic_heavy_cruiser_attack_animation" }
+		animation = { id = "defend"			type = "generic_heavy_cruiser_defend_animation" }
+		animation = { id = "damaged_attack"	type = "generic_heavy_cruiser_attack_animation" }
+		animation = { id = "damaged_defend"	type = "generic_heavy_cruiser_defend_animation" }
+		animation = { id = "death"			type = "generic_heavy_cruiser_death_animation" }
 	}
 	
 	pdxmesh = {
@@ -231,7 +253,13 @@ objectTypes = {
 
 	pdxmesh = {
 		name = "generic_stealth_destroyer_mesh"
-		file = "gfx/models/units/ships/USA_destroyer.mesh"
+		file = "gfx/models/units/ships/USA/Arleigh.mesh"
+		animation = { id = "idle"			type = "generic_destroyer_idle_animation" }
+		animation = { id = "attack"			type = "generic_destroyer_attack_animation" }
+		animation = { id = "defend"			type = "generic_destroyer_defend_animation" }
+		animation = { id = "damaged_attack"	type = "generic_destroyer_attack_animation" }
+		animation = { id = "damaged_defend"	type = "generic_destroyer_defend_animation" }
+		animation = { id = "death"			type = "generic_destroyer_death_animation" }
 	}
 	
 	pdxmesh = {
@@ -250,11 +278,7 @@ objectTypes = {
 
 	pdxmesh = {
 		name = "generic_destroyer_mesh"
-		file = "gfx/models/units/ships/USA_destroyer.mesh"
-	}
-	pdxmesh = {
-		name = "USA_destroyer_mesh"
-		file = "gfx/models/units/ships/USA_destroyer.mesh"
+		file = "gfx/models/units/ships/USA/Arleigh.mesh"
 	}
 
 	pdxmesh = {
@@ -295,11 +319,6 @@ objectTypes = {
 		name = "SOV_frigate_mesh"
 		file = "gfx/models/units/ships/SOV_frigate.mesh"
 	}
-
-	pdxmesh = {
-		name = "USA_frigate_mesh"
-		file = "gfx/models/units/ships/USA_frigate.mesh"
-	}
 	
 	pdxmesh = {
 		name = "CHI_frigate_mesh"
@@ -323,11 +342,6 @@ objectTypes = {
 	pdxmesh = {
 		name = "generic_corvette_mesh"
 		file = "gfx/models/units/ships/generic_corvette.mesh"
-	}
-	
-	pdxmesh = {
-		name = "USA_corvette_mesh"
-		file = "gfx/models/units/ships/USA_corvette.mesh"
 	}
 	
 	pdxmesh = {
@@ -367,7 +381,10 @@ objectTypes = {
 	####
 	pdxmesh = {
 		name = "generic_freighter_mesh"
-		file = "gfx/models/units/ships/generic_freighter.mesh"
+		file = "gfx/models/units/ships/freighterMD.mesh"
+
+		animation = { id = "idle"			type = "generic_freighter_idle_animation" }
+		animation = { id = "death"			type = "generic_freighter_death_animation" }
 	}
 
 	####
@@ -375,6 +392,9 @@ objectTypes = {
 	####
 	pdxmesh = {
 		name = "generic_freighter_LP_mesh"
-		file = "gfx/models/units/ships/generic_freighter.mesh"
+		file = "gfx/models/units/ships/freighterMD.mesh"
+
+		animation = { id = "idle"			type = "generic_freighter_idle_animation" }
+		animation = { id = "death"			type = "generic_freighter_death_animation" }
 	}
 }
