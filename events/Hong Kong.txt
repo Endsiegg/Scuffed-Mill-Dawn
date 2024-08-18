@@ -1,19 +1,12 @@
-﻿###########################
-# 	  Hong Kong Events	  #
-###########################
-
-add_namespace = hongkong
+﻿add_namespace = hongkong
 add_namespace = hongkong_news
 
 ##The Chinese have Refused to Reverse the Annexation!
 country_event = {
 	id = hongkong.1
 	title = hongkong.1.t
-
 	desc = hongkong.1.d
-
 	picture = GFX_treaty_rejected
-
 	is_triggered_only = yes
 
 	option = {
@@ -375,9 +368,24 @@ country_event = {
 
 	option = {
 		name = hongkong.5.a #This is not the hill we want to die on.
-		set_autonomy = {
-			target = HKG
-			autonomy_state = autonomy_autonomous_state
+		if = {
+			limit = {
+				has_global_flag = GAME_RULE_allow_colored_puppets
+			}
+			set_autonomy = {
+				target = HKG
+				autonomy_state = autonomy_autonomous_state_colored
+				end_wars = yes
+				end_civil_wars = yes
+			}
+		}
+		else = {
+			set_autonomy = {
+				target = HKG
+				autonomy_state = autonomy_autonomous_state
+				end_wars = yes
+				end_civil_wars = yes
+			}
 		}
 		hidden_effect = {
 			HKG = {
@@ -441,9 +449,24 @@ country_event = {
 
 	option = {
 		name = hongkong.6.a #We should avoid confrontation.
-		set_autonomy = {
-			target = HKG
-			autonomy_state = autonomy_autonomous_state
+		if = {
+			limit = {
+				has_global_flag = GAME_RULE_allow_colored_puppets
+			}
+			set_autonomy = {
+				target = HKG
+				autonomy_state = autonomy_autonomous_state_colored
+				end_wars = yes
+				end_civil_wars = yes
+			}
+		}
+		else = {
+			set_autonomy = {
+				target = HKG
+				autonomy_state = autonomy_autonomous_state
+				end_wars = yes
+				end_civil_wars = yes
+			}
 		}
 		595 = { remove_core_of = CHI }
 		hidden_effect = {
@@ -540,7 +563,7 @@ news_event = {
 	picture = GFX_news_election_rally
 
 	is_triggered_only = yes
-	
+
 	major = yes
 
 	option = {
@@ -575,7 +598,7 @@ news_event = {
 	picture = GFX_news_election_rally
 
 	is_triggered_only = yes
-	
+
 	major = yes
 
 	option = {
@@ -610,7 +633,7 @@ news_event = {
 	picture = GFX_news_election_rally
 
 	is_triggered_only = yes
-	
+
 	major = yes
 
 	option = {

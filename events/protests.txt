@@ -1036,25 +1036,25 @@ country_event = {
 				set_variable = { gdp_per_capita = PREV.gdp_per_capita }
 				update_budget_laws_for_new_nation = yes
 
-				set_variable = { economic_cycles = PREV.economic_cycles }
-				if = { limit = { check_variable = { economic_cycles = 6 } }
+				if = { limit = { PREV = { has_idea = depression } }
 					add_ideas = depression
 				}
-				else_if = { limit = { check_variable = { economic_cycles = 5 } }
+				else_if = { limit = { PREV = { has_idea = recession } }
 					add_ideas = recession
 				}
-				else_if = { limit = { check_variable = { economic_cycles = 4 } }
+				else_if = { limit = { PREV = { has_idea = stagnation } }
 					add_ideas = stagnation
 				}
-				else_if = { limit = { check_variable = { economic_cycles = 3 } }
+				else_if = { limit = { PREV = { has_idea = stable_growth } }
 					add_ideas = stable_growth
 				}
-				else_if = { limit = { check_variable = { economic_cycles = 2 } }
+				else_if = { limit = { PREV = { has_idea = fast_growth } }
 					add_ideas = fast_growth
 				}
-				else_if = { limit = { check_variable = { economic_cycles = 1 } }
+				else_if = { limit = { PREV = { has_idea = economic_boom } }
 					add_ideas = economic_boom
 				}
+
 
 				if = { limit = { PREV = { has_idea = paralyzing_corruption } }
 					add_ideas = paralyzing_corruption
@@ -1297,9 +1297,6 @@ country_event = {
 					}
 					add_ideas = foreign_jihadis
 				}
-				if = { limit = { PREV = { has_idea = isi_pakistan } }
-					add_ideas = isi_pakistan
-				}
 				if = { limit = { PREV = { has_idea = wall_street } }
 					add_ideas = wall_street
 				}
@@ -1342,7 +1339,6 @@ country_event = {
 				economic_cycle_drift_popularity = yes #drift from neighbor
 
 				country_event = { id = brotherhood.0 } #Sets muslim_brotherhood relations
-				country_event = { id = brotherhood.2 }
 			}
 		}
 	}

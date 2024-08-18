@@ -1078,7 +1078,7 @@ country_event = {
 	desc = germany.28.d
 	picture = GFX_mannesmann_vodafone
 
-
+	is_triggered_only = yes
 
 	fire_only_once = yes
 
@@ -1103,7 +1103,7 @@ country_event = {
 	picture = GFX_transrapid
 
 
-
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
@@ -1132,6 +1132,7 @@ country_event = {
 	desc = germany.30.d
 	picture = GFX_train_accident_bruehl
 
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
@@ -1157,7 +1158,7 @@ country_event = {
 	picture = GFX_Hochwasser_I
 
 
-
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
@@ -1189,7 +1190,7 @@ country_event = {
 	picture = GFX_Hochwasser_II
 
 
-
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
@@ -1233,7 +1234,7 @@ country_event = {
 	picture = GFX_helmut_hofer_free
 
 
-
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
@@ -1251,7 +1252,7 @@ country_event = {
 	desc = germany.35.d
 
 
-
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
@@ -1271,7 +1272,7 @@ country_event = {
 	picture = GFX_Berlin_Bank
 
 
-
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
@@ -1290,7 +1291,7 @@ country_event = {
 	picture = GFX_Berlin_Bank
 
 
-
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
@@ -1309,7 +1310,7 @@ country_event = {
 	picture = GFX_Berlin_Bank
 
 
-
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
@@ -1338,7 +1339,7 @@ country_event = {
 	picture = GFX_Berlin_Bank
 
 
-
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = { #yes
@@ -1364,7 +1365,7 @@ country_event = {
 	picture = GFX_Berlin_Bank
 
 
-
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = { #state
@@ -1391,7 +1392,7 @@ country_event = {
 	picture = GFX_german_artifacts
 
 
-
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
@@ -1543,7 +1544,9 @@ country_event = { #Die Linke rises in popularity
 	desc = germany_divide.1.d
 	picture = GFX_die_linke_stage
 	is_triggered_only = yes
-
+	trigger = {
+		emerging_anarchist_communism_are_not_in_power = yes
+	}
 	option = { #
 		name = germany_divide.1.a
 		log = "[GetDateText]: [This.GetName]:germany_divide.1.a executed"
@@ -1563,7 +1566,9 @@ country_event = { #Die Linke supporters stage protests
 	desc = germany_divide.2.d
 	picture = GFX_german_riot
 	is_triggered_only = yes
-
+	trigger = {
+		emerging_anarchist_communism_are_not_in_power = yes
+	}
 	option = { #
 		name = germany_divide.2.a
 		log = "[GetDateText]: [This.GetName]:germany_divide.2.a executed"
@@ -1593,7 +1598,9 @@ country_event = { #Die Linke supporters cause riots
 	desc = germany_divide.3.d
 	picture = GFX_german_riot
 	is_triggered_only = yes
-
+	trigger = {
+		emerging_anarchist_communism_are_not_in_power = yes
+	}
 	option = { #
 		name = germany_divide.3.a
 		log = "[GetDateText]: [This.GetName]:germany_divide.3.a executed"
@@ -1623,7 +1630,9 @@ country_event = { #Die Linke supporters infiltrate bundeswher
 	desc = germany_divide.4.d
 	picture = GFX_bundeswehr2
 	is_triggered_only = yes
-
+	trigger = {
+		emerging_anarchist_communism_are_not_in_power = yes
+	}
 	option = { #
 		name = germany_divide.4.a
 		log = "[GetDateText]: [This.GetName]:germany_divide.4.a executed"
@@ -1643,7 +1652,9 @@ country_event = { #Die Linke questions our administration
 	desc = germany_divide.5.d
 	picture = GFX_die_linke_stage
 	is_triggered_only = yes
-
+	trigger = {
+		emerging_anarchist_communism_are_not_in_power = yes
+	}
 	option = { #
 		name = germany_divide.5.a
 		log = "[GetDateText]: [This.GetName]:germany_divide.5.a executed"
@@ -1663,7 +1674,9 @@ country_event = { #Die Linke warms up with Russia
 	desc = germany_divide.6.d
 	picture = GFX_die_linke_stage
 	is_triggered_only = yes
-
+	trigger = {
+		emerging_anarchist_communism_are_not_in_power = yes
+	}
 	option = { #
 		name = germany_divide.6.a
 		log = "[GetDateText]: [This.GetName]:germany_divide.6.a executed"
@@ -1683,7 +1696,9 @@ country_event = { #Die Linke calls for strikes
 	desc = germany_divide.7.d
 	picture = GFX_die_linke_stage
 	is_triggered_only = yes
-
+	trigger = {
+		emerging_anarchist_communism_are_not_in_power = yes
+	}
 	option = { #
 		name = germany_divide.7.a
 		log = "[GetDateText]: [This.GetName]:germany_divide.7.a executed"
@@ -1700,7 +1715,9 @@ country_event = { #Die Linke drives away foreign investors
 	desc = germany_divide.8.d
 	picture = GFX_banking_crisis
 	is_triggered_only = yes
-
+	trigger = {
+		emerging_anarchist_communism_are_not_in_power = yes
+	}
 	option = { #
 		name = germany_divide.8.a
 		log = "[GetDateText]: [This.GetName]:germany_divide.8.a executed"
@@ -1718,7 +1735,9 @@ country_event = { #Die Linke rallies labour unions
 	desc = germany_divide.9.d
 	picture = GFX_german_riot
 	is_triggered_only = yes
-
+	trigger = {
+		emerging_anarchist_communism_are_not_in_power = yes
+	}
 	option = { #
 		name = germany_divide.9.a
 		log = "[GetDateText]: [This.GetName]:germany_divide.9.a executed"
@@ -1756,7 +1775,9 @@ country_event = {
 	desc = germany_divide.11.d
 	picture = GFX_russian_media_influence
 	is_triggered_only = yes
-
+	trigger = {
+		emerging_anarchist_communism_are_not_in_power = yes
+	}
 	option = { # Ouch
 		name = germany_divide.11.a
 		log = "[GetDateText]: [This.GetName]:germany_divide.11.a executed"
@@ -1838,7 +1859,9 @@ country_event = {
 	desc = germany_divide.12.d
 	picture = GFX_handshake_black
 	is_triggered_only = yes
-
+	trigger = {
+		emerging_anarchist_communism_are_not_in_power = yes
+	}
 	option = { # Provide the necessary funds
 		name = germany_divide.12.a
 		log = "[GetDateText]: [This.GetName]:germany_divide.12.a executed"
@@ -1868,7 +1891,9 @@ country_event = {
 	desc = germany_divide.13.d
 	picture = GFX_german_parliment
 	is_triggered_only = yes
-
+	trigger = {
+		emerging_anarchist_communism_are_not_in_power = yes
+	}
 	option = { # Lets bite our tongues
 		name = germany_divide.13.a
 		log = "[GetDateText]: [This.GetName]:germany_divide.13.a executed"
@@ -1902,7 +1927,9 @@ country_event = {
 	desc = germany_divide.14.d
 	picture = GFX_german_riot
 	is_triggered_only = yes
-
+	trigger = {
+		emerging_anarchist_communism_are_not_in_power = yes
+	}
 	option = { # We must not intervene!
 		name = germany_divide.14.a
 		log = "[GetDateText]: [This.GetName]:germany_divide.14.a executed"
@@ -2002,7 +2029,9 @@ country_event = {
 	desc = germany_divide.15.d
 	picture = GFX_banking_crisis
 	is_triggered_only = yes
-
+	trigger = {
+		emerging_anarchist_communism_are_not_in_power = yes
+	}
 	option = { #
 		name = germany_divide.15.a
 		log = "[GetDateText]: [This.GetName]:germany_divide.15.a executed"
@@ -2036,7 +2065,9 @@ country_event = {
 	desc = germany_divide.16.d
 	picture = GFX_house
 	is_triggered_only = yes
-
+	trigger = {
+		emerging_anarchist_communism_are_not_in_power = yes
+	}
 	option = { # Finance them
 		name = germany_divide.16.a
 		log = "[GetDateText]: [This.GetName]:germany_divide.16.a executed"
@@ -2068,7 +2099,9 @@ country_event = {
 	desc = germany_divide.17.d
 	picture = GFX_german_parliment
 	is_triggered_only = yes
-
+	trigger = {
+		emerging_anarchist_communism_are_not_in_power = yes
+	}
 	option = { #
 		name = germany_divide.17.a
 		log = "[GetDateText]: [This.GetName]:germany_divide.17.a executed"
@@ -2096,7 +2129,9 @@ country_event = {
 	desc = germany_divide.18.d
 	picture = GFX_unification_of_church_and_state
 	is_triggered_only = yes
-
+	trigger = {
+		emerging_anarchist_communism_are_not_in_power = yes
+	}
 	option = { # There is nothing we can do
 		name = germany_divide.18.a
 		log = "[GetDateText]: [This.GetName]:germany_divide.18.a executed"
@@ -2165,7 +2200,9 @@ country_event = {
 	title = germany_divide.19.t
 	desc = germany_divide.19.d
 	is_triggered_only = yes
-
+	trigger = {
+		emerging_anarchist_communism_are_not_in_power = yes
+	}
 	option = { # Unfortunate
 		name = germany_divide.19.a
 		log = "[GetDateText]: [This.GetName]:germany_divide.19.a executed"
@@ -2192,7 +2229,9 @@ country_event = {
 	desc = germany_divide.20.d
 	picture = GFX_gen_construction
 	is_triggered_only = yes
-
+	trigger = {
+		emerging_anarchist_communism_are_not_in_power = yes
+	}
 	option = { #
 		name = germany_divide.20.a
 		log = "[GetDateText]: [This.GetName]:germany_divide.20.a executed"
@@ -2315,6 +2354,67 @@ country_event = {
 				calculate_expected_spending = yes
 			}
 		}
+		ai_chance = {
+			base = 3
+		}
+	}
+	option = { # Absolutely not!
+		name = bavaria.1.b
+		log = "[GetDateText]: [This.GetName]:bavaria.1.a executed"
+		set_country_flag = GER_bavaria_gone
+		43 = { remove_core_of = GER }
+		964 = {	remove_core_of = GER }
+		newline = yes
+		release = BAY
+		BAY = {
+			## Setup Values
+			hidden_effect = {
+				set_variable = { civilian_factory_employment_var = 1 }
+				set_variable = { naval_factory_employment_var = 1 }
+				set_variable = { military_factory_employment_var = 1 }
+				set_variable = { office_employment_var = 1 }
+				set_variable = { gdpc_converging_var = PREV.gdpc_converging_var }
+				inherit_technology = PREV
+				if = {
+					limit = {
+						NOT = { has_variable = domestic_influence_amount }
+					}
+					set_variable = { domestic_influence_amount = 100 }
+				}
+				if = {
+					limit = { NOT = { has_variable = corporate_tax_rate } }
+					set_variable = { var = corporate_tax_rate value = 20 }
+				}
+				if = {
+					limit = { NOT = { has_variable = population_tax_rate } }
+					set_variable = { var = population_tax_rate value = 20 }
+				}
+				ingame_init_investment_system = yes
+				init_auto_influence_array = yes
+
+				calculate_influence_percentage = yes #set alignment drifts from influence
+				startup_politics = yes
+				ingame_update_setup = yes 	#money system
+				setup_init_factions = yes 	#flags for int. factions
+				set_law_vars = yes 	#vars for change laws secondary effects
+				update_neighbors_effects = yes # Updates Neighbor Effects
+				economic_cycle_drift_popularity = yes #drift from neighbor
+				ai_update_build_units = yes
+				calculate_expected_spending = yes
+			}
+		}
+		newline = yes
+		declare_war_on = {
+			target = BAY
+			type = puppet_wargoal_focus
+		}
+		newline = yes
+		set_party_index_to_ruling_party = yes
+		set_temp_variable = { party_popularity_increase = -0.15 }
+		set_temp_variable = { temp_outlook_increase = -0.15 }
+		add_relative_party_popularity = yes
+		newline = yes
+		add_stability = -0.05
 		ai_chance = {
 			base = 3
 		}
@@ -4292,7 +4392,7 @@ country_event = {
 			name = GER_foreign_exchange
 			bonus = 0.5
 			uses = 1
-			category = internet_tech
+			category = CAT_internet_tech
 		}
 		set_temp_variable = { percent_change = 2.5 }
 		set_temp_variable = { tag_index = GER }
@@ -5143,7 +5243,7 @@ country_event = {
 		name = germany_yearly.11.a
 		log = "[GetDateText]: [This.GetName]: germany_yearly.11.a executed"
 		add_political_power = -150
-		air_experience = -20
+		army_experience = -20
 		add_war_support = -0.05
 		ai_chance = {
 			base = 5
@@ -5174,7 +5274,7 @@ country_event = {
 			name = GER_foreign_exchange
 			bonus = 0.5
 			uses = 1
-			category = internet_tech
+			category = CAT_internet_tech
 		}
 		ai_chance = {
 			base = 5
@@ -5589,6 +5689,8 @@ country_event = {
 		update_GER_welfare_cost = yes
 		set_temp_variable = { temp_opinion = -3 }
 		change_industrial_conglomerates_opinion = yes
+		set_temp_variable = { temp_opinion = -2 }
+		change_small_medium_business_owners_opinion = yes
 		set_temp_variable = { temp_opinion = 3 }
 		change_labour_unions_opinion = yes
 		ai_chance = {
@@ -5603,10 +5705,1092 @@ country_event = {
 		update_GER_welfare_cost = yes
 		set_temp_variable = { temp_opinion = 3 }
 		change_industrial_conglomerates_opinion = yes
+		set_temp_variable = { temp_opinion = 2 }
+		change_small_medium_business_owners_opinion = yes
 		set_temp_variable = { temp_opinion = -3 }
 		change_labour_unions_opinion = yes
 		ai_chance = {
 			base = 5
+		}
+	}
+}
+
+#Gudera
+country_event = {
+	id = germany.520
+	title = germany.520.t
+	desc = germany.520.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_country_flag = GER_constitutional_government
+		}
+	}
+	option = {
+		name = germany.520.a
+		log = "[GetDateText]: [This.GetName]: germany520.a executed"
+		add_political_power = -150
+		ai_chance = {
+			base = 5
+		}
+	}
+	option = {
+		name = germany.520.b
+		log = "[GetDateText]: [This.GetName]: germany520.b executed"
+		retire_character = GER_gert_gudera
+		ai_chance = {
+			base = 5
+		}
+	}
+}
+
+#Retire Leader Heeresführungskommando
+country_event = {
+	id = germany.525
+	title = germany.525.t
+	desc = germany.525.d
+	picture = GFX_grosser_zapfenstreich
+
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_country_flag = GER_constitutional_government
+		}
+	}
+	# Grossen Zapfenstreich
+	option = {
+		name = germany.525.a
+		log = "[GetDateText]: [This.GetName]: germany525.a executed"
+		GER = {
+			random_unit_leader = {
+				limit = {
+					is_field_marshal = yes
+				}
+				retire = yes
+			}
+		}
+		add_power_balance_value = {
+				id = GER_power_balance
+				value = -0.05
+			}
+		country_event = {
+			id = germany.525
+			days = 1865
+		}
+		ai_chance = {
+			base = 5
+		}
+	}
+	# we dont like this Militarism
+	option = {
+		name = germany.525.b
+		log = "[GetDateText]: [This.GetName]: germany525.b executed"
+		GER = {
+			random_unit_leader = {
+				limit = {
+					is_field_marshal = yes
+				}
+				retire = yes
+			}
+		}
+		add_power_balance_value = {
+			id = GER_power_balance
+			value = 0.05
+		}
+		country_event = {
+			id = germany.525
+			days = 1865
+		}
+		ai_chance = {
+			base = 5
+		}
+	}
+}
+
+#investigate Events
+
+#Nothing found
+country_event = {
+	id = germany.523
+	title = germany.523.t
+	desc = germany.523.d
+	picture = GFX_politics_talks
+
+	is_triggered_only = yes
+	# good
+	option = {
+		name = germany.523.a
+		log = "[GetDateText]: [This.GetName]: germany523.a executed"
+		add_stability = 0.02
+		add_power_balance_value = {
+			id = GER_power_balance
+			value = -0.05
+		}
+		ai_chance = {
+			base = 5
+		}
+	}
+	# then place something!
+	option = {
+		name = germany.523.b
+		log = "[GetDateText]: [This.GetName]: germany523.b executed"
+		add_stability = -0.02
+		add_political_power = -100
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.035
+		}
+		add_power_balance_value = {
+			id = GER_power_balance
+			value = 0.05
+		}
+		country_event = {
+			id = germany.526
+			days = 7
+		}
+		ai_chance = {
+			base = 5
+		}
+	}
+}
+# their have to be Nazis
+country_event = {
+	id = germany.526
+	title = germany.526.t
+	desc = germany.526.d
+	picture = GFX_politics_talks
+
+	is_triggered_only = yes
+
+
+	# maybe we are wrong
+	option = {
+		name = germany.526.a
+		log = "[GetDateText]: [This.GetName]: germany526.a executed"
+		ai_chance = {
+			base = 5
+		}
+	}
+	# if you don´t find stuff, place it
+	option = {
+		name = germany.526.b
+			log = "[GetDateText]: [This.GetName]: germany526.b executed"
+			add_stability = -0.02
+			add_political_power = -100
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.035
+			}
+			add_power_balance_value = {
+				id = GER_power_balance
+				value = 0.05
+			}
+			country_event = {
+				id = germany.524
+				days = 7
+			}
+
+		ai_chance = {
+			base = 5
+		}
+	}
+}
+#we find some suspicious Stuff
+country_event = {
+	id = germany.524
+	title = germany.524.t
+	desc = germany.524.d
+	picture = GFX_politics_talks
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_country_flag = GER_constitutional_government
+		}
+	}
+	# get rid of these NAZI Network!
+	option = {
+		name = germany.524.a
+		log = "[GetDateText]: [This.GetName]: germany524.a executed"
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.035
+		}
+		add_political_power = -100
+		add_power_balance_value = {
+			id = GER_power_balance
+			value = -0.05
+		}
+		ai_chance = {
+			base = 5
+		}
+	}
+	#punichment for the responsible is enough
+	option = {
+		name = germany.524.b
+		log = "[GetDateText]: [This.GetName]: germany524.b executed"
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.035
+		}
+		add_popularity = {
+			ideology = nationalist
+			popularity = -0.035
+		}
+		add_power_balance_value = {
+			id = GER_power_balance
+			value = 0.05
+		}
+		ai_chance = {
+			base = 5
+		}
+	}
+	# let´s cover it up
+	option = {
+		name = germany.524.c
+		log = "[GetDateText]: [This.GetName]: germany524.b executed"
+		add_popularity = {
+			ideology = nationalist
+			popularity = 0.035
+		}
+		add_power_balance_value = {
+			id = GER_power_balance
+			value = -0.10
+		}
+		ai_chance = {
+			base = 5
+		}
+	}
+}
+# get rid of these NAZIS
+country_event = {
+	id = germany.527
+	title = germany.527.t
+	desc = germany.527.d
+	picture = GFX_politics_talks
+	is_triggered_only = yes
+	# the Fisch smell from the Head
+	option = {
+		name = germany.527.a
+		log = "[GetDateText]: [This.GetName]: germany527.a executed"
+		GER = {
+			random_unit_leader = {
+				limit = {
+					is_unit_leader = yes
+				}
+				retire = yes
+			}
+		}
+		add_power_balance_value = {
+				id = GER_power_balance
+				value = -0.05
+			}
+			country_event = {
+				id = germany.522
+				days = 7
+			}
+		ai_chance = {
+			base = 5
+		}
+	}
+	# we need a complete denazification
+	option = {
+		name = germany.527.b
+		log = "[GetDateText]: [This.GetName]: germany527.b executed"
+		GER = {
+			random_unit_leader = {
+				limit = {
+					is_unit_leader = yes
+				}
+				retire = yes
+			}
+		}
+		add_power_balance_value = {
+			id = GER_power_balance
+			value = 0.05
+		}
+		country_event = {
+			id = germany.522
+			days = 7
+		}
+		ai_chance = {
+			base = 5
+		}
+	}
+}
+#Retire General event
+country_event = {
+	id = germany.522
+	title = germany.522.t
+	desc = germany.522.d
+	picture = GFX_grosser_zapfenstreich
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_country_flag = GER_constitutional_government
+		}
+	}
+	# Grossen Zapfenstreich
+	option = {
+		name = germany.522.a
+		log = "[GetDateText]: [This.GetName]: germany522.a executed"
+		GER = {
+			random_unit_leader = {
+				limit = {
+					is_unit_leader = yes
+				}
+				retire = yes
+			}
+		}
+		add_power_balance_value = {
+				id = GER_power_balance
+				value = -0.05
+			}
+		ai_chance = {
+			base = 5
+		}
+	}
+	# we dont like this Militarism
+	option = {
+		name = germany.522.b
+		log = "[GetDateText]: [This.GetName]: germany522.b executed"
+		GER = {
+			random_unit_leader = {
+				limit = {
+					is_unit_leader = yes
+				}
+				retire = yes
+			}
+		}
+		add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+		add_power_balance_value = {
+				id = GER_power_balance
+				value = 0.05
+			}
+		ai_chance = {
+			base = 5
+		}
+	}
+}
+
+#diplomatic
+country_event = {
+	id = germany.511
+	title = germany.511.t
+	desc = germany.511.d
+	picture = GFX_politics_negotiations
+	is_triggered_only = yes
+
+	#Economic_Cooperation
+	option = {
+		name = germany.511.a
+		log = "[GetDateText]: [This.GetName]: germany.511.a executed"
+		From.From = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			set_temp_variable = { percent_change = 3.5 }
+			set_temp_variable = { tag_index = GER }
+			set_temp_variable = { influence_target = From }
+				change_influence_percentage = yes
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.02
+			}
+		}
+		GER = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+				set_temp_variable = { treasury_change = -7.0 }
+				modify_treasury_effect = yes
+			}
+		}
+	}
+	#Militaric_Cooperation
+	option = {
+		name = germany.511.b
+		log = "[GetDateText]: [This.GetName]: germany.511.b executed"
+		From = {
+			add_timed_idea = {
+				idea = GER_idea_officer_exchange
+				days = 180
+			}
+			set_temp_variable = { percent_change = 2.5 }
+			set_temp_variable = { tag_index = GER }
+			set_temp_variable = { influence_target = From }
+			change_influence_percentage = yes
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.02
+			}
+		}
+		GER = {
+			add_timed_idea = {
+				idea = GER_idea_officer_exchange
+				days = 180
+			}
+			random_Army_leader = { gain_xp = 100 }
+			set_temp_variable = { treasury_change = -5.0 }
+				modify_treasury_effect = yes
+		}
+	}
+	#Scientific_Cooperation
+	option = {
+		name = germany.511.c
+		log = "[GetDateText]: [This.GetName]: germany.511.b executed"
+		From = {
+			set_temp_variable = { treasury_change = 5.0 }
+				modify_treasury_effect = yes
+			set_temp_variable = { percent_change = 3.5 }
+			set_temp_variable = { tag_index = GER }
+			set_temp_variable = { influence_target = From }
+			change_influence_percentage = yes
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.03
+			}
+		}
+		GER = {
+	 		add_timed_idea = {
+				idea = GER_idea_scientific_exchange_medium
+				days = 180
+			}
+			set_temp_variable = { treasury_change = -5.0 }
+				modify_treasury_effect = yes
+	 	}
+	}
+}
+#diplomatic
+country_event = {
+	id = germany.512
+	title = germany.512.t
+	desc = germany.512.d
+	picture = GFX_politics_negotiations
+	is_triggered_only = yes
+
+	#Economic_Cooperation
+	option = {
+		name = germany.512.a
+		log = "[GetDateText]: [This.GetName]: germany.512.a executed"
+		From.From = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = offices
+					level = 1
+					instant_build = yes
+				}
+			}
+			set_temp_variable = { percent_change = 5.5 }
+			set_temp_variable = { tag_index = GER }
+			set_temp_variable = { influence_target = From }
+			change_influence_percentage = yes
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.03
+			}
+		}
+		GER = {
+			set_temp_variable = { treasury_change = -7.0 }
+				modify_treasury_effect = yes
+		}
+	}
+	option = { #industry
+		name = germany.512.b
+		log = "[GetDateText]: [This.GetName]: germany.512.b executed"
+		From.From = {
+			one_random_industrial_complex = yes
+			set_temp_variable = { percent_change = 5.5 }
+			set_temp_variable = { tag_index = GER }
+			set_temp_variable = { influence_target = From }
+			change_influence_percentage = yes
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.02
+			}
+		}
+		GER = {
+			set_temp_variable = { treasury_change = -6.0 }
+				modify_treasury_effect = yes
+		}
+	}
+	option = { #infrastructure
+		name = germany.512.c
+		log = "[GetDateText]: [This.GetName]: germany.512.c executed"
+		From.From = {
+			two_random_infrastructure = yes
+			set_temp_variable = { percent_change = 5.5 }
+			set_temp_variable = { tag_index = GER }
+			set_temp_variable = { influence_target = From }
+			change_influence_percentage = yes
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.02
+			}
+		}
+		GER = {
+			set_temp_variable = { treasury_change = -8.0 }
+				modify_treasury_effect = yes
+		}
+	}
+}
+# MEKO
+country_event = {
+	id = germany.513
+	title = germany.513.t
+	desc = germany.513.d
+	picture = GFX_politics_negotiations
+	is_triggered_only = yes
+
+	#Sell Anzac Class
+	option = {
+		name = germany.513.a
+		log = "[GetDateText]: [This.GetName]: germany.513.a executed"
+		FROM = {
+			set_temp_variable = { percent_change = 3.5 }
+			set_temp_variable = { tag_index = GER }
+			set_temp_variable = { influence_target = FROM }
+			change_influence_percentage = yes
+			set_temp_variable = { treasury_change = -12.0 }
+				modify_treasury_effect = yes
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.03
+			}
+				create_ship = { type = corvette_hull_3 equipment_variant = "MEKO Anzac Class" creator = GER }
+				create_ship = { type = corvette_hull_3 equipment_variant = "MEKO Anzac Class" creator = GER }
+		}
+		GER = {
+	 		set_temp_variable = { treasury_change = 12.0 }
+				modify_treasury_effect = yes
+	 	}
+	}
+	#Sell Victory Class
+	option = {
+		name = germany.513.b
+		log = "[GetDateText]: [This.GetName]: germany.513.b executed"
+		FROM = {
+			set_temp_variable = { percent_change = 3.5 }
+			set_temp_variable = { tag_index = GER }
+			set_temp_variable = { influence_target = FROM }
+			change_influence_percentage = yes
+			set_temp_variable = { treasury_change = -12.0 }
+				modify_treasury_effect = yes
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.03
+			}
+				create_ship = { type = corvette_hull_3 equipment_variant = "Victory Class" creator = GER }
+				create_ship = { type = corvette_hull_3 equipment_variant = "Victory Class" creator = GER }
+		}
+		GER = {
+	 		set_temp_variable = { treasury_change = 12.0 }
+				modify_treasury_effect = yes
+	 	}
+	}
+	#Sell El Radii Class
+	option = {
+		name = germany.513.c
+		log = "[GetDateText]: [This.GetName]: germany.513.c executed"
+		FROM = {
+			set_temp_variable = { percent_change = 3.5 }
+			set_temp_variable = { tag_index = GER }
+			set_temp_variable = { influence_target = FROM }
+			change_influence_percentage = yes
+			set_temp_variable = { treasury_change = -12.0 }
+				modify_treasury_effect = yes
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.03
+			}
+				create_ship = { type = frigate_hull_3 equipment_variant = "El Radii Class" creator = GER }
+				create_ship = { type = frigate_hull_3 equipment_variant = "El Radii Class" creator = GER }
+		}
+		GER = {
+	 		set_temp_variable = { treasury_change = 12.0 }
+				modify_treasury_effect = yes
+	 	}
+	}
+}
+# HDW
+country_event = {
+	id = germany.514
+	title = germany.514.t
+	desc = germany.514.d
+	picture = GFX_politics_negotiations
+	is_triggered_only = yes
+
+	#Sell type 212
+	option = {
+		name = germany.514.a
+		log = "[GetDateText]: [This.GetName]: germany.514.a executed"
+		FROM = {
+			set_temp_variable = { percent_change = 3.5 }
+			set_temp_variable = { tag_index = GER }
+			set_temp_variable = { influence_target = FROM }
+			change_influence_percentage = yes
+			set_temp_variable = { treasury_change = -12.0 }
+				modify_treasury_effect = yes
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.03
+			}
+				create_ship = { type = attack_submarine_hull_3 equipment_variant = "Type 212 Class" creator = GER }
+				create_ship = { type = attack_submarine_hull_3 equipment_variant = "Type 212 Class" creator = GER }
+		}
+		GER = {
+	 		set_temp_variable = { treasury_change = 12.0 }
+				modify_treasury_effect = yes
+	 	}
+	}
+	#Sell Type 209
+	option = {
+		name = germany.514.b
+		log = "[GetDateText]: [This.GetName]: germany.514.b executed"
+		FROM = {
+			set_temp_variable = { percent_change = 3.5 }
+			set_temp_variable = { tag_index = GER }
+			set_temp_variable = { influence_target = FROM }
+			change_influence_percentage = yes
+			set_temp_variable = { treasury_change = -12.0 }
+				modify_treasury_effect = yes
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.03
+			}
+				create_ship = { type = attack_submarine_hull_2 equipment_variant = "Type 209 Class - Preveze Variant" creator = GER }
+				create_ship = { type = attack_submarine_hull_2 equipment_variant = "Type 209 Class - Preveze Variant" creator = GER }
+		}
+		GER = {
+	 		set_temp_variable = { treasury_change = 12.0 }
+				modify_treasury_effect = yes
+	 	}
+	}
+	#Sell Poseidon Class
+	option = {
+		name = germany.514.c
+		log = "[GetDateText]: [This.GetName]: germany.514.c executed"
+		FROM = {
+			set_temp_variable = { percent_change = 3.5 }
+			set_temp_variable = { tag_index = GER }
+			set_temp_variable = { influence_target = FROM }
+			change_influence_percentage = yes
+			set_temp_variable = { treasury_change = -12.0 }
+				modify_treasury_effect = yes
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.03
+			}
+				create_ship = { type = attack_submarine_hull_2 equipment_variant = "Poseidon Class" creator = GER }
+				create_ship = { type = attack_submarine_hull_2 equipment_variant = "Poseidon Class" creator = GER }
+		}
+		GER = {
+	 		set_temp_variable = { treasury_change = 12.0 }
+				modify_treasury_effect = yes
+	 	}
+	}
+}
+# Thyssenkrupp
+country_event = {
+	id = germany.515
+	title = germany.515.t
+	desc = germany.515.d
+	picture = GFX_politics_negotiations
+	is_triggered_only = yes
+
+	#Sell type 212
+	option = {
+		name = germany.515.a
+		log = "[GetDateText]: [This.GetName]: germany.515.a executed"
+		FROM = {
+			set_temp_variable = { percent_change = 3.5 }
+			set_temp_variable = { tag_index = GER }
+			set_temp_variable = { influence_target = FROM }
+			change_influence_percentage = yes
+			set_temp_variable = { treasury_change = -12.0 }
+				modify_treasury_effect = yes
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.03
+			}
+				create_ship = { type = attack_submarine_hull_3 equipment_variant = "Type 212 Class" creator = GER }
+				create_ship = { type = attack_submarine_hull_3 equipment_variant = "Type 212 Class" creator = GER }
+		}
+		GER = {
+	 		set_temp_variable = { treasury_change = 12.0 }
+				modify_treasury_effect = yes
+	 	}
+	}
+	#Sell Type 209
+	option = {
+		name = germany.515.b
+		log = "[GetDateText]: [This.GetName]: germany.515.b executed"
+		FROM = {
+			set_temp_variable = { percent_change = 3.5 }
+			set_temp_variable = { tag_index = GER }
+			set_temp_variable = { influence_target = FROM }
+			change_influence_percentage = yes
+			set_temp_variable = { treasury_change = -12.0 }
+				modify_treasury_effect = yes
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.03
+			}
+				create_ship = { type = attack_submarine_hull_2 equipment_variant = "Type 209 Class - Preveze Variant" creator = GER }
+				create_ship = { type = attack_submarine_hull_2 equipment_variant = "Type 209 Class - Preveze Variant" creator = GER }
+		}
+		GER = {
+	 		set_temp_variable = { treasury_change = 12.0 }
+				modify_treasury_effect = yes
+	 	}
+	}
+	#Sell Anzac Class
+	option = {
+		name = germany.515.c
+		log = "[GetDateText]: [This.GetName]: germany.515.c executed"
+		ISR = {
+			set_temp_variable = { percent_change = 3.5 }
+			set_temp_variable = { tag_index = GER }
+			set_temp_variable = { influence_target = ISR }
+			change_influence_percentage = yes
+			set_temp_variable = { treasury_change = -12.0 }
+				modify_treasury_effect = yes
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.03
+			}
+				create_ship = { type = corvette_hull_3 equipment_variant = "MEKO Anzac Class" creator = GER }
+				create_ship = { type = corvette_hull_3 equipment_variant = "MEKO Anzac Class" creator = GER }
+		}
+		GER = {
+	 		set_temp_variable = { treasury_change = 12.0 }
+				modify_treasury_effect = yes
+	 	}
+	}
+	#Sell Victory Class
+	option = {
+		name = germany.515.d
+		log = "[GetDateText]: [This.GetName]: germany.515.d executed"
+		ISR = {
+			set_temp_variable = { percent_change = 3.5 }
+			set_temp_variable = { tag_index = GER }
+			set_temp_variable = { influence_target = ISR }
+			change_influence_percentage = yes
+			set_temp_variable = { treasury_change = -12.0 }
+				modify_treasury_effect = yes
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.03
+			}
+				create_ship = { type = corvette_hull_3 equipment_variant = "Victory Class" creator = GER }
+				create_ship = { type = corvette_hull_3 equipment_variant = "Victory Class" creator = GER }
+		}
+		GER = {
+	 		set_temp_variable = { treasury_change = 12.0 }
+				modify_treasury_effect = yes
+	 	}
+	}
+}
+
+#to much troops
+country_event = {
+	id = germany.560
+	title = germany.560.t
+	desc = germany.560.d
+	picture = GFX_german_parliament_bundestag
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	#Let´s wait for the Reactions
+	option = {
+		name = germany.560.a
+		log = "[GetDateText]: [This.GetName]: germany.560.a executed"
+		GER = {
+			clr_country_flag = GER_Final_settlement
+			country_lock_all_division_template = no
+		}
+		custom_effect_tooltip = GER_Contract_I_TT
+		hidden_effect = {
+			random_list = {
+				45 = {
+					country_event = {
+						id = germany.563
+						days = 2
+					}
+				}
+				45 = {
+					country_event = {
+						id = germany.564
+						days = 2
+					}
+				}
+				10 = {
+					country_event = {
+						id = germany.565
+						days = 2
+					}
+				}
+			}
+		}
+	}
+	#We announce that we are no longer bound by this contract
+	option = {
+		name = germany.560.b
+		log = "[GetDateText]: [This.GetName]: germany.560.b executed"
+		GER = {
+			clr_country_flag = GER_Final_settlement
+			country_lock_all_division_template = no
+		}
+		custom_effect_tooltip = GER_Contract_I_TT
+		hidden_effect = {
+			random_list = {
+				60 = {
+					country_event = {
+						id = germany.563
+						days = 2
+					}
+				}
+				30 = {
+					country_event = {
+						id = germany.564
+						days = 2
+					}
+				}
+				10 = {
+					country_event = {
+						id = germany.565
+						days = 2
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = germany.561
+	immediate = { log = "[GetDateText]: [Root.GetName]: event germany.561" }
+	title = germany.561.t
+	desc = germany.561.d
+	picture = GFX_german_parliament_bundestag
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_completed_focus = POTEF800
+			has_completed_focus = GER_farewell_to_humiliation
+			has_completed_focus = GER_the_constitution_of_germany
+		}
+	}
+
+	option = {
+		name = germany.561.a
+		log = "[GetDateText]: [This.GetName]: germany.561.a executed"
+		hidden_effect = {
+			country_event = {
+				id = germany.560
+				days = 2
+			}
+			country_lock_all_division_template = yes
+		}
+	}
+}
+
+country_event = {
+	id = germany.562
+	immediate = { log = "[GetDateText]: [Root.GetName]: event germany.562" }
+	title = germany.562.t
+	desc = germany.562.d
+	picture = GFX_bundeswehr1
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		has_country_flag = GER_Final_settlement
+		has_army_manpower = { size > 190000 }
+		NOT = {
+			has_completed_focus = POTEF800
+		}
+	}
+
+	option = {
+		name = germany.562.a
+		log = "[GetDateText]: [This.GetName]: germany.561.a executed"
+	}
+}
+
+#harsh reaction
+country_event = {
+	id = germany.563
+	immediate = { log = "[GetDateText]: [Root.GetName]: event germany.563" }
+	title = germany.563.t
+	desc = germany.563.d
+	picture = GFX_german_parliament_bundestag
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = germany.563.a
+		log = "[GetDateText]: [This.GetName]: germany.563.a executed"
+		add_threat = 10
+		add_stability = -0.05
+
+		every_neighbor_country = {
+					limit = {
+						capital_scope = { is_on_continent = europe }
+						NOT = {
+							has_guaranteed = ROOT
+							is_guaranteed_by = ROOT
+						}
+					}
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = GER_breach_of_contract_opinion_I
+					}
+				}
+		USA = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = GER_breach_of_contract_opinion_I
+			}
+		}
+		ENG = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = GER_breach_of_contract_opinion_I
+			}
+		}
+		SOV = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = GER_breach_of_contract_opinion_I
+			}
+		}
+	}
+}
+
+#Diplomatic reaction
+country_event = {
+	id = germany.564
+	immediate = { log = "[GetDateText]: [Root.GetName]: event germany.564" }
+	title = germany.564.t
+	desc = germany.564.d
+	picture = GFX_german_parliament_bundestag
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = germany.564.a
+		log = "[GetDateText]: [This.GetName]: germany.564.a executed"
+		add_threat = 6
+		add_stability = -0.03
+
+		every_neighbor_country = {
+					limit = {
+						capital_scope = { is_on_continent = europe }
+						NOT = {
+							has_guaranteed = ROOT
+							is_guaranteed_by = ROOT
+						}
+					}
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = GER_breach_of_contract_opinion_II
+					}
+				}
+		USA = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = GER_breach_of_contract_opinion_II
+			}
+		}
+		ENG = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = GER_breach_of_contract_opinion_II
+			}
+		}
+		SOV = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = GER_breach_of_contract_opinion_II
+			}
+		}
+	}
+}
+
+#accepted
+country_event = {
+	id = germany.565
+	immediate = { log = "[GetDateText]: [Root.GetName]: event germany.565" }
+	title = germany.565.t
+	desc = germany.565.d
+	picture = GFX_german_parliament_bundestag
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = germany.565.a
+		log = "[GetDateText]: [This.GetName]: germany.565.a executed"
+		add_threat = 2
+		add_stability = -0.03
+
+		USA = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = GER_breach_of_contract_opinion_II
+			}
+		}
+		ENG = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = GER_breach_of_contract_opinion_II
+			}
+		}
+		SOV = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = GER_breach_of_contract_opinion_II
+			}
+		}
+			every_neighbor_country = {
+					limit = {
+						capital_scope = { is_on_continent = europe }
+						NOT = {
+							has_guaranteed = ROOT
+							is_guaranteed_by = ROOT
+						}
+					}
+					custom_effect_tooltip = GER_Neighbor_Opinion_tt
+					hidden_effect = {
+				Random_list = {
+					50 = {
+						add_opinion_modifier = {
+							target = ROOT
+							modifier = GER_breach_of_contract_opinion_III
+						}
+					}
+					50 = {
+						add_opinion_modifier = {
+							target = ROOT
+							modifier = GER_breach_of_contract_opinion_II
+						}
+					}
+				}
+			}
 		}
 	}
 }
