@@ -78,4 +78,19 @@ opinion_modifiers = {
 	GER_great_positive_opinion = {
 		value = 20
 	}
+	GER_breach_of_contract_opinion_I = {
+		value = -80
+		months = 80
+		decay = 0.3
+	}
+	GER_breach_of_contract_opinion_II = {
+		value = -50
+		months = 50
+		decay = 0.3
+	}
+	GER_breach_of_contract_opinion_III = {
+		value = -20
+		months = 20
+		decay = 0.3
+	}
 }
