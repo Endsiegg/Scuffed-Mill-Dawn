@@ -604,7 +604,7 @@ USA_congress_md = {
 			}
 		}
 		modifier = {
-			political_power_factor = -0.05
+			political_power_factor = -0.15
 		}
 		days_remove = 61
 		days_re_enable = 61
@@ -661,7 +661,7 @@ USA_congress_md = {
 		days_remove = 61
 		days_re_enable = 61
 		modifier = {
-			political_power_factor = -0.15
+			political_power_factor = -0.25
 		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove USA_medium_lobby_effort"
