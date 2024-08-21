@@ -775,10 +775,10 @@ ideas = {
 		picture = anti_lgbt
 
 		modifier = {
-			political_power_factor = 0.02
-			democratic_drift = -0.02
+			political_power_factor = 0.05
+			democratic_drift = -0.05
 			nationalist_drift = 0.02
-			communism_drift = 0.02
+			communism_drift = 0.05
 		}
 	}
 	#Private Media Nationalisation
@@ -3346,18 +3346,23 @@ ideas = {
 		equipment_bonus = {
 			attack_helicopter_hull = {
 				build_cost_ic = -0.07
+				insant = yes
 			}
 			transport_helicopter_equipment = {
 				build_cost_ic = -0.07
+				insant = yes
 			}
 			fighter = {
 				build_cost_ic = -0.07
+				insant = yes
 			}
 			tactical_bomber = {
 				build_cost_ic = -0.07
+				insant = yes
 			}
 			naval_bomber = {
 				build_cost_ic = -0.07
+				insant = yes
 			}
 		}
 	}
@@ -3368,21 +3373,27 @@ ideas = {
 		equipment_bonus = {
 			L_AT_Equipment = {
 				build_cost_ic = -0.07
+				insant = yes
 			}
 			H_AT_Equipment = {
 				build_cost_ic = -0.07
+				insant = yes
 			}
 			AA_Equipment = {
 				build_cost_ic = -0.07
+				insant = yes
 			}
 			spaa_hull = {
 				build_cost_ic = -0.07
+				insant = yes
 			}
 			artillery_equipment = {
 				build_cost_ic = -0.07
+				insant = yes
 			}
 			spart_hull = {
 				build_cost_ic = -0.07
+				insant = yes
 			}
 		}
 	}
@@ -3392,40 +3403,64 @@ ideas = {
 		allowed_civil_war = { always = yes }
 		equipment_bonus = {
 			L_AT_Equipment = {
-				build_cost_ic = -0.07
+				build_cost_ic = -0.15
+				instant = yes
 			}
 			H_AT_Equipment = {
-				build_cost_ic = -0.07
+				build_cost_ic = -0.15
+				instant = yes
 			}
 			AA_Equipment = {
-				build_cost_ic = -0.07
+				build_cost_ic = -0.15
+				instant = yes
+			}
+			mbt_hull = {
+				build_cost_ic = -0.15
+				instant = yes
+			}
+			util_vehicle_equipment = {
+				build_cost_ic = -0.15
+				instant = yes
+			}
+			apc_hull = {
+				build_cost_ic = -0.15
+				instant = yes
 			}
 			spaa_hull = {
-				build_cost_ic = -0.07
+				build_cost_ic = -0.15
+				instant = yes
 			}
 			artillery_equipment = {
-				build_cost_ic = -0.13
+				build_cost_ic = -0.15
+				instant = yes
 			}
 			spart_hull = {
-				build_cost_ic = -0.07
+				build_cost_ic = -0.15
+				instant = yes
 			}
 			attack_helicopter_hull = {
-				build_cost_ic = -0.07
+				build_cost_ic = -0.15
+				instant = yes
 			}
 			transport_helicopter_equipment = {
-				build_cost_ic = -0.07
+				build_cost_ic = -0.15
+				instant = yes
 			}
 			fighter = {
-				build_cost_ic = -0.07
+				build_cost_ic = -0.15
+				instant = yes
 			}
 			tactical_bomber = {
-				build_cost_ic = -0.07
+				build_cost_ic = -0.15
+				instant = yes
 			}
 			naval_bomber = {
-				build_cost_ic = -0.07
+				build_cost_ic = -0.15
+				instant = yes
 			}
 			Inf_equipment = {
-				build_cost_ic = -0.07
+				build_cost_ic = -0.15
+				instant = yes
 			}
 		}
 	}
