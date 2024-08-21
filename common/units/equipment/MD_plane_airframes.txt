@@ -496,6 +496,7 @@ equipments = {
 		resources = {
 			aluminium = 2
 			rubber = 1
+			chromium = 1
 		}
 		#module breakdown
 		module_slots = {
@@ -628,6 +629,7 @@ equipments = {
 		resources = {
 			aluminium = 3
 			rubber = 1
+			chromium = 1
 		}
 		#module breakdown
 		module_slots = {
@@ -1274,6 +1276,7 @@ equipments = {
 		resources = {
 			aluminium = 2
 			rubber = 1
+			chromium = 1
 		}
 		#module breakdown
 		module_slots = {
@@ -1406,6 +1409,7 @@ equipments = {
 		resources = {
 			aluminium = 3
 			rubber = 1
+			chromium = 1
 		}
 		#module breakdown
 		module_slots = {
@@ -2099,6 +2103,7 @@ equipments = {
 		resources = {
 			aluminium = 3
 			rubber = 1
+			chromium = 2
 		}
 		#module breakdown
 		module_slots = {
@@ -2245,6 +2250,7 @@ equipments = {
 		resources = {
 			aluminium = 4
 			rubber = 1
+			chromium = 2
 		}
 		#module breakdown
 		module_slots = {
@@ -2969,6 +2975,7 @@ equipments = {
 		resources = {
 			aluminium = 3
 			rubber = 1
+			chromium = 2
 		}
 		#module breakdown
 		module_slots = {
@@ -3120,6 +3127,7 @@ equipments = {
 		resources = {
 			aluminium = 4
 			rubber = 1
+			chromium = 2
 		}
 		#module breakdown
 		module_slots = {
@@ -3865,6 +3873,7 @@ equipments = {
 		resources = {
 			aluminium = 5
 			rubber = 2
+			chromium = 2
 		}
 		module_slots = {
 			fixed_main_weapon_slot = {
@@ -4039,6 +4048,7 @@ equipments = {
 		resources = {
 			aluminium = 6
 			rubber = 2
+			chromium = 2
 		}
 		module_slots = {
 			fixed_main_weapon_slot = {
