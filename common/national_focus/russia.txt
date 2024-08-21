@@ -159,7 +159,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_the_grand_bargain"
 			add_stability = 0.05
-			set_temp_variable = { temp_opinion = 7 }
+			set_temp_variable = { temp_opinion = 10 }
 			change_oligarchs_opinion = yes
 		}
 		ai_will_do = {
@@ -192,23 +192,23 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_lukoil"
 			set_temp_variable = { treasury_change = -15 }
 			modify_treasury_effect = yes
-			set_temp_variable = { temp_opinion = 5 }
+			set_temp_variable = { temp_opinion = 10 }
 			change_fossil_fuel_industry_opinion = yes
 			random_owned_state = {
 				add_resource = {
 					type = oil
-					amount = 5
+					amount = 8
 				}
 			}
 			random_owned_state = {
 				add_resource = {
 					type = oil
-					amount = 5
+					amount = 8
 				}
 			}
 			add_tech_bonus = {
 				name = SOV_lukoil
-				bonus = 0.25
+				bonus = 0.5
 				uses = 2
 				category = CAT_fuel_oil
 			}
@@ -243,20 +243,20 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_gazprom"
 			set_temp_variable = { treasury_change = -10 }
 			modify_treasury_effect = yes
-			set_temp_variable = { temp_opinion = 2 }
-			change_fossil_fuel_industry_opinion = yes
 			set_temp_variable = { temp_opinion = 5 }
+			change_fossil_fuel_industry_opinion = yes
+			set_temp_variable = { temp_opinion = 10 }
 			change_oligarchs_opinion = yes
 			random_owned_state = {
 				add_resource = {
 					type = oil
-					amount = 5
+					amount = 8
 				}
 			}
 			random_owned_state = {
 				add_resource = {
 					type = oil
-					amount = 3
+					amount = 8
 				}
 			}
 		}
@@ -301,19 +301,19 @@ focus_tree = {
 			random_owned_state = {
 				add_resource = {
 					type = steel
-					amount = 5
+					amount = 16
 				}
 			}
 			random_owned_state = {
 				add_resource = {
 					type = chromium
-					amount = 5
+					amount = 8
 				}
 			}
 			random_owned_state = {
 				add_resource = {
 					type = tungsten
-					amount = 5
+					amount = 8
 				}
 			}
 		}
@@ -381,7 +381,19 @@ focus_tree = {
 			random_owned_state = {
 				add_resource = {
 					type = steel
-					amount = 5
+					amount = 8
+				}
+				add_resource = {
+					type = chromium
+					amount = 8
+				}
+				add_resource = {
+					type = tungsten
+					amount = 8
+				}
+				add_resource = {
+					type = aluminium
+					amount = 8
 				}
 			}
 			set_temp_variable = { temp_opinion = -10 }
@@ -416,8 +428,8 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RUSSIA_UNITED }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_putinism"
-			add_political_power = 50
-			add_stability = 0.02
+			add_political_power = 10
+			add_stability = 0.05
 			add_to_variable = { SOV_putin_politic_communism_drift = 0.03 }
 			add_to_variable = { SOV_putin_politic_political_power_factor = 0.07 }
 			add_to_variable = { SOV_putin_politic_stability_factor = 0.03 }
@@ -461,11 +473,11 @@ focus_tree = {
 			682 = {
 				add_resource = {
 					type = tungsten
-					amount = 4
+					amount = 8
 				}
 				add_resource = {
 					type = chromium
-					amount = 6
+					amount = 8
 				}
 				add_resource = {
 					type = steel
@@ -528,18 +540,18 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_arctic_gas_exploration"
 			set_temp_variable = { treasury_change = -10 }
 			modify_treasury_effect = yes
-			set_temp_variable = { temp_opinion = 5 }
+			set_temp_variable = { temp_opinion = 10 }
 			change_fossil_fuel_industry_opinion = yes
 			679 = {
 				add_resource = {
 					type = oil
-					amount = 3
+					amount = 8
 				}
 			}
 			683 = {
 				add_resource = {
 					type = oil
-					amount = 5
+					amount = 8
 				}
 			}
 		}
@@ -20570,6 +20582,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_economic_programs"
 			one_random_industrial_complex = yes
+			one_random_industrial_complex = yes
 		}
 		ai_will_do = { factor = 155 }
 	}
@@ -20900,7 +20913,7 @@ focus_tree = {
 			modify_treasury_effect = yes
 			add_tech_bonus = {
 				name = SOV_manufacturing_improvements
-				bonus = 0.5
+				bonus = 1
 				uses = 2
 				category = CAT_industry
 			}
@@ -20923,21 +20936,21 @@ focus_tree = {
 			random_owned_controlled_state = {
 				add_resource = {
 					type = steel
-					amount = 3
+					amount = 16
 				}
 				add_resource = {
 					type = tungsten
-					amount = 3
+					amount = 8
 				}
 			}
 			random_owned_controlled_state = {
 				add_resource = {
 					type = chromium
-					amount = 3
+					amount = 8
 				}
 				add_resource = {
 					type = aluminium
-					amount = 3
+					amount = 8
 				}
 			}
 		}
@@ -20959,7 +20972,7 @@ focus_tree = {
 			random_owned_controlled_state = {
 				add_resource = {
 					type = tungsten
-					amount = 8
+					amount = 16
 				}
 			}
 		}
@@ -20981,7 +20994,7 @@ focus_tree = {
 			1011 = {
 				add_resource = {
 					type = chromium
-					amount = 8
+					amount = 16
 				}
 			}
 		}
@@ -21003,7 +21016,7 @@ focus_tree = {
 			random_owned_controlled_state = {
 				add_resource = {
 					type = aluminium
-					amount = 8
+					amount = 16
 				}
 			}
 		}
@@ -21025,7 +21038,7 @@ focus_tree = {
 			random_owned_controlled_state = {
 				add_resource = {
 					type = steel
-					amount = 8
+					amount = 24
 				}
 			}
 		}
@@ -21060,10 +21073,10 @@ focus_tree = {
 			set_temp_variable = { treasury_change = -22.5 }
 			modify_treasury_effect = yes
 			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -21094,22 +21107,22 @@ focus_tree = {
 				add_relative_party_popularity = yes
 			}
 			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			add_tech_bonus = {
 				name = GER_invest_in_heli
-				bonus = 0.50
+				bonus = 1
 				uses = 1
 				technology = transport_helicopter3
 			}
 			add_tech_bonus = {
 				name = GER_invest_in_heli
-				bonus = 0.50
+				bonus = 1
 				uses = 1
 				technology = nsb_attack_helicopter_tech_3
 			}
@@ -21140,22 +21153,22 @@ focus_tree = {
 				add_relative_party_popularity = yes
 			}
 			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			add_tech_bonus = {
 				name = GER_invest_in_heli
-				bonus = 0.50
+				bonus = 1
 				uses = 1
 				technology = transport_helicopter4
 			}
 			add_tech_bonus = {
 				name = GER_invest_in_heli
-				bonus = 0.50
+				bonus = 1
 				uses = 1
 				technology = nsb_attack_helicopter_tech_4
 			}
@@ -21176,16 +21189,16 @@ focus_tree = {
 			set_temp_variable = { treasury_change = -15 }
 			modify_treasury_effect = yes
 			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			add_tech_bonus = {
 				name = GER_F35_airframe
-				bonus = 0.50
+				bonus = 1
 				uses = 1
 				technology = gen_5_large
 			}
@@ -21195,7 +21208,7 @@ focus_tree = {
 				}
 				add_tech_bonus = {
 					name = GER_F35_airframe
-					bonus = 0.50
+					bonus = 1
 					uses = 1
 					technology = gen_6_large
 				}
@@ -21227,16 +21240,16 @@ focus_tree = {
 				add_relative_party_popularity = yes
 			}
 			675 = { # Chelyabinsk
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
 			add_tech_bonus = {
 				name = POL_modernization_of_leopards_to_the_2pl_standard
-				bonus = 0.25
+				bonus = 1
 				uses = 1
 				ahead_reduction = 4
 				technology = mbt_tech_3
@@ -21269,10 +21282,10 @@ focus_tree = {
 				add_relative_party_popularity = yes
 			}
 			660 = { # Nizhny Novgorod
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -21295,7 +21308,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = SOV_domestic_auto_production
 				uses = 1
-				bonus = 0.10
+				bonus = 0.5
 				category = CAT_afv
 			}
 			add_ideas = SOV_car_production_revitalization_1_idea
@@ -21319,10 +21332,10 @@ focus_tree = {
 			set_temp_variable = { treasury_change = -7.5 }
 			modify_treasury_effect = yes
 			663 = { # Samara
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -21344,10 +21357,10 @@ focus_tree = {
 			set_temp_variable = { treasury_change = -20 }
 			modify_treasury_effect = yes
 			660 = { # Nizhny Novgorod
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -21374,10 +21387,10 @@ focus_tree = {
 			set_temp_variable = { treasury_change = -7.5 }
 			modify_treasury_effect = yes
 			661 = { # Tatarstan
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -21407,10 +21420,10 @@ focus_tree = {
 			set_temp_variable = { treasury_change = -10 }
 			modify_treasury_effect = yes
 			652 = { # Moscow
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -21687,10 +21700,10 @@ focus_tree = {
 			modify_treasury_effect = yes
 			SOV_rostech_script = yes
 			655 = { # Ryazan
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -21721,10 +21734,10 @@ focus_tree = {
 			modify_treasury_effect = yes
 			SOV_rostech_script = yes
 			652 = { # Moscow
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -21755,10 +21768,10 @@ focus_tree = {
 			modify_treasury_effect = yes
 			SOV_rostech_script = yes
 			652 = { # Moscow
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -21786,7 +21799,7 @@ focus_tree = {
 		x = -8
 		y = 2
 		relative_position_id = SOV_economic_programs
-		cost = 5
+		cost = 3
 		prerequisite = { focus = SOV_decree_no_585 }
 		search_filters = { FOCUS_FILTER_RUSSIA_ECONOMY }
 		bypass = {
@@ -21829,7 +21842,7 @@ focus_tree = {
 		x = -8
 		y = 3
 		relative_position_id = SOV_economic_programs
-		cost = 7
+		cost = 5
 		prerequisite = { focus = SOV_sakhalin_railway }
 		search_filters = { FOCUS_FILTER_RUSSIA_ECONOMY }
 		completion_reward = {
@@ -22053,14 +22066,14 @@ focus_tree = {
 		x = -8
 		y = 4
 		relative_position_id = SOV_economic_programs
-		cost = 7
+		cost = 1
 		prerequisite = { focus = SOV_expand_the_trans_siberian_railroad }
 		search_filters = { FOCUS_FILTER_RUSSIA_ECONOMY }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_high_speed_rail_construction"
 			set_temp_variable = { treasury_change = -15 }
 			modify_treasury_effect = yes
-			add_timed_idea = { idea = SOV_idea_high_speed_rails days = 365 }
+			add_timed_idea = { idea = SOV_idea_high_speed_rails days = 720 }
 		}
 		ai_will_do = { factor = 1 }
 	}
@@ -22219,7 +22232,7 @@ focus_tree = {
 			custom_effect_tooltip = SOV_nationalize_foreign_industry_TT
 			set_temp_variable = { percent_change = 2 }
 			change_domestic_influence_percentage = yes
-			hidden_effect = { three_random_industrial_complex = yes }
+			hidden_effect = { three_random_industrial_complex = yes three_random_industrial_complex = yes }
 			if = {
 				limit = { has_idea = SOV_encouraged_foreign_investments_idea }
 				remove_ideas = SOV_encouraged_foreign_investments_idea
@@ -22622,7 +22635,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus SOV_russian_federation_stabilization_fund"
 			add_stability = 0.025
 			#decrease_oligarchs_opinion = yes
-			set_temp_variable = { treasury_change = 3 }
+			set_temp_variable = { treasury_change = 10 }
 			modify_treasury_effect = yes
 		}
 		ai_will_do = { factor = 1 }
@@ -22641,13 +22654,13 @@ focus_tree = {
 			677 = {
 				add_resource = {
 					type = oil
-					amount = 5
+					amount = 8
 				}
 			}
 			671 = {
 				add_resource = {
 					type = oil
-					amount = 5
+					amount = 8
 				}
 			}
 			set_temp_variable = { treasury_change = -10 }
@@ -22671,25 +22684,25 @@ focus_tree = {
 			643 = {
 				add_resource = {
 					type = oil
-					amount = 3
+					amount = 5
 				}
 			}
 			683 = {
 				add_resource = {
 					type = oil
-					amount = 6
+					amount = 8
 				}
 			}
 			648 = {
 				add_resource = {
 					type = oil
-					amount = 12
+					amount = 16
 				}
 			}
 			679 = {
 				add_resource = {
 					type = oil
-					amount = 6
+					amount = 8
 				}
 			}
 		}
