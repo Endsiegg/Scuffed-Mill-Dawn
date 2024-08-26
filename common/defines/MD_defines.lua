@@ -216,7 +216,7 @@
 	NDefines.NTechnology.MAX_SUBTECHS = 5
 	NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 50.0		-- Base amount of research points a country can save per slot.
 	NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 2.0
-	NDefines.NTechnology.BASE_TECH_COST = 250 -- 100 is vanilla --300 was the old MD cost
+	NDefines.NTechnology.BASE_TECH_COST = 200 -- 100 is vanilla --300 was the old MD cost
 	NDefines.NTechnology.MIN_RESEARCH_SPEED = 0.01 -- 0.10 in vanilla
 	NDefines.NTechnology.USE_BONUS_REGRET_TIMER = 30
 	NDefines.NTechnology.MAX_TECH_SHARING_BONUS = 0.25 -- Nerfed to 0.25 from Tech Sharing
