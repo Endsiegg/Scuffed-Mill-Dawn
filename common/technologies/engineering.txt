@@ -965,7 +965,7 @@ technologies = {
 		productivity_growth_modifier = 0.3
 		on_research_complete = { log = "[GetDateText]: [Root.GetName]: add tech basic_computing" }
 		start_year = 1945
-		research_cost = 1.5
+		research_cost = 1
 
 		research_speed_factor = 0.05
 		land_reinforce_rate = 0.01
@@ -993,7 +993,7 @@ technologies = {
 		productivity_growth_modifier = 0.3
 		on_research_complete = { log = "[GetDateText]: [Root.GetName]: add tech integrated_circuit" }
 		start_year = 1958
-		research_cost = 1.5
+		research_cost = 1
 
 		research_speed_factor = 0.05
 
@@ -1020,7 +1020,7 @@ technologies = {
 		productivity_growth_modifier = 0.3
 		on_research_complete = { log = "[GetDateText]: [Root.GetName]: add tech computing1" }
 		start_year = 1965
-		research_cost = 1.5
+		research_cost = 1
 
 		research_speed_factor = 0.01
 
@@ -1109,7 +1109,7 @@ technologies = {
 		productivity_growth_modifier = 0.3
 		on_research_complete = { log = "[GetDateText]: [Root.GetName]: add tech microprocessors" }
 		start_year = 1975
-		research_cost = 1.5
+		research_cost = 1
 
 		industrial_capacity_factory = 0.15
 		research_speed_factor = 0.05
@@ -1725,7 +1725,7 @@ technologies = {
 	radar = {
 		on_research_complete = { log = "[GetDateText]: [Root.GetName]: add tech radar" }
 		start_year = 1945
-		research_cost = 1.5
+		research_cost = 0.5
 
 		enable_building = {
 			building = radar_station
@@ -1753,7 +1753,7 @@ technologies = {
 
 	internet1 = {
 		start_year = 1975
-		research_cost = 1.5
+		research_cost = 1
 
 		enable_building = {
 			building = internet_station
@@ -1795,7 +1795,7 @@ technologies = {
 
 	internet2 = {
 		start_year = 1990
-		research_cost = 1.5
+		research_cost = 1
 
 		education_cost_multiplier_modifier = -0.05
 		productivity_growth_modifier = 0.2

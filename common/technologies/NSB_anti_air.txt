@@ -45,7 +45,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.4
+		research_cost = 0.5
 		start_year = 1965
 
 		folder = {
@@ -95,7 +95,7 @@ technologies = {
 			position = { x = 8 y = @1965 }
 		}
 
-		research_cost = 2
+		research_cost = 0.5
 		start_year = 1965
 
 		categories = {
@@ -112,10 +112,10 @@ technologies = {
 		on_research_complete = { log = "[GetDateText]: [Root.GetName]: add tech nsb_AA_upgrade_1" }
 
 		category_all_infantry = {
-			air_attack = 0.01
+			air_attack = 0.05
 		}
 		category_tanks = {
-			air_attack = 0.01
+			air_attack = 0.05
 		}
 
 		path = {
@@ -127,7 +127,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.2
+		research_cost = 0.5
 		start_year = 1980
 		xp_research_type = army
 		xp_boost_cost = 50
@@ -161,7 +161,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1985
 
 		folder = {
@@ -213,7 +213,7 @@ technologies = {
 			leads_to_tech = nsb_AA_upgrade_2
 			research_cost_coeff = 1
 		}
-		research_cost = 2.2
+		research_cost = 1
 		start_year = 1985
 
 		categories = {
@@ -230,10 +230,10 @@ technologies = {
 		on_research_complete = { log = "[GetDateText]: [Root.GetName]: add tech nsb_AA_upgrade_2" }
 
 		category_all_infantry = {
-			air_attack = 0.03
+			air_attack = 0.05
 		}
 		category_tanks = {
-			air_attack = 0.03
+			air_attack = 0.05
 		}
 
 		path = {
@@ -365,10 +365,10 @@ technologies = {
 		on_research_complete = { log = "[GetDateText]: [Root.GetName]: add tech nsb_AA_upgrade_3" }
 
 		category_all_infantry = {
-			air_attack = 0.02
+			air_attack = 0.05
 		}
 		category_tanks = {
-			air_attack = 0.02
+			air_attack = 0.05
 		}
 
 		path = {

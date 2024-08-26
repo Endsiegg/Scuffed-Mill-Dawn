@@ -104,7 +104,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 0.5
 		start_year = 1955
 		folder = {
 			name = bba_aircraft_folder
@@ -139,7 +139,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 3
+		research_cost = 1
 		start_year = 1960
 		folder = {
 			name = bba_aircraft_folder
@@ -187,7 +187,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 3
+		research_cost = 1
 		start_year = 1960
 		folder = {
 			name = bba_aircraft_folder
@@ -233,7 +233,7 @@ technologies = {
 			weap_buff_transport
 		}
 
-		research_cost = 3
+		research_cost = 1
 		start_year = 1960
 		folder = {
 			name = bba_aircraft_folder
@@ -1124,7 +1124,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1
 		start_year = 1970
 		folder = {
 			name = bba_aircraft_folder
@@ -1152,7 +1152,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.5
 		start_year = 1985
 		folder = {
 			name = bba_aircraft_folder
@@ -1200,7 +1200,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.5
 		start_year = 1990
 		folder = {
 			name = bba_aircraft_folder
@@ -1227,7 +1227,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.5
 		start_year = 1990
 		folder = {
 			name = bba_aircraft_folder
@@ -1310,7 +1310,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 4
+		research_cost = 2
 		start_year = 2005
 		folder = {
 			name = bba_aircraft_folder
@@ -1371,7 +1371,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 3
+		research_cost = 2
 		start_year = 2000
 		folder = {
 			name = bba_aircraft_folder
@@ -1492,7 +1492,7 @@ technologies = {
 			spec_thrust_vector_1
 		}
 
-		research_cost = 3
+		research_cost = 2
 		start_year = 1975
 		folder = {
 			name = bba_aircraft_folder
@@ -1528,7 +1528,7 @@ technologies = {
 			spec_refuel_2
 		}
 
-		research_cost = 3
+		research_cost = 2
 		start_year = 1980
 		folder = {
 			name = bba_aircraft_folder
@@ -1554,7 +1554,7 @@ technologies = {
 			spec_refuel_3
 		}
 
-		research_cost = 3
+		research_cost = 2
 		start_year = 2005
 		folder = {
 			name = bba_aircraft_folder
@@ -1579,7 +1579,7 @@ technologies = {
 			nuclear_technology = 1
 		}
 
-		research_cost = 6
+		research_cost = 3
 		start_year = 1985
 		folder = {
 			name = bba_aircraft_folder
@@ -1762,7 +1762,7 @@ technologies = {
 			weap_multi_at_1
 		}
 
-		research_cost = 3
+		research_cost = 0.5
 		start_year = 1955
 		folder = {
 			name = bba_aircraft_folder
@@ -1800,7 +1800,7 @@ technologies = {
 			weap_mp_light_hardpoint_1
 		}
 
-		research_cost = 3
+		research_cost = 1
 		start_year = 1965
 		folder = {
 			name = bba_aircraft_folder
@@ -1834,7 +1834,7 @@ technologies = {
 			weap_mp_light_hardpoint_2
 		}
 
-		research_cost = 3
+		research_cost = 2
 		start_year = 1990
 		folder = {
 			name = bba_aircraft_folder
@@ -1928,7 +1928,7 @@ technologies = {
 			flare_launchers
 		}
 
-		research_cost = 3
+		research_cost = 1
 		start_year = 1965
 		folder = {
 			name = bba_aircraft_folder
@@ -1950,7 +1950,7 @@ technologies = {
 			spec_countermeasures_2
 		}
 
-		research_cost = 3
+		research_cost = 2
 		start_year = 1990
 		folder = {
 			name = bba_aircraft_folder
@@ -2017,7 +2017,7 @@ technologies = {
 			weap_as_hardpoint_1
 		}
 
-		research_cost = 3
+		research_cost = 1
 		start_year = 1965
 		folder = {
 			name = bba_aircraft_folder
@@ -2050,7 +2050,7 @@ technologies = {
 			weap_as_hardpoint_2
 		}
 
-		research_cost = 3
+		research_cost = 2
 		start_year = 1990
 		folder = {
 			name = bba_aircraft_folder
@@ -2128,7 +2128,7 @@ technologies = {
 			spec_mad_1
 		}
 
-		research_cost = 3
+		research_cost = 1
 		start_year = 1970
 		folder = {
 			name = bba_aircraft_folder
@@ -2155,7 +2155,7 @@ technologies = {
 			spec_mad_2
 		}
 
-		research_cost = 3
+		research_cost = 2
 		start_year = 1995
 		folder = {
 			name = bba_aircraft_folder
@@ -2208,7 +2208,7 @@ technologies = {
 			weap_ag_strat_1
 		}
 
-		research_cost = 3
+		research_cost = 1
 		start_year = 1965
 		folder = {
 			name = bba_aircraft_folder
@@ -2247,7 +2247,7 @@ technologies = {
 			weap_ag_strat_2
 		}
 
-		research_cost = 3
+		research_cost = 2
 		start_year = 1990
 		folder = {
 			name = bba_aircraft_folder
@@ -2327,7 +2327,7 @@ technologies = {
 			weap_ag_gunship_1
 		}
 
-		research_cost = 3
+		research_cost = 1
 		start_year = 1970
 		folder = {
 			name = bba_aircraft_folder
@@ -2359,7 +2359,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 3
+		research_cost = 2
 		start_year = 1995
 		folder = {
 			name = bba_aircraft_folder
@@ -2407,7 +2407,7 @@ technologies = {
 			spec_recon_1
 		}
 
-		research_cost = 3
+		research_cost = 1
 		start_year = 1970
 		folder = {
 			name = bba_aircraft_folder
@@ -2435,7 +2435,7 @@ technologies = {
 			spec_recon_2
 		}
 
-		research_cost = 3
+		research_cost = 1
 		start_year = 1995
 		folder = {
 			name = bba_aircraft_folder
@@ -2463,7 +2463,7 @@ technologies = {
 			spec_recon_3
 		}
 
-		research_cost = 3
+		research_cost = 1
 		start_year = 2025
 		folder = {
 			name = bba_aircraft_folder

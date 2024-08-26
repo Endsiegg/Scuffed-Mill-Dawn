@@ -58,7 +58,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 0.5
 		start_year = 1965
 		folder = {
 			name = infantry_folder
@@ -87,7 +87,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.1
+		research_cost = 0.5
 		start_year = 1975
 		folder = {
 			name = infantry_folder
@@ -321,7 +321,7 @@ technologies = {
 			L_Engi_Comp
 		}
 
-		research_cost = 1.5
+		research_cost = 0.5
 		start_year = 1965
 
 		xp_research_type = army
@@ -356,7 +356,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1
 		start_year = 1965
 
 		xp_research_type = army
@@ -388,7 +388,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2.1
+		research_cost = 2
 		start_year = 1975
 
 		xp_research_type = army
@@ -480,7 +480,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.3
+		research_cost = 0.5
 		start_year = 1975
 		folder = {
 			name = infantry_folder
@@ -511,7 +511,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.4
+		research_cost = 1
 		start_year = 1985
 		folder = {
 			name = infantry_folder
@@ -755,7 +755,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1985
 
 		xp_research_type = army
@@ -1174,7 +1174,7 @@ technologies = {
 		}
 
 		category_militia = {
-			max_strength = 1.2
+			max_strength = 1.5
 		}
 		category_light_infantry = {
 			max_strength = 2
@@ -1183,7 +1183,7 @@ technologies = {
 			max_strength = 1.75
 		}
 		category_IFV = {
-			max_strength = 1.5
+			max_strength = 1.75
 		}
 
 		path = {
@@ -1191,7 +1191,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1
 		start_year = 1980
 
 		xp_research_type = army
@@ -1217,7 +1217,7 @@ technologies = {
 		}
 
 		category_militia = {
-			max_strength = 1.2
+			max_strength = 1.5
 		}
 		category_light_infantry = {
 			max_strength = 2
@@ -1226,7 +1226,7 @@ technologies = {
 			max_strength = 1.75
 		}
 		category_IFV = {
-			max_strength = 1.5
+			max_strength = 1.75
 		}
 
 		path = {
@@ -1260,7 +1260,7 @@ technologies = {
 		}
 
 		category_militia = {
-			max_strength = 1.2
+			max_strength = 1.5
 		}
 		category_light_infantry = {
 			max_strength = 2
@@ -1269,7 +1269,7 @@ technologies = {
 			max_strength = 1.75
 		}
 		category_IFV = {
-			max_strength = 1.5
+			max_strength = 1.75
 		}
 
 		path = {
@@ -1311,7 +1311,7 @@ technologies = {
 		}
 
 		category_militia = {
-			max_strength = 1.2
+			max_strength = 1.5
 		}
 		category_light_infantry = {
 			max_strength = 2
@@ -1320,7 +1320,7 @@ technologies = {
 			max_strength = 1.75
 		}
 		category_IFV = {
-			max_strength = 1.5
+			max_strength = 1.75
 		}
 
 		research_cost = 2
@@ -1362,7 +1362,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1
 		start_year = 1965
 
 		xp_research_type = army
@@ -1392,7 +1392,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.5
 		start_year = 1980
 
 		xp_research_type = army
@@ -1582,7 +1582,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 0.5
 		start_year = 1965
 
 		xp_research_type = army
@@ -1614,7 +1614,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1975
 
 		xp_research_type = army
@@ -1637,7 +1637,7 @@ technologies = {
 	tandem_charge_warheads = {
 		on_research_complete = { log = "[GetDateText]: [Root.GetName]: add tech tandem_charge_warheads" }
 		category_non_militia = {
-			hard_attack = 0.02
+			hard_attack = 0.05
 			ap_attack = 0.05
 		}
 
@@ -1646,7 +1646,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1975
 
 		xp_research_type = army
@@ -1766,7 +1766,7 @@ technologies = {
 		on_research_complete = { log = "[GetDateText]: [Root.GetName]: add tech support_weapons5" }
 		category_non_militia = {
 			defense = 0.05
-			anti_air_attack = 0.02
+			anti_air_attack = 0.05
 		}
 
 		research_cost = 1.5
@@ -1787,13 +1787,13 @@ technologies = {
 	##Special Forces
 	special_forces = {
 		on_research_complete = { log = "[GetDateText]: [Root.GetName]: add tech special_forces" }
-		special_forces_cap = 0.05
+		special_forces_cap = 0.10
 		path = {
 			leads_to_tech = special_forces2
 			research_cost_coeff = 1
 		}
 
-		research_cost = 3
+		research_cost = 1
 		start_year = 1965
 
 		xp_research_type = army
@@ -1816,14 +1816,14 @@ technologies = {
 	special_forces2 = {
 		on_research_complete = { log = "[GetDateText]: [Root.GetName]: add tech special_force2" }
 		category_special_forces = {
-			soft_attack = 0.05
+			soft_attack = 0.10
 		}
 		path = {
 			leads_to_tech = special_forces3
 			research_cost_coeff = 1
 		}
 
-		research_cost = 3
+		research_cost = 1.5
 		start_year = 1975
 
 		xp_research_type = army
@@ -1875,7 +1875,7 @@ technologies = {
 	special_forces4 = {
 		on_research_complete = { log = "[GetDateText]: [Root.GetName]: add tech special_forces4" }
 		category_special_forces = {
-			hard_attack = 0.05
+			hard_attack = 0.10
 		}
 
 		path = {
@@ -1906,7 +1906,7 @@ technologies = {
 	special_forces5 = {
 		on_research_complete = { log = "[GetDateText]: [Root.GetName]: add tech special_forces5" }
 		category_special_forces = {
-			max_organisation = 5
+			max_organisation = 10
 		}
 		special_forces_training_time_factor = -0.05
 
@@ -1938,9 +1938,9 @@ technologies = {
 	special_forces6 = {
 		on_research_complete = { log = "[GetDateText]: [Root.GetName]: add tech special_forces6" }
 		category_special_forces = {
-			soft_attack = 0.05
-			hard_attack = 0.05
-			max_organisation = 5
+			soft_attack = 0.10
+			hard_attack = 0.10
+			max_organisation = 10
 		}
 
 		research_cost = 5

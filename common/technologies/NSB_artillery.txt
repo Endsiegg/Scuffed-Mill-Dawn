@@ -66,7 +66,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.2
+		research_cost = 0.5
 		start_year = 1965
 		folder = {
 			name = artillery_folder
@@ -109,7 +109,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.3
+		research_cost = 1
 		start_year = 1985
 
 		folder = {
@@ -539,7 +539,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 3
+		research_cost = 1
 		start_year = 1985
 		folder = {
 			name = artillery_folder
