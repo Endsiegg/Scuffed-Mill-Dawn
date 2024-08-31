@@ -47,7 +47,7 @@ technologies = {
 			custom_effect_tooltip = air_defense_techtree_effect_TT
 			set_variable = { var_SAM_launcher_tech = 1 }
 		}
-		research_cost = 1
+		research_cost = 0.5
 		show_effect_as_desc = yes
 		start_year = 1945
 		enable_building = {
@@ -96,7 +96,7 @@ technologies = {
 			log = "[GetDateText]: [Root.GetName]: add tech SAM"
 			custom_effect_tooltip = SAM_techtree_effect_TT
 		}
-		research_cost = 1
+		research_cost = 0.5
 		show_effect_as_desc = yes
 		start_year = 1955
 		enable_building = {

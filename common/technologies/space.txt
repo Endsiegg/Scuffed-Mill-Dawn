@@ -46,7 +46,7 @@ technologies = {
 			log = "[GetDateText]: [Root.GetName]: add tech space"
 			custom_effect_tooltip = space_techtree_effect_TT
 		}
-		research_cost = 1
+		research_cost = 0.5
 		start_year = 1945
 		folder = {
 			name = space_folder
@@ -94,7 +94,7 @@ technologies = {
 			log = "[GetDateText]: [Root.GetName]: add tech satellites"
 			custom_effect_tooltip = satellites_techtree_effect_TT
 		}
-		research_cost = 1
+		research_cost = 0.5
 		start_year = 1950
 		folder = {
 			name = space_folder
@@ -150,7 +150,7 @@ technologies = {
 			log = "[GetDateText]: [Root.GetName]: add tech gnss_satellites"
 			custom_effect_tooltip = gnss_satellites_techtree_effect_TT
 		}
-		research_cost = 1
+		research_cost = 0.5
 		start_year = 1955
 		folder = {
 			name = space_folder
@@ -575,7 +575,7 @@ technologies = {
 			log = "[GetDateText]: [Root.GetName]: add tech com_satellites"
 			custom_effect_tooltip = com_satellites_techtree_effect_TT
 		}
-		research_cost = 1
+		research_cost = 0.5
 		start_year = 1955
 		folder = {
 			name = space_folder
@@ -991,7 +991,7 @@ technologies = {
 			log = "[GetDateText]: [Root.GetName]: add tech recon_satellites"
 			custom_effect_tooltip = recon_satellites_techtree_effect_TT
 		}
-		research_cost = 1
+		research_cost = 0.5
 		start_year = 1955
 		folder = {
 			name = space_folder
@@ -1407,7 +1407,7 @@ technologies = {
 			log = "[GetDateText]: [Root.GetName]: add tech space_weapons"
 			custom_effect_tooltip = space_weapons_techtree_effect_TT
 		}
-		research_cost = 1
+		research_cost = 0.5
 		start_year = 1970
 		folder = {
 			name = space_folder
@@ -1914,7 +1914,7 @@ technologies = {
 			log = "[GetDateText]: [Root.GetName]: add tech OLV"
 			custom_effect_tooltip = OLV_techtree_effect_TT
 		}
-		research_cost = 1
+		research_cost = 0.5
 		start_year = 1950
 		folder = {
 			name = space_folder
@@ -1959,7 +1959,7 @@ technologies = {
 		on_research_complete = {
 			log = "[GetDateText]: [Root.GetName]: add tech OLV1"
 		}
-		research_cost = 1
+		research_cost = 0.5
 		start_year = 1965
 			show_equipment_icon = yes
 			enable_equipments = {

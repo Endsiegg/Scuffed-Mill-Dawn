@@ -47,7 +47,7 @@ technologies = {
 			custom_effect_tooltip = ballistic_missile_techtree_effect_TT
 			set_variable = { var_silo_launcher = 1 }
 		}
-		research_cost = 1
+		research_cost = 0.5
 		start_year = 1945
 		show_effect_as_desc = yes
 		enable_building = {
@@ -112,7 +112,7 @@ technologies = {
 			custom_effect_tooltip = ICBM_techtree_effect_TT
 			set_variable = { var_silo_launcher = 2 }
 		}
-		research_cost = 1
+		research_cost = 0.5
 		start_year = 1955
 		show_effect_as_desc = yes
 		enable_building = {
