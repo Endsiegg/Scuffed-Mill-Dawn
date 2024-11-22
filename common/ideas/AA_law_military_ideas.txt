@@ -667,6 +667,7 @@ ideas = {
 				military_factories_productivity = 0.3
 				dockyard_productivity = 0.3
 				total_workforce_modifier = -0.03 #mobilized people can't work
+				custom_modifier_tooltip = the_military_add_5_tt
 			}
 
 			ai_will_do = {
@@ -867,6 +868,7 @@ ideas = {
 				military_factories_productivity = 0.45
 				dockyard_productivity = 0.45
 				total_workforce_modifier = -0.045 #mobilized people can't work
+				custom_modifier_tooltip = the_military_add_10_tt
 			}
 
 			ai_will_do = {
@@ -1065,6 +1067,7 @@ ideas = {
 				military_factories_productivity = 0.6
 				dockyard_productivity = 0.6
 				total_workforce_modifier = -0.06 #mobilized people can't work
+				custom_modifier_tooltip = the_military_add_15_tt
 			}
 
 
@@ -1264,6 +1267,7 @@ ideas = {
 				military_factories_productivity = 0.8
 				dockyard_productivity = 0.8
 				total_workforce_modifier = -0.08 #mobilized people can't work
+				custom_modifier_tooltip = the_military_add_20_tt
 			}
 
 			ai_will_do = {
@@ -1451,6 +1455,7 @@ ideas = {
 				military_factories_productivity = 1
 				dockyard_productivity = 1
 				total_workforce_modifier = -0.1 #mobilized people can't work
+				custom_modifier_tooltip = the_military_add_25_tt
 			}
 
 
@@ -1629,6 +1634,7 @@ ideas = {
 				military_factories_productivity = 1.25
 				dockyard_productivity = 1.25
 				total_workforce_modifier = -0.125 #mobilized people can't work
+				custom_modifier_tooltip = the_military_add_30_tt
 			}
 
 			ai_will_do = {
@@ -1799,6 +1805,7 @@ ideas = {
 				military_factories_productivity = 2
 				dockyard_productivity = 2
 				total_workforce_modifier = -0.2 #mobilized people can't work
+				custom_modifier_tooltip = the_military_add_35_tt
 			}
 
 			ai_will_do = {
@@ -1958,9 +1965,9 @@ ideas = {
 				conscription = 0.025
 				army_morale_factor = 0.10
 				army_org_factor = 0.10
-				experience_gain_army = 0.10
-				experience_gain_navy = 0.10
-				experience_gain_air = 0.10
+				experience_gain_army = 0.06
+				experience_gain_navy = 0.03
+				experience_gain_air = 0.03
 				personnel_cost_multiplier_modifier = 0.80
 				total_workforce_modifier = -0.025
 			}
@@ -2069,6 +2076,10 @@ ideas = {
 			level = 2
 
 			available = {
+				OR  = { 
+					has_stability > 0.49
+					has_war_support > 0.49
+				}
 				if = {
 					limit = {
 						OR = {
@@ -2097,9 +2108,9 @@ ideas = {
 				army_defence_factor = -0.05
 				army_core_defence_factor = 0.05
 				training_time_factor = -0.10
-				experience_gain_army = 0.05
-				experience_gain_navy = 0.05
-				experience_gain_air = 0.05
+				experience_gain_army = 0.04
+				experience_gain_navy = 0.02
+				experience_gain_air = 0.02
 				personnel_cost_multiplier_modifier = 0.40
 				total_workforce_modifier = -0.035
 				migration_rate_value_factor = -0.05
@@ -2180,6 +2191,10 @@ ideas = {
 			level = 1
 
 			available = {
+				OR  = { 
+					has_stability > 0.69
+					has_war_support > 0.69
+				}
 				if = {
 					limit = {
 						OR = {
@@ -2194,7 +2209,7 @@ ideas = {
 			}
 
 			modifier = {
-				conscription = 0.06
+				conscription = 0.05
 				army_morale_factor = -0.10
 				army_org_factor = -0.10
 				army_attack_factor = -0.20
@@ -2202,9 +2217,9 @@ ideas = {
 				army_defence_factor = -0.20
 				army_core_defence_factor = 0.20
 				training_time_factor = -0.20
-				experience_gain_army = 0.03
-				experience_gain_navy = 0.03
-				experience_gain_air = 0.03
+				experience_gain_army = 0.02
+				experience_gain_navy = 0.01
+				experience_gain_air = 0.01
 				total_workforce_modifier = -0.04
 				migration_rate_value_factor = -0.10
 			}
@@ -2314,6 +2329,7 @@ ideas = {
 
 			rule = {
 				can_generate_female_aces = no
+				can_generate_female_unit_leaders = no
 			}
 
 			modifier = {
@@ -2376,6 +2392,7 @@ ideas = {
 
 			rule = {
 				can_generate_female_aces = yes
+				can_generate_female_unit_leaders = yes
 			}
 
 			modifier = {
@@ -2414,11 +2431,15 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea drafted_women" }
 
 			allowed_civil_war = { always = yes }
+			cancel_if_invalid = no
 
 			available = {
 				OR = {
-					has_idea = partial_draft_army
 					has_idea = draft_army
+				}
+				OR  = { 
+					has_stability > 0.89
+					has_war_support > 0.89
 				}
 				if = {
 					limit = {
@@ -2438,10 +2459,11 @@ ideas = {
 
 			rule = {
 				can_generate_female_aces = yes
+				can_generate_female_unit_leaders = yes
 			}
 
 			modifier = {
-				conscription = 0.06
+				conscription = 0.04
 				monthly_population = -0.15
 				special_forces_cap = -0.15
 			}
@@ -2936,9 +2958,9 @@ ideas = {
 				navy_leader_start_level = 1
 				command_power_gain_mult = 0.1
 				max_command_power = -20
-				experience_gain_army = 0.05
-				experience_gain_navy = 0.05
-				experience_gain_air = 0.05
+				experience_gain_army = 0.01
+				experience_gain_navy = 0.01
+				experience_gain_air = 0.01
 				special_forces_cap = 0.10
 				personnel_cost_multiplier_modifier = 0.10
 			}
@@ -2991,9 +3013,9 @@ ideas = {
 				navy_leader_start_level = 2
 				command_power_gain_mult = 0.15
 				max_command_power = -30
-				experience_gain_army = 0.10
-				experience_gain_navy = 0.10
-				experience_gain_air = 0.10
+				experience_gain_army = 0.02
+				experience_gain_navy = 0.02
+				experience_gain_air = 0.02
 				special_forces_cap = 0.15
 				personnel_cost_multiplier_modifier = 0.15
 			}
@@ -3044,9 +3066,9 @@ ideas = {
 				navy_leader_start_level = 3
 				command_power_gain_mult = 0.20
 				max_command_power = -40
-				experience_gain_army = 0.15
-				experience_gain_navy = 0.15
-				experience_gain_air = 0.15
+				experience_gain_army = 0.03
+				experience_gain_navy = 0.03
+				experience_gain_air = 0.03
 				special_forces_cap = 0.20
 				personnel_cost_multiplier_modifier = 0.20
 			}
@@ -3102,9 +3124,9 @@ ideas = {
 				navy_leader_start_level = 4
 				command_power_gain_mult = 0.25
 				max_command_power = -50
-				experience_gain_army = 0.20
-				experience_gain_navy = 0.20
-				experience_gain_air = 0.20
+				experience_gain_army = 0.04
+				experience_gain_navy = 0.04
+				experience_gain_air = 0.04
 				special_forces_cap = 0.25
 				personnel_cost_multiplier_modifier = 0.25
 			}
