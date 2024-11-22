@@ -38,7 +38,7 @@ equipment_modules = {
 			build_cost_ic = 5
 			fuel_consumption = 0.01
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 	engine_light_single_1 = { ##single jet engines
 		abbreviation = "je11"
@@ -51,7 +51,7 @@ equipment_modules = {
 			build_cost_ic = 35
 			fuel_consumption = 4.4
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 	engine_light_single_2 = {
 		abbreviation = "je12"
@@ -69,7 +69,7 @@ equipment_modules = {
 			module = engine_light_single_1
 			convert_cost_ic = 12
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 	engine_light_single_3 = {
 		abbreviation = "je13"
@@ -90,7 +90,7 @@ equipment_modules = {
 		build_cost_resources = {
 			chromium = 1
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 	engine_light_single_4 = {
 		abbreviation = "je14"
@@ -111,7 +111,7 @@ equipment_modules = {
 		build_cost_resources = {
 			chromium = 1
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 	engine_light_single_5 = {
 		abbreviation = "je15"
@@ -132,7 +132,7 @@ equipment_modules = {
 		build_cost_resources = {
 			chromium = 1
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 	#Light Engine Double
 	engine_light_double_1 = {
@@ -147,7 +147,7 @@ equipment_modules = {
 			fuel_consumption = 6.5
 			reliability = 0.05
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 	engine_light_double_2 = {
 		abbreviation = "je22"
@@ -169,7 +169,7 @@ equipment_modules = {
 		build_cost_resources = {
 			chromium = 1
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 	engine_light_double_3 = {
 		abbreviation = "je23"
@@ -191,7 +191,7 @@ equipment_modules = {
 		build_cost_resources = {
 			chromium = 1
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 	engine_light_double_4 = {
 		abbreviation = "je24"
@@ -213,7 +213,7 @@ equipment_modules = {
 		build_cost_resources = {
 			chromium = 2
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 	engine_light_double_5 = {
 		abbreviation = "je25"
@@ -235,7 +235,7 @@ equipment_modules = {
 		build_cost_resources = {
 			chromium = 2
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 	#Single Jet Engine
 	engine_jet_single_1 = { ##single jet engines
@@ -252,7 +252,7 @@ equipment_modules = {
 		build_cost_resources = {
 			chromium = 1
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 	engine_jet_single_2 = {
 		abbreviation = "je12"
@@ -273,7 +273,7 @@ equipment_modules = {
 		build_cost_resources = {
 			chromium = 1
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 	engine_jet_single_3 = {
 		abbreviation = "je13"
@@ -294,7 +294,7 @@ equipment_modules = {
 		build_cost_resources = {
 			chromium = 1
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 	engine_jet_single_4 = {
 		abbreviation = "je14"
@@ -315,7 +315,7 @@ equipment_modules = {
 		build_cost_resources = {
 			chromium = 2
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 	engine_jet_single_5 = {
 		abbreviation = "je15"
@@ -336,7 +336,7 @@ equipment_modules = {
 		build_cost_resources = {
 			chromium = 2
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 	################################################ Double
@@ -355,7 +355,7 @@ equipment_modules = {
 		build_cost_resources = {
 			chromium = 1
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 	engine_jet_double_2 = {
 		abbreviation = "je22"
@@ -377,7 +377,7 @@ equipment_modules = {
 		build_cost_resources = {
 			chromium = 1
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 	engine_jet_double_3 = {
 		abbreviation = "je23"
@@ -399,7 +399,7 @@ equipment_modules = {
 		build_cost_resources = {
 			chromium = 1
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 	engine_jet_double_4 = {
 		abbreviation = "je24"
@@ -421,7 +421,7 @@ equipment_modules = {
 		build_cost_resources = {
 			chromium = 2
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 	engine_jet_double_5 = {
 		abbreviation = "je25"
@@ -443,7 +443,7 @@ equipment_modules = {
 		build_cost_resources = {
 			chromium = 2
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 	############################################### Quads
@@ -462,7 +462,7 @@ equipment_modules = {
 		build_cost_resources = {
 			chromium = 1
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 	engine_jet_quad_2 = {
 		abbreviation = "je42"
@@ -483,7 +483,7 @@ equipment_modules = {
 		build_cost_resources = {
 			chromium = 2
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 	engine_jet_quad_3 = {
 		abbreviation = "je43"
@@ -504,7 +504,7 @@ equipment_modules = {
 		build_cost_resources = {
 			chromium = 2
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 	engine_jet_quad_4 = {
 		abbreviation = "je44"
@@ -525,7 +525,7 @@ equipment_modules = {
 		build_cost_resources = {
 			chromium = 3
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 	engine_jet_quad_5 = {
 		abbreviation = "je45"
@@ -546,7 +546,7 @@ equipment_modules = {
 		build_cost_resources = {
 			chromium = 4
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 	# Special Project
 	engine_scramjet = {
@@ -564,7 +564,7 @@ equipment_modules = {
 		build_cost_resources = {
 			chromium = 8
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 	engine_ramjet = {
@@ -582,7 +582,7 @@ equipment_modules = {
 		build_cost_resources = {
 			chromium = 4
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 ############################################### Sixes
@@ -601,7 +601,7 @@ equipment_modules = {
 		build_cost_resources = {
 			chromium = 2
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 	engine_jet_six_2 = {
 		abbreviation = "je62"
@@ -622,7 +622,7 @@ equipment_modules = {
 		build_cost_resources = {
 			chromium = 3
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 	engine_jet_six_3 = {
 		abbreviation = "je63"
@@ -643,7 +643,7 @@ equipment_modules = {
 		build_cost_resources = {
 			chromium = 4
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 	engine_jet_six_4 = {
 		abbreviation = "je64"
@@ -664,7 +664,7 @@ equipment_modules = {
 		build_cost_resources = {
 			chromium = 5
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 	engine_jet_six_5 = {
 		abbreviation = "je65"
@@ -685,7 +685,7 @@ equipment_modules = {
 		build_cost_resources = {
 			chromium = 6
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 ####################################################### Eights
@@ -704,7 +704,7 @@ equipment_modules = {
 		build_cost_resources = {
 			chromium = 4
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 	engine_jet_eight_2 = {
 		abbreviation = "je82"
@@ -725,7 +725,7 @@ equipment_modules = {
 		build_cost_resources = {
 			chromium = 5
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 	engine_jet_eight_3 = {
 		abbreviation = "je83"
@@ -746,7 +746,7 @@ equipment_modules = {
 		build_cost_resources = {
 			chromium = 6
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 	engine_jet_eight_4 = {
 		abbreviation = "je84"
@@ -768,7 +768,7 @@ equipment_modules = {
 		build_cost_resources = {
 			chromium = 7
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 	engine_jet_eight_5 = {
 		abbreviation = "je85"
@@ -789,7 +789,7 @@ equipment_modules = {
 		build_cost_resources = {
 			chromium = 8
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 	##################################################################### Propeller Engines ################################################################################
 	engine_prop_single_1 = {	##single prop engines
@@ -803,7 +803,7 @@ equipment_modules = {
 			build_cost_ic = 30		## 1.3x multiplier per generation
 			fuel_consumption = 3.3	## -0.2 per generation
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 	engine_prop_single_2 = {
 		abbreviation = "pe12"
@@ -821,7 +821,7 @@ equipment_modules = {
 			module = engine_prop_single_1
 			convert_cost_ic = 25
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 	engine_prop_double_1 = {	##double prop engines
 		abbreviation = "pe21"
@@ -834,7 +834,7 @@ equipment_modules = {
 			build_cost_ic = 42		## 1.3x multiplier per generation
 			fuel_consumption = 4.1	## -0.2 per generation
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 	engine_prop_double_2 = {
 		abbreviation = "pe22"
@@ -855,7 +855,7 @@ equipment_modules = {
 		build_cost_resources = {
 			chromium = 1
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 	engine_prop_quad_1 = {	##quad prop engines
 		abbreviation = "pe41"
@@ -868,7 +868,7 @@ equipment_modules = {
 			build_cost_ic = 72		## 1.3x multiplier per generation
 			fuel_consumption = 6.1	## -0.2 per generation
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 	engine_prop_quad_2 = {
 		abbreviation = "pe42"
@@ -889,7 +889,7 @@ equipment_modules = {
 		build_cost_resources = {
 			chromium = 2
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 	engine_prop_six_1 = {	##six prop engines
 		abbreviation = "pe61"
@@ -902,7 +902,7 @@ equipment_modules = {
 			build_cost_ic = 94		## 1.3x multiplier per generation
 			fuel_consumption = 9.3	## -0.2 per generation
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 	engine_prop_six_2 = {
 		abbreviation = "pe62"
@@ -923,7 +923,7 @@ equipment_modules = {
 		build_cost_resources = {
 			chromium = 3
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 	engine_prop_eight_1 = {	##eight prop engines
 		abbreviation = "pe81"
@@ -939,7 +939,7 @@ equipment_modules = {
 		multiply_stats = {
 			build_cost_ic = 0.08		## -0.02 per generation
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 	engine_prop_eight_2 = {
 		abbreviation = "pe82"
@@ -960,7 +960,7 @@ equipment_modules = {
 			module = engine_prop_eight_1
 			convert_cost_ic = 91
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 	##################################################################### Solar/Nuclear Engines ################################################################################
 	engine_solar_single_1 = {		##single solar engine
@@ -982,7 +982,7 @@ equipment_modules = {
 		build_cost_resources = {
 			chromium = 1
 		}
-		xp_cost = 4
+		#xp_cost = 4
 	}
 	engine_solar_double_1 = {		##double solar engine
 		abbreviation = "se21"
@@ -1007,7 +1007,7 @@ equipment_modules = {
 			module = engine_solar_single_1
 			convert_cost_ic = 150
 		}
-		xp_cost = 4
+		#xp_cost = 4
 	}
 	engine_nuclear_eight_1 = {		##Octo-nuke engines of economy crashing doom
 		abbreviation = "ne81"
@@ -1029,7 +1029,7 @@ equipment_modules = {
 			tungsten = 3
 			chromium = 4
 		}
-		xp_cost = 8
+		#xp_cost = 8
 	}
 
 	####################################################### Avionics Systems ########################################################
@@ -1054,7 +1054,7 @@ equipment_modules = {
 			air_ground_attack = 0.05
 			air_bombing = 0.05
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 	avionics_manned_2 = {		##Cold War Avionics
@@ -1088,7 +1088,7 @@ equipment_modules = {
 			module_category = plane_avionics
 			convert_cost_ic = 8
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 	avionics_manned_3 = {		##Modern Avionics
@@ -1123,7 +1123,7 @@ equipment_modules = {
 			module_category = plane_avionics
 			convert_cost_ic = 12
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 	avionics_manned_4 = {		##Future Avionics
@@ -1158,7 +1158,7 @@ equipment_modules = {
 			module_category = plane_avionics
 			convert_cost_ic = 18
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 ############################################################ Drone Avionics
@@ -1218,7 +1218,7 @@ equipment_modules = {
 			recon
 		}
 
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 	avionics_drone_1 = {		##Early Drone Avionics
@@ -1254,7 +1254,7 @@ equipment_modules = {
 		allow_mission_type = {
 			recon
 		}
-		xp_cost = 4
+		#xp_cost = 4
 	}
 
 	avionics_drone_2 = {		##Advanced Drone Avionics
@@ -1297,7 +1297,7 @@ equipment_modules = {
 			module_category = plane_drone_systems
 			convert_cost_ic = 42
 		}
-		xp_cost = 4
+		#xp_cost = 4
 	}
 
 	avionics_drone_3 = {		##Future Drone Avionics
@@ -1331,7 +1331,7 @@ equipment_modules = {
 		allow_mission_type = {
 			recon
 		}
-		xp_cost = 4
+		#xp_cost = 4
 	}
 
 	avionics_drone_4 = {		##Far Future Drone Avionics
@@ -1365,7 +1365,7 @@ equipment_modules = {
 		allow_mission_type = {
 			recon
 		}
-		xp_cost = 4
+		#xp_cost = 4
 	}
 
 	####################################################### Wingforms ########################################################
@@ -1380,7 +1380,7 @@ equipment_modules = {
 			air_defence = -0.10
 			air_superiority = -1
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 	wing_straight = {		##Straight wingform
@@ -1399,7 +1399,7 @@ equipment_modules = {
 			module_category = plane_wingforms
 			convert_cost_ic = 300
 		}
-		xp_cost = 8
+		#xp_cost = 8
 	}
 
 	wing_swept = {		##Swept wingform
@@ -1415,7 +1415,7 @@ equipment_modules = {
 			module_category = plane_wingforms
 			convert_cost_ic = 300
 		}
-		xp_cost = 8
+		#xp_cost = 8
 	}
 
 	wing_variable = {		##Variable Sweep wingform
@@ -1440,7 +1440,7 @@ equipment_modules = {
 			module_category = plane_wingforms
 			convert_cost_ic = 300
 		}
-		xp_cost = 8
+		#xp_cost = 8
 	}
 
 	wing_diamond = {		##Diamond wingform
@@ -1458,7 +1458,7 @@ equipment_modules = {
 			module_category = plane_wingforms
 			convert_cost_ic = 300
 		}
-		xp_cost = 8
+		#xp_cost = 8
 	}
 
 	wing_delta = {		##Delta wingform
@@ -1477,7 +1477,7 @@ equipment_modules = {
 			module_category = plane_wingforms
 			convert_cost_ic = 300
 		}
-		xp_cost = 8
+		#xp_cost = 8
 	}
 
 	wing_fwdswept = {		##Forward Swept wingform
@@ -1495,7 +1495,7 @@ equipment_modules = {
 			module_category = plane_wingforms
 			convert_cost_ic = 300
 		}
-		xp_cost = 8
+		#xp_cost = 8
 	}
 
 	wing_flyingwing = {		##Flying Wing wingform
@@ -1513,7 +1513,7 @@ equipment_modules = {
 			module_category = plane_wingforms
 			convert_cost_ic = 300
 		}
-		xp_cost = 8
+		#xp_cost = 8
 	}
 
 	wing_blended = {		##Blended wingform
@@ -1533,7 +1533,7 @@ equipment_modules = {
 			module_category = plane_wingforms
 			convert_cost_ic = 300
 		}
-		xp_cost = 8
+		#xp_cost = 8
 	}
 
 
@@ -1565,7 +1565,7 @@ equipment_modules = {
 			module_category = plane_multipurpose_gun
 			convert_cost_ic = 4
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 	weap_multi_gun_2 = {				##Cannon I
@@ -1590,7 +1590,7 @@ equipment_modules = {
 			module_category = plane_multipurpose_gun
 			convert_cost_ic = 8
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 	weap_multi_gun_3 = {				##Cannon II
@@ -1616,7 +1616,7 @@ equipment_modules = {
 			module_category = plane_multipurpose_gun
 			convert_cost_ic = 15
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 	weap_multi_at_1 = {				##AT Cannon I
@@ -1646,7 +1646,7 @@ equipment_modules = {
 			module_category = plane_multipurpose_gun
 			convert_cost_ic = 22
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 	weap_multi_at_2 = {
@@ -1678,7 +1678,7 @@ equipment_modules = {
 			module_category = plane_multipurpose_gun
 			convert_cost_ic = 22
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 	###################################################### A2A Weapons
@@ -1734,7 +1734,7 @@ equipment_modules = {
 			module_category = plane_fighter_weapons
 			convert_cost_ic = 10
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 	weap_mp_light_hardpoint_2 = {				##Light Multipurpose Hardpoints II
@@ -1786,7 +1786,7 @@ equipment_modules = {
 			module_category = plane_fighter_weapons
 			convert_cost_ic = 12
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 	weap_mp_light_hardpoint_3 = {				##Light Multipurpose Hardpoints III
@@ -1837,7 +1837,7 @@ equipment_modules = {
 			module_category = plane_fighter_weapons
 			convert_cost_ic = 14
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 	weap_mp_light_hardpoint_4 = {				##Light Multipurpose Hardpoints IV
@@ -1890,7 +1890,7 @@ equipment_modules = {
 			module_category = plane_fighter_weapons
 			convert_cost_ic = 17
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 	weap_int_mp_light_hardpoint_2 = {				##Internal Light Multipurpose Hardpoints II
@@ -1942,7 +1942,7 @@ equipment_modules = {
 			module_category = plane_stealth_weapons
 			convert_cost_ic = 12
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 	weap_int_mp_light_hardpoint_3 = {				##Internal Light Multipurpose Hardpoints III
@@ -1994,7 +1994,7 @@ equipment_modules = {
 			module_category = plane_stealth_weapons
 			convert_cost_ic = 14
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 	weap_int_mp_light_hardpoint_4 = {				##Internal Light Multipurpose Hardpoints IV
@@ -2048,7 +2048,7 @@ equipment_modules = {
 			module_category = plane_stealth_weapons
 			convert_cost_ic = 17
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 	weap_drone_hand_grenade = {
@@ -2122,7 +2122,7 @@ equipment_modules = {
 			module_category = plane_fighter_weapons
 			convert_cost_ic = 23
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 	weap_a2a_hardpoint_2 = {				##A2A Hardpoints II
@@ -2174,7 +2174,7 @@ equipment_modules = {
 			module_category = plane_fighter_weapons
 			convert_cost_ic = 28
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 
@@ -2227,7 +2227,7 @@ equipment_modules = {
 			module_category = plane_fighter_weapons
 			convert_cost_ic = 33
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 	weap_a2a_hardpoint_4 = {				##A2A Hardpoints IV
@@ -2279,7 +2279,7 @@ equipment_modules = {
 			module_category = plane_fighter_weapons
 			convert_cost_ic = 39
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 	weap_int_a2a_hardpoint_1 = {				##Internal A2A Hardpoints II
@@ -2335,7 +2335,7 @@ equipment_modules = {
 			module_category = plane_fighter_weapons
 			convert_cost_ic = 28
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 
@@ -2393,7 +2393,7 @@ equipment_modules = {
 			module_category = plane_fighter_weapons
 			convert_cost_ic = 33
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 	weap_int_a2a_hardpoint_3 = {				##Internal A2A Hardpoints IV
@@ -2450,7 +2450,7 @@ equipment_modules = {
 			module_category = plane_fighter_weapons
 			convert_cost_ic = 39
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 	######################################## MEDIUM HARDPOINTS
@@ -2527,7 +2527,7 @@ equipment_modules = {
 			module_category = plane_guided_bombs
 			convert_cost_ic = 5
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 	weap_ag_cas_hardpoint_1 = { 						## Dedicated CAS pylons I
@@ -2589,7 +2589,7 @@ equipment_modules = {
 			module_category = plane_guided_bombs
 			convert_cost_ic = 6
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 	weap_mp_med_hardpoint_2 = { 						## Medium Multifunction Pylons II
@@ -2668,7 +2668,7 @@ equipment_modules = {
 			module_category = plane_guided_bombs
 			convert_cost_ic = 17
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 	weap_ag_cas_hardpoint_2 = { 						## Dedicated CAS pylons II
@@ -2734,7 +2734,7 @@ equipment_modules = {
 			module_category = plane_guided_bombs
 			convert_cost_ic = 7
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 	weap_mp_med_hardpoint_3 = { 						## Medium Multifunction Pylons III
@@ -2813,7 +2813,7 @@ equipment_modules = {
 			module_category = plane_guided_bombs
 			convert_cost_ic = 20
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 	weap_ag_cas_hardpoint_3 = { 						## Dedicated CAS pylons III
@@ -2880,7 +2880,7 @@ equipment_modules = {
 			module_category = plane_guided_bombs
 			convert_cost_ic = 8
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 	weap_mp_med_hardpoint_4 = { 						## Medium Multifunction Pylons IV
@@ -2959,7 +2959,7 @@ equipment_modules = {
 			module_category = plane_guided_bombs
 			convert_cost_ic = 25
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 	weap_ag_cas_hardpoint_4 = { 						## Dedicated CAS pylons IV
@@ -3024,7 +3024,7 @@ equipment_modules = {
 			module_category = plane_guided_bombs
 			convert_cost_ic = 10
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 	weap_int_mp_med_hardpoint_2 = { 						## Medium Multifunction Pylons II
@@ -3100,7 +3100,7 @@ equipment_modules = {
 			module_category = plane_fighter_weapons
 			convert_cost_ic = 17
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 	weap_int_ag_cas_hardpoint_2 = { 						## Dedicated CAS pylons II
@@ -3163,7 +3163,7 @@ equipment_modules = {
 			module_category = plane_cas_weapons
 			convert_cost_ic = 7
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 	weap_int_mp_med_hardpoint_3 = { 						## Medium Multifunction Pylons III
@@ -3240,7 +3240,7 @@ equipment_modules = {
 			module_category = plane_fighter_weapons
 			convert_cost_ic = 20
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 	weap_int_ag_cas_hardpoint_3 = { 						## Dedicated CAS pylons III
@@ -3304,7 +3304,7 @@ equipment_modules = {
 			module_category = plane_cas_weapons
 			convert_cost_ic = 8
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 	weap_int_mp_med_hardpoint_4 = { 						## Medium Multifunction Pylons IV
@@ -3381,7 +3381,7 @@ equipment_modules = {
 			module_category = plane_fighter_weapons
 			convert_cost_ic = 25
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 	weap_int_ag_cas_hardpoint_4 = { 						## Dedicated CAS pylons IV
@@ -3444,7 +3444,7 @@ equipment_modules = {
 			module_category = plane_cas_weapons
 			convert_cost_ic = 10
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 	################################################### Gunship Modules
@@ -3486,7 +3486,7 @@ equipment_modules = {
 			air_defence = -0.1
 		}
 
-		xp_cost = 6
+		#xp_cost = 6
 	}
 
 	weap_ag_gunship_2 = { 						## Gunship Howitzer
@@ -3526,7 +3526,7 @@ equipment_modules = {
 			air_defence = -0.2
 		}
 
-		xp_cost = 6
+		#xp_cost = 6
 	}
 
 	weap_ag_rapid_dragon = {					#rawr xd
@@ -3570,7 +3570,7 @@ equipment_modules = {
 			tungsten = 1
 		}
 
-		xp_cost = 6
+		#xp_cost = 6
 	}
 
 ######################################################## Strategic Bombing
@@ -3623,7 +3623,7 @@ equipment_modules = {
 			convert_cost_ic = 10
 		}
 
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 	weap_ag_strat_2 = { 						## Strat bombs II
@@ -3672,7 +3672,7 @@ equipment_modules = {
 			convert_cost_ic = 14
 		}
 
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 	weap_int_ag_strat_2 = { 						##Int Strat bombs II
@@ -3725,7 +3725,7 @@ equipment_modules = {
 			convert_cost_ic = 14
 		}
 
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 	weap_ag_strat_3 = { 						## Strat bombs III
@@ -3777,7 +3777,7 @@ equipment_modules = {
 			convert_cost_ic = 16
 		}
 
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 	weap_ag_strat_4 = { 						## Strat bombs IV
@@ -3829,7 +3829,7 @@ equipment_modules = {
 			convert_cost_ic = 20
 		}
 
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 ######################################################## Naval Weapons
@@ -3844,7 +3844,7 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 41.6
 		}
-		xp_cost = 2
+		#xp_cost = 2
 
 		allow_mission_type = {
 			naval_bomber
@@ -3917,7 +3917,7 @@ equipment_modules = {
 		build_cost_resources = {
 			tungsten = 1
 		}
-		xp_cost = 2
+		#xp_cost = 2
 
 		allow_mission_type = {
 			naval_bomber
@@ -3990,7 +3990,7 @@ equipment_modules = {
 		build_cost_resources = {
 			tungsten = 1
 		}
-		xp_cost = 2
+		#xp_cost = 2
 
 		allow_mission_type = {
 			naval_bomber
@@ -4063,7 +4063,7 @@ equipment_modules = {
 		build_cost_resources = {
 			tungsten = 2
 		}
-		xp_cost = 2
+		#xp_cost = 2
 
 		allow_mission_type = {
 			naval_bomber
@@ -4137,7 +4137,7 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 13
 		}
-		xp_cost = 2
+		#xp_cost = 2
 
 		allow_mission_type = {
 			naval_bomber
@@ -4205,7 +4205,7 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 24
 		}
-		xp_cost = 2
+		#xp_cost = 2
 
 		allow_mission_type = {
 			naval_bomber
@@ -4277,7 +4277,7 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 34.5
 		}
-		xp_cost = 2
+		#xp_cost = 2
 
 		allow_mission_type = {
 			naval_bomber
@@ -4349,7 +4349,7 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 44.5
 		}
-		xp_cost = 2
+		#xp_cost = 2
 
 		allow_mission_type = {
 			naval_bomber
@@ -4450,7 +4450,7 @@ equipment_modules = {
 			recon
 			naval_patrol
 		}
-		xp_cost = 6
+		#xp_cost = 6
 	}
 
 	weap_buff_awacs_2 = {							## AWACS II
@@ -4494,7 +4494,7 @@ equipment_modules = {
 			recon
 			naval_patrol
 		}
-		xp_cost = 6
+		#xp_cost = 6
 	}
 
 	weap_buff_awacs_3 = {							## AWACS III
@@ -4539,7 +4539,7 @@ equipment_modules = {
 			recon
 			naval_patrol
 		}
-		xp_cost = 6
+		#xp_cost = 6
 	}
 
 	weap_buff_transport = {							## Transport Bay
@@ -4587,7 +4587,7 @@ equipment_modules = {
 			air_supply
 			training
 		}
-		xp_cost = 6
+		#xp_cost = 6
 	}
 
 
@@ -4601,7 +4601,7 @@ equipment_modules = {
 		abbreviation = "fuel1"
 		category = plane_refueling_systems
 		sfx = sfx_ui_sd_module_turret
-		xp_cost = 2
+		#xp_cost = 2
 
 		multiply_stats = {
 			air_range = 0.15
@@ -4621,7 +4621,7 @@ equipment_modules = {
 		category = plane_refueling_systems
 		parent = spec_refuel_1
 		sfx = sfx_ui_sd_module_turret
-		xp_cost = 2
+		#xp_cost = 2
 
 		multiply_stats = {
 			air_range = 0.20
@@ -4640,7 +4640,7 @@ equipment_modules = {
 		category = plane_refueling_systems
 		parent = spec_refuel_2
 		sfx = sfx_ui_sd_module_turret
-		xp_cost = 2
+		#xp_cost = 2
 
 		multiply_stats = {
 			air_range = 0.35
@@ -4657,7 +4657,7 @@ equipment_modules = {
 		abbreviation = "cam1"
 		category = plane_recon_tgp_systems
 		sfx = sfx_ui_sd_module_turret
-		xp_cost = 2
+		#xp_cost = 2
 		add_equipment_type = scout_plane
 
 		allow_mission_type = {
@@ -4675,7 +4675,7 @@ equipment_modules = {
 		category = plane_recon_tgp_systems
 		parent = spec_recon_1
 		sfx = sfx_ui_sd_module_turret
-		xp_cost = 2
+		#xp_cost = 2
 		add_equipment_type = scout_plane
 
 		allow_mission_type = {
@@ -4693,7 +4693,7 @@ equipment_modules = {
 		category = plane_recon_tgp_systems
 		parent = spec_recon_2
 		sfx = sfx_ui_sd_module_turret
-		xp_cost = 2
+		#xp_cost = 2
 		add_equipment_type = scout_plane
 
 		allow_mission_type = {
@@ -4710,7 +4710,7 @@ equipment_modules = {
 		abbreviation = "tgp1"
 		category = plane_recon_tgp_systems
 		sfx = sfx_ui_sd_module_turret
-		xp_cost = 2
+		#xp_cost = 2
 
 		add_stats = {
 			build_cost_ic = 19
@@ -4743,7 +4743,7 @@ equipment_modules = {
 		category = plane_recon_tgp_systems
 		parent = spec_tgp_1
 		sfx = sfx_ui_sd_module_turret
-		xp_cost = 2
+		#xp_cost = 2
 
 		add_stats = {
 			build_cost_ic = 26
@@ -4776,7 +4776,7 @@ equipment_modules = {
 		category = plane_recon_tgp_systems
 		parent = spec_tgp_2
 		sfx = sfx_ui_sd_module_turret
-		xp_cost = 2
+		#xp_cost = 2
 
 		add_stats = {
 			build_cost_ic = 34.5
@@ -4808,7 +4808,7 @@ equipment_modules = {
 		abbreviation = "mad1"
 		category = plane_asw_systems
 		sfx = sfx_ui_sd_module_turret
-		xp_cost = 2
+		#xp_cost = 2
 
 		add_stats = {
 			build_cost_ic = 31.5
@@ -4829,7 +4829,7 @@ equipment_modules = {
 		category = plane_asw_systems
 		parent = spec_mad_1
 		sfx = sfx_ui_sd_module_turret
-		xp_cost = 2
+		#xp_cost = 2
 
 		add_stats = {
 			build_cost_ic = 37
@@ -4850,7 +4850,7 @@ equipment_modules = {
 		category = plane_asw_systems
 		parent = spec_mad_2
 		sfx = sfx_ui_sd_module_turret
-		xp_cost = 2
+		#xp_cost = 2
 
 		add_stats = {
 			build_cost_ic = 42.5
@@ -4870,7 +4870,7 @@ equipment_modules = {
 		abbreviation = "rsys1"
 		category = plane_redundant_systems
 		sfx = sfx_ui_sd_module_turret
-		xp_cost = 4
+		#xp_cost = 4
 
 		add_stats = {
 			build_cost_ic = 9
@@ -4885,7 +4885,7 @@ equipment_modules = {
 		category = plane_redundant_systems
 		parent = spec_redundant_1
 		sfx = sfx_ui_sd_module_turret
-		xp_cost = 4
+		#xp_cost = 4
 
 		add_stats = {
 			build_cost_ic = 13.5
@@ -4900,7 +4900,7 @@ equipment_modules = {
 		category = plane_redundant_systems
 		parent = spec_redundant_2
 		sfx = sfx_ui_sd_module_turret
-		xp_cost = 4
+		#xp_cost = 4
 
 		add_stats = {
 			build_cost_ic = 20
@@ -4922,7 +4922,7 @@ equipment_modules = {
 		build_cost_resources = {
 			chromium = 1
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 	fully_autonomous_computer_system_heavy = {
@@ -4937,7 +4937,7 @@ equipment_modules = {
 		build_cost_resources = {
 			chromium = 1
 		}
-		xp_cost = 2
+		#xp_cost = 2
 	}
 
 
@@ -4946,7 +4946,7 @@ equipment_modules = {
 		abbreviation = "armr1"
 		category = plane_protective_materials
 		sfx = sfx_ui_sd_module_turret
-		xp_cost = 2
+		#xp_cost = 2
 
 		add_stats = {
 			build_cost_ic = 13.5
@@ -4965,7 +4965,7 @@ equipment_modules = {
 		abbreviation = "armr2"
 		category = plane_protective_materials
 		sfx = sfx_ui_sd_module_turret
-		xp_cost = 2
+		#xp_cost = 2
 
 		add_stats = {
 			air_defence = 10
@@ -4986,7 +4986,7 @@ equipment_modules = {
 		category = plane_protective_materials
 		parent = spec_protection_2
 		sfx = sfx_ui_sd_module_turret
-		xp_cost = 2
+		#xp_cost = 2
 
 		add_stats = {
 			air_defence = 20
@@ -5006,7 +5006,7 @@ equipment_modules = {
 		abbreviation = "shape1"
 		category = plane_stealth_shape
 		sfx = sfx_ui_sd_module_turret
-		xp_cost = 2
+		#xp_cost = 2
 
 		add_stats = {
 			air_agility = 5
@@ -5025,7 +5025,7 @@ equipment_modules = {
 		category = plane_stealth_shape
 		parent = spec_stealthshape_1
 		sfx = sfx_ui_sd_module_turret
-		xp_cost = 2
+		#xp_cost = 2
 
 		add_stats = {
 			air_agility = 7
@@ -5043,7 +5043,7 @@ equipment_modules = {
 		abbreviation = "stlth1"
 		category = plane_stealth_materials
 		sfx = sfx_ui_sd_module_turret
-		xp_cost = 2
+		#xp_cost = 2
 
 		add_stats = {
 			air_agility = 6
@@ -5067,7 +5067,7 @@ equipment_modules = {
 		category = plane_stealth_materials
 		parent = spec_stealthmats_1
 		sfx = sfx_ui_sd_module_turret
-		xp_cost = 2
+		#xp_cost = 2
 
 		add_stats = {
 			air_agility = 11
@@ -5092,7 +5092,7 @@ equipment_modules = {
 		abbreviation = "flare1"
 		category = plane_countermeasures
 		sfx = sfx_ui_sd_module_turret
-		xp_cost = 2
+		#xp_cost = 2
 
 		add_stats = {
 			air_defence = 8
@@ -5110,7 +5110,7 @@ equipment_modules = {
 		category = plane_countermeasures
 		parent = spec_countermeasures_1
 		sfx = sfx_ui_sd_module_turret
-		xp_cost = 2
+		#xp_cost = 2
 
 		add_stats = {
 			air_defence = 14.5
@@ -5128,7 +5128,7 @@ equipment_modules = {
 		category = plane_countermeasures
 		parent = spec_countermeasures_2
 		sfx = sfx_ui_sd_module_turret
-		xp_cost = 2
+		#xp_cost = 2
 
 		add_stats = {
 			air_agility = 15
@@ -5147,7 +5147,7 @@ equipment_modules = {
 		category = plane_countermeasures
 		parent = spec_countermeasures_3
 		sfx = sfx_ui_sd_module_turret
-		xp_cost = 2
+		#xp_cost = 2
 
 		add_stats = {
 			air_agility = 35
@@ -5169,7 +5169,7 @@ equipment_modules = {
 		abbreviation = "vector1"
 		category = plane_thrust_vectoring
 		sfx = sfx_ui_sd_module_turret
-		xp_cost = 2
+		#xp_cost = 2
 
 		add_stats = {
 			air_defence = 5
@@ -5187,7 +5187,7 @@ equipment_modules = {
 		category = plane_thrust_vectoring
 		parent = spec_thrust_vector_1
 		sfx = sfx_ui_sd_module_turret
-		xp_cost = 2
+		#xp_cost = 2
 
 		add_stats = {
 			air_defence = 8
@@ -5205,7 +5205,7 @@ equipment_modules = {
 		category = plane_thrust_vectoring
 		parent = spec_thrust_vector_2
 		sfx = sfx_ui_sd_module_turret
-		xp_cost = 2
+		#xp_cost = 2
 
 		add_stats = {
 			air_defence = 12
@@ -5223,7 +5223,7 @@ equipment_modules = {
 		abbreviation = "wimpy"
 		category = plane_winglets
 		sfx = sfx_ui_sd_module_turret
-		xp_cost = 2
+		#xp_cost = 2
 
 		add_stats = {
 			air_defence = 10
@@ -5242,7 +5242,7 @@ equipment_modules = {
 		abbreviation = "IceCream"
 		category = plane_dairy
 		sfx = sfx_ui_sd_module_turret
-		xp_cost = 2
+		#xp_cost = 2
 
 		add_stats = {
 			#weather_penalty = -2
@@ -5263,7 +5263,7 @@ equipment_modules = {
 		abbreviation = "NucCon"
 		category = plane_nuclear_consent
 		sfx = sfx_ui_sd_mdoule_turret
-		xp_cost = 5
+		#xp_cost = 5
 	}
 }
 

@@ -38,7 +38,7 @@ equipment_modules = {
 			convert_cost_ic = 1.25
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	tank_diesel_engine_gen2 = {
@@ -79,7 +79,7 @@ equipment_modules = {
 			convert_cost_ic = 1.35
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	tank_diesel_engine_gen3 = {
@@ -120,7 +120,7 @@ equipment_modules = {
 			convert_cost_ic = 1.5
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	tank_diesel_engine_gen4 = {
@@ -161,7 +161,7 @@ equipment_modules = {
 			convert_cost_ic = 1.7
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	tank_diesel_engine_gen5 = {
@@ -202,7 +202,7 @@ equipment_modules = {
 			convert_cost_ic = 2.05
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	tank_diesel_engine_gen6 = {
@@ -243,7 +243,7 @@ equipment_modules = {
 			convert_cost_ic = 2.25
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	tank_diesel_engine_gen7 = {
@@ -284,7 +284,7 @@ equipment_modules = {
 			convert_cost_ic = 2.5
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	## Rocket ##
@@ -326,7 +326,7 @@ equipment_modules = {
 			convert_cost_ic = 1.5
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	tank_gas_turbine_engine_gen2 = {
@@ -367,7 +367,7 @@ equipment_modules = {
 			convert_cost_ic = 1.65
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	tank_gas_turbine_engine_gen3 = {
@@ -408,7 +408,7 @@ equipment_modules = {
 			convert_cost_ic = 1.85
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	tank_gas_turbine_engine_gen4 = {
@@ -449,7 +449,7 @@ equipment_modules = {
 			convert_cost_ic = 2.25
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	tank_gas_turbine_engine_gen5 = {
@@ -490,7 +490,7 @@ equipment_modules = {
 			convert_cost_ic = 2.4
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	tank_gas_turbine_engine_gen6 = {
@@ -531,7 +531,7 @@ equipment_modules = {
 			convert_cost_ic = 2.75
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	## Electric ##
@@ -570,7 +570,7 @@ equipment_modules = {
 			chromium = 1
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	tank_electric_engine_gen2 = {
@@ -609,7 +609,7 @@ equipment_modules = {
 			chromium = 1
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	afv_gasoline_engine_gen1 = {
@@ -658,7 +658,7 @@ equipment_modules = {
 			convert_cost_ic = 1
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	afv_gasoline_engine_gen2 = {
@@ -708,7 +708,7 @@ equipment_modules = {
 			convert_cost_ic = 1.25
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	afv_gasoline_engine_gen3 = {
@@ -757,7 +757,7 @@ equipment_modules = {
 			convert_cost_ic = 1.5
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	## Czech Republic ##
@@ -807,7 +807,7 @@ equipment_modules = {
 			convert_cost_ic = 1.25
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	CZE_engine_2 = {
@@ -857,7 +857,7 @@ equipment_modules = {
 			convert_cost_ic = 1.3
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	CZE_engine_3 = {
@@ -907,7 +907,7 @@ equipment_modules = {
 			convert_cost_ic = 1.4
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	CZE_engine_4 = {
@@ -957,7 +957,7 @@ equipment_modules = {
 			convert_cost_ic = 1.5
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	CZE_engine_5 = {
@@ -1007,7 +1007,7 @@ equipment_modules = {
 			convert_cost_ic = 1.6
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	CZE_engine_6 = {
@@ -1057,7 +1057,7 @@ equipment_modules = {
 			convert_cost_ic = 1.7
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	CZE_engine_7 = {
@@ -1106,7 +1106,7 @@ equipment_modules = {
 			convert_cost_ic = 1.25
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	CZE_engine_8 = {
@@ -1156,7 +1156,7 @@ equipment_modules = {
 			convert_cost_ic = 1.4
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	CZE_engine_9 = {
@@ -1206,7 +1206,7 @@ equipment_modules = {
 			convert_cost_ic = 1.6
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	CZE_engine_10 = {
@@ -1256,7 +1256,7 @@ equipment_modules = {
 			convert_cost_ic = 1.7
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	CZE_el_engine = {
@@ -1301,7 +1301,7 @@ equipment_modules = {
 			chromium = 1
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	CZE_el_engine_2 = {
@@ -1347,7 +1347,7 @@ equipment_modules = {
 			chromium = 2
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	### Armament ###
@@ -1381,7 +1381,7 @@ equipment_modules = {
 			steel = 1
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	tank_small_cannon_2 = {
@@ -1414,7 +1414,7 @@ equipment_modules = {
 			steel = 1
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	tank_small_cannon_3 = {
@@ -1447,7 +1447,7 @@ equipment_modules = {
 			steel = 1
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	tank_small_cannon_4 = {
@@ -1480,7 +1480,7 @@ equipment_modules = {
 			steel = 1
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	## Small-Medium (100/105mm) ##
@@ -1504,7 +1504,7 @@ equipment_modules = {
 			reliability = -0.075
 			breakthrough = 1
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		can_convert_from = {
 			module_category = tank_small_medium_main_armament
 			convert_cost_ic = 1
@@ -1536,7 +1536,7 @@ equipment_modules = {
 			reliability = -0.075
 			breakthrough = 1.25
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		can_convert_from = {
 			module_category = tank_small_medium_main_armament
 			convert_cost_ic = 1.25
@@ -1569,7 +1569,7 @@ equipment_modules = {
 			reliability = -0.075
 			breakthrough = 1.5
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		can_convert_from = {
 			module_category = tank_medium_main_armament
 			convert_cost_ic = 1.5
@@ -1610,7 +1610,7 @@ equipment_modules = {
 			reliability = -0.1
 			breakthrough = 1.75
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		can_convert_from = {
 			module_category = tank_medium_main_armament
 			convert_cost_ic = 2
@@ -1651,7 +1651,7 @@ equipment_modules = {
 			reliability = -0.1
 			breakthrough = 1.5
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		can_convert_from = {
 			module_category = tank_medium_main_armament
 			convert_cost_ic = 1.25
@@ -1692,7 +1692,7 @@ equipment_modules = {
 			reliability = -0.1
 			breakthrough = 2
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		can_convert_from = {
 			module_category = tank_medium_main_armament
 			convert_cost_ic = 1.5
@@ -1734,7 +1734,7 @@ equipment_modules = {
 			reliability = -0.1
 			breakthrough = 2.5
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		can_convert_from = {
 			module_category = tank_medium_main_armament
 			convert_cost_ic = 1.75
@@ -1776,7 +1776,7 @@ equipment_modules = {
 			reliability = -0.125
 			breakthrough = 3
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		can_convert_from = {
 			module_category = tank_medium_main_armament
 			convert_cost_ic = 2.25
@@ -1818,7 +1818,7 @@ equipment_modules = {
 			reliability = -0.15
 			breakthrough = 1.75
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		can_convert_from = {
 			module_category = tank_medium_main_armament
 			convert_cost_ic = 1.5
@@ -1860,7 +1860,7 @@ equipment_modules = {
 			reliability = -0.15
 			breakthrough = 2.25
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		can_convert_from = {
 			module_category = tank_medium_main_armament
 			convert_cost_ic = 1.75
@@ -1902,7 +1902,7 @@ equipment_modules = {
 			reliability = -0.175
 			breakthrough = 2.75
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		can_convert_from = {
 			module_category = tank_medium_main_armament
 			convert_cost_ic = 2.5
@@ -1944,7 +1944,7 @@ equipment_modules = {
 			reliability = -0.2
 			breakthrough = 2
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		can_convert_from = {
 			module_category = tank_medium_main_armament
 			convert_cost_ic = 2
@@ -1986,7 +1986,7 @@ equipment_modules = {
 			reliability = -0.2
 			breakthrough = 2.5
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		can_convert_from = {
 			module_category = tank_medium_main_armament
 			convert_cost_ic = 2.25
@@ -2028,7 +2028,7 @@ equipment_modules = {
 			reliability = -0.225
 			breakthrough = 3
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		can_convert_from = {
 			module_category = tank_medium_main_armament
 			convert_cost_ic = 2.5
@@ -2065,7 +2065,7 @@ equipment_modules = {
 			convert_cost_ic = 2.25
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	tank_soviet_turret = {
@@ -2082,7 +2082,7 @@ equipment_modules = {
 			module_category = tank_turret_type
 			convert_cost_ic = 2.25
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		multiply_stats = {
 			armor_value = -0.1
 		}
@@ -2102,7 +2102,7 @@ equipment_modules = {
 			module_category = tank_turret_type
 			convert_cost_ic = 0.75
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		multiply_stats = {
 			defense = 0.2
 			breakthrough = -0.4
@@ -2123,7 +2123,7 @@ equipment_modules = {
 			module_category = tank_turret_type
 			convert_cost_ic = 2.25
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		multiply_stats = {
 			armor_value = -0.2
 			soft_attack = 0.125
@@ -2145,7 +2145,7 @@ equipment_modules = {
 			module_category = tank_turret_type
 			convert_cost_ic = 2.25
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		multiply_stats = {
 			armor_value = 0.1
 			soft_attack = -0.03
@@ -2181,7 +2181,7 @@ equipment_modules = {
 			module_category = tank_turret_type
 			convert_cost_ic = 2.25
 		}
-		xp_cost = 5
+		#xp_cost = 5
 		multiply_stats = {
 			armor_value = 0.1
 			soft_attack = -0.03
@@ -2203,7 +2203,7 @@ equipment_modules = {
 			convert_cost_ic = 1.25
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	tank_pneumatic_suspension = {
@@ -2224,7 +2224,7 @@ equipment_modules = {
 			breakthrough = 0.1
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	### Armor ###
@@ -2239,7 +2239,7 @@ equipment_modules = {
 			defense = 2
 			breakthrough = 6
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		multiply_stats = {
 			build_cost_ic = -0.1
 		}
@@ -2258,7 +2258,7 @@ equipment_modules = {
 			armor_value = 5
 			maximum_speed = -1.5
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		multiply_stats = {
 			build_cost_ic = -0.05
 		}
@@ -2276,7 +2276,7 @@ equipment_modules = {
 			armor_value = 9
 			maximum_speed = -2
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		multiply_stats = {
 			build_cost_ic = -0.05
 		}
@@ -2295,7 +2295,7 @@ equipment_modules = {
 			maximum_speed = -1.5
 			build_cost_ic = 2
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		multiply_stats = { }
 		build_cost_resources = {
 			steel = 1
@@ -2315,7 +2315,7 @@ equipment_modules = {
 			maximum_speed = -2.5
 			build_cost_ic = 2.35
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		multiply_stats = { }
 		build_cost_resources = {
 			steel = 1
@@ -2335,7 +2335,7 @@ equipment_modules = {
 			maximum_speed = -3.5
 			build_cost_ic = 2.7
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		multiply_stats = { }
 		build_cost_resources = {
 			steel = 3
@@ -2355,7 +2355,7 @@ equipment_modules = {
 			maximum_speed = -4.5
 			build_cost_ic = 3
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		multiply_stats = { }
 		build_cost_resources = {
 			steel = 4
@@ -2378,7 +2378,7 @@ equipment_modules = {
 			module_category = tank_battlestation_module
 			convert_cost_ic = 0.75
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		multiply_stats = {
 			defense = 0.05
 			breakthrough = 0.07
@@ -2400,7 +2400,7 @@ equipment_modules = {
 			module_category = tank_battlestation_module
 			convert_cost_ic = 1
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		multiply_stats = {
 			defense = 0.1
 			breakthrough = 0.15
@@ -2422,7 +2422,7 @@ equipment_modules = {
 			module_category = tank_battlestation_module
 			convert_cost_ic = 1.25
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		multiply_stats = {
 			defense = 0.15
 			breakthrough = 0.22
@@ -2444,7 +2444,7 @@ equipment_modules = {
 			module_category = tank_battlestation_module
 			convert_cost_ic = 1.5
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		multiply_stats = {
 			defense = 0.2
 			breakthrough = 0.3
@@ -2466,7 +2466,7 @@ equipment_modules = {
 			module_category = tank_smoke_module
 			convert_cost_ic = 0.35
 		}
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	smoke_launchers_2 = {
@@ -2484,7 +2484,7 @@ equipment_modules = {
 			module_category = tank_smoke_module
 			convert_cost_ic = 0.5
 		}
-		xp_cost = 3
+		#xp_cost = 3
 	}
 	smoke_launchers_3 = {
 		abbreviation = "smok3"
@@ -2501,7 +2501,7 @@ equipment_modules = {
 			module_category = tank_smoke_module
 			convert_cost_ic = 0.5
 		}
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	## Advanced defense systems ##
@@ -2521,7 +2521,7 @@ equipment_modules = {
 			module_category = tank_smoke_module
 			convert_cost_ic = 2.25
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		build_cost_resources = {
 			steel = 1
 		}
@@ -2543,7 +2543,7 @@ equipment_modules = {
 			module_category = tank_smoke_module
 			convert_cost_ic = 3.25
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		build_cost_resources = {
 			steel = 1
 		}
@@ -2570,7 +2570,7 @@ equipment_modules = {
 			module_category = tank_additional_armor_spaced
 			convert_cost_ic = 1.25
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		multiply_stats = {
 			armor_value = 0.1
 		}
@@ -2597,7 +2597,7 @@ equipment_modules = {
 			module_category = tank_additional_armor_spaced
 			convert_cost_ic = 1.5
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		multiply_stats = {
 			armor_value = 0.2
 		}
@@ -2624,7 +2624,7 @@ equipment_modules = {
 			module_category = tank_additional_armor_spaced
 			convert_cost_ic = 1.85
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		multiply_stats = {
 			armor_value = 0.3
 		}
@@ -2651,7 +2651,7 @@ equipment_modules = {
 			module_category = tank_additional_armor_spaced
 			convert_cost_ic = 2.25
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		multiply_stats = {
 			armor_value = 0.4
 		}
@@ -2676,7 +2676,7 @@ equipment_modules = {
 			module_category = tank_additional_armor_spaced
 			convert_cost_ic = 0.75
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		multiply_stats = {
 			armor_value = 0.05
 		}
@@ -2705,7 +2705,7 @@ equipment_modules = {
 			module_category = tank_additional_armor_spaced
 			convert_cost_ic = 1
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		multiply_stats = {
 			armor_value = 0.10
 		}
@@ -2734,7 +2734,7 @@ equipment_modules = {
 			module_category = tank_additional_armor_spaced
 			convert_cost_ic = 1.25
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		multiply_stats = {
 			armor_value = 0.15
 		}
@@ -2756,7 +2756,7 @@ equipment_modules = {
 			air_attack = 0.25
 			build_cost_ic = 0.25
 		}
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	## Blow out panels
@@ -2769,7 +2769,7 @@ equipment_modules = {
 			reliability = 0.15
 			build_cost_ic = 0.5
 		}
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	## Loading stuff ##
@@ -2797,7 +2797,7 @@ equipment_modules = {
 			convert_cost_ic = 1
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	automatic_loading = {
@@ -2833,7 +2833,7 @@ equipment_modules = {
 			defense = 0.05
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	revolver_magazine = {
@@ -2869,7 +2869,7 @@ equipment_modules = {
 			defense = 0.08
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	light_tank_afv_automatic_loading = {
@@ -2896,7 +2896,7 @@ equipment_modules = {
 			build_cost_ic = -0.05
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	## smoothbore atgm launchers ##
@@ -2915,7 +2915,7 @@ equipment_modules = {
 			module_category = tank_atgm_module
 			convert_cost_ic = 1.25
 		}
-		xp_cost = 3
+		#xp_cost = 3
 
 		build_cost_resources = {
 			tungsten = 1
@@ -2938,7 +2938,7 @@ equipment_modules = {
 			module_category = tank_atgm_module
 			convert_cost_ic = 1.45
 		}
-		xp_cost = 3
+		#xp_cost = 3
 
 		build_cost_resources = {
 			tungsten = 1
@@ -2961,7 +2961,7 @@ equipment_modules = {
 			module_category = tank_atgm_module
 			convert_cost_ic = 1.65
 		}
-		xp_cost = 3
+		#xp_cost = 3
 
 		build_cost_resources = {
 			tungsten = 2
@@ -2984,7 +2984,7 @@ equipment_modules = {
 			module_category = tank_atgm_module
 			convert_cost_ic = 1.85
 		}
-		xp_cost = 3
+		#xp_cost = 3
 
 		build_cost_resources = {
 			tungsten = 2
@@ -3007,7 +3007,7 @@ equipment_modules = {
 			module_category = tank_atgm_module
 			convert_cost_ic = 2.05
 		}
-		xp_cost = 3
+		#xp_cost = 3
 
 		build_cost_resources = {
 			tungsten = 2
@@ -3026,7 +3026,7 @@ equipment_modules = {
 			maximum_speed = -0.75
 			reliability = -0.05
 		}
-		xp_cost = 3
+		#xp_cost = 3
 
 		build_cost_resources = {
 			chromium = 2
@@ -3048,7 +3048,7 @@ equipment_modules = {
 			hard_attack = 0.075
 			ap_attack = 0.1
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		build_cost_resources = {
 			chromium = 1
 		}
@@ -3066,7 +3066,7 @@ equipment_modules = {
 		multiply_stats = {
 			fuel_consumption = -0.07
 		}
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	tank_aux_engine_2 = {
@@ -3082,7 +3082,7 @@ equipment_modules = {
 		multiply_stats = {
 			fuel_consumption = -0.1
 		}
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	tank_drones = {
@@ -3097,7 +3097,7 @@ equipment_modules = {
 			soft_attack = 0.06
 			hard_attack = 0.03
 		}
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	tank_drones_2 = {
@@ -3113,7 +3113,7 @@ equipment_modules = {
 			soft_attack = 0.125
 			hard_attack = 0.075
 		}
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	## APC/IFV stuff
@@ -3134,7 +3134,7 @@ equipment_modules = {
 			convert_cost_ic = 1.5
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	afv_unmanned_turret = {
@@ -3156,7 +3156,7 @@ equipment_modules = {
 			convert_cost_ic = 1.75
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	afv_no_turret = {
@@ -3173,7 +3173,7 @@ equipment_modules = {
 			convert_cost_ic = 0.5
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	# Suspension
@@ -3191,7 +3191,7 @@ equipment_modules = {
 			convert_cost_ic = 0.75
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	afv_torsion_bar_suspension = {
@@ -3207,7 +3207,7 @@ equipment_modules = {
 			convert_cost_ic = 1.25
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 # Guns
@@ -3230,7 +3230,7 @@ equipment_modules = {
 			convert_cost_ic = 0.75
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	afv_machine_gun_2 = {
@@ -3253,7 +3253,7 @@ equipment_modules = {
 			convert_cost_ic = 1
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	afv_machine_gun_3 = {
@@ -3276,7 +3276,7 @@ equipment_modules = {
 			convert_cost_ic = 1.25
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	afv_machine_gun_4 = {
@@ -3299,7 +3299,7 @@ equipment_modules = {
 			convert_cost_ic = 1.25
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	afv_assault_gun = {
@@ -3326,7 +3326,7 @@ equipment_modules = {
 			steel = 1
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	afv_assault_gun_2 = {
@@ -3355,7 +3355,7 @@ equipment_modules = {
 			tungsten = 1
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	afv_assault_gun_3 = {
@@ -3384,7 +3384,7 @@ equipment_modules = {
 			tungsten = 1
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	afv_assault_gun_4 = {
@@ -3413,7 +3413,7 @@ equipment_modules = {
 			tungsten = 1
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	small_autocannon = {
@@ -3444,7 +3444,7 @@ equipment_modules = {
 			steel = 1
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	small_autocannon_2 = {
@@ -3475,7 +3475,7 @@ equipment_modules = {
 			steel = 1
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	small_autocannon_3 = {
@@ -3506,7 +3506,7 @@ equipment_modules = {
 			steel = 2
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	small_autocannon_4 = {
@@ -3537,7 +3537,7 @@ equipment_modules = {
 			steel = 2
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	apc_small_autocannon = {
@@ -3564,7 +3564,7 @@ equipment_modules = {
 			steel = 1
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	apc_small_autocannon_2 = {
@@ -3592,7 +3592,7 @@ equipment_modules = {
 			steel = 1
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	apc_small_autocannon_3 = {
@@ -3620,7 +3620,7 @@ equipment_modules = {
 			steel = 2
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	apc_small_autocannon_4 = {
@@ -3648,7 +3648,7 @@ equipment_modules = {
 			steel = 2
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	big_autocannon = {
@@ -3679,7 +3679,7 @@ equipment_modules = {
 			tungsten = 1
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	big_autocannon_2 = {
@@ -3711,7 +3711,7 @@ equipment_modules = {
 			tungsten = 1
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	big_autocannon_3 = {
@@ -3744,7 +3744,7 @@ equipment_modules = {
 			aluminium = 1
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	big_autocannon_4 = {
@@ -3777,7 +3777,7 @@ equipment_modules = {
 			aluminium = 1
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	afv_small_medium_cannon = {
@@ -3798,7 +3798,7 @@ equipment_modules = {
 			breakthrough = 2
 			defense = 2
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		can_convert_from = {
 			module_category = light_afv_cannon_armament
 			convert_cost_ic = 1.25
@@ -3829,7 +3829,7 @@ equipment_modules = {
 			breakthrough = 2.5
 			defense = 2.5
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		can_convert_from = {
 			module_category = light_afv_cannon_armament
 			convert_cost_ic = 1.25
@@ -3860,7 +3860,7 @@ equipment_modules = {
 			breakthrough = 3
 			defense = 3
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		can_convert_from = {
 			module_category = light_afv_cannon_armament
 			convert_cost_ic = 1.5
@@ -3892,7 +3892,7 @@ equipment_modules = {
 			breakthrough = 3.5
 			defense = 3.5
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		can_convert_from = {
 			module_category = light_afv_cannon_armament
 			convert_cost_ic = 3
@@ -3915,7 +3915,7 @@ equipment_modules = {
 			module_category = light_afv_armor_type
 			convert_cost_ic = 0.5
 		}
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	afv_steel_armor_gen2 = {
@@ -3935,7 +3935,7 @@ equipment_modules = {
 			module_category = light_afv_armor_type
 			convert_cost_ic = 0.75
 		}
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	afv_steel_armor_gen3 = {
@@ -3955,7 +3955,7 @@ equipment_modules = {
 			module_category = light_afv_armor_type
 			convert_cost_ic = 1
 		}
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	afv_alum_armor_gen1 = {
@@ -3971,7 +3971,7 @@ equipment_modules = {
 			module_category = light_afv_armor_type
 			convert_cost_ic = 0.5
 		}
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	afv_alum_armor_gen2 = {
@@ -3995,7 +3995,7 @@ equipment_modules = {
 			module_category = light_afv_armor_type
 			convert_cost_ic = 0.5
 		}
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	afv_alum_armor_gen3 = {
@@ -4019,7 +4019,7 @@ equipment_modules = {
 			module_category = light_afv_armor_type
 			convert_cost_ic = 1
 		}
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	afv_composite_armor_gen1 = {
@@ -4045,7 +4045,7 @@ equipment_modules = {
 			module_category = light_afv_heavy_armor_type
 			convert_cost_ic = 2.25
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		build_cost_resources = {
 			steel = 1
 		}
@@ -4067,7 +4067,7 @@ equipment_modules = {
 		multiply_stats = {
 			hardness = 0.4
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		can_convert_from = {
 			module_category = light_afv_armor_type
 			convert_cost_ic = 2.5
@@ -4098,7 +4098,7 @@ equipment_modules = {
 		multiply_stats = {
 			hardness = 0.4
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		can_convert_from = {
 			module_category = light_afv_armor_type
 			convert_cost_ic = 3
@@ -4129,7 +4129,7 @@ equipment_modules = {
 		multiply_stats = {
 			hardness = 0.4
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		can_convert_from = {
 			module_category = light_afv_armor_type
 			convert_cost_ic = 3.25
@@ -4159,7 +4159,7 @@ equipment_modules = {
 			module_category = afv_battlestation_module
 			convert_cost_ic = 0.75
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		multiply_stats = {
 			defense = 0.07
 			breakthrough = 0.05
@@ -4181,7 +4181,7 @@ equipment_modules = {
 			module_category = afv_battlestation_module
 			convert_cost_ic = 1
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		multiply_stats = {
 			defense = 0.15
 			breakthrough = 0.1
@@ -4203,7 +4203,7 @@ equipment_modules = {
 			module_category = afv_battlestation_module
 			convert_cost_ic = 1.25
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		multiply_stats = {
 			defense = 0.2
 			breakthrough = 0.15
@@ -4225,7 +4225,7 @@ equipment_modules = {
 			module_category = afv_battlestation_module
 			convert_cost_ic = 1.5
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		multiply_stats = {
 			defense = 0.3
 			breakthrough = 0.2
@@ -4248,7 +4248,7 @@ equipment_modules = {
 			module_category = afv_atgm_module
 			convert_cost_ic = 1.25
 		}
-		xp_cost = 3
+		#xp_cost = 3
 
 		build_cost_resources = {
 			tungsten = 1
@@ -4271,7 +4271,7 @@ equipment_modules = {
 			module_category = afv_atgm_module
 			convert_cost_ic = 1.45
 		}
-		xp_cost = 3
+		#xp_cost = 3
 
 		build_cost_resources = {
 			tungsten = 1
@@ -4294,7 +4294,7 @@ equipment_modules = {
 			module_category = afv_atgm_module
 			convert_cost_ic = 1.65
 		}
-		xp_cost = 3
+		#xp_cost = 3
 
 		build_cost_resources = {
 			tungsten = 2
@@ -4317,7 +4317,7 @@ equipment_modules = {
 			module_category = afv_atgm_module
 			convert_cost_ic = 1.85
 		}
-		xp_cost = 3
+		#xp_cost = 3
 
 		build_cost_resources = {
 			tungsten = 2
@@ -4340,7 +4340,7 @@ equipment_modules = {
 			module_category = afv_atgm_module
 			convert_cost_ic = 2.05
 		}
-		xp_cost = 3
+		#xp_cost = 3
 
 		build_cost_resources = {
 			tungsten = 2
@@ -4359,7 +4359,7 @@ equipment_modules = {
 			air_attack = 0.25
 			build_cost_ic = 0.2
 		}
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	afv_gun_ports = {
@@ -4375,7 +4375,7 @@ equipment_modules = {
 		multiply_stats = {
 			armor_value = -0.05
 		}
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	afv_mine_protection = {
@@ -4390,7 +4390,7 @@ equipment_modules = {
 			suppression = 0.5
 			defense = 0.5
 		}
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	afv_reverse_doors = {
@@ -4403,7 +4403,7 @@ equipment_modules = {
 			breakthrough = 0.5
 			defense = 0.25
 		}
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	# Special Armament
@@ -4429,7 +4429,7 @@ equipment_modules = {
 			convert_cost_ic = 0.75
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	afv_coax_machine_gun_2 = {
@@ -4455,7 +4455,7 @@ equipment_modules = {
 			convert_cost_ic = 0.75
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	afv_coax_machine_gun_3 = {
@@ -4481,7 +4481,7 @@ equipment_modules = {
 			convert_cost_ic = 1
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	afv_coax_machine_gun_4 = {
@@ -4507,7 +4507,7 @@ equipment_modules = {
 			convert_cost_ic = 1.25
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	afv_coax_autocannon = {
@@ -4533,7 +4533,7 @@ equipment_modules = {
 			steel = 1
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	afv_coax_autocannon_2 = {
@@ -4560,7 +4560,7 @@ equipment_modules = {
 			steel = 1
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	afv_coax_autocannon_3 = {
@@ -4587,7 +4587,7 @@ equipment_modules = {
 			steel = 2
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	afv_coax_autocannon_4 = {
@@ -4614,7 +4614,7 @@ equipment_modules = {
 			steel = 2
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	double_feed_system = {
@@ -4635,7 +4635,7 @@ equipment_modules = {
 			breakthrough = 0.05
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	double_cannons = {
@@ -4656,7 +4656,7 @@ equipment_modules = {
 			breakthrough = 0.1
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 	## Light Tank Chassis
 	# Generation 0
@@ -4675,7 +4675,7 @@ equipment_modules = {
 			hardness = -0.2
 			build_cost_ic = -0.25
 		}
-		xp_cost = 3
+		#xp_cost = 3
 	}
 	chassis_wheeled_afv_gen1 = {
 		abbreviation = "wa1"
@@ -4692,7 +4692,7 @@ equipment_modules = {
 			hardness = -0.2
 			build_cost_ic = -0.25
 		}
-		xp_cost = 3
+		#xp_cost = 3
 	}
 	chassis_wheeled_afv_gen2 = {
 		abbreviation = "wa2"
@@ -4709,7 +4709,7 @@ equipment_modules = {
 			hardness = -0.2
 			build_cost_ic = -0.25
 		}
-		xp_cost = 3
+		#xp_cost = 3
 	}
 	chassis_wheeled_afv_gen3 = {
 		abbreviation = "wa3"
@@ -4726,7 +4726,7 @@ equipment_modules = {
 			hardness = -0.2
 			build_cost_ic = -0.25
 		}
-		xp_cost = 3
+		#xp_cost = 3
 	}
 	chassis_wheeled_afv_gen4 = {
 		abbreviation = "wa4"
@@ -4743,7 +4743,7 @@ equipment_modules = {
 			hardness = -0.2
 			build_cost_ic = -0.25
 		}
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	chassis_tracked_afv_gen0 = {
@@ -4761,7 +4761,7 @@ equipment_modules = {
 		multiply_stats = {
 			build_cost_ic = -0.2
 		}
-		xp_cost = 3
+		#xp_cost = 3
 	}
 	chassis_tracked_afv_gen1 = {
 		abbreviation = "ta1"
@@ -4778,7 +4778,7 @@ equipment_modules = {
 		multiply_stats = {
 			build_cost_ic = -0.2
 		}
-		xp_cost = 3
+		#xp_cost = 3
 	}
 	chassis_tracked_afv_gen2 = {
 		abbreviation = "ta2"
@@ -4795,7 +4795,7 @@ equipment_modules = {
 		multiply_stats = {
 			build_cost_ic = -0.2
 		}
-		xp_cost = 3
+		#xp_cost = 3
 	}
 	chassis_tracked_afv_gen3 = {
 		abbreviation = "ta3"
@@ -4812,7 +4812,7 @@ equipment_modules = {
 		multiply_stats = {
 			build_cost_ic = -0.2
 		}
-		xp_cost = 3
+		#xp_cost = 3
 	}
 	chassis_tracked_afv_gen4 = {
 		abbreviation = "ta4"
@@ -4829,7 +4829,7 @@ equipment_modules = {
 		multiply_stats = {
 			build_cost_ic = -0.2
 		}
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	chassis_light_tank_gen0 = {
@@ -4848,7 +4848,7 @@ equipment_modules = {
 			hardness = 0.25
 			build_cost_ic = -0.1
 		}
-		xp_cost = 3
+		#xp_cost = 3
 	}
 	chassis_light_tank_gen1 = {
 		abbreviation = "lt1"
@@ -4866,7 +4866,7 @@ equipment_modules = {
 			hardness = 0.25
 			build_cost_ic = -0.1
 		}
-		xp_cost = 3
+		#xp_cost = 3
 	}
 	chassis_light_tank_gen2 = {
 		abbreviation = "lt2"
@@ -4884,7 +4884,7 @@ equipment_modules = {
 			hardness = 0.25
 			build_cost_ic = -0.1
 		}
-		xp_cost = 3
+		#xp_cost = 3
 	}
 	chassis_light_tank_gen3 = {
 		abbreviation = "lt3"
@@ -4902,7 +4902,7 @@ equipment_modules = {
 			hardness = 0.25
 			build_cost_ic = -0.1
 		}
-		xp_cost = 3
+		#xp_cost = 3
 	}
 	chassis_light_tank_gen4 = {
 		abbreviation = "lt4"
@@ -4920,7 +4920,7 @@ equipment_modules = {
 			hardness = 0.25
 			build_cost_ic = -0.1
 		}
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	light_tank_low_velocity_gun_1 = {
@@ -4947,7 +4947,7 @@ equipment_modules = {
 			steel = 1
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	light_tank_low_velocity_gun_2 = {
@@ -4976,7 +4976,7 @@ equipment_modules = {
 			tungsten = 1
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	light_tank_low_velocity_gun_3 = {
@@ -5005,7 +5005,7 @@ equipment_modules = {
 			tungsten = 1
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	light_tank_low_velocity_gun_4 = {
@@ -5034,7 +5034,7 @@ equipment_modules = {
 			tungsten = 1
 		}
 
-		xp_cost = 3
+		#xp_cost = 3
 	}
 
 	tank_railgun_cannon_1 = {
@@ -5051,7 +5051,7 @@ equipment_modules = {
 			reliability = -0.3
 			breakthrough = 2
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		can_convert_from = {
 			module_category = tank_medium_main_armament
 			convert_cost_ic = 3
@@ -5091,7 +5091,7 @@ equipment_modules = {
 			reliability = -0.3
 			breakthrough = 3
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		can_convert_from = {
 			module_category = tank_medium_main_armament
 			convert_cost_ic = 4
@@ -5130,7 +5130,7 @@ equipment_modules = {
 			reliability = -0.45
 			breakthrough = 35
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		can_convert_from = {
 			module_category = tank_medium_main_armament
 			convert_cost_ic = 3
@@ -5169,7 +5169,7 @@ equipment_modules = {
 			reliability = -0.35
 			breakthrough = 35
 		}
-		xp_cost = 3
+		#xp_cost = 3
 		can_convert_from = {
 			module_category = tank_medium_main_armament
 			convert_cost_ic = 3
@@ -5208,6 +5208,6 @@ equipment_modules = {
 			defense = 0.1
 			breakthrough = 0.1
 		}
-		xp_cost = 3
+		#xp_cost = 3
 	}
 }
