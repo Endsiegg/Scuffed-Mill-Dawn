@@ -85,6 +85,14 @@ scripted_gui = {
 						add_to_variable = { topbar_option_one^topbar_container_index = 1 }
 					}
 				}
+				else_if = { limit = { check_variable = { topbar_menu^i = 23 } }
+					if = { limit = { check_variable = { topbar_option_one^topbar_container_index > 0 } }
+						set_variable = { topbar_option_one^topbar_container_index = 0 }
+					}
+					else = {
+						add_to_variable = { topbar_option_one^topbar_container_index = 1 }
+					}
+				}
 			}
 			list_shift_click = {
 				if = { limit = { check_variable = { topbar_menu^i = 5 } }
