@@ -1,4 +1,4 @@
-version="1.10.4"
+version="2.0.0"
 tags={
 	"Alternative History"
 	"Gameplay"
@@ -57,5 +57,5 @@ replace_path = "events/"
 replace_path = "gfx/loadingscreens"
 replace_path = "portraits"
 replace_path = "scenario_tests/"
-supported_version="1.14.*"
+supported_version="1.15.*"
 remote_file_id="2952290043"
