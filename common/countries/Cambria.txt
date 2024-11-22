@@ -1,4 +1,3 @@
 graphical_culture = northamerican_gfx
 graphical_culture_2d = northamerican_2d
-
-color = { 52 133 161 }
+color = { 171 103 21 }
