@@ -19,7 +19,7 @@ equipment_modules = {
 			hardness = -0.8
 		}
 
-		#xp_cost = 3
+		###xp_cost = 3
 	}
 
 	chassis_afv_gen0 = {
@@ -39,7 +39,7 @@ equipment_modules = {
 			maximum_speed = -1.5
 		}
 
-		#xp_cost = 3
+		###xp_cost = 3
 	}
 
 	chassis_tank_gen0 = {
@@ -62,7 +62,7 @@ equipment_modules = {
 			hardness = 0.5
 		}
 
-		#xp_cost = 3
+		###xp_cost = 3
 	}
 
 	# Generation 1
@@ -86,7 +86,7 @@ equipment_modules = {
 			hardness = -0.8
 		}
 
-		#xp_cost = 3
+		###xp_cost = 3
 	}
 
 	chassis_afv_gen1 = {
@@ -106,7 +106,6 @@ equipment_modules = {
 			breakthrough = 4
 			maximum_speed = -2.125
 		}
-		#xp_cost = 3
 	}
 
 	chassis_tank_gen1 = {
@@ -130,7 +129,6 @@ equipment_modules = {
 			hardness = 0.5
 		}
 
-		#xp_cost = 3
 	}
 
 	# Generation 2
@@ -154,7 +152,6 @@ equipment_modules = {
 			hardness = -0.8
 		}
 
-		#xp_cost = 3
 	}
 
 	chassis_afv_gen2 = {
@@ -175,7 +172,6 @@ equipment_modules = {
 			maximum_speed = -2.75
 		}
 
-		#xp_cost = 3
 	}
 
 	chassis_tank_gen2 = {
@@ -199,7 +195,6 @@ equipment_modules = {
 			hardness = 0.5
 		}
 
-		#xp_cost = 3
 	}
 
 	# Generation 3
@@ -223,7 +218,6 @@ equipment_modules = {
 			hardness = -0.8
 		}
 
-		#xp_cost = 3
 	}
 
 	chassis_afv_gen3 = {
@@ -244,7 +238,6 @@ equipment_modules = {
 			maximum_speed = -3.375
 		}
 
-		#xp_cost = 3
 	}
 
 	chassis_tank_gen3 = {
@@ -268,7 +261,7 @@ equipment_modules = {
 			hardness = 0.5
 		}
 
-		#xp_cost = 3
+		##xp_cost = 3
 	}
 
 	# Generation 4
@@ -292,7 +285,7 @@ equipment_modules = {
 			hardness = -0.8
 		}
 
-		#xp_cost = 3
+		##xp_cost = 3
 	}
 
 	chassis_afv_gen4 = {
@@ -313,7 +306,7 @@ equipment_modules = {
 			maximum_speed = -4
 		}
 
-		#xp_cost = 3
+		##xp_cost = 3
 	}
 
 	chassis_tank_gen4 = {
@@ -337,7 +330,7 @@ equipment_modules = {
 			hardness = 0.5
 		}
 
-		#xp_cost = 3
+		##xp_cost = 3
 	}
 
 	## Main guns
@@ -364,7 +357,7 @@ equipment_modules = {
 			breakthrough = 4.5
 			defense = 7.5
 		}
-		#xp_cost = 3
+		##xp_cost = 3
 		can_convert_from = {
 			module_category = art_small_gun_module
 			convert_cost_ic = 1.25
@@ -418,7 +411,7 @@ equipment_modules = {
 			breakthrough = 7
 			defense = 10
 		}
-		#xp_cost = 3
+		##xp_cost = 3
 		can_convert_from = {
 			module_category = art_small_gun_module
 			convert_cost_ic = 2.25
@@ -472,7 +465,7 @@ equipment_modules = {
 			breakthrough = 9
 			defense = 13.5
 		}
-		#xp_cost = 3
+		##xp_cost = 3
 		can_convert_from = {
 			module_category = art_small_gun_module
 			convert_cost_ic = 3
@@ -527,7 +520,7 @@ equipment_modules = {
 			breakthrough = 10.5
 			defense = 16.5
 		}
-		#xp_cost = 3
+		##xp_cost = 3
 		can_convert_from = {
 			module_category = art_small_gun_module
 			convert_cost_ic = 4
@@ -582,7 +575,7 @@ equipment_modules = {
 			breakthrough = 12
 			defense = 18
 		}
-		#xp_cost = 3
+		##xp_cost = 3
 		can_convert_from = {
 			module_category = art_small_gun_module
 			convert_cost_ic = 1.25
@@ -646,7 +639,7 @@ equipment_modules = {
 			breakthrough = 3
 			defense = 5
 		}
-		#xp_cost = 3
+		##xp_cost = 3
 		can_convert_from = {
 			module_category = art_small_gun_module
 			convert_cost_ic = 3.25
@@ -710,7 +703,7 @@ equipment_modules = {
 			breakthrough = 4.5
 			defense = 7
 		}
-		#xp_cost = 3
+		##xp_cost = 3
 		can_convert_from = {
 			module_category = art_small_gun_module
 			convert_cost_ic = 3
@@ -774,7 +767,7 @@ equipment_modules = {
 			breakthrough = 6
 			defense = 9
 		}
-		#xp_cost = 3
+		##xp_cost = 3
 		can_convert_from = {
 			module_category = art_small_gun_module
 			convert_cost_ic = 4
@@ -838,7 +831,7 @@ equipment_modules = {
 			breakthrough = 7.5
 			defense = 11
 		}
-		#xp_cost = 3
+		##xp_cost = 3
 		can_convert_from = {
 			module_category = art_small_gun_module
 			convert_cost_ic = 5
@@ -902,7 +895,7 @@ equipment_modules = {
 			breakthrough = 8
 			defense = 12
 		}
-		#xp_cost = 3
+		##xp_cost = 3
 		can_convert_from = {
 			module_category = art_small_gun_module
 			convert_cost_ic = 6
@@ -957,7 +950,7 @@ equipment_modules = {
 			breakthrough = 2
 			defense = 3
 		}
-		#xp_cost = 3
+		##xp_cost = 3
 		can_convert_from = {
 			module_category = art_small_gun_module
 			convert_cost_ic = 3
@@ -1013,7 +1006,7 @@ equipment_modules = {
 			breakthrough = 2.5
 			defense = 3.5
 		}
-		#xp_cost = 3
+		##xp_cost = 3
 		can_convert_from = {
 			module_category = art_small_gun_module
 			convert_cost_ic = 3.5
@@ -1069,7 +1062,7 @@ equipment_modules = {
 			breakthrough = 3
 			defense = 4.5
 		}
-		#xp_cost = 3
+		##xp_cost = 3
 		can_convert_from = {
 			module_category = art_small_gun_module
 			convert_cost_ic = 5
@@ -1125,7 +1118,7 @@ equipment_modules = {
 			breakthrough = 4
 			defense = 5.5
 		}
-		#xp_cost = 3
+		##xp_cost = 3
 		can_convert_from = {
 			module_category = art_small_gun_module
 			convert_cost_ic = 6
@@ -1181,7 +1174,7 @@ equipment_modules = {
 			breakthrough = 4
 			defense = 6
 		}
-		#xp_cost = 3
+		##xp_cost = 3
 		can_convert_from = {
 			module_category = art_small_gun_module
 			convert_cost_ic = 7.5
@@ -1237,7 +1230,7 @@ equipment_modules = {
 			breakthrough = 6
 			defense = 6
 		}
-		#xp_cost = 3
+		##xp_cost = 3
 		can_convert_from = {
 			module_category = art_small_gun_module
 			convert_cost_ic = 2
@@ -1291,7 +1284,7 @@ equipment_modules = {
 			breakthrough = 9
 			defense = 9
 		}
-		#xp_cost = 3
+		##xp_cost = 3
 		can_convert_from = {
 			module_category = art_small_gun_module
 			convert_cost_ic = 3
@@ -1345,7 +1338,7 @@ equipment_modules = {
 			breakthrough = 12
 			defense = 12
 		}
-		#xp_cost = 3
+		##xp_cost = 3
 		can_convert_from = {
 			module_category = art_small_gun_module
 			convert_cost_ic = 4
@@ -1400,7 +1393,7 @@ equipment_modules = {
 			breakthrough = 15
 			defense = 15
 		}
-		#xp_cost = 3
+		##xp_cost = 3
 		can_convert_from = {
 			module_category = art_small_gun_module
 			convert_cost_ic = 4.5
@@ -1455,7 +1448,7 @@ equipment_modules = {
 			breakthrough = 11
 			defense = 11
 		}
-		#xp_cost = 3
+		##xp_cost = 3
 		can_convert_from = {
 			module_category = art_small_gun_module
 			convert_cost_ic = 5
@@ -1510,7 +1503,7 @@ equipment_modules = {
 			breakthrough = 4
 			defense = 4
 		}
-		#xp_cost = 3
+		##xp_cost = 3
 		can_convert_from = {
 			module_category = art_small_gun_module
 			convert_cost_ic = 2.25
@@ -1565,7 +1558,7 @@ equipment_modules = {
 			breakthrough = 6
 			defense = 6
 		}
-		#xp_cost = 3
+		##xp_cost = 3
 		can_convert_from = {
 			module_category = art_small_gun_module
 			convert_cost_ic = 4
@@ -1620,7 +1613,7 @@ equipment_modules = {
 			breakthrough = 8
 			defense = 8
 		}
-		#xp_cost = 3
+		##xp_cost = 3
 		can_convert_from = {
 			module_category = art_small_gun_module
 			convert_cost_ic = 5
@@ -1676,7 +1669,7 @@ equipment_modules = {
 			breakthrough = 10
 			defense = 10
 		}
-		#xp_cost = 3
+		##xp_cost = 3
 		can_convert_from = {
 			module_category = art_small_gun_module
 			convert_cost_ic = 5.5
@@ -1732,7 +1725,7 @@ equipment_modules = {
 			breakthrough = 11
 			defense = 11
 		}
-		#xp_cost = 3
+		##xp_cost = 3
 		can_convert_from = {
 			module_category = art_small_gun_module
 			convert_cost_ic = 6
@@ -1788,7 +1781,7 @@ equipment_modules = {
 			breakthrough = 2
 			defense = 2
 		}
-		#xp_cost = 3
+		##xp_cost = 3
 		can_convert_from = {
 			module_category = art_small_gun_module
 			convert_cost_ic = 2
@@ -1843,7 +1836,7 @@ equipment_modules = {
 			breakthrough = 3
 			defense = 3
 		}
-		#xp_cost = 3
+		##xp_cost = 3
 		can_convert_from = {
 			module_category = art_small_gun_module
 			convert_cost_ic = 4
@@ -2149,7 +2142,6 @@ equipment_modules = {
 			defense = -0.05
 			ap_attack = 0.3
 		}
-		#xp_cost = 3
 	}
 
 	direct_fire_conversion_medium = {
@@ -2168,7 +2160,6 @@ equipment_modules = {
 			defense = -0.1
 			ap_attack = 0.25
 		}
-		#xp_cost = 3
 	}
 
 	mortar_barrel_conversion_small = {
@@ -2188,6 +2179,24 @@ equipment_modules = {
 		#xp_cost = 3
 	}
 
+	twin_mortar_barrel_conversion_small = {
+		abbreviation = "tmbcs"
+		category = small_gun_conversion_type
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 1.0
+		}
+		multiply_stats = {
+			soft_attack = -0.05
+			hard_attack = -0.065
+			breakthrough = 0.20
+			defense = 0.20
+			reliability = -0.05
+		}
+		#xp_cost = 3
+	}
+
 	# Gun barrel instead of howitzer
 	gun_barrel_conversion = {
 		abbreviation = "gbc"
@@ -2203,7 +2212,6 @@ equipment_modules = {
 			breakthrough = -0.25
 			defense = -0.2
 		}
-		#xp_cost = 3
 	}
 
 	# Mortar type round
@@ -2223,7 +2231,6 @@ equipment_modules = {
 			breakthrough = 0.3
 			defense = 0.25
 		}
-		#xp_cost = 3
 	}
 
 	# Thermobaric ammo
@@ -2240,7 +2247,6 @@ equipment_modules = {
 			breakthrough = 0.3
 			defense = -0.2
 		}
-		#xp_cost = 3
 	}
 
 	thermobaric_ammo_conversion_small = {
@@ -2256,7 +2262,6 @@ equipment_modules = {
 			breakthrough = 0.2
 			defense = -0.15
 		}
-		#xp_cost = 3
 	}
 
 	# Double-caliber ammo
@@ -2274,7 +2279,6 @@ equipment_modules = {
 			breakthrough = 0.1
 			defense = 0.1
 		}
-		#xp_cost = 3
 	}
 
 	## Small rocket ammo
@@ -2290,7 +2294,6 @@ equipment_modules = {
 			soft_attack = 0.125
 			hard_attack = -0.625
 		}
-		#xp_cost = 3
 		can_convert_from = {
 			module_category = small_rocket_ammo_module
 			convert_cost_ic = 1.25
@@ -2330,7 +2333,6 @@ equipment_modules = {
 			soft_attack = 0.25
 			hard_attack = -0.60
 		}
-		#xp_cost = 3
 		can_convert_from = {
 			module_category = small_rocket_ammo_module
 			convert_cost_ic = 2
@@ -2351,7 +2353,6 @@ equipment_modules = {
 			breakthrough = 0.1
 			hard_attack = -0.62
 		}
-		#xp_cost = 3
 		can_convert_from = {
 			module_category = small_rocket_ammo_module
 			convert_cost_ic = 1.25
@@ -2393,7 +2394,6 @@ equipment_modules = {
 			breakthrough = 0.05
 			hard_attack = -0.31
 		}
-		#xp_cost = 3
 		can_convert_from = {
 			module_category = small_rocket_ammo_module
 			convert_cost_ic = 2
@@ -2415,7 +2415,6 @@ equipment_modules = {
 			defense = 0.2
 			breakthrough = -0.1
 		}
-		#xp_cost = 3
 		can_convert_from = {
 			module_category = medium_rocket_ammo_module
 			convert_cost_ic = 1.25
@@ -2437,7 +2436,6 @@ equipment_modules = {
 			defense = 0.25
 			breakthrough = -0.1
 		}
-		#xp_cost = 3
 		can_convert_from = {
 			module_category = medium_rocket_ammo_module
 			convert_cost_ic = 1.25
@@ -2459,7 +2457,6 @@ equipment_modules = {
 			defense = 0.3
 			breakthrough = -0.1
 		}
-		#xp_cost = 3
 		can_convert_from = {
 			module_category = medium_rocket_ammo_module
 			convert_cost_ic = 1.5
@@ -2480,7 +2477,6 @@ equipment_modules = {
 			breakthrough = 0.1
 			hard_attack = -0.188
 		}
-		#xp_cost = 3
 		can_convert_from = {
 			module_category = medium_rocket_ammo_module
 			convert_cost_ic = 1
@@ -2502,7 +2498,6 @@ equipment_modules = {
 			breakthrough = 0.16
 			hard_attack = -0.18
 		}
-		#xp_cost = 3
 		can_convert_from = {
 			module_category = medium_rocket_ammo_module
 			convert_cost_ic = 1.35
@@ -2524,7 +2519,6 @@ equipment_modules = {
 			breakthrough = 0.22
 			hard_attack = -0.187
 		}
-		#xp_cost = 3
 		can_convert_from = {
 			module_category = medium_rocket_ammo_module
 			convert_cost_ic = 1.75
@@ -5147,6 +5141,6 @@ equipment_modules = {
 		build_cost_resources = {
 			steel = 3
 		}
-		#xp_cost = 3
+		##xp_cost = 3
 	}
 }
