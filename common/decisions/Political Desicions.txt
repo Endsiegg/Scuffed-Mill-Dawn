@@ -4943,7 +4943,7 @@ generic_coalition_politics_desicions = {
 	promote_outlook_decision_support_pro_western_parties = {
 		icon = GFX_decision_democratic_button
 		days_remove = 120
-		days_re_enable = 30
+		days_re_enable = 5
 		fire_only_once = no
 
 		visible = {
@@ -4968,8 +4968,8 @@ generic_coalition_politics_desicions = {
 		}
 
 		modifier = {
-			democratic_drift = 0.1
-			political_power_factor = -0.25
+			democratic_drift = 0.3
+		#	political_power_factor = -0.25
 		}
 
 		complete_effect = {
@@ -4987,7 +4987,7 @@ generic_coalition_politics_desicions = {
 	promote_outlook_decision_support_emerging_parties = {
 		icon = GFX_decision_emerging_button
 		days_remove = 120
-		days_re_enable = 30
+		days_re_enable = 5
 		fire_only_once = no
 
 		visible = {
@@ -5012,8 +5012,8 @@ generic_coalition_politics_desicions = {
 		}
 
 		modifier = {
-			communism_drift = 0.1
-			political_power_factor = -0.25
+			communism_drift = 0.3
+			#political_power_factor = -0.25
 		}
 
 		complete_effect = {
@@ -5031,7 +5031,7 @@ generic_coalition_politics_desicions = {
 	promote_outlook_decision_support_the_non_aligned_parties = {
 		icon = GFX_decision_neutrality_button
 		days_remove = 120
-		days_re_enable = 30
+		days_re_enable = 5
 		fire_only_once = no
 
 		visible = {
@@ -5056,8 +5056,8 @@ generic_coalition_politics_desicions = {
 		}
 
 		modifier = {
-			neutrality_drift = 0.1
-			political_power_factor = -0.25
+			neutrality_drift = 0.3
+		#	political_power_factor = -0.25
 		}
 
 		complete_effect = {
@@ -5075,7 +5075,7 @@ generic_coalition_politics_desicions = {
 	promote_outlook_decision_support_the_nationalists = {
 		icon = GFX_decision_nationalist_button
 		days_remove = 120
-		days_re_enable = 30
+		days_re_enable = 5
 		fire_only_once = no
 
 		visible = {
@@ -5100,8 +5100,8 @@ generic_coalition_politics_desicions = {
 		}
 
 		modifier = {
-			nationalist_drift = 0.1
-			political_power_factor = -0.25
+			nationalist_drift = 0.3
+		#	political_power_factor = -0.25
 		}
 
 		complete_effect = {
@@ -5119,7 +5119,7 @@ generic_coalition_politics_desicions = {
 	promote_outlook_decision_support_the_salafists = {
 		icon = GFX_decision_fascism_button
 		days_remove = 120
-		days_re_enable = 30
+		days_re_enable = 5
 		fire_only_once = no
 
 		visible = {
@@ -5200,8 +5200,8 @@ generic_coalition_politics_desicions = {
 		}
 
 		modifier = {
-			fascism_drift = 0.1
-			political_power_factor = -0.25
+			fascism_drift = 0.3
+			#political_power_factor = -0.25
 		}
 
 		complete_effect = {

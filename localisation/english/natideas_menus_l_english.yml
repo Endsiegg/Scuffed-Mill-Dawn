@@ -10,7 +10,7 @@
 	natidea_economic_7:0 "+2.5% Factory Output"
 	natidea_economic_8:0 "+5% Resources"
 	natidea_economic_9:0 "+2.5% Efficiency Cap"
-	natidea_economic_10:0 "-5% Consumer Goods Factories"
+	natidea_economic_10:0 "-35% Consumer Goods Factories"
 	
 	natidea_expansion_1:0 "-10% Justify Wargoal Time"
 	natidea_expansion_2:0 "+0.05% Daily Compliance Gain"

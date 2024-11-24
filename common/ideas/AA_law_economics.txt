@@ -730,7 +730,7 @@ ideas = {
 			}
 			modifier = {
 				min_export = 0.5
-				resource_export_multiplier_modifier = 0.12
+				resource_export_multiplier_modifier = 0.20
 			}
 			on_add = {
 				ingame_update_setup = yes
@@ -800,7 +800,7 @@ ideas = {
 			modifier = {
 				min_export = 0.65
 				consumer_goods_factor = -0.03
-				resource_export_multiplier_modifier = 0.16
+				resource_export_multiplier_modifier = 0.25
 			}
 			ai_will_do = {
 				factor = 1
@@ -857,7 +857,7 @@ ideas = {
 			modifier = {
 				min_export = 0.8
 				consumer_goods_factor = -0.06
-				resource_export_multiplier_modifier = 0.20
+				resource_export_multiplier_modifier = 0.30
 			}
 			ai_will_do = {
 				factor = 1

@@ -5057,7 +5057,7 @@ shared_focus = {
 
 	prerequisite = { focus = BRA_modern_artillery }
 	available = {
-		threat > 0.15
+		#threat > 0.15
 	}
 
 	completion_reward = {
@@ -5437,7 +5437,7 @@ shared_focus = {
 	prerequisite = { focus = BRA_underwater_flotilla }
 
 	available = {
-		threat > 0.15
+		#threat > 0.15
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus BRA_reform_the_navy"
@@ -6759,10 +6759,10 @@ shared_focus = {
 	y = 0
 
 	cost = 5
-	available = {
-		date < 2018.10.01
-		date > 2010.01.01
-	}
+	# available = {
+	# 	date < 2018.10.01
+	# 	date > 2010.01.01
+	# }
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus BRA_op_car_wash"
 		country_event = { id = brazil.19 days = 0 }
@@ -6953,10 +6953,10 @@ shared_focus = {
 		focus = BRA_parties_of_the_left
 	}
 
-	available = {
-		date < 2018.10.01
-		date > 2010.01.01
-	}
+	# available = {
+	# 	date < 2018.10.01
+	# 	date > 2010.01.01
+	# }
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus BRA_the_new_elections"

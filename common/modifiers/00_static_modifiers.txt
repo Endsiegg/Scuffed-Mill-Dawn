@@ -459,10 +459,10 @@ military_cooperation = {
 
 # applies when stability > 50%
 stability_good_modifier = {
-	industrial_capacity_factory = 0.25
-	industrial_capacity_dockyard = 0.25
-	consumer_goods_factor = -0.05
-	political_power_factor = 0.35
+	industrial_capacity_factory = 0.5
+	industrial_capacity_dockyard = 0.5
+	consumer_goods_factor = -0.30
+	political_power_factor = 0.5
 	foreign_subversive_activites = -0.5
 	migration_rate_value_factor = 0.35
 }
@@ -471,21 +471,25 @@ stability_good_modifier = {
 stability_bad_modifier = {
 	industrial_capacity_factory = -0.50
 	industrial_capacity_dockyard = -0.50
-	political_power_factor = -0.3
+	political_power_factor = -0.5
+	consumer_goods_factor = 0.30
 	foreign_subversive_activites = 0.5
 	migration_rate_value_factor = -0.35
 }
 
 war_support_good_modifier = {
 	mobilization_speed = 0.030 #in 1/1000 of 1 %
-	army_core_attack_factor = 0.1
-	army_core_defence_factor = 0.1
-	command_power_gain_mult = 0.5
+	army_core_attack_factor = 0.25
+	army_core_defence_factor = 0.25
+	surrender_limit = 0.3
+	command_power_gain_mult = 1.0
 }
 
 war_support_bad_modifier = {
 	mobilization_speed = -0.500 # Reduce mobilization speed by half.
 	command_power_gain_mult = -0.95
+	army_core_attack_factor = -0.25
+	army_core_defence_factor = -0.25
 	surrender_limit = -0.3
 	migration_rate_value_factor = -0.50
 }
@@ -751,18 +755,18 @@ naval_mines_effect = {
 
 air_wing_experience_bonus_max = {
 	air_attack_factor = 0.2
-	#air_defence_factor = 0.2
+	air_defence_factor = 0.2
 	air_agility_factor = 0.3
 	air_night_penalty = -0.2
-	#air_weather_penalty = -0.3
+	air_weather_penalty = -0.3
 }
 
 air_wing_experience_malus_min = {
 	air_attack_factor = -0.15
-	#air_defence_factor = -0.15
+	air_defence_factor = -0.15
 	air_agility_factor = -0.15
 	air_night_penalty = 0.15
-	#air_weather_penalty = 0.15
+	air_weather_penalty = 0.15
 }
 
 ship_experience_bonus_max = {

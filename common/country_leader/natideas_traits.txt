@@ -113,7 +113,7 @@ leader_traits = {
 		production_speed_buildings_factor = 0.2
 		local_resources_factor = 0.6
 		industry_repair_factor = 0.3
-		consumer_goods_factor = -0.05
+		consumer_goods_factor = -0.35
 
 		ai_will_do = {
 			factor = 1
